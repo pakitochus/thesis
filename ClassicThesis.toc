@@ -62,149 +62,151 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {3.3}Voxels As Features (VAF)}{9}{section.3.3}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {4}\spacedlowsmallcaps {Image Pre-Processing}}{11}{chapter.4}
+\contentsline {chapter}{\numberline {4}\spacedlowsmallcaps {Image Preprocessing}}{11}{chapter.4}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4.1}Spatial normalization or registration}{11}{section.4.1}
+\contentsline {section}{\numberline {4.1}Spatial Preprocessing }{11}{section.4.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {4.1.1}The MNI Space}{11}{subsection.4.1.1}
+\contentsline {subsection}{\numberline {4.1.1}Spatial Normalization or Registration}{12}{subsection.4.1.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {4.1.2}Registration algorithms}{11}{subsection.4.1.2}
+\contentsline {subsubsection}{\numberline {4.1.1.1}Co-registration}{13}{subsubsection.4.1.1.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {4.1.3}Co-registration}{11}{subsection.4.1.3}
+\contentsline {subsubsection}{\numberline {4.1.1.2}The MNI Space}{14}{subsubsection.4.1.1.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4.2}Smoothing}{11}{section.4.2}
+\contentsline {subsection}{\numberline {4.1.2}Segmentation}{14}{subsection.4.1.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4.3}Segmentation}{11}{section.4.3}
+\contentsline {section}{\numberline {4.2}Intensity Normalization}{14}{section.4.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4.4}Intensity Normalization}{11}{section.4.4}
+\contentsline {subsection}{\numberline {4.2.1}Normalization to the Maximum}{16}{subsection.4.2.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4.5}Voxel-wise Analyses}{11}{section.4.5}
+\contentsline {subsection}{\numberline {4.2.2}Integral Normalization}{16}{subsection.4.2.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {4.5.1}Statistical Parametric Mapping}{11}{subsection.4.5.1}
+\contentsline {section}{\numberline {4.3}Voxel-wise Analyses}{16}{section.4.3}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {4.5.2}Voxel Based Morphometry}{11}{subsection.4.5.2}
+\contentsline {subsection}{\numberline {4.3.1}Statistical Parametric Mapping}{16}{subsection.4.3.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {4.5.3}Voxels as Features}{11}{subsection.4.5.3}
+\contentsline {subsection}{\numberline {4.3.2}Voxel Based Morphometry}{16}{subsection.4.3.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {part}{\numberline {ii}\spacedlowsmallcaps {Feature Size Reduction}}{13}{part.2}
+\contentsline {subsection}{\numberline {4.3.3}Voxels as Features}{17}{subsection.4.3.3}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {5}\spacedlowsmallcaps {Image Decomposition}}{15}{chapter.5}
+\contentsline {part}{\numberline {ii}\spacedlowsmallcaps {Feature Size Reduction}}{19}{part.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {5.1}Feature Selection}{15}{section.5.1}
+\contentsline {chapter}{\numberline {5}\spacedlowsmallcaps {Image Decomposition}}{21}{chapter.5}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {5.1.1}$t$-Test}{15}{subsection.5.1.1}
+\contentsline {section}{\numberline {5.1}Feature Selection}{21}{section.5.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {5.1.2}Mann-Whitney-Wilcoxon}{15}{subsection.5.1.2}
+\contentsline {subsection}{\numberline {5.1.1}$t$-Test}{21}{subsection.5.1.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {5.1.3}Relative Entropy}{16}{subsection.5.1.3}
+\contentsline {subsection}{\numberline {5.1.2}Mann-Whitney-Wilcoxon}{21}{subsection.5.1.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {5.2}Factor Analysis}{16}{section.5.2}
+\contentsline {subsection}{\numberline {5.1.3}Relative Entropy}{22}{subsection.5.1.3}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {5.3}Independent Component Analysis}{18}{section.5.3}
+\contentsline {section}{\numberline {5.2}Factor Analysis}{22}{section.5.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {5.3.1}FastICA}{19}{subsection.5.3.1}
+\contentsline {section}{\numberline {5.3}Independent Component Analysis}{24}{section.5.3}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {5.4}Results}{20}{section.5.4}
+\contentsline {subsection}{\numberline {5.3.1}FastICA}{25}{subsection.5.3.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {6}\spacedlowsmallcaps {Texture Features}}{21}{chapter.6}
+\contentsline {section}{\numberline {5.4}Results}{26}{section.5.4}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {6.1}Introduction}{21}{section.6.1}
+\contentsline {chapter}{\numberline {6}\spacedlowsmallcaps {Texture Features}}{27}{chapter.6}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {6.2}Haralick Texture Features}{21}{section.6.2}
+\contentsline {section}{\numberline {6.1}Introduction}{27}{section.6.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {6.3}Results}{21}{section.6.3}
+\contentsline {section}{\numberline {6.2}Haralick Texture Features}{27}{section.6.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {6.4}Discussion}{21}{section.6.4}
+\contentsline {section}{\numberline {6.3}Results}{27}{section.6.3}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {7}\spacedlowsmallcaps {Spherical Brain Mapping}}{23}{chapter.7}
+\contentsline {section}{\numberline {6.4}Discussion}{27}{section.6.4}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {7.1}Introduction}{23}{section.7.1}
+\contentsline {chapter}{\numberline {7}\spacedlowsmallcaps {Spherical Brain Mapping}}{29}{chapter.7}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {7.2}Spherical Brain Mapping}{23}{section.7.2}
+\contentsline {section}{\numberline {7.1}Introduction}{29}{section.7.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {7.3}Volumetric Radial LBP}{23}{section.7.3}
+\contentsline {section}{\numberline {7.2}Spherical Brain Mapping}{29}{section.7.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {7.4}Path v\IeC {\'\i }a Hidden Markov Models}{23}{section.7.4}
+\contentsline {section}{\numberline {7.3}Volumetric Radial LBP}{29}{section.7.3}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {7.5}Results}{23}{section.7.5}
+\contentsline {section}{\numberline {7.4}Path v\IeC {\'\i }a Hidden Markov Models}{29}{section.7.4}
 \defcounter {refsection}{0}\relax 
-\contentsline {part}{\numberline {iii}\spacedlowsmallcaps {Sample Size Increasing}}{25}{part.3}
+\contentsline {section}{\numberline {7.5}Results}{29}{section.7.5}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {8}\spacedlowsmallcaps {Significance Weighted Principal Component Analysis}}{27}{chapter.8}
+\contentsline {part}{\numberline {iii}\spacedlowsmallcaps {Sample Size Increasing}}{31}{part.3}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {8.1}Significance Weighted Principal Component Analysis}{28}{section.8.1}
+\contentsline {chapter}{\numberline {8}\spacedlowsmallcaps {Significance Weighted Principal Component Analysis}}{33}{chapter.8}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {8.1.1}Principal Component Analysis}{28}{subsection.8.1.1}
+\contentsline {section}{\numberline {8.1}Significance Weighted Principal Component Analysis}{34}{section.8.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {8.1.2}One-Way Analysis of Variance}{29}{subsection.8.1.2}
+\contentsline {subsection}{\numberline {8.1.1}Principal Component Analysis}{34}{subsection.8.1.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {8.1.3}Weighting Function}{30}{subsection.8.1.3}
+\contentsline {subsection}{\numberline {8.1.2}One-Way Analysis of Variance}{35}{subsection.8.1.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {8.2}Results for AIMS-MRI Dataset}{31}{section.8.2}
+\contentsline {subsection}{\numberline {8.1.3}Weighting Function}{36}{subsection.8.1.3}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {8.2.1}Experiment 1: Effect of Acquisition Site}{33}{subsection.8.2.1}
+\contentsline {section}{\numberline {8.2}Results for AIMS-MRI Dataset}{38}{section.8.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {8.2.2}Experiment 2: Within-site Between-Group Differences}{33}{subsection.8.2.2}
+\contentsline {subsection}{\numberline {8.2.1}Experiment 1: Effect of Acquisition Site}{39}{subsection.8.2.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {8.2.3}Experiment 3: Effect of SWPCA on Group Differences}{35}{subsection.8.2.3}
+\contentsline {subsection}{\numberline {8.2.2}Experiment 2: Within-site Between-Group Differences}{41}{subsection.8.2.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {8.2.4}Discussion}{38}{subsection.8.2.4}
+\contentsline {subsection}{\numberline {8.2.3}Experiment 3: Effect of SWPCA on Group Differences}{41}{subsection.8.2.3}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {8.3}Results for DaTSCAN Datasets}{41}{section.8.3}
+\contentsline {subsection}{\numberline {8.2.4}Discussion}{44}{subsection.8.2.4}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {9}\spacedlowsmallcaps {Simulation of Functional Brain Images}}{47}{chapter.9}
+\contentsline {section}{\numberline {8.3}Results for DaTSCAN Datasets}{47}{section.8.3}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {9.1}Simulation Procedure}{47}{section.9.1}
+\contentsline {chapter}{\numberline {9}\spacedlowsmallcaps {Simulation of Functional Brain Images}}{53}{chapter.9}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {9.1.1}Decomposition via PCA}{47}{subsection.9.1.1}
+\contentsline {section}{\numberline {9.1}Simulation Procedure}{53}{section.9.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {9.1.2}Probability Density Modelling using Kernel Density Estimation}{47}{subsection.9.1.2}
+\contentsline {subsection}{\numberline {9.1.1}Decomposition via PCA}{53}{subsection.9.1.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {9.1.3}Probability Density Modelling using Multivariate Gaussian}{48}{subsection.9.1.3}
+\contentsline {subsection}{\numberline {9.1.2}Probability Density Modelling using Kernel Density Estimation}{53}{subsection.9.1.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {9.1.4}Random Number Generation}{48}{subsection.9.1.4}
+\contentsline {subsection}{\numberline {9.1.3}Probability Density Modelling using Multivariate Gaussian}{54}{subsection.9.1.3}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {9.1.5}Brain Image Synthesis}{48}{subsection.9.1.5}
+\contentsline {subsection}{\numberline {9.1.4}Random Number Generation}{54}{subsection.9.1.4}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {9.2}Experimental Setup}{48}{section.9.2}
+\contentsline {subsection}{\numberline {9.1.5}Brain Image Synthesis}{54}{subsection.9.1.5}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {9.3}Results for ADNI-PET Dataset}{49}{section.9.3}
+\contentsline {section}{\numberline {9.2}Experimental Setup}{54}{section.9.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {9.3.1}Experiment 1}{49}{subsection.9.3.1}
+\contentsline {section}{\numberline {9.3}Results for ADNI-PET Dataset}{55}{section.9.3}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {9.4}Results for DaTSCAN Datasets}{49}{section.9.4}
+\contentsline {subsection}{\numberline {9.3.1}Experiment 1}{55}{subsection.9.3.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {part}{\numberline {iv}\spacedlowsmallcaps {General Discussion and Conclusions}}{51}{part.4}
+\contentsline {section}{\numberline {9.4}Results for DaTSCAN Datasets}{55}{section.9.4}
 \defcounter {refsection}{0}\relax 
-\contentsline {part}{\numberline {v}\spacedlowsmallcaps {Appendix}}{53}{part.5}
+\contentsline {part}{\numberline {iv}\spacedlowsmallcaps {General Discussion and Conclusions}}{57}{part.4}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {A}\spacedlowsmallcaps {Datasets}}{55}{appendix.Alph1}
+\contentsline {part}{\numberline {v}\spacedlowsmallcaps {Appendix}}{59}{part.5}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {A.1}Magnetic Resonance Imaging}{55}{section.Alph1.1}
+\contentsline {chapter}{\numberline {A}\spacedlowsmallcaps {Datasets}}{61}{appendix.Alph1}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {A.1.1}ADNI-MRI, Alzheimer's Disease Neuroimaging Initiative}{55}{subsection.Alph1.1.1}
+\contentsline {section}{\numberline {A.1}Magnetic Resonance Imaging}{61}{section.Alph1.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {A.1.2}AIMS-MRI, MRC-AIMS Consortium}{55}{subsection.Alph1.1.2}
+\contentsline {subsection}{\numberline {A.1.1}ADNI-MRI, Alzheimer's Disease Neuroimaging Initiative}{61}{subsection.Alph1.1.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {A.2}Positron Emission Tomography}{57}{section.Alph1.2}
+\contentsline {subsection}{\numberline {A.1.2}AIMS-MRI, MRC-AIMS Consortium}{61}{subsection.Alph1.1.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {A.2.1}ADNI-PET, Alzheimer's Disease Neuroimaging Initiative}{57}{subsection.Alph1.2.1}
+\contentsline {section}{\numberline {A.2}Positron Emission Tomography}{63}{section.Alph1.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {A.3}Single Photon Emission Computed Tomography}{57}{section.Alph1.3}
+\contentsline {subsection}{\numberline {A.2.1}ADNI-PET, Alzheimer's Disease Neuroimaging Initiative}{63}{subsection.Alph1.2.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {A.3.1}VDLN-HMPAO, Virgen de las Nieves}{57}{subsection.Alph1.3.1}
+\contentsline {section}{\numberline {A.3}Single Photon Emission Computed Tomography}{63}{section.Alph1.3}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {A.3.2}VDLN-DAT, Virgen de las Nieves}{57}{subsection.Alph1.3.2}
+\contentsline {subsection}{\numberline {A.3.1}VDLN-HMPAO, Virgen de las Nieves}{63}{subsection.Alph1.3.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {A.3.3}VDLV-DAT, Virgen de la Victoria Hospital}{57}{subsection.Alph1.3.3}
+\contentsline {subsection}{\numberline {A.3.2}VDLN-DAT, Virgen de las Nieves}{63}{subsection.Alph1.3.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {A.3.4}PPMI-DAT, Parkinson's Progression Markers Initiative}{57}{subsection.Alph1.3.4}
+\contentsline {subsection}{\numberline {A.3.3}VDLV-DAT, Virgen de la Victoria Hospital}{63}{subsection.Alph1.3.3}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {B}\spacedlowsmallcaps {Background on Support Vector Machines}}{59}{appendix.Alph2}
+\contentsline {subsection}{\numberline {A.3.4}PPMI-DAT, Parkinson's Progression Markers Initiative}{63}{subsection.Alph1.3.4}
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\numberline {B}\spacedlowsmallcaps {Background on Support Vector Machines}}{65}{appendix.Alph2}
 \defcounter {refsection}{0}\relax 
 \vspace {\beforebibskip }
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\spacedlowsmallcaps {Bibliography}}{61}{dummy.8}
+\contentsline {chapter}{\spacedlowsmallcaps {Bibliography}}{67}{dummy.8}
 \defcounter {refsection}{0}\relax 
 \select@language {spanish}
 \defcounter {refsection}{0}\relax 
