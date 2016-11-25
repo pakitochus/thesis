@@ -1,0 +1,131 @@
+%************************************************
+\chapter{Image Decomposition}\label{ch:decomposition}
+%************************************************
+In this, we will focus on \cite{Martinez201141,Martinez-Murcia20129676,Martinez-Murcia2013255,Martinez-Murcia201458}
+\section{Feature Selection}
+\cite{Martinez201141,Martinez-Murcia20129676}
+\subsection{$t$-Test}
+Student's $t$-Test ($t$-Test) is a widely used statistical test which quantifies the differences between two different classes. It uses a common estimation of variance for both classes. The value of statistical $t$ can be computed \cite{Fay10} as: 
+
+\begin{equation}
+t = \frac{\bar {\Omega}_1 - \bar{\Omega}_2}{\sigma^2_{\Omega_1\Omega_2} \cdot \sqrt{\frac{1}{n_1}+\frac{1}{n_2}}}
+\end{equation}
+
+\noindent where
+
+\begin{equation}
+\sigma^2_{\Omega_1\Omega_2} = \sqrt{\frac{(n_1-1)\sigma^2_{\Omega_1}+(n_2-1)\sigma^2_{\Omega_2}}{n_1+n_2-2}}
+\end{equation}
+
+$\sigma^2_{\Omega_1 \Omega_2}$ is an estimator of common standard deviation of both samples, $\bar{\Omega}_1$ and $\bar{\Omega}_2$ are the mean of each class, $n_1$ is the number of samples in class $\omega_1$ and $n_2$ is the number of samples in class $\omega_2$. 
+
+\subsection{Mann-Whitney-Wilcoxon} 
+Mann-Whitney-Wilcoxon $U$-test(MWW) uses the absolute value of the statistical $U$ to rank voxels. Calculation of $U$ value is done by the following expression \cite{Fay10}:
+
+\begin{equation}
+U_i=R_i -  {n_i(n_i+1) \over 2} 
+\end{equation}
+
+\noindent where $n_i$ is the sample size for sample $i$, and $R_i$ is the sum of the ranks in sample $i$ (where $i=1,2$). Smaller $U_i$ value is taken as the final $U$ value. 
+
+This statistical test measures the dissimilarity between two groups of values, and, although is similar to Student's t-Test, is less likely than it to spuriously indicate significance because of the presence of outliers. As we make use of real data, and we have no knowledge about the images' statistical distribution, MWW test could be a very good choice \cite{Fay10}.
+
+
+\subsection{Relative Entropy} 
+Relative Entropy (or Kullback-Leibler divergence) is a non-symmetric measure of the difference between two probability distributions $\Omega_1$ and $\Omega_2$. Because of its non-symmetric property, we can make use of this to evaluate the difference between CTRL and AD images for each voxel. Relative Entropy can be calculated with equation \ref{kullback} \cite{EntropyBishop}. 
+
+Let $\Omega_1$ and $\Omega_2$ be two discrete random variables. Relative Entropy is defined as:
+\begin{equation}\label{kullback}
+KL_{\omega_1 \omega_2} =  \int_{V} \omega_1 \log \frac{\omega_1}{\omega_2} \;d\mu
+\end{equation}
+\noindent where $\mu$ is any measure of $V$, the set of all voxels that are placed on a certain brain coordinate, in which $\omega_1 = \frac{d \Omega_1}{d \mu}$ and $\omega_2 = \frac{d \Omega_2}{d \mu}$ exist. Figure \ref{fig:Zentropy} depicts values of Relative Entropy for each voxel. 
+
+\begin{figure}
+	\centering
+	\includegraphics[width=0.7\textwidth]{gfx/ch5/Zentropy.eps}
+	\caption{Several selected slices of the significance map obtained for each brain coordinate by applying the Relative Entropy criterium to the ADNI database.}
+	\label{fig:Zentropy}
+\end{figure}
+\section{Factor Analysis}
+\cite{Martinez201141,Martinez-Murcia20129676}
+
+To this purpose, a number of key features ($K$) are extracted using Fac\-tor A\-na\-ly\-sis technique \cite{Harman73}. It is assumed that each image in the database is a different observation of the experiment. Factor analysis models each of the $n$ observations as the expression of fewer unobserved variables, which are called factors. Each observation has $N$ variables, which are modelled as lineal combinations of the $K$ factors, plus errors, as described in Eq. \ref{eq:FactorAn1}.
+
+\begin{equation}\label{eq:FactorAn1}
+\textbf{x} = \mu + \boldsymbol\lambda \textbf{F} + \epsilon
+\end{equation}
+
+\noindent where \textbf{x} is the vector containing the observed variable (dimension $n$), $\mu$ is the mean of the variable, $\boldsymbol\lambda$ is a vector of $K$ factor loadings for this observation, $\textbf{F}$ is a matrix of dimension $N \times K$ which contains the common factors and $\epsilon$ is the error of reconstruction. For all observations, Eq. \ref{eq:FactorAn1} can be rewritted as:
+
+\begin{equation}\label{eq:FactorAn2}
+\textbf{X} = \boldsymbol\mu + \boldsymbol\Lambda \textbf{F} + \boldsymbol\epsilon
+\end{equation}
+
+\noindent where $\textbf{X}$ is a matrix of observed variables of dimension $n \times N$, $\boldsymbol\mu$ is a vector of means of length $n$, $\boldsymbol\Lambda$ is a matrix of dimension $n \times K$ which contains the maximum likelihood estimate of the factor loadings for each observation, $\textbf{F}$ is a matrix of dimension $N \times K$ which contains the common factors and $\boldsymbol\epsilon$ is a vector of length $n$ containing reconstruction errors.
+
+\begin{figure*}[htp]
+	\centering
+	\begin{tabular}{cc}
+		 \includegraphics[width=\textwidth]{gfx/ch5/reconstruction}\\
+	\end{tabular}
+	\caption{\textit{a)} Original PET image composed by $N=7000$ selected voxels and \textit{b)} reconstruction using Factor Analysis with $K=13$ factors extracted.}
+	\label{fig:reconstruction}
+\end{figure*}
+
+Original input image can be reconstructed with computed factors and factor loadings, as we have seen in Eq. \ref{eq:FactorAn1}. In Fig. \ref{fig:reconstruction} original image and Factor Analysis reconstruction are shown. The selected regions pinpoint the disease affected areas which are class-discriminative. Specifically, it highlights the posterior cingulate gyri and precunei, as well as the temporo-parietal region, both considered as typically affected by glucose hypometabolism in the AD \cite{Claus1994}. A closer look shows that it also selects small thalamus regions, which has never been described as a relevant region for diagnosis. To compute representativeness of different factors, we can rewrite Eq. \ref{eq:FactorAn2} as:
+
+\begin{equation}\label{eq:cov}
+Cov (\textbf{X} - \boldsymbol\mu) = Cov(\boldsymbol\Lambda \textbf{F} - \boldsymbol\epsilon)
+\end{equation}
+
+If $\Sigma$ stands for $Cov (\textbf{X} - \boldsymbol\mu)$, Eq. \ref{eq:cov} can be rewritted as:
+
+\begin{equation}
+\boldsymbol\Sigma = \boldsymbol\Lambda Cov(\textbf{F}) \boldsymbol\Lambda^T - Cov(\boldsymbol\epsilon)
+\end{equation}
+
+\begin{equation}
+\boldsymbol\Sigma = \boldsymbol\Lambda \boldsymbol\Lambda^T - \boldsymbol\Psi
+\end{equation}
+
+\noindent and extract $\Psi$, the diagonal matrix containing the specific variances of the reconstruction error.
+
+The choice of K requires a deeper analysis. If $K$ is large, the image can be modelled very well, and therefore, the reconstruction error should be small. However, a large number of features can be counter-productive for the performance of the classifier due to the well known small sample size problem \cite{Duin00}. Thus, we should find a trade-off between the length of the feature vectors ($K$) and the ability of reconstruction. According to Fig. \ref{fig:error}, the variance reconstruction error tends to stabilize as $K$ increases, and the improvements are no longer significant. In the experimental Section \ref{results} a detailed discussion about $K$ parameter selection is shown in addition with other experimental findings.
+
+\begin{figure}[ht]
+	\centering
+	\includegraphics[width=0.45\textwidth]{gfx/ch5/varError-K-ADNI}
+	\caption{Specific variance of reconstruction error $\Psi$ using Factor Analysis, in function of number of factors extracted ($K$) for ADNI database (the behaviour is similar in the SPECT database).}
+	\label{fig:error}
+\end{figure}
+
+\section{Independent Component Analysis}
+\cite{Martinez-Murcia2013255,Martinez-Murcia201458}
+
+\acf{ICA} \cite{Hyvarinen2000}, is a statistical technique that represents a multidimensional random vector as a lineal combination of non-gaussian random variables (the so-called ''independent components'') to be as independent as possible, and has been used widely on segmentation and clustering of medical images \cite{DeMartino2007,Alvarez2009,IllanTesis,Theis2005}. It can be considered as a non-gaussian version of Factor Analysis. Assume that we observe $n$ lineal mixtures $\mathbf{x}_1, \mathbf{x}_2, \ldots, \mathbf{x}_n$ of length $N$ that can be modelled as an expression of $K$ independent components (IC). These independent components are defined as $\mathbf{S} = (\mathbf{s}_1, \mathbf{s}_2, ... \mathbf{s}_K)$, where each $\mathbf{s}_K$ vector has a length of $N$. So, each random vector $\mathbf{x}_n$ can be described as a linear combination of $K$ independent components: 
+
+\begin{equation}
+\mathbf{x_n} = a_{1n}\mathbf{s}_1 + a_{2n}\mathbf{s}_2 + \ldots + a_{Kn}\mathbf{s}_K
+\end{equation}
+
+Without loss of generality we can assume that both the observed vectors and the independent components are are zero mean. If the previous conditions are not met, the $\mathbf{x}$ variables can be centered by subtracting the sample mean. To use a vector-matrix notation, more convenient in this case, we denote as matrix $\mathbf{X}$ the random vector whose elements are $\mathbf{x}_1, \ldots, \mathbf{x}_n$. We also denote as $\mathbf{A}$ the matrix that contains all $a_{Kn}$ elements, the ''mixing matrix'' that projects each image into the space defined by the IC. Using this notation, the mixing model above remains as follows: 
+
+\begin{equation}\label{eq:ica}
+\mathbf{X}=\mathbf{A}\mathbf{S}
+\end{equation}
+
+The starting point of ICA is the assumption that all components $\mathbf{s}_K$ are are statistically independent. To measure independence, we assume that all independent components have a non-gaussian statistical distribution. It is assumed that a sum of independent signal trends to gaussianity, so if non-gaussianity is maximized with any independence criteria $F$, for instance, the kurtosis or negentropy, we obtain signals that are more independent than the previous ones \cite{Hyvarinen1999,Hyvarinen2000}.
+After estimating the matrix $\mathbf{A}$, we can compute its inverse, $\mathbf{W}$ and obtain the projection $\mathbf{S}$ of the images in the dataset into the IC space with: 
+\begin{equation}
+\mathbf{S} = \mathbf{W}\mathbf{X}
+\end{equation}
+
+\subsection{FastICA}
+Adaptive algorithms based on gradient descend can be problematic when they are used on an environment in which adaptation is not necessary, like this case. The convergence is often slow, and depends on the choice of convergence parameters. As a solution to this problem, block algorithms based on fixed-point iteration \cite{Oja1997,FastICA99} can be used. In \cite{Oja1997} a fixed-point algorithm based on kurtosis is introduced. In \cite{FastICA99}, this algorithm, known as FastICA, is generalized to general contrast functions. The single unit FastICA algorithm has the following form:
+\begin{equation}
+\mathbf{w}(k) = E\lbrace\mathbf{x}g(\mathbf{w}(k-1)^T\mathbf{x})\rbrace -E\lbrace g'(\mathbf{w}(k-1)^T\mathbf{x})\rbrace\mathbf{w}(k-1)
+\end{equation}
+where the loadings vector $\mathbf{w}$ is normalized to unit norm in each iteration, and the function $g(x)$ is a derivative of the contrast function $G$ defined in \cite{Hyvarinen1999}. The expected values are estimated in practice by using the mean of a significantly high number of samples of the input data. 
+The speed of convergence of the fixed-point algorithms is clearly superior to more neural algorithms. Improvements between 10 and 100 times the speed are observed frequently \cite{Giannakopoulos1998}. 
+\section{Results}
+Dataset used: ADNI-PET, SPECT

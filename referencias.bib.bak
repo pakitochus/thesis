@@ -1,0 +1,91 @@
+% Encoding: UTF-8
+
+@Article{Button2013,
+  author        = {Katherine S. Button and John P. A. Ioannidis and Claire Mokrysz and Brian A. Nosek and Jonathan Flint and Emma S. J. Robinson and Marcus R. Munaf{\`{o}}},
+  title         = {Power failure: why small sample size undermines the reliability of neuroscience},
+  journal       = {Nature Reviews Neuroscience},
+  year          = {2013},
+  volume        = {14},
+  number        = {5},
+  pages         = {365--376},
+  month         = {apr},
+  __markedentry = {[pakitochus:]},
+  doi           = {10.1038/nrn3475},
+  publisher     = {Springer Nature},
+  url           = {http://dx.doi.org/10.1038/nrn3475},
+}
+
+@InProceedings{Duin2000,
+  author        = {R. P. W. Duin},
+  title         = {Classifiers in almost empty spaces},
+  booktitle     = {Proc. 15th Int Pattern Recognition Conf},
+  year          = {2000},
+  volume        = {2},
+  pages         = {1--7 vol.2},
+  __markedentry = {[pakitochus:6]},
+  doi           = {10.1109/ICPR.2000.906006},
+  issn          = {1051-4651},
+  keywords      = {Hilbert spaces, decision theory, learning automata, object recognition, pattern classification, statistical analysis, Hilbert space, decision theory, dimensionality, dissimilarity, image recognition, kernel mapping, object recognition, pattern classification, statistical classifiers, support vector machines, training sets, Hilbert space, Image databases, Image recognition, NIST, Pattern recognition, Physics, Space technology, Support vector machine classification, Support vector machines, Testing},
+}
+
+@InProceedings{Kohavi1995a,
+  author    = {Kohavi, R},
+  title     = {{A study of cross-validation and bootstrap for accuracy estimation and model selection.}},
+  booktitle = {{Proceedings of International Joint Conference on AI}},
+  year      = {1995},
+  pages     = {1137--1145},
+  owner     = {pakitochus},
+  timestamp = {2011.12.09},
+  url       = {http://citeseer.ist.psu.edu/kohavi95study.html},
+}
+
+@Article{Ashburner2000,
+  author    = {Ashburner, John and Friston, Karl J},
+  title     = {Voxel-based morphometry---the methods},
+  journal   = {Neuroimage},
+  year      = {2000},
+  volume    = {11},
+  number    = {6},
+  pages     = {805--821},
+  publisher = {Elsevier},
+}
+
+@Article{xu2009source,
+  author    = {Xu, Lai and Groth, Karyn M and Pearlson, Godfrey and Schretlen, David J and Calhoun, Vince D},
+  title     = {Source-based morphometry: The use of independent component analysis to identify gray matter differences with application to schizophrenia},
+  journal   = {Human brain mapping},
+  year      = {2009},
+  volume    = {30},
+  number    = {3},
+  pages     = {711--724},
+  publisher = {Wiley Online Library},
+}
+
+@Article{Chang2001,
+  author    = {Chang, Chih-Chung and Lin, Chih-Jen},
+  title     = {LIBSVM: a library for support vector machines},
+  journal   = {ACM Transactions on Intelligent Systems and Technology},
+  year      = {2011},
+  volume    = {2},
+  number    = {3},
+  pages     = {1–27},
+  month     = apr,
+  doi       = {10.1145/1961189.1961199},
+  issn      = {2157-6904},
+  owner     = {paco},
+  publisher = {Association for Computing Machinery (ACM)},
+  timestamp = {2015.11.03},
+}
+
+@Article{haar2014anatomical,
+  author    = {Haar, Shlomi and Berman, Sigal and Behrmann, Marlene and Dinstein, Ilan},
+  title     = {{Anatomical Abnormalities in Autism?}},
+  journal   = {Cerebral Cortex},
+  year      = {2014},
+  abstract  = {Substantial controversy exists regarding the presence and significance of anatomical abnormalities in autism spectrum disorders (ASD). The release of the Autism Brain Imaging Data Exchange ($\sim$1000 participants, age 6--65 years) offers an unprecedented opportunity to conduct large-scale comparisons of anatomical MRI scans across groups and to resolve many of the outstanding questions. Comprehensive univariate analyses using volumetric, thickness, and surface area measures of over 180 anatomically defined brain areas, revealed significantly larger ventricular volumes, smaller corpus callosum volume (central segment only), and several cortical areas with increased thickness in the ASD group. Previously reported anatomical abnormalities in ASD including larger intracranial volumes, smaller cerebellar volumes, and larger amygdala volumes were not substantiated by the current study. In addition, multivariate classification analyses yielded modest decoding accuracies of individuals' group identity (<60%), suggesting that the examined anatomical measures are of limited diagnostic utility for ASD. While anatomical abnormalities may be present in distinct subgroups of ASD individuals, the current findings show that many previously reported anatomical measures are likely to be of low clinical and scientific significance for understanding ASD neuropathology as a whole in individuals 6--35 years old.},
+  doi       = {10.1093/cercor/bhu242},
+  owner     = {pakitochus},
+  timestamp = {2015.07.06},
+}
+
+@Comment{jabref-meta: databaseType:bibtex;}

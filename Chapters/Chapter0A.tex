@@ -1,0 +1,97 @@
+%********************************************************************
+% Appendix
+%*******************************************************
+% If problems with the headers: get headings in appendix etc. right
+%\markboth{\spacedlowsmallcaps{Appendix}}{\spacedlowsmallcaps{Appendix}}
+\chapter{Datasets}\label{ch:datasets}
+Many dataset are used in this thesis, covering three imaging modalities and three disorders. A summary of these can be found on Table~\ref{tab:datasetsOverview}, folowed by a longer description of each one.
+\begin{table}[h]
+	\myfloatalign
+	\begin{tabularx}{\textwidth}{lllll} \toprule
+		\tableheadline{Acronym} & \tableheadline{Origin}
+		& \tableheadline{Disease} & \tableheadline{Modality}
+		& \tableheadline{Drug} \\ \midrule
+		ADNI-MRI & \ac{ADNI} & \ac{AD} &  \ac{MRI} & - \\
+		AIMS-MRI & \ac{MRC-AIMS} & \ac{ASD} & \ac{MRI} & - \\
+		%postulant quo & westeuropee & sanctificatec \\
+		\midrule
+		ADNI-PET & \ac{ADNI} & \ac{AD} & \ac{PET} & \ac{HMPAO} \\
+		\midrule
+		VDLN-HMPAO & \ac{VDLN} & \ac{AD} & \ac{SPECT} & \ac{HMPAO} \\
+		VDLN-DAT & \ac{VDLN} & \ac{PKS} & \ac{SPECT} & DaTSCAN \\
+		VDLV-DAT & \ac{VDLV} & \ac{PKS} & \ac{SPECT} & DaTSCAN \\
+		PPMI-DAT & \ac{PPMI} & \ac{PKS} & \ac{SPECT} & DaTSCAN \\
+		\bottomrule
+	\end{tabularx}
+	\caption[Summary of the datasets used in this thesis.]{Summary of the datasets used in this thesis.}
+	\label{tab:datasetsOverview}
+\end{table}
+\section{Magnetic Resonance Imaging}
+\subsection{ADNI-MRI, Alzheimer's Disease Neuroimaging Initiative}
+AD
+\subsection{AIMS-MRI, MRC-AIMS Consortium}\label{sec:aims-mri}
+Structural MRI were analysed from 136 adult, right-handed males (68 with ASD and 68 matched controls) with no significant mean differences in age and full-scale IQ, acquired from the centres contributing to the UK Medical Research Council Autism Imaging Multi-centre Study (MRC AIMS) (Ecker, et al., 2013; Ecker, et al., 2012) and recruited by advertisement. In this work, only participants recruited at the Institute of Psychiatry, King’s College London (LON) and the Autism Research Centre, University of Cambridge (CAM) were included where an equivalent set of images were acquired from each participant. 
+
+Participants were excluded from the study if they had a history of major psychiatric disorder or medical illness affecting brain function (e.g. psychosis or epilepsy), or current drug misuse (including alcohol), or were taking antipsychotic medication, mood stabilizers or benzodiazepines. 
+
+All participants with ASD were diagnosed according to International Classification of Diseases, 10th Revision (ICD-10) research criteria, and confirmed using the Autism Diagnostic Interview-Revised (ADI-R) (Lord, et al., 1994). Autism Diagnostic Observation Schedule (ADOS) (Lord, et al., 2000) was performed, but the score was not considered as an inclusion criteria. ASD participants, to be included, must have scored above the ADI-R cut-off in the three domains of impaired reciprocal social interaction, communication and repetitive behaviours and stereotyped patterns, although failure to reach cut-off in one of the domains by one point was permitted. Intellectual ability was assessed using the Wechsler Abbreviated Scale of Intelligence (WASI) (Wechsler, 1999), ensuring the participants fell within the high-functioning range on the spectrum defined by a full-scale IQ > 70. The demographics of the participants are shown in detail in  Table~\ref{tab:demoMRCAIMS}. 
+\begin{table}[h]
+	\myfloatalign
+	\begin{tabularx}{\textwidth}{lllXX} 
+		\toprule
+		\tableheadline{Database} & \tableheadline{Group} & \tableheadline{N} & \tableheadline{Age ($\mu \pm \sigma$ years)} & \tableheadline{IQ ($\mu \pm \sigma $)}\\
+		\midrule
+		\multirow{2}{*}{LON} & ASD & 39 & $28.74 \pm 6.52$ & $111.28 \pm 13.13$ \\
+		& CTL & 40 & $25.30\pm6.62$ &	$104.67\pm11.16$\\\midrule
+		\multirow{2}{*}{CAM} & ASD & 29 & $26.83\pm4.64$ & $115.83\pm11.88$\\
+		& CTL & 28 & $26.75 \pm 7.32$ & $115.25\pm13.67$\\\midrule
+		\multirow{2}{*}{ALL} &ASD & 68 & $25.90\pm6.95$ &	$109.03\pm13.31$\\
+		& CTL & 68 & $27.93 \pm 5.87$ &$113.22\pm12.81$\\
+		\bottomrule
+	\end{tabularx}
+	\caption[Demographics of the AIMS-MRI dataset.]{Demographics of the AIMS-MRI dataset.}
+	\label{tab:demoMRCAIMS}
+\end{table}
+
+Structural MRI were obtained using Driven Equilibrium Single Pulse
+Observation of T1 and T2 (DESPOT1, DESPOT2) (Deoni, et al., 2008) at
+King’s College London and University of Cambridge, both with 3T GE
+Medical Systems HDx scanners. Using multiple Spoilt Gradient Recall
+(SPGR) acquisitions in the DESPOT1 sequence and Steady State Free
+Procession (SSPF) acquisitions in the DESPOT2 sequence, with different
+flip angles and repetition times, \ac{qT1} and
+\ac{qT2} maps were calculated with a custom ImageJ plug-in package. Correction
+of main and transmit magnetic field (B0 and B1) inhomogeneity effects
+was performed during the estimation of T1 and T2.
+
+For accurate registration to the standard stereotatic space of the
+\ac{MNI}, a \ac{synT1} images were created based on the \ac{qT1}
+maps (Ecker, et al., 2013; Ecker, et al., 2012; Lai, et al., 2012). The
+\ac{synT1} images were then segmented using New Segment into \ac{GM} and
+\ac{WM} maps, and normalized to the \ac{MNI} space using DARTEL in
+SPM8 (Friston, et al., 2007), with modulation (preserve volume) to
+retain information of regional/local \ac{GM} and \ac{WM} volumes, and smoothed
+with a 3mm FWHM Gaussian Kernel to account for inter-subject
+mis-registration. The \ac{synT1}, \ac{qT1} and \ac{qT2} maps were also registered to
+the standard \ac{MNI} space using the same DARTEL flow fields, but without
+modulation (preserve concentration) to retain information of
+regional/local T1 contrast, T1 relaxation time, and T2 relaxation
+times, and smoothed with a 3mm FWHM Gaussian kernel. Therefore, there
+were five different modalities: \ac{qT1}, \ac{qT2}, \ac{synT1} map, \ac{GM} and \ac{WM} maps,
+for each every participant, which allows us to observe the impact of our \ac{SWPCA} correction of site-related undesired variance on quantitative (\ac{qT1} and \ac{qT2}), simulated (\ac{synT1}) images and probability maps (\ac{GM} and \ac{WM}).
+	
+During the pre-processing of the images, several procedures targeted the reduction of inter-subject and inter-site geometric distortion, amongst them the correction of B0 and B1 field inhomogeneity effects and the registration to \ac{MNI} space. Many other algorithms have been proposed to help in this task. However, the study of their relative performance lies beyond the scope of this article. Following image registration, it was assumed that only the intensity of the maps was affected between sites.
+
+\section{Positron Emission Tomography}
+\subsection{ADNI-PET, Alzheimer's Disease Neuroimaging Initiative}
+\section{Single Photon Emission Computed Tomography}
+
+\subsection{VDLN-HMPAO, Virgen de las Nieves}
+SPECT HMPAO 
+
+\subsection{VDLN-DAT, Virgen de las Nieves}
+SPECT DATSCAN
+
+\subsection{VDLV-DAT, Virgen de la Victoria Hospital}
+
+\subsection{PPMI-DAT, Parkinson's Progression Markers Initiative}
