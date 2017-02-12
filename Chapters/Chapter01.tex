@@ -10,8 +10,18 @@ The basis of these studies are common: a selection procedure by which a represen
 
 One fundamental issue often found in this studies is the sample size. The number of subjects frequently ranges from tens to hundreds, whereas the number of features (namely voxels) to be analysed can add up to millions. This causes the so-called \emph{Small Sample Size Problem} \cite{Duin2000} which negatively affects the statistical power of any experiment performed using these datasets \cite{Button2013}. 
 
+\begin{figure}
+\centering
+\includegraphics[width=0.6\linewidth]{Graphics/ch1/smallsample}
+\caption[Illustration of one and two-dimensional spaces.]{Illustration of the separation between points in one-dimensional and two-dimensional spaces.}
+\label{fig:smallsample}
+\end{figure}
+
+
 \section{The Small Sample Size Problem}\label{sec:smallsamplesize}
-The \textit{Small Sample Size Problem} refers to a problem that arises when the proportion between number of subjects and number of features is large. It implies as a loss of statistical power of the methods used, usually involving false negatives (the system is unable to detect real signal) false positives (the system detects signal where there is not). These are known in statistics as Type I and Type II errors respectively. 
+The \textit{Small Sample Size Problem} refers to a problem that arises when the proportion between number of subjects and number of features is large. Think of, \eg, 15 points in a one-dimensional line, as in Figure~\ref{fig:smallsample}. If we think of a subject as a vector, we would have 15 subjects in a one-dimensional space. Now, imagine that we add a second dimension. It is easy to see that our subjects would be farther than in the two-dimensional world. And the same would happen if we move to four, ten or thousands of dimensions. The farther our points are, the more difficult is for a statistical tool to extract information. That is what we call \textit{almost empty spaces} \cite{Stoeckel04}, in contrast to \textit{dense spaces}, where points are closer. 
+
+Neuroimaging provides hundreds of thousands, or even millions of voxels, in what could mean millions of features. That implies that any calculation performed in those almost empty spaces will eventually lack information. This implies a loss of statistical power of the methods used, usually producing false negatives (the system is unable to detect real signal) and false positives (the system detects signal where there is not). These are known in statistics as Type I and Type II errors respectively. 
 
 In differential diagnosis studies, the small sample size problem leads to wrong conclusions about where real differences are located. This, in addition to untracked confounding variables are one of the fundamental sources of non-re\-pro\-du\-ci\-bi\-li\-ty un current neuroimaging studies \cite{Button2013}. 
 
@@ -23,7 +33,16 @@ The Small Sample Size problem is directly related to the \textit{Curse of Dimens
 
 % DONE
 \section{Aims and Objectives}\label{sec:overview}
-The overall goal of this thesis is to contribute to the thriving field of Neuroimage processing and \ac{CAD}-  
+This thesis aims to contribute new approaches to overcome the small sample size problem in neuroimaging. This can provide more accurate \ac{CAD} systems by reducing the number of false positives, increasing the reliability of their results. 
+
+We will take two different approaches, as commented in previous sections: increasing the sample size and reducing the feature space. Therefore, we can define the following objectives: 
+
+\begin{itemize}
+	\item Develop and evaluate algorithms that reduce the feature space, in which is usually known in the field as feature extraction and feature selection strategies. 
+	\item Develop and evaluate new strategies to increase the sample size in neuroimaging studies. 
+\end{itemize}
+
+Many strategies have been proposed . 
 
 In this thesis we plan to tackle the Small Sample Size problem in two different approaches. 
 
@@ -56,6 +75,8 @@ Here is an example of a project aim and subsidiary objectives:
 
 Obj: provide more accurate CAD systems by reducing the number of false positives, increasing the reliability of their results. 
 
+1 - Develop and evaluate different strategies for reducing the feature space. 
+2 - Develop and evaluate different strategies for safely increasing the sample size. 
 
 The overall goal of this thesis was to contribute to the emerging field of statistical eco-
 toxicology, environmental risk assessment and environmental monitoring. The main
