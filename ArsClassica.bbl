@@ -262,6 +262,55 @@
       \endverb
       \keyw{sbm,hmm,parametrization,mri,adni,ad,alzheimer,own}
     \endentry
+    \entry{Khedher2015}{article}{}
+      \name{author}{5}{}{%
+        {{hash=691bcfbf7f037d45f46ae681628a82df}{%
+           family={Khedher},
+           family_i={K\bibinitperiod},
+           given={L.},
+           given_i={L\bibinitperiod}}}%
+        {{hash=feb8d5aab03ec8ed81924ca4f258be62}{%
+           family={Ramírez},
+           family_i={R\bibinitperiod},
+           given={J.},
+           given_i={J\bibinitperiod}}}%
+        {{hash=7abaa12fe16012bf9858fc761e93d487}{%
+           family={Górriz},
+           family_i={G\bibinitperiod},
+           given={J.M.},
+           given_i={J\bibinitperiod}}}%
+        {{hash=9d0e32f8e441ee8a5d4ac9602f964539}{%
+           family={Brahim},
+           family_i={B\bibinitperiod},
+           given={A.},
+           given_i={A\bibinitperiod}}}%
+        {{hash=a82a4a0f3202a8d229f302ebd30a4d13}{%
+           family={Segovia},
+           family_i={S\bibinitperiod},
+           given={F.},
+           given_i={F\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Elsevier BV}%
+      }
+      \strng{namehash}{441ad20cb98cfa1e485a82b188ed3f7d}
+      \strng{fullhash}{4a3de162a920f233e092a0e5ee0548ac}
+      \field{sortinit}{2}
+      \field{sortinithash}{8343b463aacf48517c044b4d2c9c45ed}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issn}{0925-2312}
+      \field{journaltitle}{Neurocomputing}
+      \field{month}{03}
+      \field{title}{Early diagnosis of Alzheimer's disease based on partial least squares, principal component analysis and support vector machine using segmented {MRI} images}
+      \field{volume}{151}
+      \field{year}{2015}
+      \field{pages}{139\bibrangedash 150}
+      \range{pages}{12}
+      \verb{doi}
+      \verb 10.1016/j.neucom.2014.09.072
+      \endverb
+    \endentry
     \entry{Martinez-MurciaVRLBP}{inproceedings}{}
       \name{author}{5}{}{%
         {{hash=f13fcabedae6437aaa5e694f277d9fcb}{%
@@ -749,6 +798,51 @@
       \endverb
       \keyw{Brain,radionuclide imaging; Brain Mapping,methods; Humans; Image Processing,Computer-Assisted,methods; Radiopharmaceuticals; Tomography,Emission-Computed,Single-Photon,methods; Tropanes}
     \endentry
+    \entry{Segovia2013}{article}{}
+      \name{author}{5}{}{%
+        {{hash=772517a755cbc91dd250c3a71f2e7bb6}{%
+           family={Segovia},
+           family_i={S\bibinitperiod},
+           given={Fermín},
+           given_i={F\bibinitperiod}}}%
+        {{hash=0ae46c1c8fdcf3c617ff89ef2f91701b}{%
+           family={Górriz},
+           family_i={G\bibinitperiod},
+           given={JM},
+           given_i={J\bibinitperiod}}}%
+        {{hash=6450d056a7ef88a8321faa1c9474f31c}{%
+           family={Ramírez},
+           family_i={R\bibinitperiod},
+           given={Javier},
+           given_i={J\bibinitperiod}}}%
+        {{hash=80c0a5abb383820c98e1e918318b6214}{%
+           family={Salas-Gonzalez},
+           family_i={S\bibinithyphendelim G\bibinitperiod},
+           given={Diego},
+           given_i={D\bibinitperiod}}}%
+        {{hash=0f8178b85d163d24c09fa58e5453262c}{%
+           family={Álvarez},
+           family_i={Á\bibinitperiod},
+           given={Ignacio},
+           given_i={I\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Elsevier}%
+      }
+      \strng{namehash}{0605a7746a8c0afa1d726c52d83c4f5d}
+      \strng{fullhash}{7693b6be8fe1fad36507dff328405b75}
+      \field{sortinit}{2}
+      \field{sortinithash}{8343b463aacf48517c044b4d2c9c45ed}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Expert Systems with Applications}
+      \field{number}{2}
+      \field{title}{Early diagnosis of Alzheimer's disease based on partial least squares and support vector machine}
+      \field{volume}{40}
+      \field{year}{2013}
+      \field{pages}{677\bibrangedash 683}
+      \range{pages}{7}
+    \endentry
     \entry{Weiskopf2013}{article}{}
       \name{author}{9}{}{%
         {{hash=32d6921b813a342d678cf6ee9395b067}{%
@@ -987,9 +1081,6 @@
       \verb{doi}
       \verb 10.1016/j.asoc.2010.08.012
       \endverb
-      \verb{file}
-      \verb Gorriz2010-GMM.pdf:AD/Gorriz2010-GMM.pdf:PDF;Gorriz2010-ROI.pdf:AD/Gorriz2010-ROI.pdf:PDF
-      \endverb
       \keyw{SPECT}
     \endentry
     \entry{Illan2011}{article}{}
@@ -1122,6 +1213,49 @@
       \endverb
       \keyw{feature,factor analysis,decomposition,test,adni,alzheimer,spect,pet,own}
     \endentry
+    \entry{Towey2011}{article}{}
+      \name{author}{3}{}{%
+        {{hash=c6058f6f90a25792da643d9475477335}{%
+           family={Towey},
+           family_i={T\bibinitperiod},
+           given={David\bibnamedelima J},
+           given_i={D\bibinitperiod\bibinitdelim J\bibinitperiod}}}%
+        {{hash=ea8cf236661a49d624046b8045b59f11}{%
+           family={Bain},
+           family_i={B\bibinitperiod},
+           given={Peter\bibnamedelima G},
+           given_i={P\bibinitperiod\bibinitdelim G\bibinitperiod}}}%
+        {{hash=50693093a78f2b32731360602c284d1c}{%
+           family={Nijran},
+           family_i={N\bibinitperiod},
+           given={Kuldip\bibnamedelima S},
+           given_i={K\bibinitperiod\bibinitdelim S\bibinitperiod}}}%
+      }
+      \strng{namehash}{c020030e24fe51d622844addcbf2d813}
+      \strng{fullhash}{c020030e24fe51d622844addcbf2d813}
+      \field{sortinit}{2}
+      \field{sortinithash}{8343b463aacf48517c044b4d2c9c45ed}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{{INTRODUCTION} We present a method of automatic classification of I-fluoropropyl-carbomethoxy-3\beta-4-iodophenyltropane {(FP-CIT)} images. This technique uses singular value decomposition {(SVD)} to reduce a training set of patient image data into vectors in feature space {(D} space). The automatic classification techniques use the distribution of the training data in D space to define classification boundaries. Subsequent patients can be mapped into D space, and their classification can be automatically given. {METHODS} The technique has been tested using 116 patients for whom the diagnosis of either Parkinsonian syndrome or {non-Parkinsonian} syndrome has been confirmed from post {I-FP-CIT} imaging follow-up. The first three components were used to define D space. Two automatic classification tools were used, naïve Bayes {(NB)} and group prototype. A leave-one-out cross-validation was performed to repeatedly train and test the automatic classification system. Four commercially available systems for the classification were tested using the same clinical database. {RESULTS} The proposed technique combining {SVD} and {NB} correctly classified 110 of 116 patients (94.8\%), with a sensitivity of 93.7\% and specificity of 97.3\%. The combination of {SVD} and an automatic classifier performed as well or better than the commercially available systems. {CONCLUSION} The combination of data reduction by {SVD} with automatic classifiers such as {NB} can provide good diagnostic accuracy and may be a useful adjunct to clinical reporting.}
+      \field{issn}{1473-5628}
+      \field{journaltitle}{Nuclear Medicine Communications}
+      \field{month}{08}
+      \field{note}{{PMID:} 21659911}
+      \field{number}{8}
+      \field{title}{{Automatic classification of {123I-{FP}-CIT (DaTSCAN) SPECT} images}}
+      \field{volume}{32}
+      \field{year}{2011}
+      \field{pages}{699\bibrangedash 707}
+      \range{pages}{9}
+      \verb{doi}
+      \verb 10.1097/MNM.0b013e328347cd09
+      \endverb
+      \verb{url}
+      \verb http://www.ncbi.nlm.nih.gov/pubmed/21659911
+      \endverb
+      \keyw{Automation; Female; Humans; Image Interpretation; {Computer-Assisted}; Male; Middle Aged; Parkinsonian Disorders; Principal Component Analysis; Tomography; {Emission-Computed}; {Single-Photon}; Tropanes}
+    \endentry
     \entry{Benjamini2010}{article}{}
       \name{author}{1}{}{%
         {{hash=2bf06df9b6fb1b6a6811f2965ef58db2}{%
@@ -1245,7 +1379,7 @@
       \field{sortinithash}{8343b463aacf48517c044b4d2c9c45ed}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
-      \field{abstract}{The most commonly used methods in CT for parallel beam projection data are the filtered backprojection (FBP) methods. (In some of the earlier literature these methods are also referred to as “convolution methods.”) The reason for this is ease of implementation combined with good accuracy. These methods are transform methods, where the taking of the derivative and the Hilbert transform is approximated by the use of a single convolution.}
+      \field{abstract}{The most commonly used methods in CT for parallel beam projection data are the filtered backprojection (FBP) methods. (In some of the earlier literature these methods are also referred to as ``convolution methods.'') The reason for this is ease of implementation combined with good accuracy. These methods are transform methods, where the taking of the derivative and the Hilbert transform is approximated by the use of a single convolution.}
       \field{booktitle}{Fundamentals of Computerized Tomography}
       \field{day}{01}
       \field{isbn}{978-1-85233-617-2}
@@ -2175,7 +2309,7 @@
       \field{sortinithash}{8343b463aacf48517c044b4d2c9c45ed}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
-      \field{booktitle}{Proc. 15th Int Pattern Recognition Conf}
+      \field{booktitle}{Proceedings of the 15th International Pattern Recognition Conference}
       \field{issn}{1051-4651}
       \field{title}{Classifiers in almost empty spaces}
       \field{volume}{2}
@@ -2451,9 +2585,6 @@
       \field{year}{1973}
       \field{pages}{610\bibrangedash 621}
       \range{pages}{12}
-      \verb{file}
-      \verb Haralick73-Textural features for image classification.pdf:Estadística/Pattern Recognition/Texturas/Haralick73-Textural features for image classification.pdf:PDF
-      \endverb
     \endentry
   \endsortlist
   \sortlist[entry]{nyt/global/}
@@ -2873,7 +3004,7 @@
       \field{sortinithash}{78f7c4753a2004675f316a80bdb31742}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
-      \field{booktitle}{Proc. 15th Int Pattern Recognition Conf}
+      \field{booktitle}{Proceedings of the 15th International Pattern Recognition Conference}
       \field{issn}{1051-4651}
       \field{title}{Classifiers in almost empty spaces}
       \field{volume}{2}
@@ -3113,9 +3244,6 @@
       \verb{doi}
       \verb 10.1016/j.asoc.2010.08.012
       \endverb
-      \verb{file}
-      \verb Gorriz2010-GMM.pdf:AD/Gorriz2010-GMM.pdf:PDF;Gorriz2010-ROI.pdf:AD/Gorriz2010-ROI.pdf:PDF
-      \endverb
       \keyw{SPECT}
     \endentry
     \entry{haar2014anatomical}{article}{}
@@ -3185,9 +3313,6 @@
       \field{year}{1973}
       \field{pages}{610\bibrangedash 621}
       \range{pages}{12}
-      \verb{file}
-      \verb Haralick73-Textural features for image classification.pdf:Estadística/Pattern Recognition/Texturas/Haralick73-Textural features for image classification.pdf:PDF
-      \endverb
     \endentry
     \entry{Herman2009l}{incollection}{}
       \name{author}{1}{}{%
@@ -3206,7 +3331,7 @@
       \field{sortinithash}{82012198d5dfa657b8c4a168793268a6}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
-      \field{abstract}{The most commonly used methods in CT for parallel beam projection data are the filtered backprojection (FBP) methods. (In some of the earlier literature these methods are also referred to as “convolution methods.”) The reason for this is ease of implementation combined with good accuracy. These methods are transform methods, where the taking of the derivative and the Hilbert transform is approximated by the use of a single convolution.}
+      \field{abstract}{The most commonly used methods in CT for parallel beam projection data are the filtered backprojection (FBP) methods. (In some of the earlier literature these methods are also referred to as ``convolution methods.'') The reason for this is ease of implementation combined with good accuracy. These methods are transform methods, where the taking of the derivative and the Hilbert transform is approximated by the use of a single convolution.}
       \field{booktitle}{Fundamentals of Computerized Tomography}
       \field{day}{01}
       \field{isbn}{978-1-85233-617-2}
@@ -3398,6 +3523,55 @@
       \field{year}{2005}
       \field{pages}{2785\bibrangedash 2808}
       \range{pages}{24}
+    \endentry
+    \entry{Khedher2015}{article}{}
+      \name{author}{5}{}{%
+        {{hash=691bcfbf7f037d45f46ae681628a82df}{%
+           family={Khedher},
+           family_i={K\bibinitperiod},
+           given={L.},
+           given_i={L\bibinitperiod}}}%
+        {{hash=feb8d5aab03ec8ed81924ca4f258be62}{%
+           family={Ramírez},
+           family_i={R\bibinitperiod},
+           given={J.},
+           given_i={J\bibinitperiod}}}%
+        {{hash=7abaa12fe16012bf9858fc761e93d487}{%
+           family={Górriz},
+           family_i={G\bibinitperiod},
+           given={J.M.},
+           given_i={J\bibinitperiod}}}%
+        {{hash=9d0e32f8e441ee8a5d4ac9602f964539}{%
+           family={Brahim},
+           family_i={B\bibinitperiod},
+           given={A.},
+           given_i={A\bibinitperiod}}}%
+        {{hash=a82a4a0f3202a8d229f302ebd30a4d13}{%
+           family={Segovia},
+           family_i={S\bibinitperiod},
+           given={F.},
+           given_i={F\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Elsevier BV}%
+      }
+      \strng{namehash}{441ad20cb98cfa1e485a82b188ed3f7d}
+      \strng{fullhash}{4a3de162a920f233e092a0e5ee0548ac}
+      \field{sortinit}{K}
+      \field{sortinithash}{a7d5b3aec5a0890aae7baf85a209abfc}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issn}{0925-2312}
+      \field{journaltitle}{Neurocomputing}
+      \field{month}{03}
+      \field{title}{Early diagnosis of Alzheimer's disease based on partial least squares, principal component analysis and support vector machine using segmented {MRI} images}
+      \field{volume}{151}
+      \field{year}{2015}
+      \field{pages}{139\bibrangedash 150}
+      \range{pages}{12}
+      \verb{doi}
+      \verb 10.1016/j.neucom.2014.09.072
+      \endverb
     \endentry
     \entry{Kohavi1995a}{inproceedings}{}
       \name{author}{1}{}{%
@@ -4528,6 +4702,51 @@
       \endverb
       \keyw{Aged; Case-Control Studies; Caudate Nucleus,metabolism; Cocaine,analogs & derivatives; Corpus Striatum,metabolism; Diagnosis,Differential; Discriminant Analysis; Dopamine,metabolism; Dopamine Plasma Membrane Transport Proteins; Female; Humans; Linear Models; Male; Membrane Glycoproteins,metabolism; Membrane Transport Proteins,metabolism; Mesencephalon,metabolism; Middle Aged; Multiple System Atrophy,metabolism,radionuclide imaging; Nerve Tissue Proteins,metabolism; Parkinson Disease,metabolism,radionuclide imaging; Radiopharmaceuticals; Receptors,Dopamine D2,metabolism; Tomography,Emission-Computed,Single-Photon}
     \endentry
+    \entry{Segovia2013}{article}{}
+      \name{author}{5}{}{%
+        {{hash=772517a755cbc91dd250c3a71f2e7bb6}{%
+           family={Segovia},
+           family_i={S\bibinitperiod},
+           given={Fermín},
+           given_i={F\bibinitperiod}}}%
+        {{hash=0ae46c1c8fdcf3c617ff89ef2f91701b}{%
+           family={Górriz},
+           family_i={G\bibinitperiod},
+           given={JM},
+           given_i={J\bibinitperiod}}}%
+        {{hash=6450d056a7ef88a8321faa1c9474f31c}{%
+           family={Ramírez},
+           family_i={R\bibinitperiod},
+           given={Javier},
+           given_i={J\bibinitperiod}}}%
+        {{hash=80c0a5abb383820c98e1e918318b6214}{%
+           family={Salas-Gonzalez},
+           family_i={S\bibinithyphendelim G\bibinitperiod},
+           given={Diego},
+           given_i={D\bibinitperiod}}}%
+        {{hash=0f8178b85d163d24c09fa58e5453262c}{%
+           family={Álvarez},
+           family_i={Á\bibinitperiod},
+           given={Ignacio},
+           given_i={I\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Elsevier}%
+      }
+      \strng{namehash}{0605a7746a8c0afa1d726c52d83c4f5d}
+      \strng{fullhash}{7693b6be8fe1fad36507dff328405b75}
+      \field{sortinit}{S}
+      \field{sortinithash}{fd1e7c5ab79596b13dbbb67f8d70fb5a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Expert Systems with Applications}
+      \field{number}{2}
+      \field{title}{Early diagnosis of Alzheimer's disease based on partial least squares and support vector machine}
+      \field{volume}{40}
+      \field{year}{2013}
+      \field{pages}{677\bibrangedash 683}
+      \range{pages}{7}
+    \endentry
     \entry{Smith2004}{article}{}
       \name{author}{17}{}{%
         {{hash=49a89c6ede91f785956919ac7c0878c3}{%
@@ -4740,6 +4959,49 @@
       \field{title}{Pattern Recognition}
       \field{year}{1999}
     \endentry
+    \entry{Towey2011}{article}{}
+      \name{author}{3}{}{%
+        {{hash=c6058f6f90a25792da643d9475477335}{%
+           family={Towey},
+           family_i={T\bibinitperiod},
+           given={David\bibnamedelima J},
+           given_i={D\bibinitperiod\bibinitdelim J\bibinitperiod}}}%
+        {{hash=ea8cf236661a49d624046b8045b59f11}{%
+           family={Bain},
+           family_i={B\bibinitperiod},
+           given={Peter\bibnamedelima G},
+           given_i={P\bibinitperiod\bibinitdelim G\bibinitperiod}}}%
+        {{hash=50693093a78f2b32731360602c284d1c}{%
+           family={Nijran},
+           family_i={N\bibinitperiod},
+           given={Kuldip\bibnamedelima S},
+           given_i={K\bibinitperiod\bibinitdelim S\bibinitperiod}}}%
+      }
+      \strng{namehash}{c020030e24fe51d622844addcbf2d813}
+      \strng{fullhash}{c020030e24fe51d622844addcbf2d813}
+      \field{sortinit}{T}
+      \field{sortinithash}{423d138a005a533b47e6475e39378bf2}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{{INTRODUCTION} We present a method of automatic classification of I-fluoropropyl-carbomethoxy-3\beta-4-iodophenyltropane {(FP-CIT)} images. This technique uses singular value decomposition {(SVD)} to reduce a training set of patient image data into vectors in feature space {(D} space). The automatic classification techniques use the distribution of the training data in D space to define classification boundaries. Subsequent patients can be mapped into D space, and their classification can be automatically given. {METHODS} The technique has been tested using 116 patients for whom the diagnosis of either Parkinsonian syndrome or {non-Parkinsonian} syndrome has been confirmed from post {I-FP-CIT} imaging follow-up. The first three components were used to define D space. Two automatic classification tools were used, naïve Bayes {(NB)} and group prototype. A leave-one-out cross-validation was performed to repeatedly train and test the automatic classification system. Four commercially available systems for the classification were tested using the same clinical database. {RESULTS} The proposed technique combining {SVD} and {NB} correctly classified 110 of 116 patients (94.8\%), with a sensitivity of 93.7\% and specificity of 97.3\%. The combination of {SVD} and an automatic classifier performed as well or better than the commercially available systems. {CONCLUSION} The combination of data reduction by {SVD} with automatic classifiers such as {NB} can provide good diagnostic accuracy and may be a useful adjunct to clinical reporting.}
+      \field{issn}{1473-5628}
+      \field{journaltitle}{Nuclear Medicine Communications}
+      \field{month}{08}
+      \field{note}{{PMID:} 21659911}
+      \field{number}{8}
+      \field{title}{{Automatic classification of {123I-{FP}-CIT (DaTSCAN) SPECT} images}}
+      \field{volume}{32}
+      \field{year}{2011}
+      \field{pages}{699\bibrangedash 707}
+      \range{pages}{9}
+      \verb{doi}
+      \verb 10.1097/MNM.0b013e328347cd09
+      \endverb
+      \verb{url}
+      \verb http://www.ncbi.nlm.nih.gov/pubmed/21659911
+      \endverb
+      \keyw{Automation; Female; Humans; Image Interpretation; {Computer-Assisted}; Male; Middle Aged; Parkinsonian Disorders; Principal Component Analysis; Tomography; {Emission-Computed}; {Single-Photon}; Tropanes}
+    \endentry
     \entry{Weiskopf2013}{article}{}
       \name{author}{9}{}{%
         {{hash=32d6921b813a342d678cf6ee9395b067}{%
@@ -4894,74 +5156,74 @@
       \range{pages}{14}
     \endentry
   \endsortlist
-  \missing{Chen2008}
-  \missing{chan2001patterns}
-  \missing{FastICA99}
-  \missing{Guyon03}
-  \missing{han2006reliability}
-  \missing{soh1999texture}
-  \missing{Ortiz2013}
-  \missing{Shaffer1995}
-  \missing{Booij1998}
-  \missing{Tzourio-Mazoyer2002}
-  \missing{dougall_systematic_2004}
-  \missing{Scherfler2009}
-  \missing{Harman73}
-  \missing{Oja1997}
-  \missing{Eckert2007}
-  \missing{Jong2008}
-  \missing{Evans1993}
-  \missing{Baron2001}
-  \missing{Fischl2004}
-  \missing{Botev2010}
-  \missing{kovalev2001three}
-  \missing{Shepp82}
-  \missing{Giannakopoulos1998}
-  \missing{Bhidayasiri2006}
-  \missing{Segovia2012}
-  \missing{Rojas2012}
-  \missing{Ojala1996}
-  \missing{Illan2012}
-  \missing{Ramirez2009}
-  \missing{Locatelli1998}
-  \missing{Moghal1994}
-  \missing{PunalRioboo2007}
-  \missing{martinez2013texture}
-  \missing{Winogrodzka2003}
-  \missing{Inititative2010}
-  \missing{Dubois2007}
-  \missing{Pievani2013}
-  \missing{PPMI}
-  \missing{Vapnik1982}
-  \missing{AAL}
   \missing{Claus1994}
-  \missing{Fay10}
-  \missing{Medina2008}
-  \missing{Zhao2007}
-  \missing{Alvarez2009}
-  \missing{Misra2009}
-  \missing{Lozano2007}
-  \missing{Hyvarinen1999}
-  \missing{Christine2004}
-  \missing{SaeysInzaLarranaga2007}
-  \missing{Grana2011}
-  \missing{Martinez-Murcia2014}
-  \missing{Unay2007}
-  \missing{McGee2002}
-  \missing{tatsch2008extrapyramidal}
   \missing{Ram'irez2009}
-  \missing{DaelemansHosteMeulderEtAl2003}
-  \missing{jobst_accurate_1998}
-  \missing{Vardi1985}
-  \missing{Zhou2008}
-  \missing{Illan2014}
-  \missing{Hyvarinen2000}
+  \missing{Pievani2013}
+  \missing{Harman73}
+  \missing{Hyvarinen1999}
+  \missing{Dubois2007}
+  \missing{martinez2013texture}
+  \missing{Vapnik1982}
+  \missing{PunalRioboo2007}
+  \missing{SaeysInzaLarranaga2007}
+  \missing{Giannakopoulos1998}
+  \missing{Booij1998}
+  \missing{Inititative2010}
+  \missing{Evans1993}
   \missing{sikio2015mr}
-  \missing{clausi2002analysis}
+  \missing{Baron2001}
   \missing{Yen1995}
+  \missing{Rojas2012}
+  \missing{Alvarez2009}
+  \missing{Medina2008}
+  \missing{Lozano2007}
+  \missing{Christine2004}
+  \missing{AAL}
+  \missing{Winogrodzka2003}
+  \missing{DaelemansHosteMeulderEtAl2003}
+  \missing{Guyon03}
+  \missing{Zhou2008}
+  \missing{chan2001patterns}
+  \missing{Grana2011}
+  \missing{Illan2012}
+  \missing{dougall_systematic_2004}
+  \missing{kovalev2001three}
+  \missing{Ojala1996}
+  \missing{Eckert2007}
+  \missing{Ortiz2013}
+  \missing{Martinez-Murcia2014}
+  \missing{han2006reliability}
+  \missing{Fay10}
+  \missing{McGee2002}
+  \missing{Segovia2012}
+  \missing{jobst_accurate_1998}
+  \missing{Jong2008}
+  \missing{Oja1997}
+  \missing{tatsch2008extrapyramidal}
+  \missing{Ramirez2009}
   \missing{ADInforme2013}
-  \missing{IAIllan2010}
+  \missing{Moghal1994}
+  \missing{Chen2008}
   \missing{Philips2008}
+  \missing{IAIllan2010}
+  \missing{Botev2010}
+  \missing{Unay2007}
+  \missing{Shaffer1995}
+  \missing{Bhidayasiri2006}
+  \missing{soh1999texture}
+  \missing{Shepp82}
+  \missing{Hyvarinen2000}
+  \missing{Illan2014}
+  \missing{Scherfler2009}
+  \missing{Zhao2007}
+  \missing{FastICA99}
+  \missing{Locatelli1998}
+  \missing{Misra2009}
+  \missing{PPMI}
+  \missing{Fischl2004}
+  \missing{clausi2002analysis}
+  \missing{Vardi1985}
+  \missing{Tzourio-Mazoyer2002}
 \endrefsection
 
 \refsection{1}

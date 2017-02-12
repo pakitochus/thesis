@@ -31,7 +31,6 @@ Another option involves reducing the number of features, via feature selection o
 
 The Small Sample Size problem is directly related to the \textit{Curse of Dimensionality} \cite{Krishnaiah1982}, which proves that, in contrast to what could be expected, once a certain classifier performance has been achieved, it holds or even decreases when feeding more features to the classifier. The problem also affects statistical hypothesis testing, a tool widely used for inference in neuroimaging, in what is known as the \textit{Multiple Comparisons} problem \cite{Benjamini2010}, a particular field that is still being studied. 
 
-% DONE
 \section{Aims and Objectives}\label{sec:overview}
 This thesis aims to contribute new approaches to overcome the small sample size problem in neuroimaging. This can provide more accurate \ac{CAD} systems by reducing the number of false positives, increasing the reliability of their results. 
 
@@ -42,49 +41,34 @@ We will take two different approaches, as commented in previous sections: increa
 	\item Develop and evaluate new strategies to increase the sample size in neuroimaging studies. 
 \end{itemize}
 
-Many strategies have been proposed . 
+Most of the studies in the literature focus on the first objective. Feature extraction algorithms that use \ac{PCA} \cite{Khedher2015,Towey2011} or Partial Least Squares \cite{Segovia2013}, among others, are widely studied. We have developed three different approaches to those:
 
-In this thesis we plan to tackle the Small Sample Size problem in two different approaches. 
+\begin{itemize}
+	\item A combination of image decomposition algorithms and feature selection. In this approach we have used three criteria to select the most significant voxels from the images, and then applied \acf{FA} and \acf{ICA} to decompose the data and significantly reduce their feature space. 
+	\item A feature extraction based on texture analysis. 
+	\item A novel strategy called \acf{SBM}. This feature extraction technique uses a spherical coordinate system to map statistical measures to a bidimensional plane. It builds paths used as feature selection vectors where several measures are computed. 
+\end{itemize}
 
+On the other hand, we have evaluate newer ways to increase sample size in neuroimaging studies. We have developed: 
+ \begin{itemize}
+ 	\item A system to reduce undesired variance in structural multicentre studies, called \acf{SWPCA}. This system is intended to reduce the amount of false positives in large collaborations, providing more homogeneous images and improving their statistical analysis. 
+ 	\item An algorithm to simulate functional brain images using existing data, and therefore, increase sample size. 
+ \end{itemize}
 
-First strategy: decrease the number of features -> Feature extraction. This is the subject of Decomposition techniques, Texture Analysis and \ac{SBM}. 
-
-Second strategy: increase the sample size. Most popular option: multi-site studies where subjects are acquired using similar techniques at different sites. This poses a major problem: inhomogeneities, etc. To overcome this we propose the \ac{SWPCA}. Other option: simulate new subjects from the existent database, in order to increase sample size.
-
-
-
-The aim of the work, i.e. the overall purpose of the study, should be clearly and concisely defined.
-
-Aims:
-Are broad statements of desired outcomes, or the general intentions of the research, which 'paint a picture' of your research project
-Emphasize what is to be accomplished (not how it is to be accomplished)
-Address the long-term project outcomes, i.e. they should reflect the aspirations and expectations of the research topic.
-Once aims have been established, the next task is to formulate the objectives. Generally, a project should have no more than two or three aims statements, while it may include a number of objectives consistent with them.
-
-Objectives are subsidiary to aims and:
-
-Are the steps you are going to take to answer your research questions or a specific list of tasks needed to accomplish the goals of the project
-Emphasize how aims are to be accomplished
-Must be highly focused and feasible
-Address the more immediate project outcomes
-Make accurate use of concepts
-Must be sensible and precisely described
-Should read as an 'individual' statement to convey your intentions
-Here is an example of a project aim and subsidiary objectives:
+\begin{figure}
+	\centering
+	\includegraphics[width=0.7\linewidth]{Graphics/ch1/outline}
+	\caption[Structure of the thesis.]{Structure and connexions between the different strategies proposed in this thesis, organized by chapters and parts.}
+	\label{fig:outline}
+\end{figure}
 
 
-Obj: provide more accurate CAD systems by reducing the number of false positives, increasing the reliability of their results. 
+\section{Organization of this Thesis}
+This thesis work is organized in four parts plus appendices, each of which is subdivided in several chapters. In the first part, we introduce the motivations and main aims of this work (Chapter~\ref{ch:introduction}), examine the state of the art in medicine, neuroimaging and \ac{CAD} systems (Chapter~\ref{ch:stateofart}) and present a general methodology that will be followed throughout this thesis, including preprocessing and evaluation (Chapter~\ref{ch:preprocessing}). 
 
-1 - Develop and evaluate different strategies for reducing the feature space. 
-2 - Develop and evaluate different strategies for safely increasing the sample size. 
+Parts \ref{part:feature} and \ref{part:increase} refers to each of the solutions outlined in the previous section, and disaggregated in Figure~\ref{fig:outline}. In part~\ref{part:feature} we focus on the feature reduction techniques, including decomposition methods (Chapter~\ref{ch:decomposition}), texture analysis (Chapter~\ref{ch:texture}), and the novel algorithm Spherical Brain Mapping (Chapter~\ref{ch:sbm}). On the other hand, Part~\ref{part:increase} is focused on two different strategies used to increase the sample size: the Significance Weighted Principal Component Analysis algorithm (Chapter~\ref{ch:swpca}), used to safely merge structural images acquired at different centres, and a neuroimage simulation algorithm (Chapter~\ref{ch:simulation}) that can be used to extend existing functional datasets. 
 
-The overall goal of this thesis was to contribute to the emerging field of statistical eco-
-toxicology, environmental risk assessment and environmental monitoring. The main
-objectives were (i) to scrutinise new methods in statistical ecotoxicology and effect as-
-sessment, (ii) explore risk dynamics using available monitoring data and (iii) provide
-tools to deal with and integrate big data in ERA. Figure 1.1 provides a conceptual
-overview on ERA and environmental monitoring as outlined in the previous sections,
-as well as the parts considered in this thesis and their relationships.
+Finally, in Part~\ref{part:dicussion} we provide a general discussion of the results presented in this thesis, conclusions about the methods and prospective work that could be performed with this basis. 
 
 \section{Contributions}
 Some ideas and figures have appeared previously in the following publications, that we divide here in articles and conference presentations. 
@@ -103,17 +87,5 @@ Some ideas and figures have appeared previously in the following publications, t
 	\printbibliography[env=nolabelbib,heading=none,keyword=own, title={Books}, type=inbook]
 \end{refsection}
 
-\section{Organization of this Thesis}
 
-\begin{figure}
-\centering
-\includegraphics[width=0.7\linewidth]{Graphics/ch1/outline}
-\caption[Structure of the thesis.]{Structure and connexions between the different strategies proposed in this thesis, organized by chapters and parts.}
-\label{fig:outline}
-\end{figure}
-
-This thesis work is organized in four parts plus appendices, each of which is subdivided in several chapters. In the first part, we introduce the motivations and main aims of this work (Chapter~\ref{ch:introduction}), examine the state of the art in medicine, neuroimaging and \ac{CAD} systems (Chapter~\ref{ch:stateofart}) and present a general methodology that will be followed throughout this thesis, including preprocessing and evaluation (Chapter~\ref{ch:preprocessing}). 
-
-Parts \ref{part:feature} and \ref{part:increase} refers to each of the solutions outlined above, and disaggregated in Figure~\ref{fig:outline}. In part~\ref{part:feature} we focus on the feature reduction techniques, including decomposition methods (Chapter~\ref{ch:decomposition}), texture analysis (Chapter~\ref{ch:texture}), and the novel algorithm Spherical Brain Mapping (Chapter~\ref{ch:sbm}). On the other hand, Part~\ref{part:increase} is focused on two different strategies used to increase the sample size: the Significance Weighted Principal Component Analysis algorithm (Chapter~\ref{ch:swpca}), used to safely merge structural images acquired at different centres, and a neuroimage simulation algorithm (Chapter~\ref{ch:simulation}) that can be used to extend existing functional datasets. 
-
-Finally, in Part~\ref{part:dicussion} we provide a general discussion of the results presented in this thesis, conclusions about the methods and prospective work that could be performed with this basis. 
+% DONE
