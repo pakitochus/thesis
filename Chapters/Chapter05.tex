@@ -1,131 +1,192 @@
 %************************************************
-\chapter{Image Decomposition}\label{ch:decomposition}
+\chapter{Texture Features}\label{ch:texture}
 %************************************************
-In this, we will focus on \cite{Martinez201141,Martinez-Murcia20129676,Martinez-Murcia2013255,Martinez-Murcia201458}
-\section{Feature Selection}
-\cite{Martinez201141,Martinez-Murcia20129676}
-\subsection{$t$-Test}
-Student's $t$-Test ($t$-Test) is a widely used statistical test which quantifies the differences between two different classes. It uses a common estimation of variance for both classes. The value of statistical $t$ can be computed \cite{Fay10} as: 
+\section{Introduction}
+Texture analysis is any procedure intended to classify and quantify the spatial variation of voxel intensity throughout the image. In neuroimaging, they are more commonly used to classify images or to segment them (which can be also considered a form of classification). Depending on the number of variables studies, we can divide the methodology into first, second and higher order statistical texture analysis. In first-order statistics, only voxel intensity values are considered, and values such as average, variance, kurtosis or frequency (histogram) of intensity values are computed. 
 
-\begin{equation}
-t = \frac{\bar {\Omega}_1 - \bar{\Omega}_2}{\sigma^2_{\Omega_1\Omega_2} \cdot \sqrt{\frac{1}{n_1}+\frac{1}{n_2}}}
+Second-order statistical texture analysis is by far the most popular form. It is based on the probability of finding a pair of grey-level at a certain distance and orientation on a certain image. Most algorithms are based in the Grey Level Co-occurrence Matrix (GLCM), in which is known as Haralick Texture Analysis [59]. The GLCM can be thought of as a representation of the frequency of the adjacent pixel variations in a certain spatial direction and distance. For a three dimensional  brain image  and two different grey levels  and , at a given offset  the co-occurrence value is defined as:
+
+\cite{Martinez-Murcia2013266,Martinez-Murcia2014}
+\section{Haralick Texture Features}
+\subsubsection{Gray Level Co-occurrence Matrix}
+%Que son las matriz de coocurrencia y las texture features
+A co-occurrence matrix is a square matrix that counts the number of repetitions of co-occurring values over an image, given an offset that measures the distance from the central to the neighbor voxels. In this work we use a modification of the widely used co-occurrence matrix defined in \cite{Philips2008}, that generalizes this matrix to a three-dimensional space. For two different gray levels $i$ and $j$, the co-occurrence matrix $\mathbf{C}$ is defined over a $n \times m \times k$ three-dimensional image $\mathbf{I}$, given an offset $\Delta$ as follows: 
+\begin{equation}\label{eq:cooc3D}
+\mathbf{C}_{\Delta}(i,j)=\sum_{p=(1,1,1)}^{(n,m,k)}\begin{cases} 1, & \mbox{if }\mathbf{I}(\mathbf{p})=i\mbox{ and }\mathbf{I}(\mathbf{p}+\Delta)=j \\ 0, & \mbox{otherwise}\end{cases}
 \end{equation}
-
-\noindent where
-
-\begin{equation}
-\sigma^2_{\Omega_1\Omega_2} = \sqrt{\frac{(n_1-1)\sigma^2_{\Omega_1}+(n_2-1)\sigma^2_{\Omega_2}}{n_1+n_2-2}}
-\end{equation}
-
-$\sigma^2_{\Omega_1 \Omega_2}$ is an estimator of common standard deviation of both samples, $\bar{\Omega}_1$ and $\bar{\Omega}_2$ are the mean of each class, $n_1$ is the number of samples in class $\omega_1$ and $n_2$ is the number of samples in class $\omega_2$. 
-
-\subsection{Mann-Whitney-Wilcoxon} 
-Mann-Whitney-Wilcoxon $U$-test(MWW) uses the absolute value of the statistical $U$ to rank voxels. Calculation of $U$ value is done by the following expression \cite{Fay10}:
-
-\begin{equation}
-U_i=R_i -  {n_i(n_i+1) \over 2} 
-\end{equation}
-
-\noindent where $n_i$ is the sample size for sample $i$, and $R_i$ is the sum of the ranks in sample $i$ (where $i=1,2$). Smaller $U_i$ value is taken as the final $U$ value. 
-
-This statistical test measures the dissimilarity between two groups of values, and, although is similar to Student's t-Test, is less likely than it to spuriously indicate significance because of the presence of outliers. As we make use of real data, and we have no knowledge about the images' statistical distribution, MWW test could be a very good choice \cite{Fay10}.
+where $i$ and $j$ are different gray levels, $\mathbf{p}=(x,y,z)$ is the spatial position where $x=1...n, y=1...m, z=1...k$ and $\Delta=(d,d,d)$ is the offset vector, which  has been set as dependent only on the distance $d$. In this work, the 3D-GLC matrix is computed over a selected subimage, computed as defined in Sec. \ref{sec:volume}, and we have performed a rescaling of the original data into $16$ gray levels, leading to a best-performance.
 
 
-\subsection{Relative Entropy} 
-Relative Entropy (or Kullback-Leibler divergence) is a non-symmetric measure of the difference between two probability distributions $\Omega_1$ and $\Omega_2$. Because of its non-symmetric property, we can make use of this to evaluate the difference between CTRL and AD images for each voxel. Relative Entropy can be calculated with equation \ref{kullback} \cite{EntropyBishop}. 
+\subsubsection{Haralick Texture Features}
+%Parámetros de haralick. 
+After computing the 3D-GLC matrix, twelve Haralick Texture Features \cite{Haralick73} are derived, using the following expressions:
 
-Let $\Omega_1$ and $\Omega_2$ be two discrete random variables. Relative Entropy is defined as:
-\begin{equation}\label{kullback}
-KL_{\omega_1 \omega_2} =  \int_{V} \omega_1 \log \frac{\omega_1}{\omega_2} \;d\mu
-\end{equation}
-\noindent where $\mu$ is any measure of $V$, the set of all voxels that are placed on a certain brain coordinate, in which $\omega_1 = \frac{d \Omega_1}{d \mu}$ and $\omega_2 = \frac{d \Omega_2}{d \mu}$ exist. Figure \ref{fig:Zentropy} depicts values of Relative Entropy for each voxel. 
-
-\begin{figure}
-	\centering
-	\includegraphics[width=0.7\textwidth]{gfx/ch5/Zentropy.eps}
-	\caption{Several selected slices of the significance map obtained for each brain coordinate by applying the Relative Entropy criterium to the ADNI database.}
-	\label{fig:Zentropy}
-\end{figure}
-\section{Factor Analysis}
-\cite{Martinez201141,Martinez-Murcia20129676}
-
-To this purpose, a number of key features ($K$) are extracted using Fac\-tor A\-na\-ly\-sis technique \cite{Harman73}. It is assumed that each image in the database is a different observation of the experiment. Factor analysis models each of the $n$ observations as the expression of fewer unobserved variables, which are called factors. Each observation has $N$ variables, which are modelled as lineal combinations of the $K$ factors, plus errors, as described in Eq. \ref{eq:FactorAn1}.
-
-\begin{equation}\label{eq:FactorAn1}
-\textbf{x} = \mu + \boldsymbol\lambda \textbf{F} + \epsilon
-\end{equation}
-
-\noindent where \textbf{x} is the vector containing the observed variable (dimension $n$), $\mu$ is the mean of the variable, $\boldsymbol\lambda$ is a vector of $K$ factor loadings for this observation, $\textbf{F}$ is a matrix of dimension $N \times K$ which contains the common factors and $\epsilon$ is the error of reconstruction. For all observations, Eq. \ref{eq:FactorAn1} can be rewritted as:
-
-\begin{equation}\label{eq:FactorAn2}
-\textbf{X} = \boldsymbol\mu + \boldsymbol\Lambda \textbf{F} + \boldsymbol\epsilon
-\end{equation}
-
-\noindent where $\textbf{X}$ is a matrix of observed variables of dimension $n \times N$, $\boldsymbol\mu$ is a vector of means of length $n$, $\boldsymbol\Lambda$ is a matrix of dimension $n \times K$ which contains the maximum likelihood estimate of the factor loadings for each observation, $\textbf{F}$ is a matrix of dimension $N \times K$ which contains the common factors and $\boldsymbol\epsilon$ is a vector of length $n$ containing reconstruction errors.
-
-\begin{figure*}[htp]
-	\centering
-	\begin{tabular}{cc}
-		 \includegraphics[width=\textwidth]{gfx/ch5/reconstruction}\\
+\begin{center}
+	\begin{tabular}{r|c}
+		Energy & $\sum\limits_{i,j} \{ \mathbf{C}_{\Delta}(i,j)\}^2 $\\
+		Entropy & $-\sum\limits_{i,j} \mathbf{C}_{\Delta}(i,j)*\log(\mathbf{C}_{\Delta}(i,j)) $\\
+		Correlation & $\sum\limits_{i,j} {{(i-\mu_i)(j-\mu_j)\mathbf{C}_{\Delta}(i,j)}\over{\sigma_i\sigma_j}}$\\
+		Contrast & $\sum\limits_{i,j} |i-j|^2 \mathbf{C}_{\Delta}(i,j)$ \\
+		Variance & $\sum\limits_{i,j} (i-\mu_i)^2 \mathbf{C}_{\Delta}(i,j)+ (j-\mu_j)^2\mathbf{C}_{\Delta}(i,j)$\\
+		Sum Mean & ${1 \over 2} \sum\limits_{i,j}(i\mathbf{C}_{\Delta}(i,j)+j\mathbf{C}_{\Delta}(i,j))$\\
+		Inertia & $\sum\limits_{i,j}(i-j)^2*\mathbf{C}_{\Delta}(i,j)$\\
+		Cluster Shade & $\sum\limits_{i,j}(i+j-\mu_x-\mu_y)^3 * \mathbf{C}_{\Delta}(i,j)$\\
+		Cluster Tendency & $\sum\limits_{i,j}\{ i+j-\mu_x-\mu_y\}^4*\mathbf{C}_{\Delta}(i,j)$\\
+		Homogeneity & $\sum\limits_{i,j} {\mathbf{C}_{\Delta}(i,j) \over 1+|i-j|}$\\
+		Max Probability & $\max (\mathbf{C}_{\Delta})$\\
+		Inverse Variance & $\sum\limits_{i,j} {\mathbf{C}_{\Delta}(i,j) \over (i-j)^2}$\\
 	\end{tabular}
-	\caption{\textit{a)} Original PET image composed by $N=7000$ selected voxels and \textit{b)} reconstruction using Factor Analysis with $K=13$ factors extracted.}
-	\label{fig:reconstruction}
+\end{center}
+
+Thirteen spatial directions are considered to compute the GLC matrix (see  \cite{Philips2008}). Furthermore, these GLC matrices can be calculated taking into account all the voxels that are at a distance $d$ from the central voxel, so we have calculated one matrix for each distance $d=1...10$. Therefore, one GLC matrix in each of the $13$ spatial directions and each value of $d$ makes $13\times10=130$ matrices for each image. From each one, $12$ Haralick texture features are computed, so we obtain a feature vector $\mathbf{x}_0$ that contains $1560$ Haralick features that characterizes each image. A lower number of features is desirable in the clustering task, so in the next section, some measures are described to reduce the dimension of $\mathbf{x}_0$ by selecting the most discriminant features. 
+
+\section{Results}
+\subsection{Experiment 1}
+In experiment 1, the influence and effect of using each of the twelve Haralick texture features on the results is tested, as in \cite{martinez2013texture}. GLC matrices are computed at a distance $d$ ranging from 1 to 10 voxels from the central one. As discussed later in this Section, the optimum sub-volume will have a smaller size than $40\times40\times50$, and so, the maximum value of $d=10$ correspond to at least $20\%$ of the brain sub-volume selected at that point; lower frequency textural changes can be neglected for diagnosis. Furthermore, as the voxel size of all databases is approximately 2x2x2mm, the maximum textural changes are computed within a 20x20x20mm area. This is approximately half the size of the striatum, which is enough to correctly extract the textural features of the area. 
+
+The computed GLC matrices are used to extract the Haralick Texture Features in two different ways: a ''single approach'', which only considers one type of feature using only the matrices at a distance $d$ from the central voxel -and using all the spatial directions- and a ''cumulative approach'' which considers one type of feature too, but this time using all matrices in distances ranging from 1 to $d$. 
+
+As commented before, we will use a normalization to the maximum strategy to normalize all the images in our three databases. After this, the 3D-GLC matrices will be computed over the selected subvolumes, given an intensity threshold $I_{th}$ (see Sec. \ref{sec:volume}). The optimum value of $I_{th}$ should be high enough to avoid introducing background voxels in the subvolume selected, yet adequately low to select the biggest subvolume containing only brain voxels. This should lead to the best performance, since the 3D GLC matrices (and the Haralick Texture Features) would have enough information, and would not include non-brain textural patterns. 
+
+To better illustrate the influence of the subvolume selection process, Figure \ref{fig:featuresIth} depicts the average accuracy values for the two aforementioned approaches: Single (only the textural features computed at a distance $d$) and Cumulative (all textural features computed in the 1 to $d$ distance range). In both cases, 10 values of $d$, 13 directions and 12 features have been averaged to obtain the accuracy for each value of the intensity threshold $I_{th}$. 
+
+\begin{figure*}% single and cumulative approach. 
+	\centering
+	\subfloat[Single approach]{\includegraphics[width=0.45\textwidth]{gfx/ch5/featuresIthdis.eps}\label{fig:acc_dist}}
+	\subfloat[Cumulative approach]{\includegraphics[width=0.45\textwidth]{gfx/ch5/featuresIthcum.eps}\label{fig:acc_cum}}
+	\caption{Average accuracy values obtained for \protect\subref{fig:acc_dist} the single approach and \protect\subref{fig:acc_cum} the cumulative approach.}
+	\label{fig:featuresIth}
 \end{figure*}
 
-Original input image can be reconstructed with computed factors and factor loadings, as we have seen in Eq. \ref{eq:FactorAn1}. In Fig. \ref{fig:reconstruction} original image and Factor Analysis reconstruction are shown. The selected regions pinpoint the disease affected areas which are class-discriminative. Specifically, it highlights the posterior cingulate gyri and precunei, as well as the temporo-parietal region, both considered as typically affected by glucose hypometabolism in the AD \cite{Claus1994}. A closer look shows that it also selects small thalamus regions, which has never been described as a relevant region for diagnosis. To compute representativeness of different factors, we can rewrite Eq. \ref{eq:FactorAn2} as:
+The effect of removing the background is clearly shown in these pictures, obtaining best results when using a $I_{th}>0.30\times I_{max}$ and then increasing the accuracy. Furthermore, the effect of the normalization is also clear in these two images. It is possible to notice that, when using no-normalized databases (those noted with a ``-no'' sufix) there are wide ranges of $I_{th}$ values in which similar performance values are obtained, while when using the normalized images, there are obvious peaks of accuracy around some values (usually, 0.30 or 0.35). Having applied no normalization to the images, the average image $I_{mean}$, from which the subvolume coordinates are extracted, is highly affected by the difference of intensities of different anatomical areas. Therefore, the subvolume computed will not be optimum, and for every value of $I_{th}$ there will be an set of samples in which the texture features will be correctly computed, and another set in which those will be poorly extracted. 
 
-\begin{equation}\label{eq:cov}
-Cov (\textbf{X} - \boldsymbol\mu) = Cov(\boldsymbol\Lambda \textbf{F} - \boldsymbol\epsilon)
-\end{equation}
+The behaviour of each of the Haralick texture features can also be analysed using a box plot (see Section \ref{sec:validation}), to show both numerical accuracy values and the properties (robustness, parameter independence) of using each one. Figure \ref{fig:features_acc_distances} depicts all $130$ accuracy results of the ''single approach'' for each feature extracted from a subimage that uses $I_{th}=0.30\times I_{max}$ at each distance $d$ (ranging from 1 to 10) in each of the 13 spatial directions. In this case, we can observe that best performance is obtained with the Cluster Tendency in all databases. Good values are also achieved using Homogeneity, Contrast and Correlation. This behaviour is consistent along all three databases, which allow us to propose Cluster Tendency as the best feature to characterize PD patterns. 
 
-If $\Sigma$ stands for $Cov (\textbf{X} - \boldsymbol\mu)$, Eq. \ref{eq:cov} can be rewritted as:
-
-\begin{equation}
-\boldsymbol\Sigma = \boldsymbol\Lambda Cov(\textbf{F}) \boldsymbol\Lambda^T - Cov(\boldsymbol\epsilon)
-\end{equation}
-
-\begin{equation}
-\boldsymbol\Sigma = \boldsymbol\Lambda \boldsymbol\Lambda^T - \boldsymbol\Psi
-\end{equation}
-
-\noindent and extract $\Psi$, the diagonal matrix containing the specific variances of the reconstruction error.
-
-The choice of K requires a deeper analysis. If $K$ is large, the image can be modelled very well, and therefore, the reconstruction error should be small. However, a large number of features can be counter-productive for the performance of the classifier due to the well known small sample size problem \cite{Duin00}. Thus, we should find a trade-off between the length of the feature vectors ($K$) and the ability of reconstruction. According to Fig. \ref{fig:error}, the variance reconstruction error tends to stabilize as $K$ increases, and the improvements are no longer significant. In the experimental Section \ref{results} a detailed discussion about $K$ parameter selection is shown in addition with other experimental findings.
-
-\begin{figure}[ht]
+\begin{figure*}% Son los del experimento distances
 	\centering
-	\includegraphics[width=0.45\textwidth]{gfx/ch5/varError-K-ADNI}
-	\caption{Specific variance of reconstruction error $\Psi$ using Factor Analysis, in function of number of factors extracted ($K$) for ADNI database (the behaviour is similar in the SPECT database).}
-	\label{fig:error}
+	\subfloat[PPMI database]{\includegraphics[height=0.25\textheight]{gfx/ch5/features_accPPMI.eps}\label{fig:acc_distances_ppmi}}
+	\subfloat[VDLN database]{\includegraphics[height=0.25\textheight]{gfx/ch5/features_accVDLN.eps}\label{fig:acc_distances_vdln}}
+	\subfloat[VDLV database]{\includegraphics[height=0.25\textheight]{gfx/ch5/features_accVDLV.eps}\label{fig:acc_distances_vdlv}}
+	\caption{Box plot of all 130 accuracy values computed for each feature, using the ''single approach'', at 10 distances $d$ (ranging from 1 to 10) and 13 spatial directions, for \protect\subref{fig:acc_distances_ppmi} PPMI database, \protect\subref{fig:acc_distances_vdlv} VDLV database and \protect\subref{fig:acc_distances_vdln} VDLN database. The red marks represent the outliers.}
+	\label{fig:features_acc_distances}
+\end{figure*}
+
+%The following step consists on evaluating the behaviour of this experiment when varying the distance $d$ at which the 3D GLC matrix is computed. 
+%SOME MORE COMMENTS ON THIS. 
+Finally, to characterize the ability of this single-feature approach, we show its performance at the defined operation point (Using an $I_{th}>0.30\times I_{max}$ and a value of $4<d<8$) in Table \ref{tab:exp1Acc}.
+
+\begin{table*}[htp]
+	\centering
+	\begin{tabular}{llcccccccc}
+		Database - approach & $I_{th}$	& $d$	& Feature	& Acc	& Sens	& Spec	& PL	& NL \\
+		\hline\hline
+		PPMI - cumulates	& 30	& 8	& Cluster Tendency	& 0.952	& 0.973	& 0.937	& 15.37	& 0.029 	 \\ % (5,1)
+		PPMI - distances	& 30	& 6	& Cluster Tendency	& 0.952	& 0.964	& 0.943	& 16.92	& 0.038 	 \\ % (4,1)
+		\hline
+		VDLN - cumulates	& 30	& 6	& Cluster Tendency	& 0.906 & 0.911	& 0.904	& 9.50	& 0.098 	 \\ % (6,1)
+		VDLN - distances	& 30	& 6	& Cluster Tendency	& 0.907	& 0.911	& 0.904	& 9.50	& 0.098 	 \\ % (7,1)
+		\hline
+		VDLV - cumulates	& 35	& 7	& Cluster Tendency	& 0.899 & 0.879	& 0.920	& 10.99	& 0.130 	 \\ % (6,1)
+		VDLV - distances	& 35	& 6	& Cluster Tendency	&  0.923	& 0.907	& 0.940	& 15.12	& 0.098 	 \\ % (5,1)
+		\hline\hline
+	\end{tabular}
+	\caption{Accuracy values obtained at the operation point, using Cluster Tendency as a feature. The $I_{th}$ used to compute the GLC matrix is also displayed. }
+	\label{tab:exp1Acc}
+\end{table*}
+
+Obviously, the best approach is the cumulative one, given that it contains a bigger amount of information, and thus, describing in a more accurate way the different images. Note that for the cumulative approach, all values of Cluster Tendency computed between $d=1$ and $d$ are used, while for the single approach, only values of Cluster Tendency at $d$ are considered. However, the single approach also performs relatively well, proving the value of the Haralick texture features to characterize DaTSCAN images. 
+
+Results are particularly good in every case when $I_{th} > 0.30\times I_{max}$, a phenomenon that was previously shown in PPMI database (see Fig. \ref{fig:featuresIth}), but that also extends here to all other databases. 
+
+
+\subsection{Experiment 2}
+For experiment 2, all features computed in the aforementioned experiments (the 13 direction vectors and 10 distances used to compute the 3D coocurrence matrix, and the 12 Haralick texture features extracted from these matrices) are used as an input to the classifier. But, in order to reduce dimensionality, we use the measures of discrimination ability proposed in Section \ref{sec:discrimination} to rank these features in a descending order of ability in distinguish PD patterns from normal controls, selecting the first $N$. 
+
+Firstly, the impact of our volume selection threshold $I_{th}$ (see Sec. \ref{sec:volume}) on the quality of the resulting Haralick Features, and thus, the accuracy of the experiment, will be analysed. As commented before, best results should be obtained when taking into account the biggest volume of the brain containing only brain voxels, and thus, eliminating the background. Regarding all databases, we obtain Figure \ref{fig:averageAcc_IthNorm}, in which average values of accuracy for every value of $I_{th}$ are plotted. These average values are computed in a similar way to Fig. \ref{fig:featuresIth}, by averaging all $50$ accuracy values that correspond to each value of $I_{th}$. The accuracy values are obtained using each of the 5 proposed selection methods, and using each value of percentage of features selected (ranging from 1 to 100\%, by steps of 10\%, of the total amount of 1560 features). 
+
+\begin{figure}[htp]
+	\centering
+	\includegraphics[width=0.90\columnwidth]{gfx/ch5/accuracyOverIth.eps}
+	\caption{Accuracy obtained by averaging all accuracy values using a given volume selection threshold $I_{th}$}
+	\label{fig:averageAcc_IthNorm}
 \end{figure}
 
-\section{Independent Component Analysis}
-\cite{Martinez-Murcia2013255,Martinez-Murcia201458}
+For two out of three databases there is a clear maximum in accuracy for an $I_{th} = 0.30\times I_{max}$, while the remaining one obtain similar results along a wide range of $I_{th}$. Furthermore, best average values are obtained using the normalized database, although the PPMI case is slightly different, due to the attenuation correction preprocessing. In Fig. \ref{fig:cut_thr30} the resulting subimage of applying this threshold was shown, to provide a better understanding of how the textural features are better defined in this. As suggested before, all no-brain voxels are removed from this images, all the textural features correspond only to the internal brain textural changes, and thus, to the textural patterns of the disease, leading to a better performance. 
 
-\acf{ICA} \cite{Hyvarinen2000}, is a statistical technique that represents a multidimensional random vector as a lineal combination of non-gaussian random variables (the so-called ''independent components'') to be as independent as possible, and has been used widely on segmentation and clustering of medical images \cite{DeMartino2007,Alvarez2009,IllanTesis,Theis2005}. It can be considered as a non-gaussian version of Factor Analysis. Assume that we observe $n$ lineal mixtures $\mathbf{x}_1, \mathbf{x}_2, \ldots, \mathbf{x}_n$ of length $N$ that can be modelled as an expression of $K$ independent components (IC). These independent components are defined as $\mathbf{S} = (\mathbf{s}_1, \mathbf{s}_2, ... \mathbf{s}_K)$, where each $\mathbf{s}_K$ vector has a length of $N$. So, each random vector $\mathbf{x}_n$ can be described as a linear combination of $K$ independent components: 
+As results suggest, the use of our volume selection strategy with a intensity threshold between $0.25$ and $0.45$ is profitable in all cases. Also, the use of intensity normalized images, using the normalization to the maximum algorithm has also a good impact on the performance of the system. In this context, Fig. \ref{fig:experiment4} analyses the behavior of our system using each of the discrimination-based ranking methods. On these three figures, the values of the computed average accuracy (using the values for intensity thresholds of $0.10$ to $0.45$) are plotted over the percentage of selected features (previously ranked from the most to the least discriminant, following different criteria) using the three databases. 
 
-\begin{equation}
-\mathbf{x_n} = a_{1n}\mathbf{s}_1 + a_{2n}\mathbf{s}_2 + \ldots + a_{Kn}\mathbf{s}_K
-\end{equation}
+\begin{figure*}
+	\centering
+	\subfloat[PPMI database]{\includegraphics[width=0.45\textwidth]{gfx/ch5/features_avAccPPMI.eps}\label{fig:experiment4-ppmi}}
+	\subfloat[VDLN database]{\includegraphics[width=0.45\textwidth]{gfx/ch5/features_avAccVDLN.eps}\label{fig:experiment4-vdln}}
+	\subfloat[VDLV database]{\includegraphics[width=0.45\textwidth]{gfx/ch5/features_avAccVDLV.eps}\label{fig:experiment4-vdlv}}
+	\caption{Average accuracy computed for each selection criteria, using all accuracy values for intensity thresholds of $0.10$ to $0.45$. These values are plotted over $N$, the number of features selected using some of the ranking criteria defined in Sec. \ref{sec:discrimination} (where $N$ ranges from 1\% and 100\% of the $1560$ total Haralick features calculated). These values correspond to the images of the \protect\subref{fig:experiment4-ppmi} PPMI database, \protect\subref{fig:experiment4-vdlv} VDLV database and \protect\subref{fig:experiment4-vdln} VDLN database (experiment 2).}
+	\label{fig:experiment4}
+\end{figure*}
 
-Without loss of generality we can assume that both the observed vectors and the independent components are are zero mean. If the previous conditions are not met, the $\mathbf{x}$ variables can be centered by subtracting the sample mean. To use a vector-matrix notation, more convenient in this case, we denote as matrix $\mathbf{X}$ the random vector whose elements are $\mathbf{x}_1, \ldots, \mathbf{x}_n$. We also denote as $\mathbf{A}$ the matrix that contains all $a_{Kn}$ elements, the ''mixing matrix'' that projects each image into the space defined by the IC. Using this notation, the mixing model above remains as follows: 
+Some conclusions about the amount of features that each of our discrimination-ranking methods need can be extracted from these average accuracy graphs. Methods that obtain their maximum accuracy using less than 50\% of the features can be considered of great help, as they perform a significant feature reduction. Therefore, methods like Mann-Whitney-Wilcoxon (MWW) can no longer be considered, as it needs more than 50\% of features to obtain good results. The opposite behaviour is given by Bhattacharyya Distance (BD) and Relative Entropy (RE), that obtain their maximum average accuracy using the first 10\% of features. Fisher's Discriminant Ratio (FDR) and $t$-Test need a higher amount, but less than 50\%. 
 
-\begin{equation}\label{eq:ica}
-\mathbf{X}=\mathbf{A}\mathbf{S}
-\end{equation}
+The aforementioned behaviour correspond to an average behaviour in accuracy. To take a deeper look at the different evaluation parameters and different selection criteria, peak results obtained with each selection criteria are shown on Table \ref{tab:exp3Res}. 
 
-The starting point of ICA is the assumption that all components $\mathbf{s}_K$ are are statistically independent. To measure independence, we assume that all independent components have a non-gaussian statistical distribution. It is assumed that a sum of independent signal trends to gaussianity, so if non-gaussianity is maximized with any independence criteria $F$, for instance, the kurtosis or negentropy, we obtain signals that are more independent than the previous ones \cite{Hyvarinen1999,Hyvarinen2000}.
-After estimating the matrix $\mathbf{A}$, we can compute its inverse, $\mathbf{W}$ and obtain the projection $\mathbf{S}$ of the images in the dataset into the IC space with: 
-\begin{equation}
-\mathbf{S} = \mathbf{W}\mathbf{X}
-\end{equation}
+\begin{table*}[htp]
+	\centering
+	\begin{tabular}{llcccccc}
+		Database 	 & Criterium	& Accuracy	& Sensitivity	& Specificity	& PL	& NL	& \% \\
+		\hline \hline
+		\multirow{5}{*}{\textbf{PPMI}}	& Bhattacharyya	& 0.967	& 0.973	& 0.962	& 25.62	& 0.028	& 49.1\\ % (59,1)
+		& Relative Entropy	& 0.967	& 0.982	& 0.956	& 22.16	& 0.019 & 30.8\\ % (37,1)
+		& FDR	& 0.974	& 0.991	& 0.962	& 26.10	& 0.009 & 34.2\\ % (41,1)
+		& $t$-Test	& 0.974	& 0.991	& 0.962	& 26.10	& 0.009 & 35.8\\ % (43,1)
+		& Wilcoxon	& 0.959	& 0.955	& 0.962	& 25.15	& 0.047 & 85.8\\ % (103,1)
+		\hline
+		\multirow{5}{*}{\textbf{VDLN}} &  Bhattacharyya	& 0.924	& 0.956	& 0.904	& 9.97	& 0.049 & 10.0\\ % (12,1
+		& Relative Entropy	& 0.924	& 0.933	& 0.918	& 11.36	& 0.073 & 20.0\\ % (24,1)
+		& FDR	& 0.941	& 0.933	& 0.945	& 17.03	& 0.071 & 16.7\\ % (20,1)
+		& $t$-Test	& 0.932	& 0.933	& 0.932	& 13.63	& 0.072 & 22.5\\ % (27,1)
+		& Wilcoxon	& 0.898	& 0.889	& 0.904	& 9.27	& 0.123 & 3.3\\ % (4,1)
+		\hline
+		\multirow{5}{*}{\textbf{VDLV}}	& Bhattacharyya	& 0.938	& 0.935	& 0.940	& 15.59	& 0.069 & 40.8\\ % (49,1)
+		& Relative Entropy	& 0.933	& 0.935	& 0.930	& 13.36	& 0.070 & 45.8\\ % (55,1)
+		& FDR	& 0.928	& 0.963	& 0.890	& 8.75	& 0.042 & 30.8 \\ % (37,1)
+		& $t$-Test	& 0.933	& 0.935	& 0.930	& 13.36	& 0.070 & 34.2\\ % (41,1)
+		& Wilcoxon	& 0.928	& 0.926	& 0.930	& 13.23	& 0.080 & 18.3\\ % (22,1)
+		
+		\hline\hline
+	\end{tabular}
+	\caption{Best results obtained in experiment 2, using three databases, in terms of its accuracy, sensitivity, specificity, Positive Likelihood and Negative Likelihood. The amount of features used to achieve these results is shown as a percentage of the total number of features (1560). Values obtained by leave-one-out.}
+	\label{tab:exp3Res}
+\end{table*}
 
-\subsection{FastICA}
-Adaptive algorithms based on gradient descend can be problematic when they are used on an environment in which adaptation is not necessary, like this case. The convergence is often slow, and depends on the choice of convergence parameters. As a solution to this problem, block algorithms based on fixed-point iteration \cite{Oja1997,FastICA99} can be used. In \cite{Oja1997} a fixed-point algorithm based on kurtosis is introduced. In \cite{FastICA99}, this algorithm, known as FastICA, is generalized to general contrast functions. The single unit FastICA algorithm has the following form:
-\begin{equation}
-\mathbf{w}(k) = E\lbrace\mathbf{x}g(\mathbf{w}(k-1)^T\mathbf{x})\rbrace -E\lbrace g'(\mathbf{w}(k-1)^T\mathbf{x})\rbrace\mathbf{w}(k-1)
-\end{equation}
-where the loadings vector $\mathbf{w}$ is normalized to unit norm in each iteration, and the function $g(x)$ is a derivative of the contrast function $G$ defined in \cite{Hyvarinen1999}. The expected values are estimated in practice by using the mean of a significantly high number of samples of the input data. 
-The speed of convergence of the fixed-point algorithms is clearly superior to more neural algorithms. Improvements between 10 and 100 times the speed are observed frequently \cite{Giannakopoulos1998}. 
-\section{Results}
-Dataset used: ADNI-PET, SPECT
+This table confirms that the Mann-Whitney-Wilcoxon method can be no longer considered, as it needs more than a 50\% of the features to obtain poorer results than all others. Regarding the remaining methods, we observe that those that needed a lower amount of features (BD and RE) obtain here lower values of accuracy that those that needed a higher amount ($t$-Test and FDR). So, the choice of the best method is, in this case, a matter of trade-off between the computer performance (the number of features to estimate) and the accuracy needed. As in clinical practice, accuracy (and PL) is the parameter that needs to be maximized, we can conclude that FDR and $t$-Test are the best discrimination-ranking methods to use in this task, although all other methods reveal the ability of our system in the PD detection with an relevant performance (over 90\% of accuracy in most cases). 
+
+For comparison purposes, we have established a baseline method proposed in Illan et al \cite{Illan2012}, where a Voxels-as-Features (VAF) approach with SVM linear, using different normalization strategies were tested. Two additional methods have been compared with our proposed system in order to check the performance versus state-of-the-art algorithms. These methods have been an asymmetrical Single Value Decomposition (SVD) \cite{Segovia2012} that appplied SVD on both sides of the brain (since PD often appears only in one hemisphere), and a Empirical Mode Decomposition (EMD)  \cite{Rojas2012} using different Independent Mode Functions (IMF), particularly the IMF-3. Table \ref{tab:comparison} compares all the aforementioned methods. 
+
+\begin{table*}[ht]
+	\centering
+	\begin{tabular}{l | rrrrr}
+		\hline\hline
+		\textbf{System}		& \textbf{Acc} 	& \textbf{Sens}	& \textbf{Spec}	& \textbf{PL}	& \textbf{NL}\\ 
+		\hline
+		Homogeneity & 0.959 & 0.973 & 0.949 & 19.22 & 0.028\\
+		Cluster Shade & 0.955 & 0.964 & 0.949 & 19.01 & 0.038\\
+		Cluster Tendency & 0.955 & 0.973 & 0.943 & 17.10 & 0.029\\
+		Correlation & 0.941 & 0.946 & 0.937 & 14.92 & 0.058\\
+		Energy & 0.937 & 0.964 & 0.918 & 11.73 & 0.039\\
+		\hline
+		Entropy	& 0.967	& 0.982	& 0.956	& 22.16	& 0.019 \\ % (37,1)
+		FDR	& 0.974	& 0.991	& 0.962	& 26.10	& 0.009 \\ % (41,1)
+		$t$-Test	& 0.974	& 0.991	& 0.962	& 26.10	& 0.009 \\ % (43,1)
+		\hline
+		VAF & 0.840	& 0.807	& 0.862	& 5.88	& 0.224 \\
+		VAF-IN & 0,913 & 0.890 & 0.932 & 13.08 & 0.118\\
+		SVD & 0.940 & 0.962 & 0.918 & 11.73 & 0.041\\
+		EMD-IMF3 & 0.950 & 0.951 & 0.948 & 18.28 & 0.051\\
+		\hline\hline
+	\end{tabular}
+	\vspace{10pt}
+	\caption{Comparison of our proposed system (using different texture features) and some other methods in the bibliography: VAF system using the intensity-normalized images,  a combination of intensity normalization strategies and classifiers (VAF-IN) \cite{Illan2012}, a SVD-based approach \cite{Segovia2012} and EMD using the third independent mode function (IMF3) \cite{Rojas2012}.}
+	\label{tab:comparison}
+\end{table*}
+
+In Table \ref{tab:comparison}, performance values at the operation point are shown for Experiment 1 (using five texture features: Homogeneity, Cluster shade, Cluster tendency, Correlation and energy) and for Experiment 2 (using Relative Entropy, FDR or Student's $t$-Test). These values are compared with the VAF, SVD and EMD approaches previously cited. We can observe that the performance values obtained with Experiment 1 are very similar to other state-of-the-art methods, like the proposed in \cite{Segovia2012,Rojas2012}, whereas the methodology used in Experiment 2 outperform all previously used methods. Particularly, as we previously mentioned, the use of either FDR or $t$-Test to select the most discriminant features gives us results over a PL of $26$ and sensitivity over $99\%$, which proves the ability of some Haralick Textures, and the combination of them, in characterizing the different Parkinson's Disease patterns, and the robustness of the proposed methods. 
+\section{Discussion}

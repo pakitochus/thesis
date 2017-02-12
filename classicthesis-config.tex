@@ -40,9 +40,9 @@
 % ****************************************************************************************************
 % 2. Personal data and user ad-hoc commands
 % ****************************************************************************************************
-\newcommand{\myTitle}{New Advances in Statistical Neuroimage Processing\xspace}
-\newcommand{\mySubtitle}{TESIS DOCTORAL\xspace}
-\newcommand{\myDegree}{Doctor en Ingeniería (Dr.-Ing.)\xspace}
+\newcommand{\myTitle}{New Advances in Statistical Neuroimage Processing: Tackling the Small Sample Size Problem\xspace}
+\newcommand{\mySubtitle}{Tesis Doctoral\xspace}
+\newcommand{\myDegree}{Doctor por la Universidad de Granada\xspace}
 \newcommand{\myName}{Francisco Jes\'us Mart\'inez Murcia\xspace}
 \newcommand{\myProf}{Juan Manuel G\'orriz S\'aez\xspace}
 \newcommand{\myOtherProf}{Javier Ram\'irez P\'erez de Inestrosa\xspace}
@@ -113,10 +113,26 @@
     %\renewcommand*{\acsfont}[1]{\textsc{#1}} 
     \renewcommand*{\aclabelfont}[1]{\acsfont{#1}}
 % ****************************************************************************************************
-\usepackage{listings}
+
 \usepackage{multirow}
 \usepackage{rotating}
+\usepackage[ruled,vlined]{algorithm2e}
+\usepackage[section]{placeins}
 
+
+\DeclareMathOperator*{\argmax}{arg\,max}
+\DeclareMathOperator*{\argmin}{arg\,min}
+
+\newenvironment{bigtable}[1][\unskip]{%
+\begin{table*}[ht]\begin{adjustwidth*}{}{#1}\myfloatalign}
+{\end{adjustwidth*}\end{table*}}
+
+\newenvironment{bigfigure}[1][\unskip]{%
+	\begin{figure*}\begin{adjustwidth*}{}{#1}\myfloatalign}
+		{\end{adjustwidth*}\end{figure*}}
+
+\usepackage[strict]{changepage}% <-- new
+%\usepackage[tight]{minitoc}
 % ****************************************************************************************************
 % 4. Setup floats: tables, (sub)figures, and captions
 % ****************************************************************************************************
@@ -251,6 +267,52 @@
 % ********************************************************************
 \usepackage{classicthesis} 
 % ****************************************************************************************************
+%************************************************************
+% Layout of the chapter-, section-, subsection-,
+% subsubsection-, paragraph and description-headings (arsclassica)
+%************************************************************
+
+%
+\renewcommand*{\chapterformat}{% % Große graue Euler-Kapitelnummer mit vert. Linie
+	{%
+		\color{halfgray}%
+		\chapterNumber\thechapter%
+	}%
+	\hspace{15pt}\smash{\protect\rule[-7pt]{0.5pt}{42pt}}\hspace{15pt}%
+}
+%
+\renewcommand*{\othersectionlevelsformat}[3]{%   % Stil der Abschnittsnummerierung
+	\fontfamily{jkpss}\fontshape{sc}\selectfont%
+	\MakeTextLowercase{%
+		#3\autodot\enskip
+	}%
+}
+%
+\setkomafont{chapter}{%    % Stil der Kapitelüberschriften
+	\microtypecontext{tracking=trackinglarge}%
+	\normalfont\Large\fontfamily{jkpss}%
+	\lsstyle%
+	\MakeTextUppercase%
+}
+%
+\setkomafont{section}{% % Stil der Sectionüberschriften
+	\microtypecontext{tracking=trackingsmall}%
+	\normalfont\Large\fontfamily{jkpss}\fontshape{sc}\selectfont%
+	\lsstyle%
+	% \lowercase%           <-- This would break UTF-8 chars...
+}
+%
+\setkomafont{subsection}{%                                                      % Stil der Subsectionüberschriften
+	\normalfont\normalsize\fontfamily{jkpss}\selectfont%
+}
+%
+\setkomafont{subsubsection}{%                                                   % Stil der Subsubsectionüberschriften
+	\normalfont\normalsize\itshape\fontfamily{jkpss}\selectfont%
+}
+%
+\setkomafont{paragraph}{%                                                       % Stil der Paragraphüberschriften
+	\normalfont\normalsize\bfseries\fontfamily{jkpss}\selectfont%
+}
 
 
 % ****************************************************************************************************
@@ -259,6 +321,7 @@
 % ********************************************************************
 % Changing the text area
 % ********************************************************************
+\usepackage[b5paper,layout=b5paper]{geometry}% B5 at B5
 %\linespread{1.05} % a bit more for Palatino
 %\areaset[current]{312pt}{761pt} % 686 (factor 2.2) + 33 head + 42 head \the\footskip
 %\setlength{\marginparwidth}{7em}%

@@ -1,5 +1,5 @@
 % $ biblatex auxiliary file $
-% $ biblatex bbl format version 2.6 $
+% $ biblatex bbl format version 2.7 $
 % Do not modify the above lines!
 %
 % This is an auxiliary file used by the 'biblatex' package.
@@ -18,8 +18,159 @@
 
 
 \refsection{0}
-  \sortlist[entry]{ydnt/global}
-    \entry{Martinez-Murcia2016hbm}{article}{}
+  \sortlist[entry]{ydnt/global/}
+    \entry{Martinez-Murcia2016a}{article}{}
+      \name{author}{13}{}{%
+        {{hash=f13fcabedae6437aaa5e694f277d9fcb}{%
+           family={Martinez-Murcia},
+           family_i={M\bibinithyphendelim M\bibinitperiod},
+           given={F.J.},
+           given_i={F\bibinitperiod}}}%
+        {{hash=8a56c8c7262e523f91f0e19967be9519}{%
+           family={Lai},
+           family_i={L\bibinitperiod},
+           given={M.C.},
+           given_i={M\bibinitperiod}}}%
+        {{hash=7abaa12fe16012bf9858fc761e93d487}{%
+           family={Górriz},
+           family_i={G\bibinitperiod},
+           given={J.M.},
+           given_i={J\bibinitperiod}}}%
+        {{hash=feb8d5aab03ec8ed81924ca4f258be62}{%
+           family={Ramírez},
+           family_i={R\bibinitperiod},
+           given={J.},
+           given_i={J\bibinitperiod}}}%
+        {{hash=9dc5fc5d025574bb9d5b39e41ed65d10}{%
+           family={Young},
+           family_i={Y\bibinitperiod},
+           given={A.M.H},
+           given_i={A\bibinitperiod}}}%
+        {{hash=9c72b5e7c99a83f2b60fd1f0bbffc038}{%
+           family={Deoni},
+           family_i={D\bibinitperiod},
+           given={S.C.L.},
+           given_i={S\bibinitperiod}}}%
+        {{hash=5f0e1b9a746573b720a9ce27eca13ac0}{%
+           family={Ecker},
+           family_i={E\bibinitperiod},
+           given={C.},
+           given_i={C\bibinitperiod}}}%
+        {{hash=2d861d0cab1903501fd4185fc2a0b782}{%
+           family={Lombardo},
+           family_i={L\bibinitperiod},
+           given={M.V.},
+           given_i={M\bibinitperiod}}}%
+        {{hash=a571d2d45a2e9b60e98c77b39b42b3b9}{%
+           family={Consortium},
+           family_i={C\bibinitperiod},
+           given={MRC\bibnamedelima AIMS},
+           given_i={M\bibinitperiod\bibinitdelim A\bibinitperiod}}}%
+        {{hash=587a699003e2496fc5c5c8c0de36f7e8}{%
+           family={Baron-Cohen},
+           family_i={B\bibinithyphendelim C\bibinitperiod},
+           given={S.},
+           given_i={S\bibinitperiod}}}%
+        {{hash=a0f0d050e506a12dcf6408d7e2278ed3}{%
+           family={Murphy},
+           family_i={M\bibinitperiod},
+           given={D.G.M.},
+           given_i={D\bibinitperiod}}}%
+        {{hash=49fc799c4e0f75b0489c9c87404f666c}{%
+           family={Bullmore},
+           family_i={B\bibinitperiod},
+           given={E.T.},
+           given_i={E\bibinitperiod}}}%
+        {{hash=47175789efda61aa72ca0f7d72641e33}{%
+           family={Suckling},
+           family_i={S\bibinitperiod},
+           given={J.},
+           given_i={J\bibinitperiod}}}%
+      }
+      \strng{namehash}{027fb8d9c9034ba8a121687e98c3ea8c}
+      \strng{fullhash}{6f8324b2e0311d2ebce0d255edaaa03c}
+      \field{sortinit}{2}
+      \field{sortinithash}{8343b463aacf48517c044b4d2c9c45ed}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Human Brain Mapping}
+      \field{month}{03}
+      \field{number}{3}
+      \field{title}{On the Brain Structure Heterogeneity of Autism: Parsing out Acquisition Site Effects With Significance-Weighted Principal Component Analysis}
+      \field{volume}{38}
+      \field{year}{2017}
+      \verb{doi}
+      \verb 10.1002/hbm.23449
+      \endverb
+    \endentry
+    \entry{Carlson2016}{book}{}
+      \name{author}{1}{}{%
+        {{hash=21a4f31323490c0dbc92e3c874f9f938}{%
+           family={Carlson},
+           family_i={C\bibinitperiod},
+           given={Neil\bibnamedelima R},
+           given_i={N\bibinitperiod\bibinitdelim R\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Pearson}%
+      }
+      \strng{namehash}{21a4f31323490c0dbc92e3c874f9f938}
+      \strng{fullhash}{21a4f31323490c0dbc92e3c874f9f938}
+      \field{sortinit}{2}
+      \field{sortinithash}{8343b463aacf48517c044b4d2c9c45ed}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Physiology of behavior}
+      \field{year}{2016}
+    \endentry
+    \entry{Martinez-Murcia2016book}{inbook}{}
+      \name{author}{3}{}{%
+        {{hash=f13fcabedae6437aaa5e694f277d9fcb}{%
+           family={Martinez-Murcia},
+           family_i={M\bibinithyphendelim M\bibinitperiod},
+           given={F.J.},
+           given_i={F\bibinitperiod}}}%
+        {{hash=e826f0167b36717b7183244b294575cf}{%
+           family={Górriz},
+           family_i={G\bibinitperiod},
+           given={J.},
+           given_i={J\bibinitperiod}}}%
+        {{hash=feb8d5aab03ec8ed81924ca4f258be62}{%
+           family={Ramírez},
+           family_i={R\bibinitperiod},
+           given={J.},
+           given_i={J\bibinitperiod}}}%
+      }
+      \name{editor}{1}{}{%
+        {{hash=9841a1beec348a266806b5db2514e6e3}{%
+           family={Udroiu},
+           family_i={U\bibinitperiod},
+           given={Razvan},
+           given_i={R\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Intech}%
+      }
+      \strng{namehash}{29217a85333e67ccd23e2b5d1f6c6901}
+      \strng{fullhash}{29217a85333e67ccd23e2b5d1f6c6901}
+      \field{sortinit}{2}
+      \field{sortinithash}{8343b463aacf48517c044b4d2c9c45ed}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{Computer-aided Technologies - Applications in Engineering and Medicine}
+      \field{chapter}{7}
+      \field{edition}{1}
+      \field{isbn}{978-953-51-4895-1}
+      \field{month}{12}
+      \field{title}{Computer Aided Diagnosis in Neuroimaging}
+      \field{year}{2016}
+      \field{pages}{137\bibrangedash 160}
+      \range{pages}{24}
+      \verb{doi}
+      \verb 10.5772/64980
+      \endverb
+    \endentry
+    \entry{Martinez-Murcia2015}{article}{}
       \name{author}{4}{}{%
         {{hash=f13fcabedae6437aaa5e694f277d9fcb}{%
            family={Martinez-Murcia},
@@ -109,90 +260,7 @@
       \endverb
       \keyw{sbm,hmm,parametrization,mri,adni,ad,alzheimer}
     \endentry
-    \entry{Martinez-Murcia2016a}{article}{}
-      \name{author}{13}{}{%
-        {{hash=f13fcabedae6437aaa5e694f277d9fcb}{%
-           family={Martinez-Murcia},
-           family_i={M\bibinithyphendelim M\bibinitperiod},
-           given={F.J.},
-           given_i={F\bibinitperiod}}}%
-        {{hash=8a56c8c7262e523f91f0e19967be9519}{%
-           family={Lai},
-           family_i={L\bibinitperiod},
-           given={M.C.},
-           given_i={M\bibinitperiod}}}%
-        {{hash=7abaa12fe16012bf9858fc761e93d487}{%
-           family={Górriz},
-           family_i={G\bibinitperiod},
-           given={J.M.},
-           given_i={J\bibinitperiod}}}%
-        {{hash=feb8d5aab03ec8ed81924ca4f258be62}{%
-           family={Ramírez},
-           family_i={R\bibinitperiod},
-           given={J.},
-           given_i={J\bibinitperiod}}}%
-        {{hash=9dc5fc5d025574bb9d5b39e41ed65d10}{%
-           family={Young},
-           family_i={Y\bibinitperiod},
-           given={A.M.H},
-           given_i={A\bibinitperiod}}}%
-        {{hash=9c72b5e7c99a83f2b60fd1f0bbffc038}{%
-           family={Deoni},
-           family_i={D\bibinitperiod},
-           given={S.C.L.},
-           given_i={S\bibinitperiod}}}%
-        {{hash=5f0e1b9a746573b720a9ce27eca13ac0}{%
-           family={Ecker},
-           family_i={E\bibinitperiod},
-           given={C.},
-           given_i={C\bibinitperiod}}}%
-        {{hash=2d861d0cab1903501fd4185fc2a0b782}{%
-           family={Lombardo},
-           family_i={L\bibinitperiod},
-           given={M.V.},
-           given_i={M\bibinitperiod}}}%
-        {{hash=a571d2d45a2e9b60e98c77b39b42b3b9}{%
-           family={Consortium},
-           family_i={C\bibinitperiod},
-           given={MRC\bibnamedelima AIMS},
-           given_i={M\bibinitperiod\bibinitdelim A\bibinitperiod}}}%
-        {{hash=587a699003e2496fc5c5c8c0de36f7e8}{%
-           family={Baron-Cohen},
-           family_i={B\bibinithyphendelim C\bibinitperiod},
-           given={S.},
-           given_i={S\bibinitperiod}}}%
-        {{hash=a0f0d050e506a12dcf6408d7e2278ed3}{%
-           family={Murphy},
-           family_i={M\bibinitperiod},
-           given={D.G.M.},
-           given_i={D\bibinitperiod}}}%
-        {{hash=49fc799c4e0f75b0489c9c87404f666c}{%
-           family={Bullmore},
-           family_i={B\bibinitperiod},
-           given={E.T.},
-           given_i={E\bibinitperiod}}}%
-        {{hash=47175789efda61aa72ca0f7d72641e33}{%
-           family={Suckling},
-           family_i={S\bibinitperiod},
-           given={J.},
-           given_i={J\bibinitperiod}}}%
-      }
-      \strng{namehash}{027fb8d9c9034ba8a121687e98c3ea8c}
-      \strng{fullhash}{6f8324b2e0311d2ebce0d255edaaa03c}
-      \field{sortinit}{2}
-      \field{sortinithash}{8343b463aacf48517c044b4d2c9c45ed}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{journaltitle}{Human Brain Mapping}
-      \field{month}{10}
-      \field{title}{On the Brain Structure Heterogeneity of Autism: Parsing out Acquisition Site Effects With Significance-Weighted Principal Component Analysis}
-      \field{volume}{Accepted}
-      \field{year}{2016}
-      \verb{doi}
-      \verb 10.1002/hbm.23449
-      \endverb
-    \endentry
-    \entry{Martinez-Murcia201519}{inproceedings}{}
+    \entry{Martinez-MurciaVRLBP}{inproceedings}{}
       \name{author}{5}{}{%
         {{hash=f13fcabedae6437aaa5e694f277d9fcb}{%
            family={Martinez-Murcia},
@@ -376,7 +444,7 @@
       \endverb
       \keyw{parkinson,ica,tests,pks,datscan}
     \endentry
-    \entry{Martinez-Murcia2014}{article}{}
+    \entry{martinez2014parametrization}{article}{}
       \name{author}{5}{}{%
         {{hash=f13fcabedae6437aaa5e694f277d9fcb}{%
            family={Martinez-Murcia},
@@ -424,6 +492,50 @@
       \verb 10.1118/1.4845115
       \endverb
       \keyw{texture,datscan,parkinson,pks}
+    \endentry
+    \entry{Winkler2014}{article}{}
+      \name{author}{5}{}{%
+        {{hash=ac710c75739c2f15489f17a7594609fb}{%
+           family={Winkler},
+           family_i={W\bibinitperiod},
+           given={Anderson\bibnamedelima M},
+           given_i={A\bibinitperiod\bibinitdelim M\bibinitperiod}}}%
+        {{hash=1450f03892265ecbb92996741ae8e682}{%
+           family={Ridgway},
+           family_i={R\bibinitperiod},
+           given={Gerard\bibnamedelima R},
+           given_i={G\bibinitperiod\bibinitdelim R\bibinitperiod}}}%
+        {{hash=2e3ee3354a1371f460bae99515ab0d3c}{%
+           family={Webster},
+           family_i={W\bibinitperiod},
+           given={Matthew\bibnamedelima A},
+           given_i={M\bibinitperiod\bibinitdelim A\bibinitperiod}}}%
+        {{hash=49a89c6ede91f785956919ac7c0878c3}{%
+           family={Smith},
+           family_i={S\bibinitperiod},
+           given={Stephen\bibnamedelima M},
+           given_i={S\bibinitperiod\bibinitdelim M\bibinitperiod}}}%
+        {{hash=be6ee27f439bbde65ded811737e5730d}{%
+           family={Nichols},
+           family_i={N\bibinitperiod},
+           given={Thomas\bibnamedelima E},
+           given_i={T\bibinitperiod\bibinitdelim E\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Elsevier}%
+      }
+      \strng{namehash}{15955a539cbcce0b3d65a73e2e44dba0}
+      \strng{fullhash}{ae7ba7e7c4438d70d1b5072069c7f233}
+      \field{sortinit}{2}
+      \field{sortinithash}{8343b463aacf48517c044b4d2c9c45ed}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Neuroimage}
+      \field{title}{Permutation inference for the general linear model}
+      \field{volume}{92}
+      \field{year}{2014}
+      \field{pages}{381\bibrangedash 397}
+      \range{pages}{17}
     \endentry
     \entry{Button2013}{article}{}
       \name{author}{7}{}{%
@@ -587,6 +699,118 @@
       \endverb
       \keyw{ica,decomposition,feature,spect,pet,adni,ad,alzheimer}
     \endentry
+    \entry{Salas-Gonzalez2013}{article}{}
+      \name{author}{5}{}{%
+        {{hash=80c0a5abb383820c98e1e918318b6214}{%
+           family={Salas-Gonzalez},
+           family_i={S\bibinithyphendelim G\bibinitperiod},
+           given={Diego},
+           given_i={D\bibinitperiod}}}%
+        {{hash=f4228f125c42361b9f47bb676e4c04bb}{%
+           family={Górriz},
+           family_i={G\bibinitperiod},
+           given={Juan\bibnamedelima M},
+           given_i={J\bibinitperiod\bibinitdelim M\bibinitperiod}}}%
+        {{hash=6450d056a7ef88a8321faa1c9474f31c}{%
+           family={Ramírez},
+           family_i={R\bibinitperiod},
+           given={Javier},
+           given_i={J\bibinitperiod}}}%
+        {{hash=e8717de8b92989db990db58187ebeb75}{%
+           family={Illán},
+           family_i={I\bibinitperiod},
+           given={Ignacio\bibnamedelima A},
+           given_i={I\bibinitperiod\bibinitdelim A\bibinitperiod}}}%
+        {{hash=440dd2cfe5ed85e0eabbedc122a5127a}{%
+           family={Lang},
+           family_i={L\bibinitperiod},
+           given={Elmar\bibnamedelima W},
+           given_i={E\bibinitperiod\bibinitdelim W\bibinitperiod}}}%
+      }
+      \strng{namehash}{247e867bf19f75318a5dbdd04fa83b36}
+      \strng{fullhash}{4e78065bb36d4d37c0ab99873450fc4b}
+      \field{sortinit}{2}
+      \field{sortinithash}{8343b463aacf48517c044b4d2c9c45ed}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{In this work, a linear procedure to perform the intensity normalization of FP-CIT SPECT brain images is presented. This proposed methodology is based on the fact that the histogram of intensity values can be fitted accurately using a positive skewed $\alpha$-stable distribution. Then, the predicted $\alpha$-stable parameters and the location-scale property are used to linearly transform the intensity values in each voxel. This transformation is performed such that the new histograms in each image have a pre-specified $\alpha$-stable distribution with desired location and dispersion values. The proposed methodology is compared with a similar approach assuming Gaussian distribution and the widely used specific-to-nonspecific ratio. In this work, we show that the linear normalization method using the $\alpha$-stable distribution outperforms those existing methods.}
+      \field{issn}{1095-9572}
+      \field{journaltitle}{NeuroImage}
+      \field{month}{01}
+      \field{title}{Linear intensity normalization of FP-CIT SPECT brain images using the $\alpha$-stable distribution.}
+      \field{volume}{65}
+      \field{year}{2013}
+      \field{pages}{449\bibrangedash 455}
+      \range{pages}{7}
+      \verb{doi}
+      \verb 10.1016/j.neuroimage.2012.10.005
+      \endverb
+      \keyw{Brain,radionuclide imaging; Brain Mapping,methods; Humans; Image Processing,Computer-Assisted,methods; Radiopharmaceuticals; Tomography,Emission-Computed,Single-Photon,methods; Tropanes}
+    \endentry
+    \entry{Weiskopf2013}{article}{}
+      \name{author}{9}{}{%
+        {{hash=32d6921b813a342d678cf6ee9395b067}{%
+           family={Weiskopf},
+           family_i={W\bibinitperiod},
+           given={Nikolaus},
+           given_i={N\bibinitperiod}}}%
+        {{hash=bd0c7f2f25882898db2453c1cdfb255d}{%
+           family={Suckling},
+           family_i={S\bibinitperiod},
+           given={John},
+           given_i={J\bibinitperiod}}}%
+        {{hash=3474440ceba4bbf34ed683745416d316}{%
+           family={Williams},
+           family_i={W\bibinitperiod},
+           given={Guy},
+           given_i={G\bibinitperiod}}}%
+        {{hash=347238892c390f00bef4b0429af4cc30}{%
+           family={Correia},
+           family_i={C\bibinitperiod},
+           given={Marta\bibnamedelima Morgado},
+           given_i={M\bibinitperiod\bibinitdelim M\bibinitperiod}}}%
+        {{hash=0f47d913b184291f846c04c48d401855}{%
+           family={Inkster},
+           family_i={I\bibinitperiod},
+           given={Becky},
+           given_i={B\bibinitperiod}}}%
+        {{hash=e47b4b7799be5e55eccda310f347abbd}{%
+           family={Tait},
+           family_i={T\bibinitperiod},
+           given={Roger},
+           given_i={R\bibinitperiod}}}%
+        {{hash=8f7cf5f58d1d3cba811a757b57c022b4}{%
+           family={Ooi},
+           family_i={O\bibinitperiod},
+           given={Cinly},
+           given_i={C\bibinitperiod}}}%
+        {{hash=e0208bf3d35a7e4f26f62c84d6fd2faa}{%
+           family={Bullmore},
+           family_i={B\bibinitperiod},
+           given={Edward\bibnamedelima T},
+           given_i={E\bibinitperiod\bibinitdelim T\bibinitperiod}}}%
+        {{hash=f6dcf10385e816b33d20f1440b32d06e}{%
+           family={Lutti},
+           family_i={L\bibinitperiod},
+           given={Antoine},
+           given_i={A\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Frontiers}%
+      }
+      \strng{namehash}{811dd688c96396a694ba4cd996396fdd}
+      \strng{fullhash}{a836cca481a9d569058b73b8744409f8}
+      \field{sortinit}{2}
+      \field{sortinithash}{8343b463aacf48517c044b4d2c9c45ed}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Frontiers in neuroscience}
+      \field{title}{Quantitative multi-parameter mapping of R1, PD*, MT, and R2* at 3T: a multi-center validation}
+      \field{volume}{7}
+      \field{year}{2013}
+      \field{pages}{95}
+      \range{pages}{1}
+    \endentry
     \entry{Martinez-Murcia20129676}{article}{}
       \name{author}{5}{}{%
         {{hash=44d5da22feb443de558b01188109bfb7}{%
@@ -716,6 +940,130 @@
       \verb 10.1145/1961189.1961199
       \endverb
     \endentry
+    \entry{Gorriz2010}{article}{}
+      \name{author}{5}{}{%
+        {{hash=7874a31bf28a43fb11d4e5217882ae92}{%
+           family={Górriz},
+           family_i={G\bibinitperiod},
+           given={J.\bibnamedelimi M.},
+           given_i={J\bibinitperiod\bibinitdelim M\bibinitperiod}}}%
+        {{hash=a82a4a0f3202a8d229f302ebd30a4d13}{%
+           family={Segovia},
+           family_i={S\bibinitperiod},
+           given={F.},
+           given_i={F\bibinitperiod}}}%
+        {{hash=feb8d5aab03ec8ed81924ca4f258be62}{%
+           family={Ramírez},
+           family_i={R\bibinitperiod},
+           given={J.},
+           given_i={J\bibinitperiod}}}%
+        {{hash=60f8691e1c780d941ef769f17d1f3a6d}{%
+           family={Lassl},
+           family_i={L\bibinitperiod},
+           given={A.},
+           given_i={A\bibinitperiod}}}%
+        {{hash=20521a35217cd2ed8a877557a8120b33}{%
+           family={Salas-Gonzalez},
+           family_i={S\bibinithyphendelim G\bibinitperiod},
+           given={D.},
+           given_i={D\bibinitperiod}}}%
+      }
+      \strng{namehash}{9540aa82458f8cd114294edb2db1faf9}
+      \strng{fullhash}{20a04441cbfdf5270617f5b810074b94}
+      \field{sortinit}{2}
+      \field{sortinithash}{8343b463aacf48517c044b4d2c9c45ed}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issn}{1568-4946}
+      \field{journaltitle}{Applied Soft Computing}
+      \field{number}{2}
+      \field{title}{{GMM based SPECT image classification for the diagnosis of Alzheimer's disease}}
+      \field{volume}{11}
+      \field{year}{2011}
+      \field{pages}{2313\bibrangedash 2325}
+      \range{pages}{13}
+      \verb{doi}
+      \verb 10.1016/j.asoc.2010.08.012
+      \endverb
+      \verb{file}
+      \verb Gorriz2010-GMM.pdf:AD/Gorriz2010-GMM.pdf:PDF;Gorriz2010-ROI.pdf:AD/Gorriz2010-ROI.pdf:PDF
+      \endverb
+      \keyw{SPECT}
+    \endentry
+    \entry{Illan2011}{article}{}
+      \name{author}{9}{}{%
+        {{hash=afe71505c4e0d5d38a24aa1859cb8b4d}{%
+           family={Illán},
+           family_i={I\bibinitperiod},
+           given={I.\bibnamedelimi A.},
+           given_i={I\bibinitperiod\bibinitdelim A\bibinitperiod}}}%
+        {{hash=7874a31bf28a43fb11d4e5217882ae92}{%
+           family={Górriz},
+           family_i={G\bibinitperiod},
+           given={J.\bibnamedelimi M.},
+           given_i={J\bibinitperiod\bibinitdelim M\bibinitperiod}}}%
+        {{hash=feb8d5aab03ec8ed81924ca4f258be62}{%
+           family={Ramírez},
+           family_i={R\bibinitperiod},
+           given={J.},
+           given_i={J\bibinitperiod}}}%
+        {{hash=20521a35217cd2ed8a877557a8120b33}{%
+           family={Salas-Gonzalez},
+           family_i={S\bibinithyphendelim G\bibinitperiod},
+           given={D.},
+           given_i={D\bibinitperiod}}}%
+        {{hash=65d4c759eadde4461d442ce29d8c67ea}{%
+           family={López},
+           family_i={L\bibinitperiod},
+           given={M.\bibnamedelimi M.},
+           given_i={M\bibinitperiod\bibinitdelim M\bibinitperiod}}}%
+        {{hash=a82a4a0f3202a8d229f302ebd30a4d13}{%
+           family={Segovia},
+           family_i={S\bibinitperiod},
+           given={F.},
+           given_i={F\bibinitperiod}}}%
+        {{hash=5cf0140a1fe35215d01c164d56c4a4bc}{%
+           family={Chaves},
+           family_i={C\bibinitperiod},
+           given={R.},
+           given_i={R\bibinitperiod}}}%
+        {{hash=4ffbe281f2b6c2a9c33322cfc1b20b1d}{%
+           family={Gómez-Rio},
+           family_i={G\bibinithyphendelim R\bibinitperiod},
+           given={M.},
+           given_i={M\bibinitperiod}}}%
+        {{hash=c8f9a15f9219a9ec6a3b14ab964c08e5}{%
+           family={Puntonet},
+           family_i={P\bibinitperiod},
+           given={C.\bibnamedelimi G.},
+           given_i={C\bibinitperiod\bibinitdelim G\bibinitperiod}}}%
+      }
+      \list{location}{1}{%
+        {New York, NY, USA}%
+      }
+      \list{publisher}{1}{%
+        {Elsevier Science Inc.}%
+      }
+      \strng{namehash}{2d140240b81eaec3798fca217253b044}
+      \strng{fullhash}{a2119f6da4023741a6c7887dd75faeac}
+      \field{sortinit}{2}
+      \field{sortinithash}{8343b463aacf48517c044b4d2c9c45ed}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issn}{0020-0255}
+      \field{issue}{4}
+      \field{journaltitle}{Information Sciences}
+      \field{month}{02}
+      \field{title}{{$^{18}${F-FDG PET} imaging analysis for computer aided {Alzheimer's} diagnosis}}
+      \field{volume}{181}
+      \field{year}{2011}
+      \field{pages}{903\bibrangedash 916}
+      \range{pages}{14}
+      \verb{doi}
+      \verb 10.1016/j.ins.2010.10.027
+      \endverb
+      \keyw{Alzheimer's disease (AD); Computer aided diagnosis; FDG-PET; Independent component analysis (ICA); Principal component analysis (PCA); Supervised learning; Support vector machine (SVM)}
+    \endentry
     \entry{Martinez201141}{inproceedings}{}
       \name{author}{6}{}{%
         {{hash=8f137cac80e840c7314e4d5eadcde731}{%
@@ -772,6 +1120,73 @@
       \endverb
       \keyw{feature,factor analysis,decomposition,test,adni,alzheimer,spect,pet}
     \endentry
+    \entry{Benjamini2010}{article}{}
+      \name{author}{1}{}{%
+        {{hash=2bf06df9b6fb1b6a6811f2965ef58db2}{%
+           family={Benjamini},
+           family_i={B\bibinitperiod},
+           given={Yoav},
+           given_i={Y\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Wiley Online Library}%
+      }
+      \strng{namehash}{2bf06df9b6fb1b6a6811f2965ef58db2}
+      \strng{fullhash}{2bf06df9b6fb1b6a6811f2965ef58db2}
+      \field{sortinit}{2}
+      \field{sortinithash}{8343b463aacf48517c044b4d2c9c45ed}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Biometrical Journal}
+      \field{number}{6}
+      \field{title}{Simultaneous and selective inference: current successes and future challenges}
+      \field{volume}{52}
+      \field{year}{2010}
+      \field{pages}{708\bibrangedash 721}
+      \range{pages}{14}
+    \endentry
+    \entry{bossa2010tensor}{article}{}
+      \true{moreauthor}
+      \true{morelabelname}
+      \name{author}{4}{}{%
+        {{hash=3e11c83f308123de7c77ba545e65394b}{%
+           family={Bossa},
+           family_i={B\bibinitperiod},
+           given={Matias},
+           given_i={M\bibinitperiod}}}%
+        {{hash=18fbc01182030c18ff9a4cd1c2e3b842}{%
+           family={Zacur},
+           family_i={Z\bibinitperiod},
+           given={Ernesto},
+           given_i={E\bibinitperiod}}}%
+        {{hash=abec8c3db39eecef19de091e400ba2f0}{%
+           family={Olmos},
+           family_i={O\bibinitperiod},
+           given={Salvador},
+           given_i={S\bibinitperiod}}}%
+        {{hash=c2f5dfc5d55fb56accb23a86c2adac48}{%
+           family={Initiative},
+           family_i={I\bibinitperiod},
+           given={Alzheimer's\bibnamedelimb Disease\bibnamedelima Neuroimaging},
+           given_i={A\bibinitperiod\bibinitdelim D\bibinitperiod\bibinitdelim N\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Elsevier}%
+      }
+      \strng{namehash}{0f4ab6ca36348cea3235b9bc25d5b64d}
+      \strng{fullhash}{3c6c6c5148afba4f1ccd88b4ff71a11e}
+      \field{sortinit}{2}
+      \field{sortinithash}{8343b463aacf48517c044b4d2c9c45ed}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Neuroimage}
+      \field{number}{3}
+      \field{title}{Tensor-based morphometry with stationary velocity field diffeomorphic registration: application to ADNI}
+      \field{volume}{51}
+      \field{year}{2010}
+      \field{pages}{956\bibrangedash 969}
+      \range{pages}{14}
+    \endentry
     \entry{Reuter2010}{article}{}
       \name{author}{3}{}{%
         {{hash=ba2cbfcb3f2671460dc76fd7f5865b48}{%
@@ -810,6 +1225,103 @@
       \verb 10.1016/j.neuroimage.2010.07.020
       \endverb
       \keyw{Algorithms; Brain,anatomy & histology; Humans; Image Interpretation,Computer-Assisted,methods; Models,Theoretical}
+    \endentry
+    \entry{Herman2009l}{incollection}{}
+      \name{author}{1}{}{%
+        {{hash=09bd05c0a634382fa8ac6e2e1382ee7a}{%
+           family={Herman},
+           family_i={H\bibinitperiod},
+           given={Gabor\bibnamedelima T.},
+           given_i={G\bibinitperiod\bibinitdelim T\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Springer}%
+      }
+      \strng{namehash}{09bd05c0a634382fa8ac6e2e1382ee7a}
+      \strng{fullhash}{09bd05c0a634382fa8ac6e2e1382ee7a}
+      \field{sortinit}{2}
+      \field{sortinithash}{8343b463aacf48517c044b4d2c9c45ed}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{The most commonly used methods in CT for parallel beam projection data are the filtered backprojection (FBP) methods. (In some of the earlier literature these methods are also referred to as “convolution methods.”) The reason for this is ease of implementation combined with good accuracy. These methods are transform methods, where the taking of the derivative and the Hilbert transform is approximated by the use of a single convolution.}
+      \field{booktitle}{Fundamentals of Computerized Tomography}
+      \field{day}{01}
+      \field{isbn}{978-1-85233-617-2}
+      \field{month}{01}
+      \field{title}{Filtered Backprojection for Parallel Beams}
+      \field{year}{2009}
+      \verb{doi}
+      \verb 10.1007/978-1-84628-723-7_8
+      \endverb
+      \verb{url}
+      \verb http://dx.doi.org/10.1007/978-1-84628-723-7_8
+      \endverb
+      \warn{\item Overwriting field 'year' with year value from field 'date' for entry 'Herman2009l'}
+      \warn{\item Overwriting field 'month' with month value from field 'date' for entry 'Herman2009l'}
+    \endentry
+    \entry{Salas-Gonzalez2009}{article}{}
+      \name{author}{8}{}{%
+        {{hash=80c0a5abb383820c98e1e918318b6214}{%
+           family={Salas-Gonzalez},
+           family_i={S\bibinithyphendelim G\bibinitperiod},
+           given={Diego},
+           given_i={D\bibinitperiod}}}%
+        {{hash=f4228f125c42361b9f47bb676e4c04bb}{%
+           family={Górriz},
+           family_i={G\bibinitperiod},
+           given={Juan\bibnamedelima M},
+           given_i={J\bibinitperiod\bibinitdelim M\bibinitperiod}}}%
+        {{hash=6450d056a7ef88a8321faa1c9474f31c}{%
+           family={Ramírez},
+           family_i={R\bibinitperiod},
+           given={Javier},
+           given_i={J\bibinitperiod}}}%
+        {{hash=a33a4a30119e21f51749757c3c6aff38}{%
+           family={López},
+           family_i={L\bibinitperiod},
+           given={Miriam},
+           given_i={M\bibinitperiod}}}%
+        {{hash=453daa2cca3976a7137dc08fbb11cb57}{%
+           family={Illan},
+           family_i={I\bibinitperiod},
+           given={Ignacio\bibnamedelima A},
+           given_i={I\bibinitperiod\bibinitdelim A\bibinitperiod}}}%
+        {{hash=772517a755cbc91dd250c3a71f2e7bb6}{%
+           family={Segovia},
+           family_i={S\bibinitperiod},
+           given={Fermín},
+           given_i={F\bibinitperiod}}}%
+        {{hash=3d5ef811450f4a07e4c8fc3fec763e76}{%
+           family={Puntonet},
+           family_i={P\bibinitperiod},
+           given={Carlos\bibnamedelima G},
+           given_i={C\bibinitperiod\bibinitdelim G\bibinitperiod}}}%
+        {{hash=fd5c7f11c5e143eb5cdd1b2964cb7516}{%
+           family={Gómez-Río},
+           family_i={G\bibinithyphendelim R\bibinitperiod},
+           given={Manuel},
+           given_i={M\bibinitperiod}}}%
+      }
+      \strng{namehash}{247e867bf19f75318a5dbdd04fa83b36}
+      \strng{fullhash}{0472aad5b035e4fb10c223f14dcac40b}
+      \field{sortinit}{2}
+      \field{sortinithash}{8343b463aacf48517c044b4d2c9c45ed}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{This paper presents a computer-aided diagnosis technique for improving the accuracy of diagnosing the Alzheimer's type dementia. The proposed methodology is based on the calculation of the skewness for each m-by-m-by-m sliding block of the SPECT brain images. The center pixel in this m-by-m-by-m block is replaced by the skewness value to build a new 3-D brain image which is used for classification purposes. After that, voxels which present a Welch's t-statistic between classes, Normal and Alzheimer's images, higher (or lower) than a threshold are selected. The mean, standard deviation, skewness and kurtosis are calculated for these selected voxels and they are subjected as features to linear kernel based support vector machine classifier. The proposed methodology reaches accuracy higher than 99\% in the classification task.}
+      \field{issn}{1872-7972}
+      \field{issue}{1}
+      \field{journaltitle}{Neuroscience letters}
+      \field{month}{09}
+      \field{title}{Analysis of SPECT brain images for the diagnosis of Alzheimer's disease using moments and support vector machines.}
+      \field{volume}{461}
+      \field{year}{2009}
+      \field{pages}{60\bibrangedash 64}
+      \range{pages}{5}
+      \verb{doi}
+      \verb 10.1016/j.neulet.2009.05.056
+      \endverb
+      \keyw{Alzheimer Disease,radionuclide imaging; Brain,radionuclide imaging; Cysteine,analogs & derivatives; Humans; Image Interpretation,Computer-Assisted; Organotechnetium Compounds; Radiopharmaceuticals; Tomography,Emission-Computed,Single-Photon}
     \endentry
     \entry{xu2009source}{article}{}
       \name{author}{5}{}{%
@@ -856,6 +1368,61 @@
       \field{pages}{711\bibrangedash 724}
       \range{pages}{14}
     \endentry
+    \entry{DeMartino2007}{article}{}
+      \name{author}{7}{}{%
+        {{hash=fe0ab7cd15b3398d180338bbf4f6c954}{%
+           family={{De Martino}},
+           family_i={D\bibinitperiod},
+           given={Federico},
+           given_i={F\bibinitperiod}}}%
+        {{hash=b58c72f5d0d66cd93ac0e65e7939c31e}{%
+           family={Gentile},
+           family_i={G\bibinitperiod},
+           given={Francesco},
+           given_i={F\bibinitperiod}}}%
+        {{hash=06ac6388cb2b687371bb3a5d081d90d5}{%
+           family={Esposito},
+           family_i={E\bibinitperiod},
+           given={Fabrizio},
+           given_i={F\bibinitperiod}}}%
+        {{hash=2c22fd517f7c1420b0fd30db269c69d1}{%
+           family={Balsi},
+           family_i={B\bibinitperiod},
+           given={Marco},
+           given_i={M\bibinitperiod}}}%
+        {{hash=19b1b19599b298e07f3b006cbda39c3c}{%
+           family={{Di Salle}},
+           family_i={D\bibinitperiod},
+           given={Francesco},
+           given_i={F\bibinitperiod}}}%
+        {{hash=16846f48ecd1259bb6b32e05f1f16f78}{%
+           family={Goebel},
+           family_i={G\bibinitperiod},
+           given={Rainer},
+           given_i={R\bibinitperiod}}}%
+        {{hash=80f0b2401b1f3b84eb02ac86c6290a1e}{%
+           family={Formisano},
+           family_i={F\bibinitperiod},
+           given={Elia},
+           given_i={E\bibinitperiod}}}%
+      }
+      \strng{namehash}{bdb37ead2777c9568fe6e9543b9d9914}
+      \strng{fullhash}{c5486ac3365b16341703edafd8643d66}
+      \field{sortinit}{2}
+      \field{sortinithash}{8343b463aacf48517c044b4d2c9c45ed}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{We present a general method for the classification of independent components (ICs) extracted from functional MRI (fMRI) data sets. The method consists of two steps. In the first step, each fMRI-IC is associated with an IC-fingerprint, i.e., a representation of the component in a multidimensional space of parameters. These parameters are post hoc estimates of global properties of the ICs and are largely independent of a specific experimental design and stimulus timing. In the second step a machine learning algorithm automatically separates the IC-fingerprints into six general classes after preliminary training performed on a small subset of expert-labeled components. We illustrate this approach in a multisubject fMRI study employing visual structure-from-motion stimuli encoding faces and control random shapes. We show that: (1) IC-fingerprints are a valuable tool for the inspection, characterization and selection of fMRI-ICs and (2) automatic classifications of fMRI-ICs in new subjects present a high correspondence with those obtained by expert visual inspection of the components. Importantly, our classification procedure highlights several neurophysiologically interesting processes. The most intriguing of which is reflected, with high intra- and inter-subject reproducibility, in one IC exhibiting a transiently task-related activation in the [`]face' region of the primary sensorimotor cortex. This suggests that in addition to or as part of the mirror system, somatotopic regions of the sensorimotor cortex are involved in disambiguating the perception of a moving body part. Finally, we show that the same classification algorithm can be successfully applied, without re-training, to fMRI collected using acquisition parameters, stimulation modality and timing considerably different from those used for training.}
+      \field{issn}{1053-8119}
+      \field{journaltitle}{Neuroimage}
+      \field{month}{01}
+      \field{number}{1}
+      \field{title}{{Classification of fMRI independent components using {IC}-fingerprints and support vector machine classifiers}}
+      \field{volume}{34}
+      \field{year}{2007}
+      \field{pages}{177\bibrangedash 194}
+      \range{pages}{18}
+    \endentry
     \entry{spm_book}{book}{}
       \name{author}{5}{}{%
         {{hash=b4372340ac980e0735cf560c486fae1a}{%
@@ -895,6 +1462,141 @@
       \field{labeltitlesource}{title}
       \field{title}{{Statistical Parametric Mapping: The Analysis of Functional Brain Images}}
       \field{year}{2007}
+    \endentry
+    \entry{Kelloff2005}{article}{}
+      \true{moreauthor}
+      \true{morelabelname}
+      \name{author}{10}{}{%
+        {{hash=916bcfbe0a773cd3857793b420c73f67}{%
+           family={Kelloff},
+           family_i={K\bibinitperiod},
+           given={Gary\bibnamedelima J},
+           given_i={G\bibinitperiod\bibinitdelim J\bibinitperiod}}}%
+        {{hash=2711f94a92a6540e408facaf5262c216}{%
+           family={Hoffman},
+           family_i={H\bibinitperiod},
+           given={John\bibnamedelima M},
+           given_i={J\bibinitperiod\bibinitdelim M\bibinitperiod}}}%
+        {{hash=f610088bcf541371985069030e0eb116}{%
+           family={Johnson},
+           family_i={J\bibinitperiod},
+           given={Bruce},
+           given_i={B\bibinitperiod}}}%
+        {{hash=f2c401b8a1d7b98a251f250d8a5945d9}{%
+           family={Scher},
+           family_i={S\bibinitperiod},
+           given={Howard\bibnamedelima I},
+           given_i={H\bibinitperiod\bibinitdelim I\bibinitperiod}}}%
+        {{hash=50a6ed3d01afd31600d68d8d349f54d5}{%
+           family={Siegel},
+           family_i={S\bibinitperiod},
+           given={Barry\bibnamedelima A},
+           given_i={B\bibinitperiod\bibinitdelim A\bibinitperiod}}}%
+        {{hash=0e1800355682bb51ebf865a2b763d996}{%
+           family={Cheng},
+           family_i={C\bibinitperiod},
+           given={Edward\bibnamedelima Y},
+           given_i={E\bibinitperiod\bibinitdelim Y\bibinitperiod}}}%
+        {{hash=e140d319482b2855563fce2aa7a86e6e}{%
+           family={Cheson},
+           family_i={C\bibinitperiod},
+           given={Bruce\bibnamedelima D},
+           given_i={B\bibinitperiod\bibinitdelim D\bibinitperiod}}}%
+        {{hash=f89d4bdd8bbe070feababe2124d85fc0}{%
+           family={O'Shaughnessy},
+           family_i={O\bibinitperiod},
+           given={Joyce},
+           given_i={J\bibinitperiod}}}%
+        {{hash=2aa0325b7e231858e49912387432196e}{%
+           family={Guyton},
+           family_i={G\bibinitperiod},
+           given={Kathryn\bibnamedelima Z},
+           given_i={K\bibinitperiod\bibinitdelim Z\bibinitperiod}}}%
+        {{hash=f4b3f3a2541c74f32e83c1b1594533b5}{%
+           family={Mankoff},
+           family_i={M\bibinitperiod},
+           given={David\bibnamedelima A},
+           given_i={D\bibinitperiod\bibinitdelim A\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {AACR}%
+      }
+      \strng{namehash}{1639f3a399ff42e83dd78adaa0c4b6d2}
+      \strng{fullhash}{4711df1c1c630d142c9d09b0d315f531}
+      \field{sortinit}{2}
+      \field{sortinithash}{8343b463aacf48517c044b4d2c9c45ed}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Clinical Cancer Research}
+      \field{number}{8}
+      \field{title}{Progress and promise of FDG-PET imaging for cancer patient management and oncologic drug development}
+      \field{volume}{11}
+      \field{year}{2005}
+      \field{pages}{2785\bibrangedash 2808}
+      \range{pages}{24}
+    \endentry
+    \entry{Scherfler2005}{article}{}
+      \name{author}{8}{}{%
+        {{hash=3d3331c86a9236932b7aca156b23f1fa}{%
+           family={Scherfler},
+           family_i={S\bibinitperiod},
+           given={Christoph},
+           given_i={C\bibinitperiod}}}%
+        {{hash=ce054806ae115709812f3d2761e60130}{%
+           family={Seppi},
+           family_i={S\bibinitperiod},
+           given={Klaus},
+           given_i={K\bibinitperiod}}}%
+        {{hash=4c07b838c2c766c3d456619c4de8e045}{%
+           family={Donnemiller},
+           family_i={D\bibinitperiod},
+           given={Eveline},
+           given_i={E\bibinitperiod}}}%
+        {{hash=fcb3ad80b627ab30ab562e3bf48db415}{%
+           family={Goebel},
+           family_i={G\bibinitperiod},
+           given={Georg},
+           given_i={G\bibinitperiod}}}%
+        {{hash=c306458cd5cb88409584f7f63f95a3dd}{%
+           family={Brenneis},
+           family_i={B\bibinitperiod},
+           given={Christian},
+           given_i={C\bibinitperiod}}}%
+        {{hash=14dff60263a214a619be0590fa10f50d}{%
+           family={Virgolini},
+           family_i={V\bibinitperiod},
+           given={Irene},
+           given_i={I\bibinitperiod}}}%
+        {{hash=dbafb20f372918c2d31d00ec5aca57cb}{%
+           family={Wenning},
+           family_i={W\bibinitperiod},
+           given={Gregor\bibnamedelima K},
+           given_i={G\bibinitperiod\bibinitdelim K\bibinitperiod}}}%
+        {{hash=5ce4e63243ca6851370735b8ea3809de}{%
+           family={Poewe},
+           family_i={P\bibinitperiod},
+           given={Werner},
+           given_i={W\bibinitperiod}}}%
+      }
+      \strng{namehash}{f25ca49e98f5d564e2f70837660cff9c}
+      \strng{fullhash}{91d0e6db7b70d3090890cf3d339b8b09}
+      \field{sortinit}{2}
+      \field{sortinithash}{8343b463aacf48517c044b4d2c9c45ed}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issn}{1460-2156}
+      \field{issue}{Pt 7}
+      \field{journaltitle}{Brain}
+      \field{month}{07}
+      \field{title}{Voxel-wise analysis of [123I]beta-CIT SPECT differentiates the Parkinson variant of multiple system atrophy from idiopathic Parkinson's disease.}
+      \field{volume}{128}
+      \field{year}{2005}
+      \field{pages}{1605\bibrangedash 1612}
+      \range{pages}{8}
+      \verb{doi}
+      \verb 10.1093/brain/awh485
+      \endverb
+      \keyw{Aged; Case-Control Studies; Caudate Nucleus,metabolism; Cocaine,analogs & derivatives; Corpus Striatum,metabolism; Diagnosis,Differential; Discriminant Analysis; Dopamine,metabolism; Dopamine Plasma Membrane Transport Proteins; Female; Humans; Linear Models; Male; Membrane Glycoproteins,metabolism; Membrane Transport Proteins,metabolism; Mesencephalon,metabolism; Middle Aged; Multiple System Atrophy,metabolism,radionuclide imaging; Nerve Tissue Proteins,metabolism; Parkinson Disease,metabolism,radionuclide imaging; Radiopharmaceuticals; Receptors,Dopamine D2,metabolism; Tomography,Emission-Computed,Single-Photon}
     \endentry
     \entry{Smith2004}{article}{}
       \name{author}{17}{}{%
@@ -1003,6 +1705,82 @@
       \endverb
       \keyw{Bayes Theorem; Brain,anatomy & histology,physiology; Databases,Factual; Humans; Image Processing,Computer-Assisted; Magnetic Resonance Imaging,statistics & numerical data; Models,Neurological; Models,Statistical; Software}
     \endentry
+    \entry{Stoeckel04}{inproceedings}{}
+      \name{author}{6}{}{%
+        {{hash=28bf5e46a098c31cc1ae3aa58fc54ee5}{%
+           family={Stoeckel},
+           family_i={S\bibinitperiod},
+           given={J.},
+           given_i={J\bibinitperiod}}}%
+        {{hash=5b2d7b5f6e2fe68aef4508d44ef62a87}{%
+           family={Ayache},
+           family_i={A\bibinitperiod},
+           given={N.},
+           given_i={N\bibinitperiod}}}%
+        {{hash=27a1806d935eb6e9d34ad38652921e3d}{%
+           family={Malandain},
+           family_i={M\bibinitperiod},
+           given={G.},
+           given_i={G\bibinitperiod}}}%
+        {{hash=2af39e04b5ef00f5db3bb8888dbc21f2}{%
+           family={Koulibaly},
+           family_i={K\bibinitperiod},
+           given={P.\bibnamedelimi M.},
+           given_i={P\bibinitperiod\bibinitdelim M\bibinitperiod}}}%
+        {{hash=2e317b669cdb39d34a73f738d2dba389}{%
+           family={Ebmeier},
+           family_i={E\bibinitperiod},
+           given={K.\bibnamedelimi P.},
+           given_i={K\bibinitperiod\bibinitdelim P\bibinitperiod}}}%
+        {{hash=d09ee9800eb4ce47c13f0d5a295b3f43}{%
+           family={Darcourt},
+           family_i={D\bibinitperiod},
+           given={J.},
+           given_i={J\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Springer}%
+      }
+      \strng{namehash}{1a1b12926547575b4130f0fb17100cdc}
+      \strng{fullhash}{e743b579e73636f23057b0690f1703b7}
+      \field{sortinit}{2}
+      \field{sortinithash}{8343b463aacf48517c044b4d2c9c45ed}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{{Medical Image Computing and Computer-Assisted Intervention - MICCAI}}
+      \field{series}{{Lecture Notes in Computer Science}}
+      \field{title}{{Automatic Classification of {SPECT} Images of {Alzheimer's} Disease Patients and Control Subjects}}
+      \field{volume}{3217}
+      \field{year}{2004}
+      \field{pages}{654\bibrangedash 662}
+      \range{pages}{9}
+    \endentry
+    \entry{Dixon2003}{article}{}
+      \name{author}{1}{}{%
+        {{hash=42dee58b28c37ebdc2f9ed471fe099a7}{%
+           family={Dixon},
+           family_i={D\bibinitperiod},
+           given={Peter},
+           given_i={P\bibinitperiod}}}%
+      }
+      \strng{namehash}{42dee58b28c37ebdc2f9ed471fe099a7}
+      \strng{fullhash}{42dee58b28c37ebdc2f9ed471fe099a7}
+      \field{sortinit}{2}
+      \field{sortinithash}{8343b463aacf48517c044b4d2c9c45ed}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Null hypothesis significance tests are commonly used to provide a link between empirical evidence and theoretical interpretation. However, this strategy is prone to the "p-value fallacy" in which effects and interactions are classified as either "noise" or "real" based on whether the associated p value is greater or less than .05. This dichotomous classification can lead to dramatic misconstruals of the evidence provided by an experiment. For example, it is quite possible to have similar patterns of means that lead to entirely different patterns of significance, and one can easily find the same patterns of significance that are associated with completely different patterns of means. Describing data in terms of an inventory of significant and nonsignificant effects can thus completely misrepresent the results. An alternative analytical technique is to identify competing interpretations of the data and then use likelihood ratios to assess which interpretation provides the better account. Several different methods of calculating the likelihood ratios are illustrated. It is argued that this approach satisfies a principle of "graded evidence," according to which similar data should provide similar evidence.}
+      \field{issn}{1196-1961}
+      \field{issue}{3}
+      \field{journaltitle}{Canadian journal of experimental psychology = Revue canadienne de psychologie experimentale}
+      \field{month}{09}
+      \field{title}{The p-value fallacy and how to avoid it.}
+      \field{volume}{57}
+      \field{year}{2003}
+      \field{pages}{189\bibrangedash 202}
+      \range{pages}{14}
+      \keyw{Humans; Models,Psychological; Research Design}
+    \endentry
     \entry{Fischl2002}{article}{}
       \name{author}{14}{}{%
         {{hash=e4210e5a0305aced45740a9ccb645743}{%
@@ -1095,6 +1873,71 @@
       \field{pages}{341\bibrangedash 355}
       \range{pages}{15}
       \keyw{Aged; Alzheimer Disease,diagnosis,pathology; Brain,anatomy & histology,pathology; Brain Mapping; Female; Humans; Magnetic Resonance Imaging,methods; Male; Reproducibility of Results}
+    \endentry
+    \entry{Newberg2002}{inproceedings}{}
+      \name{author}{3}{}{%
+        {{hash=12b23b3a607aa0f93b7c42c979519217}{%
+           family={Newberg},
+           family_i={N\bibinitperiod},
+           given={Andrew},
+           given_i={A\bibinitperiod}}}%
+        {{hash=32e07762b9506e24081f59b5dcb476f2}{%
+           family={Alavi},
+           family_i={A\bibinitperiod},
+           given={Abass},
+           given_i={A\bibinitperiod}}}%
+        {{hash=98ca97631b04adcc027130a879d00b5f}{%
+           family={Reivich},
+           family_i={R\bibinitperiod},
+           given={Martin},
+           given_i={M\bibinitperiod}}}%
+      }
+      \list{organization}{1}{%
+        {Elsevier}%
+      }
+      \strng{namehash}{ee221d53a987989ce8a3601e55c9ed19}
+      \strng{fullhash}{ee221d53a987989ce8a3601e55c9ed19}
+      \field{sortinit}{2}
+      \field{sortinithash}{8343b463aacf48517c044b4d2c9c45ed}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{Seminars in nuclear medicine}
+      \field{number}{1}
+      \field{title}{Determination of regional cerebral function with FDG-PET imaging in neuropsychiatric disorders}
+      \field{volume}{32}
+      \field{year}{2002}
+      \field{pages}{13\bibrangedash 34}
+      \range{pages}{22}
+    \endentry
+    \entry{Anderson2001}{article}{}
+      \name{author}{2}{}{%
+        {{hash=0f83e4422ae3237841aa9224998ad72e}{%
+           family={Anderson},
+           family_i={A\bibinitperiod},
+           given={Marti\bibnamedelima J},
+           given_i={M\bibinitperiod\bibinitdelim J\bibinitperiod}}}%
+        {{hash=ae5c51dbc9c561361f824c9a21f1e371}{%
+           family={Robinson},
+           family_i={R\bibinitperiod},
+           given={John},
+           given_i={J\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Wiley Online Library}%
+      }
+      \strng{namehash}{86d174a650a4cb32b0bd5f9c96f678ee}
+      \strng{fullhash}{86d174a650a4cb32b0bd5f9c96f678ee}
+      \field{sortinit}{2}
+      \field{sortinithash}{8343b463aacf48517c044b4d2c9c45ed}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Australian \& New Zealand Journal of Statistics}
+      \field{number}{1}
+      \field{title}{Permutation tests for linear models}
+      \field{volume}{43}
+      \field{year}{2001}
+      \field{pages}{75\bibrangedash 88}
+      \range{pages}{14}
     \endentry
     \entry{Jenkinson2001}{article}{}
       \name{author}{2}{}{%
@@ -1274,7 +2117,7 @@
       \field{abstract}{Motivated by the vast amount of information that is rapidly accumulating about the human brain in digital form, we embarked upon a program in 1992 to develop a four-dimensional probabilistic atlas and reference system for the human brain. Through an International Consortium for Brain Mapping (ICBM) a dataset is being collected that includes 7000 subjects between the ages of eighteen and ninety years and including 342 mono- and dizygotic twins. Data on each subject includes detailed demographic, clinical, behavioural and imaging information. DNA has been collected for genotyping from 5800 subjects. A component of the programme uses post-mortem tissue to determine the probabilistic distribution of microscopic cyto- and chemoarchitectural regions in the human brain. This, combined with macroscopic information about structure and function derived from subjects in vivo, provides the first large scale opportunity to gain meaningful insights into the concordance or discordance in micro- and macroscopic structure and function. The philosophy, strategy, algorithm development, data acquisition techniques and validation methods are described in this report along with database structures. Examples of results are described for the normal adult human brain as well as examples in patients with Alzheimer's disease and multiple sclerosis. The ability to quantify the variance of the human brain as a function of age in a large population of subjects for whom data is also available about their genetic composition and behaviour will allow for the first assessment of cerebral genotype-phenotype-behavioural correlations in humans to take place in a population this large. This approach and its application should provide new insights and opportunities for investigators interested in basic neuroscience, clinical diagnostics and the evaluation of neuropsychiatric disorders in patients.}
       \field{issn}{0962-8436}
       \field{issue}{1412}
-      \field{journaltitle}{Philosophical transactions of the Royal Society of London. Series B, Biological sciences}
+      \field{journaltitle}{Philosophical Transactions of the Royal Society of London. Series B, Biological Sciences}
       \field{month}{08}
       \field{title}{A probabilistic atlas and reference system for the human brain: International Consortium for Brain Mapping (ICBM).}
       \field{volume}{356}
@@ -1335,12 +2178,119 @@
       \field{title}{Classifiers in almost empty spaces}
       \field{volume}{2}
       \field{year}{2000}
-      \field{pages}{1\bibrangedash 7 vol.2}
-      \range{pages}{-1}
+      \field{pages}{1\bibrangedash 7}
+      \range{pages}{7}
       \verb{doi}
       \verb 10.1109/ICPR.2000.906006
       \endverb
       \keyw{Hilbert spaces,decision theory,learning automata,object recognition,pattern classification,statistical analysis,Hilbert space,decision theory,dimensionality,dissimilarity,image recognition,kernel mapping,object recognition,pattern classification,statistical classifiers,support vector machines,training sets,Hilbert space,Image databases,Image recognition,NIST,Pattern recognition,Physics,Space technology,Support vector machine classification,Support vector machines,Testing}
+    \endentry
+    \entry{Theodoridis1999}{book}{}
+      \name{author}{2}{}{%
+        {{hash=fd3acabdbe6cc1c8fdbab64dd76ae135}{%
+           family={Theodoridis},
+           family_i={T\bibinitperiod},
+           given={Sergios},
+           given_i={S\bibinitperiod}}}%
+        {{hash=d9a434e0a63c39a6601c8aeab62f6546}{%
+           family={Koutroumbas},
+           family_i={K\bibinitperiod},
+           given={Konstantinos},
+           given_i={K\bibinitperiod}}}%
+      }
+      \list{location}{1}{%
+        {New York}%
+      }
+      \list{publisher}{1}{%
+        {Academic Press}%
+      }
+      \strng{namehash}{b40a7473f01d514e418f2ac074992870}
+      \strng{fullhash}{b40a7473f01d514e418f2ac074992870}
+      \field{sortinit}{1}
+      \field{sortinithash}{53e85f4cf497d2a4e1d51786552bcbf1}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{isbn}{9781597492720}
+      \field{journaltitle}{New York}
+      \field{title}{Pattern Recognition}
+      \field{year}{1999}
+    \endentry
+    \entry{Arndt1996}{article}{}
+      \name{author}{5}{}{%
+        {{hash=d7446b0e86b0861f2eafc318b1fd8c98}{%
+           family={Arndt},
+           family_i={A\bibinitperiod},
+           given={S},
+           given_i={S\bibinitperiod}}}%
+        {{hash=50febb20c27565a645c9aee8adbcae1b}{%
+           family={Cizadlo},
+           family_i={C\bibinitperiod},
+           given={T},
+           given_i={T\bibinitperiod}}}%
+        {{hash=6f526a0eef6e8acb7a1e66d313658467}{%
+           family={O'Leary},
+           family_i={O\bibinitperiod},
+           given={D},
+           given_i={D\bibinitperiod}}}%
+        {{hash=083e0a2815da6d707080b458bdd968a9}{%
+           family={Gold},
+           family_i={G\bibinitperiod},
+           given={S},
+           given_i={S\bibinitperiod}}}%
+        {{hash=4a98207addf4a828c01819c79d84e749}{%
+           family={Andreasen},
+           family_i={A\bibinitperiod},
+           given={N\bibnamedelima C},
+           given_i={N\bibinitperiod\bibinitdelim C\bibinitperiod}}}%
+      }
+      \strng{namehash}{2ce0cbaf0c6cb4150593f62748279a33}
+      \strng{fullhash}{41a54e5795bb07cc6a09d92dfd5f66c7}
+      \field{sortinit}{1}
+      \field{sortinithash}{53e85f4cf497d2a4e1d51786552bcbf1}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Image intensity normalization is frequently applied to eliminate or adjust for subject or injection global blood flow (gCBF) and other sources of nuisance variation. Normalization has several other positive effects on the analysis of PET images. However, the choice of an intensity normalization technique affects the statistical and psychometric properties of the image data. We compared three normalization procedures, the ratio approach (regional (r)CBF/gCBF), histogram equalization, and ANCOVA, on both PET count and flow data sets. The ratio method presents the proportional increase of regions, the histogram equalization method offers the relative ranking of intensities over the image, and the ANCOVA method provides statistical deviations from an expected linear model of regional values from the subject's gCBF. The original study used 33 normal subjects in a standard subtraction paradigm. The normalization methods were evaluated on their ability to remove extraneous error variation, induce homogeneity of intersubject variation, and remove unwanted dependencies. In general, the normalization modified the subtraction image more than the individual condition images. All three methods worked well at removing the dependency of rCBF on gCBF in count and flow images. For count data, the three methods also reduced the amount of error variation equally well, improving the signal to noise ratio. For flow data, the histogram equalization and ratio methods worked best at reducing statistical error. All three methods dramatically stabilized the variance over the image.}
+      \field{issn}{1053-8119}
+      \field{issue}{3 Pt 1}
+      \field{journaltitle}{NeuroImage}
+      \field{month}{06}
+      \field{title}{Normalizing counts and cerebral blood flow intensity in functional imaging studies of the human brain.}
+      \field{volume}{3}
+      \field{year}{1996}
+      \field{pages}{175\bibrangedash 184}
+      \range{pages}{10}
+      \verb{doi}
+      \verb 10.1006/nimg.1996.0019
+      \endverb
+      \keyw{Analysis of Variance; Blood Flow Velocity; Brain,anatomy & histology,physiology,radionuclide imaging; Cerebrovascular Circulation; Humans; Magnetic Resonance Imaging; Memory,physiology; Reference Values; Regional Blood Flow,physiology; Statistics,Nonparametric; Tomography,Emission-Computed}
+    \endentry
+    \entry{Benjamini1995}{article}{}
+      \name{author}{2}{}{%
+        {{hash=2bf06df9b6fb1b6a6811f2965ef58db2}{%
+           family={Benjamini},
+           family_i={B\bibinitperiod},
+           given={Yoav},
+           given_i={Y\bibinitperiod}}}%
+        {{hash=486dfb83d695169656e5706b50266208}{%
+           family={Hochberg},
+           family_i={H\bibinitperiod},
+           given={Yosef},
+           given_i={Y\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {JSTOR}%
+      }
+      \strng{namehash}{0ba4be1a60b0ea36e468eb3f8db88a98}
+      \strng{fullhash}{0ba4be1a60b0ea36e468eb3f8db88a98}
+      \field{sortinit}{1}
+      \field{sortinithash}{53e85f4cf497d2a4e1d51786552bcbf1}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Journal of the royal statistical society. Series B (Methodological)}
+      \field{title}{Controlling the false discovery rate: a practical and powerful approach to multiple testing}
+      \field{year}{1995}
+      \field{pages}{289\bibrangedash 300}
+      \range{pages}{12}
     \endentry
     \entry{Kohavi1995a}{inproceedings}{}
       \name{author}{1}{}{%
@@ -1364,6 +2314,56 @@
       \verb{url}
       \verb http://citeseer.ist.psu.edu/kohavi95study.html
       \endverb
+    \endentry
+    \entry{Friston1994}{article}{}
+      \name{author}{6}{}{%
+        {{hash=3bd4ac786cc0b7cb996e2dbf8a77848d}{%
+           family={Friston},
+           family_i={F\bibinitperiod},
+           given={Karl\bibnamedelima J},
+           given_i={K\bibinitperiod\bibinitdelim J\bibinitperiod}}}%
+        {{hash=2214ba978062c7fce766e258a3bacbcb}{%
+           family={Holmes},
+           family_i={H\bibinitperiod},
+           given={Andrew\bibnamedelima P},
+           given_i={A\bibinitperiod\bibinitdelim P\bibinitperiod}}}%
+        {{hash=df6144e0e5baf4fafdd14a46b9ccc768}{%
+           family={Worsley},
+           family_i={W\bibinitperiod},
+           given={Keith\bibnamedelima J},
+           given_i={K\bibinitperiod\bibinitdelim J\bibinitperiod}}}%
+        {{hash=b1e7b40b41406918be9c1f0d2fcec43f}{%
+           family={Poline},
+           family_i={P\bibinitperiod},
+           given={J-P},
+           given_i={J\bibinithyphendelim P\bibinitperiod}}}%
+        {{hash=1881d07d4c1820e0a2501eff4acb2893}{%
+           family={Frith},
+           family_i={F\bibinitperiod},
+           given={Chris\bibnamedelima D},
+           given_i={C\bibinitperiod\bibinitdelim D\bibinitperiod}}}%
+        {{hash=74374992d46f837659a0f70ec930bc63}{%
+           family={Frackowiak},
+           family_i={F\bibinitperiod},
+           given={Richard\bibnamedelima SJ},
+           given_i={R\bibinitperiod\bibinitdelim S\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Wiley Online Library}%
+      }
+      \strng{namehash}{527a2db500408e9a4abbe7d6ed214838}
+      \strng{fullhash}{3e62003f345a3a544e698bf0db001213}
+      \field{sortinit}{1}
+      \field{sortinithash}{53e85f4cf497d2a4e1d51786552bcbf1}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Human brain mapping}
+      \field{number}{4}
+      \field{title}{Statistical parametric maps in functional imaging: a general linear approach}
+      \field{volume}{2}
+      \field{year}{1994}
+      \field{pages}{189\bibrangedash 210}
+      \range{pages}{22}
     \endentry
     \entry{Talairach1988c}{misc}{}
       \name{author}{2}{}{%
@@ -1390,8 +2390,115 @@
       \field{title}{Co-Planar Stereotactic Atlas ofthe Human Brain}
       \field{year}{1988}
     \endentry
+    \entry{Krishnaiah1982}{inbook}{}
+      \name{editor}{2}{}{%
+        {{hash=d01da202b8ee72460dadca33f51c7bd5}{%
+           family={Krishnaiah},
+           family_i={K\bibinitperiod},
+           given={R.\bibnamedelimi R.},
+           given_i={R\bibinitperiod\bibinitdelim R\bibinitperiod}}}%
+        {{hash=eb77bfbf549a7253ad0cced7dc9e2a72}{%
+           family={Kanal},
+           family_i={K\bibinitperiod},
+           given={L.\bibnamedelimi N.},
+           given_i={L\bibinitperiod\bibinitdelim N\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {North-Holland}%
+      }
+      \strng{namehash}{a68c2b2939bfb854507f338f0cd854f2}
+      \strng{fullhash}{a68c2b2939bfb854507f338f0cd854f2}
+      \field{sortinit}{1}
+      \field{sortinithash}{53e85f4cf497d2a4e1d51786552bcbf1}
+      \field{labelnamesource}{editor}
+      \field{labeltitlesource}{title}
+      \field{chapter}{Dimensionality and sample size considerations in pattern recognition practice}
+      \field{title}{{Handbook of Statistics}}
+      \field{year}{1982}
+      \field{pages}{825\bibrangedash 855}
+      \range{pages}{31}
+    \endentry
   \endsortlist
-  \sortlist[entry]{nyt/global}
+  \sortlist[entry]{nyt/global/}
+    \entry{Anderson2001}{article}{}
+      \name{author}{2}{}{%
+        {{hash=0f83e4422ae3237841aa9224998ad72e}{%
+           family={Anderson},
+           family_i={A\bibinitperiod},
+           given={Marti\bibnamedelima J},
+           given_i={M\bibinitperiod\bibinitdelim J\bibinitperiod}}}%
+        {{hash=ae5c51dbc9c561361f824c9a21f1e371}{%
+           family={Robinson},
+           family_i={R\bibinitperiod},
+           given={John},
+           given_i={J\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Wiley Online Library}%
+      }
+      \strng{namehash}{86d174a650a4cb32b0bd5f9c96f678ee}
+      \strng{fullhash}{86d174a650a4cb32b0bd5f9c96f678ee}
+      \field{sortinit}{A}
+      \field{sortinithash}{b685c7856330eaee22789815b49de9bb}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Australian \& New Zealand Journal of Statistics}
+      \field{number}{1}
+      \field{title}{Permutation tests for linear models}
+      \field{volume}{43}
+      \field{year}{2001}
+      \field{pages}{75\bibrangedash 88}
+      \range{pages}{14}
+    \endentry
+    \entry{Arndt1996}{article}{}
+      \name{author}{5}{}{%
+        {{hash=d7446b0e86b0861f2eafc318b1fd8c98}{%
+           family={Arndt},
+           family_i={A\bibinitperiod},
+           given={S},
+           given_i={S\bibinitperiod}}}%
+        {{hash=50febb20c27565a645c9aee8adbcae1b}{%
+           family={Cizadlo},
+           family_i={C\bibinitperiod},
+           given={T},
+           given_i={T\bibinitperiod}}}%
+        {{hash=6f526a0eef6e8acb7a1e66d313658467}{%
+           family={O'Leary},
+           family_i={O\bibinitperiod},
+           given={D},
+           given_i={D\bibinitperiod}}}%
+        {{hash=083e0a2815da6d707080b458bdd968a9}{%
+           family={Gold},
+           family_i={G\bibinitperiod},
+           given={S},
+           given_i={S\bibinitperiod}}}%
+        {{hash=4a98207addf4a828c01819c79d84e749}{%
+           family={Andreasen},
+           family_i={A\bibinitperiod},
+           given={N\bibnamedelima C},
+           given_i={N\bibinitperiod\bibinitdelim C\bibinitperiod}}}%
+      }
+      \strng{namehash}{2ce0cbaf0c6cb4150593f62748279a33}
+      \strng{fullhash}{41a54e5795bb07cc6a09d92dfd5f66c7}
+      \field{sortinit}{A}
+      \field{sortinithash}{b685c7856330eaee22789815b49de9bb}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Image intensity normalization is frequently applied to eliminate or adjust for subject or injection global blood flow (gCBF) and other sources of nuisance variation. Normalization has several other positive effects on the analysis of PET images. However, the choice of an intensity normalization technique affects the statistical and psychometric properties of the image data. We compared three normalization procedures, the ratio approach (regional (r)CBF/gCBF), histogram equalization, and ANCOVA, on both PET count and flow data sets. The ratio method presents the proportional increase of regions, the histogram equalization method offers the relative ranking of intensities over the image, and the ANCOVA method provides statistical deviations from an expected linear model of regional values from the subject's gCBF. The original study used 33 normal subjects in a standard subtraction paradigm. The normalization methods were evaluated on their ability to remove extraneous error variation, induce homogeneity of intersubject variation, and remove unwanted dependencies. In general, the normalization modified the subtraction image more than the individual condition images. All three methods worked well at removing the dependency of rCBF on gCBF in count and flow images. For count data, the three methods also reduced the amount of error variation equally well, improving the signal to noise ratio. For flow data, the histogram equalization and ratio methods worked best at reducing statistical error. All three methods dramatically stabilized the variance over the image.}
+      \field{issn}{1053-8119}
+      \field{issue}{3 Pt 1}
+      \field{journaltitle}{NeuroImage}
+      \field{month}{06}
+      \field{title}{Normalizing counts and cerebral blood flow intensity in functional imaging studies of the human brain.}
+      \field{volume}{3}
+      \field{year}{1996}
+      \field{pages}{175\bibrangedash 184}
+      \range{pages}{10}
+      \verb{doi}
+      \verb 10.1006/nimg.1996.0019
+      \endverb
+      \keyw{Analysis of Variance; Blood Flow Velocity; Brain,anatomy & histology,physiology,radionuclide imaging; Cerebrovascular Circulation; Humans; Magnetic Resonance Imaging; Memory,physiology; Reference Values; Regional Blood Flow,physiology; Statistics,Nonparametric; Tomography,Emission-Computed}
+    \endentry
     \entry{Ashburner2000}{article}{}
       \name{author}{2}{}{%
         {{hash=f62428d2d65bafab585e44b3607bc7c6}{%
@@ -1421,6 +2528,101 @@
       \field{year}{2000}
       \field{pages}{805\bibrangedash 821}
       \range{pages}{17}
+    \endentry
+    \entry{Benjamini2010}{article}{}
+      \name{author}{1}{}{%
+        {{hash=2bf06df9b6fb1b6a6811f2965ef58db2}{%
+           family={Benjamini},
+           family_i={B\bibinitperiod},
+           given={Yoav},
+           given_i={Y\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Wiley Online Library}%
+      }
+      \strng{namehash}{2bf06df9b6fb1b6a6811f2965ef58db2}
+      \strng{fullhash}{2bf06df9b6fb1b6a6811f2965ef58db2}
+      \field{sortinit}{B}
+      \field{sortinithash}{4ecbea03efd0532989d3836d1a048c32}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Biometrical Journal}
+      \field{number}{6}
+      \field{title}{Simultaneous and selective inference: current successes and future challenges}
+      \field{volume}{52}
+      \field{year}{2010}
+      \field{pages}{708\bibrangedash 721}
+      \range{pages}{14}
+    \endentry
+    \entry{Benjamini1995}{article}{}
+      \name{author}{2}{}{%
+        {{hash=2bf06df9b6fb1b6a6811f2965ef58db2}{%
+           family={Benjamini},
+           family_i={B\bibinitperiod},
+           given={Yoav},
+           given_i={Y\bibinitperiod}}}%
+        {{hash=486dfb83d695169656e5706b50266208}{%
+           family={Hochberg},
+           family_i={H\bibinitperiod},
+           given={Yosef},
+           given_i={Y\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {JSTOR}%
+      }
+      \strng{namehash}{0ba4be1a60b0ea36e468eb3f8db88a98}
+      \strng{fullhash}{0ba4be1a60b0ea36e468eb3f8db88a98}
+      \field{sortinit}{B}
+      \field{sortinithash}{4ecbea03efd0532989d3836d1a048c32}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Journal of the royal statistical society. Series B (Methodological)}
+      \field{title}{Controlling the false discovery rate: a practical and powerful approach to multiple testing}
+      \field{year}{1995}
+      \field{pages}{289\bibrangedash 300}
+      \range{pages}{12}
+    \endentry
+    \entry{bossa2010tensor}{article}{}
+      \true{moreauthor}
+      \true{morelabelname}
+      \name{author}{4}{}{%
+        {{hash=3e11c83f308123de7c77ba545e65394b}{%
+           family={Bossa},
+           family_i={B\bibinitperiod},
+           given={Matias},
+           given_i={M\bibinitperiod}}}%
+        {{hash=18fbc01182030c18ff9a4cd1c2e3b842}{%
+           family={Zacur},
+           family_i={Z\bibinitperiod},
+           given={Ernesto},
+           given_i={E\bibinitperiod}}}%
+        {{hash=abec8c3db39eecef19de091e400ba2f0}{%
+           family={Olmos},
+           family_i={O\bibinitperiod},
+           given={Salvador},
+           given_i={S\bibinitperiod}}}%
+        {{hash=c2f5dfc5d55fb56accb23a86c2adac48}{%
+           family={Initiative},
+           family_i={I\bibinitperiod},
+           given={Alzheimer's\bibnamedelimb Disease\bibnamedelima Neuroimaging},
+           given_i={A\bibinitperiod\bibinitdelim D\bibinitperiod\bibinitdelim N\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Elsevier}%
+      }
+      \strng{namehash}{0f4ab6ca36348cea3235b9bc25d5b64d}
+      \strng{fullhash}{3c6c6c5148afba4f1ccd88b4ff71a11e}
+      \field{sortinit}{B}
+      \field{sortinithash}{4ecbea03efd0532989d3836d1a048c32}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Neuroimage}
+      \field{number}{3}
+      \field{title}{Tensor-based morphometry with stationary velocity field diffeomorphic registration: application to ADNI}
+      \field{volume}{51}
+      \field{year}{2010}
+      \field{pages}{956\bibrangedash 969}
+      \range{pages}{14}
     \endentry
     \entry{Button2013}{article}{}
       \name{author}{7}{}{%
@@ -1484,6 +2686,26 @@
       \verb http://dx.doi.org/10.1038/nrn3475
       \endverb
     \endentry
+    \entry{Carlson2016}{book}{}
+      \name{author}{1}{}{%
+        {{hash=21a4f31323490c0dbc92e3c874f9f938}{%
+           family={Carlson},
+           family_i={C\bibinitperiod},
+           given={Neil\bibnamedelima R},
+           given_i={N\bibinitperiod\bibinitdelim R\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Pearson}%
+      }
+      \strng{namehash}{21a4f31323490c0dbc92e3c874f9f938}
+      \strng{fullhash}{21a4f31323490c0dbc92e3c874f9f938}
+      \field{sortinit}{C}
+      \field{sortinithash}{59f25d509f3381b07695554a9f35ecb2}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Physiology of behavior}
+      \field{year}{2016}
+    \endentry
     \entry{Chang2001}{article}{}
       \name{author}{2}{}{%
         {{hash=90dbdcacecdffc9ea33bf0a0d370c416}{%
@@ -1519,6 +2741,87 @@
       \verb 10.1145/1961189.1961199
       \endverb
     \endentry
+    \entry{DeMartino2007}{article}{}
+      \name{author}{7}{}{%
+        {{hash=fe0ab7cd15b3398d180338bbf4f6c954}{%
+           family={{De Martino}},
+           family_i={D\bibinitperiod},
+           given={Federico},
+           given_i={F\bibinitperiod}}}%
+        {{hash=b58c72f5d0d66cd93ac0e65e7939c31e}{%
+           family={Gentile},
+           family_i={G\bibinitperiod},
+           given={Francesco},
+           given_i={F\bibinitperiod}}}%
+        {{hash=06ac6388cb2b687371bb3a5d081d90d5}{%
+           family={Esposito},
+           family_i={E\bibinitperiod},
+           given={Fabrizio},
+           given_i={F\bibinitperiod}}}%
+        {{hash=2c22fd517f7c1420b0fd30db269c69d1}{%
+           family={Balsi},
+           family_i={B\bibinitperiod},
+           given={Marco},
+           given_i={M\bibinitperiod}}}%
+        {{hash=19b1b19599b298e07f3b006cbda39c3c}{%
+           family={{Di Salle}},
+           family_i={D\bibinitperiod},
+           given={Francesco},
+           given_i={F\bibinitperiod}}}%
+        {{hash=16846f48ecd1259bb6b32e05f1f16f78}{%
+           family={Goebel},
+           family_i={G\bibinitperiod},
+           given={Rainer},
+           given_i={R\bibinitperiod}}}%
+        {{hash=80f0b2401b1f3b84eb02ac86c6290a1e}{%
+           family={Formisano},
+           family_i={F\bibinitperiod},
+           given={Elia},
+           given_i={E\bibinitperiod}}}%
+      }
+      \strng{namehash}{bdb37ead2777c9568fe6e9543b9d9914}
+      \strng{fullhash}{c5486ac3365b16341703edafd8643d66}
+      \field{sortinit}{D}
+      \field{sortinithash}{78f7c4753a2004675f316a80bdb31742}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{We present a general method for the classification of independent components (ICs) extracted from functional MRI (fMRI) data sets. The method consists of two steps. In the first step, each fMRI-IC is associated with an IC-fingerprint, i.e., a representation of the component in a multidimensional space of parameters. These parameters are post hoc estimates of global properties of the ICs and are largely independent of a specific experimental design and stimulus timing. In the second step a machine learning algorithm automatically separates the IC-fingerprints into six general classes after preliminary training performed on a small subset of expert-labeled components. We illustrate this approach in a multisubject fMRI study employing visual structure-from-motion stimuli encoding faces and control random shapes. We show that: (1) IC-fingerprints are a valuable tool for the inspection, characterization and selection of fMRI-ICs and (2) automatic classifications of fMRI-ICs in new subjects present a high correspondence with those obtained by expert visual inspection of the components. Importantly, our classification procedure highlights several neurophysiologically interesting processes. The most intriguing of which is reflected, with high intra- and inter-subject reproducibility, in one IC exhibiting a transiently task-related activation in the [`]face' region of the primary sensorimotor cortex. This suggests that in addition to or as part of the mirror system, somatotopic regions of the sensorimotor cortex are involved in disambiguating the perception of a moving body part. Finally, we show that the same classification algorithm can be successfully applied, without re-training, to fMRI collected using acquisition parameters, stimulation modality and timing considerably different from those used for training.}
+      \field{issn}{1053-8119}
+      \field{journaltitle}{Neuroimage}
+      \field{month}{01}
+      \field{number}{1}
+      \field{title}{{Classification of fMRI independent components using {IC}-fingerprints and support vector machine classifiers}}
+      \field{volume}{34}
+      \field{year}{2007}
+      \field{pages}{177\bibrangedash 194}
+      \range{pages}{18}
+    \endentry
+    \entry{Dixon2003}{article}{}
+      \name{author}{1}{}{%
+        {{hash=42dee58b28c37ebdc2f9ed471fe099a7}{%
+           family={Dixon},
+           family_i={D\bibinitperiod},
+           given={Peter},
+           given_i={P\bibinitperiod}}}%
+      }
+      \strng{namehash}{42dee58b28c37ebdc2f9ed471fe099a7}
+      \strng{fullhash}{42dee58b28c37ebdc2f9ed471fe099a7}
+      \field{sortinit}{D}
+      \field{sortinithash}{78f7c4753a2004675f316a80bdb31742}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Null hypothesis significance tests are commonly used to provide a link between empirical evidence and theoretical interpretation. However, this strategy is prone to the "p-value fallacy" in which effects and interactions are classified as either "noise" or "real" based on whether the associated p value is greater or less than .05. This dichotomous classification can lead to dramatic misconstruals of the evidence provided by an experiment. For example, it is quite possible to have similar patterns of means that lead to entirely different patterns of significance, and one can easily find the same patterns of significance that are associated with completely different patterns of means. Describing data in terms of an inventory of significant and nonsignificant effects can thus completely misrepresent the results. An alternative analytical technique is to identify competing interpretations of the data and then use likelihood ratios to assess which interpretation provides the better account. Several different methods of calculating the likelihood ratios are illustrated. It is argued that this approach satisfies a principle of "graded evidence," according to which similar data should provide similar evidence.}
+      \field{issn}{1196-1961}
+      \field{issue}{3}
+      \field{journaltitle}{Canadian journal of experimental psychology = Revue canadienne de psychologie experimentale}
+      \field{month}{09}
+      \field{title}{The p-value fallacy and how to avoid it.}
+      \field{volume}{57}
+      \field{year}{2003}
+      \field{pages}{189\bibrangedash 202}
+      \range{pages}{14}
+      \keyw{Humans; Models,Psychological; Research Design}
+    \endentry
     \entry{Duin2000}{inproceedings}{}
       \name{author}{1}{}{%
         {{hash=3cc8f1c3ce959ecc25fe1018bb2de201}{%
@@ -1538,8 +2841,8 @@
       \field{title}{Classifiers in almost empty spaces}
       \field{volume}{2}
       \field{year}{2000}
-      \field{pages}{1\bibrangedash 7 vol.2}
-      \range{pages}{-1}
+      \field{pages}{1\bibrangedash 7}
+      \range{pages}{7}
       \verb{doi}
       \verb 10.1109/ICPR.2000.906006
       \endverb
@@ -1638,6 +2941,56 @@
       \range{pages}{15}
       \keyw{Aged; Alzheimer Disease,diagnosis,pathology; Brain,anatomy & histology,pathology; Brain Mapping; Female; Humans; Magnetic Resonance Imaging,methods; Male; Reproducibility of Results}
     \endentry
+    \entry{Friston1994}{article}{}
+      \name{author}{6}{}{%
+        {{hash=3bd4ac786cc0b7cb996e2dbf8a77848d}{%
+           family={Friston},
+           family_i={F\bibinitperiod},
+           given={Karl\bibnamedelima J},
+           given_i={K\bibinitperiod\bibinitdelim J\bibinitperiod}}}%
+        {{hash=2214ba978062c7fce766e258a3bacbcb}{%
+           family={Holmes},
+           family_i={H\bibinitperiod},
+           given={Andrew\bibnamedelima P},
+           given_i={A\bibinitperiod\bibinitdelim P\bibinitperiod}}}%
+        {{hash=df6144e0e5baf4fafdd14a46b9ccc768}{%
+           family={Worsley},
+           family_i={W\bibinitperiod},
+           given={Keith\bibnamedelima J},
+           given_i={K\bibinitperiod\bibinitdelim J\bibinitperiod}}}%
+        {{hash=b1e7b40b41406918be9c1f0d2fcec43f}{%
+           family={Poline},
+           family_i={P\bibinitperiod},
+           given={J-P},
+           given_i={J\bibinithyphendelim P\bibinitperiod}}}%
+        {{hash=1881d07d4c1820e0a2501eff4acb2893}{%
+           family={Frith},
+           family_i={F\bibinitperiod},
+           given={Chris\bibnamedelima D},
+           given_i={C\bibinitperiod\bibinitdelim D\bibinitperiod}}}%
+        {{hash=74374992d46f837659a0f70ec930bc63}{%
+           family={Frackowiak},
+           family_i={F\bibinitperiod},
+           given={Richard\bibnamedelima SJ},
+           given_i={R\bibinitperiod\bibinitdelim S\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Wiley Online Library}%
+      }
+      \strng{namehash}{527a2db500408e9a4abbe7d6ed214838}
+      \strng{fullhash}{3e62003f345a3a544e698bf0db001213}
+      \field{sortinit}{F}
+      \field{sortinithash}{c6a7d9913bbd7b20ea954441c0460b78}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Human brain mapping}
+      \field{number}{4}
+      \field{title}{Statistical parametric maps in functional imaging: a general linear approach}
+      \field{volume}{2}
+      \field{year}{1994}
+      \field{pages}{189\bibrangedash 210}
+      \range{pages}{22}
+    \endentry
     \entry{spm_book}{book}{}
       \name{author}{5}{}{%
         {{hash=b4372340ac980e0735cf560c486fae1a}{%
@@ -1678,6 +3031,56 @@
       \field{title}{{Statistical Parametric Mapping: The Analysis of Functional Brain Images}}
       \field{year}{2007}
     \endentry
+    \entry{Gorriz2010}{article}{}
+      \name{author}{5}{}{%
+        {{hash=7874a31bf28a43fb11d4e5217882ae92}{%
+           family={Górriz},
+           family_i={G\bibinitperiod},
+           given={J.\bibnamedelimi M.},
+           given_i={J\bibinitperiod\bibinitdelim M\bibinitperiod}}}%
+        {{hash=a82a4a0f3202a8d229f302ebd30a4d13}{%
+           family={Segovia},
+           family_i={S\bibinitperiod},
+           given={F.},
+           given_i={F\bibinitperiod}}}%
+        {{hash=feb8d5aab03ec8ed81924ca4f258be62}{%
+           family={Ramírez},
+           family_i={R\bibinitperiod},
+           given={J.},
+           given_i={J\bibinitperiod}}}%
+        {{hash=60f8691e1c780d941ef769f17d1f3a6d}{%
+           family={Lassl},
+           family_i={L\bibinitperiod},
+           given={A.},
+           given_i={A\bibinitperiod}}}%
+        {{hash=20521a35217cd2ed8a877557a8120b33}{%
+           family={Salas-Gonzalez},
+           family_i={S\bibinithyphendelim G\bibinitperiod},
+           given={D.},
+           given_i={D\bibinitperiod}}}%
+      }
+      \strng{namehash}{9540aa82458f8cd114294edb2db1faf9}
+      \strng{fullhash}{20a04441cbfdf5270617f5b810074b94}
+      \field{sortinit}{G}
+      \field{sortinithash}{1c854ef9177a91bf894e66485bdbd3ed}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issn}{1568-4946}
+      \field{journaltitle}{Applied Soft Computing}
+      \field{number}{2}
+      \field{title}{{GMM based SPECT image classification for the diagnosis of Alzheimer's disease}}
+      \field{volume}{11}
+      \field{year}{2011}
+      \field{pages}{2313\bibrangedash 2325}
+      \range{pages}{13}
+      \verb{doi}
+      \verb 10.1016/j.asoc.2010.08.012
+      \endverb
+      \verb{file}
+      \verb Gorriz2010-GMM.pdf:AD/Gorriz2010-GMM.pdf:PDF;Gorriz2010-ROI.pdf:AD/Gorriz2010-ROI.pdf:PDF
+      \endverb
+      \keyw{SPECT}
+    \endentry
     \entry{haar2014anatomical}{article}{}
       \name{author}{4}{}{%
         {{hash=725e8694ba3489a20136a085663fdbfc}{%
@@ -1714,6 +3117,113 @@
       \verb 10.1093/cercor/bhu242
       \endverb
     \endentry
+    \entry{Herman2009l}{incollection}{}
+      \name{author}{1}{}{%
+        {{hash=09bd05c0a634382fa8ac6e2e1382ee7a}{%
+           family={Herman},
+           family_i={H\bibinitperiod},
+           given={Gabor\bibnamedelima T.},
+           given_i={G\bibinitperiod\bibinitdelim T\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Springer}%
+      }
+      \strng{namehash}{09bd05c0a634382fa8ac6e2e1382ee7a}
+      \strng{fullhash}{09bd05c0a634382fa8ac6e2e1382ee7a}
+      \field{sortinit}{H}
+      \field{sortinithash}{82012198d5dfa657b8c4a168793268a6}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{The most commonly used methods in CT for parallel beam projection data are the filtered backprojection (FBP) methods. (In some of the earlier literature these methods are also referred to as “convolution methods.”) The reason for this is ease of implementation combined with good accuracy. These methods are transform methods, where the taking of the derivative and the Hilbert transform is approximated by the use of a single convolution.}
+      \field{booktitle}{Fundamentals of Computerized Tomography}
+      \field{day}{01}
+      \field{isbn}{978-1-85233-617-2}
+      \field{month}{01}
+      \field{title}{Filtered Backprojection for Parallel Beams}
+      \field{year}{2009}
+      \verb{doi}
+      \verb 10.1007/978-1-84628-723-7_8
+      \endverb
+      \verb{url}
+      \verb http://dx.doi.org/10.1007/978-1-84628-723-7_8
+      \endverb
+      \warn{\item Overwriting field 'year' with year value from field 'date' for entry 'Herman2009l'}
+      \warn{\item Overwriting field 'month' with month value from field 'date' for entry 'Herman2009l'}
+    \endentry
+    \entry{Illan2011}{article}{}
+      \name{author}{9}{}{%
+        {{hash=afe71505c4e0d5d38a24aa1859cb8b4d}{%
+           family={Illán},
+           family_i={I\bibinitperiod},
+           given={I.\bibnamedelimi A.},
+           given_i={I\bibinitperiod\bibinitdelim A\bibinitperiod}}}%
+        {{hash=7874a31bf28a43fb11d4e5217882ae92}{%
+           family={Górriz},
+           family_i={G\bibinitperiod},
+           given={J.\bibnamedelimi M.},
+           given_i={J\bibinitperiod\bibinitdelim M\bibinitperiod}}}%
+        {{hash=feb8d5aab03ec8ed81924ca4f258be62}{%
+           family={Ramírez},
+           family_i={R\bibinitperiod},
+           given={J.},
+           given_i={J\bibinitperiod}}}%
+        {{hash=20521a35217cd2ed8a877557a8120b33}{%
+           family={Salas-Gonzalez},
+           family_i={S\bibinithyphendelim G\bibinitperiod},
+           given={D.},
+           given_i={D\bibinitperiod}}}%
+        {{hash=65d4c759eadde4461d442ce29d8c67ea}{%
+           family={López},
+           family_i={L\bibinitperiod},
+           given={M.\bibnamedelimi M.},
+           given_i={M\bibinitperiod\bibinitdelim M\bibinitperiod}}}%
+        {{hash=a82a4a0f3202a8d229f302ebd30a4d13}{%
+           family={Segovia},
+           family_i={S\bibinitperiod},
+           given={F.},
+           given_i={F\bibinitperiod}}}%
+        {{hash=5cf0140a1fe35215d01c164d56c4a4bc}{%
+           family={Chaves},
+           family_i={C\bibinitperiod},
+           given={R.},
+           given_i={R\bibinitperiod}}}%
+        {{hash=4ffbe281f2b6c2a9c33322cfc1b20b1d}{%
+           family={Gómez-Rio},
+           family_i={G\bibinithyphendelim R\bibinitperiod},
+           given={M.},
+           given_i={M\bibinitperiod}}}%
+        {{hash=c8f9a15f9219a9ec6a3b14ab964c08e5}{%
+           family={Puntonet},
+           family_i={P\bibinitperiod},
+           given={C.\bibnamedelimi G.},
+           given_i={C\bibinitperiod\bibinitdelim G\bibinitperiod}}}%
+      }
+      \list{location}{1}{%
+        {New York, NY, USA}%
+      }
+      \list{publisher}{1}{%
+        {Elsevier Science Inc.}%
+      }
+      \strng{namehash}{2d140240b81eaec3798fca217253b044}
+      \strng{fullhash}{a2119f6da4023741a6c7887dd75faeac}
+      \field{sortinit}{I}
+      \field{sortinithash}{25e99d37ba90f7c4fb20baf4e310faf3}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issn}{0020-0255}
+      \field{issue}{4}
+      \field{journaltitle}{Information Sciences}
+      \field{month}{02}
+      \field{title}{{$^{18}${F-FDG PET} imaging analysis for computer aided {Alzheimer's} diagnosis}}
+      \field{volume}{181}
+      \field{year}{2011}
+      \field{pages}{903\bibrangedash 916}
+      \range{pages}{14}
+      \verb{doi}
+      \verb 10.1016/j.ins.2010.10.027
+      \endverb
+      \keyw{Alzheimer's disease (AD); Computer aided diagnosis; FDG-PET; Independent component analysis (ICA); Principal component analysis (PCA); Supervised learning; Support vector machine (SVM)}
+    \endentry
     \entry{Jenkinson2001}{article}{}
       \name{author}{2}{}{%
         {{hash=c8bee8f298b153cd679d1d62afe645ce}{%
@@ -1745,6 +3255,78 @@
       \range{pages}{14}
       \keyw{Brain Mapping,methods; Costs and Cost Analysis; Humans; Image Processing,Computer-Assisted,economics,methods; Magnetic Resonance Imaging; Mathematics}
     \endentry
+    \entry{Kelloff2005}{article}{}
+      \true{moreauthor}
+      \true{morelabelname}
+      \name{author}{10}{}{%
+        {{hash=916bcfbe0a773cd3857793b420c73f67}{%
+           family={Kelloff},
+           family_i={K\bibinitperiod},
+           given={Gary\bibnamedelima J},
+           given_i={G\bibinitperiod\bibinitdelim J\bibinitperiod}}}%
+        {{hash=2711f94a92a6540e408facaf5262c216}{%
+           family={Hoffman},
+           family_i={H\bibinitperiod},
+           given={John\bibnamedelima M},
+           given_i={J\bibinitperiod\bibinitdelim M\bibinitperiod}}}%
+        {{hash=f610088bcf541371985069030e0eb116}{%
+           family={Johnson},
+           family_i={J\bibinitperiod},
+           given={Bruce},
+           given_i={B\bibinitperiod}}}%
+        {{hash=f2c401b8a1d7b98a251f250d8a5945d9}{%
+           family={Scher},
+           family_i={S\bibinitperiod},
+           given={Howard\bibnamedelima I},
+           given_i={H\bibinitperiod\bibinitdelim I\bibinitperiod}}}%
+        {{hash=50a6ed3d01afd31600d68d8d349f54d5}{%
+           family={Siegel},
+           family_i={S\bibinitperiod},
+           given={Barry\bibnamedelima A},
+           given_i={B\bibinitperiod\bibinitdelim A\bibinitperiod}}}%
+        {{hash=0e1800355682bb51ebf865a2b763d996}{%
+           family={Cheng},
+           family_i={C\bibinitperiod},
+           given={Edward\bibnamedelima Y},
+           given_i={E\bibinitperiod\bibinitdelim Y\bibinitperiod}}}%
+        {{hash=e140d319482b2855563fce2aa7a86e6e}{%
+           family={Cheson},
+           family_i={C\bibinitperiod},
+           given={Bruce\bibnamedelima D},
+           given_i={B\bibinitperiod\bibinitdelim D\bibinitperiod}}}%
+        {{hash=f89d4bdd8bbe070feababe2124d85fc0}{%
+           family={O'Shaughnessy},
+           family_i={O\bibinitperiod},
+           given={Joyce},
+           given_i={J\bibinitperiod}}}%
+        {{hash=2aa0325b7e231858e49912387432196e}{%
+           family={Guyton},
+           family_i={G\bibinitperiod},
+           given={Kathryn\bibnamedelima Z},
+           given_i={K\bibinitperiod\bibinitdelim Z\bibinitperiod}}}%
+        {{hash=f4b3f3a2541c74f32e83c1b1594533b5}{%
+           family={Mankoff},
+           family_i={M\bibinitperiod},
+           given={David\bibnamedelima A},
+           given_i={D\bibinitperiod\bibinitdelim A\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {AACR}%
+      }
+      \strng{namehash}{1639f3a399ff42e83dd78adaa0c4b6d2}
+      \strng{fullhash}{4711df1c1c630d142c9d09b0d315f531}
+      \field{sortinit}{K}
+      \field{sortinithash}{a7d5b3aec5a0890aae7baf85a209abfc}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Clinical Cancer Research}
+      \field{number}{8}
+      \field{title}{Progress and promise of FDG-PET imaging for cancer patient management and oncologic drug development}
+      \field{volume}{11}
+      \field{year}{2005}
+      \field{pages}{2785\bibrangedash 2808}
+      \range{pages}{24}
+    \endentry
     \entry{Kohavi1995a}{inproceedings}{}
       \name{author}{1}{}{%
         {{hash=7120a2e96e83a82f9c24c62998a3c99a}{%
@@ -1767,6 +3349,34 @@
       \verb{url}
       \verb http://citeseer.ist.psu.edu/kohavi95study.html
       \endverb
+    \endentry
+    \entry{Krishnaiah1982}{inbook}{}
+      \name{editor}{2}{}{%
+        {{hash=d01da202b8ee72460dadca33f51c7bd5}{%
+           family={Krishnaiah},
+           family_i={K\bibinitperiod},
+           given={R.\bibnamedelimi R.},
+           given_i={R\bibinitperiod\bibinitdelim R\bibinitperiod}}}%
+        {{hash=eb77bfbf549a7253ad0cced7dc9e2a72}{%
+           family={Kanal},
+           family_i={K\bibinitperiod},
+           given={L.\bibnamedelimi N.},
+           given_i={L\bibinitperiod\bibinitdelim N\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {North-Holland}%
+      }
+      \strng{namehash}{a68c2b2939bfb854507f338f0cd854f2}
+      \strng{fullhash}{a68c2b2939bfb854507f338f0cd854f2}
+      \field{sortinit}{K}
+      \field{sortinithash}{a7d5b3aec5a0890aae7baf85a209abfc}
+      \field{labelnamesource}{editor}
+      \field{labeltitlesource}{title}
+      \field{chapter}{Dimensionality and sample size considerations in pattern recognition practice}
+      \field{title}{{Handbook of Statistics}}
+      \field{year}{1982}
+      \field{pages}{825\bibrangedash 855}
+      \range{pages}{31}
     \endentry
     \entry{Martinez201141}{inproceedings}{}
       \name{author}{6}{}{%
@@ -1823,6 +3433,53 @@
       \verb 10.1007/978-3-642-21326-7_5
       \endverb
       \keyw{feature,factor analysis,decomposition,test,adni,alzheimer,spect,pet}
+    \endentry
+    \entry{Martinez-Murcia2016book}{inbook}{}
+      \name{author}{3}{}{%
+        {{hash=f13fcabedae6437aaa5e694f277d9fcb}{%
+           family={Martinez-Murcia},
+           family_i={M\bibinithyphendelim M\bibinitperiod},
+           given={F.J.},
+           given_i={F\bibinitperiod}}}%
+        {{hash=e826f0167b36717b7183244b294575cf}{%
+           family={Górriz},
+           family_i={G\bibinitperiod},
+           given={J.},
+           given_i={J\bibinitperiod}}}%
+        {{hash=feb8d5aab03ec8ed81924ca4f258be62}{%
+           family={Ramírez},
+           family_i={R\bibinitperiod},
+           given={J.},
+           given_i={J\bibinitperiod}}}%
+      }
+      \name{editor}{1}{}{%
+        {{hash=9841a1beec348a266806b5db2514e6e3}{%
+           family={Udroiu},
+           family_i={U\bibinitperiod},
+           given={Razvan},
+           given_i={R\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Intech}%
+      }
+      \strng{namehash}{29217a85333e67ccd23e2b5d1f6c6901}
+      \strng{fullhash}{29217a85333e67ccd23e2b5d1f6c6901}
+      \field{sortinit}{M}
+      \field{sortinithash}{2684bec41e9697b92699b46491061da2}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{Computer-aided Technologies - Applications in Engineering and Medicine}
+      \field{chapter}{7}
+      \field{edition}{1}
+      \field{isbn}{978-953-51-4895-1}
+      \field{month}{12}
+      \field{title}{Computer Aided Diagnosis in Neuroimaging}
+      \field{year}{2016}
+      \field{pages}{137\bibrangedash 160}
+      \range{pages}{24}
+      \verb{doi}
+      \verb 10.5772/64980
+      \endverb
     \endentry
     \entry{Martinez-Murcia2014225}{inproceedings}{}
       \name{author}{6}{}{%
@@ -1973,7 +3630,7 @@
       \endverb
       \keyw{texture,haralick,pks,parkinson,datscan}
     \endentry
-    \entry{Martinez-Murcia2014}{article}{}
+    \entry{martinez2014parametrization}{article}{}
       \name{author}{5}{}{%
         {{hash=f13fcabedae6437aaa5e694f277d9fcb}{%
            family={Martinez-Murcia},
@@ -2022,7 +3679,7 @@
       \endverb
       \keyw{texture,datscan,parkinson,pks}
     \endentry
-    \entry{Martinez-Murcia2016hbm}{article}{}
+    \entry{Martinez-Murcia2015}{article}{}
       \name{author}{4}{}{%
         {{hash=f13fcabedae6437aaa5e694f277d9fcb}{%
            family={Martinez-Murcia},
@@ -2212,7 +3869,7 @@
       \endverb
       \keyw{feature,wilcoxon,factor analysis,fa,decomposition,spect,pet,adni,ad,alzheimer}
     \endentry
-    \entry{Martinez-Murcia201519}{inproceedings}{}
+    \entry{Martinez-MurciaVRLBP}{inproceedings}{}
       \name{author}{5}{}{%
         {{hash=f13fcabedae6437aaa5e694f277d9fcb}{%
            family={Martinez-Murcia},
@@ -2336,10 +3993,11 @@
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{Human Brain Mapping}
-      \field{month}{10}
+      \field{month}{03}
+      \field{number}{3}
       \field{title}{On the Brain Structure Heterogeneity of Autism: Parsing out Acquisition Site Effects With Significance-Weighted Principal Component Analysis}
-      \field{volume}{Accepted}
-      \field{year}{2016}
+      \field{volume}{38}
+      \field{year}{2017}
       \verb{doi}
       \verb 10.1002/hbm.23449
       \endverb
@@ -2491,7 +4149,7 @@
       \field{abstract}{Motivated by the vast amount of information that is rapidly accumulating about the human brain in digital form, we embarked upon a program in 1992 to develop a four-dimensional probabilistic atlas and reference system for the human brain. Through an International Consortium for Brain Mapping (ICBM) a dataset is being collected that includes 7000 subjects between the ages of eighteen and ninety years and including 342 mono- and dizygotic twins. Data on each subject includes detailed demographic, clinical, behavioural and imaging information. DNA has been collected for genotyping from 5800 subjects. A component of the programme uses post-mortem tissue to determine the probabilistic distribution of microscopic cyto- and chemoarchitectural regions in the human brain. This, combined with macroscopic information about structure and function derived from subjects in vivo, provides the first large scale opportunity to gain meaningful insights into the concordance or discordance in micro- and macroscopic structure and function. The philosophy, strategy, algorithm development, data acquisition techniques and validation methods are described in this report along with database structures. Examples of results are described for the normal adult human brain as well as examples in patients with Alzheimer's disease and multiple sclerosis. The ability to quantify the variance of the human brain as a function of age in a large population of subjects for whom data is also available about their genetic composition and behaviour will allow for the first assessment of cerebral genotype-phenotype-behavioural correlations in humans to take place in a population this large. This approach and its application should provide new insights and opportunities for investigators interested in basic neuroscience, clinical diagnostics and the evaluation of neuropsychiatric disorders in patients.}
       \field{issn}{0962-8436}
       \field{issue}{1412}
-      \field{journaltitle}{Philosophical transactions of the Royal Society of London. Series B, Biological sciences}
+      \field{journaltitle}{Philosophical Transactions of the Royal Society of London. Series B, Biological Sciences}
       \field{month}{08}
       \field{title}{A probabilistic atlas and reference system for the human brain: International Consortium for Brain Mapping (ICBM).}
       \field{volume}{356}
@@ -2502,6 +4160,41 @@
       \verb 10.1098/rstb.2001.0915
       \endverb
       \keyw{Adult; Brain,anatomy & histology; Brain Mapping,instrumentation,methods; Databases,Factual; Humans; Magnetic Resonance Imaging; Models,Statistical; Neuroanatomy,instrumentation,methods}
+    \endentry
+    \entry{Newberg2002}{inproceedings}{}
+      \name{author}{3}{}{%
+        {{hash=12b23b3a607aa0f93b7c42c979519217}{%
+           family={Newberg},
+           family_i={N\bibinitperiod},
+           given={Andrew},
+           given_i={A\bibinitperiod}}}%
+        {{hash=32e07762b9506e24081f59b5dcb476f2}{%
+           family={Alavi},
+           family_i={A\bibinitperiod},
+           given={Abass},
+           given_i={A\bibinitperiod}}}%
+        {{hash=98ca97631b04adcc027130a879d00b5f}{%
+           family={Reivich},
+           family_i={R\bibinitperiod},
+           given={Martin},
+           given_i={M\bibinitperiod}}}%
+      }
+      \list{organization}{1}{%
+        {Elsevier}%
+      }
+      \strng{namehash}{ee221d53a987989ce8a3601e55c9ed19}
+      \strng{fullhash}{ee221d53a987989ce8a3601e55c9ed19}
+      \field{sortinit}{N}
+      \field{sortinithash}{925374ca63e7594de7fafdb83e64d41d}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{Seminars in nuclear medicine}
+      \field{number}{1}
+      \field{title}{Determination of regional cerebral function with FDG-PET imaging in neuropsychiatric disorders}
+      \field{volume}{32}
+      \field{year}{2002}
+      \field{pages}{13\bibrangedash 34}
+      \range{pages}{22}
     \endentry
     \entry{Reuter2010}{article}{}
       \name{author}{3}{}{%
@@ -2585,6 +4278,181 @@
       \verb 10.1016/j.neuroimage.2012.02.084
       \endverb
       \keyw{Algorithms; Brain,anatomy & histology,physiology; Humans; Image Interpretation,Computer-Assisted,methods; Magnetic Resonance Imaging,methods}
+    \endentry
+    \entry{Salas-Gonzalez2013}{article}{}
+      \name{author}{5}{}{%
+        {{hash=80c0a5abb383820c98e1e918318b6214}{%
+           family={Salas-Gonzalez},
+           family_i={S\bibinithyphendelim G\bibinitperiod},
+           given={Diego},
+           given_i={D\bibinitperiod}}}%
+        {{hash=f4228f125c42361b9f47bb676e4c04bb}{%
+           family={Górriz},
+           family_i={G\bibinitperiod},
+           given={Juan\bibnamedelima M},
+           given_i={J\bibinitperiod\bibinitdelim M\bibinitperiod}}}%
+        {{hash=6450d056a7ef88a8321faa1c9474f31c}{%
+           family={Ramírez},
+           family_i={R\bibinitperiod},
+           given={Javier},
+           given_i={J\bibinitperiod}}}%
+        {{hash=e8717de8b92989db990db58187ebeb75}{%
+           family={Illán},
+           family_i={I\bibinitperiod},
+           given={Ignacio\bibnamedelima A},
+           given_i={I\bibinitperiod\bibinitdelim A\bibinitperiod}}}%
+        {{hash=440dd2cfe5ed85e0eabbedc122a5127a}{%
+           family={Lang},
+           family_i={L\bibinitperiod},
+           given={Elmar\bibnamedelima W},
+           given_i={E\bibinitperiod\bibinitdelim W\bibinitperiod}}}%
+      }
+      \strng{namehash}{247e867bf19f75318a5dbdd04fa83b36}
+      \strng{fullhash}{4e78065bb36d4d37c0ab99873450fc4b}
+      \field{sortinit}{S}
+      \field{sortinithash}{fd1e7c5ab79596b13dbbb67f8d70fb5a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{In this work, a linear procedure to perform the intensity normalization of FP-CIT SPECT brain images is presented. This proposed methodology is based on the fact that the histogram of intensity values can be fitted accurately using a positive skewed $\alpha$-stable distribution. Then, the predicted $\alpha$-stable parameters and the location-scale property are used to linearly transform the intensity values in each voxel. This transformation is performed such that the new histograms in each image have a pre-specified $\alpha$-stable distribution with desired location and dispersion values. The proposed methodology is compared with a similar approach assuming Gaussian distribution and the widely used specific-to-nonspecific ratio. In this work, we show that the linear normalization method using the $\alpha$-stable distribution outperforms those existing methods.}
+      \field{issn}{1095-9572}
+      \field{journaltitle}{NeuroImage}
+      \field{month}{01}
+      \field{title}{Linear intensity normalization of FP-CIT SPECT brain images using the $\alpha$-stable distribution.}
+      \field{volume}{65}
+      \field{year}{2013}
+      \field{pages}{449\bibrangedash 455}
+      \range{pages}{7}
+      \verb{doi}
+      \verb 10.1016/j.neuroimage.2012.10.005
+      \endverb
+      \keyw{Brain,radionuclide imaging; Brain Mapping,methods; Humans; Image Processing,Computer-Assisted,methods; Radiopharmaceuticals; Tomography,Emission-Computed,Single-Photon,methods; Tropanes}
+    \endentry
+    \entry{Salas-Gonzalez2009}{article}{}
+      \name{author}{8}{}{%
+        {{hash=80c0a5abb383820c98e1e918318b6214}{%
+           family={Salas-Gonzalez},
+           family_i={S\bibinithyphendelim G\bibinitperiod},
+           given={Diego},
+           given_i={D\bibinitperiod}}}%
+        {{hash=f4228f125c42361b9f47bb676e4c04bb}{%
+           family={Górriz},
+           family_i={G\bibinitperiod},
+           given={Juan\bibnamedelima M},
+           given_i={J\bibinitperiod\bibinitdelim M\bibinitperiod}}}%
+        {{hash=6450d056a7ef88a8321faa1c9474f31c}{%
+           family={Ramírez},
+           family_i={R\bibinitperiod},
+           given={Javier},
+           given_i={J\bibinitperiod}}}%
+        {{hash=a33a4a30119e21f51749757c3c6aff38}{%
+           family={López},
+           family_i={L\bibinitperiod},
+           given={Miriam},
+           given_i={M\bibinitperiod}}}%
+        {{hash=453daa2cca3976a7137dc08fbb11cb57}{%
+           family={Illan},
+           family_i={I\bibinitperiod},
+           given={Ignacio\bibnamedelima A},
+           given_i={I\bibinitperiod\bibinitdelim A\bibinitperiod}}}%
+        {{hash=772517a755cbc91dd250c3a71f2e7bb6}{%
+           family={Segovia},
+           family_i={S\bibinitperiod},
+           given={Fermín},
+           given_i={F\bibinitperiod}}}%
+        {{hash=3d5ef811450f4a07e4c8fc3fec763e76}{%
+           family={Puntonet},
+           family_i={P\bibinitperiod},
+           given={Carlos\bibnamedelima G},
+           given_i={C\bibinitperiod\bibinitdelim G\bibinitperiod}}}%
+        {{hash=fd5c7f11c5e143eb5cdd1b2964cb7516}{%
+           family={Gómez-Río},
+           family_i={G\bibinithyphendelim R\bibinitperiod},
+           given={Manuel},
+           given_i={M\bibinitperiod}}}%
+      }
+      \strng{namehash}{247e867bf19f75318a5dbdd04fa83b36}
+      \strng{fullhash}{0472aad5b035e4fb10c223f14dcac40b}
+      \field{sortinit}{S}
+      \field{sortinithash}{fd1e7c5ab79596b13dbbb67f8d70fb5a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{This paper presents a computer-aided diagnosis technique for improving the accuracy of diagnosing the Alzheimer's type dementia. The proposed methodology is based on the calculation of the skewness for each m-by-m-by-m sliding block of the SPECT brain images. The center pixel in this m-by-m-by-m block is replaced by the skewness value to build a new 3-D brain image which is used for classification purposes. After that, voxels which present a Welch's t-statistic between classes, Normal and Alzheimer's images, higher (or lower) than a threshold are selected. The mean, standard deviation, skewness and kurtosis are calculated for these selected voxels and they are subjected as features to linear kernel based support vector machine classifier. The proposed methodology reaches accuracy higher than 99\% in the classification task.}
+      \field{issn}{1872-7972}
+      \field{issue}{1}
+      \field{journaltitle}{Neuroscience letters}
+      \field{month}{09}
+      \field{title}{Analysis of SPECT brain images for the diagnosis of Alzheimer's disease using moments and support vector machines.}
+      \field{volume}{461}
+      \field{year}{2009}
+      \field{pages}{60\bibrangedash 64}
+      \range{pages}{5}
+      \verb{doi}
+      \verb 10.1016/j.neulet.2009.05.056
+      \endverb
+      \keyw{Alzheimer Disease,radionuclide imaging; Brain,radionuclide imaging; Cysteine,analogs & derivatives; Humans; Image Interpretation,Computer-Assisted; Organotechnetium Compounds; Radiopharmaceuticals; Tomography,Emission-Computed,Single-Photon}
+    \endentry
+    \entry{Scherfler2005}{article}{}
+      \name{author}{8}{}{%
+        {{hash=3d3331c86a9236932b7aca156b23f1fa}{%
+           family={Scherfler},
+           family_i={S\bibinitperiod},
+           given={Christoph},
+           given_i={C\bibinitperiod}}}%
+        {{hash=ce054806ae115709812f3d2761e60130}{%
+           family={Seppi},
+           family_i={S\bibinitperiod},
+           given={Klaus},
+           given_i={K\bibinitperiod}}}%
+        {{hash=4c07b838c2c766c3d456619c4de8e045}{%
+           family={Donnemiller},
+           family_i={D\bibinitperiod},
+           given={Eveline},
+           given_i={E\bibinitperiod}}}%
+        {{hash=fcb3ad80b627ab30ab562e3bf48db415}{%
+           family={Goebel},
+           family_i={G\bibinitperiod},
+           given={Georg},
+           given_i={G\bibinitperiod}}}%
+        {{hash=c306458cd5cb88409584f7f63f95a3dd}{%
+           family={Brenneis},
+           family_i={B\bibinitperiod},
+           given={Christian},
+           given_i={C\bibinitperiod}}}%
+        {{hash=14dff60263a214a619be0590fa10f50d}{%
+           family={Virgolini},
+           family_i={V\bibinitperiod},
+           given={Irene},
+           given_i={I\bibinitperiod}}}%
+        {{hash=dbafb20f372918c2d31d00ec5aca57cb}{%
+           family={Wenning},
+           family_i={W\bibinitperiod},
+           given={Gregor\bibnamedelima K},
+           given_i={G\bibinitperiod\bibinitdelim K\bibinitperiod}}}%
+        {{hash=5ce4e63243ca6851370735b8ea3809de}{%
+           family={Poewe},
+           family_i={P\bibinitperiod},
+           given={Werner},
+           given_i={W\bibinitperiod}}}%
+      }
+      \strng{namehash}{f25ca49e98f5d564e2f70837660cff9c}
+      \strng{fullhash}{91d0e6db7b70d3090890cf3d339b8b09}
+      \field{sortinit}{S}
+      \field{sortinithash}{fd1e7c5ab79596b13dbbb67f8d70fb5a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issn}{1460-2156}
+      \field{issue}{Pt 7}
+      \field{journaltitle}{Brain}
+      \field{month}{07}
+      \field{title}{Voxel-wise analysis of [123I]beta-CIT SPECT differentiates the Parkinson variant of multiple system atrophy from idiopathic Parkinson's disease.}
+      \field{volume}{128}
+      \field{year}{2005}
+      \field{pages}{1605\bibrangedash 1612}
+      \range{pages}{8}
+      \verb{doi}
+      \verb 10.1093/brain/awh485
+      \endverb
+      \keyw{Aged; Case-Control Studies; Caudate Nucleus,metabolism; Cocaine,analogs & derivatives; Corpus Striatum,metabolism; Diagnosis,Differential; Discriminant Analysis; Dopamine,metabolism; Dopamine Plasma Membrane Transport Proteins; Female; Humans; Linear Models; Male; Membrane Glycoproteins,metabolism; Membrane Transport Proteins,metabolism; Mesencephalon,metabolism; Middle Aged; Multiple System Atrophy,metabolism,radionuclide imaging; Nerve Tissue Proteins,metabolism; Parkinson Disease,metabolism,radionuclide imaging; Radiopharmaceuticals; Receptors,Dopamine D2,metabolism; Tomography,Emission-Computed,Single-Photon}
     \endentry
     \entry{Smith2004}{article}{}
       \name{author}{17}{}{%
@@ -2693,6 +4561,56 @@
       \endverb
       \keyw{Bayes Theorem; Brain,anatomy & histology,physiology; Databases,Factual; Humans; Image Processing,Computer-Assisted; Magnetic Resonance Imaging,statistics & numerical data; Models,Neurological; Models,Statistical; Software}
     \endentry
+    \entry{Stoeckel04}{inproceedings}{}
+      \name{author}{6}{}{%
+        {{hash=28bf5e46a098c31cc1ae3aa58fc54ee5}{%
+           family={Stoeckel},
+           family_i={S\bibinitperiod},
+           given={J.},
+           given_i={J\bibinitperiod}}}%
+        {{hash=5b2d7b5f6e2fe68aef4508d44ef62a87}{%
+           family={Ayache},
+           family_i={A\bibinitperiod},
+           given={N.},
+           given_i={N\bibinitperiod}}}%
+        {{hash=27a1806d935eb6e9d34ad38652921e3d}{%
+           family={Malandain},
+           family_i={M\bibinitperiod},
+           given={G.},
+           given_i={G\bibinitperiod}}}%
+        {{hash=2af39e04b5ef00f5db3bb8888dbc21f2}{%
+           family={Koulibaly},
+           family_i={K\bibinitperiod},
+           given={P.\bibnamedelimi M.},
+           given_i={P\bibinitperiod\bibinitdelim M\bibinitperiod}}}%
+        {{hash=2e317b669cdb39d34a73f738d2dba389}{%
+           family={Ebmeier},
+           family_i={E\bibinitperiod},
+           given={K.\bibnamedelimi P.},
+           given_i={K\bibinitperiod\bibinitdelim P\bibinitperiod}}}%
+        {{hash=d09ee9800eb4ce47c13f0d5a295b3f43}{%
+           family={Darcourt},
+           family_i={D\bibinitperiod},
+           given={J.},
+           given_i={J\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Springer}%
+      }
+      \strng{namehash}{1a1b12926547575b4130f0fb17100cdc}
+      \strng{fullhash}{e743b579e73636f23057b0690f1703b7}
+      \field{sortinit}{S}
+      \field{sortinithash}{fd1e7c5ab79596b13dbbb67f8d70fb5a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{{Medical Image Computing and Computer-Assisted Intervention - MICCAI}}
+      \field{series}{{Lecture Notes in Computer Science}}
+      \field{title}{{Automatic Classification of {SPECT} Images of {Alzheimer's} Disease Patients and Control Subjects}}
+      \field{volume}{3217}
+      \field{year}{2004}
+      \field{pages}{654\bibrangedash 662}
+      \range{pages}{9}
+    \endentry
     \entry{Talairach1988c}{misc}{}
       \name{author}{2}{}{%
         {{hash=0578dd11df2b3e5ef05a45a2fe6678ee}{%
@@ -2717,6 +4635,144 @@
       \field{labeltitlesource}{title}
       \field{title}{Co-Planar Stereotactic Atlas ofthe Human Brain}
       \field{year}{1988}
+    \endentry
+    \entry{Theodoridis1999}{book}{}
+      \name{author}{2}{}{%
+        {{hash=fd3acabdbe6cc1c8fdbab64dd76ae135}{%
+           family={Theodoridis},
+           family_i={T\bibinitperiod},
+           given={Sergios},
+           given_i={S\bibinitperiod}}}%
+        {{hash=d9a434e0a63c39a6601c8aeab62f6546}{%
+           family={Koutroumbas},
+           family_i={K\bibinitperiod},
+           given={Konstantinos},
+           given_i={K\bibinitperiod}}}%
+      }
+      \list{location}{1}{%
+        {New York}%
+      }
+      \list{publisher}{1}{%
+        {Academic Press}%
+      }
+      \strng{namehash}{b40a7473f01d514e418f2ac074992870}
+      \strng{fullhash}{b40a7473f01d514e418f2ac074992870}
+      \field{sortinit}{T}
+      \field{sortinithash}{423d138a005a533b47e6475e39378bf2}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{isbn}{9781597492720}
+      \field{journaltitle}{New York}
+      \field{title}{Pattern Recognition}
+      \field{year}{1999}
+    \endentry
+    \entry{Weiskopf2013}{article}{}
+      \name{author}{9}{}{%
+        {{hash=32d6921b813a342d678cf6ee9395b067}{%
+           family={Weiskopf},
+           family_i={W\bibinitperiod},
+           given={Nikolaus},
+           given_i={N\bibinitperiod}}}%
+        {{hash=bd0c7f2f25882898db2453c1cdfb255d}{%
+           family={Suckling},
+           family_i={S\bibinitperiod},
+           given={John},
+           given_i={J\bibinitperiod}}}%
+        {{hash=3474440ceba4bbf34ed683745416d316}{%
+           family={Williams},
+           family_i={W\bibinitperiod},
+           given={Guy},
+           given_i={G\bibinitperiod}}}%
+        {{hash=347238892c390f00bef4b0429af4cc30}{%
+           family={Correia},
+           family_i={C\bibinitperiod},
+           given={Marta\bibnamedelima Morgado},
+           given_i={M\bibinitperiod\bibinitdelim M\bibinitperiod}}}%
+        {{hash=0f47d913b184291f846c04c48d401855}{%
+           family={Inkster},
+           family_i={I\bibinitperiod},
+           given={Becky},
+           given_i={B\bibinitperiod}}}%
+        {{hash=e47b4b7799be5e55eccda310f347abbd}{%
+           family={Tait},
+           family_i={T\bibinitperiod},
+           given={Roger},
+           given_i={R\bibinitperiod}}}%
+        {{hash=8f7cf5f58d1d3cba811a757b57c022b4}{%
+           family={Ooi},
+           family_i={O\bibinitperiod},
+           given={Cinly},
+           given_i={C\bibinitperiod}}}%
+        {{hash=e0208bf3d35a7e4f26f62c84d6fd2faa}{%
+           family={Bullmore},
+           family_i={B\bibinitperiod},
+           given={Edward\bibnamedelima T},
+           given_i={E\bibinitperiod\bibinitdelim T\bibinitperiod}}}%
+        {{hash=f6dcf10385e816b33d20f1440b32d06e}{%
+           family={Lutti},
+           family_i={L\bibinitperiod},
+           given={Antoine},
+           given_i={A\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Frontiers}%
+      }
+      \strng{namehash}{811dd688c96396a694ba4cd996396fdd}
+      \strng{fullhash}{a836cca481a9d569058b73b8744409f8}
+      \field{sortinit}{W}
+      \field{sortinithash}{99e3ba1b3f78bb6f073e7fa7ac11636b}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Frontiers in neuroscience}
+      \field{title}{Quantitative multi-parameter mapping of R1, PD*, MT, and R2* at 3T: a multi-center validation}
+      \field{volume}{7}
+      \field{year}{2013}
+      \field{pages}{95}
+      \range{pages}{1}
+    \endentry
+    \entry{Winkler2014}{article}{}
+      \name{author}{5}{}{%
+        {{hash=ac710c75739c2f15489f17a7594609fb}{%
+           family={Winkler},
+           family_i={W\bibinitperiod},
+           given={Anderson\bibnamedelima M},
+           given_i={A\bibinitperiod\bibinitdelim M\bibinitperiod}}}%
+        {{hash=1450f03892265ecbb92996741ae8e682}{%
+           family={Ridgway},
+           family_i={R\bibinitperiod},
+           given={Gerard\bibnamedelima R},
+           given_i={G\bibinitperiod\bibinitdelim R\bibinitperiod}}}%
+        {{hash=2e3ee3354a1371f460bae99515ab0d3c}{%
+           family={Webster},
+           family_i={W\bibinitperiod},
+           given={Matthew\bibnamedelima A},
+           given_i={M\bibinitperiod\bibinitdelim A\bibinitperiod}}}%
+        {{hash=49a89c6ede91f785956919ac7c0878c3}{%
+           family={Smith},
+           family_i={S\bibinitperiod},
+           given={Stephen\bibnamedelima M},
+           given_i={S\bibinitperiod\bibinitdelim M\bibinitperiod}}}%
+        {{hash=be6ee27f439bbde65ded811737e5730d}{%
+           family={Nichols},
+           family_i={N\bibinitperiod},
+           given={Thomas\bibnamedelima E},
+           given_i={T\bibinitperiod\bibinitdelim E\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Elsevier}%
+      }
+      \strng{namehash}{15955a539cbcce0b3d65a73e2e44dba0}
+      \strng{fullhash}{ae7ba7e7c4438d70d1b5072069c7f233}
+      \field{sortinit}{W}
+      \field{sortinithash}{99e3ba1b3f78bb6f073e7fa7ac11636b}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Neuroimage}
+      \field{title}{Permutation inference for the general linear model}
+      \field{volume}{92}
+      \field{year}{2014}
+      \field{pages}{381\bibrangedash 397}
+      \range{pages}{17}
     \endentry
     \entry{xu2009source}{article}{}
       \name{author}{5}{}{%
@@ -2764,28 +4820,164 @@
       \range{pages}{14}
     \endentry
   \endsortlist
-  \missing{knuth:1974}
-  \missing{Vapnik1982}
-  \missing{Fay10}
-  \missing{Hyvarinen1999}
-  \missing{Giannakopoulos1998}
-  \missing{IllanTesis}
-  \missing{Theis2005}
-  \missing{Harman73}
-  \missing{EntropyBishop}
-  \missing{Duin00}
-  \missing{Oja1997}
-  \missing{Botev2010}
-  \missing{FastICA99}
+  \missing{Medina2008}
   \missing{Claus1994}
-  \missing{DeMartino2007}
-  \missing{Stoeckel04}
+  \missing{FastICA99}
+  \missing{Locatelli1998}
+  \missing{Vapnik1982}
+  \missing{Ojala1996}
+  \missing{Lozano2007}
+  \missing{Bhidayasiri2006}
+  \missing{Vardi1985}
+  \missing{Tzourio-Mazoyer2002}
+  \missing{Haralick73}
+  \missing{jobst_accurate_1998}
+  \missing{Grana2011}
+  \missing{Scherfler2009}
+  \missing{dougall_systematic_2004}
+  \missing{Jong2008}
+  \missing{Baron2001}
+  \missing{Christine2004}
+  \missing{Ram'irez2009}
+  \missing{Misra2009}
+  \missing{Oja1997}
+  \missing{Segovia2012}
+  \missing{Shaffer1995}
+  \missing{Illan2012}
+  \missing{Zhou2008}
+  \missing{Philips2008}
+  \missing{ADInforme2013}
+  \missing{PunalRioboo2007}
+  \missing{McGee2002}
   \missing{Hyvarinen2000}
   \missing{Alvarez2009}
+  \missing{Shepp82}
+  \missing{Evans1993}
+  \missing{Martinez-Murcia2014}
+  \missing{Botev2010}
+  \missing{PPMI}
+  \missing{sikio2015mr}
+  \missing{SaeysInzaLarranaga2007}
+  \missing{Hyvarinen1999}
+  \missing{knuth:1974}
+  \missing{Winogrodzka2003}
+  \missing{martinez2013texture}
+  \missing{soh1999texture}
+  \missing{clausi2002analysis}
+  \missing{Yen1995}
+  \missing{IAIllan2010}
+  \missing{tatsch2008extrapyramidal}
+  \missing{han2006reliability}
+  \missing{Pievani2013}
+  \missing{AAL}
+  \missing{Unay2007}
+  \missing{Guyon03}
+  \missing{DaelemansHosteMeulderEtAl2003}
+  \missing{Eckert2007}
+  \missing{Harman73}
+  \missing{Ortiz2013}
+  \missing{Zhao2007}
+  \missing{Booij1998}
+  \missing{Giannakopoulos1998}
+  \missing{Inititative2010}
+  \missing{Ramirez2009}
+  \missing{Dubois2007}
+  \missing{Moghal1994}
+  \missing{Chen2008}
+  \missing{kovalev2001three}
+  \missing{chan2001patterns}
+  \missing{Illan2014}
+  \missing{Fischl2004}
+  \missing{Fay10}
+  \missing{Rojas2012}
 \endrefsection
 
 \refsection{1}
-  \sortlist[entry]{ydnt/global}
+  \sortlist[entry]{ydnt/global/}
+    \entry{Martinez-Murcia2016a}{article}{}
+      \name{author}{13}{}{%
+        {{hash=f13fcabedae6437aaa5e694f277d9fcb}{%
+           family={Martinez-Murcia},
+           family_i={M\bibinithyphendelim M\bibinitperiod},
+           given={F.J.},
+           given_i={F\bibinitperiod}}}%
+        {{hash=8a56c8c7262e523f91f0e19967be9519}{%
+           family={Lai},
+           family_i={L\bibinitperiod},
+           given={M.C.},
+           given_i={M\bibinitperiod}}}%
+        {{hash=7abaa12fe16012bf9858fc761e93d487}{%
+           family={Górriz},
+           family_i={G\bibinitperiod},
+           given={J.M.},
+           given_i={J\bibinitperiod}}}%
+        {{hash=feb8d5aab03ec8ed81924ca4f258be62}{%
+           family={Ramírez},
+           family_i={R\bibinitperiod},
+           given={J.},
+           given_i={J\bibinitperiod}}}%
+        {{hash=9dc5fc5d025574bb9d5b39e41ed65d10}{%
+           family={Young},
+           family_i={Y\bibinitperiod},
+           given={A.M.H},
+           given_i={A\bibinitperiod}}}%
+        {{hash=9c72b5e7c99a83f2b60fd1f0bbffc038}{%
+           family={Deoni},
+           family_i={D\bibinitperiod},
+           given={S.C.L.},
+           given_i={S\bibinitperiod}}}%
+        {{hash=5f0e1b9a746573b720a9ce27eca13ac0}{%
+           family={Ecker},
+           family_i={E\bibinitperiod},
+           given={C.},
+           given_i={C\bibinitperiod}}}%
+        {{hash=2d861d0cab1903501fd4185fc2a0b782}{%
+           family={Lombardo},
+           family_i={L\bibinitperiod},
+           given={M.V.},
+           given_i={M\bibinitperiod}}}%
+        {{hash=a571d2d45a2e9b60e98c77b39b42b3b9}{%
+           family={Consortium},
+           family_i={C\bibinitperiod},
+           given={MRC\bibnamedelima AIMS},
+           given_i={M\bibinitperiod\bibinitdelim A\bibinitperiod}}}%
+        {{hash=587a699003e2496fc5c5c8c0de36f7e8}{%
+           family={Baron-Cohen},
+           family_i={B\bibinithyphendelim C\bibinitperiod},
+           given={S.},
+           given_i={S\bibinitperiod}}}%
+        {{hash=a0f0d050e506a12dcf6408d7e2278ed3}{%
+           family={Murphy},
+           family_i={M\bibinitperiod},
+           given={D.G.M.},
+           given_i={D\bibinitperiod}}}%
+        {{hash=49fc799c4e0f75b0489c9c87404f666c}{%
+           family={Bullmore},
+           family_i={B\bibinitperiod},
+           given={E.T.},
+           given_i={E\bibinitperiod}}}%
+        {{hash=47175789efda61aa72ca0f7d72641e33}{%
+           family={Suckling},
+           family_i={S\bibinitperiod},
+           given={J.},
+           given_i={J\bibinitperiod}}}%
+      }
+      \strng{namehash}{027fb8d9c9034ba8a121687e98c3ea8c}
+      \strng{fullhash}{6f8324b2e0311d2ebce0d255edaaa03c}
+      \field{sortinit}{2}
+      \field{sortinithash}{8343b463aacf48517c044b4d2c9c45ed}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Human Brain Mapping}
+      \field{month}{03}
+      \field{number}{3}
+      \field{title}{On the Brain Structure Heterogeneity of Autism: Parsing out Acquisition Site Effects With Significance-Weighted Principal Component Analysis}
+      \field{volume}{38}
+      \field{year}{2017}
+      \verb{doi}
+      \verb 10.1002/hbm.23449
+      \endverb
+    \endentry
     \entry{Martinez-Murcia2016book}{inbook}{}
       \name{author}{3}{}{%
         {{hash=f13fcabedae6437aaa5e694f277d9fcb}{%
@@ -2821,12 +5013,17 @@
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{booktitle}{Computer-aided Technologies - Applications in Engineering and Medicine}
+      \field{chapter}{7}
       \field{edition}{1}
       \field{isbn}{978-953-51-4895-1}
+      \field{month}{12}
       \field{title}{Computer Aided Diagnosis in Neuroimaging}
       \field{year}{2016}
-      \field{pages}{In Publication}
-      \range{pages}{-1}
+      \field{pages}{137\bibrangedash 160}
+      \range{pages}{24}
+      \verb{doi}
+      \verb 10.5772/64980
+      \endverb
     \endentry
     \entry{Martinez-Murcia2016b}{inbook}{}
       \name{author}{3}{}{%
@@ -2864,7 +5061,7 @@
       \verb 10.1002/047134608X
       \endverb
     \endentry
-    \entry{Martinez-Murcia2016hbm}{article}{}
+    \entry{Martinez-Murcia2015}{article}{}
       \name{author}{4}{}{%
         {{hash=f13fcabedae6437aaa5e694f277d9fcb}{%
            family={Martinez-Murcia},
@@ -2953,89 +5150,6 @@
       \verb 10.1142/S0129065716500246
       \endverb
       \keyw{sbm,hmm,parametrization,mri,adni,ad,alzheimer}
-    \endentry
-    \entry{Martinez-Murcia2016a}{article}{}
-      \name{author}{13}{}{%
-        {{hash=f13fcabedae6437aaa5e694f277d9fcb}{%
-           family={Martinez-Murcia},
-           family_i={M\bibinithyphendelim M\bibinitperiod},
-           given={F.J.},
-           given_i={F\bibinitperiod}}}%
-        {{hash=8a56c8c7262e523f91f0e19967be9519}{%
-           family={Lai},
-           family_i={L\bibinitperiod},
-           given={M.C.},
-           given_i={M\bibinitperiod}}}%
-        {{hash=7abaa12fe16012bf9858fc761e93d487}{%
-           family={Górriz},
-           family_i={G\bibinitperiod},
-           given={J.M.},
-           given_i={J\bibinitperiod}}}%
-        {{hash=feb8d5aab03ec8ed81924ca4f258be62}{%
-           family={Ramírez},
-           family_i={R\bibinitperiod},
-           given={J.},
-           given_i={J\bibinitperiod}}}%
-        {{hash=9dc5fc5d025574bb9d5b39e41ed65d10}{%
-           family={Young},
-           family_i={Y\bibinitperiod},
-           given={A.M.H},
-           given_i={A\bibinitperiod}}}%
-        {{hash=9c72b5e7c99a83f2b60fd1f0bbffc038}{%
-           family={Deoni},
-           family_i={D\bibinitperiod},
-           given={S.C.L.},
-           given_i={S\bibinitperiod}}}%
-        {{hash=5f0e1b9a746573b720a9ce27eca13ac0}{%
-           family={Ecker},
-           family_i={E\bibinitperiod},
-           given={C.},
-           given_i={C\bibinitperiod}}}%
-        {{hash=2d861d0cab1903501fd4185fc2a0b782}{%
-           family={Lombardo},
-           family_i={L\bibinitperiod},
-           given={M.V.},
-           given_i={M\bibinitperiod}}}%
-        {{hash=a571d2d45a2e9b60e98c77b39b42b3b9}{%
-           family={Consortium},
-           family_i={C\bibinitperiod},
-           given={MRC\bibnamedelima AIMS},
-           given_i={M\bibinitperiod\bibinitdelim A\bibinitperiod}}}%
-        {{hash=587a699003e2496fc5c5c8c0de36f7e8}{%
-           family={Baron-Cohen},
-           family_i={B\bibinithyphendelim C\bibinitperiod},
-           given={S.},
-           given_i={S\bibinitperiod}}}%
-        {{hash=a0f0d050e506a12dcf6408d7e2278ed3}{%
-           family={Murphy},
-           family_i={M\bibinitperiod},
-           given={D.G.M.},
-           given_i={D\bibinitperiod}}}%
-        {{hash=49fc799c4e0f75b0489c9c87404f666c}{%
-           family={Bullmore},
-           family_i={B\bibinitperiod},
-           given={E.T.},
-           given_i={E\bibinitperiod}}}%
-        {{hash=47175789efda61aa72ca0f7d72641e33}{%
-           family={Suckling},
-           family_i={S\bibinitperiod},
-           given={J.},
-           given_i={J\bibinitperiod}}}%
-      }
-      \strng{namehash}{027fb8d9c9034ba8a121687e98c3ea8c}
-      \strng{fullhash}{6f8324b2e0311d2ebce0d255edaaa03c}
-      \field{sortinit}{2}
-      \field{sortinithash}{8343b463aacf48517c044b4d2c9c45ed}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{journaltitle}{Human Brain Mapping}
-      \field{month}{10}
-      \field{title}{On the Brain Structure Heterogeneity of Autism: Parsing out Acquisition Site Effects With Significance-Weighted Principal Component Analysis}
-      \field{volume}{Accepted}
-      \field{year}{2016}
-      \verb{doi}
-      \verb 10.1002/hbm.23449
-      \endverb
     \endentry
     \entry{Ortiz2016249}{inproceedings}{}
       \name{author}{6}{}{%
@@ -3144,7 +5258,7 @@
       \verb 10.2174/1567205013666160415154852
       \endverb
     \endentry
-    \entry{Martinez-Murcia201519}{inproceedings}{}
+    \entry{Martinez-MurciaVRLBP}{inproceedings}{}
       \name{author}{5}{}{%
         {{hash=f13fcabedae6437aaa5e694f277d9fcb}{%
            family={Martinez-Murcia},
@@ -3400,7 +5514,7 @@
       \endverb
       \keyw{parkinson,ica,tests,pks,datscan}
     \endentry
-    \entry{Martinez-Murcia2014}{article}{}
+    \entry{martinez2014parametrization}{article}{}
       \name{author}{5}{}{%
         {{hash=f13fcabedae6437aaa5e694f277d9fcb}{%
            family={Martinez-Murcia},
@@ -3972,7 +6086,7 @@
       \keyw{feature,factor analysis,decomposition,test,adni,alzheimer,spect,pet}
     \endentry
   \endsortlist
-  \sortlist[entry]{nyt/global}
+  \sortlist[entry]{nyt/global/}
     \entry{Illán2013406}{inproceedings}{}
       \name{author}{7}{}{%
         {{hash=6f0108e83178ae147834a62c7e3bc710}{%
@@ -4123,12 +6237,17 @@
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{booktitle}{Computer-aided Technologies - Applications in Engineering and Medicine}
+      \field{chapter}{7}
       \field{edition}{1}
       \field{isbn}{978-953-51-4895-1}
+      \field{month}{12}
       \field{title}{Computer Aided Diagnosis in Neuroimaging}
       \field{year}{2016}
-      \field{pages}{In Publication}
-      \range{pages}{-1}
+      \field{pages}{137\bibrangedash 160}
+      \range{pages}{24}
+      \verb{doi}
+      \verb 10.5772/64980
+      \endverb
     \endentry
     \entry{Martinez-Murcia2016b}{inbook}{}
       \name{author}{3}{}{%
@@ -4315,7 +6434,7 @@
       \endverb
       \keyw{texture,haralick,pks,parkinson,datscan}
     \endentry
-    \entry{Martinez-Murcia2014}{article}{}
+    \entry{martinez2014parametrization}{article}{}
       \name{author}{5}{}{%
         {{hash=f13fcabedae6437aaa5e694f277d9fcb}{%
            family={Martinez-Murcia},
@@ -4364,7 +6483,7 @@
       \endverb
       \keyw{texture,datscan,parkinson,pks}
     \endentry
-    \entry{Martinez-Murcia2016hbm}{article}{}
+    \entry{Martinez-Murcia2015}{article}{}
       \name{author}{4}{}{%
         {{hash=f13fcabedae6437aaa5e694f277d9fcb}{%
            family={Martinez-Murcia},
@@ -4554,7 +6673,7 @@
       \endverb
       \keyw{feature,wilcoxon,factor analysis,fa,decomposition,spect,pet,adni,ad,alzheimer}
     \endentry
-    \entry{Martinez-Murcia201519}{inproceedings}{}
+    \entry{Martinez-MurciaVRLBP}{inproceedings}{}
       \name{author}{5}{}{%
         {{hash=f13fcabedae6437aaa5e694f277d9fcb}{%
            family={Martinez-Murcia},
@@ -4678,10 +6797,11 @@
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{Human Brain Mapping}
-      \field{month}{10}
+      \field{month}{03}
+      \field{number}{3}
       \field{title}{On the Brain Structure Heterogeneity of Autism: Parsing out Acquisition Site Effects With Significance-Weighted Principal Component Analysis}
-      \field{volume}{Accepted}
-      \field{year}{2016}
+      \field{volume}{38}
+      \field{year}{2017}
       \verb{doi}
       \verb 10.1002/hbm.23449
       \endverb

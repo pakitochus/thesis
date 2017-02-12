@@ -1,0 +1,32 @@
+{\reset@font\ptcCfont\mtc@string\contentsline{chapter}{\noexpand \leavevmode \numberline {1}\spacedlowsmallcaps {Introduction}}{\reset@font\ptcCfont 3}{chapter.1}}
+{\reset@font\ptcSfont\mtc@string\contentsline{section}{\noexpand \leavevmode \numberline {1.1}Motivation}{\reset@font\ptcSfont 3}{section.1.1}}
+{\reset@font\ptcSfont\mtc@string\contentsline{section}{\noexpand \leavevmode \numberline {1.2}The Small Sample Size Problem}{\reset@font\ptcSfont 3}{section.1.2}}
+{\reset@font\ptcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {1.2.1}The Multiple Comparisons Problem}{\reset@font\ptcSSfont 4}{subsection.1.2.1}}
+{\reset@font\ptcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {1.2.2}The Curse of Dimensionality}{\reset@font\ptcSSfont 4}{subsection.1.2.2}}
+{\reset@font\ptcSfont\mtc@string\contentsline{section}{\noexpand \leavevmode \numberline {1.3}Neuroimaging Modalities}{\reset@font\ptcSfont 5}{section.1.3}}
+{\reset@font\ptcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {1.3.1}Magnetic Resonance Imaging}{\reset@font\ptcSSfont 5}{subsection.1.3.1}}
+{\reset@font\ptcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {1.3.2}Single Photon Emission Computed Tomography}{\reset@font\ptcSSfont 5}{subsection.1.3.2}}
+{\reset@font\ptcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {1.3.3}Positron Emission Tomography}{\reset@font\ptcSSfont 6}{subsection.1.3.3}}
+{\reset@font\ptcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {1.3.4}Other Modalities}{\reset@font\ptcSSfont 6}{subsection.1.3.4}}
+{\reset@font\ptcSfont\mtc@string\contentsline{section}{\noexpand \leavevmode \numberline {1.4}Machine Learning in Neuroimaging}{\reset@font\ptcSfont 6}{section.1.4}}
+{\reset@font\ptcSfont\mtc@string\contentsline{section}{\noexpand \leavevmode \numberline {1.5}Voxel-wise Analyses}{\reset@font\ptcSfont 6}{section.1.5}}
+{\reset@font\ptcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {1.5.1}Statistical Parametric Mapping}{\reset@font\ptcSSfont 6}{subsection.1.5.1}}
+{\reset@font\ptcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {1.5.2}Voxel Based Morphometry}{\reset@font\ptcSSfont 7}{subsection.1.5.2}}
+{\reset@font\ptcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {1.5.3}Voxels as Features}{\reset@font\ptcSSfont 7}{subsection.1.5.3}}
+{\reset@font\ptcSfont\mtc@string\contentsline{section}{\noexpand \leavevmode \numberline {1.6}Overview}{\reset@font\ptcSfont 7}{section.1.6}}
+{\reset@font\ptcCfont\mtc@string\contentsline{chapter}{\noexpand \leavevmode \numberline {2}\spacedlowsmallcaps {Medical Background}}{\reset@font\ptcCfont 9}{chapter.2}}
+{\reset@font\ptcSfont\mtc@string\contentsline{section}{\noexpand \leavevmode \numberline {2.1}Alzheimer's Disease}{\reset@font\ptcSfont 9}{section.2.1}}
+{\reset@font\ptcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {2.1.1}Diagnosis}{\reset@font\ptcSSfont 9}{subsection.2.1.1}}
+{\reset@font\ptcSfont\mtc@string\contentsline{section}{\noexpand \leavevmode \numberline {2.2}Parkinsonism}{\reset@font\ptcSfont 10}{section.2.2}}
+{\reset@font\ptcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {2.2.1}Parkinson's Disease}{\reset@font\ptcSSfont 10}{subsection.2.2.1}}
+{\reset@font\ptcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {2.2.2}Extrapyramidal Symptoms}{\reset@font\ptcSSfont 10}{subsection.2.2.2}}
+{\reset@font\ptcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {2.2.3}Diagnosis}{\reset@font\ptcSSfont 10}{subsection.2.2.3}}
+{\reset@font\ptcSfont\mtc@string\contentsline{section}{\noexpand \leavevmode \numberline {2.3}Autism Spectrum Disorder}{\reset@font\ptcSfont 10}{section.2.3}}
+{\reset@font\ptcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {2.3.1}Diagnosis}{\reset@font\ptcSSfont 10}{subsection.2.3.1}}
+{\reset@font\ptcCfont\mtc@string\contentsline{chapter}{\noexpand \leavevmode \numberline {3}\spacedlowsmallcaps {Image Preprocessing}}{\reset@font\ptcCfont 11}{chapter.3}}
+{\reset@font\ptcSfont\mtc@string\contentsline{section}{\noexpand \leavevmode \numberline {3.1}Spatial Preprocessing }{\reset@font\ptcSfont 11}{section.3.1}}
+{\reset@font\ptcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {3.1.1}Spatial Normalization or Registration}{\reset@font\ptcSSfont 12}{subsection.3.1.1}}
+{\reset@font\ptcSSSfont\mtc@string\contentsline{subsubsection}{\noexpand \leavevmode \numberline {3.1.1.1}Co-registration}{\reset@font\ptcSSSfont 13}{subsubsection.3.1.1.1}}
+{\reset@font\ptcSSSfont\mtc@string\contentsline{subsubsection}{\noexpand \leavevmode \numberline {3.1.1.2}The MNI Space}{\reset@font\ptcSSSfont 14}{subsubsection.3.1.1.2}}
+{\reset@font\ptcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {3.1.2}Segmentation}{\reset@font\ptcSSfont 14}{subsection.3.1.2}}
+{\reset@font\ptcSfont\mtc@string\contentsline{section}{\noexpand \leavevmode \numberline {3.2}Intensity Normalization}{\reset@font\ptcSfont 14}{section.3.2}}

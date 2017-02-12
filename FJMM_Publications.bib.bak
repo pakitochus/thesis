@@ -32,7 +32,7 @@
   source        = {Scopus},
 }
 
-@Article{Martinez-Murcia2016hbm,
+@Article{Martinez-Murcia2015,
   author        = {Martinez-Murcia, F.J. and Górriz, J.M. and Ramírez, J. and Ortiz, A.},
   title         = {A Spherical Brain Mapping of MR Images for the Detection of Alzheimer’s Disease},
   journal       = {Current Alzheimer Research},
@@ -92,7 +92,7 @@
   source        = {Scopus},
 }
 
-@InProceedings{Martinez-Murcia201519,
+@InProceedings{Martinez-MurciaVRLBP,
   author        = {Martinez-Murcia, F.J. and Ortiz, A. and Manuel Górriz, J. and Ramírez, J. and Illán, I.A.},
   title         = {A volumetric radial LBP projection of MRI brain images for the diagnosis of alzheimer’s disease},
   booktitle     = {Artificial Computation in Biology and Medicine},
@@ -151,7 +151,7 @@
   source        = {Scopus},
 }
 
-@Article{Martinez-Murcia2014,
+@Article{martinez2014parametrization,
   author        = {Martinez-Murcia, F.J. and Górriz, J.M. and Ramírez, J. and Moreno-Caballero, M. and Gómez-Río, M.},
   title         = {Parametrization of textural patterns in 123I-ioflupane imaging for the automatic detection of Parkinsonism},
   journal       = {Medical Physics},
@@ -307,20 +307,24 @@
   title   = {On the Brain Structure Heterogeneity of Autism: Parsing out Acquisition Site Effects With Significance-Weighted Principal Component Analysis},
   journal = {Human Brain Mapping},
   year    = {2016},
-  volume  = {Accepted},
+  volume  = {38},
+  number  = {3},
   month   = oct,
   doi     = {10.1002/hbm.23449},
 }
 
 @InBook{Martinez-Murcia2016book,
-  pages     = {In Publication},
+  chapter   = {7},
+  pages     = {137--160},
   title     = {Computer Aided Diagnosis in Neuroimaging},
   publisher = {Intech},
   year      = {2016},
-  author    = {Martinez-Murcia, F.J. and Górriz, J. and Ramírez, J.},
+  author    = {Martinez-Murcia, F.J. and G\'orriz, J. and Ram\'irez, J.},
   editor    = {Razvan Udroiu},
   edition   = {1},
+  month     = dec,
   booktitle = {Computer-aided Technologies - Applications in Engineering and Medicine},
+  doi       = {10.5772/64980},
   isbn      = {978-953-51-4895-1},
 }
 

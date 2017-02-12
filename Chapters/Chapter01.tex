@@ -1,6 +1,10 @@
 %************************************************
 \chapter{Introduction}\label{ch:introduction}
 %************************************************
+
+ Section~\ref{sec:smallsamplesize}, we will discuss more deeply the Small Sample Size problem and its consequences, 
+and finally, in Section~\ref{sec:overview} we will introduce how this thesis addresses the problem. 
+
 \section{Motivation}
 In recent years, there has been a rise in the use of neuroimaging in the clinical practice. It has improved and speeded the procedure of diagnostic, providing unprecedented insight into the brain. Neuroimaging is a very extended tool in research as well. Different fields such as psychiatry, neurology, psychology, behavioural science or biology make extensive use of brain imaging in their studies. 
 
@@ -11,60 +15,62 @@ The basis of these studies are common: a selection procedure by which a represen
 
 One fundamental issue often found in this studies is the sample size. The number of subjects frequently ranges from tens to hundreds, whereas the number of features (namely voxels) to be analysed can add up to millions. This causes the so-called \emph{Small Sample Size Problem} \cite{Duin2000} which negatively affects the statistical power of any experiment performed using these datasets \cite{Button2013}. 
 
-\subsection{The Small Sample Size Problem}
-The Small Sample Size Problem arises as a loss of statistical power when the number of samples is small compared to the number of features. This loss of statistical power translates to neuroimaging as false positives (the system detects signal where there is not) or false negatives (the system is unable to detect some signals). In differential diagnosis studies, it leads to places where differences are stated where there is not 
 
-In addition to some confounding effects, such as population bias or scanner differences, 
+\section{The Small Sample Size Problem}\label{sec:smallsamplesize}
+All the aforementioned voxel-wise methods have a fundamental problem, related to the proportion between number of subjects and number of features used in the computation. This is known as the Small Sample Size problem, and implies as a loss of statistical power of the methods used, usually involving false negatives (the system is unable to detect real signal) false positives (the system detects signal where there is not). These are known in statistics as Type I and Type II errors respectively. 
 
+In differential diagnosis studies, the small sample size problem leads to wrong conclusions about where real differences are located. This, in addition to untracked confounding variables are one of the fundamental sources of non-reproducibility un current neuroimaging studies \cite{Button2013}. 
 
-Solucion tipica: multilple comparison correction. 
+The solution might seem straightforward: increase sample size. But this is not always possible, since neuroimaging studies do their best at recruiting as many people as they can with a limited budget. Many efforts have been put into establishing multi-centre collaborations that allow the recruitment of a larger population, but despite offering a higher statistical power, these studies still suffer from a number of confounding variables such as population bias or scanner differences \cite{haar2014anatomical}. In Chapters~\ref{ch:swpca} and \ref{ch:simulation} we explore different approaches to this solution. 
 
+Another option involves reducing the number of features, via feature selection or feature extraction. This has been widely used in computed-aided methodology for neuroimaging \cite{DeMartino2007,xu2009source,Gorriz2010,Illan2011,Martinez-Murcia2016} with great success, and solutions using this approach will be treated in Chapters~\ref{ch:decomposition}, \ref{ch:texture} and \ref{ch:sbm}. 
 
-
-Main idea: Neuroimaging studies need are subject to the small sample size problem. To overcome that problem we must either decrease the number of features or increase the sample size. 
-
-
-FromChapter: Signal decomposition techniques are widely used in many applications, ranging from one-dimensional signals such as audio or electroencephalography (EEG) to multidimensional arrays, and are frequently applied as feature reduction to overcome the small sample-size problem, that is, the loss of statistical power due to a larger number of features compared to the number of samples.
+The Small Sample Size problem is directly related to the \textit{Curse of Dimensionality} \cite{Krishnaiah1982}, which proves that, in contrast to what could be expected, once a certain classifier performance has been achieved, it holds or even decreases when feeding more features to the classifier. The problem also affects statistical hypothesis testing, a tool widely used for inference in neuroimaging, in what is known as the \textit{Multiple Comparisons} problem \cite{Benjamini2010}, a particular field that is still being studied. 
 
 
-\section{Neuroimaging Modalities}
-There exist a variety of imaging modalities used in neuroscience. By far, the most extended is \ac{MRI}, which provides intensity maps that represent the internal structure of the brain. Other modalities are aimed at studying the function of the brain, by injecting radioactive ligands that, linked to a receptor, can measure its distribution. This is the case of \ac{PET} and \ac{SPECT}.
+% DONE
 
-\subsection{Magnetic Resonance Imaging}
-\acf{MRI} is perhaps the most widespread imaging modality, and it is used to analyse both structural and functional properties of the brain. 
+\section{Aims and Objectives}\label{sec:overview}
+In this thesis we plan to tackle the Small Sample Size problem in two different approaches. 
 
-\begin{figure}[htp]
-\centering
-\includegraphics[width=0.7\linewidth]{gfx/ch1/example_MRIT1}
-\caption[Example of a T1-weighted MRI image.]{Example of a T1-weighted MRI image.}
-\label{fig:example_MRI}
-\end{figure}
-
-
-Technology. Physics fundamentals. 
-
-\subsection{Single Photon Emission Computed Tomography}
-\acf{SPECT} is 
-
-Ref: has been the cornerstone of nuclear medicine and it is widely used to detect molecular changes in cardiovascular, oncological and neurological diseases.
-
-Technology. 
-
-Radiotracers used. Here: DATSCAN. HMPAO. 
-
-\subsection{Positron Emission Tomography}
-\subsection{Other Modalities}
-
-\section{Machine Learning in Neuroimaging}
-In contrast to traditional visual inspection a semiquantitative analysis of neuroimaging, machine learning is nowadays a trend in the field. Machine learning is the subfield of computer science that provides computers with the ability to learn from data instead of being programmed for an explicit task. Applications range from automatic processing of images to \acf{CAD}, 
-
-Statistical techniques such as \ac{PCA}, are used for feature extraction and hypothesis testing for feature selection in systems intended to 
-
-\ac{CAD}
-
-\section{Overview}
-This thesis explores how to use signal processing and machine learning to overcome the small sample size problem in neuroimaging. 
 
 First strategy: decrease the number of features -> Feature extraction. This is the subject of Decomposition techniques, Texture Analysis and \ac{SBM}. 
 
-Second strategy: increase the sample size. Most popular option: multi-site studies where subjects are acquired using similar techniques at different sites. This poses a major problem: inhomogeneities, etc. To overcome this we propose the \ac{SWPCA}. Other option: simulate new subjects from the existent database, in order to increase sample size. 
+Second strategy: increase the sample size. Most popular option: multi-site studies where subjects are acquired using similar techniques at different sites. This poses a major problem: inhomogeneities, etc. To overcome this we propose the \ac{SWPCA}. Other option: simulate new subjects from the existent database, in order to increase sample size.
+
+
+
+The aim of the work, i.e. the overall purpose of the study, should be clearly and concisely defined.
+
+Aims:
+Are broad statements of desired outcomes, or the general intentions of the research, which 'paint a picture' of your research project
+Emphasize what is to be accomplished (not how it is to be accomplished)
+Address the long-term project outcomes, i.e. they should reflect the aspirations and expectations of the research topic.
+Once aims have been established, the next task is to formulate the objectives. Generally, a project should have no more than two or three aims statements, while it may include a number of objectives consistent with them.
+
+Objectives are subsidiary to aims and:
+
+Are the steps you are going to take to answer your research questions or a specific list of tasks needed to accomplish the goals of the project
+Emphasize how aims are to be accomplished
+Must be highly focused and feasible
+Address the more immediate project outcomes
+Make accurate use of concepts
+Must be sensible and precisely described
+Should read as an 'individual' statement to convey your intentions
+Here is an example of a project aim and subsidiary objectives:
+
+
+
+\section{Contributions}
+Some ideas and figures have appeared previously in the following publications, that we divide here in articles and conference presentations. 
+
+%\noindent Put your publications from the thesis here. The packages \texttt{multibib} or \texttt{bibtopic} etc. can be used to handle multiple different bibliographies in your document.
+
+\begin{refsection}[ownpubs]
+	\small
+	\nocite{*} % is local to to the enclosing refsection
+	\newrefcontext[sorting=ydnt]
+	\printbibliography[heading=subbibliography, title={Articles}, type=article]
+	\printbibliography[heading=subbibliography, title={Conferences}, type=inproceedings]
+	\printbibliography[heading=subbibliography, title={Books}, type=inbook]
+\end{refsection}

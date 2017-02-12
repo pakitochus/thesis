@@ -27,7 +27,7 @@
 %
 % **************************************************************************************************************
 \RequirePackage{fix-cm} % fix some latex issues see: http://texdoc.net/texmf-dist/doc/latex/base/fixltx2e.pdf
-\documentclass[ twoside,openright,titlepage,numbers=noenddot,headinclude,%1headlines,% letterpaper a4paper
+\documentclass[ twoside,openright,titlepage,numbers=noenddot,headinclude,paper=B5,%1headlines,% letterpaper a4paper
                 footinclude=true,cleardoublepage=empty,abstractoff, % <--- obsolete, remove (todo)
                 BCOR=5mm,fontsize=11pt,%11pt,a4paper,%
                 ngerman,american,%
@@ -53,6 +53,7 @@
 % GO!GO!GO! MOVE IT!
 %*******************************************************
 \begin{document}
+%\dominitoc
 \frenchspacing	
 \raggedbottom
 \selectlanguage{american} % american ngerman
@@ -70,7 +71,7 @@
 \cleardoublepage\include{FrontBackmatter/Derechos}
 %\cleardoublepage\include{FrontBackmatter/Foreword}
 \cleardoublepage\include{FrontBackmatter/Abstract}
-\cleardoublepage\include{FrontBackmatter/Publications}
+%\cleardoublepage\include{FrontBackmatter/Publications}
 \cleardoublepage\include{FrontBackmatter/Acknowledgments}
 \pagestyle{scrheadings}
 \cleardoublepage\include{FrontBackmatter/Contents}
@@ -86,24 +87,25 @@
 \include{Chapters/Chapter01}
 \include{Chapters/Chapter02}
 \include{Chapters/Chapter03}
-\include{Chapters/Chapter04}
 
 \cleardoublepage
 \ctparttext{The first approach to reduce the small sample size problem in neuroimaging studies is based on reducing the number of features .}
-\part{Feature Size Reduction}
+\part{Reducing the Feature Space}
 %\addtocontents{toc}{\protect\clearpage} % <--- just debug stuff, ignore
+\include{Chapters/Chapter04}
 \include{Chapters/Chapter05}
 \include{Chapters/Chapter06}
-\include{Chapters/Chapter07}
 
 \cleardoublepage
 \ctparttext{The first approach to reduce the small sample size problem in neuroimaging studies is based on reducing the number of features .}
-\part{Sample Size Increasing}
+\part{Increasing the Sample Size}
+\include{Chapters/Chapter07}
 \include{Chapters/Chapter08}
-\include{Chapters/Chapter09}
 
 \cleardoublepage
 \part{General Discussion and Conclusions}
+\include{Chapters/Chapter09}
+%\include{Chapters/Chapter09}
 %\include{multiToC} % <--- just debug stuff, ignore for your documents
 % ********************************************************************
 % Backmatter

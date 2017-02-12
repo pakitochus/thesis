@@ -27,7 +27,7 @@ Many dataset are used in this thesis, covering three imaging modalities and thre
 	\label{tab:datasetsOverview}
 \end{table}
 \section{Magnetic Resonance Imaging}
-\subsection{ADNI-MRI, Alzheimer's Disease Neuroimaging Initiative}
+\subsection{ADNI-MRI, Alzheimer's Disease Neuroimaging Initiative}\label{sec:adnimri}
 AD
 \subsection{AIMS-MRI, MRC-AIMS Consortium}\label{sec:aims-mri}
 Structural MRI were analysed from 136 adult, right-handed males (68 with ASD and 68 matched controls) with no significant mean differences in age and full-scale IQ, acquired from the centres contributing to the UK Medical Research Council Autism Imaging Multi-centre Study (MRC AIMS) (Ecker, et al., 2013; Ecker, et al., 2012) and recruited by advertisement. In this work, only participants recruited at the Institute of Psychiatry, King’s College London (LON) and the Autism Research Centre, University of Cambridge (CAM) were included where an equivalent set of images were acquired from each participant. 
@@ -83,15 +83,47 @@ for each every participant, which allows us to observe the impact of our \ac{SWP
 During the pre-processing of the images, several procedures targeted the reduction of inter-subject and inter-site geometric distortion, amongst them the correction of B0 and B1 field inhomogeneity effects and the registration to \ac{MNI} space. Many other algorithms have been proposed to help in this task. However, the study of their relative performance lies beyond the scope of this article. Following image registration, it was assumed that only the intensity of the maps was affected between sites.
 
 \section{Positron Emission Tomography}
-\subsection{ADNI-PET, Alzheimer's Disease Neuroimaging Initiative}
+\subsection{ADNI-PET, Alzheimer's Disease Neuroimaging Initiative}\label{sec:adnipet}
+
+Data used in the preparation of this article were obtained from the Alzheimer's Disease Neuroimaging Initiative (ADNI) database (adni.loni.usc.edu). The ADNI was launched in 2003 as a public-private partnership, led by Principal Investigator Michael W. Weiner, MD. The primary goal of ADNI has been to test whether serial MRI, PET, other biological markers, and clinical and neuropsychological assessment can be combined to measure the progression of MCI and AD. For up-to-date information, see \url{www.adni-info.org}.
+
+Data used in the preparation of this article were obtained from the Alzheimer's Disease Neuroimaging Initiative (ADNI) database (adni.loni.usc.edu). In this work, the $^{18}F$-FDG PET images, used to estimate the metabolic activity of the brain, are used to generate and validate the simulated images. 95 PET images from AD affected subjects,  207 images from Mild Cognitive Impairment (MCI) affected subjects and 101 images from Normal Controls (NOR) have been used to construct the original $N=403$ set from which the simulation parameters will be obtained. 
 \section{Single Photon Emission Computed Tomography}
 
-\subsection{VDLN-HMPAO, Virgen de las Nieves}
-SPECT HMPAO 
+\subsection{VDLN-HMPAO, Virgen de las Nieves}\label{sec:vdlnhmpao}
+The database is built up of imaging studies of subjects following the protocol of an hospital-based service. First, the neurologist evaluated the cognitive function, and those patients with findings of memory loss or dementia were referred to the nuclear medicine department in the ``Virgen de las Nieves'' hospital (Granada, Spain), in order to acquire complementary screening information for diagnosis\footnote{Clinical information is unfortunately not available for privacy reasons, but only demographic  information}. Experienced physicians evaluated the images visually. The images were assessed using 4 different labels: \ac{CTL} for subjects without scintigraphic abnormalities and mild perfusion deficit (AD1), moderate deficit (AD2) and severe deficit (AD3), to distinguish between different levels of presence of hypo-perfusion patterns compatible with AD. In total, the database consists of $n=$97 subjects: 41 CTRL, 30 AD1, 22 AD2 and 4 AD3 (see table \ref{tab:bd} for demographic details). Since the patients are not pathologically confirmed, the subject's labels possesses some degree of uncertainty, as the pattern of hypo-perfusion may not reflect the underlying pathology of AD, nor the different classification of scans necessarily reflect the severity of the patients symptoms. However, when pathological information is available, visual assessments by experts have been shown to be very sensitive and specific labelling methods, in contrast to neuropsychological tests \cite{jobst_accurate_1998,dougall_systematic_2004}. Given that this is an inherent limitation of 'in vivo' studies, our working-assumption is that the labels are true, considering the subject label positive when belonging to any of the AD classes, and negative otherwise. 
 
-\subsection{VDLN-DAT, Virgen de las Nieves}
+\begin{table}
+	\begin{center}
+		\begin{tabular}{lccr}
+			\hline
+			\hline
+			& $\#$samples & Sex(M/F)(\%) & $\mu$[range/$\sigma$] \\
+			\hline \hline
+			CTRL  & 41 & 32.95/12.19 & 71.51[46-85/7.99]\\
+			AD1     & 29 & 10.97/18.29 &65.29[23-81/13.36]\\
+			AD2     & 22 & 13.41/9.76  &65.73[46-86/8.25]\\
+			AD3     & 4  & 0/2.43      &76[69-83/9.90]\\
+			\hline \hline
+		\end{tabular}
+		\caption[Demographic details of the ADNI-PET dataset.]{Demographic details of the ADNI-PET dataset. CTRL = Normal Controls, AD 1 = possible AD, AD 2 = probable AD, AD 3 = certain AD. $\mu$ and $\sigma$ stands for population mean and standard deviation respectively.}
+		\label{tab:bd}
+	\end{center}
+\end{table}
+
+\subsection{VDLN-DAT, Virgen de las Nieves}\label{sec:vdlndat}
 SPECT DATSCAN
 
-\subsection{VDLV-DAT, Virgen de la Victoria Hospital}
+\subsection{VDLV-DAT, Virgen de la Victoria Hospital}\label{sec:vdlvdat}
+The images were obtained after a period of between 3 and 4 hours after the intravenous injection of 185 MBq (5 mCi) of DaTSCAN, with prior thyroid blocking with Lugol's solution. The tomographic study (SPECT) with Ioflupane/FP-CIT-I-123 was performed using a General Electric gamma camera, Millennium model, equipped with a dual head and general purpose collimator. A 360-degree circular orbit was made around the cranium, at 3-degree intervals, 60 images with a duration of 35 seconds per interval, $128\times128$ matrix. Image reconstruction was carried out using filtered back-projection algorithms without attenuation correction \cite{Shepp82,Vardi1985}, application of a Hanning filter (frequency 0.7) and images were obtained with transaxial cuts, following the method proposed in \cite{Ramirez2009}. 
 
-\subsection{PPMI-DAT, Parkinson's Progression Markers Initiative}
+The images were interpreted by three Nuclear Medicine specialists, with masking of the clinical orientation. Visual assessment was established by exclusively considering the normal/abnormal criterion and after arriving at a consensus report between the three specialists, i.e. whether the FP-CIT SPECT allowed differentiation of a group of conditions with presynaptic involvement from others in which their integrity is assumed, without trying to assign them to different clinical groups within the set of pathological studies. A study was considered to be normal when bilateral, symmetrical uptake appeared in caudate and putamen nuclei, and abnormal when there were areas of qualitatively reduced uptake in any of the striatal structures. 
+
+A total of 208 subjects (100 patients and 108 controls), randomly selected from the total studies performed in this center until December 2008 and referred to it because of a movement disorder, were included in the study. Mean age was 70.2 years (41-87) with a standard deviation of 10.2 years (a detailed description of the database can be found in \cite{Lozano2007}). Clinical diagnosis, a parameter used as `gold Standard' to establish the existence of PS, was made using the diagnostic criteria established previously, with an established minimum follow-up period of 18 months. Those patients who were receiving treatment with drugs that had known or suspected effect on the level of the dopaminergic transporters through direct competitive mechanism were excluded. Although PD is the most representative pathology of PS, there are other medical conditions which, though they differ clinically from this, are also expressed by this set of symptoms. Some of them are multisystem atrophy (MSA), progressive supra-nuclear palsy (PSP) and corticobasal degeneration (CBD), in which, unlike PD, as well as involvement of the presynaptic terminal, there is involvement at the post-synaptic level of the nigrostriatal pathway. 
+
+\subsection{PPMI-DAT, Parkinson's Progression Markers Initiative}\label{sec:ppmi}
+Data used in the preparation of this article were obtained from the Parkinson's Progression Markers Initiative (PPMI) database (\url{www.ppmi-info.org/data}). For up-to-date information on the study, visit \url{www.ppmi-info.org}.
+
+The images in this database were imaged 4 + 0.5 hours after the injection of between 111 and 185 MBq of DaTSCAN. Subjects were also pretreated with saturated iodine solution (10 drops in water) or perchlorate (1000 mg) prior to the injection. All subjects had a supplied $^{57}$Co line marker affixed along the canthomeatal line, which will facilitate subsequent image processing and allow the core lab to accurately distinguish left and right in the face of multiple image file transfers. These markers are only evident in the $^{57}$Co window and hence do not contaminate the $^{123}$I-DaTSCAN brain data \cite{PPMI,Inititative2010}. 
+
+Raw projection data are acquired into a $128 \times 128$ matrix stepping each 3 degrees for a total of 120 projection into two 20\% symmetric photopeak windows centered on 159 KeV and 122 KeV with a total scan duration of approximately 30 - 45 minutes. Other scan parameters (collimation, acquisition mode, etc.) are selected for each site. The images of both the subject's data and the cobalt striatal phantom are reconstructed and attenuation corrected, implementing either filtered back-projection or an iterative reconstruction algorithm using standardized approaches \cite{Inititative2010}. After the processing, the database contains $289$ spatially normalized images, $114$ from Normal Control subjects and $175$ from PD patients, and of a $91\times109\times91$ size. 
