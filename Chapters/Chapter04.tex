@@ -15,7 +15,7 @@ Where $s_i$ is the coordinate (or component score) of the current image in the $
 
 \begin{figure}[tph]
 	\centering
-	\includegraphics[width=\linewidth]{gfx/ch4/decomposition_overview}
+	\includegraphics[width=\linewidth]{Graphics/ch4/decomposition_overview}
 	\caption[Illustration of how decomposition algorithms work.]{Illustration of how decomposition algorithms such as \ac{FA} and \ac{ICA} work on a \ac{PET}-FDG brain image.}
 	\label{fig:decomposition_overview}
 \end{figure}
@@ -26,7 +26,7 @@ The pipeline that will be used throughout this chapter is displayed at Figure~\r
  
 \begin{figure}[tph]
 	\centering
-	\includegraphics[width=\linewidth]{gfx/ch4/01-flowdiagram}
+	\includegraphics[width=\linewidth]{Graphics/ch4/01-flowdiagram}
 	\caption[Illustration of the system used in Chapter~\protect\ref{ch:decomposition} .]{Illustration of the system used in Chapter~\protect\ref{ch:decomposition}.}
 	\label{fig:pipelineDecomposition}
 \end{figure}
@@ -78,7 +78,7 @@ where $\mu_c$ is the mean of class $c$, and $\sigma^2_c$ its variance. Figure \r
 
 \begin{figure}
 	\centering
-	\includegraphics[width=0.7\linewidth]{gfx/ch4/Zentropy.eps}
+	\includegraphics[width=0.7\linewidth]{Graphics/ch4/Zentropy.eps}
 	\caption{Several selected slices of the significance map obtained for each brain coordinate by applying the Relative Entropy criterium to the ADNI database.}
 	\label{fig:Zentropy}
 \end{figure}
@@ -106,7 +106,7 @@ To this purpose, a number of key features ($K$) are extracted using Fac\-tor A\-
 \begin{figure*}[htp]
 	\centering
 	\begin{tabular}{cc}
-		\includegraphics[width=\linewidth]{gfx/ch4/reconstruction}\\
+		\includegraphics[width=\linewidth]{Graphics/ch4/reconstruction}\\
 	\end{tabular}
 	\caption{\textit{a)} Original PET image composed by $N=7000$ selected voxels and \textit{b)} reconstruction using Factor Analysis with $K=13$ factors extracted.}
 	\label{fig:reconstruction}
@@ -134,7 +134,7 @@ The choice of K requires a deeper analysis. If $K$ is large, the image can be mo
 
 \begin{figure}[ht]
 	\centering
-	\includegraphics[width=0.45\linewidth]{gfx/ch4/varError-K-ADNI}
+	\includegraphics[width=0.45\linewidth]{Graphics/ch4/varError-K-ADNI}
 	\caption{Specific variance of reconstruction error $\Psi$ using Factor Analysis, in function of number of factors extracted ($K$) for ADNI database (the behaviour is similar in other datasets).}
 	\label{fig:error}
 \end{figure}
@@ -181,40 +181,39 @@ We begin by applying the proposed feature selection plus decomposition pipeline 
 \subsubsection{Factor Analysis}\label{sec:results_FA_AD}
 First, we use \ac{FA} as a decomposition technique. In Figure~\ref{fig:accuracyMeanFA-AD} we average the accuracy over the number of voxels or the number of components respectively, to look at how these variables affect the performance of the system, and we do this for the three filtering methods used. 
 
-\begin{bigfigure}[-2cm]
-	\centering
-	\subfloat[]{\includegraphics[width=0.49\linewidth]{gfx/ch4/accuracyMeanSTD-FA_vsN_ttest_AD.eps}\label{fig:AD-AV-FA-TTEST-VSN}}
-	\subfloat[]{\includegraphics[width=0.49\linewidth]{gfx/ch4/accuracyMeanSTD-FA_vsK_ttest_AD.eps}\label{fig:AD-AV-FA-TTEST-VSK}}
+\begin{figure}	\centering
+	\subfloat[]{\includegraphics[width=0.49\linewidth]{Graphics/ch4/accuracyMeanSTD-FA_vsN_ttest_AD.eps}\label{fig:AD-AV-FA-TTEST-VSN}}
+	\subfloat[]{\includegraphics[width=0.49\linewidth]{Graphics/ch4/accuracyMeanSTD-FA_vsK_ttest_AD.eps}\label{fig:AD-AV-FA-TTEST-VSK}}
 	
-	\subfloat[]{\includegraphics[width=0.49\linewidth]{gfx/ch4/accuracyMeanSTD-FA_vsN_entropy_AD.eps}\label{fig:AD-AV-FA-ENTROPY-VSN}}
-	\subfloat[]{\includegraphics[width=0.49\linewidth]{gfx/ch4/accuracyMeanSTD-FA_vsK_entropy_AD.eps}\label{fig:AD-AV-FA-ENTROPY-VSK}}
+	\subfloat[]{\includegraphics[width=0.49\linewidth]{Graphics/ch4/accuracyMeanSTD-FA_vsN_entropy_AD.eps}\label{fig:AD-AV-FA-ENTROPY-VSN}}
+	\subfloat[]{\includegraphics[width=0.49\linewidth]{Graphics/ch4/accuracyMeanSTD-FA_vsK_entropy_AD.eps}\label{fig:AD-AV-FA-ENTROPY-VSK}}
 	
-	\subfloat[]{\includegraphics[width=0.49\linewidth]{gfx/ch4/accuracyMeanSTD-FA_vsN_wilcoxon_AD.eps}\label{fig:AD-AV-FA-WILCOXON-VSN}}
-	\subfloat[]{\includegraphics[width=0.49\linewidth]{gfx/ch4/accuracyMeanSTD-FA_vsK_wilcoxon_AD.eps}\label{fig:AD-AV-FA-WILCOXON-VSK}}
+	\subfloat[]{\includegraphics[width=0.49\linewidth]{Graphics/ch4/accuracyMeanSTD-FA_vsN_wilcoxon_AD.eps}\label{fig:AD-AV-FA-WILCOXON-VSN}}
+	\subfloat[]{\includegraphics[width=0.49\linewidth]{Graphics/ch4/accuracyMeanSTD-FA_vsK_wilcoxon_AD.eps}\label{fig:AD-AV-FA-WILCOXON-VSK}}
 	
 	\caption{Average performance and standard deviation of the proposed system using the two \ac{AD} datasets, \ac{FA} and the three feature selection criteria: $t$-test (\protect\subref{fig:AD-AV-FA-TTEST-VSN} and \protect\subref{fig:AD-AV-FA-TTEST-VSK}), relative entropy (\protect\subref{fig:PKS-AV-FA-ENTROPY-VSN} and \protect\subref{fig:AD-AV-FA-ENTROPY-VSK}) and wilcoxon (\protect\subref{fig:AD-AV-FA-WILCOXON-VSN} and \protect\subref{fig:AD-AV-FA-WILCOXON-VSK}). } 
 	\label{fig:accuracyMeanFA-AD}
-\end{bigfigure}
+\end{figure}
 
 We can observe that the results are always better when using the ADNI-PET dataset than with the VDLN-HMPAO, and this is especially notorious when using the relative entropy selection criterion. The performance tends to slightly increase with the number of voxels selected, but it is not the case with the number of components. By looking at figures \ref{fig:AD-AV-FA-TTEST-VSK}, \ref{fig:AD-AV-FA-ENTROPY-VSK} and \ref{fig:AD-AV-FA-WILCOXON-VSK}, it seems that a relatively small number of components (approximately 6) is enough to obtain good performance, and afterwards, the performance holds or even decreases. 
 
 \subsubsection{Independent Component Analysis}
 In this section, we compute the results of applying \ac{ICA} to the ADNI-PET and VDLN-HMPAO datasets. Figure~\ref{fig:accuracyMeanICA-AD} depicts the average accuracy over the number of voxels or the number of components respectively for the different selection criteria. 
 
-\begin{bigfigure}[-2cm]
+\begin{figure}
 	\centering
-	\subfloat[]{\includegraphics[width=0.49\linewidth]{gfx/ch4/accuracyMeanSTD-ICA_vsN_ttest_AD.eps}\label{fig:AD-AV-ICA-TTEST-VSN}}
-	\subfloat[]{\includegraphics[width=0.49\linewidth]{gfx/ch4/accuracyMeanSTD-ICA_vsK_ttest_AD.eps}\label{fig:AD-AV-ICA-TTEST-VSK}}
+	\subfloat[]{\includegraphics[width=0.49\linewidth]{Graphics/ch4/accuracyMeanSTD-ICA_vsN_ttest_AD.eps}\label{fig:AD-AV-ICA-TTEST-VSN}}
+	\subfloat[]{\includegraphics[width=0.49\linewidth]{Graphics/ch4/accuracyMeanSTD-ICA_vsK_ttest_AD.eps}\label{fig:AD-AV-ICA-TTEST-VSK}}
 	
-	\subfloat[]{\includegraphics[width=0.49\linewidth]{gfx/ch4/accuracyMeanSTD-ICA_vsN_entropy_AD.eps}\label{fig:AD-AV-ICA-ENTROPY-VSN}}
-	\subfloat[]{\includegraphics[width=0.49\linewidth]{gfx/ch4/accuracyMeanSTD-ICA_vsK_entropy_AD.eps}\label{fig:AD-AV-ICA-ENTROPY-VSK}}
+	\subfloat[]{\includegraphics[width=0.49\linewidth]{Graphics/ch4/accuracyMeanSTD-ICA_vsN_entropy_AD.eps}\label{fig:AD-AV-ICA-ENTROPY-VSN}}
+	\subfloat[]{\includegraphics[width=0.49\linewidth]{Graphics/ch4/accuracyMeanSTD-ICA_vsK_entropy_AD.eps}\label{fig:AD-AV-ICA-ENTROPY-VSK}}
 	
-	\subfloat[]{\includegraphics[width=0.49\linewidth]{gfx/ch4/accuracyMeanSTD-ICA_vsN_wilcoxon_AD.eps}\label{fig:AD-AV-ICA-WILCOXON-VSN}}
-	\subfloat[]{\includegraphics[width=0.49\linewidth]{gfx/ch4/accuracyMeanSTD-ICA_vsK_wilcoxon_AD.eps}\label{fig:AD-AV-ICA-WILCOXON-VSK}}
+	\subfloat[]{\includegraphics[width=0.49\linewidth]{Graphics/ch4/accuracyMeanSTD-ICA_vsN_wilcoxon_AD.eps}\label{fig:AD-AV-ICA-WILCOXON-VSN}}
+	\subfloat[]{\includegraphics[width=0.49\linewidth]{Graphics/ch4/accuracyMeanSTD-ICA_vsK_wilcoxon_AD.eps}\label{fig:AD-AV-ICA-WILCOXON-VSK}}
 	
 	\caption{Average performance and standard deviation of the proposed system using the three \ac{AD} datasets, \ac{ICA} and the three feature selection criteria: $t$-test (\protect\subref{fig:AD-AV-ICA-TTEST-VSN} and \protect\subref{fig:AD-AV-ICA-TTEST-VSK}), relative entropy (\protect\subref{fig:AD-AV-ICA-ENTROPY-VSN} and \protect\subref{fig:AD-AV-ICA-ENTROPY-VSK}) and wilcoxon (\protect\subref{fig:AD-AV-ICA-WILCOXON-VSN} and \protect\subref{fig:AD-AV-ICA-WILCOXON-VSK}). } 
 	\label{fig:accuracyMeanICA-AD}
-\end{bigfigure}
+\end{figure}
 
 The case is similar to the one presented in Section~\ref{sec:results_FA_AD}, where the performance slightly improves when increasing the number of selected voxels. The performance is again better when using the ADNI-PET dataset than with the VDLN-HMPAO, although the behaviour is similar. 
 
@@ -223,20 +222,21 @@ The results change when varying the number of components. In this case, although
 \subsubsection{At the Operation Point}
 Now we focus on non-averaged values, the values for which our system is optimal: the operation point. 
 
-\begin{bigfigure}[-2cm]
+\begin{figure}
 	\centering
-	\subfloat[]{\includegraphics[width=0.49\linewidth]{gfx/ch4/accuracyOP-FA_vsN_comparison_ADNI-PET.eps}\label{fig:ADNI-PET-FA-OP}}
-	\subfloat[]{\includegraphics[width=0.49\linewidth]{gfx/ch4/accuracyOP-ICA_vsN_comparison_ADNI-PET.eps}\label{fig:ADNI-PET-ICA-OP}}
+	\subfloat[]{\includegraphics[width=0.49\linewidth]{Graphics/ch4/accuracyOP-FA_vsN_comparison_ADNI-PET.eps}\label{fig:ADNI-PET-FA-OP}}
+	\subfloat[]{\includegraphics[width=0.49\linewidth]{Graphics/ch4/accuracyOP-ICA_vsN_comparison_ADNI-PET.eps}\label{fig:ADNI-PET-ICA-OP}}
 	
-	\subfloat[]{\includegraphics[width=0.49\linewidth]{gfx/ch4/accuracyOP-FA_vsN_comparison_VDLN-HMPAO.eps}\label{fig:VDLN-HMPAO-FA-OP}}
-	\subfloat[]{\includegraphics[width=0.49\linewidth]{gfx/ch4/accuracyOP-ICA_vsN_comparison_VDLN-HMPAO.eps}\label{fig:VDLN-HMPAO-ICA-OP}}
+	\subfloat[]{\includegraphics[width=0.49\linewidth]{Graphics/ch4/accuracyOP-FA_vsN_comparison_VDLN-HMPAO.eps}\label{fig:VDLN-HMPAO-FA-OP}}
+	\subfloat[]{\includegraphics[width=0.49\linewidth]{Graphics/ch4/accuracyOP-ICA_vsN_comparison_VDLN-HMPAO.eps}\label{fig:VDLN-HMPAO-ICA-OP}}
 	
 	\caption{Performance of the proposed system using the two \ac{AD} datasets: ADNI-PET and VDLN-HMPAO at the operation point, and how they vary over the number of components used in the decomposition. } 
 	\label{fig:accuracyOP-AD}
-\end{bigfigure}
+\end{figure}
 
 
-\begin{bigtable}[-2cm]
+\begin{table}
+	\myfloatalign
 	\begin{tabularx}{\linewidth}{Xllccc}
 		\tableheadline{DB} & \tableheadline{Dec.} & \tableheadline{Criterion} & \tableheadline{Accuracy} & \tableheadline{Sensitivity} & \tableheadline{Specificity}\\
 		\toprule
@@ -258,61 +258,61 @@ Now we focus on non-averaged values, the values for which our system is optimal:
 	\end{tabularx}
 	\caption{Accuracy, sensitivity, specificity, and their standard deviation at the operation point for each method and its corresponding feature selection criterion, using two \protect\ac{AD} datasets. }
 	\label{tab:featureAD}
-\end{bigtable}
+\end{table}
 \FloatBarrier
 \subsection{Parkinson's Disease}
 
 
 \subsubsection{Factor Analysis}
-\begin{bigfigure}[-2cm]
+\begin{figure}
 	\centering
-	\subfloat[]{\includegraphics[width=0.49\linewidth]{gfx/ch4/accuracyMeanSTD-FA_vsN_ttest_PKS.eps}\label{fig:PKS-AV-FA-TTEST-VSN}}
-	\subfloat[]{\includegraphics[width=0.49\linewidth]{gfx/ch4/accuracyMeanSTD-FA_vsK_ttest_PKS.eps}\label{fig:PKS-AV-FA-TTEST-VSK}}
+	\subfloat[]{\includegraphics[width=0.49\linewidth]{Graphics/ch4/accuracyMeanSTD-FA_vsN_ttest_PKS.eps}\label{fig:PKS-AV-FA-TTEST-VSN}}
+	\subfloat[]{\includegraphics[width=0.49\linewidth]{Graphics/ch4/accuracyMeanSTD-FA_vsK_ttest_PKS.eps}\label{fig:PKS-AV-FA-TTEST-VSK}}
 	
-	\subfloat[]{\includegraphics[width=0.49\linewidth]{gfx/ch4/accuracyMeanSTD-FA_vsN_entropy_PKS.eps}\label{fig:PKS-AV-FA-ENTROPY-VSN}}
-	\subfloat[]{\includegraphics[width=0.49\linewidth]{gfx/ch4/accuracyMeanSTD-FA_vsK_entropy_PKS.eps}\label{fig:PKS-AV-FA-ENTROPY-VSK}}
+	\subfloat[]{\includegraphics[width=0.49\linewidth]{Graphics/ch4/accuracyMeanSTD-FA_vsN_entropy_PKS.eps}\label{fig:PKS-AV-FA-ENTROPY-VSN}}
+	\subfloat[]{\includegraphics[width=0.49\linewidth]{Graphics/ch4/accuracyMeanSTD-FA_vsK_entropy_PKS.eps}\label{fig:PKS-AV-FA-ENTROPY-VSK}}
 	
-	\subfloat[]{\includegraphics[width=0.49\linewidth]{gfx/ch4/accuracyMeanSTD-FA_vsN_wilcoxon_PKS.eps}\label{fig:PKS-AV-FA-WILCOXON-VSN}}
-	\subfloat[]{\includegraphics[width=0.49\linewidth]{gfx/ch4/accuracyMeanSTD-FA_vsK_wilcoxon_PKS.eps}\label{fig:PKS-AV-FA-WILCOXON-VSK}}
+	\subfloat[]{\includegraphics[width=0.49\linewidth]{Graphics/ch4/accuracyMeanSTD-FA_vsN_wilcoxon_PKS.eps}\label{fig:PKS-AV-FA-WILCOXON-VSN}}
+	\subfloat[]{\includegraphics[width=0.49\linewidth]{Graphics/ch4/accuracyMeanSTD-FA_vsK_wilcoxon_PKS.eps}\label{fig:PKS-AV-FA-WILCOXON-VSK}}
 	
 	\caption{Average performance and standard deviation of the proposed system using the three \ac{PKS} datasets, \ac{FA} and the three feature selection criteria: $t$-test (\protect\subref{fig:PKS-AV-FA-TTEST-VSN} and \protect\subref{fig:PKS-AV-FA-TTEST-VSK}), relative entropy (\protect\subref{fig:PKS-AV-FA-ENTROPY-VSN} and \protect\subref{fig:PKS-AV-FA-ENTROPY-VSK}) and wilcoxon (\protect\subref{fig:PKS-AV-FA-WILCOXON-VSN} and \protect\subref{fig:PKS-AV-FA-WILCOXON-VSK}). } 
 	\label{fig:accuracyMeanFA-PKS}
-\end{bigfigure}
+\end{figure}
 
 \subsubsection{Independent Component Analysis}
-\begin{bigfigure}[-2cm]
-	\subfloat[]{\includegraphics[width=0.49\linewidth]{gfx/ch4/accuracyMeanSTD-ICA_vsN_ttest_PKS.eps}\label{fig:PKS-AV-ICA-TTEST-VSN}}
-	\subfloat[]{\includegraphics[width=0.49\linewidth]{gfx/ch4/accuracyMeanSTD-ICA_vsK_ttest_PKS.eps}\label{fig:PKS-AV-ICA-TTEST-VSK}}
+\begin{figure}
+	\subfloat[]{\includegraphics[width=0.49\linewidth]{Graphics/ch4/accuracyMeanSTD-ICA_vsN_ttest_PKS.eps}\label{fig:PKS-AV-ICA-TTEST-VSN}}
+	\subfloat[]{\includegraphics[width=0.49\linewidth]{Graphics/ch4/accuracyMeanSTD-ICA_vsK_ttest_PKS.eps}\label{fig:PKS-AV-ICA-TTEST-VSK}}
 	
-	\subfloat[]{\includegraphics[width=0.49\linewidth]{gfx/ch4/accuracyMeanSTD-ICA_vsN_entropy_PKS.eps}\label{fig:PKS-AV-ICA-ENTROPY-VSN}}
-	\subfloat[]{\includegraphics[width=0.49\linewidth]{gfx/ch4/accuracyMeanSTD-ICA_vsK_entropy_PKS.eps}\label{fig:PKS-AV-ICA-ENTROPY-VSK}}
+	\subfloat[]{\includegraphics[width=0.49\linewidth]{Graphics/ch4/accuracyMeanSTD-ICA_vsN_entropy_PKS.eps}\label{fig:PKS-AV-ICA-ENTROPY-VSN}}
+	\subfloat[]{\includegraphics[width=0.49\linewidth]{Graphics/ch4/accuracyMeanSTD-ICA_vsK_entropy_PKS.eps}\label{fig:PKS-AV-ICA-ENTROPY-VSK}}
 	
-	\subfloat[]{\includegraphics[width=0.49\linewidth]{gfx/ch4/accuracyMeanSTD-ICA_vsN_wilcoxon_PKS.eps}\label{fig:PKS-AV-ICA-WILCOXON-VSN}}
-	\subfloat[]{\includegraphics[width=0.49\linewidth]{gfx/ch4/accuracyMeanSTD-ICA_vsK_wilcoxon_PKS.eps}\label{fig:PKS-AV-ICA-WILCOXON-VSK}}
+	\subfloat[]{\includegraphics[width=0.49\linewidth]{Graphics/ch4/accuracyMeanSTD-ICA_vsN_wilcoxon_PKS.eps}\label{fig:PKS-AV-ICA-WILCOXON-VSN}}
+	\subfloat[]{\includegraphics[width=0.49\linewidth]{Graphics/ch4/accuracyMeanSTD-ICA_vsK_wilcoxon_PKS.eps}\label{fig:PKS-AV-ICA-WILCOXON-VSK}}
 	
 	\caption{Average performance and standard deviation of the proposed system using the three \ac{PKS} datasets, \ac{ICA} and the three feature selection criteria: $t$-test (\protect\subref{fig:PKS-AV-ICA-TTEST-VSN} and \protect\subref{fig:PKS-AV-ICA-TTEST-VSK}), relative entropy (\protect\subref{fig:PKS-AV-ICA-ENTROPY-VSN} and \protect\subref{fig:PKS-AV-ICA-ENTROPY-VSK}) and wilcoxon (\protect\subref{fig:PKS-AV-ICA-WILCOXON-VSN} and \protect\subref{fig:PKS-AV-ICA-WILCOXON-VSK}). } 
 	\label{fig:accuracyMeanICA-PKS}
-\end{bigfigure}
+\end{figure}
 
 
 \subsubsection{At the Operation Point}
 
-\begin{bigfigure}[-2cm]
-	\subfloat[]{\includegraphics[width=0.49\linewidth]{gfx/ch4/accuracyOP-FA_vsN_comparison_PPMI-DAT.eps}\label{fig:PPMI-DAT-FA-OP}}
-	\subfloat[]{\includegraphics[width=0.49\linewidth]{gfx/ch4/accuracyOP-ICA_vsN_comparison_PPMI-DAT.eps}\label{fig:PPMI-DAT-ICA-OP}}
+\begin{figure}
+	\subfloat[]{\includegraphics[width=0.49\linewidth]{Graphics/ch4/accuracyOP-FA_vsN_comparison_PPMI-DAT.eps}\label{fig:PPMI-DAT-FA-OP}}
+	\subfloat[]{\includegraphics[width=0.49\linewidth]{Graphics/ch4/accuracyOP-ICA_vsN_comparison_PPMI-DAT.eps}\label{fig:PPMI-DAT-ICA-OP}}
 	
-	\subfloat[]{\includegraphics[width=0.49\linewidth]{gfx/ch4/accuracyOP-FA_vsN_comparison_VDLN-DAT.eps}\label{fig:VDLN-DAT-FA-OP}}
-	\subfloat[]{\includegraphics[width=0.49\linewidth]{gfx/ch4/accuracyOP-ICA_vsN_comparison_VDLN-DAT.eps}\label{fig:VDLN-DAT-ICA-OP}}
+	\subfloat[]{\includegraphics[width=0.49\linewidth]{Graphics/ch4/accuracyOP-FA_vsN_comparison_VDLN-DAT.eps}\label{fig:VDLN-DAT-FA-OP}}
+	\subfloat[]{\includegraphics[width=0.49\linewidth]{Graphics/ch4/accuracyOP-ICA_vsN_comparison_VDLN-DAT.eps}\label{fig:VDLN-DAT-ICA-OP}}
 	
-	\subfloat[]{\includegraphics[width=0.49\linewidth]{gfx/ch4/accuracyOP-FA_vsN_comparison_VDLV-DAT.eps}\label{fig:VDLV-DAT-FA-OP}}
-	\subfloat[]{\includegraphics[width=0.49\linewidth]{gfx/ch4/accuracyOP-ICA_vsN_comparison_VDLV-DAT.eps}\label{fig:VDLV-DAT-ICA-OP}}
+	\subfloat[]{\includegraphics[width=0.49\linewidth]{Graphics/ch4/accuracyOP-FA_vsN_comparison_VDLV-DAT.eps}\label{fig:VDLV-DAT-FA-OP}}
+	\subfloat[]{\includegraphics[width=0.49\linewidth]{Graphics/ch4/accuracyOP-ICA_vsN_comparison_VDLV-DAT.eps}\label{fig:VDLV-DAT-ICA-OP}}
 	
 	\caption{Performance of the proposed system using the two \ac{PKS} datasets: PPMI-DAT, VDLN-DAT and VDLV-DAT at the operation point, and how they vary over the number of components used in the decomposition. } 
 	\label{fig:accuracyOP-PKS}
-\end{bigfigure}
+\end{figure}
 
 
-\begin{bigtable}[-2cm]
+\begin{table}
 	\begin{tabularx}{\linewidth}{Xllccc}
 		\tableheadline{DB} & \tableheadline{Dec.} & \tableheadline{Criterion} & \tableheadline{Accuracy} & \tableheadline{Sensitivity} & \tableheadline{Specificity}\\
 		\toprule
@@ -343,6 +343,6 @@ Now we focus on non-averaged values, the values for which our system is optimal:
 		\end{tabularx}
 		\caption{Accuracy, sensitivity, specificity, and their standard deviation at the operation point for each method and its corresponding feature selection criterion, using three \protect\ac{PKS} datasets }
 		\label{tab:featurePKS}
-\end{bigtable}
+\end{table}
 
 \section{Discussion}

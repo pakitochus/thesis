@@ -1,27 +1,30 @@
-A Classic Thesis Style v4.2
-An Homage to The Elements of Typographic Style
-Copyright (C) 2015 Andr√© Miede http://www.miede.de
+ArsClassica package
 
-Please see the file ClassicThesis.pdf for more information.
-Your comments are highly appreciated.
+    Copyright (c) 2008-2017 Lorenzo Pantieri
+    http://www.lorenzopantieri.net/
+    lorenzo.pantieri@gmail.com
 
-If you like the style then I would appreciate a postcard. My address 
-can be found in the file ClassicThesis.pdf. A collection of the 
-postcards I received so far is available online at 
-http://postcards.miede.de
 
-License:
-This program is free software; you can redistribute it and/or modify
-it under the terms of the GNU General Public License as published by
-the Free Software Foundation; either version 2 of the License, or
-(at your option) any later version.
+License
 
-This program is distributed in the hope that it will be useful,
-but WITHOUT ANY WARRANTY; without even the implied warranty of
-MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
-GNU General Public License for more details.
+   This software is provided under the terms of the
+   LaTeX Project Public License distributed from CTAN
+   archives in directory macros/latex/base/lppl.txt.
 
-You should have received a copy of the GNU General Public License
-along with this program; see the file COPYING.  If not, write to
-the Free Software Foundation, Inc., 59 Temple Place - Suite 330,
-Boston, MA 02111-1307, USA.
+
+Abstract
+
+   This package changes some typographical features of
+   ClassicThesis, by André Miede, inspired to the masterpiece
+   "The Elements of Typographic Style" by Robert Bringhurst.
+   It allows to reproduce the layout of the guide
+   "The Art of Writing with LaTeX" (in Italian,
+   http://www.lorenzopantieri.net/LaTeX_files/ArteLaTeX.pdf).
+   Your comments are highly appreciated.
+
+
+Installation
+
+   This package is preinstalled in TeX Live and MiKTeX complete.
+   To produce the documentation, run ArsClassica.tex
+   through pdfLaTeX.

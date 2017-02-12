@@ -49,7 +49,7 @@ The \acf{SWPCA} is an algorithm to reduce, in this case, undesired intensity var
 
 \begin{figure}
 \centering
-\includegraphics[width=0.7\linewidth]{gfx/ch8/FIGURE01}
+\includegraphics[width=0.7\linewidth]{Graphics/ch8/FIGURE01}
 \caption[Summary of the \acs{SWPCA} algorithm, along with its context in the pipeline used in this article.]{Summary of the \ac{SWPCA} algorithm, along with its context in the pipeline used in this article. Circles represent the input data, both images (green shading) and class (group and acquisition site, purple shading). Rectangles represent the different procedures applied, comprising the DARTEL normalization and registration, the different steps contained in \ac{SWPCA}, \ac{ANOVA} and obtaining the weighting function $\Lambda(c)$- and the subsequent analysis.}
 \label{fig:swpcaschema}
 \end{figure}
@@ -73,7 +73,7 @@ components. \ac{PCA} was computed using \acf{SVD}:
 	\mathbf{X} = \mathbf{U}\boldsymbol{\Sigma}\mathbf{V}^*
 \end{equation}
 
-where  $U$ is an $K\times K$ orthogonal matrix,  $\boldsymbol\Sigma$ is an \textit{K}×\textit{N} diagonal matrix with non-negative real numbers on the diagonal, and the $N\times N$ unitary matrix  $\mathbf{V}^*$ denotes the conjugate transpose of the $N\times N$ unitary matrix  $\mathbf{V}$. With this decomposition both the component scores and estimates of the set of components loadings  $\mathbf{W}$ were obtained. In this work the truncated form of \ac{SVD} was used such that only the first $C$ components were considered, where most of the variability of the data was concentrated:
+where  $U$ is an $K\times K$ orthogonal matrix,  $\boldsymbol\Sigma$ is a $K\times N$ diagonal matrix with non-negative real numbers on the diagonal, and the $N\times N$ unitary matrix  $\mathbf{V}^*$ denotes the conjugate transpose of the $N\times N$ unitary matrix  $\mathbf{V}$. With this decomposition both the component scores and estimates of the set of components loadings  $\mathbf{W}$ were obtained. In this work the truncated form of \ac{SVD} was used such that only the first $C$ components were considered, where most of the variability of the data was concentrated:
 
 \begin{equation}
 	\mathbf{S}_C = \mathbf{U}_C \boldsymbol{\Sigma}_C = \mathbf{X}\mathbf{W}_C
@@ -115,7 +115,7 @@ where  ${p}_{c}$ is the statistical significance of the $c_{th}$ component with 
 
 \begin{figure}
 	\centering
-	\includegraphics[width=0.7\linewidth]{gfx/ch8/weighting2}
+	\includegraphics[width=0.7\linewidth]{Graphics/ch8/weighting2}
 	\caption[Weighting function $\Lambda_c(p_c,p_{th})$ used in \acs{SWPCA}.]{Weighting function $\Lambda_c(p_c,p_{th})$ used in \ac{SWPCA}.}
 	\label{fig:swpcasweigthing}
 \end{figure}
@@ -124,7 +124,7 @@ This procedure is illustrated in Figure~\ref{fig:swpcaboxplot}, where a boxplot 
 
 \begin{figure}
 	\centering
-	\includegraphics[width=0.7\linewidth]{gfx/ch8/FIGURE02}
+	\includegraphics[width=0.7\linewidth]{Graphics/ch8/FIGURE02}
 	\caption[Box-plot of the distribution of the component scores at each site of the AIMS-MRI dataset (see Sections~\ref{sec:swpcaAIMSresults} and \ref{sec:aims-mri}) in the four first components.]{Box-plot of the distribution of the component scores at each site of the AIMS-MRI dataset (see Sections~\ref{sec:swpcaAIMSresults} and \ref{sec:aims-mri}) in the four first components. We assume that bigger differences between distributions imply a bigger influence of the acquisition site on the portion of variance modelled by that component and therefore, to parse out those differences, the resulting weight will be smaller.}
 	\label{fig:swpcaboxplot}
 \end{figure}
@@ -174,7 +174,7 @@ Table~\ref{tab:swpcaAqSite}.
 	
 \begin{figure}
 	\centering
-	\includegraphics[width=\linewidth]{gfx/ch8/FIGURE03}
+	\includegraphics[width=\linewidth]{Graphics/ch8/FIGURE03}
 	\caption[Brain t-map (\acs{VBM}) of significant ($p<0.01$, $|t|>2.57$) \acs{GM} and \acs{WM} between-group differences using \acs{qT1}, \acs{qT2}, \acs{synT1}, \acs{GM} and \acs{WM} modalities after applying \acs{SWPCA} to remove site effects.]{Brain t-map (\ac{VBM}) of significant ($p<0.01$, $|t|>2.57$) \ac{GM} and \ac{WM} between-group differences using \ac{qT1}, \ac{qT2}, \ac{synT1}, \ac{GM} and \ac{WM} modalities after applying \ac{SWPCA} to remove site effects.}
 	\label{fig:swpcaFIGURE03}
 \end{figure}
@@ -193,9 +193,8 @@ where, according to the classification accuracy, they were nearly
 indistinguishable. Acquisition site differences were therefore
 noticeably reduced in the CTL and ALL databases, but not in the ASD.
 
-\begin{sidewaystable}[h]
-	\myfloatalign
-	\begin{tabularx}{\textwidth}{XX|XX|XX|XX} 
+\begin{bigtable}
+	\begin{tabularx}{\linewidth}{ll|XX|XX|XX} 
 		\multicolumn{2}{c}{} & \multicolumn{2}{c}{\spacedlowsmallcaps{ALL}}& \multicolumn{2}{c}{\spacedlowsmallcaps{CTL}}& \multicolumn{2}{c}{\spacedlowsmallcaps{ASD}} \\ \cline{3-8}
 		\tableheadline{Modality} & \tableheadline{Mask} & \tableheadline{no-SWPCA} & \tableheadline{SWPCA} & \tableheadline{no-SWPCA} & \tableheadline{SWPCA}& \tableheadline{no-SWPCA} & \tableheadline{SWPCA}\\ \toprule
 		\multirow{3}{*}{\ac{qT1}} &GM+WM &		$ 0.875 \pm 0.083 $ & $ 0.530 \pm 0.130 $ & $ 0.847 \pm 0.141 $ & $ 0.543 \pm 0.115 $  &		$ 0.769 \pm 0.145 $  & $ 0.553 \pm 0.093 $ \\
@@ -220,8 +219,7 @@ noticeably reduced in the CTL and ALL databases, but not in the ASD.
 	\caption[Between-site classification accuracy ($\pm$ standard deviation) for
 	different modalities and masks without and with \acs{SWPCA} correction.]{Between-site classification accuracy ($\pm$ standard deviation) for different modalities and masks without and with \ac{SWPCA} correction.}
 	\label{tab:swpcaAqSite}
-\end{sidewaystable}
-
+\end{bigtable}
 
 \subsection{Experiment 2: Within-site Between-Group Differences}\label{sec:swpcaE2}
 In this second experiment, accuracy, sensitivity and specificity in the
@@ -236,9 +234,8 @@ are sub-optimal in detecting group differences. It is interesting to
 note that the London sample contained more between-group differences
 that those acquired in Cambridge. 
 
-\begin{sidewaystable}[htp]
-	\myfloatalign
-	\begin{tabularx}{\textwidth}{XX|XXX|XXX} 
+\begin{bigtable}
+	\begin{tabularx}{\linewidth}{ll|XXX|XXX} 
 		\multicolumn{2}{c}{} & \multicolumn{3}{c}{\spacedlowsmallcaps{LONDON}}& \multicolumn{3}{c}{\spacedlowsmallcaps{CAMBRIDGE}} \\ \cline{3-8}
 		\tableheadline{Modality} & \tableheadline{Mask} & \tableheadline{acc.} & \tableheadline{sens.} & \tableheadline{spec.} & \tableheadline{acc.} & \tableheadline{sens.} & \tableheadline{spec.}\\ \toprule
 		\multirow{3}{*}{\ac{qT1}} &GM+WM &
@@ -264,7 +261,7 @@ that those acquired in Cambridge.
 	\end{tabularx}
 	\caption[Classification accuracy (Acc), sensitivity (Sen) and specificity (Spec) $\pm$ standard deviation for each modality and mask using the participants acquired at the LON and CAM sites.]{Classification accuracy (Acc), sensitivity (Sen) and specificity (Spec) $\pm$ standard deviation for each modality and mask using the participants acquired at the LON and CAM sites.}
 	\label{tab:swpcaLONCAM}
-\end{sidewaystable}
+\end{bigtable}
 
 
 
@@ -293,7 +290,7 @@ cerebellar hemisphere (z=-26).
 
 \begin{figure}
 	\centering
-	\includegraphics[width=\linewidth]{gfx/ch8/FIGURE04}
+	\includegraphics[width=\linewidth]{Graphics/ch8/FIGURE04}
 	\caption[Brain t-map (\acs{VBM}) of significant ($p<0.01$, $|t|>2.57$) \acs{GM} and \acs{WM} differences in \acs{ASD} using \acs{qT1}, \acs{qT2}, \acs{synT1}, \acs{GM} and \acs{WM} maps before and after applying \acs{SWPCA} to remove site effects.]{Brain t-map (\ac{VBM}) of significant ($p<0.01$, $|t|>2.57$) \ac{GM} and \ac{WM} differences in \ac{ASD} using \ac{qT1}, \ac{qT2}, \ac{synT1}, \ac{GM} and \ac{WM} maps before and after applying \ac{SWPCA} to remove site effects.}
 	\label{fig:swpcaFIGURE04}
 \end{figure}
@@ -315,7 +312,7 @@ three participants, which will be discussed later.
 
 \begin{figure}
 	\centering
-	\includegraphics[width=\linewidth]{gfx/ch8/FIGURE05}
+	\includegraphics[width=\linewidth]{Graphics/ch8/FIGURE05}
 	\caption[Brain Z-map (\acs{CBM}) of significant ($p<0.01$, $|t|>2.57$) \acs{GM} and \acs{WM} differences using \acs{qT1}, \acs{qT2}, \acs{synT1}, \acs{GM} and \acs{WM} maps before and after applying \acs{SWPCA} to remove site effects.]{Brain Z-map (\ac{CBM}) of significant ($p<0.01$, $|t|>2.57$) \acs{GM} and \acs{WM} differences using \ac{qT1}, \ac{qT2}, \ac{synT1}, \ac{GM} and \ac{WM} maps before and after applying \ac{SWPCA} to remove site effects.}
 	\label{fig:swpcaFIGURE05}
 \end{figure}
@@ -331,9 +328,8 @@ to eliminate the significant areas but enhanced them, could be
 responsible for the accuracy increment in the analysis of the \ac{qT2}
 modality, and the \ac{GM} with GM mask.
 
-\begin{sidewaystable}[h]
-	\myfloatalign
-	\begin{tabularx}{\textwidth}{XX|XXX|XXX} 
+\begin{bigtable}
+	\begin{tabularx}{\linewidth}{ll|XXX|XXX} 
 		\multicolumn{2}{c}{} & \multicolumn{3}{c}{\spacedlowsmallcaps{NO-SWPCA}}& \multicolumn{3}{c}{\spacedlowsmallcaps{SWPCA}} \\ \cline{3-8}
 		\tableheadline{Modality} & \tableheadline{Mask} & \tableheadline{acc.} & \tableheadline{sens.} & \tableheadline{spec.} & \tableheadline{acc.} & \tableheadline{sens.} & \tableheadline{spec.}\\ \toprule
 		\multirow{2}{*}{\ac{qT1}} &GM+WM &
@@ -378,7 +374,7 @@ modality, and the \ac{GM} with GM mask.
 	\end{tabularx}
 	\caption[Classification accuracy (Acc), sensitivity (Sen), and specificity (Spec) $\pm$ STD for the different modalities and masks using ALL, before and after applying \acs{SWPCA}.]{Classification accuracy (Acc), sensitivity (Sen), and specificity (Spec) $\pm$ STD for the different modalities and masks using ALL, before and after applying \ac{SWPCA}.}
 	\label{tab:swpcaALL}
-\end{sidewaystable}
+\end{bigtable}
 
 \subsection{Discussion}
 Brain anatomical and functional differences between ASD participants and

@@ -52,8 +52,8 @@ To better illustrate the influence of the subvolume selection process, Figure \r
 
 \begin{figure*}% single and cumulative approach. 
 	\centering
-	\subfloat[Single approach]{\includegraphics[width=0.45\textwidth]{gfx/ch5/featuresIthdis.eps}\label{fig:acc_dist}}
-	\subfloat[Cumulative approach]{\includegraphics[width=0.45\textwidth]{gfx/ch5/featuresIthcum.eps}\label{fig:acc_cum}}
+	\subfloat[Single approach]{\includegraphics[width=0.45\textwidth]{Graphics/ch5/featuresIthdis.eps}\label{fig:acc_dist}}
+	\subfloat[Cumulative approach]{\includegraphics[width=0.45\textwidth]{Graphics/ch5/featuresIthcum.eps}\label{fig:acc_cum}}
 	\caption{Average accuracy values obtained for \protect\subref{fig:acc_dist} the single approach and \protect\subref{fig:acc_cum} the cumulative approach.}
 	\label{fig:featuresIth}
 \end{figure*}
@@ -64,9 +64,9 @@ The behaviour of each of the Haralick texture features can also be analysed usin
 
 \begin{figure*}% Son los del experimento distances
 	\centering
-	\subfloat[PPMI database]{\includegraphics[height=0.25\textheight]{gfx/ch5/features_accPPMI.eps}\label{fig:acc_distances_ppmi}}
-	\subfloat[VDLN database]{\includegraphics[height=0.25\textheight]{gfx/ch5/features_accVDLN.eps}\label{fig:acc_distances_vdln}}
-	\subfloat[VDLV database]{\includegraphics[height=0.25\textheight]{gfx/ch5/features_accVDLV.eps}\label{fig:acc_distances_vdlv}}
+	\subfloat[PPMI database]{\includegraphics[height=0.25\textheight]{Graphics/ch5/features_accPPMI.eps}\label{fig:acc_distances_ppmi}}
+	\subfloat[VDLN database]{\includegraphics[height=0.25\textheight]{Graphics/ch5/features_accVDLN.eps}\label{fig:acc_distances_vdln}}
+	\subfloat[VDLV database]{\includegraphics[height=0.25\textheight]{Graphics/ch5/features_accVDLV.eps}\label{fig:acc_distances_vdlv}}
 	\caption{Box plot of all 130 accuracy values computed for each feature, using the ''single approach'', at 10 distances $d$ (ranging from 1 to 10) and 13 spatial directions, for \protect\subref{fig:acc_distances_ppmi} PPMI database, \protect\subref{fig:acc_distances_vdlv} VDLV database and \protect\subref{fig:acc_distances_vdln} VDLN database. The red marks represent the outliers.}
 	\label{fig:features_acc_distances}
 \end{figure*}
@@ -106,7 +106,7 @@ Firstly, the impact of our volume selection threshold $I_{th}$ (see Sec. \ref{se
 
 \begin{figure}[htp]
 	\centering
-	\includegraphics[width=0.90\columnwidth]{gfx/ch5/accuracyOverIth.eps}
+	\includegraphics[width=0.90\columnwidth]{Graphics/ch5/accuracyOverIth.eps}
 	\caption{Accuracy obtained by averaging all accuracy values using a given volume selection threshold $I_{th}$}
 	\label{fig:averageAcc_IthNorm}
 \end{figure}
@@ -117,9 +117,9 @@ As results suggest, the use of our volume selection strategy with a intensity th
 
 \begin{figure*}
 	\centering
-	\subfloat[PPMI database]{\includegraphics[width=0.45\textwidth]{gfx/ch5/features_avAccPPMI.eps}\label{fig:experiment4-ppmi}}
-	\subfloat[VDLN database]{\includegraphics[width=0.45\textwidth]{gfx/ch5/features_avAccVDLN.eps}\label{fig:experiment4-vdln}}
-	\subfloat[VDLV database]{\includegraphics[width=0.45\textwidth]{gfx/ch5/features_avAccVDLV.eps}\label{fig:experiment4-vdlv}}
+	\subfloat[PPMI database]{\includegraphics[width=0.45\textwidth]{Graphics/ch5/features_avAccPPMI.eps}\label{fig:experiment4-ppmi}}
+	\subfloat[VDLN database]{\includegraphics[width=0.45\textwidth]{Graphics/ch5/features_avAccVDLN.eps}\label{fig:experiment4-vdln}}
+	\subfloat[VDLV database]{\includegraphics[width=0.45\textwidth]{Graphics/ch5/features_avAccVDLV.eps}\label{fig:experiment4-vdlv}}
 	\caption{Average accuracy computed for each selection criteria, using all accuracy values for intensity thresholds of $0.10$ to $0.45$. These values are plotted over $N$, the number of features selected using some of the ranking criteria defined in Sec. \ref{sec:discrimination} (where $N$ ranges from 1\% and 100\% of the $1560$ total Haralick features calculated). These values correspond to the images of the \protect\subref{fig:experiment4-ppmi} PPMI database, \protect\subref{fig:experiment4-vdlv} VDLV database and \protect\subref{fig:experiment4-vdln} VDLN database (experiment 2).}
 	\label{fig:experiment4}
 \end{figure*}

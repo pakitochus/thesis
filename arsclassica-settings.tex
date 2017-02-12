@@ -1,0 +1,89 @@
+% ********************************************************************
+% Personal commands
+% ******************************************************************** 
+\newcommand{\myTitle}{New Advances in Statistical Neuroimage Processing: Tackling the Small Sample Size Problem\xspace}
+\newcommand{\mySubtitle}{Tesis Doctoral\xspace}
+\newcommand{\myDegree}{Doctor por la Universidad de Granada\xspace}
+\newcommand{\myName}{Francisco Jes\'us Mart\'inez Murcia\xspace}
+\newcommand{\myProf}{Juan Manuel G\'orriz S\'aez\xspace}
+\newcommand{\myOtherProf}{Javier Ram\'irez P\'erez de Inestrosa\xspace}
+\newcommand{\myFaculty}{Escuela T\'ecnica Superior de Ingenier\'ias Inform\'atica y de Telecomunicaci\'on\xspace}
+\newcommand{\myDepartment}{Departamento de Teor\'ia de la Se\~nal, Telem\'atica y Comunicaciones\xspace}
+\newcommand{\myUni}{Universidad de Granada\xspace}
+\newcommand{\myLocation}{Granada\xspace}
+\newcommand{\myTime}{Junio 2017\xspace}
+
+\DeclareRobustCommand*{\clsname}[1]{{\normalfont\sffamily#1}}
+\DeclareRobustCommand*{\pkgname}[1]{{\normalfont\sffamily#1}}
+\DeclareRobustCommand*{\optname}[1]{{\normalfont\ttfamily#1}}
+\DeclareRobustCommand*{\cmdname}[1]{\mbox{\lstinline[basicstyle=\normalsize\ttfamily]!\\#1!}}
+
+\DeclareRobustCommand*{\classicthesis}{Classic\-Thesis}
+\DeclareRobustCommand*{\arsclassica}{{\normalfont\sffamily ArsClassica}}
+
+% ********************************************************************
+% Hyper-references
+% ******************************************************************** 
+\newcommand{\mail}[1]{\href{mailto:#1}{\texttt{#1}}}
+
+
+% ********************************************************************
+% Graphics
+% ********************************************************************
+\graphicspath{{Graphics/}}
+
+
+% ********************************************************************
+% Code
+% ********************************************************************
+\definecolor{lightergray}{gray}{0.99}
+
+\lstset{language=[LaTeX]Tex,
+     keywordstyle=\color{RoyalBlue},
+     basicstyle=\small\ttfamily,
+     commentstyle=\color{Emerald}\ttfamily,
+     stringstyle=\rmfamily,
+     numberstyle=\scriptsize,
+     showstringspaces=false,
+     breaklines=true,
+     frame=lines,
+     backgroundcolor=\color{lightergray},
+     flexiblecolumns=true,
+     escapeinside={£*}{*£},
+     firstnumber=last,
+} 
+
+\newcommand{\meta}[1]{$\langle${\normalfont\itshape#1}$\rangle$}
+
+\lstset{	morekeywords=%
+    {ProvidesPackage,RequirePackage,areaset,ifthenelse,%
+     chapterNumber,undefined,boolean,DeclareRobustCommand,%
+     spacedallcaps,textssc,MakeTextUppercase,lehead,%
+     microtypesetup,textls,spacedlowsmallcaps,MakeTextLowercase,%
+     sodef,allcapsspacing,lowsmallcapsspacing,thesection,%
+     color,headmark,rohead,headfont,pnumfont,titleformat,%
+     part,partname,thepart,chapter,thechapter,titlerule,%
+     subsection,thesubsection,subsubsection,thesubsubsection,%
+     paragraph,theparagraph,descriptionlabel,titlespacing,%
+     formatchapter,textcolor,clearscrplain,rofoot,labelitemi,
+     captionsetup,hypersetup}}
+
+\lstnewenvironment{code}% 
+   {\setkeys{lst}{columns=fullflexible,keepspaces=true}%
+   \lstset{basicstyle=\small\ttfamily}}{}
+
+
+% ********************************************************************
+% Bibliography
+% ******************************************************************** 
+
+%\addbibresource[label=referencias]{referencias.bib}
+%\addbibresource[label=ownpubs]{FJMM_Publications.bib}
+%
+%\defbibheading{bibliography}{%
+%\cleardoublepage
+%\manualmark
+%\phantomsection
+%\addcontentsline{toc}{chapter}{\tocEntry{\bibname}}
+%\chapter*{\bibname\markboth{\spacedlowsmallcaps{\bibname}}
+%{\spacedlowsmallcaps{\bibname}}}}

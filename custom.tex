@@ -1,0 +1,90 @@
+% !TEX TS-program = pdflatex
+% !TEX root = ArsClassica.tex
+%-------------------------------------------------------------
+% Change custom title font
+%-------------------------------------------------------------
+%
+\addbibresource[label=referencias]{referencias.bib}
+\addbibresource[label=ownpubs]{FJMM_Publications.bib}
+%-------------------------------------------------------------
+%% Solve geometry problems with B5paper. 
+%-------------------------------------------------------------
+\usepackage{geometry}
+  \geometry{
+  	twoside,
+  	includehead,
+  	includefoot,
+  	right=20mm,
+  	left=20mm,
+  	bottom=10mm, % space from bottomn to footer (space from text to bottom = footskip + bottom)
+  	top=10mm,    % space from top to text
+  }
+  \geometry{
+  	paper=b5paper
+  }
+  % Chapter thumbs
+  \usepackage[
+  % if not commented these are defaults
+  thumblink=rule, 
+  linefill=dots,
+  height=auto,             
+  minheight={47pt}, 
+  width={15mm},            % reduce for space to text body; default=auto
+  distance={3mm},          % default = 2mm
+  topthumbmargin={3cm},    % more space to top, to avoid clash with pagenumber of chapter; default = auto
+  bottomthumbmargin={auto},
+  eventxtindent={10pt},    % default = 5pt
+  oddtxtexdent={10pt},      % default = 5pt
+  evenmarkindent={0pt},      % use for pdf
+  % evenmarkindent={15.5mm},     % use for print; default = 0pt, 210mm(a4) - 176 (b5) / 2 = 17.5mm - 2mm for cutting = 15.5mm for B5
+  oddmarkexdent={0pt},       % use for pdf
+  % oddmarkexdent={15.5mm},      % use for print; default = 0pt
+  evenprintvoffset={0pt}, 
+  nophantomsection=false, 
+  ignorehoffset=true,
+  ignorevoffset=true,
+  final=true,
+  hidethumbs=false
+  ]{thumbs}
+
+%-------------------------------------------------------------
+% Include acronyms
+%-------------------------------------------------------------
+\PassOptionsToPackage{printonlyused,smaller}{acronym} 
+\usepackage{acronym} % nice macros for handling all acronyms in the thesis
+%\renewcommand{\bflabel}[1]{{#1}\hfill} % fix the list of acronyms --> no longer working
+%\renewcommand*{\acsfont}[1]{\textsc{#1}} 
+\renewcommand*{\aclabelfont}[1]{\acsfont{#1}}
+\newcommand{\tableheadline}[1]{\multicolumn{1}{c}{\spacedlowsmallcaps{#1}}}
+
+%-------------------------------------------------------------
+% Math operators
+%-------------------------------------------------------------
+\DeclareMathOperator*{\argmax}{arg\,max}
+\DeclareMathOperator*{\argmin}{arg\,min}
+
+%-------------------------------------------------------------
+% Custom Commands and Environments
+%-------------------------------------------------------------
+\newcommand{\myfloatalign}{\centering} % to be used with each float for alignment
+
+\newenvironment{bigtable}[1][\unskip]{%
+	\begin{sidewaystable}\myfloatalign}
+		{\end{sidewaystable}}
+
+\newenvironment{bigfigure}[1][\unskip]{%
+	\begin{sidewaysfigure}\myfloatalign}
+		{\end{sidewaysfigure}}
+
+
+% ********************************************************************
+% Setup, finetuning, and useful commands
+% ********************************************************************
+\newcounter{dummy} % necessary for correct hyperlinks (to index, bib, etc.)
+\newlength{\abcd} % for ab..z string length calculation
+\providecommand{\mLyX}{L\kern-.1667em\lower.25em\hbox{Y}\kern-.125emX\@}
+\newcommand{\ie}{i.\,e.}
+\newcommand{\Ie}{I.\,e.}
+\newcommand{\eg}{e.\,g.}
+\newcommand{\Eg}{E.\,g.} 
+%

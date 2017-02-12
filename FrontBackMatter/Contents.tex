@@ -1,0 +1,127 @@
+%*******************************************************
+% Table of Contents
+%*******************************************************
+%\phantomsection
+\refstepcounter{dummy}
+\pdfbookmark[0]{\contentsname}{tableofcontents}
+\setcounter{tocdepth}{2} % <-- 2 includes up to subsections in the ToC
+\setcounter{secnumdepth}{3} % <-- 3 numbers up to subsubsections
+\manualmark
+\markboth{\spacedlowsmallcaps{\contentsname}}{\spacedlowsmallcaps{\contentsname}}
+\tableofcontents 
+\automark[section]{chapter}
+\renewcommand{\chaptermark}[1]{\markboth{\spacedlowsmallcaps{#1}}{\spacedlowsmallcaps{#1}}}
+\renewcommand{\sectionmark}[1]{\markright{\thesection\enspace\spacedlowsmallcaps{#1}}}
+%*******************************************************
+% List of Figures and of the Tables
+%*******************************************************
+\clearpage
+
+\begingroup 
+    \let\clearpage\relax
+    \let\cleardoublepage\relax
+    \let\cleardoublepage\relax
+    %*******************************************************
+    % List of Figures
+    %*******************************************************    
+    %\phantomsection 
+    \refstepcounter{dummy}
+    %\addcontentsline{toc}{chapter}{\listfigurename}
+    \pdfbookmark[0]{\listfigurename}{lof}
+    \listoffigures
+
+    \vspace{8ex}
+
+    %*******************************************************
+    % List of Tables
+    %*******************************************************
+    %\phantomsection 
+    \refstepcounter{dummy}
+    %\addcontentsline{toc}{chapter}{\listtablename}
+    \pdfbookmark[0]{\listtablename}{lot}
+    \listoftables
+        
+    \vspace{8ex}
+%   \newpage
+    
+    %*******************************************************
+    % List of Listings
+    %*******************************************************      
+      %\phantomsection 
+%    \refstepcounter{dummy}
+%    %\addcontentsline{toc}{chapter}{\lstlistlistingname}
+%    \pdfbookmark[1]{\lstlistlistingname}{lol}
+%    \lstlistoflistings 
+%
+%    \vspace{8ex}
+       
+    %*******************************************************
+    % Acronyms
+    %*******************************************************
+    %\phantomsection 
+    \refstepcounter{dummy}
+    \pdfbookmark[0]{Acronyms}{acronyms}
+    \markboth{\spacedlowsmallcaps{Acronyms}}{\spacedlowsmallcaps{Acronyms}}
+    \chapter*{Acronyms}
+    \begin{acronym}[MRC-AIMS]
+	    \acro{PCA}{Principal Component Analysis}
+	    \acro{ICA}{Independent Component Analysis}
+	    \acro{FA}{Factor Analysis}
+	    \acro{SPECT}{Single Photon Emission Computed Tomography}
+	    \acro{CT}{Computed Tomography}
+	    \acro{PET}{Positron Emission Tomography}
+	    \acro{AD}{Alzheimer's Disease}
+	    \acro{PD}{Parkinson's Disease}
+	    \acro{PKS}{Parkinsonism}
+	    \acro{ASD}{Autism Spectrum Disorder}
+	    \acro{MRI}{Magnetic Resonance Imaging}
+	    \acro{fMRI}{functional \acs{MRI}}
+	    \acro{PLS}{Partial Least Squares}
+	    \acro{SWPCA}{Significance Weighted Principal Component Analysis}
+	    \acro{SBM}{Spherical Brain Mapping}
+	    \acro{VBM}{Voxel Based Morphometry}
+	    \acro{SPM}{Statistical Parametric Mapping}
+	    \acro{SPM8}{Statistical Parametric Mapping Software, version 8}
+	    \acro{CTL}{Control Subject}
+	    \acro{VAF}{Voxels As Features}
+	    \acro{CAD}{Computer Aided Diagnosis}
+	    \acro{ADNI}{Alzheimer's Disease Neuroimaging Initiative}
+	    \acro{PPMI}{Parkinson's Progression Markers Initiative}
+	    \acro{VDLN}{Virgen de las Nieves Hospital}
+	    \acro{VDLV}{Virgen de la Victoria Hospital}
+	    \acro{MRC-AIMS}{Medical Research Council Autism Imaging Multicentre Study}
+	    \acro{MNI}{Montreal Neurological Institute}
+	    \acro{synT1}{simulated T1 - weighted Inversion Recovery}
+	    \acro{qT1}{quantitative T1 - weighted}
+	    \acro{qT2}{quantitative T2 - weighted}
+	    \acro{GM}{grey matter}
+	    \acro{GLM}{General Linear Model}
+	    \acro{WM}{white matter}
+	    \acro{CSF}{cerebro-spinal fluid}
+	    \acro{ANOVA}{Analysis Of Variance}
+	    \acro{SVD}{Singular Value Decomposition}
+	    \acro{SVM}{Support Vector Machine}
+	    \acro{SVC}{Support Vector Classifier}
+	    \acro{CBM}{Component Based Morphometry}
+	    \acro{KDE}{Kernel Density Estimation}
+	    \acro{MCI}{Mild Cognitive Impairment}
+	    \acro{EM}{Expectation-Maximization}
+	    \acro{PDF}{Probability Density Function}
+	    \acro{FWE}{Family Wise Error rate}
+	    \acro{RF}{radiofrequency}
+	    \acro{SNR}{Signal-To-Noise Ratio}
+	    \acro{rCBF}{regional Cerebral Blood Flow}
+	    \acro{DAT}{Dopamine Transporters}
+	    \acro{FBP}{Filtered Back Projection}
+	    \acro{FDR}{False Discovery Rate}
+	    \acro{ROI}{Region of Interest}
+	    \acrodefplural{ROI}{Regions of Interest}
+	    \acro{ROC}{Receiver Operating Characteristics}
+	    \acro{HMM}{Hidden Markov Model}
+	    \acrodefplural{HMM}{Hidden Markov Models}
+	    \acro{AC}{Anterior Commissure}
+	    \acro{LBP}{Local Binary Patterns}
+	    \acro{VRLBP}{Volumetric Radial \acs{LBP}}
+	    \acro{AAL}{Automated Anatomical Labeling}
+    \end{acronym}                     
+\endgroup
