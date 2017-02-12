@@ -102,6 +102,7 @@
       \verb{doi}
       \verb 10.1002/hbm.23449
       \endverb
+      \keyw{own}
     \endentry
     \entry{Carlson2016}{book}{}
       \name{author}{1}{}{%
@@ -169,6 +170,7 @@
       \verb{doi}
       \verb 10.5772/64980
       \endverb
+      \keyw{own}
     \endentry
     \entry{Martinez-Murcia2015}{article}{}
       \name{author}{4}{}{%
@@ -213,7 +215,7 @@
       \verb{doi}
       \verb 10.2174/1567205013666160314145158
       \endverb
-      \keyw{sbm,mri,adni,ad,alzheimer}
+      \keyw{sbm,mri,adni,ad,alzheimer,own}
     \endentry
     \entry{Martinez-Murcia2016}{article}{}
       \name{author}{4}{}{%
@@ -258,7 +260,7 @@
       \verb{doi}
       \verb 10.1142/S0129065716500246
       \endverb
-      \keyw{sbm,hmm,parametrization,mri,adni,ad,alzheimer}
+      \keyw{sbm,hmm,parametrization,mri,adni,ad,alzheimer,own}
     \endentry
     \entry{Martinez-MurciaVRLBP}{inproceedings}{}
       \name{author}{5}{}{%
@@ -307,7 +309,7 @@
       \verb{doi}
       \verb 10.1007/978-3-319-18914-7_3
       \endverb
-      \keyw{sbm,lbp,vrlbp,mri,ad,alzheimer}
+      \keyw{sbm,lbp,vrlbp,mri,ad,alzheimer,own}
     \endentry
     \entry{haar2014anatomical}{article}{}
       \name{author}{4}{}{%
@@ -393,7 +395,7 @@
       \verb{doi}
       \verb 10.3233/978-1-61499-474-9-225
       \endverb
-      \keyw{mri,alzheimer,sbm,ad,adni}
+      \keyw{mri,alzheimer,sbm,ad,adni,own}
     \endentry
     \entry{Martinez-Murcia201458}{article}{}
       \name{author}{5}{}{%
@@ -442,7 +444,7 @@
       \verb{doi}
       \verb 10.1016/j.neucom.2013.01.054
       \endverb
-      \keyw{parkinson,ica,tests,pks,datscan}
+      \keyw{parkinson,ica,tests,pks,datscan,own}
     \endentry
     \entry{martinez2014parametrization}{article}{}
       \name{author}{5}{}{%
@@ -491,7 +493,7 @@
       \verb{doi}
       \verb 10.1118/1.4845115
       \endverb
-      \keyw{texture,datscan,parkinson,pks}
+      \keyw{texture,datscan,parkinson,pks,own}
     \endentry
     \entry{Winkler2014}{article}{}
       \name{author}{5}{}{%
@@ -647,7 +649,7 @@
       \verb{doi}
       \verb 10.1007/978-3-642-38622-0_28
       \endverb
-      \keyw{texture,haralick,pks,parkinson,datscan}
+      \keyw{texture,haralick,pks,parkinson,datscan,own}
     \endentry
     \entry{Martinez-Murcia2013255}{article}{}
       \name{author}{5}{}{%
@@ -697,7 +699,7 @@
       \verb{doi}
       \verb 10.1016/j.cmpb.2013.03.015
       \endverb
-      \keyw{ica,decomposition,feature,spect,pet,adni,ad,alzheimer}
+      \keyw{ica,decomposition,feature,spect,pet,adni,ad,alzheimer,own}
     \endentry
     \entry{Salas-Gonzalez2013}{article}{}
       \name{author}{5}{}{%
@@ -859,7 +861,7 @@
       \verb{doi}
       \verb 10.1016/j.eswa.2012.02.153
       \endverb
-      \keyw{feature,wilcoxon,factor analysis,fa,decomposition,spect,pet,adni,ad,alzheimer}
+      \keyw{feature,wilcoxon,factor analysis,fa,decomposition,spect,pet,adni,ad,alzheimer,own}
     \endentry
     \entry{Reuter2012}{article}{}
       \name{author}{4}{}{%
@@ -1118,7 +1120,7 @@
       \verb{doi}
       \verb 10.1007/978-3-642-21326-7_5
       \endverb
-      \keyw{feature,factor analysis,decomposition,test,adni,alzheimer,spect,pet}
+      \keyw{feature,factor analysis,decomposition,test,adni,alzheimer,spect,pet,own}
     \endentry
     \entry{Benjamini2010}{article}{}
       \name{author}{1}{}{%
@@ -2418,6 +2420,41 @@
       \field{pages}{825\bibrangedash 855}
       \range{pages}{31}
     \endentry
+    \entry{Haralick73}{article}{}
+      \name{author}{3}{}{%
+        {{hash=298681e5380d58a6d91771764bea0b46}{%
+           family={Haralick},
+           family_i={H\bibinitperiod},
+           given={R.},
+           given_i={R\bibinitperiod}}}%
+        {{hash=feee5096c3a0b6f40b0c01e22cd6bf81}{%
+           family={Shanmugam},
+           family_i={S\bibinitperiod},
+           given={K.},
+           given_i={K\bibinitperiod}}}%
+        {{hash=29abf312fb1ac676c88436931570d35a}{%
+           family={Dinstein},
+           family_i={D\bibinitperiod},
+           given={I.},
+           given_i={I\bibinitperiod}}}%
+      }
+      \strng{namehash}{45d9d0bdd88e8409280e892b68c3e164}
+      \strng{fullhash}{45d9d0bdd88e8409280e892b68c3e164}
+      \field{sortinit}{1}
+      \field{sortinithash}{53e85f4cf497d2a4e1d51786552bcbf1}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{IEEE Transactions on Systems, Man and Cybernetics}
+      \field{number}{6}
+      \field{title}{{Textural features for image classification}}
+      \field{volume}{3}
+      \field{year}{1973}
+      \field{pages}{610\bibrangedash 621}
+      \range{pages}{12}
+      \verb{file}
+      \verb Haralick73-Textural features for image classification.pdf:Estadística/Pattern Recognition/Texturas/Haralick73-Textural features for image classification.pdf:PDF
+      \endverb
+    \endentry
   \endsortlist
   \sortlist[entry]{nyt/global/}
     \entry{Anderson2001}{article}{}
@@ -3117,6 +3154,41 @@
       \verb 10.1093/cercor/bhu242
       \endverb
     \endentry
+    \entry{Haralick73}{article}{}
+      \name{author}{3}{}{%
+        {{hash=298681e5380d58a6d91771764bea0b46}{%
+           family={Haralick},
+           family_i={H\bibinitperiod},
+           given={R.},
+           given_i={R\bibinitperiod}}}%
+        {{hash=feee5096c3a0b6f40b0c01e22cd6bf81}{%
+           family={Shanmugam},
+           family_i={S\bibinitperiod},
+           given={K.},
+           given_i={K\bibinitperiod}}}%
+        {{hash=29abf312fb1ac676c88436931570d35a}{%
+           family={Dinstein},
+           family_i={D\bibinitperiod},
+           given={I.},
+           given_i={I\bibinitperiod}}}%
+      }
+      \strng{namehash}{45d9d0bdd88e8409280e892b68c3e164}
+      \strng{fullhash}{45d9d0bdd88e8409280e892b68c3e164}
+      \field{sortinit}{H}
+      \field{sortinithash}{82012198d5dfa657b8c4a168793268a6}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{IEEE Transactions on Systems, Man and Cybernetics}
+      \field{number}{6}
+      \field{title}{{Textural features for image classification}}
+      \field{volume}{3}
+      \field{year}{1973}
+      \field{pages}{610\bibrangedash 621}
+      \range{pages}{12}
+      \verb{file}
+      \verb Haralick73-Textural features for image classification.pdf:Estadística/Pattern Recognition/Texturas/Haralick73-Textural features for image classification.pdf:PDF
+      \endverb
+    \endentry
     \entry{Herman2009l}{incollection}{}
       \name{author}{1}{}{%
         {{hash=09bd05c0a634382fa8ac6e2e1382ee7a}{%
@@ -3432,7 +3504,7 @@
       \verb{doi}
       \verb 10.1007/978-3-642-21326-7_5
       \endverb
-      \keyw{feature,factor analysis,decomposition,test,adni,alzheimer,spect,pet}
+      \keyw{feature,factor analysis,decomposition,test,adni,alzheimer,spect,pet,own}
     \endentry
     \entry{Martinez-Murcia2016book}{inbook}{}
       \name{author}{3}{}{%
@@ -3480,6 +3552,7 @@
       \verb{doi}
       \verb 10.5772/64980
       \endverb
+      \keyw{own}
     \endentry
     \entry{Martinez-Murcia2014225}{inproceedings}{}
       \name{author}{6}{}{%
@@ -3529,7 +3602,7 @@
       \verb{doi}
       \verb 10.3233/978-1-61499-474-9-225
       \endverb
-      \keyw{mri,alzheimer,sbm,ad,adni}
+      \keyw{mri,alzheimer,sbm,ad,adni,own}
     \endentry
     \entry{Martinez-Murcia201458}{article}{}
       \name{author}{5}{}{%
@@ -3578,7 +3651,7 @@
       \verb{doi}
       \verb 10.1016/j.neucom.2013.01.054
       \endverb
-      \keyw{parkinson,ica,tests,pks,datscan}
+      \keyw{parkinson,ica,tests,pks,datscan,own}
     \endentry
     \entry{Martinez-Murcia2013266}{inproceedings}{}
       \name{author}{5}{}{%
@@ -3628,7 +3701,7 @@
       \verb{doi}
       \verb 10.1007/978-3-642-38622-0_28
       \endverb
-      \keyw{texture,haralick,pks,parkinson,datscan}
+      \keyw{texture,haralick,pks,parkinson,datscan,own}
     \endentry
     \entry{martinez2014parametrization}{article}{}
       \name{author}{5}{}{%
@@ -3677,7 +3750,7 @@
       \verb{doi}
       \verb 10.1118/1.4845115
       \endverb
-      \keyw{texture,datscan,parkinson,pks}
+      \keyw{texture,datscan,parkinson,pks,own}
     \endentry
     \entry{Martinez-Murcia2015}{article}{}
       \name{author}{4}{}{%
@@ -3722,7 +3795,7 @@
       \verb{doi}
       \verb 10.2174/1567205013666160314145158
       \endverb
-      \keyw{sbm,mri,adni,ad,alzheimer}
+      \keyw{sbm,mri,adni,ad,alzheimer,own}
     \endentry
     \entry{Martinez-Murcia2016}{article}{}
       \name{author}{4}{}{%
@@ -3767,7 +3840,7 @@
       \verb{doi}
       \verb 10.1142/S0129065716500246
       \endverb
-      \keyw{sbm,hmm,parametrization,mri,adni,ad,alzheimer}
+      \keyw{sbm,hmm,parametrization,mri,adni,ad,alzheimer,own}
     \endentry
     \entry{Martinez-Murcia2013255}{article}{}
       \name{author}{5}{}{%
@@ -3817,7 +3890,7 @@
       \verb{doi}
       \verb 10.1016/j.cmpb.2013.03.015
       \endverb
-      \keyw{ica,decomposition,feature,spect,pet,adni,ad,alzheimer}
+      \keyw{ica,decomposition,feature,spect,pet,adni,ad,alzheimer,own}
     \endentry
     \entry{Martinez-Murcia20129676}{article}{}
       \name{author}{5}{}{%
@@ -3867,7 +3940,7 @@
       \verb{doi}
       \verb 10.1016/j.eswa.2012.02.153
       \endverb
-      \keyw{feature,wilcoxon,factor analysis,fa,decomposition,spect,pet,adni,ad,alzheimer}
+      \keyw{feature,wilcoxon,factor analysis,fa,decomposition,spect,pet,adni,ad,alzheimer,own}
     \endentry
     \entry{Martinez-MurciaVRLBP}{inproceedings}{}
       \name{author}{5}{}{%
@@ -3916,7 +3989,7 @@
       \verb{doi}
       \verb 10.1007/978-3-319-18914-7_3
       \endverb
-      \keyw{sbm,lbp,vrlbp,mri,ad,alzheimer}
+      \keyw{sbm,lbp,vrlbp,mri,ad,alzheimer,own}
     \endentry
     \entry{Martinez-Murcia2016a}{article}{}
       \name{author}{13}{}{%
@@ -4001,6 +4074,7 @@
       \verb{doi}
       \verb 10.1002/hbm.23449
       \endverb
+      \keyw{own}
     \endentry
     \entry{Mazziotta2001}{article}{}
       \name{author}{27}{}{%
@@ -4820,75 +4894,74 @@
       \range{pages}{14}
     \endentry
   \endsortlist
-  \missing{Booij1998}
-  \missing{tatsch2008extrapyramidal}
-  \missing{Shaffer1995}
-  \missing{Vardi1985}
-  \missing{Harman73}
-  \missing{Martinez-Murcia2014}
-  \missing{Yen1995}
-  \missing{Ram'irez2009}
-  \missing{McGee2002}
-  \missing{SaeysInzaLarranaga2007}
-  \missing{soh1999texture}
-  \missing{Ramirez2009}
-  \missing{Misra2009}
-  \missing{Grana2011}
-  \missing{DaelemansHosteMeulderEtAl2003}
-  \missing{Haralick73}
-  \missing{Hyvarinen2000}
-  \missing{Fay10}
-  \missing{Locatelli1998}
-  \missing{Guyon03}
-  \missing{Philips2008}
-  \missing{Shepp82}
-  \missing{Lozano2007}
-  \missing{AAL}
-  \missing{Pievani2013}
-  \missing{Botev2010}
-  \missing{Moghal1994}
-  \missing{Medina2008}
-  \missing{Tzourio-Mazoyer2002}
-  \missing{Bhidayasiri2006}
-  \missing{Baron2001}
-  \missing{Ojala1996}
-  \missing{IAIllan2010}
-  \missing{Rojas2012}
-  \missing{Christine2004}
-  \missing{Alvarez2009}
-  \missing{kovalev2001three}
-  \missing{dougall_systematic_2004}
-  \missing{clausi2002analysis}
-  \missing{Eckert2007}
-  \missing{PPMI}
-  \missing{Unay2007}
-  \missing{PunalRioboo2007}
-  \missing{Zhao2007}
-  \missing{Scherfler2009}
-  \missing{Oja1997}
-  \missing{ADInforme2013}
-  \missing{Fischl2004}
   \missing{Chen2008}
-  \missing{Giannakopoulos1998}
-  \missing{Vapnik1982}
-  \missing{Jong2008}
-  \missing{FastICA99}
-  \missing{Evans1993}
-  \missing{Ortiz2013}
-  \missing{Zhou2008}
-  \missing{Inititative2010}
-  \missing{sikio2015mr}
-  \missing{Illan2012}
-  \missing{Segovia2012}
-  \missing{Illan2014}
   \missing{chan2001patterns}
-  \missing{jobst_accurate_1998}
+  \missing{FastICA99}
+  \missing{Guyon03}
   \missing{han2006reliability}
-  \missing{Claus1994}
-  \missing{Winogrodzka2003}
+  \missing{soh1999texture}
+  \missing{Ortiz2013}
+  \missing{Shaffer1995}
+  \missing{Booij1998}
+  \missing{Tzourio-Mazoyer2002}
+  \missing{dougall_systematic_2004}
+  \missing{Scherfler2009}
+  \missing{Harman73}
+  \missing{Oja1997}
+  \missing{Eckert2007}
+  \missing{Jong2008}
+  \missing{Evans1993}
+  \missing{Baron2001}
+  \missing{Fischl2004}
+  \missing{Botev2010}
+  \missing{kovalev2001three}
+  \missing{Shepp82}
+  \missing{Giannakopoulos1998}
+  \missing{Bhidayasiri2006}
+  \missing{Segovia2012}
+  \missing{Rojas2012}
+  \missing{Ojala1996}
+  \missing{Illan2012}
+  \missing{Ramirez2009}
+  \missing{Locatelli1998}
+  \missing{Moghal1994}
+  \missing{PunalRioboo2007}
   \missing{martinez2013texture}
-  \missing{Hyvarinen1999}
+  \missing{Winogrodzka2003}
+  \missing{Inititative2010}
   \missing{Dubois2007}
+  \missing{Pievani2013}
+  \missing{PPMI}
+  \missing{Vapnik1982}
+  \missing{AAL}
+  \missing{Claus1994}
+  \missing{Fay10}
+  \missing{Medina2008}
+  \missing{Zhao2007}
+  \missing{Alvarez2009}
+  \missing{Misra2009}
+  \missing{Lozano2007}
+  \missing{Hyvarinen1999}
+  \missing{Christine2004}
+  \missing{SaeysInzaLarranaga2007}
+  \missing{Grana2011}
+  \missing{Martinez-Murcia2014}
+  \missing{Unay2007}
+  \missing{McGee2002}
+  \missing{tatsch2008extrapyramidal}
+  \missing{Ram'irez2009}
+  \missing{DaelemansHosteMeulderEtAl2003}
+  \missing{jobst_accurate_1998}
+  \missing{Vardi1985}
+  \missing{Zhou2008}
+  \missing{Illan2014}
+  \missing{Hyvarinen2000}
+  \missing{sikio2015mr}
+  \missing{clausi2002analysis}
+  \missing{Yen1995}
+  \missing{ADInforme2013}
+  \missing{IAIllan2010}
+  \missing{Philips2008}
 \endrefsection
 
 \refsection{1}
@@ -4976,6 +5049,7 @@
       \verb{doi}
       \verb 10.1002/hbm.23449
       \endverb
+      \keyw{own}
     \endentry
     \entry{Martinez-Murcia2016book}{inbook}{}
       \name{author}{3}{}{%
@@ -5023,6 +5097,7 @@
       \verb{doi}
       \verb 10.5772/64980
       \endverb
+      \keyw{own}
     \endentry
     \entry{Martinez-Murcia2016b}{inbook}{}
       \name{author}{3}{}{%
@@ -5059,6 +5134,7 @@
       \verb{doi}
       \verb 10.1002/047134608X
       \endverb
+      \keyw{own}
     \endentry
     \entry{Martinez-Murcia2015}{article}{}
       \name{author}{4}{}{%
@@ -5103,7 +5179,7 @@
       \verb{doi}
       \verb 10.2174/1567205013666160314145158
       \endverb
-      \keyw{sbm,mri,adni,ad,alzheimer}
+      \keyw{sbm,mri,adni,ad,alzheimer,own}
     \endentry
     \entry{Martinez-Murcia2016}{article}{}
       \name{author}{4}{}{%
@@ -5148,7 +5224,7 @@
       \verb{doi}
       \verb 10.1142/S0129065716500246
       \endverb
-      \keyw{sbm,hmm,parametrization,mri,adni,ad,alzheimer}
+      \keyw{sbm,hmm,parametrization,mri,adni,ad,alzheimer,own}
     \endentry
     \entry{Ortiz2016249}{inproceedings}{}
       \name{author}{6}{}{%
@@ -5304,7 +5380,7 @@
       \verb{doi}
       \verb 10.1007/978-3-319-18914-7_3
       \endverb
-      \keyw{sbm,lbp,vrlbp,mri,ad,alzheimer}
+      \keyw{sbm,lbp,vrlbp,mri,ad,alzheimer,own}
     \endentry
     \entry{Ramírez2016395}{inproceedings}{}
       \name{author}{5}{}{%
@@ -5462,7 +5538,7 @@
       \verb{doi}
       \verb 10.3233/978-1-61499-474-9-225
       \endverb
-      \keyw{mri,alzheimer,sbm,ad,adni}
+      \keyw{mri,alzheimer,sbm,ad,adni,own}
     \endentry
     \entry{Martinez-Murcia201458}{article}{}
       \name{author}{5}{}{%
@@ -5511,7 +5587,7 @@
       \verb{doi}
       \verb 10.1016/j.neucom.2013.01.054
       \endverb
-      \keyw{parkinson,ica,tests,pks,datscan}
+      \keyw{parkinson,ica,tests,pks,datscan,own}
     \endentry
     \entry{martinez2014parametrization}{article}{}
       \name{author}{5}{}{%
@@ -5560,7 +5636,7 @@
       \verb{doi}
       \verb 10.1118/1.4845115
       \endverb
-      \keyw{texture,datscan,parkinson,pks}
+      \keyw{texture,datscan,parkinson,pks,own}
     \endentry
     \entry{Ortiz201411}{inproceedings}{}
       \name{author}{5}{}{%
@@ -5818,7 +5894,7 @@
       \verb{doi}
       \verb 10.1007/978-3-642-38622-0_28
       \endverb
-      \keyw{texture,haralick,pks,parkinson,datscan}
+      \keyw{texture,haralick,pks,parkinson,datscan,own}
     \endentry
     \entry{Martinez-Murcia2013255}{article}{}
       \name{author}{5}{}{%
@@ -5868,7 +5944,7 @@
       \verb{doi}
       \verb 10.1016/j.cmpb.2013.03.015
       \endverb
-      \keyw{ica,decomposition,feature,spect,pet,adni,ad,alzheimer}
+      \keyw{ica,decomposition,feature,spect,pet,adni,ad,alzheimer,own}
     \endentry
     \entry{Ortiz20131725}{article}{}
       \name{author}{4}{}{%
@@ -6026,7 +6102,7 @@
       \verb{doi}
       \verb 10.1016/j.eswa.2012.02.153
       \endverb
-      \keyw{feature,wilcoxon,factor analysis,fa,decomposition,spect,pet,adni,ad,alzheimer}
+      \keyw{feature,wilcoxon,factor analysis,fa,decomposition,spect,pet,adni,ad,alzheimer,own}
     \endentry
     \entry{Martinez201141}{inproceedings}{}
       \name{author}{6}{}{%
@@ -6082,7 +6158,7 @@
       \verb{doi}
       \verb 10.1007/978-3-642-21326-7_5
       \endverb
-      \keyw{feature,factor analysis,decomposition,test,adni,alzheimer,spect,pet}
+      \keyw{feature,factor analysis,decomposition,test,adni,alzheimer,spect,pet,own}
     \endentry
   \endsortlist
   \sortlist[entry]{nyt/global/}
@@ -6199,7 +6275,7 @@
       \verb{doi}
       \verb 10.1007/978-3-642-21326-7_5
       \endverb
-      \keyw{feature,factor analysis,decomposition,test,adni,alzheimer,spect,pet}
+      \keyw{feature,factor analysis,decomposition,test,adni,alzheimer,spect,pet,own}
     \endentry
     \entry{Martinez-Murcia2016book}{inbook}{}
       \name{author}{3}{}{%
@@ -6247,6 +6323,7 @@
       \verb{doi}
       \verb 10.5772/64980
       \endverb
+      \keyw{own}
     \endentry
     \entry{Martinez-Murcia2016b}{inbook}{}
       \name{author}{3}{}{%
@@ -6283,6 +6360,7 @@
       \verb{doi}
       \verb 10.1002/047134608X
       \endverb
+      \keyw{own}
     \endentry
     \entry{Martinez-Murcia2014225}{inproceedings}{}
       \name{author}{6}{}{%
@@ -6332,7 +6410,7 @@
       \verb{doi}
       \verb 10.3233/978-1-61499-474-9-225
       \endverb
-      \keyw{mri,alzheimer,sbm,ad,adni}
+      \keyw{mri,alzheimer,sbm,ad,adni,own}
     \endentry
     \entry{Martinez-Murcia201458}{article}{}
       \name{author}{5}{}{%
@@ -6381,7 +6459,7 @@
       \verb{doi}
       \verb 10.1016/j.neucom.2013.01.054
       \endverb
-      \keyw{parkinson,ica,tests,pks,datscan}
+      \keyw{parkinson,ica,tests,pks,datscan,own}
     \endentry
     \entry{Martinez-Murcia2013266}{inproceedings}{}
       \name{author}{5}{}{%
@@ -6431,7 +6509,7 @@
       \verb{doi}
       \verb 10.1007/978-3-642-38622-0_28
       \endverb
-      \keyw{texture,haralick,pks,parkinson,datscan}
+      \keyw{texture,haralick,pks,parkinson,datscan,own}
     \endentry
     \entry{martinez2014parametrization}{article}{}
       \name{author}{5}{}{%
@@ -6480,7 +6558,7 @@
       \verb{doi}
       \verb 10.1118/1.4845115
       \endverb
-      \keyw{texture,datscan,parkinson,pks}
+      \keyw{texture,datscan,parkinson,pks,own}
     \endentry
     \entry{Martinez-Murcia2015}{article}{}
       \name{author}{4}{}{%
@@ -6525,7 +6603,7 @@
       \verb{doi}
       \verb 10.2174/1567205013666160314145158
       \endverb
-      \keyw{sbm,mri,adni,ad,alzheimer}
+      \keyw{sbm,mri,adni,ad,alzheimer,own}
     \endentry
     \entry{Martinez-Murcia2016}{article}{}
       \name{author}{4}{}{%
@@ -6570,7 +6648,7 @@
       \verb{doi}
       \verb 10.1142/S0129065716500246
       \endverb
-      \keyw{sbm,hmm,parametrization,mri,adni,ad,alzheimer}
+      \keyw{sbm,hmm,parametrization,mri,adni,ad,alzheimer,own}
     \endentry
     \entry{Martinez-Murcia2013255}{article}{}
       \name{author}{5}{}{%
@@ -6620,7 +6698,7 @@
       \verb{doi}
       \verb 10.1016/j.cmpb.2013.03.015
       \endverb
-      \keyw{ica,decomposition,feature,spect,pet,adni,ad,alzheimer}
+      \keyw{ica,decomposition,feature,spect,pet,adni,ad,alzheimer,own}
     \endentry
     \entry{Martinez-Murcia20129676}{article}{}
       \name{author}{5}{}{%
@@ -6670,7 +6748,7 @@
       \verb{doi}
       \verb 10.1016/j.eswa.2012.02.153
       \endverb
-      \keyw{feature,wilcoxon,factor analysis,fa,decomposition,spect,pet,adni,ad,alzheimer}
+      \keyw{feature,wilcoxon,factor analysis,fa,decomposition,spect,pet,adni,ad,alzheimer,own}
     \endentry
     \entry{Martinez-MurciaVRLBP}{inproceedings}{}
       \name{author}{5}{}{%
@@ -6719,7 +6797,7 @@
       \verb{doi}
       \verb 10.1007/978-3-319-18914-7_3
       \endverb
-      \keyw{sbm,lbp,vrlbp,mri,ad,alzheimer}
+      \keyw{sbm,lbp,vrlbp,mri,ad,alzheimer,own}
     \endentry
     \entry{Martinez-Murcia2016a}{article}{}
       \name{author}{13}{}{%
@@ -6804,6 +6882,7 @@
       \verb{doi}
       \verb 10.1002/hbm.23449
       \endverb
+      \keyw{own}
     \endentry
     \entry{Ortiz201411}{inproceedings}{}
       \name{author}{5}{}{%

@@ -30,6 +30,7 @@ backend=biber,  %instead of bibtex
 %backend=bibtex8, bibencoding=ascii,%
 language=auto,%
 style=numeric-comp,%
+hyperref,
 %style=authoryear-comp, % Author 1999, 2010
 %bibstyle=authoryear,dashed=false, % dashed: substitute rep. author with ---
 sorting=nyt, % name, year, title
@@ -76,7 +77,7 @@ maxbibnames=10, % default: 3, et al.
 
 \cleardoublepage
 \ctparttext{The first approach to reduce the small sample size problem in neuroimaging studies is based on reducing the number of features .}
-\part{Reducing the Feature Space}
+\part{Reducing the Feature Space}\label{part:feature}
 %\addtocontents{toc}{\protect\clearpage} % <--- just debug stuff, ignore
 \input{Chapters/Chapter04}
 \input{Chapters/Chapter05}
@@ -84,12 +85,12 @@ maxbibnames=10, % default: 3, et al.
 
 \cleardoublepage
 \ctparttext{The first approach to reduce the small sample size problem in neuroimaging studies is based on reducing the number of features .}
-\part{Increasing the Sample Size}
+\part{Increasing the Sample Size}\label{part:increase}
 \input{Chapters/Chapter07}
 \input{Chapters/Chapter08}
 
 \cleardoublepage
-\part{General Discussion and Conclusions}
+\part{General Discussion and Conclusions}\label{part:dicussion}
 \input{Chapters/Chapter09}
 
 \appendix

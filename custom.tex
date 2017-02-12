@@ -87,4 +87,25 @@
 \newcommand{\Ie}{I.\,e.}
 \newcommand{\eg}{e.\,g.}
 \newcommand{\Eg}{E.\,g.} 
-%
+% \hypersetup{hidelinks} % Uncomment for print version. 
+
+
+% ********************************************************************
+% Custom hack for no-cite bibliographies (copied from authortitle.bbx/authoryear.bbx)
+% ********************************************************************
+\defbibenvironment{nolabelbib}
+{\list
+	{}
+	{\setlength{\leftmargin}{\bibhang}%
+		\setlength{\itemindent}{-\leftmargin}%
+		\setlength{\itemsep}{\bibitemsep}%
+		\setlength{\parsep}{\bibparsep}}}
+{\endlist}
+{\item}
+
+\DeclareFieldFormat{doi}{%
+	\newline
+	\mkbibacro{DOI}\addcolon\space
+	\ifhyperref
+	{\href{http://dx.doi.org/#1}{\nolinkurl{#1}}}
+	{\nolinkurl{#1}}}
