@@ -205,14 +205,21 @@ For simplicity, in this thesis, when talking about \ac{CAD}, we will always refe
 It has been used in many works as a baseline \cite{Spetsieris2009,Salas-Gonzalez2009,Martinez-Murcia2016}, since it is comparable to the performance achieved by expert physicians using visual analysis \cite{Stoeckel04}. The weight vector of the \ac{SVC} can be inverse transformed to the dimension of the original images, and therefore provide a visual map that reflects the most influential voxels, in a similar way to the $Z$-maps of \ac{SPM} and \ac{VBM}. 
 
 \subsection{Multivariate Analyses}
-Many improvements can be made to \ac{VAF} by adding and refining feature extraction and feature selection techniques. Usually we 
+Many improvements can be made to \ac{VAF} by adding and refining feature extraction and feature selection techniques. With this addition, we can avoid the Small Sample Size, in addition to the ability to discover higher level abstractions that can be more representative of the progression of the studied diseases. 
 
-Image decomposition techniques such as \ac{PCA} or \ac{PLS} have been extensively used in neuroimaging \ac{CAD} systems \cite{Spetsieris2009,Illan2011,Towey2011,Segovia2013,Kheder2015}. 
+Feature extraction algorithms often change the strategy from a massive univariate approach, where a single feature is considered at each time, to multivariate analyses, where each feature can contain information from many voxels at the same time. Measures of total uptake of a given drug in nuclear imaging are a good example of this \cite{Zhou2007,Lozano2007}, but also the widespread Cortical Thickness \cite{Dale1999} provided by \textit{FreeSurfer}. Cortical thickness is an estimation of the amount of \ac{GM} in a direction perpendicular to its surface. It first estimates the \ac{GM}-\ac{WM} and the \ac{WM}-\ac{CSF} separation surfaces, and then characterizes the thickness of the tissue, allowing a characterization of \ac{GM} differences such as atrophy or hypetrophy. Other pieces of software, such as \ac{SPM}, also include toolboxes to compute cortical thickness, providing outputs such as the one that can be seen in Figure~\ref{fig:corticalthickness}. 
 
-are used for feature extraction and hypothesis testing for feature selection in systems intended to 
+\begin{figure}
+\centering
+\includegraphics[width=0.8\linewidth]{Graphics/ch2/corticalThickness}
+\caption[Example of the cortical thickness of a subject.]{Example of the cortical thickness of a subject, obtained with the toolbox CAT12 in SPM12.}
+\label{fig:corticalthickness}
+\end{figure}
 
-This thesis explores how to use signal processing and machine learning to overcome the small sample size problem in neuroimaging. 
+Other more advanced algorithms are image decomposition techniques such as \ac{PCA} or \ac{PLS}, which have been extensively used in neuroimaging \ac{CAD} systems \cite{Spetsieris2009,Illan2011,Towey2011,Segovia2013,Khedher2015}. In these approaches, a given image can be represented as the linear combination of different components, and while the component loadings are common to all subjects, the weights of these components are unique to each patient. This allows us to identify the patterns that better discriminate between classes, leading to a more accurate diagnosis. 
 
-\ac{CAD}
+For its part, feature selection refers to different strategies aimed at finding an optimal subset of the extracted features, according to a certain criterion. Irrelevant features are therefore discarded, making our models faster and more cost-effective \cite{Guyon03}. Feature selection algorithms are often subdivided in three approaches \cite{Martinez-Murcia2016b}: filters, wrappers and embedded approaches. 
 
+Filters compute a feature relevance score from the data, which is then used to sort the different features. It is computed before the classification, and does not interact with it. Many scores can be derived from statistical features such as $\chi^2$, $t$-Test, Fisher's Discriminant Ratio (FDR) or others \cite{Martinez-Murcia2013255,Martinez-Murcia2016b}. The output of these tests has been already used as a tool in voxelwise analyses, as we commented in Section~\ref{sec:vwanalyses}. 
 
+Wrappers are similar to filtering methods, given that they assign a certain score to each feature. But in contrast to filters, the score is computed by estimating the performance in a predictive model, such as classifiers \cite{Kohavi1995}. The most obvious measure here is accuracy, although other techniques such as Forward selection, backward elimination \cite{Guyon03}, genetic algorithms  \cite{Kohavi1995}, or the expectation-maximization algorithm \cite{Gorriz2009} have been used in the literature. And finally, embedded approaches use the very model that is being built to construct their optimal feature subset. 

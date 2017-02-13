@@ -199,6 +199,43 @@
       \endverb
       \keyw{own}
     \endentry
+    \entry{Martinez-Murcia2016b}{inbook}{}
+      \name{author}{3}{}{%
+        {{hash=7e0781eaa96af7d07a917700f7b031e0}{%
+           family={Martinez-Murcia},
+           family_i={M\bibinithyphendelim M\bibinitperiod},
+           given={F.J},
+           given_i={F\bibinitperiod}}}%
+        {{hash=7abaa12fe16012bf9858fc761e93d487}{%
+           family={Górriz},
+           family_i={G\bibinitperiod},
+           given={J.M.},
+           given_i={J\bibinitperiod}}}%
+        {{hash=feb8d5aab03ec8ed81924ca4f258be62}{%
+           family={Ramírez},
+           family_i={R\bibinitperiod},
+           given={J.},
+           given_i={J\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Wiley}%
+      }
+      \strng{namehash}{18faac21d634a403d2d09a1679b53a5d}
+      \strng{fullhash}{18faac21d634a403d2d09a1679b53a5d}
+      \field{sortinit}{2}
+      \field{sortinithash}{8343b463aacf48517c044b4d2c9c45ed}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{Wiley Encyclopedia of Electrical and Electronics Engineering}
+      \field{title}{Feature Extraction}
+      \field{year}{2016}
+      \field{pages}{Accepted}
+      \range{pages}{-1}
+      \verb{doi}
+      \verb 10.1002/047134608X
+      \endverb
+      \keyw{own}
+    \endentry
     \entry{Martinez-Murcia2015}{article}{}
       \name{author}{4}{}{%
         {{hash=f13fcabedae6437aaa5e694f277d9fcb}{%
@@ -2055,6 +2092,53 @@
       \endverb
       \keyw{Algorithms; Brain,anatomy & histology; Humans; Image Interpretation,Computer-Assisted,methods; Models,Theoretical}
     \endentry
+    \entry{Gorriz2009}{article}{}
+      \name{author}{6}{}{%
+        {{hash=7874a31bf28a43fb11d4e5217882ae92}{%
+           family={Górriz},
+           family_i={G\bibinitperiod},
+           given={J.\bibnamedelimi M.},
+           given_i={J\bibinitperiod\bibinitdelim M\bibinitperiod}}}%
+        {{hash=60f8691e1c780d941ef769f17d1f3a6d}{%
+           family={Lassl},
+           family_i={L\bibinitperiod},
+           given={A.},
+           given_i={A\bibinitperiod}}}%
+        {{hash=feb8d5aab03ec8ed81924ca4f258be62}{%
+           family={Ramírez},
+           family_i={R\bibinitperiod},
+           given={J.},
+           given_i={J\bibinitperiod}}}%
+        {{hash=20521a35217cd2ed8a877557a8120b33}{%
+           family={Salas-Gonzalez},
+           family_i={S\bibinithyphendelim G\bibinitperiod},
+           given={D.},
+           given_i={D\bibinitperiod}}}%
+        {{hash=c8f9a15f9219a9ec6a3b14ab964c08e5}{%
+           family={Puntonet},
+           family_i={P\bibinitperiod},
+           given={C.\bibnamedelimi G.},
+           given_i={C\bibinitperiod\bibinitdelim G\bibinitperiod}}}%
+        {{hash=1c5b998c6f42bfc0067afda124e51dc9}{%
+           family={Lang},
+           family_i={L\bibinitperiod},
+           given={E.\bibnamedelimi W.},
+           given_i={E\bibinitperiod\bibinitdelim W\bibinitperiod}}}%
+      }
+      \strng{namehash}{9540aa82458f8cd114294edb2db1faf9}
+      \strng{fullhash}{03042a7a0605729163f16932074f0fbb}
+      \field{sortinit}{2}
+      \field{sortinithash}{8343b463aacf48517c044b4d2c9c45ed}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Neuroscience Letters}
+      \field{number}{2}
+      \field{title}{{Automatic selection of {ROIs} in functional imaging using {Gauss}ian mixture models}}
+      \field{volume}{460}
+      \field{year}{2009}
+      \field{pages}{108\bibrangedash 111}
+      \range{pages}{4}
+    \endentry
     \entry{Herman2009l}{incollection}{}
       \name{author}{1}{}{%
         {{hash=09bd05c0a634382fa8ac6e2e1382ee7a}{%
@@ -2184,6 +2268,53 @@
       \verb 10.1016/j.neulet.2009.05.056
       \endverb
       \keyw{Alzheimer Disease,radionuclide imaging; Brain,radionuclide imaging; Cysteine,analogs & derivatives; Humans; Image Interpretation,Computer-Assisted; Organotechnetium Compounds; Radiopharmaceuticals; Tomography,Emission-Computed,Single-Photon}
+    \endentry
+    \entry{Spetsieris2009}{article}{}
+      \name{author}{4}{}{%
+        {{hash=337cf33caded62f9ba2c01cd2ad6cb3e}{%
+           family={Spetsieris},
+           family_i={S\bibinitperiod},
+           given={Phoebe\bibnamedelima G.},
+           given_i={P\bibinitperiod\bibinitdelim G\bibinitperiod}}}%
+        {{hash=e41c03305d3bd87436bbdaadec9d4c41}{%
+           family={Ma},
+           family_i={M\bibinitperiod},
+           given={Yilong},
+           given_i={Y\bibinitperiod}}}%
+        {{hash=462619369baa48857ed9581ecad95284}{%
+           family={Dhawan},
+           family_i={D\bibinitperiod},
+           given={Vijay},
+           given_i={V\bibinitperiod}}}%
+        {{hash=a4303fa212e1b1d0b2a4c905d3d57b4c}{%
+           family={Eidelberg},
+           family_i={E\bibinitperiod},
+           given={David},
+           given_i={D\bibinitperiod}}}%
+      }
+      \strng{namehash}{5128c5c29db753af1b2d2a562d93fdc5}
+      \strng{fullhash}{68b0dfac04ef082b8d916640f9bf1253}
+      \field{sortinit}{2}
+      \field{sortinithash}{8343b463aacf48517c044b4d2c9c45ed}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{We describe methodologies for single subject differential diagnosis of degenerative brain disorders using multivariate principal component analysis (PCA) of functional imaging scans. An automated routine utilizing these methods is applied to positron emission tomography (PET) brain data to distinguish several discrete parkinsonian movement disorders with similar clinical manifestations. Disease specific expressions of voxel-based spatial covariance patterns are predetermined using the Scaled Subprofile Model (SSM/PCA) and a scalar measure of the manifestation of each pattern in prospective subject images is subsequently derived. Scores are automatically compared to reference values generated for each pathological condition in a corresponding set of patient and control scans. Diagnostic outcome is optimized using strategies such as the derivation of patterns in a voxel subspace that reflects contrasting image characteristics between conditions, or by using an independent patient population as controls. The prediction models for two, three and four way classification problems using direct scalar comparison as well as classical discriminant analysis are assessed in a composite training population comprised of three different patient classes and normal controls and validated in a similar independent test population. Results illustrate that highly accurate diagnosis can often be achieved by simple comparison of scores utilizing optimized patterns.}
+      \field{issn}{1053-8119}
+      \field{journaltitle}{Neuroimage}
+      \field{month}{05}
+      \field{number}{4}
+      \field{title}{{Differential diagnosis of parkinsonian syndromes using functional {PCA}-based imaging features}}
+      \field{volume}{45}
+      \field{year}{2009}
+      \field{pages}{1241\bibrangedash 52}
+      \range{pages}{12}
+      \verb{file}
+      \verb Spetsieris - Differences Functional Imaging - PKS.pdf:PKS/Spetsieris - Differences Functional Imaging - PKS.pdf:PDF
+      \endverb
+      \verb{url}
+      \verb http://www.sciencedirect.com/science/article/B6WNP-4VCH6WN-1/2/fbde9dd344d47cc00f6923a23af3796a
+      \endverb
+      \keyw{Differential diagnosis; Parkinson's disease; Functional neuroimaging; Brain networks; PET; PCA; CAD}
     \endentry
     \entry{Ikonomovic2008}{article}{}
       \name{author}{15}{}{%
@@ -2564,6 +2695,57 @@
       \field{title}{{Statistical Parametric Mapping: The Analysis of Functional Brain Images}}
       \field{year}{2007}
     \endentry
+    \entry{Lozano2007}{article}{}
+      \name{author}{5}{}{%
+        {{hash=cf9c5539bd06ab17544fe72caecb3cda}{%
+           family={Lozano},
+           family_i={L\bibinitperiod},
+           given={S.J.\bibnamedelimi Ortega},
+           given_i={S\bibinitperiod\bibinitdelim O\bibinitperiod}}}%
+        {{hash=94317125303aaa2b6fa1e50db1dc2098}{%
+           family={Torres},
+           family_i={T\bibinitperiod},
+           given={M.D.\bibnamedelimi Martínez\bibnamedelimb del\bibnamedelima Valle},
+           given_i={M\bibinitperiod\bibinitdelim M\bibinitperiod\bibinitdelim d\bibinitperiod\bibinitdelim V\bibinitperiod}}}%
+        {{hash=7e6e974156850e1493c9efe1b48e7af2}{%
+           family={García},
+           family_i={G\bibinitperiod},
+           given={J.M.\bibnamedelimi Jiménez-Hoyuela},
+           given_i={J\bibinitperiod\bibinitdelim J\bibinithyphendelim H\bibinitperiod}}}%
+        {{hash=0c930f2e3ddd50203851064ff4795ef1}{%
+           family={Cardo},
+           family_i={C\bibinitperiod},
+           given={A.L.\bibnamedelimi Gutiérrez},
+           given_i={A\bibinitperiod\bibinitdelim G\bibinitperiod}}}%
+        {{hash=64de414fd13c6cdeefddd1ce1bce565a}{%
+           family={Arillo},
+           family_i={A\bibinitperiod},
+           given={V.\bibnamedelimi Campos},
+           given_i={V\bibinitperiod\bibinitdelim C\bibinitperiod}}}%
+      }
+      \strng{namehash}{77cfbbd063e52f041e1c0e996819cde2}
+      \strng{fullhash}{d645086f9f844fa02fc6d04c7ee65d40}
+      \field{sortinit}{2}
+      \field{sortinithash}{8343b463aacf48517c044b4d2c9c45ed}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Objective To determine the diagnostic accuracy of FP-CIT SPECT in entities with and without presynaptic involvement of the nigral-striatal dopaminergic pathway in a large group of patients with movement disorders, evaluating the usefulness of quantitative analysis. Materials and methods A group of 183 consecutive patients clinically diagnosed as either having or not having degenerative Parkinsonism. These results were then contrasted with those of FP-CIT SPECT to determine the diagnostic accuracy of the procedure. The specific binding index was evaluated with ROC curves. Results FP-CIT SPECT was highly accurate in the diagnosis of neurodegenerative Parkinsonism (sensitivity: 95\%, specificity: 90\%). Most of the false positive results arose in patients with vascular Parkinsonism and the false negative results in patients with Parkinson disease. ROC curve analysis of semiquantitative evaluation had a sensitivity of 83\% and specificity of 82\% with an optimal cut-off of 1.44. The area under the curve was not significantly different between patients <60 and > 60 years (0.899 vs 0.884) of age. Conclusions FP-CIT SPECT has a high degree of diagnostic accuracy for striatal dopaminergic involvement. No significant changes in diagnostic accuracy were seen with respect to patient age.}
+      \field{issn}{1578-200X}
+      \field{journaltitle}{Revista Española de Medicina Nuclear (English Edition)}
+      \field{number}{5}
+      \field{title}{{Diagnostic accuracy of {FP}-CIT SPECT in patients with Parkinsonism}}
+      \field{volume}{26}
+      \field{year}{2007}
+      \field{pages}{277\bibrangedash 285}
+      \range{pages}{9}
+      \verb{doi}
+      \verb 10.1016/S1578-200X(07)70062-1
+      \endverb
+      \verb{url}
+      \verb http://www.sciencedirect.com/science/article/pii/S1578200X07700621
+      \endverb
+      \keyw{Parkinsonism}
+    \endentry
     \entry{PunalRioboo2007}{article}{}
       \name{author}{4}{}{%
         {{hash=fba6851af3e917eab5046745af756e36}{%
@@ -2605,6 +2787,74 @@
       \field{pages}{375\bibrangedash 384}
       \range{pages}{10}
       \keyw{Humans; Iodine Radioisotopes; Nortropanes; Parkinsonian Disorders}
+    \endentry
+    \entry{Zhou2007}{article}{}
+      \name{author}{9}{}{%
+        {{hash=18f7b54bd6a465f2209e979aa6a31329}{%
+           family={Zhou},
+           family_i={Z\bibinitperiod},
+           given={Yun},
+           given_i={Y\bibinitperiod}}}%
+        {{hash=4dfe214b3dbffd16c925e392df3b35be}{%
+           family={Resnick},
+           family_i={R\bibinitperiod},
+           given={Susan\bibnamedelima M.},
+           given_i={S\bibinitperiod\bibinitdelim M\bibinitperiod}}}%
+        {{hash=9065ccdb9821efadae9892106394f12e}{%
+           family={Ye},
+           family_i={Y\bibinitperiod},
+           given={Weiguo},
+           given_i={W\bibinitperiod}}}%
+        {{hash=e7495660d4aa0144711fb6c205bf7ac5}{%
+           family={Fan},
+           family_i={F\bibinitperiod},
+           given={Hong},
+           given_i={H\bibinitperiod}}}%
+        {{hash=13ffa1c9ba09e7ead76720a00a5de321}{%
+           family={Holt},
+           family_i={H\bibinitperiod},
+           given={Daniel\bibnamedelima P.},
+           given_i={D\bibinitperiod\bibinitdelim P\bibinitperiod}}}%
+        {{hash=787fb401ee3e9805f2b2b03b4aaf7f28}{%
+           family={Klunk},
+           family_i={K\bibinitperiod},
+           given={William\bibnamedelima E.},
+           given_i={W\bibinitperiod\bibinitdelim E\bibinitperiod}}}%
+        {{hash=b63941583f305003bc688ff6b5a12045}{%
+           family={Mathis},
+           family_i={M\bibinitperiod},
+           given={Chester\bibnamedelima A.},
+           given_i={C\bibinitperiod\bibinitdelim A\bibinitperiod}}}%
+        {{hash=a584a4c30e85989ccf8c3116a7c020ab}{%
+           family={Dannals},
+           family_i={D\bibinitperiod},
+           given={Robert},
+           given_i={R\bibinitperiod}}}%
+        {{hash=7b873b813b8895cf454d856d53e4c2a2}{%
+           family={Wong},
+           family_i={W\bibinitperiod},
+           given={Dean\bibnamedelima F.},
+           given_i={D\bibinitperiod\bibinitdelim F\bibinitperiod}}}%
+      }
+      \strng{namehash}{e9b155567b9117891ceaabcc1831cbdb}
+      \strng{fullhash}{f861ae2424693989408246b39eea4e9f}
+      \field{sortinit}{2}
+      \field{sortinithash}{8343b463aacf48517c044b4d2c9c45ed}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Introduction: Reference tissue model (RTM) is a compartmental modeling approach that uses reference tissue time activity curve (TAC) as input for quantification of ligand-receptor dynamic PET without blood sampling. There are limitations in applying the RTM for kinetic analysis of PET studies using [11C]Pittsburgh compound B ([11C]PIB). For region of interest (ROI) based kinetic modeling, the low specific binding of [11C]PIB in a target ROI can result in a high linear relationship between the output and input. This condition may result in amplification of errors in estimates using RTM. For pixel-wise quantification, due to the high noise level of pixel kinetics, the parametric images generated by RTM with conventional linear or nonlinear regression may be too noisy for use in clinical studies.Methods: We applied RTM with parameter coupling and a simultaneous fitting method as a spatial constraint for ROI kinetic analysis. Three RTMs with parameter coupling were derived from a classical compartment model with plasma input: an RTM of 4 parameters (R1, k'2R, k4, BP) (RTM4P); an RTM of 5 parameters (R1, k2R, NS, k6, BP) (RTM5P); and a simplified RTM (SRTM) of 3 parameters (R1, k'2R, BP) (RTM3P). The parameter sets [k'2R, k4], [k2R, NS, k6], and k'2R are coupled among ROIs for RTM4P, RTM5P, and RTM3P, respectively. A linear regression with spatial constraint (LRSC) algorithm was applied to the SRTM for parametric imaging. Logan plots were used to estimate the distribution volume ratio (DVR) (= 1 + BP (binding potential)) in ROI and pixel levels. Ninety-minute [11C]PIB dynamic PET was performed in 28 controls and 6 individuals with mild cognitive impairment (MCI) on a GE Advance scanner. ROIs of cerebellum (reference tissue) and 15 other regions were defined on coregistered MRIs.Results: The coefficients of variation of DVR estimates from RTM3P obtained by the simultaneous fitting method were lower by 77-89\% (in striatum, frontal, occipital, parietal, and cingulate cortex) as compared to that by conventional single ROI TAC fitting method. There were no significant differences in both TAC fitting and DVR estimates between the RTM3P and the RTM4P or RTM5P. The DVR in striatum, lateral temporal, frontal and cingulate cortex for MCI group was 25\% to 38\% higher compared to the control group (p <= 0.05), even in this group of individuals with generally low PIB retention. The DVR images generated by the SRTM with LRSC algorithm had high linear correlations with those from the Logan plot (R2 = 0.99).Conclusion: In conclusion, the RTM3P with simultaneous fitting method is shown to be a robust compartmental modeling approach that may be useful in [11C]PIB PET studies to detect early markers of Alzheimer's disease where specific ROIs have been hypothesized. In addition, the SRTM with LRSC algorithm may be useful in generating R1 and DVR images for pixel-wise quantification of [11C]PIB dynamic PET.}
+      \field{issn}{1053-8119}
+      \field{journaltitle}{Neuroimage}
+      \field{month}{06}
+      \field{number}{2}
+      \field{title}{{Using a reference tissue model with spatial constraint to quantify [11{C}]Pittsburgh compound B {PET} for early diagnosis of Alzheimer's disease}}
+      \field{volume}{36}
+      \field{year}{2007}
+      \field{pages}{298\bibrangedash 312}
+      \range{pages}{15}
+      \verb{url}
+      \verb http://www.sciencedirect.com/science/article/B6WNP-4N8M886-1/2/de5a061a0cf2d3250bcac48cc4f77be2
+      \endverb
     \endentry
     \entry{Kelloff2005}{article}{}
       \true{moreauthor}
@@ -2958,6 +3208,32 @@
       \field{pages}{189\bibrangedash 202}
       \range{pages}{14}
       \keyw{Humans; Models,Psychological; Research Design}
+    \endentry
+    \entry{Guyon03}{article}{}
+      \name{author}{2}{}{%
+        {{hash=30090046dd2289ec0efca86420f819b7}{%
+           family={Guyon},
+           family_i={G\bibinitperiod},
+           given={I.},
+           given_i={I\bibinitperiod}}}%
+        {{hash=756350aff09c64a4748e24da0611dbce}{%
+           family={Elisseeff},
+           family_i={E\bibinitperiod},
+           given={A.},
+           given_i={A\bibinitperiod}}}%
+      }
+      \strng{namehash}{76b0ceceda1796ab73f4cb854a2f04f3}
+      \strng{fullhash}{76b0ceceda1796ab73f4cb854a2f04f3}
+      \field{sortinit}{2}
+      \field{sortinithash}{8343b463aacf48517c044b4d2c9c45ed}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Journal of Machine Learning Research}
+      \field{title}{{An Introduction to Variable and Feature Selection}}
+      \field{volume}{3}
+      \field{year}{2003}
+      \field{pages}{1157\bibrangedash 1182}
+      \range{pages}{26}
     \endentry
     \entry{Winogrodzka2003}{article}{}
       \name{author}{6}{}{%
@@ -3540,6 +3816,45 @@
       \verb http://jnm.snmjournals.org/cgi/content/abstract/41/7/1155
       \endverb
     \endentry
+    \entry{Dale1999}{article}{}
+      \name{author}{3}{}{%
+        {{hash=4040cc8904c71690aee334e36631496e}{%
+           family={Dale},
+           family_i={D\bibinitperiod},
+           given={A\bibnamedelima M},
+           given_i={A\bibinitperiod\bibinitdelim M\bibinitperiod}}}%
+        {{hash=6d9890b59b5606284f46a56068fa24eb}{%
+           family={Fischl},
+           family_i={F\bibinitperiod},
+           given={B},
+           given_i={B\bibinitperiod}}}%
+        {{hash=55704a173ce447da0bbaf0099f71f016}{%
+           family={Sereno},
+           family_i={S\bibinitperiod},
+           given={M\bibnamedelima I},
+           given_i={M\bibinitperiod\bibinitdelim I\bibinitperiod}}}%
+      }
+      \strng{namehash}{7998bab4ab2d4e95b5e8540cf469864c}
+      \strng{fullhash}{7998bab4ab2d4e95b5e8540cf469864c}
+      \field{sortinit}{1}
+      \field{sortinithash}{53e85f4cf497d2a4e1d51786552bcbf1}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Several properties of the cerebral cortex, including its columnar and laminar organization, as well as the topographic organization of cortical areas, can only be properly understood in the context of the intrinsic two-dimensional structure of the cortical surface. In order to study such cortical properties in humans, it is necessary to obtain an accurate and explicit representation of the cortical surface in individual subjects. Here we describe a set of automated procedures for obtaining accurate reconstructions of the cortical surface, which have been applied to data from more than 100 subjects, requiring little or no manual intervention. Automated routines for unfolding and flattening the cortical surface are described in a companion paper. These procedures allow for the routine use of cortical surface-based analysis and visualization methods in functional brain imaging.}
+      \field{issn}{1053-8119}
+      \field{issue}{2}
+      \field{journaltitle}{NeuroImage}
+      \field{month}{02}
+      \field{title}{Cortical surface-based analysis. I. Segmentation and surface reconstruction.}
+      \field{volume}{9}
+      \field{year}{1999}
+      \field{pages}{179\bibrangedash 194}
+      \range{pages}{16}
+      \verb{doi}
+      \verb 10.1006/nimg.1998.0395
+      \endverb
+      \keyw{Brain Mapping,instrumentation; Cerebral Cortex,anatomy & histology; Humans; Image Processing,Computer-Assisted,instrumentation; Magnetic Resonance Imaging,instrumentation; Reference Values; Software}
+    \endentry
     \entry{Szatmari1999}{article}{}
       \name{author}{1}{}{%
         {{hash=78765da34409db9b3fc4744406d20083}{%
@@ -3673,7 +3988,7 @@
       \field{pages}{289\bibrangedash 300}
       \range{pages}{12}
     \endentry
-    \entry{Kohavi1995a}{inproceedings}{}
+    \entry{Kohavi1995}{inproceedings}{}
       \name{author}{1}{}{%
         {{hash=7120a2e96e83a82f9c24c62998a3c99a}{%
            family={Kohavi},
@@ -4504,6 +4819,45 @@
       \verb{doi}
       \verb 10.1159/000051283
       \endverb
+    \endentry
+    \entry{Dale1999}{article}{}
+      \name{author}{3}{}{%
+        {{hash=4040cc8904c71690aee334e36631496e}{%
+           family={Dale},
+           family_i={D\bibinitperiod},
+           given={A\bibnamedelima M},
+           given_i={A\bibinitperiod\bibinitdelim M\bibinitperiod}}}%
+        {{hash=6d9890b59b5606284f46a56068fa24eb}{%
+           family={Fischl},
+           family_i={F\bibinitperiod},
+           given={B},
+           given_i={B\bibinitperiod}}}%
+        {{hash=55704a173ce447da0bbaf0099f71f016}{%
+           family={Sereno},
+           family_i={S\bibinitperiod},
+           given={M\bibnamedelima I},
+           given_i={M\bibinitperiod\bibinitdelim I\bibinitperiod}}}%
+      }
+      \strng{namehash}{7998bab4ab2d4e95b5e8540cf469864c}
+      \strng{fullhash}{7998bab4ab2d4e95b5e8540cf469864c}
+      \field{sortinit}{D}
+      \field{sortinithash}{78f7c4753a2004675f316a80bdb31742}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Several properties of the cerebral cortex, including its columnar and laminar organization, as well as the topographic organization of cortical areas, can only be properly understood in the context of the intrinsic two-dimensional structure of the cortical surface. In order to study such cortical properties in humans, it is necessary to obtain an accurate and explicit representation of the cortical surface in individual subjects. Here we describe a set of automated procedures for obtaining accurate reconstructions of the cortical surface, which have been applied to data from more than 100 subjects, requiring little or no manual intervention. Automated routines for unfolding and flattening the cortical surface are described in a companion paper. These procedures allow for the routine use of cortical surface-based analysis and visualization methods in functional brain imaging.}
+      \field{issn}{1053-8119}
+      \field{issue}{2}
+      \field{journaltitle}{NeuroImage}
+      \field{month}{02}
+      \field{title}{Cortical surface-based analysis. I. Segmentation and surface reconstruction.}
+      \field{volume}{9}
+      \field{year}{1999}
+      \field{pages}{179\bibrangedash 194}
+      \range{pages}{16}
+      \verb{doi}
+      \verb 10.1006/nimg.1998.0395
+      \endverb
+      \keyw{Brain Mapping,instrumentation; Cerebral Cortex,anatomy & histology; Humans; Image Processing,Computer-Assisted,instrumentation; Magnetic Resonance Imaging,instrumentation; Reference Values; Software}
     \endentry
     \entry{Leon1983}{article}{}
       \name{author}{7}{}{%
@@ -5413,6 +5767,53 @@
       \field{title}{{Statistical Parametric Mapping: The Analysis of Functional Brain Images}}
       \field{year}{2007}
     \endentry
+    \entry{Gorriz2009}{article}{}
+      \name{author}{6}{}{%
+        {{hash=7874a31bf28a43fb11d4e5217882ae92}{%
+           family={Górriz},
+           family_i={G\bibinitperiod},
+           given={J.\bibnamedelimi M.},
+           given_i={J\bibinitperiod\bibinitdelim M\bibinitperiod}}}%
+        {{hash=60f8691e1c780d941ef769f17d1f3a6d}{%
+           family={Lassl},
+           family_i={L\bibinitperiod},
+           given={A.},
+           given_i={A\bibinitperiod}}}%
+        {{hash=feb8d5aab03ec8ed81924ca4f258be62}{%
+           family={Ramírez},
+           family_i={R\bibinitperiod},
+           given={J.},
+           given_i={J\bibinitperiod}}}%
+        {{hash=20521a35217cd2ed8a877557a8120b33}{%
+           family={Salas-Gonzalez},
+           family_i={S\bibinithyphendelim G\bibinitperiod},
+           given={D.},
+           given_i={D\bibinitperiod}}}%
+        {{hash=c8f9a15f9219a9ec6a3b14ab964c08e5}{%
+           family={Puntonet},
+           family_i={P\bibinitperiod},
+           given={C.\bibnamedelimi G.},
+           given_i={C\bibinitperiod\bibinitdelim G\bibinitperiod}}}%
+        {{hash=1c5b998c6f42bfc0067afda124e51dc9}{%
+           family={Lang},
+           family_i={L\bibinitperiod},
+           given={E.\bibnamedelimi W.},
+           given_i={E\bibinitperiod\bibinitdelim W\bibinitperiod}}}%
+      }
+      \strng{namehash}{9540aa82458f8cd114294edb2db1faf9}
+      \strng{fullhash}{03042a7a0605729163f16932074f0fbb}
+      \field{sortinit}{G}
+      \field{sortinithash}{1c854ef9177a91bf894e66485bdbd3ed}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Neuroscience Letters}
+      \field{number}{2}
+      \field{title}{{Automatic selection of {ROIs} in functional imaging using {Gauss}ian mixture models}}
+      \field{volume}{460}
+      \field{year}{2009}
+      \field{pages}{108\bibrangedash 111}
+      \range{pages}{4}
+    \endentry
     \entry{Gorriz2010}{article}{}
       \name{author}{5}{}{%
         {{hash=7874a31bf28a43fb11d4e5217882ae92}{%
@@ -5459,6 +5860,32 @@
       \verb 10.1016/j.asoc.2010.08.012
       \endverb
       \keyw{SPECT}
+    \endentry
+    \entry{Guyon03}{article}{}
+      \name{author}{2}{}{%
+        {{hash=30090046dd2289ec0efca86420f819b7}{%
+           family={Guyon},
+           family_i={G\bibinitperiod},
+           given={I.},
+           given_i={I\bibinitperiod}}}%
+        {{hash=756350aff09c64a4748e24da0611dbce}{%
+           family={Elisseeff},
+           family_i={E\bibinitperiod},
+           given={A.},
+           given_i={A\bibinitperiod}}}%
+      }
+      \strng{namehash}{76b0ceceda1796ab73f4cb854a2f04f3}
+      \strng{fullhash}{76b0ceceda1796ab73f4cb854a2f04f3}
+      \field{sortinit}{G}
+      \field{sortinithash}{1c854ef9177a91bf894e66485bdbd3ed}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Journal of Machine Learning Research}
+      \field{title}{{An Introduction to Variable and Feature Selection}}
+      \field{volume}{3}
+      \field{year}{2003}
+      \field{pages}{1157\bibrangedash 1182}
+      \range{pages}{26}
     \endentry
     \entry{haar2014anatomical}{article}{}
       \name{author}{4}{}{%
@@ -5940,7 +6367,7 @@
       \verb http://jnm.snmjournals.org/cgi/content/abstract/41/7/1155
       \endverb
     \endentry
-    \entry{Kohavi1995a}{inproceedings}{}
+    \entry{Kohavi1995}{inproceedings}{}
       \name{author}{1}{}{%
         {{hash=7120a2e96e83a82f9c24c62998a3c99a}{%
            family={Kohavi},
@@ -5990,6 +6417,57 @@
       \field{year}{1982}
       \field{pages}{825\bibrangedash 855}
       \range{pages}{31}
+    \endentry
+    \entry{Lozano2007}{article}{}
+      \name{author}{5}{}{%
+        {{hash=cf9c5539bd06ab17544fe72caecb3cda}{%
+           family={Lozano},
+           family_i={L\bibinitperiod},
+           given={S.J.\bibnamedelimi Ortega},
+           given_i={S\bibinitperiod\bibinitdelim O\bibinitperiod}}}%
+        {{hash=94317125303aaa2b6fa1e50db1dc2098}{%
+           family={Torres},
+           family_i={T\bibinitperiod},
+           given={M.D.\bibnamedelimi Martínez\bibnamedelimb del\bibnamedelima Valle},
+           given_i={M\bibinitperiod\bibinitdelim M\bibinitperiod\bibinitdelim d\bibinitperiod\bibinitdelim V\bibinitperiod}}}%
+        {{hash=7e6e974156850e1493c9efe1b48e7af2}{%
+           family={García},
+           family_i={G\bibinitperiod},
+           given={J.M.\bibnamedelimi Jiménez-Hoyuela},
+           given_i={J\bibinitperiod\bibinitdelim J\bibinithyphendelim H\bibinitperiod}}}%
+        {{hash=0c930f2e3ddd50203851064ff4795ef1}{%
+           family={Cardo},
+           family_i={C\bibinitperiod},
+           given={A.L.\bibnamedelimi Gutiérrez},
+           given_i={A\bibinitperiod\bibinitdelim G\bibinitperiod}}}%
+        {{hash=64de414fd13c6cdeefddd1ce1bce565a}{%
+           family={Arillo},
+           family_i={A\bibinitperiod},
+           given={V.\bibnamedelimi Campos},
+           given_i={V\bibinitperiod\bibinitdelim C\bibinitperiod}}}%
+      }
+      \strng{namehash}{77cfbbd063e52f041e1c0e996819cde2}
+      \strng{fullhash}{d645086f9f844fa02fc6d04c7ee65d40}
+      \field{sortinit}{L}
+      \field{sortinithash}{872351f18d0f736066eda0bf18bfa4f7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Objective To determine the diagnostic accuracy of FP-CIT SPECT in entities with and without presynaptic involvement of the nigral-striatal dopaminergic pathway in a large group of patients with movement disorders, evaluating the usefulness of quantitative analysis. Materials and methods A group of 183 consecutive patients clinically diagnosed as either having or not having degenerative Parkinsonism. These results were then contrasted with those of FP-CIT SPECT to determine the diagnostic accuracy of the procedure. The specific binding index was evaluated with ROC curves. Results FP-CIT SPECT was highly accurate in the diagnosis of neurodegenerative Parkinsonism (sensitivity: 95\%, specificity: 90\%). Most of the false positive results arose in patients with vascular Parkinsonism and the false negative results in patients with Parkinson disease. ROC curve analysis of semiquantitative evaluation had a sensitivity of 83\% and specificity of 82\% with an optimal cut-off of 1.44. The area under the curve was not significantly different between patients <60 and > 60 years (0.899 vs 0.884) of age. Conclusions FP-CIT SPECT has a high degree of diagnostic accuracy for striatal dopaminergic involvement. No significant changes in diagnostic accuracy were seen with respect to patient age.}
+      \field{issn}{1578-200X}
+      \field{journaltitle}{Revista Española de Medicina Nuclear (English Edition)}
+      \field{number}{5}
+      \field{title}{{Diagnostic accuracy of {FP}-CIT SPECT in patients with Parkinsonism}}
+      \field{volume}{26}
+      \field{year}{2007}
+      \field{pages}{277\bibrangedash 285}
+      \range{pages}{9}
+      \verb{doi}
+      \verb 10.1016/S1578-200X(07)70062-1
+      \endverb
+      \verb{url}
+      \verb http://www.sciencedirect.com/science/article/pii/S1578200X07700621
+      \endverb
+      \keyw{Parkinsonism}
     \endentry
     \entry{Martinez201141}{inproceedings}{}
       \name{author}{6}{}{%
@@ -6092,6 +6570,43 @@
       \range{pages}{24}
       \verb{doi}
       \verb 10.5772/64980
+      \endverb
+      \keyw{own}
+    \endentry
+    \entry{Martinez-Murcia2016b}{inbook}{}
+      \name{author}{3}{}{%
+        {{hash=7e0781eaa96af7d07a917700f7b031e0}{%
+           family={Martinez-Murcia},
+           family_i={M\bibinithyphendelim M\bibinitperiod},
+           given={F.J},
+           given_i={F\bibinitperiod}}}%
+        {{hash=7abaa12fe16012bf9858fc761e93d487}{%
+           family={Górriz},
+           family_i={G\bibinitperiod},
+           given={J.M.},
+           given_i={J\bibinitperiod}}}%
+        {{hash=feb8d5aab03ec8ed81924ca4f258be62}{%
+           family={Ramírez},
+           family_i={R\bibinitperiod},
+           given={J.},
+           given_i={J\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Wiley}%
+      }
+      \strng{namehash}{18faac21d634a403d2d09a1679b53a5d}
+      \strng{fullhash}{18faac21d634a403d2d09a1679b53a5d}
+      \field{sortinit}{M}
+      \field{sortinithash}{2684bec41e9697b92699b46491061da2}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{Wiley Encyclopedia of Electrical and Electronics Engineering}
+      \field{title}{Feature Extraction}
+      \field{year}{2016}
+      \field{pages}{Accepted}
+      \range{pages}{-1}
+      \verb{doi}
+      \verb 10.1002/047134608X
       \endverb
       \keyw{own}
     \endentry
@@ -7517,6 +8032,53 @@
       \endverb
       \keyw{Bayes Theorem; Brain,anatomy & histology,physiology; Databases,Factual; Humans; Image Processing,Computer-Assisted; Magnetic Resonance Imaging,statistics & numerical data; Models,Neurological; Models,Statistical; Software}
     \endentry
+    \entry{Spetsieris2009}{article}{}
+      \name{author}{4}{}{%
+        {{hash=337cf33caded62f9ba2c01cd2ad6cb3e}{%
+           family={Spetsieris},
+           family_i={S\bibinitperiod},
+           given={Phoebe\bibnamedelima G.},
+           given_i={P\bibinitperiod\bibinitdelim G\bibinitperiod}}}%
+        {{hash=e41c03305d3bd87436bbdaadec9d4c41}{%
+           family={Ma},
+           family_i={M\bibinitperiod},
+           given={Yilong},
+           given_i={Y\bibinitperiod}}}%
+        {{hash=462619369baa48857ed9581ecad95284}{%
+           family={Dhawan},
+           family_i={D\bibinitperiod},
+           given={Vijay},
+           given_i={V\bibinitperiod}}}%
+        {{hash=a4303fa212e1b1d0b2a4c905d3d57b4c}{%
+           family={Eidelberg},
+           family_i={E\bibinitperiod},
+           given={David},
+           given_i={D\bibinitperiod}}}%
+      }
+      \strng{namehash}{5128c5c29db753af1b2d2a562d93fdc5}
+      \strng{fullhash}{68b0dfac04ef082b8d916640f9bf1253}
+      \field{sortinit}{S}
+      \field{sortinithash}{fd1e7c5ab79596b13dbbb67f8d70fb5a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{We describe methodologies for single subject differential diagnosis of degenerative brain disorders using multivariate principal component analysis (PCA) of functional imaging scans. An automated routine utilizing these methods is applied to positron emission tomography (PET) brain data to distinguish several discrete parkinsonian movement disorders with similar clinical manifestations. Disease specific expressions of voxel-based spatial covariance patterns are predetermined using the Scaled Subprofile Model (SSM/PCA) and a scalar measure of the manifestation of each pattern in prospective subject images is subsequently derived. Scores are automatically compared to reference values generated for each pathological condition in a corresponding set of patient and control scans. Diagnostic outcome is optimized using strategies such as the derivation of patterns in a voxel subspace that reflects contrasting image characteristics between conditions, or by using an independent patient population as controls. The prediction models for two, three and four way classification problems using direct scalar comparison as well as classical discriminant analysis are assessed in a composite training population comprised of three different patient classes and normal controls and validated in a similar independent test population. Results illustrate that highly accurate diagnosis can often be achieved by simple comparison of scores utilizing optimized patterns.}
+      \field{issn}{1053-8119}
+      \field{journaltitle}{Neuroimage}
+      \field{month}{05}
+      \field{number}{4}
+      \field{title}{{Differential diagnosis of parkinsonian syndromes using functional {PCA}-based imaging features}}
+      \field{volume}{45}
+      \field{year}{2009}
+      \field{pages}{1241\bibrangedash 52}
+      \range{pages}{12}
+      \verb{file}
+      \verb Spetsieris - Differences Functional Imaging - PKS.pdf:PKS/Spetsieris - Differences Functional Imaging - PKS.pdf:PDF
+      \endverb
+      \verb{url}
+      \verb http://www.sciencedirect.com/science/article/B6WNP-4VCH6WN-1/2/fbde9dd344d47cc00f6923a23af3796a
+      \endverb
+      \keyw{Differential diagnosis; Parkinson's disease; Functional neuroimaging; Brain networks; PET; PCA; CAD}
+    \endentry
     \entry{Stoeckel04}{inproceedings}{}
       \name{author}{6}{}{%
         {{hash=28bf5e46a098c31cc1ae3aa58fc54ee5}{%
@@ -7875,60 +8437,128 @@
       \verb 10.1136/jnnp.74.3.294
       \endverb
     \endentry
+    \entry{Zhou2007}{article}{}
+      \name{author}{9}{}{%
+        {{hash=18f7b54bd6a465f2209e979aa6a31329}{%
+           family={Zhou},
+           family_i={Z\bibinitperiod},
+           given={Yun},
+           given_i={Y\bibinitperiod}}}%
+        {{hash=4dfe214b3dbffd16c925e392df3b35be}{%
+           family={Resnick},
+           family_i={R\bibinitperiod},
+           given={Susan\bibnamedelima M.},
+           given_i={S\bibinitperiod\bibinitdelim M\bibinitperiod}}}%
+        {{hash=9065ccdb9821efadae9892106394f12e}{%
+           family={Ye},
+           family_i={Y\bibinitperiod},
+           given={Weiguo},
+           given_i={W\bibinitperiod}}}%
+        {{hash=e7495660d4aa0144711fb6c205bf7ac5}{%
+           family={Fan},
+           family_i={F\bibinitperiod},
+           given={Hong},
+           given_i={H\bibinitperiod}}}%
+        {{hash=13ffa1c9ba09e7ead76720a00a5de321}{%
+           family={Holt},
+           family_i={H\bibinitperiod},
+           given={Daniel\bibnamedelima P.},
+           given_i={D\bibinitperiod\bibinitdelim P\bibinitperiod}}}%
+        {{hash=787fb401ee3e9805f2b2b03b4aaf7f28}{%
+           family={Klunk},
+           family_i={K\bibinitperiod},
+           given={William\bibnamedelima E.},
+           given_i={W\bibinitperiod\bibinitdelim E\bibinitperiod}}}%
+        {{hash=b63941583f305003bc688ff6b5a12045}{%
+           family={Mathis},
+           family_i={M\bibinitperiod},
+           given={Chester\bibnamedelima A.},
+           given_i={C\bibinitperiod\bibinitdelim A\bibinitperiod}}}%
+        {{hash=a584a4c30e85989ccf8c3116a7c020ab}{%
+           family={Dannals},
+           family_i={D\bibinitperiod},
+           given={Robert},
+           given_i={R\bibinitperiod}}}%
+        {{hash=7b873b813b8895cf454d856d53e4c2a2}{%
+           family={Wong},
+           family_i={W\bibinitperiod},
+           given={Dean\bibnamedelima F.},
+           given_i={D\bibinitperiod\bibinitdelim F\bibinitperiod}}}%
+      }
+      \strng{namehash}{e9b155567b9117891ceaabcc1831cbdb}
+      \strng{fullhash}{f861ae2424693989408246b39eea4e9f}
+      \field{sortinit}{Z}
+      \field{sortinithash}{fdda4caaa6b5fa63e0c081dcb159543a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Introduction: Reference tissue model (RTM) is a compartmental modeling approach that uses reference tissue time activity curve (TAC) as input for quantification of ligand-receptor dynamic PET without blood sampling. There are limitations in applying the RTM for kinetic analysis of PET studies using [11C]Pittsburgh compound B ([11C]PIB). For region of interest (ROI) based kinetic modeling, the low specific binding of [11C]PIB in a target ROI can result in a high linear relationship between the output and input. This condition may result in amplification of errors in estimates using RTM. For pixel-wise quantification, due to the high noise level of pixel kinetics, the parametric images generated by RTM with conventional linear or nonlinear regression may be too noisy for use in clinical studies.Methods: We applied RTM with parameter coupling and a simultaneous fitting method as a spatial constraint for ROI kinetic analysis. Three RTMs with parameter coupling were derived from a classical compartment model with plasma input: an RTM of 4 parameters (R1, k'2R, k4, BP) (RTM4P); an RTM of 5 parameters (R1, k2R, NS, k6, BP) (RTM5P); and a simplified RTM (SRTM) of 3 parameters (R1, k'2R, BP) (RTM3P). The parameter sets [k'2R, k4], [k2R, NS, k6], and k'2R are coupled among ROIs for RTM4P, RTM5P, and RTM3P, respectively. A linear regression with spatial constraint (LRSC) algorithm was applied to the SRTM for parametric imaging. Logan plots were used to estimate the distribution volume ratio (DVR) (= 1 + BP (binding potential)) in ROI and pixel levels. Ninety-minute [11C]PIB dynamic PET was performed in 28 controls and 6 individuals with mild cognitive impairment (MCI) on a GE Advance scanner. ROIs of cerebellum (reference tissue) and 15 other regions were defined on coregistered MRIs.Results: The coefficients of variation of DVR estimates from RTM3P obtained by the simultaneous fitting method were lower by 77-89\% (in striatum, frontal, occipital, parietal, and cingulate cortex) as compared to that by conventional single ROI TAC fitting method. There were no significant differences in both TAC fitting and DVR estimates between the RTM3P and the RTM4P or RTM5P. The DVR in striatum, lateral temporal, frontal and cingulate cortex for MCI group was 25\% to 38\% higher compared to the control group (p <= 0.05), even in this group of individuals with generally low PIB retention. The DVR images generated by the SRTM with LRSC algorithm had high linear correlations with those from the Logan plot (R2 = 0.99).Conclusion: In conclusion, the RTM3P with simultaneous fitting method is shown to be a robust compartmental modeling approach that may be useful in [11C]PIB PET studies to detect early markers of Alzheimer's disease where specific ROIs have been hypothesized. In addition, the SRTM with LRSC algorithm may be useful in generating R1 and DVR images for pixel-wise quantification of [11C]PIB dynamic PET.}
+      \field{issn}{1053-8119}
+      \field{journaltitle}{Neuroimage}
+      \field{month}{06}
+      \field{number}{2}
+      \field{title}{{Using a reference tissue model with spatial constraint to quantify [11{C}]Pittsburgh compound B {PET} for early diagnosis of Alzheimer's disease}}
+      \field{volume}{36}
+      \field{year}{2007}
+      \field{pages}{298\bibrangedash 312}
+      \range{pages}{15}
+      \verb{url}
+      \verb http://www.sciencedirect.com/science/article/B6WNP-4N8M886-1/2/de5a061a0cf2d3250bcac48cc4f77be2
+      \endverb
+    \endentry
   \endsortlist
-  \missing{Jong2008}
-  \missing{Chen2008}
-  \missing{Harman73}
-  \missing{han2006reliability}
   \missing{Oja1997}
-  \missing{DaelemansHosteMeulderEtAl2003}
-  \missing{Grana2011}
-  \missing{Hyvarinen2000}
-  \missing{Fischl2004}
-  \missing{FastICA99}
-  \missing{soh1999texture}
-  \missing{Segovia2012}
-  \missing{kovalev2001three}
-  \missing{Tzourio-Mazoyer2002}
-  \missing{Shaffer1995}
-  \missing{Unay2007}
-  \missing{Illan2012}
-  \missing{Vapnik1982}
-  \missing{Yen1995}
-  \missing{Botev2010}
-  \missing{Lozano2007}
-  \missing{McGee2002}
-  \missing{PPMI}
-  \missing{clausi2002analysis}
-  \missing{Evans1993}
-  \missing{Martinez-Murcia2014}
-  \missing{dougall_systematic_2004}
-  \missing{SaeysInzaLarranaga2007}
-  \missing{Illan2014}
-  \missing{chan2001patterns}
-  \missing{xu2009source}
-  \missing{Locatelli1998}
-  \missing{martinez2013texture}
-  \missing{Alvarez2009}
-  \missing{sikio2015mr}
-  \missing{Ram'irez2009}
-  \missing{Vardi1985}
-  \missing{Ramirez2009}
-  \missing{Ojala1996}
-  \missing{Inititative2010}
-  \missing{Giannakopoulos1998}
-  \missing{Ortiz2013}
-  \missing{Rojas2012}
   \missing{Medina2008}
-  \missing{Hyvarinen1999}
-  \missing{Zhou2008}
-  \missing{jobst_accurate_1998}
-  \missing{Shepp82}
-  \missing{Zhao2007}
-  \missing{Fay10}
-  \missing{AAL}
-  \missing{Guyon03}
+  \missing{kovalev2001three}
+  \missing{Martinez-Murcia2014}
+  \missing{FastICA99}
+  \missing{Vapnik1982}
+  \missing{Alvarez2009}
+  \missing{soh1999texture}
+  \missing{PPMI}
+  \missing{Ramirez2009}
+  \missing{McGee2002}
+  \missing{Locatelli1998}
+  \missing{Ortiz2013}
   \missing{IAIllan2010}
+  \missing{Ojala1996}
+  \missing{Zhao2007}
+  \missing{martinez2013functional}
+  \missing{Hyvarinen1999}
+  \missing{xu2009source}
+  \missing{dougall_systematic_2004}
+  \missing{han2006reliability}
+  \missing{Kohavi1995a}
+  \missing{SaeysInzaLarranaga2007}
+  \missing{AAL}
+  \missing{DaelemansHosteMeulderEtAl2003}
+  \missing{Illan2014}
+  \missing{Inititative2010}
+  \missing{Zhou2008}
+  \missing{sikio2015mr}
+  \missing{jobst_accurate_1998}
+  \missing{Yen1995}
+  \missing{Rojas2012}
+  \missing{Fischl2004}
+  \missing{Jong2008}
+  \missing{martinez2013texture}
+  \missing{Illan2012}
+  \missing{Hyvarinen2000}
+  \missing{Vardi1985}
+  \missing{chan2001patterns}
+  \missing{Shaffer1995}
+  \missing{Chen2008}
+  \missing{Tzourio-Mazoyer2002}
+  \missing{Shepp82}
+  \missing{Fay10}
+  \missing{Botev2010}
+  \missing{clausi2002analysis}
+  \missing{Unay2007}
+  \missing{Ram'irez2009}
+  \missing{Grana2011}
+  \missing{Evans1993}
+  \missing{Giannakopoulos1998}
+  \missing{Segovia2012}
+  \missing{Harman73}
 \endrefsection
 
 \refsection{1}
