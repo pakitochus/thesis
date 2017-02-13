@@ -98,7 +98,7 @@ The evidence of either functionally or structurally affected areas in the brain 
 
 
 \section{Voxelwise Analyses}\label{sec:vwanalyses}
-Traditional analysis of neuroimaging involves visual analysis by experts clinicians, or semi-quantitative analysis of \acp{ROI}. With the rise of neuroimaging in the mid-nineties, some computer-aided solutions appeared, starting with the widely known \acf{SPM} \cite{Friston1994}, its extension to structural imaging \acf{VBM} \cite{Ashburner2000} and later, the first application of classifiers to medical imaging, called \acf{VAF} \cite{Stoeckel04}.
+Traditional analysis of neuroimaging involves visual analysis by experts clinicians, or semi-quantitative analysis of \acp{ROI}. With the rise of neuroimaging in the mid-nineties, some computer-aided solutions appeared, of which the most extended are the widely known \acf{SPM} \cite{Friston1994} and its extension to structural imaging \acf{VBM} \cite{Ashburner2000}. 
 
 \subsection{Statistical Parametric Mapping}
 \acf{SPM} is a new methodology to automatically examine differences in brain activity in functional imaging studies involving \ac{fMRI} or \ac{PET}, firstly proposed by Friston in \cite{Friston1994}. The technique can be applied either to static images (e.g., \ac{PET}) or timeseries (\ac{fMRI}), using inference techniques based on hypothesis testing, in order to construct the \ac{GLM} that better describes the variability in the data. 
@@ -183,19 +183,12 @@ The maximum $i$ value that holds Eq.~\ref{eq:bhFDRineq} is used as $\alpha$, the
 
 
 \subsubsection{Permutation Tests}
-An empirical way to obtain $p$-values without relying on any parametric assumption is permutation testing \cite{Anderson2001,Winkler2014}. Permutation tests evaluate a statistic such as the F-statistic or the $t$-test using randomly target variables, in our case, the classes. The procedure is applied many times (up to 10,000), and for each permutation, only the maximum value of the computed statistic is considered. These values are used to build the null distribution, from which the family-wise corrected $p$-values are computed. We assume t
-
-Results obtained in permutation tests are comparable to those obtained using Random Field Theory \cite{Winkler2014}, and far less conservative than when applying the Bonferroni correction. Many permutation schemes can be applied. The one that we use here is based upon \cite{Anderson2001}, as it was demonstrated to achieve more sensitivity than other alternatives. 
-
+An empirical way to obtain $p$-values without relying on any parametric assumption is permutation testing \cite{Anderson2001,Winkler2014}. Permutation tests evaluate a statistic such as the F-statistic or the $t$-test using randomly target variables, in our case, the classes. The procedure is applied many times (up to 10,000), and for each permutation, only the maximum value of the computed statistic is considered. These values are used to build the null distribution, from which the family-wise corrected $p$-values are computed. Results obtained in permutation tests are comparable to those obtained using Random Field Theory \cite{Winkler2014}, and far less conservative than when applying the Bonferroni correction. 
 
 \section{Machine Learning in Neuroimaging}\label{sec:machinelearning}
-Machine learning is the subfield of computer science that provides computers with the ability to learn from data instead of being programmed for an explicit task. 
-The application of new machine learning techniques in CAD systems is a current trend. Works on this topic have increased exponentially in the past ten years, and it is expected to grow even more. Machine learning explores the study and construction of algorithms that can learn from and make predictions on data, and therefore, it is very useful in neuroimaging. 
+Machine learning is a current trend in neuroimaging. It provides computers with the ability to learn from data, using a set of statistical and computational tools. Rather than being explicitly programmed for a certain task, machine learning systems are able to find relevant data, discover patterns and predict the outcome of the input data. Its application to medicine is often known as \acf{CAD} \cite{Martinez-Murcia2016}. 
 
-Two approaches exist in machine learning. Supervised learning explores the patterns that lead to a certain outcome, e.g. the brain activation patterns that are related to a certain disease. On the other hand, unsupervised learning explores the underlying structure of the data. Machine learning in CAD is mostly based on supervised learning, since it is focused on the prediction and analysis of patterns related to a certain disease. 
-
-In its simplest form, a machine learning pipeline for neuroimaging consists of a single classifier, just as the VAF approach that we mentioned. However, classifiers can improve their detection power if higher level features are extracted from the data, e.g., features that represent the distribution of the voxel intensities, the texture of the images, or the sources of variance of the maps. This is known as feature extraction, and the most common technique is image decomposition. 
-
+There are two major branches of machine learning: supervised and unsupervised learning. Th former explores the patterns that lead to a certain outcome, whereas on the other hand, unsupervised learning explores the underlying structure of the data. Most of the \ac{CAD} systems rely on supervised learning, since their intention is to discover patterns that can effectively predict a disease. 
 
 \begin{figure}[htp]
 	\centering
@@ -204,21 +197,19 @@ In its simplest form, a machine learning pipeline for neuroimaging consists of a
 	\label{fig:ni-cad}
 \end{figure}
 
-To overcome this problem, most \ac{CAD} systems in the literature use feature extraction and feature selection \cite{Martinez-Murcia2016}, in order to reduce the feature space size (see Figure~\ref{fig:ni-cad}). 
-
-
-In recent years, many efforts have been put into discovering new automatic or semi-automatic algorithms for analyzing neurological images, in has been known as \acf{CAD}
-
+For simplicity, in this thesis, when talking about \ac{CAD}, we will always refer to automatic \ac{CAD} systems. That is, those that, once trained with previously known data, can predict the outcome of new, unseen data. A typical \ac{CAD} system, like the one in Figure~\ref{fig:ni-cad}, consists of input data (in our case, neuroimaging), feature extraction, feature selection and a classification step. The most basic is the \acf{VAF} approach, in which all voxels are considered as features, and then used as input to the classifier \cite{Stoeckel04}. However, many more advances can be made in this field by exploring different types of 
 
 \subsection{Voxels as Features}
-\acf{VAF} \cite{Stoeckel04} is the most direct application of machine learning to neuroimaging. It was firstly proposed for evaluating and performing automatic diagnosis of \ac{AD} using functional \ac{SPECT} imaging. It is the simpler machine learning approach used in this thesis, using a standard preprocessing (registration, intensity normalization) and a \ac{SVC} (See Appendix~\ref{ch:svm}) to predict the class of an image using all its intensities as features. Feature extraction, here, considers all voxels, and then there is no feature selection applied. 
+\acf{VAF} \cite{Stoeckel04} is an example of the simplest \ac{CAD} system. It was originally proposed for evaluating and performing automatic diagnosis of \ac{AD} using functional \ac{SPECT} imaging. It uses a standard preprocessing (registration, intensity normalization) and a \ac{SVC} (See Appendix~\ref{ch:svm}) to predict the class of an image using all its intensities as features. Feature extraction, here, considers all voxels, and then there is no feature selection applied. 
 
-It has been used in many works as a baseline \cite{Salas-Gonzalez2009}, since it is comparable to the performance achieved by expert physicians using visual analysis \cite{Stoeckel04}. The weight vector of the \ac{SVC} can be inverse transformed to the dimension of the original images, and therefore provide a visual map that reflects the most influential voxels, in a similar way to the $Z$ maps of \ac{SPM} and \ac{VBM}. 
+It has been used in many works as a baseline \cite{Spetsieris2009,Salas-Gonzalez2009,Martinez-Murcia2016}, since it is comparable to the performance achieved by expert physicians using visual analysis \cite{Stoeckel04}. The weight vector of the \ac{SVC} can be inverse transformed to the dimension of the original images, and therefore provide a visual map that reflects the most influential voxels, in a similar way to the $Z$-maps of \ac{SPM} and \ac{VBM}. 
 
 \subsection{Multivariate Analyses}
-In contrast to traditional visual inspection a semiquantitative analysis of neuroimaging, machine learning is nowadays a trend in the field. Machine learning is the subfield of computer science that provides computers with the ability to learn from data instead of being programmed for an explicit task. Applications range from automatic processing of images to , 
+Many improvements can be made to \ac{VAF} by adding and refining feature extraction and feature selection techniques. Usually we 
 
-Statistical techniques such as \ac{PCA}, are used for feature extraction and hypothesis testing for feature selection in systems intended to 
+Image decomposition techniques such as \ac{PCA} or \ac{PLS} have been extensively used in neuroimaging \ac{CAD} systems \cite{Spetsieris2009,Illan2011,Towey2011,Segovia2013,Kheder2015}. 
+
+are used for feature extraction and hypothesis testing for feature selection in systems intended to 
 
 This thesis explores how to use signal processing and machine learning to overcome the small sample size problem in neuroimaging. 
 

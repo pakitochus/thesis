@@ -1037,7 +1037,7 @@
 }
 
 @Article{Ecker2013,
-  author      = {Ecker, Christine and Ginestet, Cedric and Feng, Yue and Johnston, Patrick and Lombardo, Michael V. and Lai, Meng-Chuan and Suckling, John and Palaniyappan, Lena and Daly, Eileen and Murphy, Clodagh M. and Williams, Steven C. and Bullmore, Edward T. and Baron-Cohen, Simon and Brammer, Michael and Murphy, Declan G M. and , M. R. C A. I. M. S Consortium},
+  author      = {Ecker, Christine and Ginestet, Cedric and Feng, Yue and Johnston, Patrick and Lombardo, Michael V. and Lai, Meng-Chuan and Suckling, John and Palaniyappan, Lena and Daly, Eileen and Murphy, Clodagh M. and Williams, Steven C. and Bullmore, Edward T. and Baron-Cohen, Simon and Brammer, Michael and Murphy, Declan G M. and MRC AIMS Consortium},
   title       = {Brain surface anatomy in adults with autism: the relationship between surface area, cortical thickness, and autistic symptoms.},
   journal     = {JAMA Psychiatry},
   year        = {2013},
@@ -1066,6 +1066,24 @@
   owner     = {pakitochus},
   publisher = {American Medical Association},
   timestamp = {2015.11.28},
+}
+
+@Article{Spetsieris,
+  author    = {Spetsieris, Phoebe G. and Ma, Yilong and Dhawan, Vijay and Eidelberg, David},
+  title     = {{Differential diagnosis of parkinsonian syndromes using functional {PCA}-based imaging features}},
+  journal   = {Neuroimage},
+  year      = {2009},
+  volume    = {45},
+  number    = {4},
+  pages     = {1241--52},
+  month     = may,
+  issn      = {1053-8119},
+  abstract  = {We describe methodologies for single subject differential diagnosis of degenerative brain disorders using multivariate principal component analysis (PCA) of functional imaging scans. An automated routine utilizing these methods is applied to positron emission tomography (PET) brain data to distinguish several discrete parkinsonian movement disorders with similar clinical manifestations. Disease specific expressions of voxel-based spatial covariance patterns are predetermined using the Scaled Subprofile Model (SSM/PCA) and a scalar measure of the manifestation of each pattern in prospective subject images is subsequently derived. Scores are automatically compared to reference values generated for each pathological condition in a corresponding set of patient and control scans. Diagnostic outcome is optimized using strategies such as the derivation of patterns in a voxel subspace that reflects contrasting image characteristics between conditions, or by using an independent patient population as controls. The prediction models for two, three and four way classification problems using direct scalar comparison as well as classical discriminant analysis are assessed in a composite training population comprised of three different patient classes and normal controls and validated in a similar independent test population. Results illustrate that highly accurate diagnosis can often be achieved by simple comparison of scores utilizing optimized patterns.},
+  file      = {Spetsieris - Differences Functional Imaging - PKS.pdf:PKS/Spetsieris - Differences Functional Imaging - PKS.pdf:PDF},
+  keywords  = {Differential diagnosis; Parkinson's disease; Functional neuroimaging; Brain networks; PET; PCA; CAD},
+  owner     = {imagenes2},
+  timestamp = {2009.02.12},
+  url       = {http://www.sciencedirect.com/science/article/B6WNP-4VCH6WN-1/2/fbde9dd344d47cc00f6923a23af3796a},
 }
 
 @Comment{jabref-meta: databaseType:bibtex;}
