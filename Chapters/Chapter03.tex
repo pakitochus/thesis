@@ -1,17 +1,22 @@
+% !TEX TS-program = pdflatex
+% !TEX root = ../ArsClassica.tex
 %************************************************
 %\chapter{Image Preprocessing}\label{ch:preprocessing} % 
 \chapter{General Methodology}\label{ch:preprocessing} % $\mathbb{ZNR}$
 %************************************************
-To perform most automated analyses on neuroimaging, it is fundamental that images are comparable. Preprocessing comprises a series of algorithms that, applied after the acquisition and reconstruction of the images, produce directly comparable images in both structure and magnitude. 
+We will propose many analysis techniques and \ac{CAD} systems throughout this thesis. We will apply them to many experiments, and use similar data and techniques in them. In this chapter, we will focus on the methodology that is common to most of these experiments, particularly focusing on preprocessing and evaluation of our systems. 
 
-In this section we present the preprocessing algorithms used in this thesis. Whether they have been used in one or all experiments, they can be classified in two major categories: spatial and intensity preprocessing. Later, in Section~\ref{sec:vwanalyses}, we present some voxelwise analyses, commonly used in clinical practice, that we have set as a baseline in our experiments. 
+To perform most automated analyses on neuroimaging, it is fundamental that images are comparable. Preprocessing comprises a series of algorithms that, applied after the acquisition and reconstruction of the images, produce directly comparable images in both structure and magnitude. Whether they have been used in one or all experiments, they can be classified in two major categories: spatial and intensity preprocessing. These are addressed in Section~\ref{sec:spatial} and \ref{sec:intensityPrep} respectively. 
 
-\section{Spatial Preprocessing }
+Afterwards, in Section~\ref{sec:validation}, we will discuss how we evaluate our systems. Here we propose some performance measures and the procedure to obtain them by training and testing our systems.  
+
+
+\section{Spatial Preprocessing}\label{sec:spatial}
 Spatial processing usually accounts for the differences in position, angles and structure that are commonly found between images. A common pipeline in, for example, \ac{MRI} preprocessing, is the one found at Figure~\ref{fig:examplePreMRI}, where the images are registered (or spatially normalized) to a template, smoothed and finally segmented. The smoothing is an optional step, generally used in procedures like segmentation or \ac{VBM}. 
 
 \begin{figure}[htp]
 	\myfloatalign
-	\includegraphics[width=.75\linewidth]{Graphics/ch3/preProcessPL}
+	\includegraphics[width=.7\linewidth]{Graphics/ch3/preProcessPL}
 	\caption[Typical pre-processing pipeline in MRI]{Typical pre-processing pipeline in \ac{MRI}.}\label{fig:examplePreMRI}
 \end{figure}
 
@@ -97,7 +102,7 @@ When using \ac{MRI} images in this thesis, we often refer to \acf{GM} and \acf{W
 
 In this thesis we have used the \ac{VBM} toolbox of the \ac{SPM8} software, which yields \ac{GM}, \ac{WM} and \ac{CSF} maps. It features an \ac{EM} algorithm to model the distribution of the tissue classes as a mixture of gaussians and, by combining this distribution-based information with tissue probability maps using a bayesian rule, the software produces joint posterior probability maps for each tissue. To clean up the segmentation maps, a series of iterative dilations and erosions are used. Finally, since brain regions are expanded or contracted at the spatial normalization step, we can scale the segmented maps using modulation, producing final maps where the total amount of grey matter is preserved. 
 
-\section{Intensity Normalization}
+\section{Intensity Normalization}\label{sec:intensityPrep}
 Generally, structural modalities such as T1 and T2-weighted images are considered unitless, in contrast to functional imaging, in which each voxel's intensity represent the distribution of some biomarker, such as glucose metabolism, dopamine transporters, etc. These amounts are affected by many sources of variability that can affect the final values: contrast uptake, radiotracer decay time, metabolism, etc. Therefore, along with the previous spatial normalization, there is a need to normalize the intensities of the images, so that the amount they represent are comparable. 
 
 In the case of intensity normalization, the method acts as a linear transformation of the image, preserving fundamental information such as contrast between regions. This approximation estimates the new intensity values $I'$ as: 
