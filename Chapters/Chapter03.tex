@@ -4,7 +4,7 @@
 %\chapter{Image Preprocessing}\label{ch:preprocessing} % 
 \chapter{General Methodology}\label{ch:preprocessing} % $\mathbb{ZNR}$
 %************************************************
-We will propose many analysis techniques and \ac{CAD} systems throughout this thesis. We will apply them to many experiments, and use similar data and techniques in them. In this chapter, we will focus on the methodology that is common to most of these experiments, particularly focusing on preprocessing and evaluation of our systems. 
+Throughout this thesis, we will propose many analysis techniques and \ac{CAD} systems. We will apply them to many experiments, and use similar data and techniques in them. In this chapter, we will focus on the methodology that is common to most of these experiments, particularly focusing on preprocessing and evaluation of our systems. 
 
 To perform most automated analyses on neuroimaging, it is fundamental that images are comparable. Preprocessing comprises a series of algorithms that, applied after the acquisition and reconstruction of the images, produce directly comparable images in both structure and magnitude. Whether they have been used in one or all experiments, they can be classified in two major categories: spatial and intensity preprocessing. These are addressed in Section~\ref{sec:spatial} and \ref{sec:intensityPrep} respectively. 
 
@@ -141,9 +141,42 @@ See Figure~\ref{fig:comparisonIntNorm} for a comparison between different strate
 \end{figure}
 %DONE
 
-
 \section{Evaluation Parameters and Methodology}\label{sec:validation}
 \subsection{Cross-validation}
+Some machine learning applications such as digit or faces recognition use tens of thousands of images as input. In these cases, the common practice is to divide randomly the data in three subsets: training, validation and testing \cite{Bradley1997}. However, in neuroimaging, sample size is an issue. In contrast to those applications, we only have hundreds of patients in the best case, and the estimation of the performance using these subsets might not be reliable. 
+ 
+In these cases, cross-validation is used to obtain more accurate performance measures. Cross-validation performs a division of the data into several parts or ``folds'', and iteratively use some of these fold for training or testing. The simplest form of cross-validation is $K$-fold, in which the data is divided in $K$ subsets, reserving one for testing and training the model using the rest. 
+
+
+All performance results shown here have been obtained using a 10-Fold cross-validation, as suggested in \cite{Kohavi1995}, reducing the variance of other widely known forms of cross-validation like leave-one-out. 
+In contrast to these, 
+
+
+This procedure is repeated $K$ times, and a confusion matrix is obtained. 
+
+\begin{table}
+	\myfloatalign
+	\begin{tabular}{cc|c|c|}
+		& & \multicolumn{2}{c}{Predicted}\\
+		\cline{3-4} 
+		& &  Positive & Negative \\ 
+		\hline
+		\multirow{2}{*}{Actual}& Positive & True Positive & False Positive \\ 
+		\cline{2-4} 
+		& Negative & False Negative & True Negative  \\ 
+		\hline
+	\end{tabular} 
+	\caption{Confusion matrix and its parts}
+	\label{tab:confmat}
+\end{table}
+
+Table~\ref{tab:confmat} can be easily extended to multiclass, by adding rows and columns, and substituting the ``positive'' and ``negative'' by the class number. The confusion matrix is the basis for computing other performance measures, such as accuracy, sensitivity or specificity.
+
+
+
+ the strategy to obtain accurate performance measures is by cross-validation \cite{Kohavi1995} 
+in neuroimaging, sample size is an issue. 
+In fields where the sample size is an issue, like neuroimaging, 
 
 The classification was validated using stratified 10-fold
 cross-validation (Kohavi, 1995). In brief, 9 subsets of the dataset
@@ -162,4 +195,4 @@ Along with the widely used sensitivity, specificity and accuracy (which are prev
 
 To provide a better understanding of the accuracy distribution (mean, range, skewness), we have made use of the box plot (Fig. \ref{fig:features_acc_distances}). In these plots, the median for each group of data is indicated by the red center line, and the first and third quartiles are the edges of the blue box, which is known as the inter-quartile range (IQR). The extreme values (within 1.5 times the inter-quartile range from the upper or lower quartile) are the ends of the lines extending from the IQR. Points at a greater distance from the median than 1.5 times the IQR are plotted individually, representing potential outliers. 
 
-
+\subsection{ROC Curve}

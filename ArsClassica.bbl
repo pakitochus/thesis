@@ -3911,6 +3911,31 @@
       \field{title}{Pattern Recognition}
       \field{year}{1999}
     \endentry
+    \entry{Bradley1997}{article}{}
+      \name{author}{1}{}{%
+        {{hash=0fc50eac33acdb7a7d19f9921bfdec9f}{%
+           family={Bradley},
+           family_i={B\bibinitperiod},
+           given={Andrew\bibnamedelima P},
+           given_i={A\bibinitperiod\bibinitdelim P\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Elsevier}%
+      }
+      \strng{namehash}{0fc50eac33acdb7a7d19f9921bfdec9f}
+      \strng{fullhash}{0fc50eac33acdb7a7d19f9921bfdec9f}
+      \field{sortinit}{1}
+      \field{sortinithash}{53e85f4cf497d2a4e1d51786552bcbf1}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Pattern recognition}
+      \field{number}{7}
+      \field{title}{The use of the area under the ROC curve in the evaluation of machine learning algorithms}
+      \field{volume}{30}
+      \field{year}{1997}
+      \field{pages}{1145\bibrangedash 1159}
+      \range{pages}{15}
+    \endentry
     \entry{Arndt1996}{article}{}
       \name{author}{5}{}{%
         {{hash=d7446b0e86b0861f2eafc318b1fd8c98}{%
@@ -4611,6 +4636,31 @@
       \field{year}{2010}
       \field{pages}{956\bibrangedash 969}
       \range{pages}{14}
+    \endentry
+    \entry{Bradley1997}{article}{}
+      \name{author}{1}{}{%
+        {{hash=0fc50eac33acdb7a7d19f9921bfdec9f}{%
+           family={Bradley},
+           family_i={B\bibinitperiod},
+           given={Andrew\bibnamedelima P},
+           given_i={A\bibinitperiod\bibinitdelim P\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Elsevier}%
+      }
+      \strng{namehash}{0fc50eac33acdb7a7d19f9921bfdec9f}
+      \strng{fullhash}{0fc50eac33acdb7a7d19f9921bfdec9f}
+      \field{sortinit}{B}
+      \field{sortinithash}{4ecbea03efd0532989d3836d1a048c32}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Pattern recognition}
+      \field{number}{7}
+      \field{title}{The use of the area under the ROC curve in the evaluation of machine learning algorithms}
+      \field{volume}{30}
+      \field{year}{1997}
+      \field{pages}{1145\bibrangedash 1159}
+      \range{pages}{15}
     \endentry
     \entry{Button2013}{article}{}
       \name{author}{7}{}{%
@@ -8506,59 +8556,58 @@
       \endverb
     \endentry
   \endsortlist
-  \missing{Oja1997}
-  \missing{Medina2008}
-  \missing{kovalev2001three}
-  \missing{Martinez-Murcia2014}
-  \missing{FastICA99}
-  \missing{Vapnik1982}
-  \missing{Alvarez2009}
-  \missing{soh1999texture}
-  \missing{PPMI}
-  \missing{Ramirez2009}
-  \missing{McGee2002}
-  \missing{Locatelli1998}
-  \missing{Ortiz2013}
-  \missing{IAIllan2010}
-  \missing{Ojala1996}
-  \missing{Zhao2007}
-  \missing{martinez2013functional}
-  \missing{Hyvarinen1999}
-  \missing{xu2009source}
-  \missing{dougall_systematic_2004}
-  \missing{han2006reliability}
-  \missing{Kohavi1995a}
-  \missing{SaeysInzaLarranaga2007}
-  \missing{AAL}
-  \missing{DaelemansHosteMeulderEtAl2003}
-  \missing{Illan2014}
-  \missing{Inititative2010}
-  \missing{Zhou2008}
-  \missing{sikio2015mr}
-  \missing{jobst_accurate_1998}
-  \missing{Yen1995}
-  \missing{Rojas2012}
-  \missing{Fischl2004}
-  \missing{Jong2008}
-  \missing{martinez2013texture}
-  \missing{Illan2012}
-  \missing{Hyvarinen2000}
   \missing{Vardi1985}
-  \missing{chan2001patterns}
-  \missing{Shaffer1995}
+  \missing{xu2009source}
   \missing{Chen2008}
-  \missing{Tzourio-Mazoyer2002}
-  \missing{Shepp82}
-  \missing{Fay10}
-  \missing{Botev2010}
-  \missing{clausi2002analysis}
-  \missing{Unay2007}
+  \missing{Locatelli1998}
+  \missing{chan2001patterns}
+  \missing{jobst_accurate_1998}
   \missing{Ram'irez2009}
+  \missing{Inititative2010}
   \missing{Grana2011}
-  \missing{Evans1993}
-  \missing{Giannakopoulos1998}
+  \missing{AAL}
+  \missing{Unay2007}
+  \missing{IAIllan2010}
+  \missing{Botev2010}
+  \missing{Yen1995}
   \missing{Segovia2012}
+  \missing{Fischl2004}
+  \missing{han2006reliability}
+  \missing{Tzourio-Mazoyer2002}
+  \missing{martinez2013texture}
+  \missing{Giannakopoulos1998}
+  \missing{Ojala1996}
+  \missing{FastICA99}
+  \missing{Zhao2007}
+  \missing{Rojas2012}
+  \missing{Vapnik1982}
+  \missing{clausi2002analysis}
+  \missing{Jong2008}
+  \missing{Ortiz2013}
+  \missing{Ramirez2009}
+  \missing{SaeysInzaLarranaga2007}
+  \missing{Hyvarinen2000}
+  \missing{Martinez-Murcia2014}
+  \missing{Illan2012}
+  \missing{Zhou2008}
+  \missing{Hyvarinen1999}
+  \missing{Medina2008}
+  \missing{PPMI}
+  \missing{DaelemansHosteMeulderEtAl2003}
+  \missing{dougall_systematic_2004}
+  \missing{Illan2014}
+  \missing{soh1999texture}
+  \missing{Oja1997}
+  \missing{Shaffer1995}
+  \missing{kovalev2001three}
+  \missing{Alvarez2009}
+  \missing{Kohavi1995a}
   \missing{Harman73}
+  \missing{sikio2015mr}
+  \missing{Fay10}
+  \missing{Shepp82}
+  \missing{Evans1993}
+  \missing{McGee2002}
 \endrefsection
 
 \refsection{1}
