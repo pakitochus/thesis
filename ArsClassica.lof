@@ -24,211 +24,211 @@
 \defcounter {refsection}{0}\relax 
 \addvspace {10\p@ }
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {2.1}{\ignorespaces Example of T1 and T2-weighted MRI images.}}{10}{figure.caption.28}
+\contentsline {figure}{\numberline {2.1}{\ignorespaces Example of T1 and T2-weighted MRI images.}}{12}{figure.caption.28}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {2.2}{\ignorespaces Example of SPECT images.}}{12}{figure.caption.35}
+\contentsline {figure}{\numberline {2.2}{\ignorespaces Example of SPECT images.}}{14}{figure.caption.35}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {2.3}{\ignorespaces Example of a PET-FDG image.}}{13}{figure.caption.38}
+\contentsline {figure}{\numberline {2.3}{\ignorespaces Example of a PET-FDG image.}}{15}{figure.caption.38}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {2.4}{\ignorespaces Example of a \acs {SPM} analysis on a \acs {PET} dataset.}}{17}{figure.caption.48}
+\contentsline {figure}{\numberline {2.4}{\ignorespaces Example of a \acs {SPM} analysis on a \acs {PET} dataset.}}{19}{figure.caption.48}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {2.5}{\ignorespaces Illustration of a typical neuroimaging CAD system.}}{22}{figure.caption.51}
-\defcounter {refsection}{0}\relax 
-\addvspace {10\p@ }
-\defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {3.1}{\ignorespaces Typical pre-processing pipeline in MRI}}{25}{figure.caption.53}
-\defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {3.2}{\ignorespaces Comparison of the affine registration and the application of non-linear transformations to the images}}{28}{figure.caption.55}
-\defcounter {refsection}{0}\relax 
-\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Comparison in \ac {MRI}.}}}{28}{subfigure.2.1}
-\defcounter {refsection}{0}\relax 
-\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Comparison in \ac {PET}.}}}{28}{subfigure.2.2}
-\defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {3.3}{\ignorespaces Comparison between different types of intensity normalization, applied to the VDLN-DAT dataset (see Appendix~\ref {ch:datasets}).\relax }}{31}{figure.caption.62}
-\defcounter {refsection}{0}\relax 
-\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Normalization to the Maximum.}}}{31}{subfigure.3.1}
-\defcounter {refsection}{0}\relax 
-\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Integral Normalization.}}}{31}{subfigure.3.2}
-\defcounter {refsection}{0}\relax 
-\contentsline {subfigure}{\numberline {(c)}{\ignorespaces {Normalization using $\alpha $-stable distribution.}}}{31}{subfigure.3.3}
+\contentsline {figure}{\numberline {2.5}{\ignorespaces Illustration of a typical neuroimaging CAD system.}}{24}{figure.caption.51}
 \defcounter {refsection}{0}\relax 
 \addvspace {10\p@ }
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {4.1}{\ignorespaces Illustration of how decomposition algorithms work.}}{35}{figure.caption.63}
+\contentsline {figure}{\numberline {3.1}{\ignorespaces Typical pre-processing pipeline in MRI}}{27}{figure.caption.53}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {4.2}{\ignorespaces Illustration of the system used in Chapter~\ref {ch:decomposition} .}}{36}{figure.caption.64}
+\contentsline {figure}{\numberline {3.2}{\ignorespaces Comparison of the affine registration and the application of non-linear transformations to the images}}{30}{figure.caption.55}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {4.3}{\ignorespaces Several selected slices of the significance map obtained for each brain coordinate by applying the Relative Entropy criterium to the ADNI database.\relax }}{38}{figure.caption.65}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Comparison in \ac {MRI}.}}}{30}{subfigure.2.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {4.4}{\ignorespaces \textit {a)} Original PET image composed by $N=7000$ selected voxels and \textit {b)} reconstruction using Factor Analysis with $K=13$ factors extracted.\relax }}{39}{figure.caption.66}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Comparison in \ac {PET}.}}}{30}{subfigure.2.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {4.5}{\ignorespaces Specific variance of reconstruction error $\Psi $ using Factor Analysis, in function of number of factors extracted ($K$) for ADNI database (the behaviour is similar in other datasets).\relax }}{40}{figure.caption.67}
+\contentsline {figure}{\numberline {3.3}{\ignorespaces Comparison between different types of intensity normalization, applied to the VDLN-DAT dataset (see Appendix~\ref {ch:datasets}).\relax }}{33}{figure.caption.62}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {4.6}{\ignorespaces Average performance and standard deviation of the proposed system using the two \ac {AD} datasets, \ac {FA} and the three feature selection criteria: $t$-test (\subref {fig:AD-AV-FA-TTEST-VSN} and \subref {fig:AD-AV-FA-TTEST-VSK}), relative entropy (\subref {fig:PKS-AV-FA-ENTROPY-VSN} and \subref {fig:AD-AV-FA-ENTROPY-VSK}) and wilcoxon (\subref {fig:AD-AV-FA-WILCOXON-VSN} and \subref {fig:AD-AV-FA-WILCOXON-VSK}). \relax }}{43}{figure.caption.68}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Normalization to the Maximum.}}}{33}{subfigure.3.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {}}}{43}{subfigure.6.1}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Integral Normalization.}}}{33}{subfigure.3.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {}}}{43}{subfigure.6.2}
-\defcounter {refsection}{0}\relax 
-\contentsline {subfigure}{\numberline {(c)}{\ignorespaces {}}}{43}{subfigure.6.3}
-\defcounter {refsection}{0}\relax 
-\contentsline {subfigure}{\numberline {(d)}{\ignorespaces {}}}{43}{subfigure.6.4}
-\defcounter {refsection}{0}\relax 
-\contentsline {subfigure}{\numberline {(e)}{\ignorespaces {}}}{43}{subfigure.6.5}
-\defcounter {refsection}{0}\relax 
-\contentsline {subfigure}{\numberline {(f)}{\ignorespaces {}}}{43}{subfigure.6.6}
-\defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {4.7}{\ignorespaces Average performance and standard deviation of the proposed system using the three \ac {AD} datasets, \ac {ICA} and the three feature selection criteria: $t$-test (\subref {fig:AD-AV-ICA-TTEST-VSN} and \subref {fig:AD-AV-ICA-TTEST-VSK}), relative entropy (\subref {fig:AD-AV-ICA-ENTROPY-VSN} and \subref {fig:AD-AV-ICA-ENTROPY-VSK}) and wilcoxon (\subref {fig:AD-AV-ICA-WILCOXON-VSN} and \subref {fig:AD-AV-ICA-WILCOXON-VSK}). \relax }}{45}{figure.caption.69}
-\defcounter {refsection}{0}\relax 
-\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {}}}{45}{subfigure.7.1}
-\defcounter {refsection}{0}\relax 
-\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {}}}{45}{subfigure.7.2}
-\defcounter {refsection}{0}\relax 
-\contentsline {subfigure}{\numberline {(c)}{\ignorespaces {}}}{45}{subfigure.7.3}
-\defcounter {refsection}{0}\relax 
-\contentsline {subfigure}{\numberline {(d)}{\ignorespaces {}}}{45}{subfigure.7.4}
-\defcounter {refsection}{0}\relax 
-\contentsline {subfigure}{\numberline {(e)}{\ignorespaces {}}}{45}{subfigure.7.5}
-\defcounter {refsection}{0}\relax 
-\contentsline {subfigure}{\numberline {(f)}{\ignorespaces {}}}{45}{subfigure.7.6}
-\defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {4.8}{\ignorespaces Performance of the proposed system using the two \ac {AD} datasets: ADNI-PET and VDLN-HMPAO at the operation point, and how they vary over the number of components used in the decomposition. \relax }}{46}{figure.caption.70}
-\defcounter {refsection}{0}\relax 
-\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {}}}{46}{subfigure.8.1}
-\defcounter {refsection}{0}\relax 
-\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {}}}{46}{subfigure.8.2}
-\defcounter {refsection}{0}\relax 
-\contentsline {subfigure}{\numberline {(c)}{\ignorespaces {}}}{46}{subfigure.8.3}
-\defcounter {refsection}{0}\relax 
-\contentsline {subfigure}{\numberline {(d)}{\ignorespaces {}}}{46}{subfigure.8.4}
-\defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {4.9}{\ignorespaces Average performance and standard deviation of the proposed system using the three \ac {PKS} datasets, \ac {FA} and the three feature selection criteria: $t$-test (\subref {fig:PKS-AV-FA-TTEST-VSN} and \subref {fig:PKS-AV-FA-TTEST-VSK}), relative entropy (\subref {fig:PKS-AV-FA-ENTROPY-VSN} and \subref {fig:PKS-AV-FA-ENTROPY-VSK}) and wilcoxon (\subref {fig:PKS-AV-FA-WILCOXON-VSN} and \subref {fig:PKS-AV-FA-WILCOXON-VSK}). \relax }}{48}{figure.caption.72}
-\defcounter {refsection}{0}\relax 
-\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {}}}{48}{subfigure.9.1}
-\defcounter {refsection}{0}\relax 
-\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {}}}{48}{subfigure.9.2}
-\defcounter {refsection}{0}\relax 
-\contentsline {subfigure}{\numberline {(c)}{\ignorespaces {}}}{48}{subfigure.9.3}
-\defcounter {refsection}{0}\relax 
-\contentsline {subfigure}{\numberline {(d)}{\ignorespaces {}}}{48}{subfigure.9.4}
-\defcounter {refsection}{0}\relax 
-\contentsline {subfigure}{\numberline {(e)}{\ignorespaces {}}}{48}{subfigure.9.5}
-\defcounter {refsection}{0}\relax 
-\contentsline {subfigure}{\numberline {(f)}{\ignorespaces {}}}{48}{subfigure.9.6}
-\defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {4.10}{\ignorespaces Average performance and standard deviation of the proposed system using the three \ac {PKS} datasets, \ac {ICA} and the three feature selection criteria: $t$-test (\subref {fig:PKS-AV-ICA-TTEST-VSN} and \subref {fig:PKS-AV-ICA-TTEST-VSK}), relative entropy (\subref {fig:PKS-AV-ICA-ENTROPY-VSN} and \subref {fig:PKS-AV-ICA-ENTROPY-VSK}) and wilcoxon (\subref {fig:PKS-AV-ICA-WILCOXON-VSN} and \subref {fig:PKS-AV-ICA-WILCOXON-VSK}). \relax }}{49}{figure.caption.73}
-\defcounter {refsection}{0}\relax 
-\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {}}}{49}{subfigure.10.1}
-\defcounter {refsection}{0}\relax 
-\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {}}}{49}{subfigure.10.2}
-\defcounter {refsection}{0}\relax 
-\contentsline {subfigure}{\numberline {(c)}{\ignorespaces {}}}{49}{subfigure.10.3}
-\defcounter {refsection}{0}\relax 
-\contentsline {subfigure}{\numberline {(d)}{\ignorespaces {}}}{49}{subfigure.10.4}
-\defcounter {refsection}{0}\relax 
-\contentsline {subfigure}{\numberline {(e)}{\ignorespaces {}}}{49}{subfigure.10.5}
-\defcounter {refsection}{0}\relax 
-\contentsline {subfigure}{\numberline {(f)}{\ignorespaces {}}}{49}{subfigure.10.6}
-\defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {4.11}{\ignorespaces Performance of the proposed system using the two \ac {PKS} datasets: PPMI-DAT, VDLN-DAT and VDLV-DAT at the operation point, and how they vary over the number of components used in the decomposition. \relax }}{50}{figure.caption.74}
-\defcounter {refsection}{0}\relax 
-\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {}}}{50}{subfigure.11.1}
-\defcounter {refsection}{0}\relax 
-\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {}}}{50}{subfigure.11.2}
-\defcounter {refsection}{0}\relax 
-\contentsline {subfigure}{\numberline {(c)}{\ignorespaces {}}}{50}{subfigure.11.3}
-\defcounter {refsection}{0}\relax 
-\contentsline {subfigure}{\numberline {(d)}{\ignorespaces {}}}{50}{subfigure.11.4}
-\defcounter {refsection}{0}\relax 
-\contentsline {subfigure}{\numberline {(e)}{\ignorespaces {}}}{50}{subfigure.11.5}
-\defcounter {refsection}{0}\relax 
-\contentsline {subfigure}{\numberline {(f)}{\ignorespaces {}}}{50}{subfigure.11.6}
+\contentsline {subfigure}{\numberline {(c)}{\ignorespaces {Normalization using $\alpha $-stable distribution.}}}{33}{subfigure.3.3}
 \defcounter {refsection}{0}\relax 
 \addvspace {10\p@ }
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {5.1}{\ignorespaces Average accuracy values obtained for \subref {fig:acc_dist} the single approach and \subref {fig:acc_cum} the cumulative approach.\relax }}{56}{figure.caption.76}
+\contentsline {figure}{\numberline {4.1}{\ignorespaces Illustration of how decomposition algorithms work.}}{37}{figure.caption.63}
 \defcounter {refsection}{0}\relax 
-\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Single approach}}}{56}{subfigure.1.1}
+\contentsline {figure}{\numberline {4.2}{\ignorespaces Illustration of the system used in Chapter~\ref {ch:decomposition} .}}{38}{figure.caption.64}
 \defcounter {refsection}{0}\relax 
-\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Cumulative approach}}}{56}{subfigure.1.2}
+\contentsline {figure}{\numberline {4.3}{\ignorespaces Several selected slices of the significance map obtained for each brain coordinate by applying the Relative Entropy criterium to the ADNI database.\relax }}{40}{figure.caption.65}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {5.2}{\ignorespaces Box plot of all 130 accuracy values computed for each feature, using the ''single approach'', at 10 distances $d$ (ranging from 1 to 10) and 13 spatial directions, for \subref {fig:acc_distances_ppmi} PPMI database, \subref {fig:acc_distances_vdlv} VDLV database and \subref {fig:acc_distances_vdln} VDLN database. The red marks represent the outliers.\relax }}{57}{figure.caption.77}
+\contentsline {figure}{\numberline {4.4}{\ignorespaces \textit {a)} Original PET image composed by $N=7000$ selected voxels and \textit {b)} reconstruction using Factor Analysis with $K=13$ factors extracted.\relax }}{41}{figure.caption.66}
 \defcounter {refsection}{0}\relax 
-\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {PPMI database}}}{57}{subfigure.2.1}
+\contentsline {figure}{\numberline {4.5}{\ignorespaces Specific variance of reconstruction error $\Psi $ using Factor Analysis, in function of number of factors extracted ($K$) for ADNI database (the behaviour is similar in other datasets).\relax }}{42}{figure.caption.67}
 \defcounter {refsection}{0}\relax 
-\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {VDLN database}}}{57}{subfigure.2.2}
+\contentsline {figure}{\numberline {4.6}{\ignorespaces Average performance and standard deviation of the proposed system using the two \ac {AD} datasets, \ac {FA} and the three feature selection criteria: $t$-test (\subref {fig:AD-AV-FA-TTEST-VSN} and \subref {fig:AD-AV-FA-TTEST-VSK}), relative entropy (\subref {fig:PKS-AV-FA-ENTROPY-VSN} and \subref {fig:AD-AV-FA-ENTROPY-VSK}) and wilcoxon (\subref {fig:AD-AV-FA-WILCOXON-VSN} and \subref {fig:AD-AV-FA-WILCOXON-VSK}). \relax }}{45}{figure.caption.68}
 \defcounter {refsection}{0}\relax 
-\contentsline {subfigure}{\numberline {(c)}{\ignorespaces {VDLV database}}}{57}{subfigure.2.3}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {}}}{45}{subfigure.6.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {5.3}{\ignorespaces Accuracy obtained by averaging all accuracy values using a given volume selection threshold $I_{th}$\relax }}{59}{figure.caption.79}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {}}}{45}{subfigure.6.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {5.4}{\ignorespaces Average accuracy computed for each selection criteria, using all accuracy values for intensity thresholds of $0.10$ to $0.45$. These values are plotted over $N$, the number of features selected using some of the ranking criteria defined in Sec. \ref {sec:discrimination} (where $N$ ranges from 1\% and 100\% of the $1560$ total Haralick features calculated). These values correspond to the images of the \subref {fig:experiment4-ppmi} PPMI database, \subref {fig:experiment4-vdlv} VDLV database and \subref {fig:experiment4-vdln} VDLN database (experiment 2).\relax }}{60}{figure.caption.80}
+\contentsline {subfigure}{\numberline {(c)}{\ignorespaces {}}}{45}{subfigure.6.3}
 \defcounter {refsection}{0}\relax 
-\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {PPMI database}}}{60}{subfigure.4.1}
+\contentsline {subfigure}{\numberline {(d)}{\ignorespaces {}}}{45}{subfigure.6.4}
 \defcounter {refsection}{0}\relax 
-\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {VDLN database}}}{60}{subfigure.4.2}
+\contentsline {subfigure}{\numberline {(e)}{\ignorespaces {}}}{45}{subfigure.6.5}
 \defcounter {refsection}{0}\relax 
-\contentsline {subfigure}{\numberline {(c)}{\ignorespaces {VDLV database}}}{60}{subfigure.4.3}
+\contentsline {subfigure}{\numberline {(f)}{\ignorespaces {}}}{45}{subfigure.6.6}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {4.7}{\ignorespaces Average performance and standard deviation of the proposed system using the three \ac {AD} datasets, \ac {ICA} and the three feature selection criteria: $t$-test (\subref {fig:AD-AV-ICA-TTEST-VSN} and \subref {fig:AD-AV-ICA-TTEST-VSK}), relative entropy (\subref {fig:AD-AV-ICA-ENTROPY-VSN} and \subref {fig:AD-AV-ICA-ENTROPY-VSK}) and wilcoxon (\subref {fig:AD-AV-ICA-WILCOXON-VSN} and \subref {fig:AD-AV-ICA-WILCOXON-VSK}). \relax }}{47}{figure.caption.69}
+\defcounter {refsection}{0}\relax 
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {}}}{47}{subfigure.7.1}
+\defcounter {refsection}{0}\relax 
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {}}}{47}{subfigure.7.2}
+\defcounter {refsection}{0}\relax 
+\contentsline {subfigure}{\numberline {(c)}{\ignorespaces {}}}{47}{subfigure.7.3}
+\defcounter {refsection}{0}\relax 
+\contentsline {subfigure}{\numberline {(d)}{\ignorespaces {}}}{47}{subfigure.7.4}
+\defcounter {refsection}{0}\relax 
+\contentsline {subfigure}{\numberline {(e)}{\ignorespaces {}}}{47}{subfigure.7.5}
+\defcounter {refsection}{0}\relax 
+\contentsline {subfigure}{\numberline {(f)}{\ignorespaces {}}}{47}{subfigure.7.6}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {4.8}{\ignorespaces Performance of the proposed system using the two \ac {AD} datasets: ADNI-PET and VDLN-HMPAO at the operation point, and how they vary over the number of components used in the decomposition. \relax }}{48}{figure.caption.70}
+\defcounter {refsection}{0}\relax 
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {}}}{48}{subfigure.8.1}
+\defcounter {refsection}{0}\relax 
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {}}}{48}{subfigure.8.2}
+\defcounter {refsection}{0}\relax 
+\contentsline {subfigure}{\numberline {(c)}{\ignorespaces {}}}{48}{subfigure.8.3}
+\defcounter {refsection}{0}\relax 
+\contentsline {subfigure}{\numberline {(d)}{\ignorespaces {}}}{48}{subfigure.8.4}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {4.9}{\ignorespaces Average performance and standard deviation of the proposed system using the three \ac {PKS} datasets, \ac {FA} and the three feature selection criteria: $t$-test (\subref {fig:PKS-AV-FA-TTEST-VSN} and \subref {fig:PKS-AV-FA-TTEST-VSK}), relative entropy (\subref {fig:PKS-AV-FA-ENTROPY-VSN} and \subref {fig:PKS-AV-FA-ENTROPY-VSK}) and wilcoxon (\subref {fig:PKS-AV-FA-WILCOXON-VSN} and \subref {fig:PKS-AV-FA-WILCOXON-VSK}). \relax }}{50}{figure.caption.72}
+\defcounter {refsection}{0}\relax 
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {}}}{50}{subfigure.9.1}
+\defcounter {refsection}{0}\relax 
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {}}}{50}{subfigure.9.2}
+\defcounter {refsection}{0}\relax 
+\contentsline {subfigure}{\numberline {(c)}{\ignorespaces {}}}{50}{subfigure.9.3}
+\defcounter {refsection}{0}\relax 
+\contentsline {subfigure}{\numberline {(d)}{\ignorespaces {}}}{50}{subfigure.9.4}
+\defcounter {refsection}{0}\relax 
+\contentsline {subfigure}{\numberline {(e)}{\ignorespaces {}}}{50}{subfigure.9.5}
+\defcounter {refsection}{0}\relax 
+\contentsline {subfigure}{\numberline {(f)}{\ignorespaces {}}}{50}{subfigure.9.6}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {4.10}{\ignorespaces Average performance and standard deviation of the proposed system using the three \ac {PKS} datasets, \ac {ICA} and the three feature selection criteria: $t$-test (\subref {fig:PKS-AV-ICA-TTEST-VSN} and \subref {fig:PKS-AV-ICA-TTEST-VSK}), relative entropy (\subref {fig:PKS-AV-ICA-ENTROPY-VSN} and \subref {fig:PKS-AV-ICA-ENTROPY-VSK}) and wilcoxon (\subref {fig:PKS-AV-ICA-WILCOXON-VSN} and \subref {fig:PKS-AV-ICA-WILCOXON-VSK}). \relax }}{51}{figure.caption.73}
+\defcounter {refsection}{0}\relax 
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {}}}{51}{subfigure.10.1}
+\defcounter {refsection}{0}\relax 
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {}}}{51}{subfigure.10.2}
+\defcounter {refsection}{0}\relax 
+\contentsline {subfigure}{\numberline {(c)}{\ignorespaces {}}}{51}{subfigure.10.3}
+\defcounter {refsection}{0}\relax 
+\contentsline {subfigure}{\numberline {(d)}{\ignorespaces {}}}{51}{subfigure.10.4}
+\defcounter {refsection}{0}\relax 
+\contentsline {subfigure}{\numberline {(e)}{\ignorespaces {}}}{51}{subfigure.10.5}
+\defcounter {refsection}{0}\relax 
+\contentsline {subfigure}{\numberline {(f)}{\ignorespaces {}}}{51}{subfigure.10.6}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {4.11}{\ignorespaces Performance of the proposed system using the two \ac {PKS} datasets: PPMI-DAT, VDLN-DAT and VDLV-DAT at the operation point, and how they vary over the number of components used in the decomposition. \relax }}{52}{figure.caption.74}
+\defcounter {refsection}{0}\relax 
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {}}}{52}{subfigure.11.1}
+\defcounter {refsection}{0}\relax 
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {}}}{52}{subfigure.11.2}
+\defcounter {refsection}{0}\relax 
+\contentsline {subfigure}{\numberline {(c)}{\ignorespaces {}}}{52}{subfigure.11.3}
+\defcounter {refsection}{0}\relax 
+\contentsline {subfigure}{\numberline {(d)}{\ignorespaces {}}}{52}{subfigure.11.4}
+\defcounter {refsection}{0}\relax 
+\contentsline {subfigure}{\numberline {(e)}{\ignorespaces {}}}{52}{subfigure.11.5}
+\defcounter {refsection}{0}\relax 
+\contentsline {subfigure}{\numberline {(f)}{\ignorespaces {}}}{52}{subfigure.11.6}
 \defcounter {refsection}{0}\relax 
 \addvspace {10\p@ }
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {6.1}{\ignorespaces Flow diagram of the procedure used in the textural analysis of projected MR brain images.\relax }}{63}{figure.caption.83}
+\contentsline {figure}{\numberline {5.1}{\ignorespaces Average accuracy values obtained for \subref {fig:acc_dist} the single approach and \subref {fig:acc_cum} the cumulative approach.\relax }}{58}{figure.caption.76}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {6.2}{\ignorespaces Illustration of the computation of the mapping vector $\mathbf {v}_{\theta ,\varphi }$, the angles $\theta $ and $\varphi $ and the $r$-neighbourhood of $\mathbf {v}$ (see Section~\ref {sec:vrlbp}).\relax }}{65}{figure.caption.86}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Single approach}}}{58}{subfigure.1.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {6.3}{\ignorespaces Resulting \ac {GM} and \ac {WM} maps of the same control subject using the six proposed measures: Surface, Thickness, Number of Folds, Average, Entropy and Kurtosis.\relax }}{67}{figure.caption.87}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Cumulative approach}}}{58}{subfigure.1.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {6.4}{\ignorespaces An example of the VRLBP projection for \ac {GM} and \ac {WM} Tissues. \relax }}{69}{figure.caption.88}
+\contentsline {figure}{\numberline {5.2}{\ignorespaces Box plot of all 130 accuracy values computed for each feature, using the ''single approach'', at 10 distances $d$ (ranging from 1 to 10) and 13 spatial directions, for \subref {fig:acc_distances_ppmi} PPMI database, \subref {fig:acc_distances_vdlv} VDLV database and \subref {fig:acc_distances_vdln} VDLN database. The red marks represent the outliers.\relax }}{59}{figure.caption.77}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {6.5}{\ignorespaces Set of \acs {HMM} based paths over the MRI DARTEL template.}}{74}{figure.caption.90}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {PPMI database}}}{59}{subfigure.2.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {6.6}{\ignorespaces Projection of different cortical regions. In the Frontal region, we can find: 1) Frontal Sup., 2) Frontal Mid., 3) Frontal Inf. Oper., 4) Frontal Inf. Tri., 5) Frontal Sup. Orb, 6) Frontal Mid. Orb, 7) Frontal Inf. Orb, 8) Frontal Sup. Medial, 9) Rectus, 10) Frontal Med. Orb., 11) Precentral, 12) Supp. Motor Area. In the Parietal region: 13) Paracentral Lobe, 14) Postcentral, 15) Parietal Sup., 16) Parietal Inf., 17) Supramarginal, 18) Angular. In the Occipital region: 19) Precuneus, 20) Cuneus, 21) Occipital Sup., 22) Occipital Mid., 23) Occipital Inf., 24) Lingual. In the Temporal region: 25) Temporal Sup., 26) Temporal Pole Sup., 27) Temporal Mid., 28) Temporal Pole Mid., 29) Temporal Inf, 30) Fusiform, 31) Parahippocampal. The Cerebellum, divided in: 32) Cerebelum Crus 1, 33) Cerebelum 3, 34) Cerebelum 4-5, 35) Cerebelum 6, 36) Cerebelum 7b, 37) Cerebelum 8, 38) Cerebelum 9, 39) Cerebelum 10. And additionally, the 40) Medulla, 41) Brain Stem and 42) Insula.\relax }}{77}{figure.caption.91}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {VDLN database}}}{59}{subfigure.2.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {6.7}{\ignorespaces Projection of some important subcortical regions and organs. We observe the following subcortical structures: 1) Caudate Nucleus, 2) Olfactory Bulb, 3) Rolandic Operculum, 4) Heschl's gyri, 5) Putamen, 6) Globus Pallidus, 7) Amygdala, 8) Hippocampus, 9) Thalamus, 10) Lingual, 11) Vermis 4-5, 12) Vermis 7, 13) Vermis 9, 14) Vermis 1-2, 15) Cingulate Gyrus, 16) Corpus Callosum\relax }}{77}{figure.caption.92}
+\contentsline {subfigure}{\numberline {(c)}{\ignorespaces {VDLV database}}}{59}{subfigure.2.3}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {6.8}{\ignorespaces $t$-maps that present the level of statistical relevance in the AD vs. NC paradigm, for each type of mapping and \ac {GM} and \ac {WM}. \relax }}{78}{figure.caption.93}
+\contentsline {figure}{\numberline {5.3}{\ignorespaces Accuracy obtained by averaging all accuracy values using a given volume selection threshold $I_{th}$\relax }}{61}{figure.caption.79}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {6.9}{\ignorespaces $t$-maps that present the level of statistical relevance in the AD vs. NC paradigm, for a four-layered average mapping over a) \ac {GM} and b) \ac {WM}. \relax }}{80}{figure.caption.94}
+\contentsline {figure}{\numberline {5.4}{\ignorespaces Average accuracy computed for each selection criteria, using all accuracy values for intensity thresholds of $0.10$ to $0.45$. These values are plotted over $N$, the number of features selected using some of the ranking criteria defined in Sec. \ref {sec:discrimination} (where $N$ ranges from 1\% and 100\% of the $1560$ total Haralick features calculated). These values correspond to the images of the \subref {fig:experiment4-ppmi} PPMI database, \subref {fig:experiment4-vdlv} VDLV database and \subref {fig:experiment4-vdln} VDLN database (experiment 2).\relax }}{62}{figure.caption.80}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {6.10}{\ignorespaces $t$-maps that present the level of statistical relevance in the AD vs. NC paradigm, for the VRLBP projections mapping over a) \ac {GM} and b) \ac {WM}. \relax }}{81}{figure.caption.95}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {PPMI database}}}{62}{subfigure.4.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {6.11}{\ignorespaces Performance for the different \ac {SBM} approaches over the: a) Grey Matter and b) White Matter.\relax }}{84}{figure.caption.98}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {VDLN database}}}{62}{subfigure.4.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {6.12}{\ignorespaces Performance for the different four-layered mappings over the: a) Grey Matter and b) White Matter at different levels of statistical significance.\relax }}{85}{figure.caption.99}
-\defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {6.13}{\ignorespaces Path traced over a gaussian mixture distribution of 4 isotropic gaussian kernels.\relax }}{86}{figure.caption.100}
-\defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {6.14}{\ignorespaces \ac {HMM} path computed inside a density distribution defined by an helix.\relax }}{87}{figure.caption.101}
-\defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {6.15}{\ignorespaces Simulation of the \ac {HMM}-based path tracing over an Iberian Peninsula height map, interconecting different cities.\relax }}{88}{figure.caption.102}
-\defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {6.16}{\ignorespaces DARTEL paths computed in each direction ($\varphi ,\theta $). Each path's colour represent the accuracy in a differential diagnosis. Only one in every five paths are shown for clarity purposes.\relax }}{89}{figure.caption.103}
-\defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {6.17}{\ignorespaces Performance at the operation point for the different mappings over the Grey Matter and White Matter, compared with the performance of \ac {VAF}.\relax }}{91}{figure.caption.107}
-\defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {6.18}{\ignorespaces ROC curves of the different mappings for the \ac {GM} and \ac {WM} tissues.\relax }}{93}{figure.caption.108}
-\defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {6.19}{\ignorespaces Paths that obtain more than 75\% accuracy, and a three-dimensional representation of the structures crossed by them.\relax }}{96}{figure.caption.109}
+\contentsline {subfigure}{\numberline {(c)}{\ignorespaces {VDLV database}}}{62}{subfigure.4.3}
 \defcounter {refsection}{0}\relax 
 \addvspace {10\p@ }
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {7.1}{\ignorespaces Summary of the \acs {SWPCA} algorithm, along with its context in the pipeline used in this article.}}{103}{figure.caption.111}
+\contentsline {figure}{\numberline {6.1}{\ignorespaces Flow diagram of the procedure used in the textural analysis of projected MR brain images.\relax }}{65}{figure.caption.83}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {7.2}{\ignorespaces Weighting function $\Lambda _c(p_c,p_{th})$ used in \acs {SWPCA}.}}{105}{figure.caption.113}
+\contentsline {figure}{\numberline {6.2}{\ignorespaces Illustration of the computation of the mapping vector $\mathbf {v}_{\theta ,\varphi }$, the angles $\theta $ and $\varphi $ and the $r$-neighbourhood of $\mathbf {v}$ (see Section~\ref {sec:vrlbp}).\relax }}{67}{figure.caption.86}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {7.3}{\ignorespaces Box-plot of the distribution of the component scores at each site of the AIMS-MRI dataset (see Sections~\ref {sec:swpcaAIMSresults} and \ref {sec:aims-mri}) in the four first components.}}{105}{figure.caption.114}
+\contentsline {figure}{\numberline {6.3}{\ignorespaces Resulting \ac {GM} and \ac {WM} maps of the same control subject using the six proposed measures: Surface, Thickness, Number of Folds, Average, Entropy and Kurtosis.\relax }}{69}{figure.caption.87}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {7.4}{\ignorespaces Brain t-map (\acs {VBM}) of significant ($p<0.01$, $|t|>2.57$) \acs {GM} and \acs {WM} between-group differences using \acs {qT1}, \acs {qT2}, \acs {synT1}, \acs {GM} and \acs {WM} modalities after applying \acs {SWPCA} to remove site effects.}}{108}{figure.caption.117}
+\contentsline {figure}{\numberline {6.4}{\ignorespaces An example of the VRLBP projection for \ac {GM} and \ac {WM} Tissues. \relax }}{71}{figure.caption.88}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {7.5}{\ignorespaces Brain t-map (\acs {VBM}) of significant ($p<0.01$, $|t|>2.57$) \acs {GM} and \acs {WM} differences in \acs {ASD} using \acs {qT1}, \acs {qT2}, \acs {synT1}, \acs {GM} and \acs {WM} maps before and after applying \acs {SWPCA} to remove site effects.}}{112}{figure.caption.120}
+\contentsline {figure}{\numberline {6.5}{\ignorespaces Set of \acs {HMM} based paths over the MRI DARTEL template.}}{76}{figure.caption.90}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {7.6}{\ignorespaces Brain Z-map (\acs {CBM}) of significant ($p<0.01$, $|t|>2.57$) \acs {GM} and \acs {WM} differences using \acs {qT1}, \acs {qT2}, \acs {synT1}, \acs {GM} and \acs {WM} maps before and after applying \acs {SWPCA} to remove site effects.}}{114}{figure.caption.121}
+\contentsline {figure}{\numberline {6.6}{\ignorespaces Projection of different cortical regions. In the Frontal region, we can find: 1) Frontal Sup., 2) Frontal Mid., 3) Frontal Inf. Oper., 4) Frontal Inf. Tri., 5) Frontal Sup. Orb, 6) Frontal Mid. Orb, 7) Frontal Inf. Orb, 8) Frontal Sup. Medial, 9) Rectus, 10) Frontal Med. Orb., 11) Precentral, 12) Supp. Motor Area. In the Parietal region: 13) Paracentral Lobe, 14) Postcentral, 15) Parietal Sup., 16) Parietal Inf., 17) Supramarginal, 18) Angular. In the Occipital region: 19) Precuneus, 20) Cuneus, 21) Occipital Sup., 22) Occipital Mid., 23) Occipital Inf., 24) Lingual. In the Temporal region: 25) Temporal Sup., 26) Temporal Pole Sup., 27) Temporal Mid., 28) Temporal Pole Mid., 29) Temporal Inf, 30) Fusiform, 31) Parahippocampal. The Cerebellum, divided in: 32) Cerebelum Crus 1, 33) Cerebelum 3, 34) Cerebelum 4-5, 35) Cerebelum 6, 36) Cerebelum 7b, 37) Cerebelum 8, 38) Cerebelum 9, 39) Cerebelum 10. And additionally, the 40) Medulla, 41) Brain Stem and 42) Insula.\relax }}{79}{figure.caption.91}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {6.7}{\ignorespaces Projection of some important subcortical regions and organs. We observe the following subcortical structures: 1) Caudate Nucleus, 2) Olfactory Bulb, 3) Rolandic Operculum, 4) Heschl's gyri, 5) Putamen, 6) Globus Pallidus, 7) Amygdala, 8) Hippocampus, 9) Thalamus, 10) Lingual, 11) Vermis 4-5, 12) Vermis 7, 13) Vermis 9, 14) Vermis 1-2, 15) Cingulate Gyrus, 16) Corpus Callosum\relax }}{79}{figure.caption.92}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {6.8}{\ignorespaces $t$-maps that present the level of statistical relevance in the AD vs. NC paradigm, for each type of mapping and \ac {GM} and \ac {WM}. \relax }}{80}{figure.caption.93}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {6.9}{\ignorespaces $t$-maps that present the level of statistical relevance in the AD vs. NC paradigm, for a four-layered average mapping over a) \ac {GM} and b) \ac {WM}. \relax }}{82}{figure.caption.94}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {6.10}{\ignorespaces $t$-maps that present the level of statistical relevance in the AD vs. NC paradigm, for the VRLBP projections mapping over a) \ac {GM} and b) \ac {WM}. \relax }}{83}{figure.caption.95}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {6.11}{\ignorespaces Performance for the different \ac {SBM} approaches over the: a) Grey Matter and b) White Matter.\relax }}{86}{figure.caption.98}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {6.12}{\ignorespaces Performance for the different four-layered mappings over the: a) Grey Matter and b) White Matter at different levels of statistical significance.\relax }}{87}{figure.caption.99}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {6.13}{\ignorespaces Path traced over a gaussian mixture distribution of 4 isotropic gaussian kernels.\relax }}{88}{figure.caption.100}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {6.14}{\ignorespaces \ac {HMM} path computed inside a density distribution defined by an helix.\relax }}{89}{figure.caption.101}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {6.15}{\ignorespaces Simulation of the \ac {HMM}-based path tracing over an Iberian Peninsula height map, interconecting different cities.\relax }}{90}{figure.caption.102}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {6.16}{\ignorespaces DARTEL paths computed in each direction ($\varphi ,\theta $). Each path's colour represent the accuracy in a differential diagnosis. Only one in every five paths are shown for clarity purposes.\relax }}{91}{figure.caption.103}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {6.17}{\ignorespaces Performance at the operation point for the different mappings over the Grey Matter and White Matter, compared with the performance of \ac {VAF}.\relax }}{93}{figure.caption.107}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {6.18}{\ignorespaces ROC curves of the different mappings for the \ac {GM} and \ac {WM} tissues.\relax }}{95}{figure.caption.108}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {6.19}{\ignorespaces Paths that obtain more than 75\% accuracy, and a three-dimensional representation of the structures crossed by them.\relax }}{98}{figure.caption.109}
 \defcounter {refsection}{0}\relax 
 \addvspace {10\p@ }
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {8.1}{\ignorespaces Schema of the brain image synthesis algorithm.\relax }}{121}{figure.caption.124}
+\contentsline {figure}{\numberline {7.1}{\ignorespaces Summary of the \acs {SWPCA} algorithm, along with its context in the pipeline used in this article.}}{105}{figure.caption.111}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {8.2}{\ignorespaces Comparison between simulated and original images from \acs {AD} and \acs {CTL} classes.}}{122}{figure.caption.125}
+\contentsline {figure}{\numberline {7.2}{\ignorespaces Weighting function $\Lambda _c(p_c,p_{th})$ used in \acs {SWPCA}.}}{107}{figure.caption.113}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {7.3}{\ignorespaces Box-plot of the distribution of the component scores at each site of the AIMS-MRI dataset (see Sections~\ref {sec:swpcaAIMSresults} and \ref {sec:aims-mri}) in the four first components.}}{107}{figure.caption.114}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {7.4}{\ignorespaces Brain t-map (\acs {VBM}) of significant ($p<0.01$, $|t|>2.57$) \acs {GM} and \acs {WM} between-group differences using \acs {qT1}, \acs {qT2}, \acs {synT1}, \acs {GM} and \acs {WM} modalities after applying \acs {SWPCA} to remove site effects.}}{110}{figure.caption.117}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {7.5}{\ignorespaces Brain t-map (\acs {VBM}) of significant ($p<0.01$, $|t|>2.57$) \acs {GM} and \acs {WM} differences in \acs {ASD} using \acs {qT1}, \acs {qT2}, \acs {synT1}, \acs {GM} and \acs {WM} maps before and after applying \acs {SWPCA} to remove site effects.}}{114}{figure.caption.120}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {7.6}{\ignorespaces Brain Z-map (\acs {CBM}) of significant ($p<0.01$, $|t|>2.57$) \acs {GM} and \acs {WM} differences using \acs {qT1}, \acs {qT2}, \acs {synT1}, \acs {GM} and \acs {WM} maps before and after applying \acs {SWPCA} to remove site effects.}}{116}{figure.caption.121}
+\defcounter {refsection}{0}\relax 
+\addvspace {10\p@ }
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {8.1}{\ignorespaces Schema of the brain image synthesis algorithm.\relax }}{123}{figure.caption.124}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {8.2}{\ignorespaces Comparison between simulated and original images from \acs {AD} and \acs {CTL} classes.}}{124}{figure.caption.125}
 \defcounter {refsection}{0}\relax 
 \addvspace {10\p@ }
 \defcounter {refsection}{0}\relax 
