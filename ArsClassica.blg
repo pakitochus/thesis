@@ -1,105 +1,13 @@
 [0] Config.pm:343> INFO - This is Biber 2.5
 [0] Config.pm:346> INFO - Logfile is 'ArsClassica.blg'
-[44] biber:290> INFO - === dom feb 12, 2017, 17:41:48
-[144] Biber.pm:352> INFO - Reading 'ArsClassica.bcf'
-[307] Biber.pm:777> INFO - Found 14 citekeys in bib section 0
-[308] Biber.pm:774> INFO - Using all citekeys in bib section 1
-[311] Biber.pm:777> INFO - Found 107 citekeys in bib section 0
-[335] Biber.pm:3494> INFO - Processing section 0
-[345] Biber.pm:3658> INFO - Looking for bibtex format file 'referencias.bib' for section 0
-[573] bibtex.pm:1176> INFO - Decoding LaTeX character macros into UTF-8
-[763] bibtex.pm:1037> INFO - Found BibTeX data source 'referencias.bib'
-[824] Utils.pm:149> WARN - Overwriting field 'year' with year value from field 'date' for entry 'Herman2009l'
-[824] Utils.pm:149> WARN - Overwriting field 'month' with month value from field 'date' for entry 'Herman2009l'
-[928] Biber.pm:3658> INFO - Looking for bibtex format file 'FJMM_Publications.bib' for section 0
-[1006] bibtex.pm:1176> INFO - Decoding LaTeX character macros into UTF-8
-[1069] bibtex.pm:1037> INFO - Found BibTeX data source 'FJMM_Publications.bib'
-[1107] Utils.pm:149> WARN - I didn't find a database entry for 'ADInforme2013' (section 0)
-[1107] Utils.pm:149> WARN - I didn't find a database entry for 'Baron2001' (section 0)
-[1108] Utils.pm:149> WARN - I didn't find a database entry for 'Misra2009' (section 0)
-[1108] Utils.pm:149> WARN - I didn't find a database entry for 'Pievani2013' (section 0)
-[1108] Utils.pm:149> WARN - I didn't find a database entry for 'Dubois2007' (section 0)
-[1108] Utils.pm:149> WARN - I didn't find a database entry for 'Claus1994' (section 0)
-[1108] Utils.pm:149> WARN - I didn't find a database entry for 'Eckert2007' (section 0)
-[1108] Utils.pm:149> WARN - I didn't find a database entry for 'Moghal1994' (section 0)
-[1108] Utils.pm:149> WARN - I didn't find a database entry for 'Christine2004' (section 0)
-[1108] Utils.pm:149> WARN - I didn't find a database entry for 'tatsch2008extrapyramidal' (section 0)
-[1109] Utils.pm:149> WARN - I didn't find a database entry for 'Scherfler2009' (section 0)
-[1109] Utils.pm:149> WARN - I didn't find a database entry for 'Bhidayasiri2006' (section 0)
-[1109] Utils.pm:149> WARN - I didn't find a database entry for 'Booij1998' (section 0)
-[1109] Utils.pm:149> WARN - I didn't find a database entry for 'Winogrodzka2003' (section 0)
-[1109] Utils.pm:149> WARN - I didn't find a database entry for 'PunalRioboo2007' (section 0)
-[1109] Utils.pm:149> WARN - I didn't find a database entry for 'Shaffer1995' (section 0)
-[1109] Utils.pm:149> WARN - I didn't find a database entry for 'McGee2002' (section 0)
-[1109] Utils.pm:149> WARN - I didn't find a database entry for 'Guyon03' (section 0)
-[1109] Utils.pm:149> WARN - I didn't find a database entry for 'DaelemansHosteMeulderEtAl2003' (section 0)
-[1109] Utils.pm:149> WARN - I didn't find a database entry for 'SaeysInzaLarranaga2007' (section 0)
-[1110] Utils.pm:149> WARN - I didn't find a database entry for 'Fay10' (section 0)
-[1110] Utils.pm:149> WARN - I didn't find a database entry for 'Harman73' (section 0)
-[1110] Utils.pm:149> WARN - I didn't find a database entry for 'Hyvarinen2000' (section 0)
-[1110] Utils.pm:149> WARN - I didn't find a database entry for 'Alvarez2009' (section 0)
-[1110] Utils.pm:149> WARN - I didn't find a database entry for 'Hyvarinen1999' (section 0)
-[1110] Utils.pm:149> WARN - I didn't find a database entry for 'Oja1997' (section 0)
-[1110] Utils.pm:149> WARN - I didn't find a database entry for 'FastICA99' (section 0)
-[1110] Utils.pm:149> WARN - I didn't find a database entry for 'Giannakopoulos1998' (section 0)
-[1110] Utils.pm:149> WARN - I didn't find a database entry for 'Martinez-Murcia2014' (section 0)
-[1111] Utils.pm:149> WARN - I didn't find a database entry for 'Philips2008' (section 0)
-[1111] Utils.pm:149> WARN - I didn't find a database entry for 'martinez2013texture' (section 0)
-[1111] Utils.pm:149> WARN - I didn't find a database entry for 'Illan2012' (section 0)
-[1111] Utils.pm:149> WARN - I didn't find a database entry for 'Segovia2012' (section 0)
-[1111] Utils.pm:149> WARN - I didn't find a database entry for 'Rojas2012' (section 0)
-[1111] Utils.pm:149> WARN - I didn't find a database entry for 'Unay2007' (section 0)
-[1111] Utils.pm:149> WARN - I didn't find a database entry for 'sikio2015mr' (section 0)
-[1111] Utils.pm:149> WARN - I didn't find a database entry for 'Ojala1996' (section 0)
-[1111] Utils.pm:149> WARN - I didn't find a database entry for 'Zhao2007' (section 0)
-[1111] Utils.pm:149> WARN - I didn't find a database entry for 'Chen2008' (section 0)
-[1111] Utils.pm:149> WARN - I didn't find a database entry for 'Evans1993' (section 0)
-[1111] Utils.pm:149> WARN - I didn't find a database entry for 'Yen1995' (section 0)
-[1111] Utils.pm:149> WARN - I didn't find a database entry for 'kovalev2001three' (section 0)
-[1112] Utils.pm:149> WARN - I didn't find a database entry for 'soh1999texture' (section 0)
-[1112] Utils.pm:149> WARN - I didn't find a database entry for 'clausi2002analysis' (section 0)
-[1112] Utils.pm:149> WARN - I didn't find a database entry for 'AAL' (section 0)
-[1112] Utils.pm:149> WARN - I didn't find a database entry for 'Tzourio-Mazoyer2002' (section 0)
-[1112] Utils.pm:149> WARN - I didn't find a database entry for 'han2006reliability' (section 0)
-[1112] Utils.pm:149> WARN - I didn't find a database entry for 'Fischl2004' (section 0)
-[1112] Utils.pm:149> WARN - I didn't find a database entry for 'Zhou2008' (section 0)
-[1112] Utils.pm:149> WARN - I didn't find a database entry for 'Locatelli1998' (section 0)
-[1112] Utils.pm:149> WARN - I didn't find a database entry for 'IAIllan2010' (section 0)
-[1112] Utils.pm:149> WARN - I didn't find a database entry for 'Ram'irez2009' (section 0)
-[1112] Utils.pm:149> WARN - I didn't find a database entry for 'Grana2011' (section 0)
-[1113] Utils.pm:149> WARN - I didn't find a database entry for 'Medina2008' (section 0)
-[1113] Utils.pm:149> WARN - I didn't find a database entry for 'chan2001patterns' (section 0)
-[1113] Utils.pm:149> WARN - I didn't find a database entry for 'Jong2008' (section 0)
-[1113] Utils.pm:149> WARN - I didn't find a database entry for 'Ortiz2013' (section 0)
-[1113] Utils.pm:149> WARN - I didn't find a database entry for 'Illan2014' (section 0)
-[1113] Utils.pm:149> WARN - I didn't find a database entry for 'Botev2010' (section 0)
-[1113] Utils.pm:149> WARN - I didn't find a database entry for 'jobst_accurate_1998' (section 0)
-[1113] Utils.pm:149> WARN - I didn't find a database entry for 'dougall_systematic_2004' (section 0)
-[1113] Utils.pm:149> WARN - I didn't find a database entry for 'Shepp82' (section 0)
-[1113] Utils.pm:149> WARN - I didn't find a database entry for 'Vardi1985' (section 0)
-[1113] Utils.pm:149> WARN - I didn't find a database entry for 'Ramirez2009' (section 0)
-[1113] Utils.pm:149> WARN - I didn't find a database entry for 'Lozano2007' (section 0)
-[1113] Utils.pm:149> WARN - I didn't find a database entry for 'PPMI' (section 0)
-[1113] Utils.pm:149> WARN - I didn't find a database entry for 'Inititative2010' (section 0)
-[1113] Utils.pm:149> WARN - I didn't find a database entry for 'Vapnik1982' (section 0)
-[1197] UCollate.pm:66> INFO - Overriding locale 'en-US' defaults 'variable = shifted' with 'variable = non-ignorable'
-[1197] UCollate.pm:66> INFO - Overriding locale 'en-US' defaults 'normalization = NFD' with 'normalization = prenormalized'
-[1197] Biber.pm:3307> INFO - Sorting list 'ydnt/global/' of type 'entry' with scheme 'ydnt' and locale 'en-US'
-[1197] Biber.pm:3311> INFO - No sort tailoring available for locale 'en-US'
-[1268] UCollate.pm:66> INFO - Overriding locale 'en-US' defaults 'normalization = NFD' with 'normalization = prenormalized'
-[1268] UCollate.pm:66> INFO - Overriding locale 'en-US' defaults 'variable = shifted' with 'variable = non-ignorable'
-[1269] Biber.pm:3307> INFO - Sorting list 'nyt/global/' of type 'entry' with scheme 'nyt' and locale 'en-US'
-[1269] Biber.pm:3311> INFO - No sort tailoring available for locale 'en-US'
-[1334] Biber.pm:3494> INFO - Processing section 1
-[1334] Biber.pm:3658> INFO - Looking for bibtex format file 'FJMM_Publications.bib' for section 1
-[1428] UCollate.pm:66> INFO - Overriding locale 'en-US' defaults 'normalization = NFD' with 'normalization = prenormalized'
-[1428] UCollate.pm:66> INFO - Overriding locale 'en-US' defaults 'variable = shifted' with 'variable = non-ignorable'
-[1428] Biber.pm:3307> INFO - Sorting list 'ydnt/global/' of type 'entry' with scheme 'ydnt' and locale 'en-US'
-[1428] Biber.pm:3311> INFO - No sort tailoring available for locale 'en-US'
-[1462] UCollate.pm:66> INFO - Overriding locale 'en-US' defaults 'normalization = NFD' with 'normalization = prenormalized'
-[1462] UCollate.pm:66> INFO - Overriding locale 'en-US' defaults 'variable = shifted' with 'variable = non-ignorable'
-[1462] Biber.pm:3307> INFO - Sorting list 'nyt/global/' of type 'entry' with scheme 'nyt' and locale 'en-US'
-[1462] Biber.pm:3311> INFO - No sort tailoring available for locale 'en-US'
-[1489] bbl.pm:526> INFO - Writing 'ArsClassica.bbl' with encoding 'UTF-8'
-[2410] bbl.pm:619> INFO - Output to ArsClassica.bbl
-[2411] Biber.pm:109> INFO - WARNINGS: 70
+[40] biber:290> INFO - === dom feb 12, 2017, 20:50:01
+[142] Biber.pm:352> INFO - Reading 'ArsClassica.bcf'
+[301] Biber.pm:777> INFO - Found 14 citekeys in bib section 0
+[302] Biber.pm:774> INFO - Using all citekeys in bib section 1
+[305] Biber.pm:777> INFO - Found 114 citekeys in bib section 0
+[331] Biber.pm:3494> INFO - Processing section 0
+[340] Biber.pm:3658> INFO - Looking for bibtex format file 'referencias.bib' for section 0
+[717] bibtex.pm:1176> INFO - Decoding LaTeX character macros into UTF-8
+[1035] bibtex.pm:1037> INFO - Found BibTeX data source 'referencias.bib'
+[1190] bibtex.pm:93> FATAL - Caught signal: SEGV
+Likely your .bib has a very bad entry which causes libbtparse to crash: 
