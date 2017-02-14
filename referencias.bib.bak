@@ -1093,7 +1093,6 @@
   pages           = {179--194},
   month           = feb,
   issn            = {1053-8119},
-  __markedentry   = {[pakitochus:]},
   abstract        = {Several properties of the cerebral cortex, including its columnar and laminar organization, as well as the topographic organization of cortical areas, can only be properly understood in the context of the intrinsic two-dimensional structure of the cortical surface. In order to study such cortical properties in humans, it is necessary to obtain an accurate and explicit representation of the cortical surface in individual subjects. Here we describe a set of automated procedures for obtaining accurate reconstructions of the cortical surface, which have been applied to data from more than 100 subjects, requiring little or no manual intervention. Automated routines for unfolding and flattening the cortical surface are described in a companion paper. These procedures allow for the routine use of cortical surface-based analysis and visualization methods in functional brain imaging.},
   citation-subset = {IM},
   completed       = {1999-03-18},
@@ -1172,8 +1171,20 @@
   volume        = {30},
   number        = {7},
   pages         = {1145--1159},
-  __markedentry = {[pakitochus:6]},
+  __markedentry = {[pakitochus:]},
   publisher     = {Elsevier},
+}
+
+@InBook{Hastie2001c,
+  chapter       = {7},
+  title         = {The Elements of Statistical Learning},
+  publisher     = {Springer New York},
+  year          = {2009},
+  author        = {Hastie, Trevor and Tibshirani, Robert and Friedman, Jerome},
+  isbn          = {978-0-387-84858-7},
+  __markedentry = {[pakitochus:6]},
+  date          = {2009-08-26},
+  ean           = {9780387848587},
 }
 
 @Comment{jabref-meta: databaseType:bibtex;}

@@ -2139,6 +2139,41 @@
       \field{pages}{108\bibrangedash 111}
       \range{pages}{4}
     \endentry
+    \entry{Hastie2009}{inbook}{}
+      \name{author}{3}{}{%
+        {{hash=0cb8fe4210baa81c4b0e67913b4d2768}{%
+           family={Hastie},
+           family_i={H\bibinitperiod},
+           given={Trevor},
+           given_i={T\bibinitperiod}}}%
+        {{hash=88eea600247d798f8b2ce0b2dc614492}{%
+           family={Tibshirani},
+           family_i={T\bibinitperiod},
+           given={Robert},
+           given_i={R\bibinitperiod}}}%
+        {{hash=971cf69058b64a94326dea0f2a8bbcce}{%
+           family={Friedman},
+           family_i={F\bibinitperiod},
+           given={Jerome},
+           given_i={J\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Springer New York}%
+      }
+      \strng{namehash}{7ca1bfe876d5e037b6aed69704221267}
+      \strng{fullhash}{7ca1bfe876d5e037b6aed69704221267}
+      \field{sortinit}{2}
+      \field{sortinithash}{8343b463aacf48517c044b4d2c9c45ed}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{chapter}{7}
+      \field{day}{26}
+      \field{isbn}{978-0-387-84858-7}
+      \field{month}{08}
+      \field{title}{The Elements of Statistical Learning}
+      \field{year}{2009}
+      \warn{\item Overwriting field 'year' with year value from field 'date' for entry 'Hastie2009'}
+    \endentry
     \entry{Herman2009l}{incollection}{}
       \name{author}{1}{}{%
         {{hash=09bd05c0a634382fa8ac6e2e1382ee7a}{%
@@ -6005,6 +6040,41 @@
       \field{pages}{610\bibrangedash 621}
       \range{pages}{12}
     \endentry
+    \entry{Hastie2009}{inbook}{}
+      \name{author}{3}{}{%
+        {{hash=0cb8fe4210baa81c4b0e67913b4d2768}{%
+           family={Hastie},
+           family_i={H\bibinitperiod},
+           given={Trevor},
+           given_i={T\bibinitperiod}}}%
+        {{hash=88eea600247d798f8b2ce0b2dc614492}{%
+           family={Tibshirani},
+           family_i={T\bibinitperiod},
+           given={Robert},
+           given_i={R\bibinitperiod}}}%
+        {{hash=971cf69058b64a94326dea0f2a8bbcce}{%
+           family={Friedman},
+           family_i={F\bibinitperiod},
+           given={Jerome},
+           given_i={J\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Springer New York}%
+      }
+      \strng{namehash}{7ca1bfe876d5e037b6aed69704221267}
+      \strng{fullhash}{7ca1bfe876d5e037b6aed69704221267}
+      \field{sortinit}{H}
+      \field{sortinithash}{82012198d5dfa657b8c4a168793268a6}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{chapter}{7}
+      \field{day}{26}
+      \field{isbn}{978-0-387-84858-7}
+      \field{month}{08}
+      \field{title}{The Elements of Statistical Learning}
+      \field{year}{2009}
+      \warn{\item Overwriting field 'year' with year value from field 'date' for entry 'Hastie2009'}
+    \endentry
     \entry{Herman2009l}{incollection}{}
       \name{author}{1}{}{%
         {{hash=09bd05c0a634382fa8ac6e2e1382ee7a}{%
@@ -8556,58 +8626,57 @@
       \endverb
     \endentry
   \endsortlist
-  \missing{Vardi1985}
-  \missing{xu2009source}
-  \missing{Chen2008}
-  \missing{Locatelli1998}
-  \missing{chan2001patterns}
-  \missing{jobst_accurate_1998}
-  \missing{Ram'irez2009}
-  \missing{Inititative2010}
-  \missing{Grana2011}
-  \missing{AAL}
-  \missing{Unay2007}
-  \missing{IAIllan2010}
-  \missing{Botev2010}
-  \missing{Yen1995}
-  \missing{Segovia2012}
-  \missing{Fischl2004}
-  \missing{han2006reliability}
-  \missing{Tzourio-Mazoyer2002}
-  \missing{martinez2013texture}
-  \missing{Giannakopoulos1998}
   \missing{Ojala1996}
+  \missing{Shepp82}
+  \missing{han2006reliability}
+  \missing{SaeysInzaLarranaga2007}
+  \missing{Fay10}
+  \missing{Grana2011}
+  \missing{Harman73}
+  \missing{Ortiz2013}
+  \missing{Jong2008}
+  \missing{Medina2008}
+  \missing{Chen2008}
+  \missing{Hyvarinen2000}
+  \missing{martinez2013texture}
+  \missing{Hyvarinen1999}
+  \missing{Oja1997}
+  \missing{dougall_systematic_2004}
+  \missing{Locatelli1998}
+  \missing{Shaffer1995}
+  \missing{Illan2014}
+  \missing{Vardi1985}
+  \missing{Illan2012}
   \missing{FastICA99}
   \missing{Zhao2007}
-  \missing{Rojas2012}
-  \missing{Vapnik1982}
-  \missing{clausi2002analysis}
-  \missing{Jong2008}
-  \missing{Ortiz2013}
+  \missing{xu2009source}
   \missing{Ramirez2009}
-  \missing{SaeysInzaLarranaga2007}
-  \missing{Hyvarinen2000}
+  \missing{AAL}
+  \missing{Tzourio-Mazoyer2002}
+  \missing{clausi2002analysis}
   \missing{Martinez-Murcia2014}
-  \missing{Illan2012}
-  \missing{Zhou2008}
-  \missing{Hyvarinen1999}
-  \missing{Medina2008}
-  \missing{PPMI}
-  \missing{DaelemansHosteMeulderEtAl2003}
-  \missing{dougall_systematic_2004}
-  \missing{Illan2014}
-  \missing{soh1999texture}
-  \missing{Oja1997}
-  \missing{Shaffer1995}
-  \missing{kovalev2001three}
+  \missing{Vapnik1982}
+  \missing{Rojas2012}
+  \missing{chan2001patterns}
   \missing{Alvarez2009}
   \missing{Kohavi1995a}
-  \missing{Harman73}
+  \missing{Inititative2010}
+  \missing{Fischl2004}
+  \missing{IAIllan2010}
+  \missing{Yen1995}
+  \missing{Botev2010}
+  \missing{Ram'irez2009}
   \missing{sikio2015mr}
-  \missing{Fay10}
-  \missing{Shepp82}
+  \missing{kovalev2001three}
+  \missing{jobst_accurate_1998}
+  \missing{PPMI}
+  \missing{Giannakopoulos1998}
   \missing{Evans1993}
-  \missing{McGee2002}
+  \missing{soh1999texture}
+  \missing{Zhou2008}
+  \missing{DaelemansHosteMeulderEtAl2003}
+  \missing{Unay2007}
+  \missing{Segovia2012}
 \endrefsection
 
 \refsection{1}

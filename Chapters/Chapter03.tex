@@ -145,54 +145,38 @@ See Figure~\ref{fig:comparisonIntNorm} for a comparison between different strate
 \subsection{Cross-validation}
 Some machine learning applications such as digit or faces recognition use tens of thousands of images as input. In these cases, the common practice is to divide randomly the data in three subsets: training, validation and testing \cite{Bradley1997}. However, in neuroimaging, sample size is an issue. In contrast to those applications, we only have hundreds of patients in the best case, and the estimation of the performance using these subsets might not be reliable. 
  
-In these cases, cross-validation is used to obtain more accurate performance measures. Cross-validation performs a division of the data into several parts or ``folds'', and iteratively use some of these fold for training or testing. The simplest form of cross-validation is $K$-fold, in which the data is divided in $K$ subsets, reserving one for testing and training the model using the rest. 
+In these cases, \acf{CV} is used to obtain more accurate performance measures. \ac{CV} performs a division of the dataset into several subsets $X = {S_1, S_2, ... S_k}$ and iteratively use some of these subsets for training or testing. The simplest \ac{CV} estimator is $k$-fold. This approach uses $k$ equally-sized, non-overlapping subset. For each subset $S_i$ (or ``fold'', hence the name), the model is trained on all subsets $S_k \forall k \neq i$, and then evaluated on $S_i$. The performance measures, \eg accuracy, are obtained as the average of the accuracies on each fold. 
+
+A particular case where $k=N$ (where $N$ is the exact number of subjects in the dataset) is \acf{LOO}. This estimator is approximately unbiased for the true accuracy, but can have high variance because there is much overlapping between the $N$ training set \cite{Hastie2009}. This imply that the learned models are correlated, and therefore, dependent. All \ac{CV} strategies with $k>2$ have overlap, and therefore, high variance. See how variance and bias evolve in a $k$-fold validation in Figure~\ref{fig:evolutionKFold}. 
 
 
-All performance results shown here have been obtained using a 10-Fold cross-validation, as suggested in \cite{Kohavi1995}, reducing the variance of other widely known forms of cross-validation like leave-one-out. 
-In contrast to these, 
-
-
-This procedure is repeated $K$ times, and a confusion matrix is obtained. 
+Using $k=10$ is assumed as a good compromise between variance and bias in many works \cite{Kohavi1995,Hastie2009}. In this thesis, when referring to $k$-fold, we often use stratified cross validation, which is a subclass of $k$-fold where the distribution of classes within each fold is similar to the distribution of classes in the whole dataset, making the estimates more accurate \cite{Kohavi1995}. 
+\subsection{Classification Performance}
+From each iteration in the \ac{CV} loop, a confusion matrix is obtained, from which all performance measures will be obtained. 
 
 \begin{table}
 	\myfloatalign
 	\begin{tabular}{cc|c|c|}
-		& & \multicolumn{2}{c}{Predicted}\\
-		\cline{3-4} 
+		\cline{3-4}
+		& & \multicolumn{2}{c|}{Predicted}\\
+		\cline{3-4}
 		& &  Positive & Negative \\ 
 		\hline
-		\multirow{2}{*}{Actual}& Positive & True Positive & False Positive \\ 
-		\cline{2-4} 
-		& Negative & False Negative & True Negative  \\ 
+		\multicolumn{1}{ |c  }{\multirow{2}{*}{Actual}}& \multicolumn{1}{ |c|  }{Positive} & True Positive & False Positive \\ 
+		\cline{2-4}
+		\multicolumn{1}{ |c  }{} &  \multicolumn{1}{ |c|  }{Negative} & False Negative & True Negative  \\ 
 		\hline
 	\end{tabular} 
 	\caption{Confusion matrix and its parts}
 	\label{tab:confmat}
 \end{table}
 
-Table~\ref{tab:confmat} can be easily extended to multiclass, by adding rows and columns, and substituting the ``positive'' and ``negative'' by the class number. The confusion matrix is the basis for computing other performance measures, such as accuracy, sensitivity or specificity.
+The confusion matrix (see Table~\ref{tab:confmat}) accounts for the number of correct and incorrect predictions: \acp{TP} and \acp{TN} are correct predictions, and \acp{FP} and \acp{FN} are incorrect predictions. It also allow us to identify which type of error is our model making, which in hypothesis testing are known as type I errors( \acp{FP}) and type II errors (\acp{FN}). The confusion matrix is the basis for computing other performance measures, such as accuracy (acc), sensitivity (sens) or specificity (spec).
 
+\begin{align}
+\text{acc} & = \frac{TP + TN}{TP + TN + FP + FN}\\
+\text{sens} & = \frac{TP}{TP + FN}\\
+\text{spec} & = \frac{TN}{TN + FP}
+\end{align}
 
-
- the strategy to obtain accurate performance measures is by cross-validation \cite{Kohavi1995} 
-in neuroimaging, sample size is an issue. 
-In fields where the sample size is an issue, like neuroimaging, 
-
-The classification was validated using stratified 10-fold
-cross-validation (Kohavi, 1995). In brief, 9 subsets of the dataset
-were used for extraction of the PCs and training of the classifier with
-the remaining subset used for testing. This procedure was repeated for
-each subset, repeated 10 times to avoid possible bias and random
-effects of the partitions. The average and standard deviation of the
-accuracy (acc), sensitivity (sens) and specificity (spec) values for
-each repetition were recorded. 
-
-\subsection{Classification Performance}
-
-The proposed methodology has been tested on the three previously described databases, using a cross-validation method called leave-one-out to extract several performance parameters: accuracy, sensitivity, specificity, positive likelihood (PL) and negative likelihood (NL). This method achieves an almost unbiased error estimate, however it might be affected by the database topology, reason why we used different databases to test our method.
-
-Along with the widely used sensitivity, specificity and accuracy (which are prevalence dependent), we use the Positive and Negative Likelihood ratios (PL and NL) to provide some prevalence independent parameters that are also widely used in clinical medicine, where values of PL greater than 5 or NL values less than 0.2 can be applied to the pre-test probability of a patient having the disease tested for to estimate a post-test probability of the disease state existing \cite{McGee2002}. A positive result for a test with an PL of 8 adds approximately 40\% to the pre-test probability that a patient has a specific diagnosis. 
-
-To provide a better understanding of the accuracy distribution (mean, range, skewness), we have made use of the box plot (Fig. \ref{fig:features_acc_distances}). In these plots, the median for each group of data is indicated by the red center line, and the first and third quartiles are the edges of the blue box, which is known as the inter-quartile range (IQR). The extreme values (within 1.5 times the inter-quartile range from the upper or lower quartile) are the ends of the lines extending from the IQR. Points at a greater distance from the median than 1.5 times the IQR are plotted individually, representing potential outliers. 
-
-\subsection{ROC Curve}
+Sensitivity is also known as \ac{TP} rate or recall in the literature, and specificity is known as \ac{TN} rate. Sensitivity is widely used in the medical literature, since it gives an idea of how ``sensitive'' is our model to the patterns related to a disease (usually considered the positive). 
