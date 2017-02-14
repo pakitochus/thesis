@@ -45,38 +45,45 @@ t_f = \frac{\bar{X}_1^f - \bar{X}_2^f}{\sqrt{\frac{\sigma_{X_2^f}^2+\sigma_{X_1^
 \end{equation}
 where $\sigma_{X_i^f}^2$ is the variance and $\bar{X}_i^f$ is the average of the $f$-the feature within class $i$. The $t$-test is extensively used in the neuroimaging community, and it is the basis for the \ac{SPM} and \ac{VBM} analyses \cite{spm_book}. 
 
-\subsection{Relative Entropy} 
-Another alternative is the Relative Entropy, also known as \acf{KL} divergence. It is a non-symmetric measure of the difference between two probabilities distributions. Let us assume that $X_1^f$ and $X_2^f$, the vectors containing the $f$-th feature of all elements in class $i$, are two discrete random variables. Therefore, the \ac{KL} divergence can be calculated with equation \ref{kullback} \cite{Theodoridis1999}.
+\subsection{Kullback-Leibler Divergence} 
+Another alternative is the \acf{KL} divergence, also known as Relative Entropy. It is a non-symmetric measure of the difference between two probabilities distributions. Let us assume that $X_1^f$ and $X_2^f$, the vectors containing the $f$-th feature of all elements in class $i$, are two discrete random variables. Therefore, the \ac{KL} divergence can be calculated with equation \ref{kullback} \cite{Theodoridis1999}.
 
 \begin{equation}\label{kullback}
 KL_f = \left(\frac{\sigma_{X_2^f}^2}{\sigma_{X_1^f}^2} +\frac{\sigma_{X_1^f}^2}{\sigma_{X_2^f}^2} -2 \right) + \frac{1}{2}\left(\bar{X}_2^f-\bar{X}_1^f\right)^2\left(\frac{1}{\sigma_{X_1^f}^2} + \frac{1}{\sigma_{X_2^f}^2}\right)
 \end{equation}
-where $\mu_c$ is the mean of class $c$, and $\sigma^2_c$ its variance. Figure \ref{fig:Zentropy} depicts values of Relative Entropy for each voxel. 
+using the same notation than in $t$-test. 
+% where $\mu_c$ is the mean of class $c$, and $\sigma^2_c$ its variance. Figure \ref{fig:Zentropy} depicts values of \ac{KL} for each voxel. 
 
 %klKL_{\omega_1 \omega_2} =  \int_{V} \omega_1 \log \frac{\omega_1}{\omega_2} \;d\mu
 %\end{equation}
 %\noindent where $\mu$ is any measure of $V$, the set of all voxels that are placed on a certain brain coordinate, in which $\omega_1 = \frac{d \Omega_1}{d \mu}$ and $\omega_2 = \frac{d \Omega_2}{d \mu}$ exist. Figure \ref{fig:Zentropy} depicts values of Relative Entropy for each voxel. 
 
-\begin{figure}
-	\centering
-	\includegraphics[width=0.7\linewidth]{Graphics/ch4/Zentropy.eps}
-	\caption{Several selected slices of the significance map obtained for each brain coordinate by applying the Relative Entropy criterium to the ADNI database.}
-	\label{fig:Zentropy}
-\end{figure}
-
+%\begin{figure}
+%	\centering
+%	\includegraphics[width=0.7\linewidth]{Graphics/ch4/Zentropy.eps}
+%	\caption{Several selected slices of the significance map obtained for each brain coordinate by applying the Relative Entropy criterium to the ADNI database.}
+%	\label{fig:Zentropy}
+%\end{figure}
 
 \subsection{Mann-Whitney-Wilcoxon} 
+The \acf{MWW} rank test, also known as $U$-test, assigns a rank to all values in the vector corresponding to the $f$-th feature, $X^f$, without considering any class. The method used to assign a rank is the `average', which means that each value is assigned with the average of the ranks that would have been assigned to all the tied values. This means that, for example, in the case of the vector $X^f=(0,2,3,2)$, the ranks assigned to each element would be $R^f=(1,2.5,4,2.5)$. 
 
-Computes the Mann-Whitney rank test on samples x and y.
-Mann-Whitney-Wilcoxon $U$-test(MWW) uses the absolute value of the statistical $U$ to rank voxels. Calculation of $U$ value is done by the following expression \cite{Fay10}:
-
+Let $n_1$ and $n_2$ be the number of elements in class 1 and 2 respectively, and $R^f$ the vector of ranked elements. We proceed by selecting the first $n_1$ elements in $R^f$ by: 
 \begin{equation}
-U_i=R_i -  {n_i(n_i+1) \over 2} 
+	R^f_{n_1} = {R^f_i} \forall i\in(0,n_1)
 \end{equation}
 
-\noindent where $n_i$ is the sample size for sample $i$, and $R_i$ is the sum of the ranks in sample $i$ (where $i=1,2$). Smaller $U_i$ value is taken as the final $U$ value. 
+The $U$-score for the $f$-th feature and the first class will be: 
+\begin{equation}
+	U_1^f = n_1 n_2 + n_1 \frac{n1+1}{2} - \sum R^f_{n_1}
+\end{equation}
 
-This statistical test measures the dissimilarity between two groups of values, and, although is similar to Student's t-Test, is less likely than it to spuriously indicate significance because of the presence of outliers. As we make use of real data, and we have no knowledge about the images' statistical distribution, MWW test could be a very good choice \cite{Fay10}.
+And the it can be computed for the second class as the remainder: 
+\begin{equation}
+	U_2^f = n_1 n_2 - U_1
+\end{equation}
+
+The final $U^f$ can be assigned to either $U_1^f$, $U_2^f$ or $\min{U_1^f,U_2^f}$ \cite{Fay10}, but the usual approach nowadays is to assign $U^f=U_2^f$. Unlike $t$-test, \ac{MWW} test does not assume any prior distribution, and therefore is less likely than it to spuriously indicate significance because of the presence of outliers. Under the normal distribution, it performs relatively similar. 
 
 \section{Decomposition Algorithms}
 CITE WE WILL USE COMPONENT AND FACTOR INDEPENDENTLY. 

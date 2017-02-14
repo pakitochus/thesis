@@ -44,7 +44,7 @@
 \BOOKMARK [0][]{chapter.4}{4 Image Decomposition}{part.2}% 44
 \BOOKMARK [1][-]{section.4.1}{4.1 Feature Selection}{chapter.4}% 45
 \BOOKMARK [2][-]{subsection.4.1.1}{4.1.1 t-test}{section.4.1}% 46
-\BOOKMARK [2][-]{subsection.4.1.2}{4.1.2 Relative Entropy}{section.4.1}% 47
+\BOOKMARK [2][-]{subsection.4.1.2}{4.1.2 Kullback-Leibler Divergence}{section.4.1}% 47
 \BOOKMARK [2][-]{subsection.4.1.3}{4.1.3 Mann-Whitney-Wilcoxon}{section.4.1}% 48
 \BOOKMARK [1][-]{section.4.2}{4.2 Decomposition Algorithms}{chapter.4}% 49
 \BOOKMARK [2][-]{subsection.4.2.1}{4.2.1 Factor Analysis}{section.4.2}% 50
