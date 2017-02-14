@@ -1175,7 +1175,7 @@
   publisher     = {Elsevier},
 }
 
-@InBook{Hastie2001c,
+@InBook{Hastie2009,
   chapter       = {7},
   title         = {The Elements of Statistical Learning},
   publisher     = {Springer New York},
@@ -1185,6 +1185,19 @@
   __markedentry = {[pakitochus:6]},
   date          = {2009-08-26},
   ean           = {9780387848587},
+}
+
+@Article{DaelemansHosteMeulderEtAl2003,
+  author    = {Daelemans, Walter and Hoste, Véronique and Meulder, Fien and Naudts, Bart},
+  title     = {Combined Optimization of Feature Selection and Algorithm Parameters in Machine Learning of Language},
+  journal   = {Machine Learning: ECML 2003},
+  year      = {2003},
+  month     = jan,
+  abstract  = {Comparative machine learning experiments have become an important methodology in empirical approaches to natural language processing (i) to investigate which machine learning algorithms have the ‘right bias’ to solve specific natural language processing tasks, and (ii) to investigate which sources of information add to accuracy in a learning approach. Using automatic word sense disambiguation as an example task, we show that with the methodology currently used in comparative machine learning experiments, the results may often not be reliable because of the role of and interaction between feature selection and algorithm parameter optimization. We propose genetic algorithms as a practical approach to achieve both higher accuracy within a single approach, and more reliable comparisons.},
+  date      = {2003-01-01},
+  doi       = {10.1007/978-3-540-39857-8_10},
+  publisher = {Springer},
+  url       = {http://dx.doi.org/10.1007/978-3-540-39857-8_10},
 }
 
 @Comment{jabref-meta: databaseType:bibtex;}

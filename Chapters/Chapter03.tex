@@ -149,6 +149,13 @@ In these cases, \acf{CV} is used to obtain more accurate performance measures. \
 
 A particular case where $k=N$ (where $N$ is the exact number of subjects in the dataset) is \acf{LOO}. This estimator is approximately unbiased for the true accuracy, but can have high variance because there is much overlapping between the $N$ training set \cite{Hastie2009}. This imply that the learned models are correlated, and therefore, dependent. All \ac{CV} strategies with $k>2$ have overlap, and therefore, high variance. See how variance and bias evolve in a $k$-fold validation in Figure~\ref{fig:evolutionKFold}. 
 
+\begin{figure}
+\centering
+\includegraphics[width=0.7\linewidth]{Graphics/ch3/evolutionKFold}
+\caption[Evolution of bias and variance in CV.]{Evolution of bias and variance when increasing the number of folds in a $k$-fold \ac{CV}.}
+\label{fig:evolutionKFold}
+\end{figure}
+
 
 Using $k=10$ is assumed as a good compromise between variance and bias in many works \cite{Kohavi1995,Hastie2009}. In this thesis, when referring to $k$-fold, we often use stratified cross validation, which is a subclass of $k$-fold where the distribution of classes within each fold is similar to the distribution of classes in the whole dataset, making the estimates more accurate \cite{Kohavi1995}. 
 \subsection{Classification Performance}

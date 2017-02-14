@@ -2823,6 +2823,53 @@
       \range{pages}{10}
       \keyw{Humans; Iodine Radioisotopes; Nortropanes; Parkinsonian Disorders}
     \endentry
+    \entry{SaeysInzaLarranaga2007}{article}{}
+      \name{author}{3}{}{%
+        {{hash=7e415d219905f66becd75b06920a8d3b}{%
+           family={Saeys},
+           family_i={S\bibinitperiod},
+           given={Yvan},
+           given_i={Y\bibinitperiod}}}%
+        {{hash=ed224bc70efc23cfa5821027c447bd69}{%
+           family={Inza},
+           family_i={I\bibinitperiod},
+           given={Iñaki},
+           given_i={I\bibinitperiod}}}%
+        {{hash=f6d6e5696b3e126014219c936dcd2ee9}{%
+           family={Larrañaga},
+           family_i={L\bibinitperiod},
+           given={Pedro},
+           given_i={P\bibinitperiod}}}%
+      }
+      \list{institution}{1}{%
+        {Department of Plant Systems Biology, VIB, B-9052 Ghent, Belgium. yvan.saeys@psb.ugent.be}%
+      }
+      \list{language}{1}{%
+        {eng}%
+      }
+      \strng{namehash}{8780b763be869df119833ffea9f7c795}
+      \strng{fullhash}{8780b763be869df119833ffea9f7c795}
+      \field{sortinit}{2}
+      \field{sortinithash}{8343b463aacf48517c044b4d2c9c45ed}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Feature selection techniques have become an apparent need in many bioinformatics applications. In addition to the large pool of techniques that have already been developed in the machine learning and data mining fields, specific applications in bioinformatics have led to a wealth of newly proposed techniques. In this article, we make the interested reader aware of the possibilities of feature selection, providing a basic taxonomy of feature selection techniques, and discussing their use, variety and potential in a number of both common as well as upcoming bioinformatics applications.}
+      \field{journaltitle}{Bioinformatics}
+      \field{month}{10}
+      \field{number}{19}
+      \field{title}{A review of feature selection techniques in bioinformatics.}
+      \field{volume}{23}
+      \field{year}{2007}
+      \field{pages}{2507\bibrangedash 2517}
+      \range{pages}{11}
+      \verb{doi}
+      \verb 10.1093/bioinformatics/btm344
+      \endverb
+      \verb{url}
+      \verb http://dx.doi.org/10.1093/bioinformatics/btm344
+      \endverb
+      \keyw{Algorithms; Artificial Intelligence; Computational Biology,methods; Computer Simulation; Gene Expression Profiling,methods; Models,Biological; Pattern Recognition,Automated,methods; Sequence Analysis,methods}
+    \endentry
     \entry{Zhou2007}{article}{}
       \name{author}{9}{}{%
         {{hash=18f7b54bd6a465f2209e979aa6a31329}{%
@@ -3217,6 +3264,53 @@
       \field{year}{2004}
       \field{pages}{654\bibrangedash 662}
       \range{pages}{9}
+    \endentry
+    \entry{DaelemansHosteMeulderEtAl2003}{article}{}
+      \name{author}{4}{}{%
+        {{hash=de80d83604a86dc9aff51ca1ce3069e6}{%
+           family={Daelemans},
+           family_i={D\bibinitperiod},
+           given={Walter},
+           given_i={W\bibinitperiod}}}%
+        {{hash=330095330ce6a8beb6563a0a1569e6bb}{%
+           family={Hoste},
+           family_i={H\bibinitperiod},
+           given={Véronique},
+           given_i={V\bibinitperiod}}}%
+        {{hash=9e441558788c20fe539794c7d0ce8224}{%
+           family={Meulder},
+           family_i={M\bibinitperiod},
+           given={Fien},
+           given_i={F\bibinitperiod}}}%
+        {{hash=2dfb6ef279b96d2140fae805b48bd4e5}{%
+           family={Naudts},
+           family_i={N\bibinitperiod},
+           given={Bart},
+           given_i={B\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Springer}%
+      }
+      \strng{namehash}{14d77059ee65533530de8bdbb0e5a707}
+      \strng{fullhash}{d8dc7159d181f48243ddd9a6cf083e4e}
+      \field{sortinit}{2}
+      \field{sortinithash}{8343b463aacf48517c044b4d2c9c45ed}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Comparative machine learning experiments have become an important methodology in empirical approaches to natural language processing (i) to investigate which machine learning algorithms have the ‘right bias’ to solve specific natural language processing tasks, and (ii) to investigate which sources of information add to accuracy in a learning approach. Using automatic word sense disambiguation as an example task, we show that with the methodology currently used in comparative machine learning experiments, the results may often not be reliable because of the role of and interaction between feature selection and algorithm parameter optimization. We propose genetic algorithms as a practical approach to achieve both higher accuracy within a single approach, and more reliable comparisons.}
+      \field{day}{01}
+      \field{journaltitle}{Machine Learning: ECML 2003}
+      \field{month}{01}
+      \field{title}{Combined Optimization of Feature Selection and Algorithm Parameters in Machine Learning of Language}
+      \field{year}{2003}
+      \verb{doi}
+      \verb 10.1007/978-3-540-39857-8_10
+      \endverb
+      \verb{url}
+      \verb http://dx.doi.org/10.1007/978-3-540-39857-8_10
+      \endverb
+      \warn{\item Overwriting field 'year' with year value from field 'date' for entry 'DaelemansHosteMeulderEtAl2003'}
+      \warn{\item Overwriting field 'month' with month value from field 'date' for entry 'DaelemansHosteMeulderEtAl2003'}
     \endentry
     \entry{Dixon2003}{article}{}
       \name{author}{1}{}{%
@@ -4904,6 +4998,53 @@
       \verb{doi}
       \verb 10.1159/000051283
       \endverb
+    \endentry
+    \entry{DaelemansHosteMeulderEtAl2003}{article}{}
+      \name{author}{4}{}{%
+        {{hash=de80d83604a86dc9aff51ca1ce3069e6}{%
+           family={Daelemans},
+           family_i={D\bibinitperiod},
+           given={Walter},
+           given_i={W\bibinitperiod}}}%
+        {{hash=330095330ce6a8beb6563a0a1569e6bb}{%
+           family={Hoste},
+           family_i={H\bibinitperiod},
+           given={Véronique},
+           given_i={V\bibinitperiod}}}%
+        {{hash=9e441558788c20fe539794c7d0ce8224}{%
+           family={Meulder},
+           family_i={M\bibinitperiod},
+           given={Fien},
+           given_i={F\bibinitperiod}}}%
+        {{hash=2dfb6ef279b96d2140fae805b48bd4e5}{%
+           family={Naudts},
+           family_i={N\bibinitperiod},
+           given={Bart},
+           given_i={B\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Springer}%
+      }
+      \strng{namehash}{14d77059ee65533530de8bdbb0e5a707}
+      \strng{fullhash}{d8dc7159d181f48243ddd9a6cf083e4e}
+      \field{sortinit}{D}
+      \field{sortinithash}{78f7c4753a2004675f316a80bdb31742}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Comparative machine learning experiments have become an important methodology in empirical approaches to natural language processing (i) to investigate which machine learning algorithms have the ‘right bias’ to solve specific natural language processing tasks, and (ii) to investigate which sources of information add to accuracy in a learning approach. Using automatic word sense disambiguation as an example task, we show that with the methodology currently used in comparative machine learning experiments, the results may often not be reliable because of the role of and interaction between feature selection and algorithm parameter optimization. We propose genetic algorithms as a practical approach to achieve both higher accuracy within a single approach, and more reliable comparisons.}
+      \field{day}{01}
+      \field{journaltitle}{Machine Learning: ECML 2003}
+      \field{month}{01}
+      \field{title}{Combined Optimization of Feature Selection and Algorithm Parameters in Machine Learning of Language}
+      \field{year}{2003}
+      \verb{doi}
+      \verb 10.1007/978-3-540-39857-8_10
+      \endverb
+      \verb{url}
+      \verb http://dx.doi.org/10.1007/978-3-540-39857-8_10
+      \endverb
+      \warn{\item Overwriting field 'year' with year value from field 'date' for entry 'DaelemansHosteMeulderEtAl2003'}
+      \warn{\item Overwriting field 'month' with month value from field 'date' for entry 'DaelemansHosteMeulderEtAl2003'}
     \endentry
     \entry{Dale1999}{article}{}
       \name{author}{3}{}{%
@@ -7715,6 +7856,53 @@
       \endverb
       \keyw{Algorithms; Brain,anatomy & histology,physiology; Humans; Image Interpretation,Computer-Assisted,methods; Magnetic Resonance Imaging,methods}
     \endentry
+    \entry{SaeysInzaLarranaga2007}{article}{}
+      \name{author}{3}{}{%
+        {{hash=7e415d219905f66becd75b06920a8d3b}{%
+           family={Saeys},
+           family_i={S\bibinitperiod},
+           given={Yvan},
+           given_i={Y\bibinitperiod}}}%
+        {{hash=ed224bc70efc23cfa5821027c447bd69}{%
+           family={Inza},
+           family_i={I\bibinitperiod},
+           given={Iñaki},
+           given_i={I\bibinitperiod}}}%
+        {{hash=f6d6e5696b3e126014219c936dcd2ee9}{%
+           family={Larrañaga},
+           family_i={L\bibinitperiod},
+           given={Pedro},
+           given_i={P\bibinitperiod}}}%
+      }
+      \list{institution}{1}{%
+        {Department of Plant Systems Biology, VIB, B-9052 Ghent, Belgium. yvan.saeys@psb.ugent.be}%
+      }
+      \list{language}{1}{%
+        {eng}%
+      }
+      \strng{namehash}{8780b763be869df119833ffea9f7c795}
+      \strng{fullhash}{8780b763be869df119833ffea9f7c795}
+      \field{sortinit}{S}
+      \field{sortinithash}{fd1e7c5ab79596b13dbbb67f8d70fb5a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Feature selection techniques have become an apparent need in many bioinformatics applications. In addition to the large pool of techniques that have already been developed in the machine learning and data mining fields, specific applications in bioinformatics have led to a wealth of newly proposed techniques. In this article, we make the interested reader aware of the possibilities of feature selection, providing a basic taxonomy of feature selection techniques, and discussing their use, variety and potential in a number of both common as well as upcoming bioinformatics applications.}
+      \field{journaltitle}{Bioinformatics}
+      \field{month}{10}
+      \field{number}{19}
+      \field{title}{A review of feature selection techniques in bioinformatics.}
+      \field{volume}{23}
+      \field{year}{2007}
+      \field{pages}{2507\bibrangedash 2517}
+      \range{pages}{11}
+      \verb{doi}
+      \verb 10.1093/bioinformatics/btm344
+      \endverb
+      \verb{url}
+      \verb http://dx.doi.org/10.1093/bioinformatics/btm344
+      \endverb
+      \keyw{Algorithms; Artificial Intelligence; Computational Biology,methods; Computer Simulation; Gene Expression Profiling,methods; Models,Biological; Pattern Recognition,Automated,methods; Sequence Analysis,methods}
+    \endentry
     \entry{Salas-Gonzalez2013}{article}{}
       \name{author}{5}{}{%
         {{hash=80c0a5abb383820c98e1e918318b6214}{%
@@ -8626,57 +8814,55 @@
       \endverb
     \endentry
   \endsortlist
-  \missing{Ojala1996}
-  \missing{Shepp82}
-  \missing{han2006reliability}
-  \missing{SaeysInzaLarranaga2007}
-  \missing{Fay10}
-  \missing{Grana2011}
-  \missing{Harman73}
-  \missing{Ortiz2013}
-  \missing{Jong2008}
   \missing{Medina2008}
-  \missing{Chen2008}
-  \missing{Hyvarinen2000}
-  \missing{martinez2013texture}
-  \missing{Hyvarinen1999}
-  \missing{Oja1997}
-  \missing{dougall_systematic_2004}
-  \missing{Locatelli1998}
-  \missing{Shaffer1995}
-  \missing{Illan2014}
-  \missing{Vardi1985}
-  \missing{Illan2012}
-  \missing{FastICA99}
-  \missing{Zhao2007}
-  \missing{xu2009source}
-  \missing{Ramirez2009}
-  \missing{AAL}
-  \missing{Tzourio-Mazoyer2002}
-  \missing{clausi2002analysis}
-  \missing{Martinez-Murcia2014}
-  \missing{Vapnik1982}
-  \missing{Rojas2012}
-  \missing{chan2001patterns}
-  \missing{Alvarez2009}
-  \missing{Kohavi1995a}
-  \missing{Inititative2010}
-  \missing{Fischl2004}
-  \missing{IAIllan2010}
-  \missing{Yen1995}
-  \missing{Botev2010}
-  \missing{Ram'irez2009}
-  \missing{sikio2015mr}
-  \missing{kovalev2001three}
-  \missing{jobst_accurate_1998}
+  \missing{Zhou2008}
   \missing{PPMI}
+  \missing{Fischl2004}
+  \missing{dougall_systematic_2004}
+  \missing{Unay2007}
+  \missing{martinez2013texture}
+  \missing{Botev2010}
+  \missing{Chen2008}
+  \missing{soh1999texture}
+  \missing{chan2001patterns}
+  \missing{Oja1997}
+  \missing{Zhao2007}
+  \missing{Inititative2010}
   \missing{Giannakopoulos1998}
   \missing{Evans1993}
-  \missing{soh1999texture}
-  \missing{Zhou2008}
-  \missing{DaelemansHosteMeulderEtAl2003}
-  \missing{Unay2007}
+  \missing{Jong2008}
+  \missing{Yen1995}
+  \missing{Rojas2012}
+  \missing{Ortiz2013}
+  \missing{Grana2011}
+  \missing{Locatelli1998}
+  \missing{Ram'irez2009}
+  \missing{sikio2015mr}
   \missing{Segovia2012}
+  \missing{AAL}
+  \missing{IAIllan2010}
+  \missing{Vardi1985}
+  \missing{Hyvarinen1999}
+  \missing{Ramirez2009}
+  \missing{Hyvarinen2000}
+  \missing{Martinez-Murcia2014}
+  \missing{jobst_accurate_1998}
+  \missing{Illan2012}
+  \missing{han2006reliability}
+  \missing{clausi2002analysis}
+  \missing{Vapnik1982}
+  \missing{Tzourio-Mazoyer2002}
+  \missing{Illan2014}
+  \missing{Shepp82}
+  \missing{Harman73}
+  \missing{Ojala1996}
+  \missing{Fay10}
+  \missing{Kohavi1995a}
+  \missing{Shaffer1995}
+  \missing{kovalev2001three}
+  \missing{FastICA99}
+  \missing{Alvarez2009}
+  \missing{xu2009source}
 \endrefsection
 
 \refsection{1}

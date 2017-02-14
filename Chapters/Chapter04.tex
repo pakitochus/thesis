@@ -1,74 +1,55 @@
 %************************************************
 \chapter{Image Decomposition}\label{ch:decomposition}
 %************************************************
-In this, we will focus on
 
-\cite{Martinez201141,Martinez-Murcia20129676,Martinez-Murcia2013255,Martinez-Murcia201458}
+In this chapter, we will focus on those \ac{CAD} systems that use a combination of an image decomposition method and feature selection by means of hypothesis testing. These variety of methods have been published in \cite{Martinez201141,Martinez-Murcia20129676,Martinez-Murcia2013255,Martinez-Murcia201458}. 
 
-Signal decomposition algorithms are the first feature extraction algorithms that we will deal with. They are aimed at modelling a set of samples as a linear combination of latent variables. These latent variables or components can be thought of as the basis of a n-dimensional space where each sample is projected and represented as a n-dimensional vector. In a general case applied to our neuroimaging data, the source images  can be modelled as: 
+Image decomposition methods model a set of samples as a linear combination of $c$ latent variables, also known as components. These variables can be considered as the basis of a $c$-dimensional space where each sample is represented by a feature vector of length $c$. Our neuroimages can be therefore decomposed as: 
 
 \begin{equation}\label{eq:generalDecomposition}
-	\mathbf{X} = s_0 \mathbf{w}_0 + s_1 \mathbf{w}_1 + \dots + s_N \mathbf{w}_N + \boldmath\epsilon = \mathbf{s}\mathbf{W} + \boldmath\epsilon
+	\mathbf{X} = s_0 \mathbf{w}_0 + s_1 \mathbf{w}_1 + \dots + s_c \mathbf{w}_c + \boldmath\epsilon = \mathbf{s}\mathbf{W} + \boldmath\epsilon
 \end{equation}
 
 Where $s_i$ is the coordinate (or component score) of the current image in the $i$-th dimension of the new space defined by all the base vectors $\mathbf{w}_i$ (component loadings), and $\boldmath\epsilon$ is the error of the estimation. Figure \ref{fig:decomposition_overview} shows an illustration of the process. 
 
 \begin{figure}[tph]
 	\centering
-	\includegraphics[width=\linewidth]{Graphics/ch4/decomposition_overview}
+	\includegraphics[width=0.9\linewidth]{Graphics/ch4/decomposition_overview}
 	\caption[Illustration of how decomposition algorithms work.]{Illustration of how decomposition algorithms such as \ac{FA} and \ac{ICA} work on a \ac{PET}-FDG brain image.}
 	\label{fig:decomposition_overview}
 \end{figure}
 
-Signal decomposition techniques are widely used in many applications, ranging from one-dimensional signals such as audio or Electroencephalography (EEG) to multidimensional arrays, and are frequently applied as feature reduction to overcome the small sample size problem, that is, the loss of statistical power due to a larger number of features compared to the number of samples. 
-
-The pipeline that will be used throughout this chapter is displayed at Figure~\ref{fig:pipelineDecomposition}, involving a feature selection (for reducing the dimensionality), decomposition of the feature vectors and classification.
+Many signal decomposition techniques are used in the literature, for example \ac{PCA} or \ac{PLS} \cite{Spetsieris2009,Illan2011,Towey2011,Segovia2013,Khedher2015}. We will focus on two less known decomposition algorithms \acf{FA} and \acf{ICA}, which we will integrate in different \ac{CAD} systems using a pipeline similar to the one displayed at Figure~\ref{fig:pipelineDecomposition}. This pipeline involves feature selection (for reducing the dimensionality), decomposition of the feature vectors and classification.
  
 \begin{figure}[tph]
 	\centering
-	\includegraphics[width=\linewidth]{Graphics/ch4/01-flowdiagram}
+	\includegraphics[width=0.7\linewidth]{Graphics/ch4/01-flowdiagram}
 	\caption[Illustration of the system used in Chapter~\protect\ref{ch:decomposition} .]{Illustration of the system used in Chapter~\protect\ref{ch:decomposition}.}
 	\label{fig:pipelineDecomposition}
 \end{figure}
 
 \section{Feature Selection}
-Feature selection is the first strategy used for feature reduction [CITAR WILEY MIO], and it is often used along with feature extraction in order to build more complex pattern recognition systems. It refers to any strategy intended to find a subset of the original features containing the more suitable ones according to a certain criterion. Therefore, irrelevant features are discarded, and resultant models are faster and more cost-effective \cite{Guyon03}. However, it usually requires an additional optimization to find the parameters for the optimal feature subset, and furthermore, it is impossible to guarantee that the optimal features for the subset are the same of the full feature set \cite{DaelemansHosteMeulderEtAl2003}. 
+Feature selection is the first strategy used for feature reduction \cite{Martinez-Murcia2016b}, and it is often used along with feature extraction in order to build more complex pattern recognition systems. It refers to any strategy intended to find a subset of the original features containing the more suitable ones according to a certain criterion. Therefore, irrelevant features are discarded, and resultant models are faster and more cost-effective \cite{Guyon03}. However, it usually requires an additional optimization to find the parameters for the optimal feature subset, and furthermore, it is impossible to guarantee that the optimal features for the subset are the same of the full feature set \cite{DaelemansHosteMeulderEtAl2003}. 
 
-In this work, we will use filtering methods to perform feature selection. Filtering methods are based on the computation of a feature relevance score directly on the data, before any interaction with the classification model. The relevance score is used to sort the different features, discarding those with a lower score, and it is usually computed independently for each feature, in what is called a univariate approach \cite{SaeysInzaLarranaga2007}. 
+In this work, we will use filtering methods to perform feature selection. As we introduced in Section~\ref{sec:mvanalyses}, filtering methods are based on the computation of a feature relevance score directly on the data. The relevance score is used to sort the different features, discarding those with a lower score, and it is usually computed independently for each feature, in what is called a univariate approach \cite{SaeysInzaLarranaga2007}. 
 
-Explicar por qué usamos feature selection -> bajar tiempo de computación. 
-\cite{Martinez201141,Martinez-Murcia20129676}
+Feature selection can be used before or after feature extraction. When using computationally-intensive algorithms such as \ac{FA} or especially \ac{ICA}, the selection of best features prior to the decomposition is key to obtain high performance while keeping the computation times small \cite{Martinez201141,Martinez-Murcia20129676}. This also removes noise in some cases where the decomposition algorithm cannot compute correctly the variance. 
 
-\subsection{$t$-Test}
-Student's $t$-Test ($t$-Test) is a widely used statistical test which quantifies the differences between two different classes. It uses a common estimation of variance for both classes. The value of statistical $t$ can be computed \cite{Fay10} as: 
+Three feature selection algorithms have been used in this thesis, not only in the \ac{CAD} systems proposed in this chapter, but in many other models that will be presented later: the $t$-Test, the Kullback-Leibler divergence or Relative Entropy, and the Mann-Whitney-Wilcoxon rank test. 
 
-\begin{equation}
-t = \frac{\bar {\Omega}_1 - \bar{\Omega}_2}{\sigma^2_{\Omega_1\Omega_2} \cdot \sqrt{\frac{1}{n_1}+\frac{1}{n_2}}}
-\end{equation}
-where
-\begin{equation}
-\sigma^2_{\Omega_1\Omega_2} = \sqrt{\frac{(n_1-1)\sigma^2_{\Omega_1}+(n_2-1)\sigma^2_{\Omega_2}}{n_1+n_2-2}}
-\end{equation}
-$\sigma^2_{\Omega_1 \Omega_2}$ is an estimator of common standard deviation of both samples, $\bar{\Omega}_1$ and $\bar{\Omega}_2$ are the mean of each class, $n_1$ is the number of samples in class $\omega_1$ and $n_2$ is the number of samples in class $\omega_2$. 
-
-\subsection{Mann-Whitney-Wilcoxon} 
-Mann-Whitney-Wilcoxon $U$-test(MWW) uses the absolute value of the statistical $U$ to rank voxels. Calculation of $U$ value is done by the following expression \cite{Fay10}:
+\subsection{$t$-test}
+The $t$-test is an old friend of statistics. In this work we will use the independent two-sample $t$-test \cite{Fay10}. It quantifies the differences between two classes using an assumption of independent variances. Let $X_i^f$ a vector containing the $f$-th feature of all elements in class $i$. The $t$-score of the $f$-th feature can be computed as:
 
 \begin{equation}
-U_i=R_i -  {n_i(n_i+1) \over 2} 
+t_f = \frac{\bar{X}_1^f - \bar{X}_2^f}{\sqrt{\frac{\sigma_{X_2^f}^2+\sigma_{X_1^f}^2}{n}}}
 \end{equation}
-
-\noindent where $n_i$ is the sample size for sample $i$, and $R_i$ is the sum of the ranks in sample $i$ (where $i=1,2$). Smaller $U_i$ value is taken as the final $U$ value. 
-
-This statistical test measures the dissimilarity between two groups of values, and, although is similar to Student's t-Test, is less likely than it to spuriously indicate significance because of the presence of outliers. As we make use of real data, and we have no knowledge about the images' statistical distribution, MWW test could be a very good choice \cite{Fay10}.
-
+where $\sigma_{X_i^f}^2$ is the variance and $\bar{X}_i^f$ is the average of the $f$-the feature within class $i$. The $t$-test is extensively used in the neuroimaging community, and it is the basis for the \ac{SPM} and \ac{VBM} analyses \cite{spm_book}. 
 
 \subsection{Relative Entropy} 
-Relative Entropy (or Kullback-Leibler divergence) is a non-symmetric measure of the difference between two probability distributions $\Omega_1$ and $\Omega_2$. Because of its non-symmetric property, we can make use of this to evaluate the difference between CTRL and AD images for each voxel. Relative Entropy can be calculated with equation \ref{kullback} \cite{Theodoridis1999}. 
+Another alternative is the Relative Entropy, also known as \acf{KL} divergence. It is a non-symmetric measure of the difference between two probabilities distributions. Let us assume that $X_1^f$ and $X_2^f$, the vectors containing the $f$-th feature of all elements in class $i$, are two discrete random variables. Therefore, the \ac{KL} divergence can be calculated with equation \ref{kullback} \cite{Theodoridis1999}.
 
-Let $\Omega_1$ and $\Omega_2$ be two discrete random variables. The Kullback-Leibler Divergence, or Relative Entropy is defined as:
 \begin{equation}\label{kullback}
-KL_{\omega_1 \omega_2} = \left(\frac{\sigma^2_2}{\sigma^2_1} +\frac{\sigma^2_1}{\sigma^2_2} -2 \right) + \frac{1}{2}\left(\mu_2-\mu_1\right)^2\left(\frac{1}{v_2} + \frac{1}{v_2}\right)
+KL_f = \left(\frac{\sigma_{X_2^f}^2}{\sigma_{X_1^f}^2} +\frac{\sigma_{X_1^f}^2}{\sigma_{X_2^f}^2} -2 \right) + \frac{1}{2}\left(\bar{X}_2^f-\bar{X}_1^f\right)^2\left(\frac{1}{\sigma_{X_1^f}^2} + \frac{1}{\sigma_{X_2^f}^2}\right)
 \end{equation}
 where $\mu_c$ is the mean of class $c$, and $\sigma^2_c$ its variance. Figure \ref{fig:Zentropy} depicts values of Relative Entropy for each voxel. 
 
@@ -83,6 +64,19 @@ where $\mu_c$ is the mean of class $c$, and $\sigma^2_c$ its variance. Figure \r
 	\label{fig:Zentropy}
 \end{figure}
 
+
+\subsection{Mann-Whitney-Wilcoxon} 
+
+Computes the Mann-Whitney rank test on samples x and y.
+Mann-Whitney-Wilcoxon $U$-test(MWW) uses the absolute value of the statistical $U$ to rank voxels. Calculation of $U$ value is done by the following expression \cite{Fay10}:
+
+\begin{equation}
+U_i=R_i -  {n_i(n_i+1) \over 2} 
+\end{equation}
+
+\noindent where $n_i$ is the sample size for sample $i$, and $R_i$ is the sum of the ranks in sample $i$ (where $i=1,2$). Smaller $U_i$ value is taken as the final $U$ value. 
+
+This statistical test measures the dissimilarity between two groups of values, and, although is similar to Student's t-Test, is less likely than it to spuriously indicate significance because of the presence of outliers. As we make use of real data, and we have no knowledge about the images' statistical distribution, MWW test could be a very good choice \cite{Fay10}.
 
 \section{Decomposition Algorithms}
 CITE WE WILL USE COMPONENT AND FACTOR INDEPENDENTLY. 
