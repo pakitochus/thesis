@@ -1232,4 +1232,12 @@
   timestamp = {2011.08.30},
 }
 
+@Book{Harman73,
+  title     = {{Modern Factor Analysis}},
+  publisher = {University of Chicago Press},
+  year      = {1976},
+  author    = {Harman, H. H.},
+  address   = {Chicago},
+}
+
 @Comment{jabref-meta: databaseType:bibtex;}
