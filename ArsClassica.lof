@@ -48,11 +48,13 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {figure}{\numberline {3.3}{\ignorespaces Comparison between different types of intensity normalization, applied to the VDLN-DAT dataset (see Appendix~\ref {ch:datasets}).\relax }}{33}{figure.caption.64}
 \defcounter {refsection}{0}\relax 
-\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Normalization to the Maximum.}}}{33}{subfigure.3.1}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {No Normalization.}}}{33}{subfigure.3.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Integral Normalization.}}}{33}{subfigure.3.2}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Normalization to the Maximum.}}}{33}{subfigure.3.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {subfigure}{\numberline {(c)}{\ignorespaces {Normalization using $\alpha $-stable distribution.}}}{33}{subfigure.3.3}
+\contentsline {subfigure}{\numberline {(c)}{\ignorespaces {Integral Normalization.}}}{33}{subfigure.3.3}
+\defcounter {refsection}{0}\relax 
+\contentsline {subfigure}{\numberline {(d)}{\ignorespaces {Normalization using $\alpha $-stable distribution.}}}{33}{subfigure.3.4}
 \defcounter {refsection}{0}\relax 
 \contentsline {figure}{\numberline {3.4}{\ignorespaces Evolution of bias and variance in CV.}}{34}{figure.caption.67}
 \defcounter {refsection}{0}\relax 

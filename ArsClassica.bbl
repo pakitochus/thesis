@@ -2053,6 +2053,35 @@
       \field{pages}{956\bibrangedash 969}
       \range{pages}{14}
     \endentry
+    \entry{Fay10}{article}{}
+      \name{author}{2}{}{%
+        {{hash=45de870ab3d8fc493f80327859d227a3}{%
+           family={Fay},
+           family_i={F\bibinitperiod},
+           given={Michael\bibnamedelima P.},
+           given_i={M\bibinitperiod\bibinitdelim P\bibinitperiod}}}%
+        {{hash=38c99b857098424b5ac20a54770babe7}{%
+           family={Proschan},
+           family_i={P\bibinitperiod},
+           given={Michael\bibnamedelima A.},
+           given_i={M\bibinitperiod\bibinitdelim A\bibinitperiod}}}%
+      }
+      \strng{namehash}{56e32361c3c377e95ff2a3fab90f4d72}
+      \strng{fullhash}{56e32361c3c377e95ff2a3fab90f4d72}
+      \field{sortinit}{2}
+      \field{sortinithash}{8343b463aacf48517c044b4d2c9c45ed}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Statistics Surveys}
+      \field{title}{{Wilcoxon-Mann-Whitney or t-test? On assumptions for hypothesis tests and multiple interpretations of decision rules}}
+      \field{volume}{4}
+      \field{year}{2010}
+      \field{pages}{1\bibrangedash 39}
+      \range{pages}{39}
+      \verb{file}
+      \verb Fay10-Wilcoxon vs t-Test.pdf:Estadística/Hypothesis Testing/Fay10-Wilcoxon vs t-Test.pdf:PDF
+      \endverb
+    \endentry
     \entry{Reuter2010}{article}{}
       \name{author}{3}{}{%
         {{hash=ba2cbfcb3f2671460dc76fd7f5865b48}{%
@@ -5810,6 +5839,35 @@
       \endverb
       \keyw{Parkinsonism}
     \endentry
+    \entry{Fay10}{article}{}
+      \name{author}{2}{}{%
+        {{hash=45de870ab3d8fc493f80327859d227a3}{%
+           family={Fay},
+           family_i={F\bibinitperiod},
+           given={Michael\bibnamedelima P.},
+           given_i={M\bibinitperiod\bibinitdelim P\bibinitperiod}}}%
+        {{hash=38c99b857098424b5ac20a54770babe7}{%
+           family={Proschan},
+           family_i={P\bibinitperiod},
+           given={Michael\bibnamedelima A.},
+           given_i={M\bibinitperiod\bibinitdelim A\bibinitperiod}}}%
+      }
+      \strng{namehash}{56e32361c3c377e95ff2a3fab90f4d72}
+      \strng{fullhash}{56e32361c3c377e95ff2a3fab90f4d72}
+      \field{sortinit}{F}
+      \field{sortinithash}{c6a7d9913bbd7b20ea954441c0460b78}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Statistics Surveys}
+      \field{title}{{Wilcoxon-Mann-Whitney or t-test? On assumptions for hypothesis tests and multiple interpretations of decision rules}}
+      \field{volume}{4}
+      \field{year}{2010}
+      \field{pages}{1\bibrangedash 39}
+      \range{pages}{39}
+      \verb{file}
+      \verb Fay10-Wilcoxon vs t-Test.pdf:Estadística/Hypothesis Testing/Fay10-Wilcoxon vs t-Test.pdf:PDF
+      \endverb
+    \endentry
     \entry{Fischl2002}{article}{}
       \name{author}{14}{}{%
         {{hash=e4210e5a0305aced45740a9ccb645743}{%
@@ -8814,55 +8872,54 @@
       \endverb
     \endentry
   \endsortlist
-  \missing{Medina2008}
-  \missing{Zhou2008}
-  \missing{PPMI}
-  \missing{Fischl2004}
-  \missing{dougall_systematic_2004}
-  \missing{Unay2007}
-  \missing{martinez2013texture}
-  \missing{Botev2010}
-  \missing{Chen2008}
-  \missing{soh1999texture}
-  \missing{chan2001patterns}
-  \missing{Oja1997}
-  \missing{Zhao2007}
-  \missing{Inititative2010}
-  \missing{Giannakopoulos1998}
-  \missing{Evans1993}
-  \missing{Jong2008}
-  \missing{Yen1995}
-  \missing{Rojas2012}
-  \missing{Ortiz2013}
-  \missing{Grana2011}
-  \missing{Locatelli1998}
-  \missing{Ram'irez2009}
-  \missing{sikio2015mr}
-  \missing{Segovia2012}
-  \missing{AAL}
-  \missing{IAIllan2010}
-  \missing{Vardi1985}
-  \missing{Hyvarinen1999}
-  \missing{Ramirez2009}
-  \missing{Hyvarinen2000}
-  \missing{Martinez-Murcia2014}
-  \missing{jobst_accurate_1998}
-  \missing{Illan2012}
-  \missing{han2006reliability}
-  \missing{clausi2002analysis}
-  \missing{Vapnik1982}
-  \missing{Tzourio-Mazoyer2002}
-  \missing{Illan2014}
-  \missing{Shepp82}
-  \missing{Harman73}
-  \missing{Ojala1996}
-  \missing{Fay10}
-  \missing{Kohavi1995a}
-  \missing{Shaffer1995}
-  \missing{kovalev2001three}
-  \missing{FastICA99}
-  \missing{Alvarez2009}
   \missing{xu2009source}
+  \missing{Unay2007}
+  \missing{jobst_accurate_1998}
+  \missing{Harman73}
+  \missing{Ramirez2009}
+  \missing{Yen1995}
+  \missing{Inititative2010}
+  \missing{Illan2012}
+  \missing{dougall_systematic_2004}
+  \missing{Shaffer1995}
+  \missing{Giannakopoulos1998}
+  \missing{Fischl2004}
+  \missing{Zhou2008}
+  \missing{Locatelli1998}
+  \missing{Medina2008}
+  \missing{Hyvarinen1999}
+  \missing{Jong2008}
+  \missing{IAIllan2010}
+  \missing{Botev2010}
+  \missing{Grana2011}
+  \missing{Chen2008}
+  \missing{Kohavi1995a}
+  \missing{soh1999texture}
+  \missing{Illan2014}
+  \missing{Vapnik1982}
+  \missing{sikio2015mr}
+  \missing{Hyvarinen2000}
+  \missing{Shepp82}
+  \missing{Ortiz2013}
+  \missing{chan2001patterns}
+  \missing{Segovia2012}
+  \missing{Evans1993}
+  \missing{Ojala1996}
+  \missing{clausi2002analysis}
+  \missing{Oja1997}
+  \missing{AAL}
+  \missing{Rojas2012}
+  \missing{Tzourio-Mazoyer2002}
+  \missing{FastICA99}
+  \missing{Martinez-Murcia2014}
+  \missing{martinez2013texture}
+  \missing{han2006reliability}
+  \missing{Alvarez2009}
+  \missing{PPMI}
+  \missing{Vardi1985}
+  \missing{Ram'irez2009}
+  \missing{kovalev2001three}
+  \missing{Zhao2007}
 \endrefsection
 
 \refsection{1}

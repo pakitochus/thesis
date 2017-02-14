@@ -70,7 +70,7 @@ The \acf{MWW} rank test, also known as $U$-test, assigns a rank to all values in
 
 Let $n_1$ and $n_2$ be the number of elements in class 1 and 2 respectively, and $R^f$ the vector of ranked elements. We proceed by selecting the first $n_1$ elements in $R^f$ by: 
 \begin{equation}
-	R^f_{n_1} = {R^f_i} \forall i\in(0,n_1)
+	R^f_{n_1} = {R^f_i} \quad \forall i\in(0,n_1)
 \end{equation}
 
 The $U$-score for the $f$-th feature and the first class will be: 
@@ -83,10 +83,11 @@ And the it can be computed for the second class as the remainder:
 	U_2^f = n_1 n_2 - U_1
 \end{equation}
 
-The final $U^f$ can be assigned to either $U_1^f$, $U_2^f$ or $\min{U_1^f,U_2^f}$ \cite{Fay10}, but the usual approach nowadays is to assign $U^f=U_2^f$. Unlike $t$-test, \ac{MWW} test does not assume any prior distribution, and therefore is less likely than it to spuriously indicate significance because of the presence of outliers. Under the normal distribution, it performs relatively similar. 
+The final $U^f$ can be assigned to either $U_1^f$, $U_2^f$ or $\min{U_1^f,U_2^f}$ \cite{Fay10}, but the usual approach nowadays is to assign $U^f=U_2^f$. Unlike $t$-test, \ac{MWW} test does not assume any prior distribution, and therefore is less likely than it to spuriously indicate significance because of the presence of outliers. Under the normal distribution, it performs relatively similar \cite{Fay10}. 
 
 \section{Decomposition Algorithms}
 CITE WE WILL USE COMPONENT AND FACTOR INDEPENDENTLY. 
+
 \subsection{Factor Analysis}
 \cite{Martinez201141,Martinez-Murcia20129676}
 
