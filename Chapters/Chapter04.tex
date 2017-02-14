@@ -135,23 +135,23 @@ The mean $\boldsymbol{\mu}$, and the matrices $\mathbf{S}$ and $\boldsymbol{\Psi
 	\ell(\mu,\mathbf{S},\boldsymbol{\Psi}) = - \frac{np}{2}\log{2\pi}- \frac{n}{2}\log{\left|\mathbf{SS}^T + \boldsymbol{\Psi}\right|} - \frac{1}{2}\sum_{i=1}^{n}(\mathbf{x}_i-\mu)^T(\mathbf{SS}^T+\boldsymbol{\Psi})(\mathbf{x}_i-\mu)
 \end{equation} 
 
+\ac{FA} differs from \ac{PCA} mainly because it performs an estimation of the noise, and needs the number of factors $c$ as an input. Choosing $c$ is not a naive task. A large $c$ can yield a small reconstruction error, but the factors will not be representative enough, leading to overfitting of the subsequent model. Conversely, a small $c$ can lead to a large reconstruction error, causing information loss. We have computed the reconstruction error variance over the ADNI-PET dataset, and plotted it in Figure~\ref{fig:error} (similar graphs can be obtained for other databases. This proves that the error is assymptotical as we increase $c$, and therefore, once arrived at certain error, the improvements are not significant. 
 
+\begin{figure}[ht]
+	\centering
+	\includegraphics[width=0.5\linewidth]{Graphics/ch4/varError-K-ADNI}
+	\caption{Specific variance of reconstruction error $\Psi$ using \ac{FA}, in function of number of factors extracted ($K$) for ADNI-PET database (the behaviour is similar in other datasets).}
+	\label{fig:error}
+\end{figure}
+
+
+It is 
 
 For this reason, Brown (2009) recommends using factor analysis when theoretical ideas about relationships between variables exist, whereas PCA should be used if the goal of the researcher is to explore patterns in their data.
 
 
 
 
-
-
-The choice of K requires a deeper analysis. If $K$ is large, the image can be modelled very well, and therefore, the reconstruction error should be small. However, a large number of features can be counter-productive for the performance of the classifier due to the small sample size problem. Thus, we should find a trade-off between the length of the feature vectors ($K$) and the ability of reconstruction. According to Fig. \ref{fig:error}, the variance reconstruction error tends to stabilize as $K$ increases, and the improvements are no longer significant. In the experimental Section \ref{results} a detailed discussion about $K$ parameter selection is shown in addition with other experimental findings.
-
-\begin{figure}[ht]
-	\centering
-	\includegraphics[width=0.45\linewidth]{Graphics/ch4/varError-K-ADNI}
-	\caption{Specific variance of reconstruction error $\Psi$ using Factor Analysis, in function of number of factors extracted ($K$) for ADNI database (the behaviour is similar in other datasets).}
-	\label{fig:error}
-\end{figure}
 
 \subsection{Independent Component Analysis}
 \cite{Martinez-Murcia2013255,Martinez-Murcia201458}
