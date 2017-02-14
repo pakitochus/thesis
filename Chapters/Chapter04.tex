@@ -35,15 +35,26 @@ In this work, we will use filtering methods to perform feature selection. As we 
 
 Feature selection can be used before or after feature extraction. When using computationally-intensive algorithms such as \ac{FA} or especially \ac{ICA}, the selection of best features prior to the decomposition is key to obtain high performance while keeping the computation times small \cite{Martinez201141,Martinez-Murcia20129676}. This also removes noise in some cases where the decomposition algorithm cannot compute correctly the variance. 
 
+\begin{figure}[bth]
+	\myfloatalign
+	\subfloat[$t$-test.]
+	{\includegraphics[width=.3\linewidth]{Graphics/ch4/ttest_map.eps}\label{fig:ttest_map}}\quad
+	\subfloat[\ac{KL} divergence.]
+	{\includegraphics[width=.3\linewidth]{Graphics/ch4/kl_map.eps}\label{fig:kl_map}}\quad
+	\subfloat[\ac{MWW} $U$-test.]
+	{\includegraphics[width=.3\linewidth]{Graphics/ch4/wilcoxon_map.eps}\label{fig:wilcoxon_map}}
+	\caption[Comparison between the different filtering methods.]{Comparison between the different filtering methods, and the regions selected by them, in the ADNI-PET dataset. }\label{fig:comparisonSelection}
+\end{figure}
+
 Three feature selection algorithms have been used in this thesis, not only in the \ac{CAD} systems proposed in this chapter, but in many other models that will be presented later: the $t$-Test, the Kullback-Leibler divergence or Relative Entropy, and the Mann-Whitney-Wilcoxon rank test. 
 
 \subsection{$t$-test}
-The $t$-test is an old friend of statistics. In this work we will use the independent two-sample $t$-test \cite{Fay10}. It quantifies the differences between two classes using an assumption of independent variances. Let $X_i^f$ a vector containing the $f$-th feature of all elements in class $i$. The $t$-score of the $f$-th feature can be computed as:
+The $t$-test is an old friend of statisticians. In this work we will use the independent two-sample $t$-test \cite{Fay10}. It quantifies the differences between two classes using an assumption of independent variances. Let $X_i^f$ a vector containing the $f$-th feature of all elements in class $i$. The $t$-score of the $f$-th feature can be computed as:
 
 \begin{equation}
 t_f = \frac{\bar{X}_1^f - \bar{X}_2^f}{\sqrt{\frac{\sigma_{X_2^f}^2+\sigma_{X_1^f}^2}{n}}}
 \end{equation}
-where $\sigma_{X_i^f}^2$ is the variance and $\bar{X}_i^f$ is the average of the $f$-the feature within class $i$. The $t$-test is extensively used in the neuroimaging community, and it is the basis for the \ac{SPM} and \ac{VBM} analyses \cite{spm_book}. 
+where $\sigma_{X_i^f}^2$ is the variance and $\bar{X}_i^f$ is the average of the $f$-the feature within class $i$. The $t$-test is extensively used in the neuroimaging community, and it is the basis for the \ac{SPM} and \ac{VBM} analyses \cite{spm_book}. See figure~\ref{fig:ttest_map} for an example of the $t$-test computed on the ADNI-PET database.
 
 \subsection{Kullback-Leibler Divergence} 
 Another alternative is the \acf{KL} divergence, also known as Relative Entropy. It is a non-symmetric measure of the difference between two probabilities distributions. Let us assume that $X_1^f$ and $X_2^f$, the vectors containing the $f$-th feature of all elements in class $i$, are two discrete random variables. Therefore, the \ac{KL} divergence can be calculated with equation \ref{kullback} \cite{Theodoridis1999}.
@@ -51,19 +62,7 @@ Another alternative is the \acf{KL} divergence, also known as Relative Entropy. 
 \begin{equation}\label{kullback}
 KL_f = \left(\frac{\sigma_{X_2^f}^2}{\sigma_{X_1^f}^2} +\frac{\sigma_{X_1^f}^2}{\sigma_{X_2^f}^2} -2 \right) + \frac{1}{2}\left(\bar{X}_2^f-\bar{X}_1^f\right)^2\left(\frac{1}{\sigma_{X_1^f}^2} + \frac{1}{\sigma_{X_2^f}^2}\right)
 \end{equation}
-using the same notation than in $t$-test. 
-% where $\mu_c$ is the mean of class $c$, and $\sigma^2_c$ its variance. Figure \ref{fig:Zentropy} depicts values of \ac{KL} for each voxel. 
-
-%klKL_{\omega_1 \omega_2} =  \int_{V} \omega_1 \log \frac{\omega_1}{\omega_2} \;d\mu
-%\end{equation}
-%\noindent where $\mu$ is any measure of $V$, the set of all voxels that are placed on a certain brain coordinate, in which $\omega_1 = \frac{d \Omega_1}{d \mu}$ and $\omega_2 = \frac{d \Omega_2}{d \mu}$ exist. Figure \ref{fig:Zentropy} depicts values of Relative Entropy for each voxel. 
-
-%\begin{figure}
-%	\centering
-%	\includegraphics[width=0.7\linewidth]{Graphics/ch4/Zentropy.eps}
-%	\caption{Several selected slices of the significance map obtained for each brain coordinate by applying the Relative Entropy criterium to the ADNI database.}
-%	\label{fig:Zentropy}
-%\end{figure}
+using the same notation than in $t$-test. See figure~\ref{fig:kl_map} for an example of the computed \ac{KL} divergence on the ADNI-PET database.
 
 \subsection{Mann-Whitney-Wilcoxon} 
 The \acf{MWW} rank test, also known as $U$-test, assigns a rank to all values in the vector corresponding to the $f$-th feature, $X^f$, without considering any class. The method used to assign a rank is the `average', which means that each value is assigned with the average of the ranks that would have been assigned to all the tied values. This means that, for example, in the case of the vector $X^f=(0,2,3,2)$, the ranks assigned to each element would be $R^f=(1,2.5,4,2.5)$. 
@@ -83,10 +82,23 @@ And the it can be computed for the second class as the remainder:
 	U_2^f = n_1 n_2 - U_1
 \end{equation}
 
-The final $U^f$ can be assigned to either $U_1^f$, $U_2^f$ or $\min{U_1^f,U_2^f}$ \cite{Fay10}, but the usual approach nowadays is to assign $U^f=U_2^f$. Unlike $t$-test, \ac{MWW} test does not assume any prior distribution, and therefore is less likely than it to spuriously indicate significance because of the presence of outliers. Under the normal distribution, it performs relatively similar \cite{Fay10}. 
+The final $U^f$ can be assigned to either $U_1^f$, $U_2^f$ or $\min{U_1^f,U_2^f}$ \cite{Fay10}, but the usual approach nowadays is to assign $U^f=U_2^f$. Unlike $t$-test, \ac{MWW} test does not assume any prior distribution, and therefore is less likely than it to spuriously indicate significance because of the presence of outliers. Under the normal distribution, it performs relatively similar \cite{Fay10}. See figure~\ref{fig:wilcoxon_map} for an example of the \ac{MWW} $U$-test computed on the ADNI-PET database.
 
 \section{Decomposition Algorithms}
 CITE WE WILL USE COMPONENT AND FACTOR INDEPENDENTLY. 
+
+
+\begin{figure}[bth]
+	\myfloatalign
+	\subfloat[Original]
+	{\includegraphics[width=.3\linewidth]{Graphics/ch4/originalImage.eps}}\quad
+	\subfloat[\ac{FA} reconstruction]
+	{\includegraphics[width=.3\linewidth]{Graphics/ch4/transformedFA.eps}}\quad
+	\subfloat[\ac{ICA} reconstruction]
+	{\includegraphics[width=.3\linewidth]{Graphics/ch4/transformedICA.eps}}
+	\caption[Original PET image and its reconstruction using FA or ICA.]{Original PET image from the ADNI-PET dataset, and its reconstruction using \ac{FA} or \ac{ICA}, using 10 components.}\label{fig:comparisonReconstructions}
+\end{figure}
+
 
 \subsection{Factor Analysis}
 \cite{Martinez201141,Martinez-Murcia20129676}
