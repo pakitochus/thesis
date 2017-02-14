@@ -4,10 +4,10 @@
 
 In this chapter, we will focus on those \ac{CAD} systems that use a combination of an image decomposition method and feature selection by means of hypothesis testing. These variety of methods have been published in \cite{Martinez201141,Martinez-Murcia20129676,Martinez-Murcia2013255,Martinez-Murcia201458}. 
 
-Image decomposition methods model a set of samples as a linear combination of $c$ latent variables, also known as components. These variables can be considered as the basis of a $c$-dimensional space where each sample is represented by a feature vector of length $c$. Our neuroimages can be therefore decomposed as: 
+Image decomposition methods model a set of samples as a linear combination of $c$ latent variables, also known as components. These variables can be considered as the basis of a $c$-dimensional space where each sample is represented by a feature vector of length $c$. The $i$-th neuroimage in our dataset can be therefore decomposed as: 
 
 \begin{equation}\label{eq:generalDecomposition}
-	\mathbf{X} = s_0 \mathbf{w}_0 + s_1 \mathbf{w}_1 + \dots + s_c \mathbf{w}_c + \boldmath\epsilon = \mathbf{s}\mathbf{W} + \boldmath\epsilon
+	\mathbf{x}_i = s_0 \mathbf{w}_0 + s_1 \mathbf{w}_1 + \dots + s_c \mathbf{w}_c + \boldmath\epsilon = \mathbf{s}\mathbf{W} + \boldmath\epsilon
 \end{equation}
 
 Where $s_i$ is the coordinate (or component score) of the current image in the $i$-th dimension of the new space defined by all the base vectors $\mathbf{w}_i$ (component loadings), and $\boldmath\epsilon$ is the error of the estimation. Figure \ref{fig:decomposition_overview} shows an illustration of the process. 
@@ -102,37 +102,47 @@ However, this number of features is still large, and therefore, further feature 
 
 
 \subsection{Factor Analysis}
-\acf{FA} was used in \cite{Martinez201141,Martinez-Murcia20129676} to perform feature extraction in \ac{CAD} systems. This strategy assumes that each image in the database is a realization of a given experiment. \ac{FA} then models each of the $N$ observations (or subjects) as the expression of $c$ unobserved variables, known as factors. The model follows Eq. \ref{eq:FactorAn1}.
+\acf{FA} was used in \cite{Martinez201141,Martinez-Murcia20129676} to perform feature extraction in \ac{CAD} systems. This strategy assumes that each image in the database is a realization of a given experiment. \ac{FA} then models each of the $N$ observations (or subjects) as the expression of $c$ unobserved variables, known as factors. The model follows the general decomposition equation (Eq. \ref{eq:generalDecomposition}), but assuming that the dataset matrix $\mathbf{X}$ is zero-centred. That is, that we have subtracted the mean prior to the computation. In matrix form, Eq. \ref{eq:generalDecomposition} can be rewritten as:
 
-\begin{equation}\label{eq:FactorAn1}
-\mathbf{x}_i = \mu + \boldsymbol{\lambda}_i \mathbf{F} + \epsilon
-\end{equation}
-where $\mathbf{x}_i$ is the $i$-th realization of the experiment, $\mu$ is the mean of $\mathbf{x}_i$,  $\boldsymbol{\lambda}_i$ is the representation of $\mathbf{x}_i$ in the space defined by the factors $\mathbf{F}$, and $\epsilon$ is the reconstruction error. For all observations, Eq. \ref{eq:FactorAn1} can be rewritten using matrix notation as as:
-
-\begin{equation}\label{eq:FactorAn2}
-\textbf{X} = \boldsymbol\mu + \boldsymbol\Lambda \textbf{F} + \boldsymbol\epsilon
+\begin{equation}\label{eq:factoranalysis}
+\mathbf{X} -\boldsymbol{\mu}= \mathbf{S}\mathbf{W} +  \boldsymbol{\epsilon}
 \end{equation}
 
+The columns of $\mathbf{W}$ are known as factors, and the rows of $\mathbf{S}$ are known as loadings  (similar to the concept of component loading and component scores in \ac{PCA}). Thanks to this, we can convert the original dataset $\mathbf{X}$ of size $N\times f$ into $\mathbf{S}$, of size $N\times c$. The procedure of computing the decomposition imposes some assumptions on $\mathbf{W}$: 
+\begin{itemize}
+	\item $\mathbf{W}$ and $\boldsymbol{\epsilon}$ must be independent. 
+	\item $E[\mathbf{W}] = 0$. 
+	\item $\text{Cov}(\mathbf{W}) = \mathbf{I}$, which ensures that the factors are uncorrelated. 
+\end{itemize}
 
-\noindent where $\textbf{X}$ is a matrix of observed variables of dimension $n \times N$, $\boldsymbol\mu$ is a vector of means of length $n$, $\boldsymbol\Lambda$ is a matrix of dimension $n \times K$ which contains the maximum likelihood estimate of the factor loadings for each observation, $\textbf{F}$ is a matrix of dimension $N \times K$ which contains the common factors and $\boldsymbol\epsilon$ is a vector of length $n$ containing reconstruction errors.
+Now we can rewrite Eq.~\ref{eq:factoranalysis} as:
+\begin{equation}\label{eq:fastep1}
+	\text{Cov}(\mathbf{X} -\boldsymbol{\mu})= \text{Cov}(\mathbf{S}\mathbf{W} +  \boldsymbol{\epsilon})
+\end{equation} 
 
-Original input image can be reconstructed with computed factors and factor loadings, as we have seen in Eq. \ref{eq:FactorAn1}. In Fig. \ref{fig:reconstruction} original image and Factor Analysis reconstruction are shown. The selected regions pinpoint the disease affected areas which are class-discriminative. Specifically, it highlights the posterior cingulate gyri and precunei, as well as the temporo-parietal region, both considered as typically affected by glucose hypometabolism in the AD \cite{Claus1994}. A closer look shows that it also selects small thalamus regions, which has never been described as a relevant region for diagnosis. To compute representativeness of different factors, we can rewrite Eq. \ref{eq:FactorAn2} as:
-
-\begin{equation}\label{eq:cov}
-Cov (\textbf{X} - \boldsymbol\mu) = Cov(\boldsymbol\Lambda \textbf{F} - \boldsymbol\epsilon)
-\end{equation}
-
-If $\Sigma$ stands for $Cov (\textbf{X} - \boldsymbol\mu)$, Eq. \ref{eq:cov} can be rewritted as:
-
+Under the previous constraints, and setting $\boldsymbol{\Sigma} = \text{Cov}(\mathbf{X} -\boldsymbol{\mu})$, Eq.~\ref{eq:fastep1} becomes:
 \begin{equation}
-\boldsymbol\Sigma = \boldsymbol\Lambda Cov(\textbf{F}) \boldsymbol\Lambda^T - Cov(\boldsymbol\epsilon)
+	\boldsymbol{\Sigma} = \mathbf{S}\text{Cov}(\mathbf{W})\mathbf{S}^T - \text{Cov}(\boldsymbol{\epsilon})
 \end{equation}
 
+Since $\text{Cov}(\mathbf{W}) = \mathbf{I}$, and making $\text{Cov}(\boldsymbol{\epsilon})=\boldsymbol{\Psi}$, the diagonal matrix containing the specific variances of the reconstruction error, we obtain the alternative form of \ac{FA}: 
 \begin{equation}
-\boldsymbol\Sigma = \boldsymbol\Lambda \boldsymbol\Lambda^T - \boldsymbol\Psi
+\boldsymbol{\Sigma} = \mathbf{S}\mathbf{S}^T - \boldsymbol{\Psi}
 \end{equation}
 
-\noindent and extract $\Psi$, the diagonal matrix containing the specific variances of the reconstruction error.
+The mean $\boldsymbol{\mu}$, and the matrices $\mathbf{S}$ and $\boldsymbol{\Psi}$ are obtained via Maximum Likelihood estimation. To guarantee an unique solution, we impose that $\mathbf{S}^T\boldsymbol{\Psi}^{-1}\mathbf{S}$ is a diagonal matrix. Then, we obtain the parameters by maximizing the log-likelihood given by the following expression: 
+\begin{equation}
+	\ell(\mu,\mathbf{S},\boldsymbol{\Psi}) = - \frac{np}{2}\log{2\pi}- \frac{n}{2}\log{\left|\mathbf{SS}^T + \boldsymbol{\Psi}\right|} - \frac{1}{2}\sum_{i=1}^{n}(\mathbf{x}_i-\mu)^T(\mathbf{SS}^T+\boldsymbol{\Psi})(\mathbf{x}_i-\mu)
+\end{equation} 
+
+
+
+For this reason, Brown (2009) recommends using factor analysis when theoretical ideas about relationships between variables exist, whereas PCA should be used if the goal of the researcher is to explore patterns in their data.
+
+
+
+
+
 
 The choice of K requires a deeper analysis. If $K$ is large, the image can be modelled very well, and therefore, the reconstruction error should be small. However, a large number of features can be counter-productive for the performance of the classifier due to the small sample size problem. Thus, we should find a trade-off between the length of the feature vectors ($K$) and the ability of reconstruction. According to Fig. \ref{fig:error}, the variance reconstruction error tends to stabilize as $K$ increases, and the improvements are no longer significant. In the experimental Section \ref{results} a detailed discussion about $K$ parameter selection is shown in addition with other experimental findings.
 
