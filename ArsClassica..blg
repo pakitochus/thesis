@@ -1,5 +1,5 @@
-[0] Config.pm:343> INFO - This is Biber 2.5
-[0] Config.pm:346> INFO - Logfile is 'ArsClassica..blg'
-[46] biber:290> INFO - === lun feb 13, 2017, 15:59:55
-[491] Utils.pm:165> ERROR - Cannot find control file 'ArsClassica..bcf'! - did you pass the "backend=biber" option to BibLaTeX?
-[491] Biber.pm:113> INFO - ERRORS: 1
+[1] Config.pm:343> INFO - This is Biber 2.5
+[1] Config.pm:346> INFO - Logfile is 'ArsClassica..blg'
+[73] biber:290> INFO - === mié feb 15, 2017, 12:12:29
+[167] Utils.pm:165> ERROR - Cannot find control file 'ArsClassica..bcf'! - did you pass the "backend=biber" option to BibLaTeX?
+[168] Biber.pm:113> INFO - ERRORS: 1
