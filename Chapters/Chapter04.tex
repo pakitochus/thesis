@@ -94,7 +94,7 @@ However, this number of features is still large, and therefore, further feature 
 	\subfloat[Original]
 	{\includegraphics[width=.3\linewidth]{Graphics/ch4/originalImage.eps}}\quad
 	\subfloat[\ac{FA} reconstruction]
-	{\includegraphics[width=.3\linewidth]{Graphics/ch4/transformedFA.eps}}\quad
+	{\includegraphics[width=.3\linewidth]{Graphics/ch4/transformedFA.eps}\label{fig:reconstructionFA}}\quad
 	\subfloat[\ac{ICA} reconstruction]
 	{\includegraphics[width=.3\linewidth]{Graphics/ch4/transformedICA.eps}}
 	\caption[Original PET image and its reconstruction using FA or ICA.]{Original PET image from the ADNI-PET dataset, and examples of reconstruction using \ac{FA} or \ac{ICA}, with 10 components.}\label{fig:comparisonReconstructions}
@@ -135,7 +135,7 @@ The mean $\boldsymbol{\mu}$, and the matrices $\mathbf{S}$ and $\boldsymbol{\Psi
 	\ell(\mu,\mathbf{S},\boldsymbol{\Psi}) = - \frac{np}{2}\log{2\pi}- \frac{n}{2}\log{\left|\mathbf{SS}^T + \boldsymbol{\Psi}\right|} - \frac{1}{2}\sum_{i=1}^{n}(\mathbf{x}_i-\mu)^T(\mathbf{SS}^T+\boldsymbol{\Psi})(\mathbf{x}_i-\mu)
 \end{equation} 
 
-\ac{FA} differs from \ac{PCA} mainly because it performs an estimation of the noise, and needs the number of factors $c$ as an input. Choosing $c$ is not a naive task. A large $c$ can yield a small reconstruction error, but the factors will not be representative enough, leading to overfitting of the subsequent model. Conversely, a small $c$ can lead to a large reconstruction error, causing information loss. We have computed the reconstruction error variance over the ADNI-PET dataset, and plotted it in Figure~\ref{fig:error} (similar graphs can be obtained for other databases. This proves that the error is assymptotical as we increase $c$, and therefore, once arrived at certain error, the improvements are not significant. 
+\ac{FA} differs from \ac{PCA} mainly because it performs an estimation of the noise, and needs the number of factors $c$ as an input. Choosing $c$ is not a naive task. A large $c$ can yield a small reconstruction error, but the factors will not be representative enough, leading to overfitting of the subsequent model. Conversely, a small $c$ can lead to a large reconstruction error, causing information loss. We have computed the reconstruction error variance over the ADNI-PET dataset, and plotted it in Figure~\ref{fig:error} (similar graphs can be obtained for other databases. This proves that the error is assymptotical as we increase $c$, and therefore, once arrived at certain error, the improvements are not significant. To observe how the error affects the reconstruction, in Figure~\ref{fig:reconstructionFA} we can compare a reconstructed image with its corresponding original. 
 
 \begin{figure}[ht]
 	\centering
@@ -146,7 +146,9 @@ The mean $\boldsymbol{\mu}$, and the matrices $\mathbf{S}$ and $\boldsymbol{\Psi
 
 
 \subsection{Independent Component Analysis}
-\cite{Martinez-Murcia2013255,Martinez-Murcia201458}
+\acf{ICA} \cite{Hyvarinen2000} is an algorithm that performs decomposition imposing that the resulting components must be independent. It was used in \cite{Alvarez2009,Martinez201141,Martinez-Murcia20129676} as part of a \ac{CAD} system, and it had been used in medical image segmentation as well \cite{DeMartino2007}. 
+
+
 
 \acf{ICA} \cite{Hyvarinen2000}, is a statistical technique that represents a multidimensional random vector as a lineal combination of non-gaussian random variables (the so-called ''independent components'') to be as independent as possible, and has been used widely on segmentation and clustering of medical images \cite{DeMartino2007,Alvarez2009}. It can be considered as a non-gaussian version of Factor Analysis. Assume that we observe $n$ lineal mixtures $\mathbf{x}_1, \mathbf{x}_2, \ldots, \mathbf{x}_n$ of length $N$ that can be modelled as an expression of $K$ independent components (IC). These independent components are defined as $\mathbf{S} = (\mathbf{s}_1, \mathbf{s}_2, ... \mathbf{s}_K)$, where each $\mathbf{s}_K$ vector has a length of $N$. So, each random vector $\mathbf{x}_n$ can be described as a linear combination of $K$ independent components: 
 
