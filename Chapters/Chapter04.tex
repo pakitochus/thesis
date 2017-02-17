@@ -176,15 +176,64 @@ which is indeed orthogonal, as can be seen here:
  
 This property reduces the number of parameters to be estimated, since an orthogonal matrix contains $n(n-1)/2$ degrees of freedom, in contrast to the $n^2$ degrees of freedom of the original mixing matrix $\mathbf{W}$. 
 
-Thanks to the central limit theorem, we assume that the sum of a large number of independent random variables tends will be approximately normally distributed, regardless of the individual statistical distributions \cite{Rice2006}. This property is used to maximize non-gaussianity and independence in the sources using any independence criteria such as the kurtosis or negentropy in any of the proposed algorithms. In this work, we will use the FastICA algorithm, 
+Thanks to the central limit theorem, we assume that the sum of a large number of independent random variables tends will be approximately normally distributed, regardless of the individual statistical distributions \cite{Rice2006}. This property is used to maximize non-gaussianity and independence in the sources using any independence criteria such as the kurtosis or negentropy in any of the proposed algorithms. In this work, we will use the FastICA algorithm. 
 
 \subsubsection{FastICA}
-Adaptive algorithms based on gradient descend can be problematic when they are used on an environment in which adaptation is not necessary, like this case. The convergence is often slow, and depends on the choice of convergence parameters. As a solution to this problem, block algorithms based on fixed-point iteration \cite{Oja1997,FastICA99} can be used. In \cite{Oja1997} a fixed-point algorithm based on kurtosis is introduced. In \cite{FastICA99}, this algorithm, known as FastICA, is generalized to general contrast functions. The single unit FastICA algorithm has the following form:
+FastICA is a block fixed-point iteration algorithm \cite{Oja1997,FastICA99} based on negentropy as a non-gaussianity measure. Fixed-point algorithms are converge faster than adaptive algorithms \cite{FastICA99}. The FastICA algorithm can be considered a neural algorithm \cite{Hyvarinen2000}, where the weight vector $\mathbf{w}$ can be updated using a learning rule. FastICA defines a learning rule that finds a direction $\mathbf{w}$, a unit vector such that the projection $\mathbf{w}^T\mathbf{x}_i$ maximizes non-gaussianity \cite{FastICA99}. 
+
+The non-gaussianity measure used here is the negative entropy, or negentropy. The negentropy is a form of differential entropy, which for a random vector $\mathbf{y}$ is defined as: 
 \begin{equation}
-\mathbf{w}(k) = E\lbrace\mathbf{x}g(\mathbf{w}(k-1)^T\mathbf{x})\rbrace -E\lbrace g'(\mathbf{w}(k-1)^T\mathbf{x})\rbrace\mathbf{w}(k-1)
+	J(\mathbf{y})=H(\mathbf{y}_{gauss})-H(\mathbf{y})
 \end{equation}
-where the loadings vector $\mathbf{w}$ is normalized to unit norm in each iteration, and the function $g(x)$ is a derivative of the contrast function $G$ defined in \cite{Hyvarinen1999}. The expected values are estimated in practice by using the mean of a significantly high number of samples of the input data. 
-The speed of convergence of the fixed-point algorithms is clearly superior to more neural algorithms. Improvements between 10 and 100 times the speed are observed frequently \cite{Giannakopoulos1998}. 
+where  $\mathbf{y}_{gauss}$ and $\mathbf{y}$ share the same covariance matrix, although $\mathbf{y}$ is not a gaussian random variable, and $\mathbf{y}_{gauss}$ is. There are many approximations to negentropy. The FastICA defines negentropy using the function: 
+\begin{equation}
+J(y)\propto [E\{G(y)\}-E\{G(\nu)\}]^2
+\end{equation}
+where we assume that $y$ is of zero mean and unit variance, $\nu$ is a Gaussian variable sharing the same mean and variance, and $G(x)$ is any non-quadratic function. Many functions have been proposed, but in the FastICA algorithm we use either $G(x)_1 = (1/a_1) \log\cosh a_1 x$ with $1<a_1<2$ or $G(x)_2 = \exp(-x^2/2)$ \cite{FastICA99}. 
+
+With these measures, we can compute the derivatives of these functions by: 
+\begin{align}
+g_1(x) & =\tanh(a_1 x), \\
+g_2(x) & = x\exp(- x^2/2)
+\end{align} 
+
+The algorithm for the one-unit version of FastICA can be defined \cite{FastICA99} as:
+\begin{enumerate}
+	\item Choose an initial (e.g. random) weight vector ${\bf w}$.
+	\item Let  ${\bf w}^+=E\{{\bf x}g({\bf w}^T{\bf x})\}-E\{g'({\bf w}^T{\bf x})\}{\bf w}$
+	\item Let  ${\bf w}={\bf w}^+/\Vert{\bf w}^+\Vert$
+	\item If not converged, go back to 2.
+\end{enumerate}
+
+Considering that the values of $\mathbf{w}$ converge when their dot product is close to 1. 
+
+
+
+% HASTA AQUI BIEN
+By a "unit" we refer to a computational unit, eventually an artificial neuron, hthis is then defined as: 
+
+The derivation of FastICA is as follows. First note that the maxima of the approximation of the negentropy of  ${\bf w}^T{\bf x}$ are obtained at certain optima of  $E\{G({\bf w}^T{\bf x})\}$. According to the Kuhn-Tucker conditions [32], the optima of  $E\{G({\bf w}^T{\bf x})\}$ under the constraint  $E\{({\bf w}^T{\bf x})^2\}=\Vert{\bf w}\Vert^2=1$ are obtained at points where 
+
+\begin{displaymath}
+E\{{\bf x}g({\bf w}^T{\bf x})\}-\beta{\bf w}=0
+\end{displaymath}	(37)
+
+Let us try to solve this equation by Newton's method. Denoting the function on the left-hand side of (40) by F, we obtain its Jacobian matrix  $JF({\bf w})$ as 
+\begin{displaymath}
+JF({\bf w})=E\{{\bf x}{\bf x}^T g'({\bf w}^T{\bf x})\}-\beta{\bf I}
+\end{displaymath}	(38)
+
+To simplify the inversion of this matrix, we decide to approximate the first term in (41). Since the data is sphered, a reasonable approximation seems to be  $E\{{\bf x}{\bf x}^T
+g'({\bf w}^T{\bf x})\}\approx E\{{\bf x}{\bf x}^T\}E\{ g'({\bf w}^T{\bf x})\}= E\{g'({\bf w}^T{\bf x})\}{\bf I}$. Thus the Jacobian matrix becomes diagonal, and can easily be inverted. Thus we obtain the following approximative Newton iteration: 
+\begin{displaymath}
+\begin{split}
+{\bf w}^+={\bf w}-[E\{{\bf x}g({\bf w}^T{\bf x})\}-\beta{\bf w}]/[E\{g'({\bf w}^T{\bf x})\}-\beta]
+\end{split}\end{displaymath}	(39)
+
+This algorithm can be further simplified by multiplying both sides of (42) by  $\beta-E\{g'({\bf w}^T{\bf x})\}$. This gives, after algebraic simplication, the FastICA iteration.
+In practice, the expectations in FastICA must be replaced by their estimates. The natural estimates are of course the corresponding sample means. Ideally, all the data available should be used, but this is often not a good idea because the computations may become too demanding. Then the averages can be estimated using a smaller sample, whose size may have a considerable effect on the accuracy of the final estimates. The sample points should be chosen separately at every iteration. If the convergence is not satisfactory, one may then increase the sample size.
+
+
 
 
 % AQUÍ EMPIEZA LO QUE HEMOS ESCRITO YA. 
