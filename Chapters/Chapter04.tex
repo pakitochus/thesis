@@ -150,33 +150,33 @@ The mean $\boldsymbol{\mu}$, and the matrices $\mathbf{S}$ and $\boldsymbol{\Psi
 \ac{ICA} was born as a solution to the \textit{blind source separation} problem, in which the aim is to estimate $c$ independent sources from a series of mixed signals \cite{Hyvarinen2000}. To do so, we assume the source signals to be non-gaussian, in addition to the independence assumption that we mentioned before. That is why their authors consider \ac{ICA} to be a non-gaussian version of \ac{FA} \cite{Hyvaerinen2003}, although due to this assumption, the results are very different to those obtained in \ac{FA}. 
 
 Unlike \ac{FA}, \ac{ICA} does not account for noise in the estimation procedure, and therefore the equation remains: 
-
 \begin{equation}\label{eq:icaecuation}
 \mathbf{X} = \mathbf{W}\mathbf{S}
 \end{equation}
-where $\mathbf{S}$ are the component scores and $\mathbf{W}$ are the component loading, or `sources'. Given that \ac{ICA} lacks a noise term, there is a procedure called \textit{whitening} that must be applied for the algorithm to converge \cite{Hyvarinen2000}. The whitening implies a linear transformation of the $i$-th observed variable $\mathbf{x}_i$ into a \textit{white} vector $\tilde{\mathbf{x}}_i$ so that its covariance matrix equals the identity: 
+where $\mathbf{S}$ are the component scores and $\mathbf{W}$ are the component loading, `sources' or `mixing matrix'. Given that \ac{ICA} lacks a noise term, there is a procedure called \textit{whitening} that must be applied for the algorithm to converge \cite{Hyvarinen2000}. The whitening implies a linear transformation of the $i$-th observed variable $\mathbf{x}_i$ into a \textit{white} vector $\tilde{\mathbf{x}}_i$ so that its covariance matrix equals the identity: 
 
 \begin{equation}
 E\{\tilde{\mathbf{x}}_i \tilde{\mathbf{x}}_i^T\}=\mathbf{I}
 \end{equation}
 
-This procedure is often performed using the \acf{EVD} of the covariance matrix $E\{\tilde{\mathbf{x}}_i \tilde{\mathbf{x}}_i^T\}$. 
+This procedure is often performed using the \acf{EVD} of the covariance matrix $E\{\mathbf{x}_i \mathbf{x}_i^T\} = \mathbf{E}\mathbf{D}\mathbf{E}^T$. $\mathbf{E}$ is the covariance matrix containing the eigenvectors of $E\{\mathbf{x}_i \mathbf{x}_i^T\}$, and $\mathbf{D}$ is a diagonal matrix whose diagonal elements are the eigenvalues of $E\{\mathbf{x}_i \mathbf{x}_i^T\}$. Whitening is done using the following equation: 
 
+\begin{equation}
+\tilde{\mathbf{x}}_i= \mathbf{E}\mathbf{D}^{-1/2}\mathbf{E}^T\mathbf{x}_i
+\end{equation}
 
-One popular method for whitening is to use the eigen-value decomposition (EVD) of the covariance matrix  $E\{{\bf x}{\bf x}^T\}={\bf E}{\bf D}{\bf E}^T$, where ${\bf E}$ is the orthogonal matrix of eigenvectors of  $E\{{\bf x}{\bf x}^T\}$ and ${\bf D}$ is the diagonal matrix of its eigenvalues,  ${\bf D}= \mbox{diag}(d_1,...,d_n)$. Note that  $E\{{\bf x}{\bf x}^T\}$can be estimated in a standard way from the available sample  ${\bf x}(1), ... ,
-{\bf x}(T)$. Whitening can now be done by 
+This procedure transform the mixing matrix to:
+\begin{equation}
+\tilde{\mathbf{x}}_i = \mathbf{E}\mathbf{D}^{-1/2}\mathbf{E}^T \mathbf{W}\mathbf{s}_i
+\end{equation}
+which is indeed orthogonal, as can be seen here:
+\begin{equation}
+ E\{\tilde{\mathbf{x}}_i\tilde{\mathbf{x}}_i^T\} = \tilde{\mathbf{W}} E\{\tilde{\mathbf{s}}_i\tilde{\mathbf{s}}_i^T\}\tilde{\mathbf{W}}^T 	=\tilde{\mathbf{W}}\tilde{\mathbf{W}}^T=\mathbf{I}
+\end{equation}
+ 
+This property reduces the number of parameters to be estimated, since an orthogonal matrix contains $n(n-1)/2$ degrees of freedom, in contrast to the $n^2$ degrees of freedom of the original mixing matrix $\mathbf{W}$. 
 
-\begin{displaymath}
-\tilde{{\bf x}}={\bf E}{\bf D}^{-1/2}{\bf E}^T {\bf x}
-\end{displaymath}	(31)
-
-where the matrix  ${\bf D}^{-1/2}$is computed by a simple component-wise operation as  ${\bf D}^{-1/2}=\mbox{diag}(d_1^{-1/2},...,d_n^{-1/2})$. It is easy to check that now  $E\{\tilde{{\bf x}}\tilde{{\bf x}}^T\}={\bf I}$.
-
-Here we see that whitening reduces the number of parameters to be estimated. Instead of having to estimate the n2 parameters that are the elements of the original matrix ${\bf A}$, we only need to estimate the new, orthogonal mixing matrix  $\tilde{{\bf A}}$. An orthogonal matrix contains n(n-1)/2degrees of freedom.
-
-Thanks to the central limit theorem, we assume that the sum of a large number of independent random variables tends will be approximately normally distributed, regardless of the individual statistical distributions \cite{Rice2006}. This property is used to maximize non-gaussianity and independence in the sources using any independence criteria such as the kurtosis or negentropy in any of the proposed algorithms. 
-
-In this work, we will use the FastICA algorithm, 
+Thanks to the central limit theorem, we assume that the sum of a large number of independent random variables tends will be approximately normally distributed, regardless of the individual statistical distributions \cite{Rice2006}. This property is used to maximize non-gaussianity and independence in the sources using any independence criteria such as the kurtosis or negentropy in any of the proposed algorithms. In this work, we will use the FastICA algorithm, 
 
 \subsubsection{FastICA}
 Adaptive algorithms based on gradient descend can be problematic when they are used on an environment in which adaptation is not necessary, like this case. The convergence is often slow, and depends on the choice of convergence parameters. As a solution to this problem, block algorithms based on fixed-point iteration \cite{Oja1997,FastICA99} can be used. In \cite{Oja1997} a fixed-point algorithm based on kurtosis is introduced. In \cite{FastICA99}, this algorithm, known as FastICA, is generalized to general contrast functions. The single unit FastICA algorithm has the following form:
