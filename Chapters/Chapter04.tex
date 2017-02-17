@@ -144,29 +144,39 @@ The mean $\boldsymbol{\mu}$, and the matrices $\mathbf{S}$ and $\boldsymbol{\Psi
 	\label{fig:error}
 \end{figure}
 
-
 \subsection{Independent Component Analysis}
-\acf{ICA} \cite{Hyvarinen2000} is an algorithm that performs decomposition imposing that the resulting components must be independent. It was used in \cite{Alvarez2009,Martinez201141,Martinez-Murcia20129676} as part of a \ac{CAD} system, and it had been used in medical image segmentation as well \cite{DeMartino2007}. 
+\acf{ICA} \cite{Hyvarinen2000} is an algorithm that performs decomposition imposing that the resulting components must be independent. It was used in \cite{Alvarez2009,Martinez201141,Martinez-Murcia20129676} as part of a \ac{CAD} system, and it had been used in other medical imaging applications such as segmentation \cite{DeMartino2007}. 
 
+\ac{ICA} was born as a solution to the \textit{blind source separation} problem, in which the aim is to estimate $c$ independent sources from a series of mixed signals \cite{Hyvarinen2000}. To do so, we assume the source signals to be non-gaussian, in addition to the independence assumption that we mentioned before. That is why their authors consider \ac{ICA} to be a non-gaussian version of \ac{FA} \cite{Hyvaerinen2003}, although due to this assumption, the results are very different to those obtained in \ac{FA}. 
 
+Unlike \ac{FA}, \ac{ICA} does not account for noise in the estimation procedure, and therefore the equation remains: 
 
-\acf{ICA} \cite{Hyvarinen2000}, is a statistical technique that represents a multidimensional random vector as a lineal combination of non-gaussian random variables (the so-called ''independent components'') to be as independent as possible, and has been used widely on segmentation and clustering of medical images \cite{DeMartino2007,Alvarez2009}. It can be considered as a non-gaussian version of Factor Analysis. Assume that we observe $n$ lineal mixtures $\mathbf{x}_1, \mathbf{x}_2, \ldots, \mathbf{x}_n$ of length $N$ that can be modelled as an expression of $K$ independent components (IC). These independent components are defined as $\mathbf{S} = (\mathbf{s}_1, \mathbf{s}_2, ... \mathbf{s}_K)$, where each $\mathbf{s}_K$ vector has a length of $N$. So, each random vector $\mathbf{x}_n$ can be described as a linear combination of $K$ independent components: 
+\begin{equation}\label{eq:icaecuation}
+\mathbf{X} = \mathbf{W}\mathbf{S}
+\end{equation}
+where $\mathbf{S}$ are the component scores and $\mathbf{W}$ are the component loading, or `sources'. Given that \ac{ICA} lacks a noise term, there is a procedure called \textit{whitening} that must be applied for the algorithm to converge \cite{Hyvarinen2000}. The whitening implies a linear transformation of the $i$-th observed variable $\mathbf{x}_i$ into a \textit{white} vector $\tilde{\mathbf{x}}_i$ so that its covariance matrix equals the identity: 
 
 \begin{equation}
-\mathbf{x_n} = a_{1n}\mathbf{s}_1 + a_{2n}\mathbf{s}_2 + \ldots + a_{Kn}\mathbf{s}_K
+E\{\tilde{\mathbf{x}}_i \tilde{\mathbf{x}}_i^T\}=\mathbf{I}
 \end{equation}
 
-Without loss of generality we can assume that both the observed vectors and the independent components are are zero mean. If the previous conditions are not met, the $\mathbf{x}$ variables can be centered by subtracting the sample mean. To use a vector-matrix notation, more convenient in this case, we denote as matrix $\mathbf{X}$ the random vector whose elements are $\mathbf{x}_1, \ldots, \mathbf{x}_n$. We also denote as $\mathbf{A}$ the matrix that contains all $a_{Kn}$ elements, the ''mixing matrix'' that projects each image into the space defined by the IC. Using this notation, the mixing model above remains as follows: 
+This procedure is often performed using the \acf{EVD} of the covariance matrix $E\{\tilde{\mathbf{x}}_i \tilde{\mathbf{x}}_i^T\}$. 
 
-\begin{equation}\label{eq:ica}
-\mathbf{X}=\mathbf{A}\mathbf{S}
-\end{equation}
 
-The starting point of ICA is the assumption that all components $\mathbf{s}_K$ are are statistically independent. To measure independence, we assume that all independent components have a non-gaussian statistical distribution. It is assumed that a sum of independent signal trends to gaussianity, so if non-gaussianity is maximized with any independence criteria $F$, for instance, the kurtosis or negentropy, we obtain signals that are more independent than the previous ones \cite{Hyvarinen1999,Hyvarinen2000}.
-After estimating the matrix $\mathbf{A}$, we can compute its inverse, $\mathbf{W}$ and obtain the projection $\mathbf{S}$ of the images in the dataset into the IC space with: 
-\begin{equation}
-\mathbf{S} = \mathbf{W}\mathbf{X}
-\end{equation}
+One popular method for whitening is to use the eigen-value decomposition (EVD) of the covariance matrix  $E\{{\bf x}{\bf x}^T\}={\bf E}{\bf D}{\bf E}^T$, where ${\bf E}$ is the orthogonal matrix of eigenvectors of  $E\{{\bf x}{\bf x}^T\}$ and ${\bf D}$ is the diagonal matrix of its eigenvalues,  ${\bf D}= \mbox{diag}(d_1,...,d_n)$. Note that  $E\{{\bf x}{\bf x}^T\}$can be estimated in a standard way from the available sample  ${\bf x}(1), ... ,
+{\bf x}(T)$. Whitening can now be done by 
+
+\begin{displaymath}
+\tilde{{\bf x}}={\bf E}{\bf D}^{-1/2}{\bf E}^T {\bf x}
+\end{displaymath}	(31)
+
+where the matrix  ${\bf D}^{-1/2}$is computed by a simple component-wise operation as  ${\bf D}^{-1/2}=\mbox{diag}(d_1^{-1/2},...,d_n^{-1/2})$. It is easy to check that now  $E\{\tilde{{\bf x}}\tilde{{\bf x}}^T\}={\bf I}$.
+
+Here we see that whitening reduces the number of parameters to be estimated. Instead of having to estimate the n2 parameters that are the elements of the original matrix ${\bf A}$, we only need to estimate the new, orthogonal mixing matrix  $\tilde{{\bf A}}$. An orthogonal matrix contains n(n-1)/2degrees of freedom.
+
+Thanks to the central limit theorem, we assume that the sum of a large number of independent random variables tends will be approximately normally distributed, regardless of the individual statistical distributions \cite{Rice2006}. This property is used to maximize non-gaussianity and independence in the sources using any independence criteria such as the kurtosis or negentropy in any of the proposed algorithms. 
+
+In this work, we will use the FastICA algorithm, 
 
 \subsubsection{FastICA}
 Adaptive algorithms based on gradient descend can be problematic when they are used on an environment in which adaptation is not necessary, like this case. The convergence is often slow, and depends on the choice of convergence parameters. As a solution to this problem, block algorithms based on fixed-point iteration \cite{Oja1997,FastICA99} can be used. In \cite{Oja1997} a fixed-point algorithm based on kurtosis is introduced. In \cite{FastICA99}, this algorithm, known as FastICA, is generalized to general contrast functions. The single unit FastICA algorithm has the following form:

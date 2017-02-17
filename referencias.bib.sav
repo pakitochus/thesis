@@ -1164,27 +1164,25 @@
 }
 
 @Article{Bradley1997,
-  author        = {Bradley, Andrew P},
-  title         = {The use of the area under the ROC curve in the evaluation of machine learning algorithms},
-  journal       = {Pattern recognition},
-  year          = {1997},
-  volume        = {30},
-  number        = {7},
-  pages         = {1145--1159},
-  __markedentry = {[pakitochus:]},
-  publisher     = {Elsevier},
+  author    = {Bradley, Andrew P},
+  title     = {The use of the area under the ROC curve in the evaluation of machine learning algorithms},
+  journal   = {Pattern recognition},
+  year      = {1997},
+  volume    = {30},
+  number    = {7},
+  pages     = {1145--1159},
+  publisher = {Elsevier},
 }
 
 @InBook{Hastie2009,
-  chapter       = {7},
-  title         = {The Elements of Statistical Learning},
-  publisher     = {Springer New York},
-  year          = {2009},
-  author        = {Hastie, Trevor and Tibshirani, Robert and Friedman, Jerome},
-  isbn          = {978-0-387-84858-7},
-  __markedentry = {[pakitochus:6]},
-  date          = {2009-08-26},
-  ean           = {9780387848587},
+  chapter   = {7},
+  title     = {The Elements of Statistical Learning},
+  publisher = {Springer New York},
+  year      = {2009},
+  author    = {Hastie, Trevor and Tibshirani, Robert and Friedman, Jerome},
+  isbn      = {978-0-387-84858-7},
+  date      = {2009-08-26},
+  ean       = {9780387848587},
 }
 
 @Article{DaelemansHosteMeulderEtAl2003,
@@ -1238,6 +1236,24 @@
   year      = {1976},
   author    = {Harman, H. H.},
   address   = {Chicago},
+}
+
+@InCollection{Hyvaerinen2003,
+  author        = {Hyv{\"a}rinen, Aapo and Kano, Yutaka},
+  title         = {Independent component analysis for non-normal factor analysis},
+  booktitle     = {New developments in psychometrics},
+  publisher     = {Springer},
+  year          = {2003},
+  pages         = {649--656},
+  __markedentry = {[pakitochus:]},
+}
+
+@Book{Rice2006,
+  title         = {Mathematical statistics and data analysis},
+  publisher     = {Nelson Education},
+  year          = {2006},
+  author        = {Rice, John},
+  __markedentry = {[pakitochus:6]},
 }
 
 @Comment{jabref-meta: databaseType:bibtex;}
