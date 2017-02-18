@@ -3962,6 +3962,39 @@
       \endverb
       \keyw{Hilbert spaces,decision theory,learning automata,object recognition,pattern classification,statistical analysis,Hilbert space,decision theory,dimensionality,dissimilarity,image recognition,kernel mapping,object recognition,pattern classification,statistical classifiers,support vector machines,training sets,Hilbert space,Image databases,Image recognition,NIST,Pattern recognition,Physics,Space technology,Support vector machine classification,Support vector machines,Testing}
     \endentry
+    \entry{Hyvarinen2000}{article}{}
+      \name{author}{2}{}{%
+        {{hash=5c663ecb4091282546f5faac03c9934c}{%
+           family={Hyvärinen},
+           family_i={H\bibinitperiod},
+           given={A.},
+           given_i={A\bibinitperiod}}}%
+        {{hash=6037053772f43ad682b35ec7d8bee758}{%
+           family={Oja},
+           family_i={O\bibinitperiod},
+           given={E.},
+           given_i={E\bibinitperiod}}}%
+      }
+      \strng{namehash}{6879b8448d19fcb5d73e8d2f2d0f0b59}
+      \strng{fullhash}{6879b8448d19fcb5d73e8d2f2d0f0b59}
+      \field{sortinit}{2}
+      \field{sortinithash}{8343b463aacf48517c044b4d2c9c45ed}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{A fundamental problem in neural network research, as well as in many other disciplines, is finding a suitable representation of multivariate data, i.e. random vectors. For reasons of computational and conceptual simplicity, the representation is often sought as a linear transformation of the original data. In other words, each component of the representation is a linear combination of the original variables. Well-known linear transformation methods include principal component analysis, factor analysis, and projection pursuit. Independent component analysis (ICA) is a recently developed method in which the goal is to find a linear representation of non-Gaussian data so that the components are statistically independent, or as independent as possible. Such a representation seems to capture the essential structure of the data in many applications, including feature extraction and signal separation. In this paper, we present the basic theory and applications of ICA, and our recent work on the subject.}
+      \field{issn}{0893-6080}
+      \field{journaltitle}{Neural Networks}
+      \field{number}{4-5}
+      \field{title}{{Independent component analysis: algorithms and applications}}
+      \field{volume}{13}
+      \field{year}{2000}
+      \field{pages}{411\bibrangedash 430}
+      \range{pages}{20}
+      \verb{doi}
+      \verb 10.1016/S0893-6080(00)00026-5
+      \endverb
+      \keyw{Independent component analysis}
+    \endentry
     \entry{Kogure2000}{article}{}
       \name{author}{8}{}{%
         {{hash=229f7e5bea0fb10d5a56b2b7bf330d26}{%
@@ -4061,6 +4094,28 @@
       \endverb
       \keyw{Brain Mapping,instrumentation; Cerebral Cortex,anatomy & histology; Humans; Image Processing,Computer-Assisted,instrumentation; Magnetic Resonance Imaging,instrumentation; Reference Values; Software}
     \endentry
+    \entry{FastICA99}{article}{}
+      \name{author}{1}{}{%
+        {{hash=5c663ecb4091282546f5faac03c9934c}{%
+           family={Hyvärinen},
+           family_i={H\bibinitperiod},
+           given={A.},
+           given_i={A\bibinitperiod}}}%
+      }
+      \strng{namehash}{5c663ecb4091282546f5faac03c9934c}
+      \strng{fullhash}{5c663ecb4091282546f5faac03c9934c}
+      \field{sortinit}{1}
+      \field{sortinithash}{53e85f4cf497d2a4e1d51786552bcbf1}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{IEEE Transactions on Neural Networks}
+      \field{number}{3}
+      \field{title}{{Fast and Robust Fixed-Point Algorithms for Independent Component Analysis}}
+      \field{volume}{10}
+      \field{year}{1999}
+      \field{pages}{626\bibrangedash 634}
+      \range{pages}{9}
+    \endentry
     \entry{Szatmari1999}{article}{}
       \name{author}{1}{}{%
         {{hash=78765da34409db9b3fc4744406d20083}{%
@@ -4141,6 +4196,32 @@
       \field{year}{1997}
       \field{pages}{1145\bibrangedash 1159}
       \range{pages}{15}
+    \endentry
+    \entry{Oja1997}{article}{}
+      \name{author}{2}{}{%
+        {{hash=5c663ecb4091282546f5faac03c9934c}{%
+           family={Hyvärinen},
+           family_i={H\bibinitperiod},
+           given={A.},
+           given_i={A\bibinitperiod}}}%
+        {{hash=24c2e25ca336302c7399f6d52a4fe47c}{%
+           family={Oja.},
+           family_i={O\bibinitperiod},
+           given={E.},
+           given_i={E\bibinitperiod}}}%
+      }
+      \strng{namehash}{65a8f90b5dd92c2c9a95af171cb6737c}
+      \strng{fullhash}{65a8f90b5dd92c2c9a95af171cb6737c}
+      \field{sortinit}{1}
+      \field{sortinithash}{53e85f4cf497d2a4e1d51786552bcbf1}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Neural Computation}
+      \field{title}{{A fast fixed-point algorithm for independent component analysis}}
+      \field{volume}{9}
+      \field{year}{1997}
+      \field{pages}{1483\bibrangedash 1492}
+      \range{pages}{10}
     \endentry
     \entry{Arndt1996}{article}{}
       \name{author}{5}{}{%
@@ -6348,6 +6429,87 @@
       \verb{doi}
       \verb 10.1007/978-1-84628-723-7_8
       \endverb
+    \endentry
+    \entry{FastICA99}{article}{}
+      \name{author}{1}{}{%
+        {{hash=5c663ecb4091282546f5faac03c9934c}{%
+           family={Hyvärinen},
+           family_i={H\bibinitperiod},
+           given={A.},
+           given_i={A\bibinitperiod}}}%
+      }
+      \strng{namehash}{5c663ecb4091282546f5faac03c9934c}
+      \strng{fullhash}{5c663ecb4091282546f5faac03c9934c}
+      \field{sortinit}{H}
+      \field{sortinithash}{82012198d5dfa657b8c4a168793268a6}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{IEEE Transactions on Neural Networks}
+      \field{number}{3}
+      \field{title}{{Fast and Robust Fixed-Point Algorithms for Independent Component Analysis}}
+      \field{volume}{10}
+      \field{year}{1999}
+      \field{pages}{626\bibrangedash 634}
+      \range{pages}{9}
+    \endentry
+    \entry{Oja1997}{article}{}
+      \name{author}{2}{}{%
+        {{hash=5c663ecb4091282546f5faac03c9934c}{%
+           family={Hyvärinen},
+           family_i={H\bibinitperiod},
+           given={A.},
+           given_i={A\bibinitperiod}}}%
+        {{hash=24c2e25ca336302c7399f6d52a4fe47c}{%
+           family={Oja.},
+           family_i={O\bibinitperiod},
+           given={E.},
+           given_i={E\bibinitperiod}}}%
+      }
+      \strng{namehash}{65a8f90b5dd92c2c9a95af171cb6737c}
+      \strng{fullhash}{65a8f90b5dd92c2c9a95af171cb6737c}
+      \field{sortinit}{H}
+      \field{sortinithash}{82012198d5dfa657b8c4a168793268a6}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Neural Computation}
+      \field{title}{{A fast fixed-point algorithm for independent component analysis}}
+      \field{volume}{9}
+      \field{year}{1997}
+      \field{pages}{1483\bibrangedash 1492}
+      \range{pages}{10}
+    \endentry
+    \entry{Hyvarinen2000}{article}{}
+      \name{author}{2}{}{%
+        {{hash=5c663ecb4091282546f5faac03c9934c}{%
+           family={Hyvärinen},
+           family_i={H\bibinitperiod},
+           given={A.},
+           given_i={A\bibinitperiod}}}%
+        {{hash=6037053772f43ad682b35ec7d8bee758}{%
+           family={Oja},
+           family_i={O\bibinitperiod},
+           given={E.},
+           given_i={E\bibinitperiod}}}%
+      }
+      \strng{namehash}{6879b8448d19fcb5d73e8d2f2d0f0b59}
+      \strng{fullhash}{6879b8448d19fcb5d73e8d2f2d0f0b59}
+      \field{sortinit}{H}
+      \field{sortinithash}{82012198d5dfa657b8c4a168793268a6}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{A fundamental problem in neural network research, as well as in many other disciplines, is finding a suitable representation of multivariate data, i.e. random vectors. For reasons of computational and conceptual simplicity, the representation is often sought as a linear transformation of the original data. In other words, each component of the representation is a linear combination of the original variables. Well-known linear transformation methods include principal component analysis, factor analysis, and projection pursuit. Independent component analysis (ICA) is a recently developed method in which the goal is to find a linear representation of non-Gaussian data so that the components are statistically independent, or as independent as possible. Such a representation seems to capture the essential structure of the data in many applications, including feature extraction and signal separation. In this paper, we present the basic theory and applications of ICA, and our recent work on the subject.}
+      \field{issn}{0893-6080}
+      \field{journaltitle}{Neural Networks}
+      \field{number}{4-5}
+      \field{title}{{Independent component analysis: algorithms and applications}}
+      \field{volume}{13}
+      \field{year}{2000}
+      \field{pages}{411\bibrangedash 430}
+      \range{pages}{20}
+      \verb{doi}
+      \verb 10.1016/S0893-6080(00)00026-5
+      \endverb
+      \keyw{Independent component analysis}
     \endentry
     \entry{Hyvaerinen2003}{incollection}{}
       \name{author}{2}{}{%
@@ -8968,53 +9130,48 @@
       \endverb
     \endentry
   \endsortlist
-  \missing{Shaffer1995}
-  \missing{Segovia2012}
-  \missing{Hyvarinen1999}
-  \missing{martinez2013texture}
-  \missing{han2006reliability}
-  \missing{PPMI}
-  \missing{Zhou2008}
-  \missing{Botev2010}
-  \missing{Inititative2010}
-  \missing{Grana2011}
-  \missing{Vapnik1982}
-  \missing{Hyvarinen2000}
-  \missing{Jong2008}
-  \missing{Oja1997}
-  \missing{AAL}
-  \missing{Giannakopoulos1998}
-  \missing{Ramirez2009}
-  \missing{chan2001patterns}
-  \missing{Martinez-Murcia2014}
-  \missing{Tzourio-Mazoyer2002}
-  \missing{Illan2012}
-  \missing{Kohavi1995a}
-  \missing{sikio2015mr}
-  \missing{Yen1995}
-  \missing{Illan2014}
-  \missing{kovalev2001three}
-  \missing{Medina2008}
-  \missing{Ojala1996}
-  \missing{Shepp82}
-  \missing{dougall_systematic_2004}
-  \missing{FastICA99}
-  \missing{Fischl2004}
-  \missing{Zhao2007}
-  \missing{clausi2002analysis}
-  \missing{Ortiz2013}
-  \missing{Alvarez2009}
-  \missing{IAIllan2010}
   \missing{Evans1993}
+  \missing{Kohavi1995a}
+  \missing{han2006reliability}
+  \missing{xu2009source}
+  \missing{Ramirez2009}
+  \missing{Ortiz2013}
   \missing{jobst_accurate_1998}
   \missing{Chen2008}
-  \missing{xu2009source}
-  \missing{Unay2007}
-  \missing{Vardi1985}
   \missing{Locatelli1998}
-  \missing{soh1999texture}
-  \missing{Ram'irez2009}
   \missing{Rojas2012}
+  \missing{Grana2011}
+  \missing{Shaffer1995}
+  \missing{Zhou2008}
+  \missing{PPMI}
+  \missing{chan2001patterns}
+  \missing{Fischl2004}
+  \missing{Jong2008}
+  \missing{AAL}
+  \missing{Tzourio-Mazoyer2002}
+  \missing{Illan2012}
+  \missing{Botev2010}
+  \missing{Martinez-Murcia2014}
+  \missing{Ram'irez2009}
+  \missing{Unay2007}
+  \missing{dougall_systematic_2004}
+  \missing{sikio2015mr}
+  \missing{Illan2014}
+  \missing{Vapnik1982}
+  \missing{Vardi1985}
+  \missing{Ojala1996}
+  \missing{IAIllan2010}
+  \missing{martinez2013texture}
+  \missing{clausi2002analysis}
+  \missing{soh1999texture}
+  \missing{Segovia2012}
+  \missing{Yen1995}
+  \missing{Zhao2007}
+  \missing{Medina2008}
+  \missing{Shepp82}
+  \missing{Inititative2010}
+  \missing{kovalev2001three}
+  \missing{Alvarez2009}
 \endrefsection
 
 \refsection{1}
