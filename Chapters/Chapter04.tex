@@ -265,22 +265,39 @@ In this section, we compute the results of applying \ac{ICA} to the ADNI-PET and
 The case is similar to the one presented in Section~\ref{sec:results_FA_AD}, where the performance slightly improves when increasing the number of selected voxels. The performance is again better when using the ADNI-PET dataset than with the VDLN-HMPAO, although the behaviour is similar. 
 
 The results change when varying the number of components. In this case, although good performance is obtained within the first 5 components in most cases, the performance does not decrease with a higher number, and sometimes increases (for example, in the case of \ac{ICA} and the $t$-test or the wilcoxon selection criteria). 
-% HASTA AQUI
 \subsubsection{At the Operation Point}
-Now we focus on non-averaged values, the values for which our system is optimal: the operation point. 
+Now we focus on non-averaged values, the values for which our system is optimal: the operation point. In this scenario we see that the tendency is that all systems behave similarly. The accuracy vary slightly with the number of components selected to build the model almost in any case, and there is a steep increase in the performance within the first five components.
 
 \begin{figure}
 	\centering
-	\subfloat[]{\includegraphics[width=0.49\linewidth]{Graphics/ch4/accuracyOP-FA_vsN_comparison_ADNI-PET.eps}\label{fig:ADNI-PET-FA-OP}}
-	\subfloat[]{\includegraphics[width=0.49\linewidth]{Graphics/ch4/accuracyOP-ICA_vsN_comparison_ADNI-PET.eps}\label{fig:ADNI-PET-ICA-OP}}
+	\subfloat[]{\includegraphics[width=0.49\linewidth]{Graphics/ch4/accuracyOP-FA_vsN_comparison_ADNI-PET.eps}\label{fig:ADNI-PET-FA-OP-VSK}}
+	\subfloat[]{\includegraphics[width=0.49\linewidth]{Graphics/ch4/accuracyOP-ICA_vsN_comparison_ADNI-PET.eps}\label{fig:ADNI-PET-ICA-OP-VSK}}
 	
-	\subfloat[]{\includegraphics[width=0.49\linewidth]{Graphics/ch4/accuracyOP-FA_vsN_comparison_VDLN-HMPAO.eps}\label{fig:VDLN-HMPAO-FA-OP}}
-	\subfloat[]{\includegraphics[width=0.49\linewidth]{Graphics/ch4/accuracyOP-ICA_vsN_comparison_VDLN-HMPAO.eps}\label{fig:VDLN-HMPAO-ICA-OP}}
+	\subfloat[]{\includegraphics[width=0.49\linewidth]{Graphics/ch4/accuracyOP-FA_vsN_comparison_VDLN-HMPAO.eps}\label{fig:VDLN-HMPAO-FA-OP-VSK}}
+	\subfloat[]{\includegraphics[width=0.49\linewidth]{Graphics/ch4/accuracyOP-ICA_vsN_comparison_VDLN-HMPAO.eps}\label{fig:VDLN-HMPAO-ICA-OP-VSK}}
 	
 	\caption{Performance of the proposed system using the two \ac{AD} datasets: ADNI-PET and VDLN-HMPAO at the operation point, and how they vary over the number of components used in the decomposition. } 
 	\label{fig:accuracyOP-AD}
 \end{figure}
 
+A particular case is the combination of \ac{FA} and the relative entropy selection criteria applied to the VDLN-HMPAO dataset. In this case there seems to be a trend to achieve a maximum performance at between 8-10 components. But it is an individual behaviour that does not reproduce on the other datasets or strategies, therefore it must be related to the dataset itself. 
+% HASTA AQUI
+
+As for the variation of the performance when increasing the number of selected voxels, we can see that there is always a tendency of slightly increase in both datasets and decomposition strategies, as can be seen in Figure~\ref{fig:accuracyOP-ADvsN}. There, the best performance
+
+\begin{figure}
+	\centering
+	\subfloat[]{\includegraphics[width=0.49\linewidth]{Graphics/ch4/accuracyOP-FA_vsK_comparison_ADNI-PET.eps}\label{fig:ADNI-PET-FA-OP-VSN}}
+	\subfloat[]{\includegraphics[width=0.49\linewidth]{Graphics/ch4/accuracyOP-ICA_vsK_comparison_ADNI-PET.eps}\label{fig:ADNI-PET-ICA-OP-VSN}}
+	
+	\subfloat[]{\includegraphics[width=0.49\linewidth]{Graphics/ch4/accuracyOP-FA_vsK_comparison_VDLN-HMPAO.eps}\label{fig:VDLN-HMPAO-FA-OP-VSN}}
+	\subfloat[]{\includegraphics[width=0.49\linewidth]{Graphics/ch4/accuracyOP-ICA_vsK_comparison_VDLN-HMPAO.eps}\label{fig:VDLN-HMPAO-ICA-OP-VSN}}
+	
+	\caption{Performance of the proposed system using the two \ac{AD} datasets: ADNI-PET and VDLN-HMPAO at the operation point, and how they vary over the number of selected voxels. } 
+	\label{fig:accuracyOP-ADvsN}
+\end{figure}
+
+In Table~\ref{tab:featureAD} we show the performance values obtained at the operation point for our different test combining decomposition algorithms and selection criteria, for the two datasets analysed in this section. It is 
 
 \begin{table}
 	\myfloatalign
@@ -303,14 +320,22 @@ Now we focus on non-averaged values, the values for which our system is optimal:
 		&  & wilcoxon & $ 0.856 \pm 0.086 $ & $ 0.857 \pm 0.156 $ & $ 0.855 \pm 0.160 $ \\
 		\bottomrule
 	\end{tabularx}
-	\caption{Accuracy, sensitivity, specificity, and their standard deviation at the operation point for each method and its corresponding feature selection criterion, using two \protect\ac{AD} datasets. }
+	\caption[Performance values for the Alzheimer's datasets]{Accuracy, sensitivity, specificity, and their standard deviation at the operation point for each method and its corresponding feature selection criterion, using two \protect\ac{AD} datasets. }
 	\label{tab:featureAD}
 \end{table}
-\FloatBarrier
-\subsection{Parkinson's Disease}
 
+
+
+
+\FloatBarrier
+
+% DESDE AQUI
+\subsection{Parkinson's Disease}
+Now we will look at how the proposed \ac{CAD} system behaves when applied to the three DaTSCAN datasets: VDLN-DAT, VDLV-DAT and PPMI-DAT. For this experiment we will use a maximum of $1500$ selected voxels and $25$ components. 
 
 \subsubsection{Factor Analysis}
+Firstly, we will explore the average behaviour of the system that uses \ac{FA} as a decomposition technique. For this purpose, as in previous sections, Figure~\ref{fig:accuracyMeanFA-PKS} shows how the average performance varies when varying the number of voxels selected and the number of components extracted. 
+
 \begin{figure}
 	\centering
 	\subfloat[]{\includegraphics[width=0.49\linewidth]{Graphics/ch4/accuracyMeanSTD-FA_vsN_ttest_PKS.eps}\label{fig:PKS-AV-FA-TTEST-VSN}}
@@ -325,6 +350,12 @@ Now we focus on non-averaged values, the values for which our system is optimal:
 	\caption{Average performance and standard deviation of the proposed system using the three \ac{PKS} datasets, \ac{FA} and the three feature selection criteria: $t$-test (\protect\subref{fig:PKS-AV-FA-TTEST-VSN} and \protect\subref{fig:PKS-AV-FA-TTEST-VSK}), relative entropy (\protect\subref{fig:PKS-AV-FA-ENTROPY-VSN} and \protect\subref{fig:PKS-AV-FA-ENTROPY-VSK}) and wilcoxon (\protect\subref{fig:PKS-AV-FA-WILCOXON-VSN} and \protect\subref{fig:PKS-AV-FA-WILCOXON-VSK}). } 
 	\label{fig:accuracyMeanFA-PKS}
 \end{figure}
+
+In this case there is a clear difference between datasets, since some of them are more complex than others, usually due to a typical acquisition procedure in DaTSCAN. In the VDLN-DAT, the images were often composed only of a few cuts around the striatum, whereas in PPMI and VDLV-DAT this rarely happens. That would explain the average outperformance of these two datasets over the VDLN-DAT in almost all cases. 
+
+Their behaviours are consistent. Usually, there is no variation with the number of voxel selected (except in the obvious case of the VDLN-DAT dataset and the relative entropy selection criterion). However, there are repeated trends regarding the number of components or factors used in the computation. We can see that the performance increases in the first components, and once we have achieve a decent number (between 4 and 6), the performance starts to decrease. This could mean that the decomposition in more than 5 or 6 components only introduces noise and leads to a wrong decomposition. 
+
+Again, this behaviour is consistent with the VDLN-DAT dataset, except for one case. It does seem that the interaction between the VDLN-DAT dataset and the relative entropy selection criterion leads to a wrong model. We will explore this question later, in the discussion. 
 
 \subsubsection{Independent Component Analysis}
 \begin{figure}
@@ -388,8 +419,10 @@ Now we focus on non-averaged values, the values for which our system is optimal:
 		&  & wilcoxon & $ 0.912 \pm 0.070 $ & $ 0.909 \pm 0.100 $ & $ 0.920 \pm 0.118 $ \\
 		\bottomrule
 		\end{tabularx}
-		\caption{Accuracy, sensitivity, specificity, and their standard deviation at the operation point for each method and its corresponding feature selection criterion, using three \protect\ac{PKS} datasets }
+		\caption[Performance values for the Parkinson's datasets]{Accuracy, sensitivity, specificity, and their standard deviation at the operation point for each method and its corresponding feature selection criterion, using three \protect\ac{PKS} datasets }
 		\label{tab:featurePKS}
 \end{table}
 
 \section{Discussion}
+
+Explore this: Again, this behaviour is consistent with the VDLN-DAT dataset, except for one case. It does seem that the interaction between the VDLN-DAT dataset and the relative entropy selection criterion leads to a wrong model. We will explore this question later, in the discussion. 
