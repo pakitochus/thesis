@@ -205,38 +205,18 @@ The algorithm for the one-unit version of FastICA can be defined \cite{FastICA99
 	\item If not converged, go back to 2.
 \end{enumerate}
 
-Considering that the values of $\mathbf{w}$ converge when their dot product is close to 1. 
+The algorithm considers that the values of $\mathbf{w}$ converge when their dot product is close to 1, that is, they are pointing in the same direction. Note that the expectations are computed as the sample mean in the FastICA algorithm. Additional modifications were presented in \cite{Hyvarinen2000}, in which step 2 is converted to a Newton iteration and further simplification is performed. 
 
+This is the algorithm for one computational unit, or neuron, which computes one component. However, the procedure can be extended to $c$ components by defining $c$ neurons with weight vectors ${\bf w}_1,...,{\bf w}_c$ so that $\mathbf{W} = ({\bf w}_1,...,{\bf w}_n)^T$. The outputs ${\bf w}_1^T{\bf x},...,{\bf w}_n^T{\bf x}$ must be decorrelated to prevent them from converging to the same maxima, using three methods proposed in \cite{Hyvarinen2000}. 
 
+The method used in this work uses a two-step iterative algorithm \cite{Hyvarinen2000} to decorrelate the outputs after each iteration: 
+\begin{enumerate}
+\item Let $\mathbf{W} = \mathbf{W}/\sqrt{\lVert\mathbf{W}\mathbf{W}^T\rVert}$. 
+\item Let $\mathbf{W} = \frac{3}{2} \mathbf{W}-\frac{1}{2} \mathbf{W} \mathbf{W}^T  \mathbf{W}$
+\end{enumerate}
 
-% HASTA AQUI BIEN
-By a "unit" we refer to a computational unit, eventually an artificial neuron, hthis is then defined as: 
+And repeat step 2 until convergence. For simplicity, the norm in step 1 can be computed as any norm but the Frobenius norm, for example, the L2-norm or the largest absolute row sum. 
 
-The derivation of FastICA is as follows. First note that the maxima of the approximation of the negentropy of  ${\bf w}^T{\bf x}$ are obtained at certain optima of  $E\{G({\bf w}^T{\bf x})\}$. According to the Kuhn-Tucker conditions [32], the optima of  $E\{G({\bf w}^T{\bf x})\}$ under the constraint  $E\{({\bf w}^T{\bf x})^2\}=\Vert{\bf w}\Vert^2=1$ are obtained at points where 
-
-\begin{displaymath}
-E\{{\bf x}g({\bf w}^T{\bf x})\}-\beta{\bf w}=0
-\end{displaymath}	(37)
-
-Let us try to solve this equation by Newton's method. Denoting the function on the left-hand side of (40) by F, we obtain its Jacobian matrix  $JF({\bf w})$ as 
-\begin{displaymath}
-JF({\bf w})=E\{{\bf x}{\bf x}^T g'({\bf w}^T{\bf x})\}-\beta{\bf I}
-\end{displaymath}	(38)
-
-To simplify the inversion of this matrix, we decide to approximate the first term in (41). Since the data is sphered, a reasonable approximation seems to be  $E\{{\bf x}{\bf x}^T
-g'({\bf w}^T{\bf x})\}\approx E\{{\bf x}{\bf x}^T\}E\{ g'({\bf w}^T{\bf x})\}= E\{g'({\bf w}^T{\bf x})\}{\bf I}$. Thus the Jacobian matrix becomes diagonal, and can easily be inverted. Thus we obtain the following approximative Newton iteration: 
-\begin{displaymath}
-\begin{split}
-{\bf w}^+={\bf w}-[E\{{\bf x}g({\bf w}^T{\bf x})\}-\beta{\bf w}]/[E\{g'({\bf w}^T{\bf x})\}-\beta]
-\end{split}\end{displaymath}	(39)
-
-This algorithm can be further simplified by multiplying both sides of (42) by  $\beta-E\{g'({\bf w}^T{\bf x})\}$. This gives, after algebraic simplication, the FastICA iteration.
-In practice, the expectations in FastICA must be replaced by their estimates. The natural estimates are of course the corresponding sample means. Ideally, all the data available should be used, but this is often not a good idea because the computations may become too demanding. Then the averages can be estimated using a smaller sample, whose size may have a considerable effect on the accuracy of the final estimates. The sample points should be chosen separately at every iteration. If the convergence is not satisfactory, one may then increase the sample size.
-
-
-
-
-% AQUÍ EMPIEZA LO QUE HEMOS ESCRITO YA. 
 \section{Results}
 In this work we will analyse the behaviour of the system proposed in the introduction and illustrated at Figure~\ref{fig:pipelineDecomposition}. The system comprises the selection of the most relevant voxels using filtering methods (we will focus on $t$-test, relative entropy and wilcoxon) and a feature decomposition of these using either \ac{FA} or \ac{ICA}. Finally, the feature vectors are classified using a \ac{SVC} with linear kernel, and performance values are obtained via cross-validation (see Section~\ref{sec:validation} for more information). 
 
@@ -285,7 +265,7 @@ In this section, we compute the results of applying \ac{ICA} to the ADNI-PET and
 The case is similar to the one presented in Section~\ref{sec:results_FA_AD}, where the performance slightly improves when increasing the number of selected voxels. The performance is again better when using the ADNI-PET dataset than with the VDLN-HMPAO, although the behaviour is similar. 
 
 The results change when varying the number of components. In this case, although good performance is obtained within the first 5 components in most cases, the performance does not decrease with a higher number, and sometimes increases (for example, in the case of \ac{ICA} and the $t$-test or the wilcoxon selection criteria). 
-
+% HASTA AQUI
 \subsubsection{At the Operation Point}
 Now we focus on non-averaged values, the values for which our system is optimal: the operation point. 
 
