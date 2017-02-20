@@ -242,7 +242,7 @@ First, we use \ac{FA} as a decomposition technique. In Figure~\ref{fig:accuracyM
 	\label{fig:accuracyMeanFA-AD}
 \end{figure}
 
-We can observe that the results are always better when using the ADNI-PET dataset than with the VDLN-HMPAO, and this is especially notorious when using the relative entropy selection criterion. The performance tends to slightly increase with the number of voxels selected, but it is not the case with the number of components. By looking at figures \ref{fig:AD-AV-FA-TTEST-VSK}, \ref{fig:AD-AV-FA-ENTROPY-VSK} and \ref{fig:AD-AV-FA-WILCOXON-VSK}, it seems that a relatively small number of components (approximately 6) is enough to obtain good performance, and afterwards, the performance holds or even decreases. 
+We can observe that the results are generally better when using the ADNI-PET dataset than with the VDLN-HMPAO, and this is especially notorious when using the relative entropy selection criterion. The performance tends to slightly increase with the number of voxels selected, but it is not the case with the number of components. By looking at figures \ref{fig:AD-AV-FA-TTEST-VSK}, \ref{fig:AD-AV-FA-ENTROPY-VSK} and \ref{fig:AD-AV-FA-WILCOXON-VSK}, it seems that a relatively small number of components (approximately 6) is enough to obtain good performance, and afterwards, the performance holds or even decreases. 
 
 \subsubsection{Independent Component Analysis}
 In this section, we compute the results of applying \ac{ICA} to the ADNI-PET and VDLN-HMPAO datasets. Figure~\ref{fig:accuracyMeanICA-AD} depicts the average accuracy over the number of voxels or the number of components respectively for the different selection criteria. 
@@ -264,9 +264,10 @@ In this section, we compute the results of applying \ac{ICA} to the ADNI-PET and
 
 The case is similar to the one presented in Section~\ref{sec:results_FA_AD}, where the performance slightly improves when increasing the number of selected voxels. The performance is again better when using the ADNI-PET dataset than with the VDLN-HMPAO, although the behaviour is similar. 
 
-The results change when varying the number of components. In this case, although good performance is obtained within the first 5 components in most cases, the performance does not decrease with a higher number, and sometimes increases (for example, in the case of \ac{ICA} and the $t$-test or the wilcoxon selection criteria). 
+The results change when varying the number of components. In this case, although good performance is obtained within the first 5 components in most cases, the model achieves similar performance in both datasets with components between 5 and 10, and then, the estimates diverge. In the VDLN-HMPAO, the performance starts to decrease after this number of components, whereas when using the ADNI-PET dataset, the higher average performance is obtained with $c>15$, especially in the case of the $t$-test or the wilcoxon selection criteria). 
+
 \subsubsection{At the Operation Point}
-Now we focus on non-averaged values, the values for which our system is optimal: the operation point. In this scenario we see that the tendency is that all systems behave similarly. The accuracy vary slightly with the number of components selected to build the model almost in any case, and there is a steep increase in the performance within the first five components.
+Now we focus on non-averaged values, the values for which our system is optimal: the operation point. In this scenario we see that the tendency is that all systems behave similarly. The accuracy vary slightly with the number of components selected to build the model almost in any case, and there is a steep increase in the performance within the first five components in both \ac{FA} and \ac{ICA}. 
 
 \begin{figure}
 	\centering
@@ -280,10 +281,9 @@ Now we focus on non-averaged values, the values for which our system is optimal:
 	\label{fig:accuracyOP-AD}
 \end{figure}
 
-A particular case is the combination of \ac{FA} and the relative entropy selection criteria applied to the VDLN-HMPAO dataset. In this case there seems to be a trend to achieve a maximum performance at between 8-10 components. But it is an individual behaviour that does not reproduce on the other datasets or strategies, therefore it must be related to the dataset itself. 
-% HASTA AQUI
+A particular case is the combination of \ac{FA} and the relative entropy selection criteria applied to the VDLN-HMPAO dataset. In this case there seems to be a trend to achieve a maximum performance at between 5 components. But with the ADNI-PET dataset, the performance keeps and achieves maximum accuracy with $c\approxeq 20$. 
 
-As for the variation of the performance when increasing the number of selected voxels, we can see that there is always a tendency of slightly increase in both datasets and decomposition strategies, as can be seen in Figure~\ref{fig:accuracyOP-ADvsN}. There, the best performance
+As for the variation of the performance when increasing the number of selected voxels, we can see that there is always a tendency of slightly increase in both datasets and decomposition strategies, as can be seen in Figure~\ref{fig:accuracyOP-ADvsN}. For the ADNI-PET dataset, the maximum accuracies are obtained with a large number of voxels $f>15000$, however, in the case of VDLN-HMPAO, we obtain similar performance with fewer voxels, $f<7000$ in all selection criteria. 
 
 \begin{figure}
 	\centering
@@ -297,7 +297,7 @@ As for the variation of the performance when increasing the number of selected v
 	\label{fig:accuracyOP-ADvsN}
 \end{figure}
 
-In Table~\ref{tab:featureAD} we show the performance values obtained at the operation point for our different test combining decomposition algorithms and selection criteria, for the two datasets analysed in this section. It is 
+In Table~\ref{tab:featureAD} we show the performance values obtained at the operation point for our different test combining decomposition algorithms and selection criteria, for the two datasets analysed in this section. It is obvious that both datasets obtain similar performance in almost every case, with values close to $0.9$. 
 
 \begin{table}
 	\myfloatalign
@@ -324,7 +324,7 @@ In Table~\ref{tab:featureAD} we show the performance values obtained at the oper
 	\label{tab:featureAD}
 \end{table}
 
-
+Overall, all methods achieve similar values of accuracy, sensitivity and specificity. When analysing the ADNI-PET dataset, the wilcoxon selection criteria seems to outperform the rest especially with \ac{ICA}, with a higher accuracy and sensitivity. On the other hand, with the VDLN-HMPAO dataset, either the $t$-test or the wilcoxon achieves higher sensitivity, but there is no difference in accuracy when decomposing with the \ac{ICA} algorithm. When using \ac{FA} decomposition, the relative entropy seems to perform better. In general, there seems to be little difference among methods, and a curious relationship between the relative entropy selection and the VDLN-HMPAO dataset that we will discuss later. 
 
 
 \FloatBarrier
