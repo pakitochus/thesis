@@ -1,4 +1,4 @@
-# New Advances in Statistical Neuroimage Processing: Tackling the Small Sample Size Problem
+#  Statistical Neuroimage Processing and Synthesis based on Texture and Component Analysis: Tackling the Small Sample Size Problem. 
 
 A PhD thesis by *Francisco Jesus Martinez-Murcia*. Using the *ArsClassica* template. 
 
