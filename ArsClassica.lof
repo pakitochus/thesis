@@ -16,29 +16,33 @@
 \defcounter {refsection}{0}\relax 
 \select@language {english}
 \defcounter {refsection}{0}\relax 
-\addvspace {10\p@ }
+\select@language {spanish}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {1.1}{\ignorespaces Illustration of one and two-dimensional spaces.}}{4}{figure.caption.21}
-\defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {1.2}{\ignorespaces Structure of the thesis.}}{6}{figure.caption.24}
+\select@language {english}
 \defcounter {refsection}{0}\relax 
 \addvspace {10\p@ }
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {2.1}{\ignorespaces Example of T1 and T2-weighted MRI images.}}{12}{figure.caption.28}
+\contentsline {figure}{\numberline {1.1}{\ignorespaces Illustration of one and two-dimensional spaces.}}{4}{figure.caption.18}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {2.2}{\ignorespaces Example of SPECT images.}}{14}{figure.caption.35}
+\contentsline {figure}{\numberline {1.2}{\ignorespaces Structure of the thesis.}}{6}{figure.caption.22}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {2.3}{\ignorespaces Example of a PET-FDG image.}}{15}{figure.caption.38}
+\addvspace {10\p@ }
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {2.1}{\ignorespaces Example of T1 and T2-weighted \acs {MRI} images.}}{12}{figure.caption.26}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {2.2}{\ignorespaces Example of \acs {SPECT} images.}}{14}{figure.caption.33}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {2.3}{\ignorespaces Example of a PET-FDG image.}}{15}{figure.caption.36}
 \defcounter {refsection}{0}\relax 
 \contentsline {figure}{\numberline {2.4}{\ignorespaces Example of a \acs {SPM} analysis on a \acs {PET} dataset.}}{19}{figure.caption.48}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {2.5}{\ignorespaces Illustration of a typical neuroimaging CAD system.}}{23}{figure.caption.51}
+\contentsline {figure}{\numberline {2.5}{\ignorespaces Illustration of a typical neuroimaging \acs {CAD} system.}}{23}{figure.caption.51}
 \defcounter {refsection}{0}\relax 
 \contentsline {figure}{\numberline {2.6}{\ignorespaces Example of the cortical thickness of a subject.}}{25}{figure.caption.53}
 \defcounter {refsection}{0}\relax 
 \addvspace {10\p@ }
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {3.1}{\ignorespaces Typical pre-processing pipeline in MRI}}{28}{figure.caption.55}
+\contentsline {figure}{\numberline {3.1}{\ignorespaces Typical pre-processing pipeline in \acs {MRI}}}{28}{figure.caption.55}
 \defcounter {refsection}{0}\relax 
 \contentsline {figure}{\numberline {3.2}{\ignorespaces Comparison of the affine registration and the application of non-linear transformations to the images}}{30}{figure.caption.57}
 \defcounter {refsection}{0}\relax 
@@ -56,7 +60,7 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {subfigure}{\numberline {(d)}{\ignorespaces {Normalization using $\alpha $-stable distribution.}}}{33}{subfigure.3.4}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {3.4}{\ignorespaces Evolution of bias and variance in CV.}}{34}{figure.caption.67}
+\contentsline {figure}{\numberline {3.4}{\ignorespaces Evolution of bias and variance in \acs {CV}.}}{34}{figure.caption.67}
 \defcounter {refsection}{0}\relax 
 \addvspace {10\p@ }
 \defcounter {refsection}{0}\relax 
@@ -82,7 +86,7 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {figure}{\numberline {4.5}{\ignorespaces Variance of reconstruction error in \ac {FA}.}}{45}{figure.caption.79}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {4.6}{\ignorespaces Average performance and standard deviation of the proposed system using the two \ac {AD} datasets, \ac {FA} and the three feature selection criteria: $t$-test (\subref {fig:AD-AV-FA-TTEST-VSN} and \subref {fig:AD-AV-FA-TTEST-VSK}), relative entropy (\subref {fig:PKS-AV-FA-ENTROPY-VSN} and \subref {fig:AD-AV-FA-ENTROPY-VSK}) and wilcoxon (\subref {fig:AD-AV-FA-WILCOXON-VSN} and \subref {fig:AD-AV-FA-WILCOXON-VSK}). \relax }}{49}{figure.caption.81}
+\contentsline {figure}{\numberline {4.6}{\ignorespaces Average performance of the \acs {AD} datasets in \acs {FA}.}}{49}{figure.caption.81}
 \defcounter {refsection}{0}\relax 
 \contentsline {subfigure}{\numberline {(a)}{\ignorespaces {}}}{49}{subfigure.6.1}
 \defcounter {refsection}{0}\relax 
@@ -96,7 +100,7 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {subfigure}{\numberline {(f)}{\ignorespaces {}}}{49}{subfigure.6.6}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {4.7}{\ignorespaces Average performance and standard deviation of the proposed system using the three \ac {AD} datasets, \ac {ICA} and the three feature selection criteria: $t$-test (\subref {fig:AD-AV-ICA-TTEST-VSN} and \subref {fig:AD-AV-ICA-TTEST-VSK}), relative entropy (\subref {fig:AD-AV-ICA-ENTROPY-VSN} and \subref {fig:AD-AV-ICA-ENTROPY-VSK}) and wilcoxon (\subref {fig:AD-AV-ICA-WILCOXON-VSN} and \subref {fig:AD-AV-ICA-WILCOXON-VSK}). \relax }}{50}{figure.caption.82}
+\contentsline {figure}{\numberline {4.7}{\ignorespaces Average performance of the \acs {AD} datasets in \acs {ICA}.}}{50}{figure.caption.82}
 \defcounter {refsection}{0}\relax 
 \contentsline {subfigure}{\numberline {(a)}{\ignorespaces {}}}{50}{subfigure.7.1}
 \defcounter {refsection}{0}\relax 
@@ -110,7 +114,7 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {subfigure}{\numberline {(f)}{\ignorespaces {}}}{50}{subfigure.7.6}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {4.8}{\ignorespaces Performance of the proposed system using the two \ac {AD} datasets: ADNI-PET and VDLN-HMPAO at the operation point, and how they vary over the number of components used in the decomposition. \relax }}{52}{figure.caption.83}
+\contentsline {figure}{\numberline {4.8}{\ignorespaces Performance at the operation point for the \acs {AD} datasets, over the number of selected voxels.}}{52}{figure.caption.83}
 \defcounter {refsection}{0}\relax 
 \contentsline {subfigure}{\numberline {(a)}{\ignorespaces {}}}{52}{subfigure.8.1}
 \defcounter {refsection}{0}\relax 
@@ -120,7 +124,7 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {subfigure}{\numberline {(d)}{\ignorespaces {}}}{52}{subfigure.8.4}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {4.9}{\ignorespaces Performance of the proposed system using the two \ac {AD} datasets: ADNI-PET and VDLN-HMPAO at the operation point, and how they vary over the number of selected voxels. \relax }}{53}{figure.caption.84}
+\contentsline {figure}{\numberline {4.9}{\ignorespaces Performance at the operation point for the \acs {AD} datasets, over the number of components.}}{53}{figure.caption.84}
 \defcounter {refsection}{0}\relax 
 \contentsline {subfigure}{\numberline {(a)}{\ignorespaces {}}}{53}{subfigure.9.1}
 \defcounter {refsection}{0}\relax 
@@ -130,21 +134,21 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {subfigure}{\numberline {(d)}{\ignorespaces {}}}{53}{subfigure.9.4}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {4.10}{\ignorespaces Average performance and standard deviation of the proposed system using the three \ac {PKS} datasets, \ac {FA} and the three feature selection criteria: $t$-test (\subref {fig:PKS-AV-FA-TTEST-VSN} and \subref {fig:PKS-AV-FA-TTEST-VSK}), relative entropy (\subref {fig:PKS-AV-FA-ENTROPY-VSN} and \subref {fig:PKS-AV-FA-ENTROPY-VSK}) and wilcoxon (\subref {fig:PKS-AV-FA-WILCOXON-VSN} and \subref {fig:PKS-AV-FA-WILCOXON-VSK}). \relax }}{56}{figure.caption.86}
+\contentsline {figure}{\numberline {4.10}{\ignorespaces Average performance of the \acs {PKS} datasets in \acs {FA}.}}{55}{figure.caption.86}
 \defcounter {refsection}{0}\relax 
-\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {}}}{56}{subfigure.10.1}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {}}}{55}{subfigure.10.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {}}}{56}{subfigure.10.2}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {}}}{55}{subfigure.10.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {subfigure}{\numberline {(c)}{\ignorespaces {}}}{56}{subfigure.10.3}
+\contentsline {subfigure}{\numberline {(c)}{\ignorespaces {}}}{55}{subfigure.10.3}
 \defcounter {refsection}{0}\relax 
-\contentsline {subfigure}{\numberline {(d)}{\ignorespaces {}}}{56}{subfigure.10.4}
+\contentsline {subfigure}{\numberline {(d)}{\ignorespaces {}}}{55}{subfigure.10.4}
 \defcounter {refsection}{0}\relax 
-\contentsline {subfigure}{\numberline {(e)}{\ignorespaces {}}}{56}{subfigure.10.5}
+\contentsline {subfigure}{\numberline {(e)}{\ignorespaces {}}}{55}{subfigure.10.5}
 \defcounter {refsection}{0}\relax 
-\contentsline {subfigure}{\numberline {(f)}{\ignorespaces {}}}{56}{subfigure.10.6}
+\contentsline {subfigure}{\numberline {(f)}{\ignorespaces {}}}{55}{subfigure.10.6}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {4.11}{\ignorespaces Average performance and standard deviation of the proposed system using the three \ac {PKS} datasets, \ac {ICA} and the three feature selection criteria: $t$-test (\subref {fig:PKS-AV-ICA-TTEST-VSN} and \subref {fig:PKS-AV-ICA-TTEST-VSK}), relative entropy (\subref {fig:PKS-AV-ICA-ENTROPY-VSN} and \subref {fig:PKS-AV-ICA-ENTROPY-VSK}) and wilcoxon (\subref {fig:PKS-AV-ICA-WILCOXON-VSN} and \subref {fig:PKS-AV-ICA-WILCOXON-VSK}). \relax }}{57}{figure.caption.87}
+\contentsline {figure}{\numberline {4.11}{\ignorespaces Average performance of the \acs {PKS} datasets in \acs {ICA}.}}{57}{figure.caption.87}
 \defcounter {refsection}{0}\relax 
 \contentsline {subfigure}{\numberline {(a)}{\ignorespaces {}}}{57}{subfigure.11.1}
 \defcounter {refsection}{0}\relax 
@@ -158,33 +162,33 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {subfigure}{\numberline {(f)}{\ignorespaces {}}}{57}{subfigure.11.6}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {4.12}{\ignorespaces Performance at the operation point for the \ac {PKS} datasets, over the number of components.}}{59}{figure.caption.88}
+\contentsline {figure}{\numberline {4.12}{\ignorespaces Performance at the operation point for the \acs {PKS} datasets, over the number of selected voxels.}}{58}{figure.caption.88}
 \defcounter {refsection}{0}\relax 
-\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {}}}{59}{subfigure.12.1}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {}}}{58}{subfigure.12.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {}}}{59}{subfigure.12.2}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {}}}{58}{subfigure.12.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {subfigure}{\numberline {(c)}{\ignorespaces {}}}{59}{subfigure.12.3}
+\contentsline {subfigure}{\numberline {(c)}{\ignorespaces {}}}{58}{subfigure.12.3}
 \defcounter {refsection}{0}\relax 
-\contentsline {subfigure}{\numberline {(d)}{\ignorespaces {}}}{59}{subfigure.12.4}
+\contentsline {subfigure}{\numberline {(d)}{\ignorespaces {}}}{58}{subfigure.12.4}
 \defcounter {refsection}{0}\relax 
-\contentsline {subfigure}{\numberline {(e)}{\ignorespaces {}}}{59}{subfigure.12.5}
+\contentsline {subfigure}{\numberline {(e)}{\ignorespaces {}}}{58}{subfigure.12.5}
 \defcounter {refsection}{0}\relax 
-\contentsline {subfigure}{\numberline {(f)}{\ignorespaces {}}}{59}{subfigure.12.6}
+\contentsline {subfigure}{\numberline {(f)}{\ignorespaces {}}}{58}{subfigure.12.6}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {4.13}{\ignorespaces Performance at the operation point for the \ac {PKS} datasets, over the number of selected voxels.}}{60}{figure.caption.89}
+\contentsline {figure}{\numberline {4.13}{\ignorespaces Performance at the operation point for the \acs {PKS} datasets, over the number of components.}}{59}{figure.caption.89}
 \defcounter {refsection}{0}\relax 
-\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {}}}{60}{subfigure.13.1}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {}}}{59}{subfigure.13.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {}}}{60}{subfigure.13.2}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {}}}{59}{subfigure.13.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {subfigure}{\numberline {(c)}{\ignorespaces {}}}{60}{subfigure.13.3}
+\contentsline {subfigure}{\numberline {(c)}{\ignorespaces {}}}{59}{subfigure.13.3}
 \defcounter {refsection}{0}\relax 
-\contentsline {subfigure}{\numberline {(d)}{\ignorespaces {}}}{60}{subfigure.13.4}
+\contentsline {subfigure}{\numberline {(d)}{\ignorespaces {}}}{59}{subfigure.13.4}
 \defcounter {refsection}{0}\relax 
-\contentsline {subfigure}{\numberline {(e)}{\ignorespaces {}}}{60}{subfigure.13.5}
+\contentsline {subfigure}{\numberline {(e)}{\ignorespaces {}}}{59}{subfigure.13.5}
 \defcounter {refsection}{0}\relax 
-\contentsline {subfigure}{\numberline {(f)}{\ignorespaces {}}}{60}{subfigure.13.6}
+\contentsline {subfigure}{\numberline {(f)}{\ignorespaces {}}}{59}{subfigure.13.6}
 \defcounter {refsection}{0}\relax 
 \addvspace {10\p@ }
 \defcounter {refsection}{0}\relax 

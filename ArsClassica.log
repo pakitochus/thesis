@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016/Debian) (preloaded format=pdflatex 2017.2.6)  22 FEB 2017 09:33
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016/Debian) (preloaded format=pdflatex 2017.2.6)  22 FEB 2017 10:54
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1597,6 +1597,8 @@ LaTeX Info: Redefining \% on input line 3.
 LaTeX Info: Redefining \. on input line 3.
 LaTeX Info: Redefining \% on input line 3.
 )
+LaTeX Info: Redefining \. on input line 52.
+LaTeX Info: Redefining \% on input line 52.
 \c@pagesLTS.roman.1.local.cnt=\count354
  (./Chapters/Chapter0A.aux)
 (./Chapters/Chapter0B.aux) (./FrontBackMatter/Bibliography.aux)
@@ -2244,7 +2246,10 @@ Package pdftex.def Info: ../../Papeleo/paco.png used on input line 39.
 . . . . . . . . . . . . . Formatting.  Expected 25 lines; got 26 lines
 (1) Try shape with scale 11.86227pt.  (Delta = 0.04614).   . . . . . . . . . .
 . . . . . . . . . . . . . . . Formatting.  Expected 25 lines; got 25 lines
-Reformat paragraph with \rightskip= 0.0pt.) [9
+Reformat paragraph with \rightskip= 0.0pt.
+LaTeX Info: Redefining \. on input line 28.
+LaTeX Info: Redefining \% on input line 28.
+) [9
 
 
 ] [10
@@ -2261,6 +2266,8 @@ LaTeX Info: Redefining \. on input line 11.
 LaTeX Info: Redefining \% on input line 11.
 LaTeX Info: Redefining \. on input line 15.
 LaTeX Info: Redefining \% on input line 15.
+LaTeX Info: Redefining \. on input line 19.
+LaTeX Info: Redefining \% on input line 19.
 Package microtype Info: Character `029' is missing
 (microtype)             in font `T1/pplj/m/sc/10.95'.
 (microtype)             Ignoring protrusion settings for this character.
@@ -2269,36 +2276,36 @@ Package microtype Info: Character `029' is missing
 
 ]
 Package acronym Info: Label `acro:HMM' newly defined as it shall be overridden
-although it is yet undefined on input line 211.
+although it is yet undefined on input line 215.
 
 Underfull \vbox (badness 6842) has occurred while \output is active []
 
  [12]
-Overfull \hbox (9.91144pt too wide) in paragraph at lines 229--229
+Overfull \hbox (9.91144pt too wide) in paragraph at lines 233--233
  [][] []\T1/pplj/m/n/10.95 Experiment 2: Within-site Between-Group Dif-fer-ence
 s []  
  []
 
 
-Overfull \hbox (8.19154pt too wide) in paragraph at lines 231--231
+Overfull \hbox (8.19154pt too wide) in paragraph at lines 235--235
  [][] []\T1/pplj/m/n/10.95 Experiment 3: Ef-fect of SW-PCA on Group Dif-fer-enc
 es []  
  []
 
 
-Overfull \hbox (28.2089pt too wide) in paragraph at lines 279--279
+Overfull \hbox (28.2089pt too wide) in paragraph at lines 283--283
  [][] []\T1/pplj/m/n/10.95 ADNI-MRI, Alzheimer's Dis-ease Neu-roimag-ing Ini-ti
 a-tive []  
  []
 
 
-Overfull \hbox (26.05173pt too wide) in paragraph at lines 285--285
+Overfull \hbox (26.05173pt too wide) in paragraph at lines 289--289
  [][] []\T1/pplj/m/n/10.95 ADNI-PET, Alzheimer's Dis-ease Neu-roimag-ing Ini-ti
 a-tive []  
  []
 
 [13]
-Overfull \hbox (13.02113pt too wide) in paragraph at lines 295--295
+Overfull \hbox (13.02113pt too wide) in paragraph at lines 299--299
  [][] []\T1/pplj/m/n/10.95 PPMI-DAT, Parkin-son's Pro-gres-sion Mark-ers Ini-ti
 a-tive []  
  []
@@ -2322,84 +2329,70 @@ LaTeX Info: Redefining \. on input line 11.
 LaTeX Info: Redefining \% on input line 11.
 LaTeX Info: Redefining \. on input line 15.
 LaTeX Info: Redefining \% on input line 15.
+LaTeX Info: Redefining \. on input line 19.
+LaTeX Info: Redefining \% on input line 19.
 
-Overfull \hbox (1.4307pt too wide) in paragraph at lines 35--35
- [][] []\T1/pplj/m/n/10.95 Illustration of a typ-i-cal neu-roimag-ing CAD sys-t
-em. []  
- []
-
-
-Overfull \hbox (4.1908pt too wide) in paragraph at lines 63--63
+Overfull \hbox (4.1908pt too wide) in paragraph at lines 67--67
  [][] []\T1/pplj/m/n/10.95 Illustration of how de-com-po-si-tion al-go-rithms w
 ork. []  
  []
 
 
-Overfull \hbox (8.07808pt too wide) in paragraph at lines 67--67
+Overfull \hbox (8.07808pt too wide) in paragraph at lines 71--71
  [][] []\T1/pplj/m/n/10.95 Comparison be-tween the dif-fer-ent fil-ter-ing meth
 -ods. []  
  []
 
 Package acronym Info: Label `acro:FA' newly defined as it shall be overridden
-although it is yet undefined on input line 83.
+although it is yet undefined on input line 87.
 
-Overfull \hbox (20.91826pt too wide) in paragraph at lines 83--83
+Overfull \hbox (20.91826pt too wide) in paragraph at lines 87--87
  [][] []\T1/pplj/m/n/10.95 Variance of re-con-struc-tion er-ror in [][][]Factor
  Anal-y-sis ([])[]. []  
  []
 
-Package acronym Info: Label `acro:AD' newly defined as it shall be overridden
-although it is yet undefined on input line 85.
-Package acronym Info: Label `acro:ICA' newly defined as it shall be overridden
-although it is yet undefined on input line 99.
 [15
 
 ]
-Package acronym Info: Label `acro:PKS' newly defined as it shall be overridden
-although it is yet undefined on input line 133.
-
-Overfull \hbox (1.78365pt too wide) in paragraph at lines 133--133
- \T1/pplj/m/n/10.95 posed sys-tem us-ing the three [][][]Parkinsonism ([])[] da
-tasets, 
- []
-
 LaTeX Font Info:    Font shape `T1/pplj/bx/n' in size <10.95> not available
-(Font)              Font shape `T1/pplj/b/n' tried instead on input line 207.
+(Font)              Font shape `T1/pplj/b/n' tried instead on input line 211.
+
 
 LaTeX Warning: Reference `sec:discrimination' on page xvi undefined on input li
-ne 207.
+ne 211.
 
 Package acronym Info: Label `acro:GM' newly defined as it shall be overridden
-although it is yet undefined on input line 221.
+although it is yet undefined on input line 225.
 Package acronym Info: Label `acro:WM' newly defined as it shall be overridden
-although it is yet undefined on input line 221.
-[16]
+although it is yet undefined on input line 225.
+
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [17]
+ [16]
 Package acronym Info: Label `acro:SBM' newly defined as it shall be overridden
-although it is yet undefined on input line 237.
+although it is yet undefined on input line 241.
 
-Overfull \hbox (18.26712pt too wide) in paragraph at lines 241--241
+Overfull \hbox (18.26712pt too wide) in paragraph at lines 245--245
  [][] []\T1/pplj/m/n/10.95 Path traced over a gaus-sian mix-ture dis-tri-bu-tio
 n of 4 isotropic 
  []
 
-
-Overfull \hbox (8.71321pt too wide) in paragraph at lines 245--245
+[17]
+Overfull \hbox (8.71321pt too wide) in paragraph at lines 249--249
  \T1/pplj/m/n/10.95 Penin-sula height map, in-ter-conect-ing dif-fer-ent cities
 . []  
  []
 
 Package acronym Info: Label `acro:VAF' newly defined as it shall be overridden
-although it is yet undefined on input line 249.
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [18])
+although it is yet undefined on input line 253.
+)
 \tf@lof=\write7
 \openout7 = `ArsClassica.lof'.
 
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [18]
 Package tocbasic Info: character protrusion at lot deactivated on input line 42
 .
 
@@ -2410,34 +2403,36 @@ LaTeX Info: Redefining \. on input line 11.
 LaTeX Info: Redefining \% on input line 11.
 LaTeX Info: Redefining \. on input line 15.
 LaTeX Info: Redefining \% on input line 15.
+LaTeX Info: Redefining \. on input line 19.
+LaTeX Info: Redefining \% on input line 19.
 
-Overfull \hbox (11.3358pt too wide) in paragraph at lines 37--37
+Overfull \hbox (11.3358pt too wide) in paragraph at lines 41--41
  [][] []\T1/pplj/m/n/10.95 Best re-sults ob-tained in ex-per-i-ment 2, us-ing t
 hree databases, 
  []
 
 
-Overfull \hbox (7.25076pt too wide) in paragraph at lines 39--39
+Overfull \hbox (7.25076pt too wide) in paragraph at lines 43--43
  \T1/pplj/m/n/10.95 [[]] and EMD us-ing the third in-de-pen-dent mode 
+ []
+
+
+Overfull \hbox (18.0747pt too wide) in paragraph at lines 57--57
+ \T1/pplj/m/n/10.95 fea-tures) ($\U/zeus/m/n/10.95 ^^F$\T1/pplj/m/n/10.95 SD) a
+nd other meth-ods in the bib-li-og-ra-phy []  
  []
 
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [19]
-Overfull \hbox (18.0747pt too wide) in paragraph at lines 53--53
- \T1/pplj/m/n/10.95 fea-tures) ($\U/zeus/m/n/10.95 ^^F$\T1/pplj/m/n/10.95 SD) a
-nd other meth-ods in the bib-li-og-ra-phy []  
- []
-
-
-Overfull \hbox (40.48932pt too wide) in paragraph at lines 63--63
+Overfull \hbox (40.48932pt too wide) in paragraph at lines 67--67
  [][] []\T1/pplj/m/n/10.95 Performance mea-sures for the com-bined DaTSCAN data
 set []  
  []
 
 
-Overfull \hbox (34.99318pt too wide) in paragraph at lines 67--67
+Overfull \hbox (34.99318pt too wide) in paragraph at lines 71--71
  [][] []\T1/pplj/m/n/10.95 Baseline per-for-mance of the set, us-ing the orig-i
 -nal dataset. []  
  []
@@ -2446,11 +2441,7 @@ Overfull \hbox (34.99318pt too wide) in paragraph at lines 67--67
 \tf@lot=\write8
 \openout8 = `ArsClassica.lot'.
 
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [20]
-[21] [22]) [23] [24
+ [20] [21] [22]) [23] [24
 
 
 ]
@@ -2499,7 +2490,7 @@ ps-converted-to.pdf Graphics/ch1/smallsample.eps>
 (epstopdf)             \includegraphics on input line 15.
 Package epstopdf Info: Output file is already uptodate.
 
-<Graphics/ch1/smallsample-eps-converted-to.pdf, id=1165, 213.79875pt x 147.5512
+<Graphics/ch1/smallsample-eps-converted-to.pdf, id=1120, 213.79875pt x 147.5512
 5pt>
 File: Graphics/ch1/smallsample-eps-converted-to.pdf Graphic file (type pdf)
  <use Graphics/ch1/smallsample-eps-converted-to.pdf>
@@ -2520,6 +2511,8 @@ e size prob-lem leads to wrong
 [4 <./Graphics/ch1/smallsample-eps-converted-to.pdf>]
 Package acronym Info: Label `acro:PCA' newly defined as it shall be overridden
 although it is yet undefined on input line 44.
+Package acronym Info: Label `acro:ICA' newly defined as it shall be overridden
+although it is yet undefined on input line 47.
  [5]
 Package acronym Info: Label `acro:SWPCA' newly defined as it shall be overridde
 n
@@ -2536,7 +2529,7 @@ onverted-to.pdf Graphics/ch1/outline.eps>
 (epstopdf)             \includegraphics on input line 60.
 Package epstopdf Info: Output file is already uptodate.
 
-<Graphics/ch1/outline-eps-converted-to.pdf, id=1223, 566.115pt x 327.2225pt>
+<Graphics/ch1/outline-eps-converted-to.pdf, id=1178, 566.115pt x 327.2225pt>
 File: Graphics/ch1/outline-eps-converted-to.pdf Graphic file (type pdf)
 
 <use Graphics/ch1/outline-eps-converted-to.pdf>
@@ -2635,7 +2628,7 @@ o.pdf>
 (epstopdf)             \includegraphics on input line 16.
 Package epstopdf Info: Output file is already uptodate.
 
-<Graphics/ch2/example_MRIT1-eps-converted-to.pdf, id=1317, 1039.885pt x 439.642
+<Graphics/ch2/example_MRIT1-eps-converted-to.pdf, id=1273, 1039.885pt x 439.642
 5pt>
 File: Graphics/ch2/example_MRIT1-eps-converted-to.pdf Graphic file (type pdf)
  <use Graphics/ch2/example_MRIT1-eps-converted-to.pdf>
@@ -2654,7 +2647,7 @@ o.pdf>
 (epstopdf)             \includegraphics on input line 17.
 Package epstopdf Info: Output file is already uptodate.
 
-<Graphics/ch2/example_MRIT2-eps-converted-to.pdf, id=1318, 1298.8525pt x 548.04
+<Graphics/ch2/example_MRIT2-eps-converted-to.pdf, id=1274, 1298.8525pt x 548.04
 75pt>
 File: Graphics/ch2/example_MRIT2-eps-converted-to.pdf Graphic file (type pdf)
  <use Graphics/ch2/example_MRIT2-eps-converted-to.pdf>
@@ -2692,7 +2685,7 @@ o.pdf>
 (epstopdf)             \includegraphics on input line 44.
 Package epstopdf Info: Output file is already uptodate.
 
-<Graphics/ch2/example_SPECT-eps-converted-to.pdf, id=1364, 1339.0025pt x 465.74
+<Graphics/ch2/example_SPECT-eps-converted-to.pdf, id=1321, 1339.0025pt x 465.74
 pt>
 File: Graphics/ch2/example_SPECT-eps-converted-to.pdf Graphic file (type pdf)
  <use Graphics/ch2/example_SPECT-eps-converted-to.pdf>
@@ -2711,7 +2704,7 @@ AN-eps-converted-to.pdf Graphics/ch2/example_DaTSCAN.eps>
 (epstopdf)             \includegraphics on input line 45.
 Package epstopdf Info: Output file is already uptodate.
 
-<Graphics/ch2/example_DaTSCAN-eps-converted-to.pdf, id=1365, 1339.0025pt x 465.
+<Graphics/ch2/example_DaTSCAN-eps-converted-to.pdf, id=1322, 1339.0025pt x 465.
 74pt>
 File: Graphics/ch2/example_DaTSCAN-eps-converted-to.pdf Graphic file (type pdf)
 
@@ -2736,7 +2729,7 @@ ps-converted-to.pdf Graphics/ch2/example_PET.eps>
 (epstopdf)             \includegraphics on input line 59.
 Package epstopdf Info: Output file is already uptodate.
 
-<Graphics/ch2/example_PET-eps-converted-to.pdf, id=1388, 1339.0025pt x 465.74pt
+<Graphics/ch2/example_PET-eps-converted-to.pdf, id=1348, 1339.0025pt x 465.74pt
 >
 File: Graphics/ch2/example_PET-eps-converted-to.pdf Graphic file (type pdf)
  <use Graphics/ch2/example_PET-eps-converted-to.pdf>
@@ -2745,6 +2738,8 @@ input line 59.
 (pdftex.def)             Requested size: 270.86905pt x 94.21234pt.
  [14 <./Graphics/ch2/example_SPECT-eps-converted-to.pdf> <./Graphics/ch2/exampl
 e_DaTSCAN-eps-converted-to.pdf>]
+Package acronym Info: Label `acro:AD' newly defined as it shall be overridden
+although it is yet undefined on input line 68.
 Package acronym Info: Label `acro:MCI' newly defined as it shall be overridden
 although it is yet undefined on input line 72.
  [15 <./Graphics/ch2/example_PET-eps-converted-to.pdf>]
@@ -2753,6 +2748,8 @@ Overfull \hbox (6.344pt too wide) in paragraph at lines 79--80
 ve been de-vel-oped, among
  []
 
+Package acronym Info: Label `acro:PKS' newly defined as it shall be overridden
+although it is yet undefined on input line 84.
 LaTeX Font Info:    Font shape `T1/iwona/bx/it' in size <10.95> not available
 (Font)              Font shape `T1/iwona/b/it' tried instead on input line 86.
 [16]
@@ -2780,7 +2777,7 @@ Package acronym Info: Label `acro:ANOVA' newly defined as it shall be overridde
 n
 although it is yet undefined on input line 108.
 
-<Graphics/ch2/example_SPM.png, id=1547, 483.30562pt x 422.32782pt>
+<Graphics/ch2/example_SPM.png, id=1509, 483.30562pt x 422.32782pt>
 File: Graphics/ch2/example_SPM.png Graphic file (type png)
 
 <use Graphics/ch2/example_SPM.png>
@@ -2813,7 +2810,7 @@ nverted-to.pdf Graphics/ch2/NI-CAD.eps>
 (epstopdf)             \includegraphics on input line 197.
 Package epstopdf Info: Output file is already uptodate.
 
-<Graphics/ch2/NI-CAD-eps-converted-to.pdf, id=1654, 286.06876pt x 287.0725pt>
+<Graphics/ch2/NI-CAD-eps-converted-to.pdf, id=1616, 286.06876pt x 287.0725pt>
 File: Graphics/ch2/NI-CAD-eps-converted-to.pdf Graphic file (type pdf)
 
 <use Graphics/ch2/NI-CAD-eps-converted-to.pdf>
@@ -2835,7 +2832,7 @@ ness-eps-converted-to.pdf Graphics/ch2/corticalThickness.eps>
 (epstopdf)             \includegraphics on input line 216.
 Package epstopdf Info: Output file is already uptodate.
 
-<Graphics/ch2/corticalThickness-eps-converted-to.pdf, id=1705, 873.2625pt x 395
+<Graphics/ch2/corticalThickness-eps-converted-to.pdf, id=1669, 873.2625pt x 395
 .4775pt>
 File: Graphics/ch2/corticalThickness-eps-converted-to.pdf Graphic file (type pd
 f)
@@ -2864,7 +2861,7 @@ eps-converted-to.pdf Graphics/ch3/preProcessPL.eps>
 (epstopdf)             \includegraphics on input line 19.
 Package epstopdf Info: Output file is already uptodate.
 
-<Graphics/ch3/preProcessPL-eps-converted-to.pdf, id=1759, 1284.8pt x 565.11125p
+<Graphics/ch3/preProcessPL-eps-converted-to.pdf, id=1723, 1284.8pt x 565.11125p
 t>
 File: Graphics/ch3/preProcessPL-eps-converted-to.pdf Graphic file (type pdf)
  <use Graphics/ch3/preProcessPL-eps-converted-to.pdf>
@@ -2892,7 +2889,7 @@ MRI-eps-converted-to.pdf Graphics/ch3/regComparisonMRI.eps>
 (epstopdf)             \includegraphics on input line 86.
 Package epstopdf Info: Output file is already uptodate.
 
-<Graphics/ch3/regComparisonMRI-eps-converted-to.pdf, id=1806, 2254.4225pt x 953
+<Graphics/ch3/regComparisonMRI-eps-converted-to.pdf, id=1770, 2254.4225pt x 953
 .5625pt>
 File: Graphics/ch3/regComparisonMRI-eps-converted-to.pdf Graphic file (type pdf
 )
@@ -2914,7 +2911,7 @@ PET-eps-converted-to.pdf Graphics/ch3/regComparisonPET.eps>
 (epstopdf)             \includegraphics on input line 89.
 Package epstopdf Info: Output file is already uptodate.
 
-<Graphics/ch3/regComparisonPET-eps-converted-to.pdf, id=1809, 2254.4225pt x 953
+<Graphics/ch3/regComparisonPET-eps-converted-to.pdf, id=1773, 2254.4225pt x 953
 .5625pt>
 File: Graphics/ch3/regComparisonPET-eps-converted-to.pdf Graphic file (type pdf
 )
@@ -2954,7 +2951,7 @@ onverted-to.pdf Graphics/ch3/norm_no.eps>
 (epstopdf)             \includegraphics on input line 135.
 Package epstopdf Info: Output file is already uptodate.
 
-<Graphics/ch3/norm_no-eps-converted-to.pdf, id=1904, 405.515pt x 306.14375pt>
+<Graphics/ch3/norm_no-eps-converted-to.pdf, id=1868, 405.515pt x 306.14375pt>
 File: Graphics/ch3/norm_no-eps-converted-to.pdf Graphic file (type pdf)
 
 <use Graphics/ch3/norm_no-eps-converted-to.pdf>
@@ -2973,7 +2970,7 @@ converted-to.pdf Graphics/ch3/norm_max.eps>
 (epstopdf)             \includegraphics on input line 137.
 Package epstopdf Info: Output file is already uptodate.
 
-<Graphics/ch3/norm_max-eps-converted-to.pdf, id=1905, 405.515pt x 306.14375pt>
+<Graphics/ch3/norm_max-eps-converted-to.pdf, id=1869, 405.515pt x 306.14375pt>
 File: Graphics/ch3/norm_max-eps-converted-to.pdf Graphic file (type pdf)
 
 <use Graphics/ch3/norm_max-eps-converted-to.pdf>
@@ -2992,7 +2989,7 @@ converted-to.pdf Graphics/ch3/norm_int.eps>
 (epstopdf)             \includegraphics on input line 139.
 Package epstopdf Info: Output file is already uptodate.
 
-<Graphics/ch3/norm_int-eps-converted-to.pdf, id=1906, 405.515pt x 306.14375pt>
+<Graphics/ch3/norm_int-eps-converted-to.pdf, id=1870, 405.515pt x 306.14375pt>
 File: Graphics/ch3/norm_int-eps-converted-to.pdf Graphic file (type pdf)
 
 <use Graphics/ch3/norm_int-eps-converted-to.pdf>
@@ -3011,7 +3008,7 @@ converted-to.pdf Graphics/ch3/norm_est.eps>
 (epstopdf)             \includegraphics on input line 141.
 Package epstopdf Info: Output file is already uptodate.
 
-<Graphics/ch3/norm_est-eps-converted-to.pdf, id=1907, 405.515pt x 306.14375pt>
+<Graphics/ch3/norm_est-eps-converted-to.pdf, id=1871, 405.515pt x 306.14375pt>
 File: Graphics/ch3/norm_est-eps-converted-to.pdf Graphic file (type pdf)
 
 <use Graphics/ch3/norm_est-eps-converted-to.pdf>
@@ -3038,7 +3035,7 @@ d-eps-converted-to.pdf Graphics/ch3/evolutionKFold.eps>
 (epstopdf)             \includegraphics on input line 156.
 Package epstopdf Info: Output file is already uptodate.
 
-<Graphics/ch3/evolutionKFold-eps-converted-to.pdf, id=1952, 380.42125pt x 274.0
+<Graphics/ch3/evolutionKFold-eps-converted-to.pdf, id=1916, 380.42125pt x 274.0
 2374pt>
 File: Graphics/ch3/evolutionKFold-eps-converted-to.pdf Graphic file (type pdf)
  <use Graphics/ch3/evolutionKFold-eps-converted-to.pdf>
@@ -3096,7 +3093,7 @@ _overview-eps-converted-to.pdf Graphics/ch4/decomposition_overview.eps>
 (epstopdf)             \includegraphics on input line 17.
 Package epstopdf Info: Output file is already uptodate.
 
-<Graphics/ch4/decomposition_overview-eps-converted-to.pdf, id=2041, 656.4525pt 
+<Graphics/ch4/decomposition_overview-eps-converted-to.pdf, id=2005, 656.4525pt 
 x 224.84pt>
 File: Graphics/ch4/decomposition_overview-eps-converted-to.pdf Graphic file (ty
 pe pdf)
@@ -3116,7 +3113,7 @@ m-eps-converted-to.pdf Graphics/ch4/01-flowdiagram.eps>
 (epstopdf)             \includegraphics on input line 26.
 Package epstopdf Info: Output file is already uptodate.
 
-<Graphics/ch4/01-flowdiagram-eps-converted-to.pdf, id=2059, 488.82625pt x 130.4
+<Graphics/ch4/01-flowdiagram-eps-converted-to.pdf, id=2023, 488.82625pt x 130.4
 875pt>
 File: Graphics/ch4/01-flowdiagram-eps-converted-to.pdf Graphic file (type pdf)
  <use Graphics/ch4/01-flowdiagram-eps-converted-to.pdf>
@@ -3139,7 +3136,7 @@ f>
 (epstopdf)             \includegraphics on input line 41.
 Package epstopdf Info: Output file is already uptodate.
 
-<Graphics/ch4/ttest_map-eps-converted-to.pdf, id=2084, 245.91875pt x 310.15875p
+<Graphics/ch4/ttest_map-eps-converted-to.pdf, id=2048, 245.91875pt x 310.15875p
 t>
 File: Graphics/ch4/ttest_map-eps-converted-to.pdf Graphic file (type pdf)
  <use Graphics/ch4/ttest_map-eps-converted-to.pdf>
@@ -3157,7 +3154,7 @@ nverted-to.pdf Graphics/ch4/kl_map.eps>
 (epstopdf)             \includegraphics on input line 43.
 Package epstopdf Info: Output file is already uptodate.
 
-<Graphics/ch4/kl_map-eps-converted-to.pdf, id=2085, 245.91875pt x 310.15875pt>
+<Graphics/ch4/kl_map-eps-converted-to.pdf, id=2049, 245.91875pt x 310.15875pt>
 File: Graphics/ch4/kl_map-eps-converted-to.pdf Graphic file (type pdf)
 
 <use Graphics/ch4/kl_map-eps-converted-to.pdf>
@@ -3178,7 +3175,7 @@ eps-converted-to.pdf Graphics/ch4/wilcoxon_map.eps>
 (epstopdf)             \includegraphics on input line 45.
 Package epstopdf Info: Output file is already uptodate.
 
-<Graphics/ch4/wilcoxon_map-eps-converted-to.pdf, id=2088, 245.91875pt x 310.158
+<Graphics/ch4/wilcoxon_map-eps-converted-to.pdf, id=2052, 245.91875pt x 310.158
 75pt>
 File: Graphics/ch4/wilcoxon_map-eps-converted-to.pdf Graphic file (type pdf)
  <use Graphics/ch4/wilcoxon_map-eps-converted-to.pdf>
@@ -3203,18 +3200,18 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 ttest_map-eps-converted-to.pdf> <./Graphics/ch4/kl_map-eps-converted-to.pdf> <.
 /Graphics/ch4/wilcoxon_map-eps-converted-to.pdf>] [42]
 Package epstopdf Info: Source file: <Graphics/ch4/originalImage_inferno.eps>
-(epstopdf)                    date: 2017-02-22 09:30:41
+(epstopdf)                    date: 2017-02-22 09:51:50
 (epstopdf)                    size: 384452 bytes
 (epstopdf)             Output file: <Graphics/ch4/originalImage_inferno-eps-con
 verted-to.pdf>
-(epstopdf)                    date: 2017-02-22 09:32:53
+(epstopdf)                    date: 2017-02-22 10:43:38
 (epstopdf)                    size: 47770 bytes
 (epstopdf)             Command: <repstopdf --outfile=Graphics/ch4/originalImage
 _inferno-eps-converted-to.pdf Graphics/ch4/originalImage_inferno.eps>
 (epstopdf)             \includegraphics on input line 95.
 Package epstopdf Info: Output file is already uptodate.
 
-<Graphics/ch4/originalImage_inferno-eps-converted-to.pdf, id=2180, 190.7125pt x
+<Graphics/ch4/originalImage_inferno-eps-converted-to.pdf, id=2144, 190.7125pt x
  306.14375pt>
 File: Graphics/ch4/originalImage_inferno-eps-converted-to.pdf Graphic file (typ
 e pdf)
@@ -3223,18 +3220,18 @@ Package pdftex.def Info: Graphics/ch4/originalImage_inferno-eps-converted-to.pd
 f used on input line 95.
 (pdftex.def)             Requested size: 116.08842pt x 186.35034pt.
 Package epstopdf Info: Source file: <Graphics/ch4/transformedFA_inferno.eps>
-(epstopdf)                    date: 2017-02-22 09:31:31
+(epstopdf)                    date: 2017-02-22 09:52:13
 (epstopdf)                    size: 363563 bytes
 (epstopdf)             Output file: <Graphics/ch4/transformedFA_inferno-eps-con
 verted-to.pdf>
-(epstopdf)                    date: 2017-02-22 09:32:54
+(epstopdf)                    date: 2017-02-22 10:43:38
 (epstopdf)                    size: 46514 bytes
 (epstopdf)             Command: <repstopdf --outfile=Graphics/ch4/transformedFA
 _inferno-eps-converted-to.pdf Graphics/ch4/transformedFA_inferno.eps>
 (epstopdf)             \includegraphics on input line 97.
 Package epstopdf Info: Output file is already uptodate.
 
-<Graphics/ch4/transformedFA_inferno-eps-converted-to.pdf, id=2181, 190.7125pt x
+<Graphics/ch4/transformedFA_inferno-eps-converted-to.pdf, id=2145, 190.7125pt x
  306.14375pt>
 File: Graphics/ch4/transformedFA_inferno-eps-converted-to.pdf Graphic file (typ
 e pdf)
@@ -3243,18 +3240,18 @@ Package pdftex.def Info: Graphics/ch4/transformedFA_inferno-eps-converted-to.pd
 f used on input line 97.
 (pdftex.def)             Requested size: 116.08842pt x 186.35034pt.
 Package epstopdf Info: Source file: <Graphics/ch4/transformedICA_inferno.eps>
-(epstopdf)                    date: 2017-02-22 09:31:53
+(epstopdf)                    date: 2017-02-22 09:52:34
 (epstopdf)                    size: 363963 bytes
 (epstopdf)             Output file: <Graphics/ch4/transformedICA_inferno-eps-co
 nverted-to.pdf>
-(epstopdf)                    date: 2017-02-22 09:32:54
+(epstopdf)                    date: 2017-02-22 10:43:39
 (epstopdf)                    size: 46628 bytes
 (epstopdf)             Command: <repstopdf --outfile=Graphics/ch4/transformedIC
 A_inferno-eps-converted-to.pdf Graphics/ch4/transformedICA_inferno.eps>
 (epstopdf)             \includegraphics on input line 99.
 Package epstopdf Info: Output file is already uptodate.
 
-<Graphics/ch4/transformedICA_inferno-eps-converted-to.pdf, id=2184, 190.7125pt 
+<Graphics/ch4/transformedICA_inferno-eps-converted-to.pdf, id=2148, 190.7125pt 
 x 306.14375pt>
 File: Graphics/ch4/transformedICA_inferno-eps-converted-to.pdf Graphic file (ty
 pe pdf)
@@ -3278,7 +3275,7 @@ NI-eps-converted-to.pdf Graphics/ch4/varError-K-ADNI.eps>
 (epstopdf)             \includegraphics on input line 142.
 Package epstopdf Info: Output file is already uptodate.
 
-<Graphics/ch4/varError-K-ADNI-eps-converted-to.pdf, id=2224, 400.49625pt x 245.
+<Graphics/ch4/varError-K-ADNI-eps-converted-to.pdf, id=2188, 400.49625pt x 245.
 91875pt>
 File: Graphics/ch4/varError-K-ADNI-eps-converted-to.pdf Graphic file (type pdf)
 
@@ -3704,7 +3701,7 @@ st_AD.eps>
 (epstopdf)             \includegraphics on input line 232.
 Package epstopdf Info: Output file is already uptodate.
 
-<Graphics/ch4/accuracyMeanSTD-FA_vsN_ttest_AD-eps-converted-to.pdf, id=2311, 43
+<Graphics/ch4/accuracyMeanSTD-FA_vsN_ttest_AD-eps-converted-to.pdf, id=2275, 43
 3.62pt x 289.08pt>
 File: Graphics/ch4/accuracyMeanSTD-FA_vsN_ttest_AD-eps-converted-to.pdf Graphic
  file (type pdf)
@@ -3727,7 +3724,7 @@ st_AD.eps>
 (epstopdf)             \includegraphics on input line 233.
 Package epstopdf Info: Output file is already uptodate.
 
-<Graphics/ch4/accuracyMeanSTD-FA_vsK_ttest_AD-eps-converted-to.pdf, id=2312, 43
+<Graphics/ch4/accuracyMeanSTD-FA_vsK_ttest_AD-eps-converted-to.pdf, id=2276, 43
 3.62pt x 289.08pt>
 File: Graphics/ch4/accuracyMeanSTD-FA_vsK_ttest_AD-eps-converted-to.pdf Graphic
  file (type pdf)
@@ -3750,7 +3747,7 @@ ntropy_AD.eps>
 (epstopdf)             \includegraphics on input line 235.
 Package epstopdf Info: Output file is already uptodate.
 
-<Graphics/ch4/accuracyMeanSTD-FA_vsN_entropy_AD-eps-converted-to.pdf, id=2313, 
+<Graphics/ch4/accuracyMeanSTD-FA_vsN_entropy_AD-eps-converted-to.pdf, id=2277, 
 433.62pt x 289.08pt>
 File: Graphics/ch4/accuracyMeanSTD-FA_vsN_entropy_AD-eps-converted-to.pdf Graph
 ic file (type pdf)
@@ -3773,7 +3770,7 @@ ntropy_AD.eps>
 (epstopdf)             \includegraphics on input line 236.
 Package epstopdf Info: Output file is already uptodate.
 
-<Graphics/ch4/accuracyMeanSTD-FA_vsK_entropy_AD-eps-converted-to.pdf, id=2314, 
+<Graphics/ch4/accuracyMeanSTD-FA_vsK_entropy_AD-eps-converted-to.pdf, id=2278, 
 433.62pt x 289.08pt>
 File: Graphics/ch4/accuracyMeanSTD-FA_vsK_entropy_AD-eps-converted-to.pdf Graph
 ic file (type pdf)
@@ -3796,7 +3793,7 @@ wilcoxon_AD.eps>
 (epstopdf)             \includegraphics on input line 238.
 Package epstopdf Info: Output file is already uptodate.
 
-<Graphics/ch4/accuracyMeanSTD-FA_vsN_wilcoxon_AD-eps-converted-to.pdf, id=2315,
+<Graphics/ch4/accuracyMeanSTD-FA_vsN_wilcoxon_AD-eps-converted-to.pdf, id=2279,
  433.62pt x 289.08pt>
 File: Graphics/ch4/accuracyMeanSTD-FA_vsN_wilcoxon_AD-eps-converted-to.pdf Grap
 hic file (type pdf)
@@ -3819,7 +3816,7 @@ wilcoxon_AD.eps>
 (epstopdf)             \includegraphics on input line 239.
 Package epstopdf Info: Output file is already uptodate.
 
-<Graphics/ch4/accuracyMeanSTD-FA_vsK_wilcoxon_AD-eps-converted-to.pdf, id=2316,
+<Graphics/ch4/accuracyMeanSTD-FA_vsK_wilcoxon_AD-eps-converted-to.pdf, id=2280,
  433.62pt x 289.08pt>
 File: Graphics/ch4/accuracyMeanSTD-FA_vsK_wilcoxon_AD-eps-converted-to.pdf Grap
 hic file (type pdf)
@@ -3842,7 +3839,7 @@ test_AD.eps>
 (epstopdf)             \includegraphics on input line 252.
 Package epstopdf Info: Output file is already uptodate.
 
-<Graphics/ch4/accuracyMeanSTD-ICA_vsN_ttest_AD-eps-converted-to.pdf, id=2338, 4
+<Graphics/ch4/accuracyMeanSTD-ICA_vsN_ttest_AD-eps-converted-to.pdf, id=2302, 4
 33.62pt x 289.08pt>
 File: Graphics/ch4/accuracyMeanSTD-ICA_vsN_ttest_AD-eps-converted-to.pdf Graphi
 c file (type pdf)
@@ -3865,7 +3862,7 @@ test_AD.eps>
 (epstopdf)             \includegraphics on input line 253.
 Package epstopdf Info: Output file is already uptodate.
 
-<Graphics/ch4/accuracyMeanSTD-ICA_vsK_ttest_AD-eps-converted-to.pdf, id=2339, 4
+<Graphics/ch4/accuracyMeanSTD-ICA_vsK_ttest_AD-eps-converted-to.pdf, id=2303, 4
 33.62pt x 289.08pt>
 File: Graphics/ch4/accuracyMeanSTD-ICA_vsK_ttest_AD-eps-converted-to.pdf Graphi
 c file (type pdf)
@@ -3888,7 +3885,7 @@ _entropy_AD.eps>
 (epstopdf)             \includegraphics on input line 255.
 Package epstopdf Info: Output file is already uptodate.
 
-<Graphics/ch4/accuracyMeanSTD-ICA_vsN_entropy_AD-eps-converted-to.pdf, id=2340,
+<Graphics/ch4/accuracyMeanSTD-ICA_vsN_entropy_AD-eps-converted-to.pdf, id=2304,
  433.62pt x 289.08pt>
 File: Graphics/ch4/accuracyMeanSTD-ICA_vsN_entropy_AD-eps-converted-to.pdf Grap
 hic file (type pdf)
@@ -3911,7 +3908,7 @@ _entropy_AD.eps>
 (epstopdf)             \includegraphics on input line 256.
 Package epstopdf Info: Output file is already uptodate.
 
-<Graphics/ch4/accuracyMeanSTD-ICA_vsK_entropy_AD-eps-converted-to.pdf, id=2341,
+<Graphics/ch4/accuracyMeanSTD-ICA_vsK_entropy_AD-eps-converted-to.pdf, id=2305,
  433.62pt x 289.08pt>
 File: Graphics/ch4/accuracyMeanSTD-ICA_vsK_entropy_AD-eps-converted-to.pdf Grap
 hic file (type pdf)
@@ -3934,7 +3931,7 @@ N_wilcoxon_AD.eps>
 (epstopdf)             \includegraphics on input line 258.
 Package epstopdf Info: Output file is already uptodate.
 
-<Graphics/ch4/accuracyMeanSTD-ICA_vsN_wilcoxon_AD-eps-converted-to.pdf, id=2342
+<Graphics/ch4/accuracyMeanSTD-ICA_vsN_wilcoxon_AD-eps-converted-to.pdf, id=2306
 , 433.62pt x 289.08pt>
 File: Graphics/ch4/accuracyMeanSTD-ICA_vsN_wilcoxon_AD-eps-converted-to.pdf Gra
 phic file (type pdf)
@@ -3957,7 +3954,7 @@ K_wilcoxon_AD.eps>
 (epstopdf)             \includegraphics on input line 259.
 Package epstopdf Info: Output file is already uptodate.
 
-<Graphics/ch4/accuracyMeanSTD-ICA_vsK_wilcoxon_AD-eps-converted-to.pdf, id=2343
+<Graphics/ch4/accuracyMeanSTD-ICA_vsK_wilcoxon_AD-eps-converted-to.pdf, id=2307
 , 433.62pt x 289.08pt>
 File: Graphics/ch4/accuracyMeanSTD-ICA_vsK_wilcoxon_AD-eps-converted-to.pdf Gra
 phic file (type pdf)
@@ -3979,99 +3976,6 @@ y_AD-eps-converted-to.pdf> <./Graphics/ch4/accuracyMeanSTD-ICA_vsK_entropy_AD-e
 ps-converted-to.pdf> <./Graphics/ch4/accuracyMeanSTD-ICA_vsN_wilcoxon_AD-eps-co
 nverted-to.pdf> <./Graphics/ch4/accuracyMeanSTD-ICA_vsK_wilcoxon_AD-eps-convert
 ed-to.pdf>]
-Package epstopdf Info: Source file: <Graphics/ch4/accuracyOP-FA_vsN_comparison_
-ADNI-PET.eps>
-(epstopdf)                    date: 2017-02-11 14:06:08
-(epstopdf)                    size: 33081 bytes
-(epstopdf)             Output file: <Graphics/ch4/accuracyOP-FA_vsN_comparison_
-ADNI-PET-eps-converted-to.pdf>
-(epstopdf)                    date: 2017-02-13 09:02:19
-(epstopdf)                    size: 25451 bytes
-(epstopdf)             Command: <repstopdf --outfile=Graphics/ch4/accuracyOP-FA
-_vsN_comparison_ADNI-PET-eps-converted-to.pdf Graphics/ch4/accuracyOP-FA_vsN_co
-mparison_ADNI-PET.eps>
-(epstopdf)             \includegraphics on input line 274.
-Package epstopdf Info: Output file is already uptodate.
-
-<Graphics/ch4/accuracyOP-FA_vsN_comparison_ADNI-PET-eps-converted-to.pdf, id=29
-43, 433.62pt x 289.08pt>
-File: Graphics/ch4/accuracyOP-FA_vsN_comparison_ADNI-PET-eps-converted-to.pdf G
-raphic file (type pdf)
-
-<use Graphics/ch4/accuracyOP-FA_vsN_comparison_ADNI-PET-eps-converted-to.pdf>
-Package pdftex.def Info: Graphics/ch4/accuracyOP-FA_vsN_comparison_ADNI-PET-eps
--converted-to.pdf used on input line 274.
-(pdftex.def)             Requested size: 189.61128pt x 126.40602pt.
-Package epstopdf Info: Source file: <Graphics/ch4/accuracyOP-ICA_vsN_comparison
-_ADNI-PET.eps>
-(epstopdf)                    date: 2017-02-11 14:06:08
-(epstopdf)                    size: 32972 bytes
-(epstopdf)             Output file: <Graphics/ch4/accuracyOP-ICA_vsN_comparison
-_ADNI-PET-eps-converted-to.pdf>
-(epstopdf)                    date: 2017-02-13 09:02:19
-(epstopdf)                    size: 25263 bytes
-(epstopdf)             Command: <repstopdf --outfile=Graphics/ch4/accuracyOP-IC
-A_vsN_comparison_ADNI-PET-eps-converted-to.pdf Graphics/ch4/accuracyOP-ICA_vsN_
-comparison_ADNI-PET.eps>
-(epstopdf)             \includegraphics on input line 275.
-Package epstopdf Info: Output file is already uptodate.
-
-<Graphics/ch4/accuracyOP-ICA_vsN_comparison_ADNI-PET-eps-converted-to.pdf, id=2
-944, 433.62pt x 289.08pt>
-File: Graphics/ch4/accuracyOP-ICA_vsN_comparison_ADNI-PET-eps-converted-to.pdf 
-Graphic file (type pdf)
-
-<use Graphics/ch4/accuracyOP-ICA_vsN_comparison_ADNI-PET-eps-converted-to.pdf>
-Package pdftex.def Info: Graphics/ch4/accuracyOP-ICA_vsN_comparison_ADNI-PET-ep
-s-converted-to.pdf used on input line 275.
-(pdftex.def)             Requested size: 189.61128pt x 126.40602pt.
-Package epstopdf Info: Source file: <Graphics/ch4/accuracyOP-FA_vsN_comparison_
-VDLN-HMPAO.eps>
-(epstopdf)                    date: 2017-02-20 10:26:03
-(epstopdf)                    size: 33816 bytes
-(epstopdf)             Output file: <Graphics/ch4/accuracyOP-FA_vsN_comparison_
-VDLN-HMPAO-eps-converted-to.pdf>
-(epstopdf)                    date: 2017-02-20 10:26:30
-(epstopdf)                    size: 26132 bytes
-(epstopdf)             Command: <repstopdf --outfile=Graphics/ch4/accuracyOP-FA
-_vsN_comparison_VDLN-HMPAO-eps-converted-to.pdf Graphics/ch4/accuracyOP-FA_vsN_
-comparison_VDLN-HMPAO.eps>
-(epstopdf)             \includegraphics on input line 277.
-Package epstopdf Info: Output file is already uptodate.
-
-<Graphics/ch4/accuracyOP-FA_vsN_comparison_VDLN-HMPAO-eps-converted-to.pdf, id=
-2945, 433.62pt x 289.08pt>
-File: Graphics/ch4/accuracyOP-FA_vsN_comparison_VDLN-HMPAO-eps-converted-to.pdf
- Graphic file (type pdf)
-
-<use Graphics/ch4/accuracyOP-FA_vsN_comparison_VDLN-HMPAO-eps-converted-to.pdf>
-Package pdftex.def Info: Graphics/ch4/accuracyOP-FA_vsN_comparison_VDLN-HMPAO-e
-ps-converted-to.pdf used on input line 277.
-(pdftex.def)             Requested size: 189.61128pt x 126.40602pt.
-Package epstopdf Info: Source file: <Graphics/ch4/accuracyOP-ICA_vsN_comparison
-_VDLN-HMPAO.eps>
-(epstopdf)                    date: 2017-02-20 10:26:03
-(epstopdf)                    size: 33783 bytes
-(epstopdf)             Output file: <Graphics/ch4/accuracyOP-ICA_vsN_comparison
-_VDLN-HMPAO-eps-converted-to.pdf>
-(epstopdf)                    date: 2017-02-20 10:26:30
-(epstopdf)                    size: 26120 bytes
-(epstopdf)             Command: <repstopdf --outfile=Graphics/ch4/accuracyOP-IC
-A_vsN_comparison_VDLN-HMPAO-eps-converted-to.pdf Graphics/ch4/accuracyOP-ICA_vs
-N_comparison_VDLN-HMPAO.eps>
-(epstopdf)             \includegraphics on input line 278.
-Package epstopdf Info: Output file is already uptodate.
-
-<Graphics/ch4/accuracyOP-ICA_vsN_comparison_VDLN-HMPAO-eps-converted-to.pdf, id
-=2946, 433.62pt x 289.08pt>
-File: Graphics/ch4/accuracyOP-ICA_vsN_comparison_VDLN-HMPAO-eps-converted-to.pd
-f Graphic file (type pdf)
-
-<use Graphics/ch4/accuracyOP-ICA_vsN_comparison_VDLN-HMPAO-eps-converted-to.pdf
->
-Package pdftex.def Info: Graphics/ch4/accuracyOP-ICA_vsN_comparison_VDLN-HMPAO-
-eps-converted-to.pdf used on input line 278.
-(pdftex.def)             Requested size: 189.61128pt x 126.40602pt.
 Package epstopdf Info: Source file: <Graphics/ch4/accuracyOP-FA_vsK_comparison_
 ADNI-PET.eps>
 (epstopdf)                    date: 2017-02-11 14:21:43
@@ -4083,17 +3987,17 @@ ADNI-PET-eps-converted-to.pdf>
 (epstopdf)             Command: <repstopdf --outfile=Graphics/ch4/accuracyOP-FA
 _vsK_comparison_ADNI-PET-eps-converted-to.pdf Graphics/ch4/accuracyOP-FA_vsK_co
 mparison_ADNI-PET.eps>
-(epstopdf)             \includegraphics on input line 290.
+(epstopdf)             \includegraphics on input line 276.
 Package epstopdf Info: Output file is already uptodate.
 
 <Graphics/ch4/accuracyOP-FA_vsK_comparison_ADNI-PET-eps-converted-to.pdf, id=29
-51, 433.62pt x 289.08pt>
+18, 433.62pt x 289.08pt>
 File: Graphics/ch4/accuracyOP-FA_vsK_comparison_ADNI-PET-eps-converted-to.pdf G
 raphic file (type pdf)
 
 <use Graphics/ch4/accuracyOP-FA_vsK_comparison_ADNI-PET-eps-converted-to.pdf>
 Package pdftex.def Info: Graphics/ch4/accuracyOP-FA_vsK_comparison_ADNI-PET-eps
--converted-to.pdf used on input line 290.
+-converted-to.pdf used on input line 276.
 (pdftex.def)             Requested size: 189.61128pt x 126.40602pt.
 Package epstopdf Info: Source file: <Graphics/ch4/accuracyOP-ICA_vsK_comparison
 _ADNI-PET.eps>
@@ -4106,17 +4010,17 @@ _ADNI-PET-eps-converted-to.pdf>
 (epstopdf)             Command: <repstopdf --outfile=Graphics/ch4/accuracyOP-IC
 A_vsK_comparison_ADNI-PET-eps-converted-to.pdf Graphics/ch4/accuracyOP-ICA_vsK_
 comparison_ADNI-PET.eps>
-(epstopdf)             \includegraphics on input line 291.
+(epstopdf)             \includegraphics on input line 277.
 Package epstopdf Info: Output file is already uptodate.
 
 <Graphics/ch4/accuracyOP-ICA_vsK_comparison_ADNI-PET-eps-converted-to.pdf, id=2
-952, 433.62pt x 289.08pt>
+919, 433.62pt x 289.08pt>
 File: Graphics/ch4/accuracyOP-ICA_vsK_comparison_ADNI-PET-eps-converted-to.pdf 
 Graphic file (type pdf)
 
 <use Graphics/ch4/accuracyOP-ICA_vsK_comparison_ADNI-PET-eps-converted-to.pdf>
 Package pdftex.def Info: Graphics/ch4/accuracyOP-ICA_vsK_comparison_ADNI-PET-ep
-s-converted-to.pdf used on input line 291.
+s-converted-to.pdf used on input line 277.
 (pdftex.def)             Requested size: 189.61128pt x 126.40602pt.
 Package epstopdf Info: Source file: <Graphics/ch4/accuracyOP-FA_vsK_comparison_
 VDLN-HMPAO.eps>
@@ -4129,17 +4033,17 @@ VDLN-HMPAO-eps-converted-to.pdf>
 (epstopdf)             Command: <repstopdf --outfile=Graphics/ch4/accuracyOP-FA
 _vsK_comparison_VDLN-HMPAO-eps-converted-to.pdf Graphics/ch4/accuracyOP-FA_vsK_
 comparison_VDLN-HMPAO.eps>
-(epstopdf)             \includegraphics on input line 293.
+(epstopdf)             \includegraphics on input line 279.
 Package epstopdf Info: Output file is already uptodate.
 
 <Graphics/ch4/accuracyOP-FA_vsK_comparison_VDLN-HMPAO-eps-converted-to.pdf, id=
-2953, 433.62pt x 289.08pt>
+2920, 433.62pt x 289.08pt>
 File: Graphics/ch4/accuracyOP-FA_vsK_comparison_VDLN-HMPAO-eps-converted-to.pdf
  Graphic file (type pdf)
 
 <use Graphics/ch4/accuracyOP-FA_vsK_comparison_VDLN-HMPAO-eps-converted-to.pdf>
 Package pdftex.def Info: Graphics/ch4/accuracyOP-FA_vsK_comparison_VDLN-HMPAO-e
-ps-converted-to.pdf used on input line 293.
+ps-converted-to.pdf used on input line 279.
 (pdftex.def)             Requested size: 189.61128pt x 126.40602pt.
 Package epstopdf Info: Source file: <Graphics/ch4/accuracyOP-ICA_vsK_comparison
 _VDLN-HMPAO.eps>
@@ -4152,33 +4056,126 @@ _VDLN-HMPAO-eps-converted-to.pdf>
 (epstopdf)             Command: <repstopdf --outfile=Graphics/ch4/accuracyOP-IC
 A_vsK_comparison_VDLN-HMPAO-eps-converted-to.pdf Graphics/ch4/accuracyOP-ICA_vs
 K_comparison_VDLN-HMPAO.eps>
-(epstopdf)             \includegraphics on input line 294.
+(epstopdf)             \includegraphics on input line 280.
 Package epstopdf Info: Output file is already uptodate.
 
 <Graphics/ch4/accuracyOP-ICA_vsK_comparison_VDLN-HMPAO-eps-converted-to.pdf, id
-=2954, 433.62pt x 289.08pt>
+=2921, 433.62pt x 289.08pt>
 File: Graphics/ch4/accuracyOP-ICA_vsK_comparison_VDLN-HMPAO-eps-converted-to.pd
 f Graphic file (type pdf)
 
 <use Graphics/ch4/accuracyOP-ICA_vsK_comparison_VDLN-HMPAO-eps-converted-to.pdf
 >
 Package pdftex.def Info: Graphics/ch4/accuracyOP-ICA_vsK_comparison_VDLN-HMPAO-
+eps-converted-to.pdf used on input line 280.
+(pdftex.def)             Requested size: 189.61128pt x 126.40602pt.
+Package epstopdf Info: Source file: <Graphics/ch4/accuracyOP-FA_vsN_comparison_
+ADNI-PET.eps>
+(epstopdf)                    date: 2017-02-11 14:06:08
+(epstopdf)                    size: 33081 bytes
+(epstopdf)             Output file: <Graphics/ch4/accuracyOP-FA_vsN_comparison_
+ADNI-PET-eps-converted-to.pdf>
+(epstopdf)                    date: 2017-02-13 09:02:19
+(epstopdf)                    size: 25451 bytes
+(epstopdf)             Command: <repstopdf --outfile=Graphics/ch4/accuracyOP-FA
+_vsN_comparison_ADNI-PET-eps-converted-to.pdf Graphics/ch4/accuracyOP-FA_vsN_co
+mparison_ADNI-PET.eps>
+(epstopdf)             \includegraphics on input line 290.
+Package epstopdf Info: Output file is already uptodate.
+
+<Graphics/ch4/accuracyOP-FA_vsN_comparison_ADNI-PET-eps-converted-to.pdf, id=29
+27, 433.62pt x 289.08pt>
+File: Graphics/ch4/accuracyOP-FA_vsN_comparison_ADNI-PET-eps-converted-to.pdf G
+raphic file (type pdf)
+
+<use Graphics/ch4/accuracyOP-FA_vsN_comparison_ADNI-PET-eps-converted-to.pdf>
+Package pdftex.def Info: Graphics/ch4/accuracyOP-FA_vsN_comparison_ADNI-PET-eps
+-converted-to.pdf used on input line 290.
+(pdftex.def)             Requested size: 189.61128pt x 126.40602pt.
+Package epstopdf Info: Source file: <Graphics/ch4/accuracyOP-ICA_vsN_comparison
+_ADNI-PET.eps>
+(epstopdf)                    date: 2017-02-11 14:06:08
+(epstopdf)                    size: 32972 bytes
+(epstopdf)             Output file: <Graphics/ch4/accuracyOP-ICA_vsN_comparison
+_ADNI-PET-eps-converted-to.pdf>
+(epstopdf)                    date: 2017-02-13 09:02:19
+(epstopdf)                    size: 25263 bytes
+(epstopdf)             Command: <repstopdf --outfile=Graphics/ch4/accuracyOP-IC
+A_vsN_comparison_ADNI-PET-eps-converted-to.pdf Graphics/ch4/accuracyOP-ICA_vsN_
+comparison_ADNI-PET.eps>
+(epstopdf)             \includegraphics on input line 291.
+Package epstopdf Info: Output file is already uptodate.
+
+<Graphics/ch4/accuracyOP-ICA_vsN_comparison_ADNI-PET-eps-converted-to.pdf, id=2
+928, 433.62pt x 289.08pt>
+File: Graphics/ch4/accuracyOP-ICA_vsN_comparison_ADNI-PET-eps-converted-to.pdf 
+Graphic file (type pdf)
+
+<use Graphics/ch4/accuracyOP-ICA_vsN_comparison_ADNI-PET-eps-converted-to.pdf>
+Package pdftex.def Info: Graphics/ch4/accuracyOP-ICA_vsN_comparison_ADNI-PET-ep
+s-converted-to.pdf used on input line 291.
+(pdftex.def)             Requested size: 189.61128pt x 126.40602pt.
+Package epstopdf Info: Source file: <Graphics/ch4/accuracyOP-FA_vsN_comparison_
+VDLN-HMPAO.eps>
+(epstopdf)                    date: 2017-02-20 10:26:03
+(epstopdf)                    size: 33816 bytes
+(epstopdf)             Output file: <Graphics/ch4/accuracyOP-FA_vsN_comparison_
+VDLN-HMPAO-eps-converted-to.pdf>
+(epstopdf)                    date: 2017-02-20 10:26:30
+(epstopdf)                    size: 26132 bytes
+(epstopdf)             Command: <repstopdf --outfile=Graphics/ch4/accuracyOP-FA
+_vsN_comparison_VDLN-HMPAO-eps-converted-to.pdf Graphics/ch4/accuracyOP-FA_vsN_
+comparison_VDLN-HMPAO.eps>
+(epstopdf)             \includegraphics on input line 293.
+Package epstopdf Info: Output file is already uptodate.
+
+<Graphics/ch4/accuracyOP-FA_vsN_comparison_VDLN-HMPAO-eps-converted-to.pdf, id=
+2929, 433.62pt x 289.08pt>
+File: Graphics/ch4/accuracyOP-FA_vsN_comparison_VDLN-HMPAO-eps-converted-to.pdf
+ Graphic file (type pdf)
+
+<use Graphics/ch4/accuracyOP-FA_vsN_comparison_VDLN-HMPAO-eps-converted-to.pdf>
+Package pdftex.def Info: Graphics/ch4/accuracyOP-FA_vsN_comparison_VDLN-HMPAO-e
+ps-converted-to.pdf used on input line 293.
+(pdftex.def)             Requested size: 189.61128pt x 126.40602pt.
+Package epstopdf Info: Source file: <Graphics/ch4/accuracyOP-ICA_vsN_comparison
+_VDLN-HMPAO.eps>
+(epstopdf)                    date: 2017-02-20 10:26:03
+(epstopdf)                    size: 33783 bytes
+(epstopdf)             Output file: <Graphics/ch4/accuracyOP-ICA_vsN_comparison
+_VDLN-HMPAO-eps-converted-to.pdf>
+(epstopdf)                    date: 2017-02-20 10:26:30
+(epstopdf)                    size: 26120 bytes
+(epstopdf)             Command: <repstopdf --outfile=Graphics/ch4/accuracyOP-IC
+A_vsN_comparison_VDLN-HMPAO-eps-converted-to.pdf Graphics/ch4/accuracyOP-ICA_vs
+N_comparison_VDLN-HMPAO.eps>
+(epstopdf)             \includegraphics on input line 294.
+Package epstopdf Info: Output file is already uptodate.
+
+<Graphics/ch4/accuracyOP-ICA_vsN_comparison_VDLN-HMPAO-eps-converted-to.pdf, id
+=2930, 433.62pt x 289.08pt>
+File: Graphics/ch4/accuracyOP-ICA_vsN_comparison_VDLN-HMPAO-eps-converted-to.pd
+f Graphic file (type pdf)
+
+<use Graphics/ch4/accuracyOP-ICA_vsN_comparison_VDLN-HMPAO-eps-converted-to.pdf
+>
+Package pdftex.def Info: Graphics/ch4/accuracyOP-ICA_vsN_comparison_VDLN-HMPAO-
 eps-converted-to.pdf used on input line 294.
 (pdftex.def)             Requested size: 189.61128pt x 126.40602pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 324--324
+Underfull \hbox (badness 10000) in paragraph at lines 326--326
 []\T1/pplj/m/n/10.95 VDLN-
  []
 
-[51] [52 <./Graphics/ch4/accuracyOP-FA_vsN_comparison_ADNI-PET-eps-converted-to
-.pdf> <./Graphics/ch4/accuracyOP-ICA_vsN_comparison_ADNI-PET-eps-converted-to.p
-df> <./Graphics/ch4/accuracyOP-FA_vsN_comparison_VDLN-HMPAO-eps-converted-to.pd
-f> <./Graphics/ch4/accuracyOP-ICA_vsN_comparison_VDLN-HMPAO-eps-converted-to.pd
-f>] [53 <./Graphics/ch4/accuracyOP-FA_vsK_comparison_ADNI-PET-eps-converted-to.
-pdf> <./Graphics/ch4/accuracyOP-ICA_vsK_comparison_ADNI-PET-eps-converted-to.pd
-f> <./Graphics/ch4/accuracyOP-FA_vsK_comparison_VDLN-HMPAO-eps-converted-to.pdf
-> <./Graphics/ch4/accuracyOP-ICA_vsK_comparison_VDLN-HMPAO-eps-converted-to.pdf
->] [54]
+[51] [52 <./Graphics/ch4/accuracyOP-FA_vsK_comparison_ADNI-PET-eps-converted-to
+.pdf> <./Graphics/ch4/accuracyOP-ICA_vsK_comparison_ADNI-PET-eps-converted-to.p
+df> <./Graphics/ch4/accuracyOP-FA_vsK_comparison_VDLN-HMPAO-eps-converted-to.pd
+f> <./Graphics/ch4/accuracyOP-ICA_vsK_comparison_VDLN-HMPAO-eps-converted-to.pd
+f>] [53 <./Graphics/ch4/accuracyOP-FA_vsN_comparison_ADNI-PET-eps-converted-to.
+pdf> <./Graphics/ch4/accuracyOP-ICA_vsN_comparison_ADNI-PET-eps-converted-to.pd
+f> <./Graphics/ch4/accuracyOP-FA_vsN_comparison_VDLN-HMPAO-eps-converted-to.pdf
+> <./Graphics/ch4/accuracyOP-ICA_vsN_comparison_VDLN-HMPAO-eps-converted-to.pdf
+>]
 Package epstopdf Info: Source file: <Graphics/ch4/accuracyMeanSTD-FA_vsN_ttest_
 PKS.eps>
 (epstopdf)                    date: 2017-02-11 14:20:17
@@ -4190,17 +4187,17 @@ PKS-eps-converted-to.pdf>
 (epstopdf)             Command: <repstopdf --outfile=Graphics/ch4/accuracyMeanS
 TD-FA_vsN_ttest_PKS-eps-converted-to.pdf Graphics/ch4/accuracyMeanSTD-FA_vsN_tt
 est_PKS.eps>
-(epstopdf)             \includegraphics on input line 341.
+(epstopdf)             \includegraphics on input line 343.
 Package epstopdf Info: Output file is already uptodate.
 
-<Graphics/ch4/accuracyMeanSTD-FA_vsN_ttest_PKS-eps-converted-to.pdf, id=3380, 4
+<Graphics/ch4/accuracyMeanSTD-FA_vsN_ttest_PKS-eps-converted-to.pdf, id=3353, 4
 33.62pt x 289.08pt>
 File: Graphics/ch4/accuracyMeanSTD-FA_vsN_ttest_PKS-eps-converted-to.pdf Graphi
 c file (type pdf)
 
 <use Graphics/ch4/accuracyMeanSTD-FA_vsN_ttest_PKS-eps-converted-to.pdf>
 Package pdftex.def Info: Graphics/ch4/accuracyMeanSTD-FA_vsN_ttest_PKS-eps-conv
-erted-to.pdf used on input line 341.
+erted-to.pdf used on input line 343.
 (pdftex.def)             Requested size: 189.61128pt x 126.40602pt.
 Package epstopdf Info: Source file: <Graphics/ch4/accuracyMeanSTD-FA_vsK_ttest_
 PKS.eps>
@@ -4213,17 +4210,17 @@ PKS-eps-converted-to.pdf>
 (epstopdf)             Command: <repstopdf --outfile=Graphics/ch4/accuracyMeanS
 TD-FA_vsK_ttest_PKS-eps-converted-to.pdf Graphics/ch4/accuracyMeanSTD-FA_vsK_tt
 est_PKS.eps>
-(epstopdf)             \includegraphics on input line 342.
+(epstopdf)             \includegraphics on input line 344.
 Package epstopdf Info: Output file is already uptodate.
 
-<Graphics/ch4/accuracyMeanSTD-FA_vsK_ttest_PKS-eps-converted-to.pdf, id=3381, 4
+<Graphics/ch4/accuracyMeanSTD-FA_vsK_ttest_PKS-eps-converted-to.pdf, id=3354, 4
 33.62pt x 289.08pt>
 File: Graphics/ch4/accuracyMeanSTD-FA_vsK_ttest_PKS-eps-converted-to.pdf Graphi
 c file (type pdf)
 
 <use Graphics/ch4/accuracyMeanSTD-FA_vsK_ttest_PKS-eps-converted-to.pdf>
 Package pdftex.def Info: Graphics/ch4/accuracyMeanSTD-FA_vsK_ttest_PKS-eps-conv
-erted-to.pdf used on input line 342.
+erted-to.pdf used on input line 344.
 (pdftex.def)             Requested size: 189.61128pt x 126.40602pt.
 Package epstopdf Info: Source file: <Graphics/ch4/accuracyMeanSTD-FA_vsN_entrop
 y_PKS.eps>
@@ -4236,17 +4233,17 @@ y_PKS-eps-converted-to.pdf>
 (epstopdf)             Command: <repstopdf --outfile=Graphics/ch4/accuracyMeanS
 TD-FA_vsN_entropy_PKS-eps-converted-to.pdf Graphics/ch4/accuracyMeanSTD-FA_vsN_
 entropy_PKS.eps>
-(epstopdf)             \includegraphics on input line 344.
+(epstopdf)             \includegraphics on input line 346.
 Package epstopdf Info: Output file is already uptodate.
 
-<Graphics/ch4/accuracyMeanSTD-FA_vsN_entropy_PKS-eps-converted-to.pdf, id=3382,
+<Graphics/ch4/accuracyMeanSTD-FA_vsN_entropy_PKS-eps-converted-to.pdf, id=3355,
  433.62pt x 289.08pt>
 File: Graphics/ch4/accuracyMeanSTD-FA_vsN_entropy_PKS-eps-converted-to.pdf Grap
 hic file (type pdf)
 
 <use Graphics/ch4/accuracyMeanSTD-FA_vsN_entropy_PKS-eps-converted-to.pdf>
 Package pdftex.def Info: Graphics/ch4/accuracyMeanSTD-FA_vsN_entropy_PKS-eps-co
-nverted-to.pdf used on input line 344.
+nverted-to.pdf used on input line 346.
 (pdftex.def)             Requested size: 189.61128pt x 126.40602pt.
 Package epstopdf Info: Source file: <Graphics/ch4/accuracyMeanSTD-FA_vsK_entrop
 y_PKS.eps>
@@ -4259,17 +4256,17 @@ y_PKS-eps-converted-to.pdf>
 (epstopdf)             Command: <repstopdf --outfile=Graphics/ch4/accuracyMeanS
 TD-FA_vsK_entropy_PKS-eps-converted-to.pdf Graphics/ch4/accuracyMeanSTD-FA_vsK_
 entropy_PKS.eps>
-(epstopdf)             \includegraphics on input line 345.
+(epstopdf)             \includegraphics on input line 347.
 Package epstopdf Info: Output file is already uptodate.
 
-<Graphics/ch4/accuracyMeanSTD-FA_vsK_entropy_PKS-eps-converted-to.pdf, id=3383,
+<Graphics/ch4/accuracyMeanSTD-FA_vsK_entropy_PKS-eps-converted-to.pdf, id=3356,
  433.62pt x 289.08pt>
 File: Graphics/ch4/accuracyMeanSTD-FA_vsK_entropy_PKS-eps-converted-to.pdf Grap
 hic file (type pdf)
 
 <use Graphics/ch4/accuracyMeanSTD-FA_vsK_entropy_PKS-eps-converted-to.pdf>
 Package pdftex.def Info: Graphics/ch4/accuracyMeanSTD-FA_vsK_entropy_PKS-eps-co
-nverted-to.pdf used on input line 345.
+nverted-to.pdf used on input line 347.
 (pdftex.def)             Requested size: 189.61128pt x 126.40602pt.
 Package epstopdf Info: Source file: <Graphics/ch4/accuracyMeanSTD-FA_vsN_wilcox
 on_PKS.eps>
@@ -4282,17 +4279,17 @@ on_PKS-eps-converted-to.pdf>
 (epstopdf)             Command: <repstopdf --outfile=Graphics/ch4/accuracyMeanS
 TD-FA_vsN_wilcoxon_PKS-eps-converted-to.pdf Graphics/ch4/accuracyMeanSTD-FA_vsN
 _wilcoxon_PKS.eps>
-(epstopdf)             \includegraphics on input line 347.
+(epstopdf)             \includegraphics on input line 349.
 Package epstopdf Info: Output file is already uptodate.
 
-<Graphics/ch4/accuracyMeanSTD-FA_vsN_wilcoxon_PKS-eps-converted-to.pdf, id=3384
+<Graphics/ch4/accuracyMeanSTD-FA_vsN_wilcoxon_PKS-eps-converted-to.pdf, id=3357
 , 433.62pt x 289.08pt>
 File: Graphics/ch4/accuracyMeanSTD-FA_vsN_wilcoxon_PKS-eps-converted-to.pdf Gra
 phic file (type pdf)
 
 <use Graphics/ch4/accuracyMeanSTD-FA_vsN_wilcoxon_PKS-eps-converted-to.pdf>
 Package pdftex.def Info: Graphics/ch4/accuracyMeanSTD-FA_vsN_wilcoxon_PKS-eps-c
-onverted-to.pdf used on input line 347.
+onverted-to.pdf used on input line 349.
 (pdftex.def)             Requested size: 189.61128pt x 126.40602pt.
 Package epstopdf Info: Source file: <Graphics/ch4/accuracyMeanSTD-FA_vsK_wilcox
 on_PKS.eps>
@@ -4305,18 +4302,25 @@ on_PKS-eps-converted-to.pdf>
 (epstopdf)             Command: <repstopdf --outfile=Graphics/ch4/accuracyMeanS
 TD-FA_vsK_wilcoxon_PKS-eps-converted-to.pdf Graphics/ch4/accuracyMeanSTD-FA_vsK
 _wilcoxon_PKS.eps>
-(epstopdf)             \includegraphics on input line 348.
+(epstopdf)             \includegraphics on input line 350.
 Package epstopdf Info: Output file is already uptodate.
 
-<Graphics/ch4/accuracyMeanSTD-FA_vsK_wilcoxon_PKS-eps-converted-to.pdf, id=3385
+<Graphics/ch4/accuracyMeanSTD-FA_vsK_wilcoxon_PKS-eps-converted-to.pdf, id=3358
 , 433.62pt x 289.08pt>
 File: Graphics/ch4/accuracyMeanSTD-FA_vsK_wilcoxon_PKS-eps-converted-to.pdf Gra
 phic file (type pdf)
 
 <use Graphics/ch4/accuracyMeanSTD-FA_vsK_wilcoxon_PKS-eps-converted-to.pdf>
 Package pdftex.def Info: Graphics/ch4/accuracyMeanSTD-FA_vsK_wilcoxon_PKS-eps-c
-onverted-to.pdf used on input line 348.
+onverted-to.pdf used on input line 350.
 (pdftex.def)             Requested size: 189.61128pt x 126.40602pt.
+
+[54] [55 <./Graphics/ch4/accuracyMeanSTD-FA_vsN_ttest_PKS-eps-converted-to.pdf>
+ <./Graphics/ch4/accuracyMeanSTD-FA_vsK_ttest_PKS-eps-converted-to.pdf> <./Grap
+hics/ch4/accuracyMeanSTD-FA_vsN_entropy_PKS-eps-converted-to.pdf> <./Graphics/c
+h4/accuracyMeanSTD-FA_vsK_entropy_PKS-eps-converted-to.pdf> <./Graphics/ch4/acc
+uracyMeanSTD-FA_vsN_wilcoxon_PKS-eps-converted-to.pdf> <./Graphics/ch4/accuracy
+MeanSTD-FA_vsK_wilcoxon_PKS-eps-converted-to.pdf>]
 Package epstopdf Info: Source file: <Graphics/ch4/accuracyMeanSTD-ICA_vsN_ttest
 _PKS.eps>
 (epstopdf)                    date: 2017-02-11 14:20:18
@@ -4328,17 +4332,17 @@ _PKS-eps-converted-to.pdf>
 (epstopdf)             Command: <repstopdf --outfile=Graphics/ch4/accuracyMeanS
 TD-ICA_vsN_ttest_PKS-eps-converted-to.pdf Graphics/ch4/accuracyMeanSTD-ICA_vsN_
 ttest_PKS.eps>
-(epstopdf)             \includegraphics on input line 364.
+(epstopdf)             \includegraphics on input line 366.
 Package epstopdf Info: Output file is already uptodate.
 
-<Graphics/ch4/accuracyMeanSTD-ICA_vsN_ttest_PKS-eps-converted-to.pdf, id=3405, 
+<Graphics/ch4/accuracyMeanSTD-ICA_vsN_ttest_PKS-eps-converted-to.pdf, id=3661, 
 433.62pt x 289.08pt>
 File: Graphics/ch4/accuracyMeanSTD-ICA_vsN_ttest_PKS-eps-converted-to.pdf Graph
 ic file (type pdf)
 
 <use Graphics/ch4/accuracyMeanSTD-ICA_vsN_ttest_PKS-eps-converted-to.pdf>
 Package pdftex.def Info: Graphics/ch4/accuracyMeanSTD-ICA_vsN_ttest_PKS-eps-con
-verted-to.pdf used on input line 364.
+verted-to.pdf used on input line 366.
 (pdftex.def)             Requested size: 189.61128pt x 126.40602pt.
 Package epstopdf Info: Source file: <Graphics/ch4/accuracyMeanSTD-ICA_vsK_ttest
 _PKS.eps>
@@ -4351,17 +4355,17 @@ _PKS-eps-converted-to.pdf>
 (epstopdf)             Command: <repstopdf --outfile=Graphics/ch4/accuracyMeanS
 TD-ICA_vsK_ttest_PKS-eps-converted-to.pdf Graphics/ch4/accuracyMeanSTD-ICA_vsK_
 ttest_PKS.eps>
-(epstopdf)             \includegraphics on input line 365.
+(epstopdf)             \includegraphics on input line 367.
 Package epstopdf Info: Output file is already uptodate.
 
-<Graphics/ch4/accuracyMeanSTD-ICA_vsK_ttest_PKS-eps-converted-to.pdf, id=3406, 
+<Graphics/ch4/accuracyMeanSTD-ICA_vsK_ttest_PKS-eps-converted-to.pdf, id=3662, 
 433.62pt x 289.08pt>
 File: Graphics/ch4/accuracyMeanSTD-ICA_vsK_ttest_PKS-eps-converted-to.pdf Graph
 ic file (type pdf)
 
 <use Graphics/ch4/accuracyMeanSTD-ICA_vsK_ttest_PKS-eps-converted-to.pdf>
 Package pdftex.def Info: Graphics/ch4/accuracyMeanSTD-ICA_vsK_ttest_PKS-eps-con
-verted-to.pdf used on input line 365.
+verted-to.pdf used on input line 367.
 (pdftex.def)             Requested size: 189.61128pt x 126.40602pt.
 Package epstopdf Info: Source file: <Graphics/ch4/accuracyMeanSTD-ICA_vsN_entro
 py_PKS.eps>
@@ -4374,17 +4378,17 @@ py_PKS-eps-converted-to.pdf>
 (epstopdf)             Command: <repstopdf --outfile=Graphics/ch4/accuracyMeanS
 TD-ICA_vsN_entropy_PKS-eps-converted-to.pdf Graphics/ch4/accuracyMeanSTD-ICA_vs
 N_entropy_PKS.eps>
-(epstopdf)             \includegraphics on input line 367.
+(epstopdf)             \includegraphics on input line 369.
 Package epstopdf Info: Output file is already uptodate.
 
-<Graphics/ch4/accuracyMeanSTD-ICA_vsN_entropy_PKS-eps-converted-to.pdf, id=3407
+<Graphics/ch4/accuracyMeanSTD-ICA_vsN_entropy_PKS-eps-converted-to.pdf, id=3663
 , 433.62pt x 289.08pt>
 File: Graphics/ch4/accuracyMeanSTD-ICA_vsN_entropy_PKS-eps-converted-to.pdf Gra
 phic file (type pdf)
 
 <use Graphics/ch4/accuracyMeanSTD-ICA_vsN_entropy_PKS-eps-converted-to.pdf>
 Package pdftex.def Info: Graphics/ch4/accuracyMeanSTD-ICA_vsN_entropy_PKS-eps-c
-onverted-to.pdf used on input line 367.
+onverted-to.pdf used on input line 369.
 (pdftex.def)             Requested size: 189.61128pt x 126.40602pt.
 Package epstopdf Info: Source file: <Graphics/ch4/accuracyMeanSTD-ICA_vsK_entro
 py_PKS.eps>
@@ -4397,17 +4401,17 @@ py_PKS-eps-converted-to.pdf>
 (epstopdf)             Command: <repstopdf --outfile=Graphics/ch4/accuracyMeanS
 TD-ICA_vsK_entropy_PKS-eps-converted-to.pdf Graphics/ch4/accuracyMeanSTD-ICA_vs
 K_entropy_PKS.eps>
-(epstopdf)             \includegraphics on input line 368.
+(epstopdf)             \includegraphics on input line 370.
 Package epstopdf Info: Output file is already uptodate.
 
-<Graphics/ch4/accuracyMeanSTD-ICA_vsK_entropy_PKS-eps-converted-to.pdf, id=3408
+<Graphics/ch4/accuracyMeanSTD-ICA_vsK_entropy_PKS-eps-converted-to.pdf, id=3664
 , 433.62pt x 289.08pt>
 File: Graphics/ch4/accuracyMeanSTD-ICA_vsK_entropy_PKS-eps-converted-to.pdf Gra
 phic file (type pdf)
 
 <use Graphics/ch4/accuracyMeanSTD-ICA_vsK_entropy_PKS-eps-converted-to.pdf>
 Package pdftex.def Info: Graphics/ch4/accuracyMeanSTD-ICA_vsK_entropy_PKS-eps-c
-onverted-to.pdf used on input line 368.
+onverted-to.pdf used on input line 370.
 (pdftex.def)             Requested size: 189.61128pt x 126.40602pt.
 Package epstopdf Info: Source file: <Graphics/ch4/accuracyMeanSTD-ICA_vsN_wilco
 xon_PKS.eps>
@@ -4420,17 +4424,17 @@ xon_PKS-eps-converted-to.pdf>
 (epstopdf)             Command: <repstopdf --outfile=Graphics/ch4/accuracyMeanS
 TD-ICA_vsN_wilcoxon_PKS-eps-converted-to.pdf Graphics/ch4/accuracyMeanSTD-ICA_v
 sN_wilcoxon_PKS.eps>
-(epstopdf)             \includegraphics on input line 370.
+(epstopdf)             \includegraphics on input line 372.
 Package epstopdf Info: Output file is already uptodate.
 
-<Graphics/ch4/accuracyMeanSTD-ICA_vsN_wilcoxon_PKS-eps-converted-to.pdf, id=340
-9, 433.62pt x 289.08pt>
+<Graphics/ch4/accuracyMeanSTD-ICA_vsN_wilcoxon_PKS-eps-converted-to.pdf, id=366
+5, 433.62pt x 289.08pt>
 File: Graphics/ch4/accuracyMeanSTD-ICA_vsN_wilcoxon_PKS-eps-converted-to.pdf Gr
 aphic file (type pdf)
 
 <use Graphics/ch4/accuracyMeanSTD-ICA_vsN_wilcoxon_PKS-eps-converted-to.pdf>
 Package pdftex.def Info: Graphics/ch4/accuracyMeanSTD-ICA_vsN_wilcoxon_PKS-eps-
-converted-to.pdf used on input line 370.
+converted-to.pdf used on input line 372.
 (pdftex.def)             Requested size: 189.61128pt x 126.40602pt.
 Package epstopdf Info: Source file: <Graphics/ch4/accuracyMeanSTD-ICA_vsK_wilco
 xon_PKS.eps>
@@ -4443,168 +4447,17 @@ xon_PKS-eps-converted-to.pdf>
 (epstopdf)             Command: <repstopdf --outfile=Graphics/ch4/accuracyMeanS
 TD-ICA_vsK_wilcoxon_PKS-eps-converted-to.pdf Graphics/ch4/accuracyMeanSTD-ICA_v
 sK_wilcoxon_PKS.eps>
-(epstopdf)             \includegraphics on input line 371.
+(epstopdf)             \includegraphics on input line 373.
 Package epstopdf Info: Output file is already uptodate.
 
-<Graphics/ch4/accuracyMeanSTD-ICA_vsK_wilcoxon_PKS-eps-converted-to.pdf, id=341
-0, 433.62pt x 289.08pt>
+<Graphics/ch4/accuracyMeanSTD-ICA_vsK_wilcoxon_PKS-eps-converted-to.pdf, id=366
+6, 433.62pt x 289.08pt>
 File: Graphics/ch4/accuracyMeanSTD-ICA_vsK_wilcoxon_PKS-eps-converted-to.pdf Gr
 aphic file (type pdf)
 
 <use Graphics/ch4/accuracyMeanSTD-ICA_vsK_wilcoxon_PKS-eps-converted-to.pdf>
 Package pdftex.def Info: Graphics/ch4/accuracyMeanSTD-ICA_vsK_wilcoxon_PKS-eps-
-converted-to.pdf used on input line 371.
-(pdftex.def)             Requested size: 189.61128pt x 126.40602pt.
-
-[55] [56 <./Graphics/ch4/accuracyMeanSTD-FA_vsN_ttest_PKS-eps-converted-to.pdf>
- <./Graphics/ch4/accuracyMeanSTD-FA_vsK_ttest_PKS-eps-converted-to.pdf> <./Grap
-hics/ch4/accuracyMeanSTD-FA_vsN_entropy_PKS-eps-converted-to.pdf> <./Graphics/c
-h4/accuracyMeanSTD-FA_vsK_entropy_PKS-eps-converted-to.pdf> <./Graphics/ch4/acc
-uracyMeanSTD-FA_vsN_wilcoxon_PKS-eps-converted-to.pdf> <./Graphics/ch4/accuracy
-MeanSTD-FA_vsK_wilcoxon_PKS-eps-converted-to.pdf>] [57 <./Graphics/ch4/accuracy
-MeanSTD-ICA_vsN_ttest_PKS-eps-converted-to.pdf> <./Graphics/ch4/accuracyMeanSTD
--ICA_vsK_ttest_PKS-eps-converted-to.pdf> <./Graphics/ch4/accuracyMeanSTD-ICA_vs
-N_entropy_PKS-eps-converted-to.pdf> <./Graphics/ch4/accuracyMeanSTD-ICA_vsK_ent
-ropy_PKS-eps-converted-to.pdf> <./Graphics/ch4/accuracyMeanSTD-ICA_vsN_wilcoxon
-_PKS-eps-converted-to.pdf> <./Graphics/ch4/accuracyMeanSTD-ICA_vsK_wilcoxon_PKS
--eps-converted-to.pdf>]
-Package epstopdf Info: Source file: <Graphics/ch4/accuracyOP-FA_vsN_comparison_
-PPMI-DAT.eps>
-(epstopdf)                    date: 2017-02-11 14:21:58
-(epstopdf)                    size: 32849 bytes
-(epstopdf)             Output file: <Graphics/ch4/accuracyOP-FA_vsN_comparison_
-PPMI-DAT-eps-converted-to.pdf>
-(epstopdf)                    date: 2017-02-13 09:02:19
-(epstopdf)                    size: 25263 bytes
-(epstopdf)             Command: <repstopdf --outfile=Graphics/ch4/accuracyOP-FA
-_vsN_comparison_PPMI-DAT-eps-converted-to.pdf Graphics/ch4/accuracyOP-FA_vsN_co
-mparison_PPMI-DAT.eps>
-(epstopdf)             \includegraphics on input line 383.
-Package epstopdf Info: Output file is already uptodate.
-
-<Graphics/ch4/accuracyOP-FA_vsN_comparison_PPMI-DAT-eps-converted-to.pdf, id=39
-79, 433.62pt x 289.08pt>
-File: Graphics/ch4/accuracyOP-FA_vsN_comparison_PPMI-DAT-eps-converted-to.pdf G
-raphic file (type pdf)
-
-<use Graphics/ch4/accuracyOP-FA_vsN_comparison_PPMI-DAT-eps-converted-to.pdf>
-Package pdftex.def Info: Graphics/ch4/accuracyOP-FA_vsN_comparison_PPMI-DAT-eps
--converted-to.pdf used on input line 383.
-(pdftex.def)             Requested size: 189.61128pt x 126.40602pt.
-Package epstopdf Info: Source file: <Graphics/ch4/accuracyOP-ICA_vsN_comparison
-_PPMI-DAT.eps>
-(epstopdf)                    date: 2017-02-11 14:21:58
-(epstopdf)                    size: 32725 bytes
-(epstopdf)             Output file: <Graphics/ch4/accuracyOP-ICA_vsN_comparison
-_PPMI-DAT-eps-converted-to.pdf>
-(epstopdf)                    date: 2017-02-13 09:02:19
-(epstopdf)                    size: 24867 bytes
-(epstopdf)             Command: <repstopdf --outfile=Graphics/ch4/accuracyOP-IC
-A_vsN_comparison_PPMI-DAT-eps-converted-to.pdf Graphics/ch4/accuracyOP-ICA_vsN_
-comparison_PPMI-DAT.eps>
-(epstopdf)             \includegraphics on input line 384.
-Package epstopdf Info: Output file is already uptodate.
-
-<Graphics/ch4/accuracyOP-ICA_vsN_comparison_PPMI-DAT-eps-converted-to.pdf, id=3
-980, 433.62pt x 289.08pt>
-File: Graphics/ch4/accuracyOP-ICA_vsN_comparison_PPMI-DAT-eps-converted-to.pdf 
-Graphic file (type pdf)
-
-<use Graphics/ch4/accuracyOP-ICA_vsN_comparison_PPMI-DAT-eps-converted-to.pdf>
-Package pdftex.def Info: Graphics/ch4/accuracyOP-ICA_vsN_comparison_PPMI-DAT-ep
-s-converted-to.pdf used on input line 384.
-(pdftex.def)             Requested size: 189.61128pt x 126.40602pt.
-Package epstopdf Info: Source file: <Graphics/ch4/accuracyOP-FA_vsN_comparison_
-VDLN-DAT.eps>
-(epstopdf)                    date: 2017-02-11 14:22:06
-(epstopdf)                    size: 33064 bytes
-(epstopdf)             Output file: <Graphics/ch4/accuracyOP-FA_vsN_comparison_
-VDLN-DAT-eps-converted-to.pdf>
-(epstopdf)                    date: 2017-02-13 09:02:19
-(epstopdf)                    size: 25473 bytes
-(epstopdf)             Command: <repstopdf --outfile=Graphics/ch4/accuracyOP-FA
-_vsN_comparison_VDLN-DAT-eps-converted-to.pdf Graphics/ch4/accuracyOP-FA_vsN_co
-mparison_VDLN-DAT.eps>
-(epstopdf)             \includegraphics on input line 386.
-Package epstopdf Info: Output file is already uptodate.
-
-<Graphics/ch4/accuracyOP-FA_vsN_comparison_VDLN-DAT-eps-converted-to.pdf, id=39
-81, 433.62pt x 289.08pt>
-File: Graphics/ch4/accuracyOP-FA_vsN_comparison_VDLN-DAT-eps-converted-to.pdf G
-raphic file (type pdf)
-
-<use Graphics/ch4/accuracyOP-FA_vsN_comparison_VDLN-DAT-eps-converted-to.pdf>
-Package pdftex.def Info: Graphics/ch4/accuracyOP-FA_vsN_comparison_VDLN-DAT-eps
--converted-to.pdf used on input line 386.
-(pdftex.def)             Requested size: 189.61128pt x 126.40602pt.
-Package epstopdf Info: Source file: <Graphics/ch4/accuracyOP-ICA_vsN_comparison
-_VDLN-DAT.eps>
-(epstopdf)                    date: 2017-02-11 14:22:06
-(epstopdf)                    size: 33034 bytes
-(epstopdf)             Output file: <Graphics/ch4/accuracyOP-ICA_vsN_comparison
-_VDLN-DAT-eps-converted-to.pdf>
-(epstopdf)                    date: 2017-02-13 09:02:19
-(epstopdf)                    size: 25359 bytes
-(epstopdf)             Command: <repstopdf --outfile=Graphics/ch4/accuracyOP-IC
-A_vsN_comparison_VDLN-DAT-eps-converted-to.pdf Graphics/ch4/accuracyOP-ICA_vsN_
-comparison_VDLN-DAT.eps>
-(epstopdf)             \includegraphics on input line 387.
-Package epstopdf Info: Output file is already uptodate.
-
-<Graphics/ch4/accuracyOP-ICA_vsN_comparison_VDLN-DAT-eps-converted-to.pdf, id=3
-982, 433.62pt x 289.08pt>
-File: Graphics/ch4/accuracyOP-ICA_vsN_comparison_VDLN-DAT-eps-converted-to.pdf 
-Graphic file (type pdf)
-
-<use Graphics/ch4/accuracyOP-ICA_vsN_comparison_VDLN-DAT-eps-converted-to.pdf>
-Package pdftex.def Info: Graphics/ch4/accuracyOP-ICA_vsN_comparison_VDLN-DAT-ep
-s-converted-to.pdf used on input line 387.
-(pdftex.def)             Requested size: 189.61128pt x 126.40602pt.
-Package epstopdf Info: Source file: <Graphics/ch4/accuracyOP-FA_vsN_comparison_
-VDLV-DAT.eps>
-(epstopdf)                    date: 2017-02-18 16:55:15
-(epstopdf)                    size: 32794 bytes
-(epstopdf)             Output file: <Graphics/ch4/accuracyOP-FA_vsN_comparison_
-VDLV-DAT-eps-converted-to.pdf>
-(epstopdf)                    date: 2017-02-20 09:18:56
-(epstopdf)                    size: 25247 bytes
-(epstopdf)             Command: <repstopdf --outfile=Graphics/ch4/accuracyOP-FA
-_vsN_comparison_VDLV-DAT-eps-converted-to.pdf Graphics/ch4/accuracyOP-FA_vsN_co
-mparison_VDLV-DAT.eps>
-(epstopdf)             \includegraphics on input line 389.
-Package epstopdf Info: Output file is already uptodate.
-
-<Graphics/ch4/accuracyOP-FA_vsN_comparison_VDLV-DAT-eps-converted-to.pdf, id=39
-83, 433.62pt x 289.08pt>
-File: Graphics/ch4/accuracyOP-FA_vsN_comparison_VDLV-DAT-eps-converted-to.pdf G
-raphic file (type pdf)
-
-<use Graphics/ch4/accuracyOP-FA_vsN_comparison_VDLV-DAT-eps-converted-to.pdf>
-Package pdftex.def Info: Graphics/ch4/accuracyOP-FA_vsN_comparison_VDLV-DAT-eps
--converted-to.pdf used on input line 389.
-(pdftex.def)             Requested size: 189.61128pt x 126.40602pt.
-Package epstopdf Info: Source file: <Graphics/ch4/accuracyOP-ICA_vsN_comparison
-_VDLV-DAT.eps>
-(epstopdf)                    date: 2017-02-18 16:55:15
-(epstopdf)                    size: 32778 bytes
-(epstopdf)             Output file: <Graphics/ch4/accuracyOP-ICA_vsN_comparison
-_VDLV-DAT-eps-converted-to.pdf>
-(epstopdf)                    date: 2017-02-20 09:18:56
-(epstopdf)                    size: 24994 bytes
-(epstopdf)             Command: <repstopdf --outfile=Graphics/ch4/accuracyOP-IC
-A_vsN_comparison_VDLV-DAT-eps-converted-to.pdf Graphics/ch4/accuracyOP-ICA_vsN_
-comparison_VDLV-DAT.eps>
-(epstopdf)             \includegraphics on input line 390.
-Package epstopdf Info: Output file is already uptodate.
-
-<Graphics/ch4/accuracyOP-ICA_vsN_comparison_VDLV-DAT-eps-converted-to.pdf, id=3
-984, 433.62pt x 289.08pt>
-File: Graphics/ch4/accuracyOP-ICA_vsN_comparison_VDLV-DAT-eps-converted-to.pdf 
-Graphic file (type pdf)
-
-<use Graphics/ch4/accuracyOP-ICA_vsN_comparison_VDLV-DAT-eps-converted-to.pdf>
-Package pdftex.def Info: Graphics/ch4/accuracyOP-ICA_vsN_comparison_VDLV-DAT-ep
-s-converted-to.pdf used on input line 390.
+converted-to.pdf used on input line 373.
 (pdftex.def)             Requested size: 189.61128pt x 126.40602pt.
 Package epstopdf Info: Source file: <Graphics/ch4/accuracyOP-FA_vsK_comparison_
 PPMI-DAT.eps>
@@ -4617,17 +4470,17 @@ PPMI-DAT-eps-converted-to.pdf>
 (epstopdf)             Command: <repstopdf --outfile=Graphics/ch4/accuracyOP-FA
 _vsK_comparison_PPMI-DAT-eps-converted-to.pdf Graphics/ch4/accuracyOP-FA_vsK_co
 mparison_PPMI-DAT.eps>
-(epstopdf)             \includegraphics on input line 401.
+(epstopdf)             \includegraphics on input line 385.
 Package epstopdf Info: Output file is already uptodate.
 
-<Graphics/ch4/accuracyOP-FA_vsK_comparison_PPMI-DAT-eps-converted-to.pdf, id=39
-88, 433.62pt x 289.08pt>
+<Graphics/ch4/accuracyOP-FA_vsK_comparison_PPMI-DAT-eps-converted-to.pdf, id=36
+84, 433.62pt x 289.08pt>
 File: Graphics/ch4/accuracyOP-FA_vsK_comparison_PPMI-DAT-eps-converted-to.pdf G
 raphic file (type pdf)
 
 <use Graphics/ch4/accuracyOP-FA_vsK_comparison_PPMI-DAT-eps-converted-to.pdf>
 Package pdftex.def Info: Graphics/ch4/accuracyOP-FA_vsK_comparison_PPMI-DAT-eps
--converted-to.pdf used on input line 401.
+-converted-to.pdf used on input line 385.
 (pdftex.def)             Requested size: 189.61128pt x 126.40602pt.
 Package epstopdf Info: Source file: <Graphics/ch4/accuracyOP-ICA_vsK_comparison
 _PPMI-DAT.eps>
@@ -4640,17 +4493,17 @@ _PPMI-DAT-eps-converted-to.pdf>
 (epstopdf)             Command: <repstopdf --outfile=Graphics/ch4/accuracyOP-IC
 A_vsK_comparison_PPMI-DAT-eps-converted-to.pdf Graphics/ch4/accuracyOP-ICA_vsK_
 comparison_PPMI-DAT.eps>
-(epstopdf)             \includegraphics on input line 402.
+(epstopdf)             \includegraphics on input line 386.
 Package epstopdf Info: Output file is already uptodate.
 
 <Graphics/ch4/accuracyOP-ICA_vsK_comparison_PPMI-DAT-eps-converted-to.pdf, id=3
-989, 433.62pt x 289.08pt>
+685, 433.62pt x 289.08pt>
 File: Graphics/ch4/accuracyOP-ICA_vsK_comparison_PPMI-DAT-eps-converted-to.pdf 
 Graphic file (type pdf)
 
 <use Graphics/ch4/accuracyOP-ICA_vsK_comparison_PPMI-DAT-eps-converted-to.pdf>
 Package pdftex.def Info: Graphics/ch4/accuracyOP-ICA_vsK_comparison_PPMI-DAT-ep
-s-converted-to.pdf used on input line 402.
+s-converted-to.pdf used on input line 386.
 (pdftex.def)             Requested size: 189.61128pt x 126.40602pt.
 Package epstopdf Info: Source file: <Graphics/ch4/accuracyOP-FA_vsK_comparison_
 VDLN-DAT.eps>
@@ -4663,17 +4516,17 @@ VDLN-DAT-eps-converted-to.pdf>
 (epstopdf)             Command: <repstopdf --outfile=Graphics/ch4/accuracyOP-FA
 _vsK_comparison_VDLN-DAT-eps-converted-to.pdf Graphics/ch4/accuracyOP-FA_vsK_co
 mparison_VDLN-DAT.eps>
-(epstopdf)             \includegraphics on input line 404.
+(epstopdf)             \includegraphics on input line 388.
 Package epstopdf Info: Output file is already uptodate.
 
-<Graphics/ch4/accuracyOP-FA_vsK_comparison_VDLN-DAT-eps-converted-to.pdf, id=39
-90, 433.62pt x 289.08pt>
+<Graphics/ch4/accuracyOP-FA_vsK_comparison_VDLN-DAT-eps-converted-to.pdf, id=36
+86, 433.62pt x 289.08pt>
 File: Graphics/ch4/accuracyOP-FA_vsK_comparison_VDLN-DAT-eps-converted-to.pdf G
 raphic file (type pdf)
 
 <use Graphics/ch4/accuracyOP-FA_vsK_comparison_VDLN-DAT-eps-converted-to.pdf>
 Package pdftex.def Info: Graphics/ch4/accuracyOP-FA_vsK_comparison_VDLN-DAT-eps
--converted-to.pdf used on input line 404.
+-converted-to.pdf used on input line 388.
 (pdftex.def)             Requested size: 189.61128pt x 126.40602pt.
 Package epstopdf Info: Source file: <Graphics/ch4/accuracyOP-ICA_vsK_comparison
 _VDLN-DAT.eps>
@@ -4686,17 +4539,17 @@ _VDLN-DAT-eps-converted-to.pdf>
 (epstopdf)             Command: <repstopdf --outfile=Graphics/ch4/accuracyOP-IC
 A_vsK_comparison_VDLN-DAT-eps-converted-to.pdf Graphics/ch4/accuracyOP-ICA_vsK_
 comparison_VDLN-DAT.eps>
-(epstopdf)             \includegraphics on input line 405.
+(epstopdf)             \includegraphics on input line 389.
 Package epstopdf Info: Output file is already uptodate.
 
 <Graphics/ch4/accuracyOP-ICA_vsK_comparison_VDLN-DAT-eps-converted-to.pdf, id=3
-991, 433.62pt x 289.08pt>
+687, 433.62pt x 289.08pt>
 File: Graphics/ch4/accuracyOP-ICA_vsK_comparison_VDLN-DAT-eps-converted-to.pdf 
 Graphic file (type pdf)
 
 <use Graphics/ch4/accuracyOP-ICA_vsK_comparison_VDLN-DAT-eps-converted-to.pdf>
 Package pdftex.def Info: Graphics/ch4/accuracyOP-ICA_vsK_comparison_VDLN-DAT-ep
-s-converted-to.pdf used on input line 405.
+s-converted-to.pdf used on input line 389.
 (pdftex.def)             Requested size: 189.61128pt x 126.40602pt.
 Package epstopdf Info: Source file: <Graphics/ch4/accuracyOP-FA_vsK_comparison_
 VDLV-DAT.eps>
@@ -4709,17 +4562,17 @@ VDLV-DAT-eps-converted-to.pdf>
 (epstopdf)             Command: <repstopdf --outfile=Graphics/ch4/accuracyOP-FA
 _vsK_comparison_VDLV-DAT-eps-converted-to.pdf Graphics/ch4/accuracyOP-FA_vsK_co
 mparison_VDLV-DAT.eps>
-(epstopdf)             \includegraphics on input line 407.
+(epstopdf)             \includegraphics on input line 391.
 Package epstopdf Info: Output file is already uptodate.
 
-<Graphics/ch4/accuracyOP-FA_vsK_comparison_VDLV-DAT-eps-converted-to.pdf, id=39
-92, 433.62pt x 289.08pt>
+<Graphics/ch4/accuracyOP-FA_vsK_comparison_VDLV-DAT-eps-converted-to.pdf, id=36
+88, 433.62pt x 289.08pt>
 File: Graphics/ch4/accuracyOP-FA_vsK_comparison_VDLV-DAT-eps-converted-to.pdf G
 raphic file (type pdf)
 
 <use Graphics/ch4/accuracyOP-FA_vsK_comparison_VDLV-DAT-eps-converted-to.pdf>
 Package pdftex.def Info: Graphics/ch4/accuracyOP-FA_vsK_comparison_VDLV-DAT-eps
--converted-to.pdf used on input line 407.
+-converted-to.pdf used on input line 391.
 (pdftex.def)             Requested size: 189.61128pt x 126.40602pt.
 Package epstopdf Info: Source file: <Graphics/ch4/accuracyOP-ICA_vsK_comparison
 _VDLV-DAT.eps>
@@ -4732,40 +4585,184 @@ _VDLV-DAT-eps-converted-to.pdf>
 (epstopdf)             Command: <repstopdf --outfile=Graphics/ch4/accuracyOP-IC
 A_vsK_comparison_VDLV-DAT-eps-converted-to.pdf Graphics/ch4/accuracyOP-ICA_vsK_
 comparison_VDLV-DAT.eps>
-(epstopdf)             \includegraphics on input line 408.
+(epstopdf)             \includegraphics on input line 392.
 Package epstopdf Info: Output file is already uptodate.
 
 <Graphics/ch4/accuracyOP-ICA_vsK_comparison_VDLV-DAT-eps-converted-to.pdf, id=3
-993, 433.62pt x 289.08pt>
+689, 433.62pt x 289.08pt>
 File: Graphics/ch4/accuracyOP-ICA_vsK_comparison_VDLV-DAT-eps-converted-to.pdf 
 Graphic file (type pdf)
 
 <use Graphics/ch4/accuracyOP-ICA_vsK_comparison_VDLV-DAT-eps-converted-to.pdf>
 Package pdftex.def Info: Graphics/ch4/accuracyOP-ICA_vsK_comparison_VDLV-DAT-ep
+s-converted-to.pdf used on input line 392.
+(pdftex.def)             Requested size: 189.61128pt x 126.40602pt.
+Package epstopdf Info: Source file: <Graphics/ch4/accuracyOP-FA_vsN_comparison_
+PPMI-DAT.eps>
+(epstopdf)                    date: 2017-02-11 14:21:58
+(epstopdf)                    size: 32849 bytes
+(epstopdf)             Output file: <Graphics/ch4/accuracyOP-FA_vsN_comparison_
+PPMI-DAT-eps-converted-to.pdf>
+(epstopdf)                    date: 2017-02-13 09:02:19
+(epstopdf)                    size: 25263 bytes
+(epstopdf)             Command: <repstopdf --outfile=Graphics/ch4/accuracyOP-FA
+_vsN_comparison_PPMI-DAT-eps-converted-to.pdf Graphics/ch4/accuracyOP-FA_vsN_co
+mparison_PPMI-DAT.eps>
+(epstopdf)             \includegraphics on input line 404.
+Package epstopdf Info: Output file is already uptodate.
+
+<Graphics/ch4/accuracyOP-FA_vsN_comparison_PPMI-DAT-eps-converted-to.pdf, id=36
+95, 433.62pt x 289.08pt>
+File: Graphics/ch4/accuracyOP-FA_vsN_comparison_PPMI-DAT-eps-converted-to.pdf G
+raphic file (type pdf)
+
+<use Graphics/ch4/accuracyOP-FA_vsN_comparison_PPMI-DAT-eps-converted-to.pdf>
+Package pdftex.def Info: Graphics/ch4/accuracyOP-FA_vsN_comparison_PPMI-DAT-eps
+-converted-to.pdf used on input line 404.
+(pdftex.def)             Requested size: 189.61128pt x 126.40602pt.
+Package epstopdf Info: Source file: <Graphics/ch4/accuracyOP-ICA_vsN_comparison
+_PPMI-DAT.eps>
+(epstopdf)                    date: 2017-02-11 14:21:58
+(epstopdf)                    size: 32725 bytes
+(epstopdf)             Output file: <Graphics/ch4/accuracyOP-ICA_vsN_comparison
+_PPMI-DAT-eps-converted-to.pdf>
+(epstopdf)                    date: 2017-02-13 09:02:19
+(epstopdf)                    size: 24867 bytes
+(epstopdf)             Command: <repstopdf --outfile=Graphics/ch4/accuracyOP-IC
+A_vsN_comparison_PPMI-DAT-eps-converted-to.pdf Graphics/ch4/accuracyOP-ICA_vsN_
+comparison_PPMI-DAT.eps>
+(epstopdf)             \includegraphics on input line 405.
+Package epstopdf Info: Output file is already uptodate.
+
+<Graphics/ch4/accuracyOP-ICA_vsN_comparison_PPMI-DAT-eps-converted-to.pdf, id=3
+696, 433.62pt x 289.08pt>
+File: Graphics/ch4/accuracyOP-ICA_vsN_comparison_PPMI-DAT-eps-converted-to.pdf 
+Graphic file (type pdf)
+
+<use Graphics/ch4/accuracyOP-ICA_vsN_comparison_PPMI-DAT-eps-converted-to.pdf>
+Package pdftex.def Info: Graphics/ch4/accuracyOP-ICA_vsN_comparison_PPMI-DAT-ep
+s-converted-to.pdf used on input line 405.
+(pdftex.def)             Requested size: 189.61128pt x 126.40602pt.
+Package epstopdf Info: Source file: <Graphics/ch4/accuracyOP-FA_vsN_comparison_
+VDLN-DAT.eps>
+(epstopdf)                    date: 2017-02-11 14:22:06
+(epstopdf)                    size: 33064 bytes
+(epstopdf)             Output file: <Graphics/ch4/accuracyOP-FA_vsN_comparison_
+VDLN-DAT-eps-converted-to.pdf>
+(epstopdf)                    date: 2017-02-13 09:02:19
+(epstopdf)                    size: 25473 bytes
+(epstopdf)             Command: <repstopdf --outfile=Graphics/ch4/accuracyOP-FA
+_vsN_comparison_VDLN-DAT-eps-converted-to.pdf Graphics/ch4/accuracyOP-FA_vsN_co
+mparison_VDLN-DAT.eps>
+(epstopdf)             \includegraphics on input line 407.
+Package epstopdf Info: Output file is already uptodate.
+
+<Graphics/ch4/accuracyOP-FA_vsN_comparison_VDLN-DAT-eps-converted-to.pdf, id=36
+97, 433.62pt x 289.08pt>
+File: Graphics/ch4/accuracyOP-FA_vsN_comparison_VDLN-DAT-eps-converted-to.pdf G
+raphic file (type pdf)
+
+<use Graphics/ch4/accuracyOP-FA_vsN_comparison_VDLN-DAT-eps-converted-to.pdf>
+Package pdftex.def Info: Graphics/ch4/accuracyOP-FA_vsN_comparison_VDLN-DAT-eps
+-converted-to.pdf used on input line 407.
+(pdftex.def)             Requested size: 189.61128pt x 126.40602pt.
+Package epstopdf Info: Source file: <Graphics/ch4/accuracyOP-ICA_vsN_comparison
+_VDLN-DAT.eps>
+(epstopdf)                    date: 2017-02-11 14:22:06
+(epstopdf)                    size: 33034 bytes
+(epstopdf)             Output file: <Graphics/ch4/accuracyOP-ICA_vsN_comparison
+_VDLN-DAT-eps-converted-to.pdf>
+(epstopdf)                    date: 2017-02-13 09:02:19
+(epstopdf)                    size: 25359 bytes
+(epstopdf)             Command: <repstopdf --outfile=Graphics/ch4/accuracyOP-IC
+A_vsN_comparison_VDLN-DAT-eps-converted-to.pdf Graphics/ch4/accuracyOP-ICA_vsN_
+comparison_VDLN-DAT.eps>
+(epstopdf)             \includegraphics on input line 408.
+Package epstopdf Info: Output file is already uptodate.
+
+<Graphics/ch4/accuracyOP-ICA_vsN_comparison_VDLN-DAT-eps-converted-to.pdf, id=3
+698, 433.62pt x 289.08pt>
+File: Graphics/ch4/accuracyOP-ICA_vsN_comparison_VDLN-DAT-eps-converted-to.pdf 
+Graphic file (type pdf)
+
+<use Graphics/ch4/accuracyOP-ICA_vsN_comparison_VDLN-DAT-eps-converted-to.pdf>
+Package pdftex.def Info: Graphics/ch4/accuracyOP-ICA_vsN_comparison_VDLN-DAT-ep
 s-converted-to.pdf used on input line 408.
 (pdftex.def)             Requested size: 189.61128pt x 126.40602pt.
+Package epstopdf Info: Source file: <Graphics/ch4/accuracyOP-FA_vsN_comparison_
+VDLV-DAT.eps>
+(epstopdf)                    date: 2017-02-18 16:55:15
+(epstopdf)                    size: 32794 bytes
+(epstopdf)             Output file: <Graphics/ch4/accuracyOP-FA_vsN_comparison_
+VDLV-DAT-eps-converted-to.pdf>
+(epstopdf)                    date: 2017-02-20 09:18:56
+(epstopdf)                    size: 25247 bytes
+(epstopdf)             Command: <repstopdf --outfile=Graphics/ch4/accuracyOP-FA
+_vsN_comparison_VDLV-DAT-eps-converted-to.pdf Graphics/ch4/accuracyOP-FA_vsN_co
+mparison_VDLV-DAT.eps>
+(epstopdf)             \includegraphics on input line 410.
+Package epstopdf Info: Output file is already uptodate.
 
-[58] [59 <./Graphics/ch4/accuracyOP-FA_vsN_comparison_PPMI-DAT-eps-converted-to
-.pdf> <./Graphics/ch4/accuracyOP-ICA_vsN_comparison_PPMI-DAT-eps-converted-to.p
-df> <./Graphics/ch4/accuracyOP-FA_vsN_comparison_VDLN-DAT-eps-converted-to.pdf>
- <./Graphics/ch4/accuracyOP-ICA_vsN_comparison_VDLN-DAT-eps-converted-to.pdf> <
-./Graphics/ch4/accuracyOP-FA_vsN_comparison_VDLV-DAT-eps-converted-to.pdf> <./G
-raphics/ch4/accuracyOP-ICA_vsN_comparison_VDLV-DAT-eps-converted-to.pdf>]
-[60 <./Graphics/ch4/accuracyOP-FA_vsK_comparison_PPMI-DAT-eps-converted-to.pdf>
- <./Graphics/ch4/accuracyOP-ICA_vsK_comparison_PPMI-DAT-eps-converted-to.pdf> <
-./Graphics/ch4/accuracyOP-FA_vsK_comparison_VDLN-DAT-eps-converted-to.pdf> <./G
-raphics/ch4/accuracyOP-ICA_vsK_comparison_VDLN-DAT-eps-converted-to.pdf> <./Gra
-phics/ch4/accuracyOP-FA_vsK_comparison_VDLV-DAT-eps-converted-to.pdf> <./Graphi
-cs/ch4/accuracyOP-ICA_vsK_comparison_VDLV-DAT-eps-converted-to.pdf>] [61])
-(./Chapters/Chapter05.tex [62]
+<Graphics/ch4/accuracyOP-FA_vsN_comparison_VDLV-DAT-eps-converted-to.pdf, id=36
+99, 433.62pt x 289.08pt>
+File: Graphics/ch4/accuracyOP-FA_vsN_comparison_VDLV-DAT-eps-converted-to.pdf G
+raphic file (type pdf)
+
+<use Graphics/ch4/accuracyOP-FA_vsN_comparison_VDLV-DAT-eps-converted-to.pdf>
+Package pdftex.def Info: Graphics/ch4/accuracyOP-FA_vsN_comparison_VDLV-DAT-eps
+-converted-to.pdf used on input line 410.
+(pdftex.def)             Requested size: 189.61128pt x 126.40602pt.
+Package epstopdf Info: Source file: <Graphics/ch4/accuracyOP-ICA_vsN_comparison
+_VDLV-DAT.eps>
+(epstopdf)                    date: 2017-02-18 16:55:15
+(epstopdf)                    size: 32778 bytes
+(epstopdf)             Output file: <Graphics/ch4/accuracyOP-ICA_vsN_comparison
+_VDLV-DAT-eps-converted-to.pdf>
+(epstopdf)                    date: 2017-02-20 09:18:56
+(epstopdf)                    size: 24994 bytes
+(epstopdf)             Command: <repstopdf --outfile=Graphics/ch4/accuracyOP-IC
+A_vsN_comparison_VDLV-DAT-eps-converted-to.pdf Graphics/ch4/accuracyOP-ICA_vsN_
+comparison_VDLV-DAT.eps>
+(epstopdf)             \includegraphics on input line 411.
+Package epstopdf Info: Output file is already uptodate.
+
+<Graphics/ch4/accuracyOP-ICA_vsN_comparison_VDLV-DAT-eps-converted-to.pdf, id=3
+700, 433.62pt x 289.08pt>
+File: Graphics/ch4/accuracyOP-ICA_vsN_comparison_VDLV-DAT-eps-converted-to.pdf 
+Graphic file (type pdf)
+
+<use Graphics/ch4/accuracyOP-ICA_vsN_comparison_VDLV-DAT-eps-converted-to.pdf>
+Package pdftex.def Info: Graphics/ch4/accuracyOP-ICA_vsN_comparison_VDLV-DAT-ep
+s-converted-to.pdf used on input line 411.
+(pdftex.def)             Requested size: 189.61128pt x 126.40602pt.
+
+[56] [57 <./Graphics/ch4/accuracyMeanSTD-ICA_vsN_ttest_PKS-eps-converted-to.pdf
+> <./Graphics/ch4/accuracyMeanSTD-ICA_vsK_ttest_PKS-eps-converted-to.pdf> <./Gr
+aphics/ch4/accuracyMeanSTD-ICA_vsN_entropy_PKS-eps-converted-to.pdf> <./Graphic
+s/ch4/accuracyMeanSTD-ICA_vsK_entropy_PKS-eps-converted-to.pdf> <./Graphics/ch4
+/accuracyMeanSTD-ICA_vsN_wilcoxon_PKS-eps-converted-to.pdf> <./Graphics/ch4/acc
+uracyMeanSTD-ICA_vsK_wilcoxon_PKS-eps-converted-to.pdf>] [58 <./Graphics/ch4/ac
+curacyOP-FA_vsK_comparison_PPMI-DAT-eps-converted-to.pdf> <./Graphics/ch4/accur
+acyOP-ICA_vsK_comparison_PPMI-DAT-eps-converted-to.pdf> <./Graphics/ch4/accurac
+yOP-FA_vsK_comparison_VDLN-DAT-eps-converted-to.pdf> <./Graphics/ch4/accuracyOP
+-ICA_vsK_comparison_VDLN-DAT-eps-converted-to.pdf> <./Graphics/ch4/accuracyOP-F
+A_vsK_comparison_VDLV-DAT-eps-converted-to.pdf> <./Graphics/ch4/accuracyOP-ICA_
+vsK_comparison_VDLV-DAT-eps-converted-to.pdf>] [59 <./Graphics/ch4/accuracyOP-F
+A_vsN_comparison_PPMI-DAT-eps-converted-to.pdf> <./Graphics/ch4/accuracyOP-ICA_
+vsN_comparison_PPMI-DAT-eps-converted-to.pdf> <./Graphics/ch4/accuracyOP-FA_vsN
+_comparison_VDLN-DAT-eps-converted-to.pdf> <./Graphics/ch4/accuracyOP-ICA_vsN_c
+omparison_VDLN-DAT-eps-converted-to.pdf> <./Graphics/ch4/accuracyOP-FA_vsN_comp
+arison_VDLV-DAT-eps-converted-to.pdf> <./Graphics/ch4/accuracyOP-ICA_vsN_compar
+ison_VDLV-DAT-eps-converted-to.pdf>] [60]) (./Chapters/Chapter05.tex [61]
+[62
+
+
+]
 chapter 5.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [63
-
-
-]
+ [63]
 
 LaTeX Warning: Reference `sec:volume' on page 64 undefined on input line 17.
 
@@ -4791,7 +4788,7 @@ s-eps-converted-to.pdf Graphics/ch5/featuresIthdis.eps>
 (epstopdf)             \includegraphics on input line 55.
 Package epstopdf Info: Output file is already uptodate.
 
-<Graphics/ch5/featuresIthdis-eps-converted-to.pdf, id=4630, 408.52625pt x 281.0
+<Graphics/ch5/featuresIthdis-eps-converted-to.pdf, id=4618, 408.52625pt x 281.0
 5pt>
 File: Graphics/ch5/featuresIthdis-eps-converted-to.pdf Graphic file (type pdf)
  <use Graphics/ch5/featuresIthdis-eps-converted-to.pdf>
@@ -4810,7 +4807,7 @@ m-eps-converted-to.pdf Graphics/ch5/featuresIthcum.eps>
 (epstopdf)             \includegraphics on input line 56.
 Package epstopdf Info: Output file is already uptodate.
 
-<Graphics/ch5/featuresIthcum-eps-converted-to.pdf, id=4631, 408.52625pt x 281.0
+<Graphics/ch5/featuresIthcum-eps-converted-to.pdf, id=4619, 408.52625pt x 281.0
 5pt>
 File: Graphics/ch5/featuresIthcum-eps-converted-to.pdf Graphic file (type pdf)
  <use Graphics/ch5/featuresIthcum-eps-converted-to.pdf>
@@ -4829,7 +4826,7 @@ PMI-eps-converted-to.pdf Graphics/ch5/features_accPPMI.eps>
 (epstopdf)             \includegraphics on input line 67.
 Package epstopdf Info: Output file is already uptodate.
 
-<Graphics/ch5/features_accPPMI-eps-converted-to.pdf, id=4638, 449.68pt x 338.26
+<Graphics/ch5/features_accPPMI-eps-converted-to.pdf, id=4626, 449.68pt x 338.26
 375pt>
 File: Graphics/ch5/features_accPPMI-eps-converted-to.pdf Graphic file (type pdf
 )
@@ -4849,7 +4846,7 @@ DLN-eps-converted-to.pdf Graphics/ch5/features_accVDLN.eps>
 (epstopdf)             \includegraphics on input line 68.
 Package epstopdf Info: Output file is already uptodate.
 
-<Graphics/ch5/features_accVDLN-eps-converted-to.pdf, id=4639, 449.68pt x 338.26
+<Graphics/ch5/features_accVDLN-eps-converted-to.pdf, id=4627, 449.68pt x 338.26
 375pt>
 File: Graphics/ch5/features_accVDLN-eps-converted-to.pdf Graphic file (type pdf
 )
@@ -4869,7 +4866,7 @@ DLV-eps-converted-to.pdf Graphics/ch5/features_accVDLV.eps>
 (epstopdf)             \includegraphics on input line 69.
 Package epstopdf Info: Output file is already uptodate.
 
-<Graphics/ch5/features_accVDLV-eps-converted-to.pdf, id=4640, 449.68pt x 338.26
+<Graphics/ch5/features_accVDLV-eps-converted-to.pdf, id=4628, 449.68pt x 338.26
 375pt>
 File: Graphics/ch5/features_accVDLV-eps-converted-to.pdf Graphic file (type pdf
 )
@@ -4916,7 +4913,7 @@ th-eps-converted-to.pdf Graphics/ch5/accuracyOverIth.eps>
 (epstopdf)             \includegraphics on input line 109.
 Package epstopdf Info: Output file is already uptodate.
 
-<Graphics/ch5/accuracyOverIth-eps-converted-to.pdf, id=4688, 587.19376pt x 309.
+<Graphics/ch5/accuracyOverIth-eps-converted-to.pdf, id=4676, 587.19376pt x 309.
 155pt>
 File: Graphics/ch5/accuracyOverIth-eps-converted-to.pdf Graphic file (type pdf)
 
@@ -4942,7 +4939,7 @@ cPPMI-eps-converted-to.pdf Graphics/ch5/features_avAccPPMI.eps>
 (epstopdf)             \includegraphics on input line 120.
 Package epstopdf Info: Output file is already uptodate.
 
-<Graphics/ch5/features_avAccPPMI-eps-converted-to.pdf, id=4694, 614.295pt x 302
+<Graphics/ch5/features_avAccPPMI-eps-converted-to.pdf, id=4682, 614.295pt x 302
 .12875pt>
 File: Graphics/ch5/features_avAccPPMI-eps-converted-to.pdf Graphic file (type p
 df)
@@ -4962,7 +4959,7 @@ cVDLN-eps-converted-to.pdf Graphics/ch5/features_avAccVDLN.eps>
 (epstopdf)             \includegraphics on input line 121.
 Package epstopdf Info: Output file is already uptodate.
 
-<Graphics/ch5/features_avAccVDLN-eps-converted-to.pdf, id=4695, 614.295pt x 302
+<Graphics/ch5/features_avAccVDLN-eps-converted-to.pdf, id=4683, 614.295pt x 302
 .12875pt>
 File: Graphics/ch5/features_avAccVDLN-eps-converted-to.pdf Graphic file (type p
 df)
@@ -4982,7 +4979,7 @@ cVDLV-eps-converted-to.pdf Graphics/ch5/features_avAccVDLV.eps>
 (epstopdf)             \includegraphics on input line 122.
 Package epstopdf Info: Output file is already uptodate.
 
-<Graphics/ch5/features_avAccVDLV-eps-converted-to.pdf, id=4696, 614.295pt x 302
+<Graphics/ch5/features_avAccVDLV-eps-converted-to.pdf, id=4684, 614.295pt x 302
 .12875pt>
 File: Graphics/ch5/features_avAccVDLV-eps-converted-to.pdf Graphic file (type p
 df)
@@ -5030,7 +5027,7 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
  [71])
 (./Chapters/Chapter06.tex [72]
 chapter 6.
-<Graphics/ch6/01-flowdiagram.pdf, id=4747, 715.40817pt x 227.98582pt>
+<Graphics/ch6/01-flowdiagram.pdf, id=4735, 715.40817pt x 227.98582pt>
 File: Graphics/ch6/01-flowdiagram.pdf Graphic file (type pdf)
 
 <use Graphics/ch6/01-flowdiagram.pdf>
@@ -5045,7 +5042,7 @@ although it is yet undefined on input line 16.
 
 
  <./Graphics/ch6/01-flowdiagram.pdf>]
-<Graphics/ch6/02-projection.pdf, id=4867, 757.83125pt x 578.16pt>
+<Graphics/ch6/02-projection.pdf, id=4855, 757.83125pt x 578.16pt>
 File: Graphics/ch6/02-projection.pdf Graphic file (type pdf)
 
 <use Graphics/ch6/02-projection.pdf>
@@ -5061,7 +5058,7 @@ LaTeX Font Info:    Try loading font information for U+fplmbb on input line 52.
 (/usr/share/texlive/texmf-dist/tex/latex/psnfss/ufplmbb.fd
 File: ufplmbb.fd 2003/10/30 Fontinst v1.914 font definitions for U/fplmbb.
 ) [75 <./Graphics/ch6/02-projection.pdf>]
-<Graphics/ch6/03-projections.pdf, id=4894, 1049.55504pt x 807.6829pt>
+<Graphics/ch6/03-projections.pdf, id=4882, 1049.55504pt x 807.6829pt>
 File: Graphics/ch6/03-projections.pdf Graphic file (type pdf)
 
 <use Graphics/ch6/03-projections.pdf>
@@ -5078,7 +5075,7 @@ ni-tion. Later, in [[]],
 
 LaTeX Warning: Reference `sec:mapping' on page 79 undefined on input line 115.
 
-<Graphics/ch6/04-vrlbp.pdf, id=5027, 694.93605pt x 189.97673pt>
+<Graphics/ch6/04-vrlbp.pdf, id=5015, 694.93605pt x 189.97673pt>
 File: Graphics/ch6/04-vrlbp.pdf Graphic file (type pdf)
 
 <use Graphics/ch6/04-vrlbp.pdf>
@@ -5097,7 +5094,7 @@ Overfull \hbox (8.63908pt too wide) in paragraph at lines 163--164
 m/n/10.95 ©$ \T1/pplj/m/n/10.95 as a Markov Model[[]]: 
  []
 
-[80] [81] [82] <Graphics/ch6/cuts.pdf, id=5121, 1043.68521pt x 943.86073pt>
+[80] [81] [82] <Graphics/ch6/cuts.pdf, id=5109, 1043.68521pt x 943.86073pt>
 File: Graphics/ch6/cuts.pdf Graphic file (type pdf)
 
 <use Graphics/ch6/cuts.pdf>
@@ -5117,7 +5114,7 @@ Overfull \hbox (66.88638pt too wide) in paragraph at lines 296--297
 LaTeX Warning: Reference `sec:selection' on page 86 undefined on input line 332
 .
 
-<Graphics/ch6/05-regions_cortical.pdf, id=5189, 426.59375pt x 218.8175pt>
+<Graphics/ch6/05-regions_cortical.pdf, id=5177, 426.59375pt x 218.8175pt>
 File: Graphics/ch6/05-regions_cortical.pdf Graphic file (type pdf)
 
 <use Graphics/ch6/05-regions_cortical.pdf>
@@ -5125,7 +5122,7 @@ Package pdftex.def Info: Graphics/ch6/05-regions_cortical.pdf used on input lin
 e 339.
 (pdftex.def)             Requested size: 270.86905pt x 138.94756pt.
 
-<Graphics/ch6/06-regions_subcortical.pdf, id=5190, 427.5975pt x 218.8175pt>
+<Graphics/ch6/06-regions_subcortical.pdf, id=5178, 427.5975pt x 218.8175pt>
 File: Graphics/ch6/06-regions_subcortical.pdf Graphic file (type pdf)
 
 <use Graphics/ch6/06-regions_subcortical.pdf>
@@ -5136,7 +5133,7 @@ line 347.
 
 LaTeX Warning: Reference `sec:mapping' on page 86 undefined on input line 354.
 
-<Graphics/ch6/07-tmaps.pdf, id=5192, 1050.97673pt x 949.01132pt>
+<Graphics/ch6/07-tmaps.pdf, id=5180, 1050.97673pt x 949.01132pt>
 File: Graphics/ch6/07-tmaps.pdf Graphic file (type pdf)
 
 <use Graphics/ch6/07-tmaps.pdf>
@@ -5144,7 +5141,7 @@ Package pdftex.def Info: Graphics/ch6/07-tmaps.pdf used on input line 358.
 (pdftex.def)             Requested size: 348.25937pt x 314.46349pt.
  [86] [87 <./Graphics/ch6/05-regions_cortical.pdf> <./Graphics/ch6/06-regions_s
 ubcortical.pdf>] [88 <./Graphics/ch6/07-tmaps.pdf>] <Graphics/ch6/08-Tmap4LayAv
-erage.pdf, id=5439, 1043.9pt x 1113.15875pt>
+erage.pdf, id=5427, 1043.9pt x 1113.15875pt>
 File: Graphics/ch6/08-Tmap4LayAverage.pdf Graphic file (type pdf)
 
 <use Graphics/ch6/08-Tmap4LayAverage.pdf>
@@ -5152,7 +5149,7 @@ Package pdftex.def Info: Graphics/ch6/08-Tmap4LayAverage.pdf used on input line
  376.
 (pdftex.def)             Requested size: 386.95749pt x 412.62663pt.
 
-<Graphics/ch6/09-tmaps_vrlbp.pdf, id=5450, 695.10251pt x 225.27542pt>
+<Graphics/ch6/09-tmaps_vrlbp.pdf, id=5438, 695.10251pt x 225.27542pt>
 File: Graphics/ch6/09-tmaps_vrlbp.pdf Graphic file (type pdf)
 
 <use Graphics/ch6/09-tmaps_vrlbp.pdf>
@@ -5165,7 +5162,7 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
  [89]
 [90 <./Graphics/ch6/08-Tmap4LayAverage.pdf>] [91 <./Graphics/ch6/09-tmaps_vrlbp
 .pdf>] [92]
-<Graphics/ch6/10-comparisonPerformance.pdf, id=5621, 650.43pt x 738.76012pt>
+<Graphics/ch6/10-comparisonPerformance.pdf, id=5608, 650.43pt x 738.76012pt>
 File: Graphics/ch6/10-comparisonPerformance.pdf Graphic file (type pdf)
 
 <use Graphics/ch6/10-comparisonPerformance.pdf>
@@ -5173,7 +5170,7 @@ Package pdftex.def Info: Graphics/ch6/10-comparisonPerformance.pdf used on inpu
 t line 457.
 (pdftex.def)             Requested size: 348.25937pt x 395.56529pt.
 
-<Graphics/ch6/11-layerPerf.pdf, id=5626, 855.195pt x 1088.065pt>
+<Graphics/ch6/11-layerPerf.pdf, id=5613, 855.195pt x 1088.065pt>
 File: Graphics/ch6/11-layerPerf.pdf Graphic file (type pdf)
 
 <use Graphics/ch6/11-layerPerf.pdf>
@@ -5181,28 +5178,28 @@ Package pdftex.def Info: Graphics/ch6/11-layerPerf.pdf used on input line 466.
 (pdftex.def)             Requested size: 348.25937pt x 443.08789pt.
  [93] [94 <./Graphics/ch6/10-comparisonPerformance.pdf>] [95 <./Graphics/ch6/11
 -layerPerf.pdf>]
-<Graphics/ch6/gaussian.pdf, id=7521, 348.36548pt x 287.55731pt>
+<Graphics/ch6/gaussian.pdf, id=7509, 348.36548pt x 287.55731pt>
 File: Graphics/ch6/gaussian.pdf Graphic file (type pdf)
 
 <use Graphics/ch6/gaussian.pdf>
 Package pdftex.def Info: Graphics/ch6/gaussian.pdf used on input line 487.
 (pdftex.def)             Requested size: 108.405pt x 89.47969pt.
 
-<Graphics/ch6/spire.pdf, id=7523, 339.55856pt x 517.53348pt>
+<Graphics/ch6/spire.pdf, id=7511, 339.55856pt x 517.53348pt>
 File: Graphics/ch6/spire.pdf Graphic file (type pdf)
 
 <use Graphics/ch6/spire.pdf>
 Package pdftex.def Info: Graphics/ch6/spire.pdf used on input line 496.
 (pdftex.def)             Requested size: 108.405pt x 165.21924pt.
  [96 <./Graphics/ch6/gaussian.pdf>]
-<Graphics/ch6/spain.pdf, id=7550, 557.21175pt x 459.7175pt>
+<Graphics/ch6/spain.pdf, id=7538, 557.21175pt x 459.7175pt>
 File: Graphics/ch6/spain.pdf Graphic file (type pdf)
 
 <use Graphics/ch6/spain.pdf>
 Package pdftex.def Info: Graphics/ch6/spain.pdf used on input line 506.
 (pdftex.def)             Requested size: 270.86905pt x 223.4818pt.
 
-<Graphics/ch6/accuracyPaths2.pdf, id=7554, 922.85912pt x 671.83388pt>
+<Graphics/ch6/accuracyPaths2.pdf, id=7542, 922.85912pt x 671.83388pt>
 File: Graphics/ch6/accuracyPaths2.pdf Graphic file (type pdf)
 
 <use Graphics/ch6/accuracyPaths2.pdf>
@@ -5220,7 +5217,7 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 LaTeX Warning: Reference `sec:mapping' on page 101 undefined on input line 589.
 
 
-<Graphics/ch6/12-performance.pdf, id=7777, 650.43pt x 361.35pt>
+<Graphics/ch6/12-performance.pdf, id=7765, 650.43pt x 361.35pt>
 File: Graphics/ch6/12-performance.pdf Graphic file (type pdf)
 
 <use Graphics/ch6/12-performance.pdf>
@@ -5247,7 +5244,7 @@ LaTeX Warning: Reference `sec:mapping' on page 102 undefined on input line 608.
 LaTeX Warning: Reference `sec:mapping' on page 103 undefined on input line 616.
 
 
-<Graphics/ch6/13-ROC.pdf, id=7962, 692.65979pt x 323.18942pt>
+<Graphics/ch6/13-ROC.pdf, id=7950, 692.65979pt x 323.18942pt>
 File: Graphics/ch6/13-ROC.pdf Graphic file (type pdf)
 
 <use Graphics/ch6/13-ROC.pdf>
@@ -5257,7 +5254,7 @@ Package pdftex.def Info: Graphics/ch6/13-ROC.pdf used on input line 623.
 Underfull \vbox (badness 3068) has occurred while \output is active []
 
  [104]
-<Graphics/ch6/radia&structures.pdf, id=8122, 470.55798pt x 452.08899pt>
+<Graphics/ch6/radia&structures.pdf, id=8110, 470.55798pt x 452.08899pt>
 File: Graphics/ch6/radia&structures.pdf Graphic file (type pdf)
 
 <use Graphics/ch6/radia&structures.pdf>
@@ -5320,7 +5317,7 @@ Package epstopdf Info: Source file: <Graphics/ch8/FIGURE01.eps>
 converted-to.pdf Graphics/ch8/FIGURE01.eps>
 (epstopdf)             \includegraphics on input line 52.
 Package epstopdf Info: Output file is already uptodate.
-<Graphics/ch8/FIGURE01-eps-converted-to.pdf, id=8238, 367.3725pt x 152.57pt>
+<Graphics/ch8/FIGURE01-eps-converted-to.pdf, id=8226, 367.3725pt x 152.57pt>
 File: Graphics/ch8/FIGURE01-eps-converted-to.pdf Graphic file (type pdf)
 
 <use Graphics/ch8/FIGURE01-eps-converted-to.pdf>
@@ -5330,7 +5327,7 @@ ut line 52.
 Package acronym Info: Label `acro:SVD' newly defined as it shall be overridden
 although it is yet undefined on input line 71.
  [112] [113 <./Graphics/ch8/FIGURE01-eps-converted-to.pdf>]
-<Graphics/ch8/weighting2.pdf, id=8297, 561.89923pt x 322.50487pt>
+<Graphics/ch8/weighting2.pdf, id=8284, 561.89923pt x 322.50487pt>
 File: Graphics/ch8/weighting2.pdf Graphic file (type pdf)
 
 <use Graphics/ch8/weighting2.pdf>
@@ -5349,7 +5346,7 @@ converted-to.pdf Graphics/ch8/FIGURE02.eps>
 (epstopdf)             \includegraphics on input line 127.
 Package epstopdf Info: Output file is already uptodate.
 
-<Graphics/ch8/FIGURE02-eps-converted-to.pdf, id=8308, 841.1425pt x 302.12875pt>
+<Graphics/ch8/FIGURE02-eps-converted-to.pdf, id=8296, 841.1425pt x 302.12875pt>
 File: Graphics/ch8/FIGURE02-eps-converted-to.pdf Graphic file (type pdf)
 <use Graphics/ch8/FIGURE02-eps-converted-to.pdf>
 Package pdftex.def Info: Graphics/ch8/FIGURE02-eps-converted-to.pdf used on inp
@@ -5390,7 +5387,7 @@ converted-to.pdf Graphics/ch8/FIGURE03.eps>
 (epstopdf)             \includegraphics on input line 177.
 Package epstopdf Info: Output file is already uptodate.
 
-<Graphics/ch8/FIGURE03-eps-converted-to.pdf, id=8411, 469.755pt x 437.635pt>
+<Graphics/ch8/FIGURE03-eps-converted-to.pdf, id=8399, 469.755pt x 437.635pt>
 File: Graphics/ch8/FIGURE03-eps-converted-to.pdf Graphic file (type pdf)
 
 <use Graphics/ch8/FIGURE03-eps-converted-to.pdf>
@@ -5410,7 +5407,7 @@ converted-to.pdf Graphics/ch8/FIGURE04.eps>
 (epstopdf)             \includegraphics on input line 293.
 Package epstopdf Info: Output file is already uptodate.
 
-<Graphics/ch8/FIGURE04-eps-converted-to.pdf, id=8493, 469.755pt x 437.635pt>
+<Graphics/ch8/FIGURE04-eps-converted-to.pdf, id=8481, 469.755pt x 437.635pt>
 File: Graphics/ch8/FIGURE04-eps-converted-to.pdf Graphic file (type pdf)
 
 <use Graphics/ch8/FIGURE04-eps-converted-to.pdf>
@@ -5430,7 +5427,7 @@ converted-to.pdf Graphics/ch8/FIGURE05.eps>
 (epstopdf)             \includegraphics on input line 315.
 Package epstopdf Info: Output file is already uptodate.
 
-<Graphics/ch8/FIGURE05-eps-converted-to.pdf, id=8646, 464.73625pt x 440.64626pt
+<Graphics/ch8/FIGURE05-eps-converted-to.pdf, id=8634, 464.73625pt x 440.64626pt
 >
 File: Graphics/ch8/FIGURE05-eps-converted-to.pdf Graphic file (type pdf)
  <use Graphics/ch8/FIGURE05-eps-converted-to.pdf>
@@ -5462,7 +5459,7 @@ ion-eps-converted-to.pdf Graphics/ch9/SchemaGeneration.eps>
 (epstopdf)             \includegraphics on input line 8.
 Package epstopdf Info: Output file is already uptodate.
 
-<Graphics/ch9/SchemaGeneration-eps-converted-to.pdf, id=8833, 599.23875pt x 165
+<Graphics/ch9/SchemaGeneration-eps-converted-to.pdf, id=8821, 599.23875pt x 165
 .61874pt>
 File: Graphics/ch9/SchemaGeneration-eps-converted-to.pdf Graphic file (type pdf
 )
@@ -5471,28 +5468,28 @@ Package pdftex.def Info: Graphics/ch9/SchemaGeneration-eps-converted-to.pdf use
 d on input line 8.
 (pdftex.def)             Requested size: 386.95749pt x 106.95088pt.
 
-<Graphics/ch9/originalNOR.pdf, id=8837, 1175.2909pt x 130.086pt>
+<Graphics/ch9/originalNOR.pdf, id=8825, 1175.2909pt x 130.086pt>
 File: Graphics/ch9/originalNOR.pdf Graphic file (type pdf)
 
 <use Graphics/ch9/originalNOR.pdf>
 Package pdftex.def Info: Graphics/ch9/originalNOR.pdf used on input line 17.
 (pdftex.def)             Requested size: 270.86905pt x 29.98067pt.
 
-<Graphics/ch9/originalAD.pdf, id=8838, 1175.2909pt x 130.086pt>
+<Graphics/ch9/originalAD.pdf, id=8826, 1175.2909pt x 130.086pt>
 File: Graphics/ch9/originalAD.pdf Graphic file (type pdf)
 
 <use Graphics/ch9/originalAD.pdf>
 Package pdftex.def Info: Graphics/ch9/originalAD.pdf used on input line 18.
 (pdftex.def)             Requested size: 270.86905pt x 29.98067pt.
 
-<Graphics/ch9/generatedNOR.pdf, id=8839, 1175.2909pt x 130.086pt>
+<Graphics/ch9/generatedNOR.pdf, id=8827, 1175.2909pt x 130.086pt>
 File: Graphics/ch9/generatedNOR.pdf Graphic file (type pdf)
 
 <use Graphics/ch9/generatedNOR.pdf>
 Package pdftex.def Info: Graphics/ch9/generatedNOR.pdf used on input line 19.
 (pdftex.def)             Requested size: 270.86905pt x 29.98067pt.
 
-<Graphics/ch9/generatedAD.pdf, id=8840, 1175.2909pt x 130.086pt>
+<Graphics/ch9/generatedAD.pdf, id=8828, 1175.2909pt x 130.086pt>
 File: Graphics/ch9/generatedAD.pdf Graphic file (type pdf)
 
 <use Graphics/ch9/generatedAD.pdf>
@@ -5718,7 +5715,10 @@ LaTeX Info: Redefining \% on input line 3.
 (./FrontBackMatter/Derechos.aux
 LaTeX Info: Redefining \. on input line 3.
 LaTeX Info: Redefining \% on input line 3.
-) (./Chapters/Chapter0A.aux)
+)
+LaTeX Info: Redefining \. on input line 52.
+LaTeX Info: Redefining \% on input line 52.
+ (./Chapters/Chapter0A.aux)
 (./Chapters/Chapter0B.aux) (./FrontBackMatter/Bibliography.aux))
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 105.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 105.
@@ -5740,11 +5740,11 @@ Package logreq Info: Writing requests to 'ArsClassica.run.xml'.
 Here is how much of TeX's memory you used:
  30294 strings out of 493013
  547667 string characters out of 6135683
- 1477248 words of memory out of 5000000
+ 1475804 words of memory out of 5000000
  32181 multiletter control sequences out of 15000+600000
  200534 words of font info for 274 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 70i,23n,94p,8822b,3584s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 70i,23n,94p,8822b,3590s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texlive/texmf-dist/fonts/enc/dvips/iwona/ec-iwona.enc}{/usr/share
 /texlive/texmf-dist/fonts/enc/dvips/iwona/ec-iwona-sc.enc}{/usr/share/texlive/t
 exmf-dist/fonts/enc/dvips/base/8r.enc}</usr/share/texlive/texmf-dist/fonts/type
@@ -5774,10 +5774,10 @@ c/tex-gyre/qhvr.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/palatino/upl
 b8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/palatino/uplr8a.pfb></us
 r/share/texlive/texmf-dist/fonts/type1/urw/palatino/uplri8a.pfb></usr/share/tex
 live/texmf-dist/fonts/type1/urw/zapfding/uzdr.pfb>
-Output written on ArsClassica.pdf (183 pages, 21605435 bytes).
+Output written on ArsClassica.pdf (183 pages, 21603261 bytes).
 PDF statistics:
- 9747 PDF objects out of 10688 (max. 8388607)
- 5768 compressed objects within 58 object streams
+ 9735 PDF objects out of 10688 (max. 8388607)
+ 5753 compressed objects within 58 object streams
  827 named destinations out of 1000 (max. 500000)
  51739 words of extra memory for PDF output out of 61914 (max. 10000000)
 
