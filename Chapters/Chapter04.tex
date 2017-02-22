@@ -94,7 +94,11 @@ However, this number of features is still large, and therefore, further feature 
 	\subfloat[Original]
 	{\includegraphics[width=.3\linewidth]{Graphics/ch4/originalImage_inferno.eps}}\quad
 	\subfloat[\ac{FA} reconstruction]
+<<<<<<< HEAD
 	{\includegraphics[width=.3\linewidth]{Graphics/ch4/transformedFA_inferno.eps}\label{fig:reconstructionFA}}\quad
+=======
+	{\includegraphics[width=.3\linewidth]{Graphics/ch4/transformedFA.eps}\label{fig:reconstructionFA}}\quad
+>>>>>>> 75a4ab11e3b1e5f3c31cce8cf3f7b7ba5da56079
 	\subfloat[\ac{ICA} reconstruction]
 	{\includegraphics[width=.3\linewidth]{Graphics/ch4/transformedICA_inferno.eps}}
 	\caption[Original PET image and its reconstruction using FA or ICA.]{Original PET image from the ADNI-PET dataset, and examples of reconstruction using \ac{FA} or \ac{ICA}, with 10 components.}\label{fig:comparisonReconstructions}
@@ -145,9 +149,15 @@ The mean $\boldsymbol{\mu}$, and the matrices $\mathbf{S}$ and $\boldsymbol{\Psi
 \end{figure}
 
 \subsection{Independent Component Analysis}
+<<<<<<< HEAD
 \acf{ICA} \cite{Hyvarinen2000} is an algorithm that performs decomposition imposing that the resulting components must be independent. It was used in \cite{Alvarez2009,Martinez201141,Martinez-Murcia20129676} as part of a \ac{CAD} system, and it had been used in other medical imaging applications such as segmentation \cite{DeMartino2007}. 
 
 \ac{ICA} was born as a solution to the \textit{blind source separation} problem, in which the aim is to estimate $c$ independent sources from a series of mixed signals \cite{Hyvarinen2000}. To do so, we assume the source signals to be non-gaussian, in addition to the independence assumption that we mentioned before. That is why their authors consider \ac{ICA} to be a non-gaussian version of \ac{FA} \cite{Hyvaerinen2003}, although due to this assumption, the results are very different to those obtained in \ac{FA}. 
+=======
+\acf{ICA} \cite{Hyvarinen2000} is an algorithm that performs decomposition imposing that the resulting components must be independent. It was used in \cite{Alvarez2009,Martinez201141,Martinez-Murcia20129676} as part of a \ac{CAD} system, and it had been used in medical image segmentation as well \cite{DeMartino2007}. 
+
+
+>>>>>>> 75a4ab11e3b1e5f3c31cce8cf3f7b7ba5da56079
 
 Unlike \ac{FA}, \ac{ICA} does not account for noise in the estimation procedure, and therefore the equation remains: 
 \begin{equation}\label{eq:icaecuation}
