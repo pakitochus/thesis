@@ -7,7 +7,7 @@ In this chapter, we will focus on those \ac{CAD} systems that use a combination 
 Image decomposition methods model a set of samples as a linear combination of $c$ latent variables, also known as components. These variables can be considered as the basis of a $c$-dimensional space where each sample is represented by a feature vector of length $c$. The $i$-th neuroimage in our dataset can be therefore decomposed as: 
 
 \begin{equation}\label{eq:generalDecomposition}
-	\mathbf{x}_i = s_0 \mathbf{w}_0 + s_1 \mathbf{w}_1 + \dots + s_c \mathbf{w}_c + \boldmath\epsilon = \mathbf{s}\mathbf{W} + \boldmath\epsilon
+\mathbf{x}_i = s_0 \mathbf{w}_0 + s_1 \mathbf{w}_1 + \dots + s_c \mathbf{w}_c + \boldmath\epsilon = \mathbf{s}\mathbf{W} + \boldmath\epsilon
 \end{equation}
 
 Where $s_i$ is the coordinate (or component score) of the current image in the $i$-th dimension of the new space defined by all the base vectors $\mathbf{w}_i$ (component loadings), and $\boldmath\epsilon$ is the error of the estimation. Figure \ref{fig:decomposition_overview} shows an illustration of the process. 
@@ -20,7 +20,7 @@ Where $s_i$ is the coordinate (or component score) of the current image in the $
 \end{figure}
 
 Many signal decomposition techniques are used in the literature, for example \ac{PCA} or \ac{PLS} \cite{Spetsieris2009,Illan2011,Towey2011,Segovia2013,Khedher2015}. We will focus on two less known decomposition algorithms \acf{FA} and \acf{ICA}, which we will integrate in different \ac{CAD} systems using a pipeline similar to the one displayed at Figure~\ref{fig:pipelineDecomposition}. This pipeline involves feature selection (for reducing the dimensionality), decomposition of the feature vectors and classification.
- 
+
 \begin{figure}[tph]
 	\centering
 	\includegraphics[width=0.7\linewidth]{Graphics/ch4/01-flowdiagram}
@@ -57,9 +57,9 @@ t_f = \frac{\bar{X}_1^f - \bar{X}_2^f}{\sqrt{\frac{\sigma_{X_2^f}^2+\sigma_{X_1^
 where $\sigma_{X_i^f}^2$ is the variance and $\bar{X}_i^f$ is the average of the $f$-the feature within class $i$. The $t$-test is extensively used in the neuroimaging community, and it is the basis for the \ac{SPM} and \ac{VBM} analyses \cite{spm_book}. See figure~\ref{fig:ttest_map} for an example of the $t$-test computed on the ADNI-PET database.
 
 \subsection{Kullback-Leibler Divergence} 
-Another alternative is the \acf{KL} divergence, also known as Relative Entropy. It is a non-symmetric measure of the difference between two probabilities distributions. Let us assume that $X_1^f$ and $X_2^f$, the vectors containing the $f$-th feature of all elements in class $i$, are two discrete random variables. Therefore, the \ac{KL} divergence can be calculated with equation \ref{kullback} \cite{Theodoridis1999}.
+Another alternative is the \acf{KL} divergence, also known as Relative Entropy. It is a non-symmetric measure of the difference between two probabilities distributions. Let us assume that $X_1^f$ and $X_2^f$, the vectors containing the $f$-th feature of all elements in class $i$, are two discrete random variables. Therefore, the \ac{KL} divergence can be calculated with equation \ref{eq:kullback} \cite{Theodoridis1999}.
 
-\begin{equation}\label{kullback}
+\begin{equation}\label{eq:kullback}
 KL_f = \left(\frac{\sigma_{X_2^f}^2}{\sigma_{X_1^f}^2} +\frac{\sigma_{X_1^f}^2}{\sigma_{X_2^f}^2} -2 \right) + \frac{1}{2}\left(\bar{X}_2^f-\bar{X}_1^f\right)^2\left(\frac{1}{\sigma_{X_1^f}^2} + \frac{1}{\sigma_{X_2^f}^2}\right)
 \end{equation}
 using the same notation than in $t$-test. See figure~\ref{fig:kl_map} for an example of the computed \ac{KL} divergence on the ADNI-PET database.
@@ -69,17 +69,17 @@ The \acf{MWW} rank test, also known as $U$-test, assigns a rank to all values in
 
 Let $n_1$ and $n_2$ be the number of elements in class 1 and 2 respectively, and $R^f$ the vector of ranked elements. We proceed by selecting the first $n_1$ elements in $R^f$ by: 
 \begin{equation}
-	R^f_{n_1} = {R^f_i} \quad \forall i\in(0,n_1)
+R^f_{n_1} = {R^f_i} \quad \forall i\in(0,n_1)
 \end{equation}
 
 The $U$-score for the $f$-th feature and the first class will be: 
 \begin{equation}
-	U_1^f = n_1 n_2 + n_1 \frac{n1+1}{2} - \sum R^f_{n_1}
+U_1^f = n_1 n_2 + n_1 \frac{n1+1}{2} - \sum R^f_{n_1}
 \end{equation}
 
 And the it can be computed for the second class as the remainder: 
 \begin{equation}
-	U_2^f = n_1 n_2 - U_1
+U_2^f = n_1 n_2 - U_1
 \end{equation}
 
 The final $U^f$ can be assigned to either $U_1^f$, $U_2^f$ or $\min{U_1^f,U_2^f}$ \cite{Fay10}, but the usual approach nowadays is to assign $U^f=U_2^f$. Unlike $t$-test, \ac{MWW} test does not assume any prior distribution, and therefore is less likely than it to spuriously indicate significance because of the presence of outliers. Under the normal distribution, it performs relatively similar \cite{Fay10}. See figure~\ref{fig:wilcoxon_map} for an example of the \ac{MWW} $U$-test computed on the ADNI-PET database.
@@ -94,11 +94,7 @@ However, this number of features is still large, and therefore, further feature 
 	\subfloat[Original]
 	{\includegraphics[width=.3\linewidth]{Graphics/ch4/originalImage_inferno.eps}}\quad
 	\subfloat[\ac{FA} reconstruction]
-<<<<<<< HEAD
 	{\includegraphics[width=.3\linewidth]{Graphics/ch4/transformedFA_inferno.eps}\label{fig:reconstructionFA}}\quad
-=======
-	{\includegraphics[width=.3\linewidth]{Graphics/ch4/transformedFA.eps}\label{fig:reconstructionFA}}\quad
->>>>>>> 75a4ab11e3b1e5f3c31cce8cf3f7b7ba5da56079
 	\subfloat[\ac{ICA} reconstruction]
 	{\includegraphics[width=.3\linewidth]{Graphics/ch4/transformedICA_inferno.eps}}
 	\caption[Original PET image and its reconstruction using FA or ICA.]{Original PET image from the ADNI-PET dataset, and examples of reconstruction using \ac{FA} or \ac{ICA}, with 10 components.}\label{fig:comparisonReconstructions}
@@ -121,12 +117,12 @@ The columns of $\mathbf{W}$ are known as factors, and the rows of $\mathbf{S}$ a
 
 Now we can rewrite Eq.~\ref{eq:factoranalysis} as:
 \begin{equation}\label{eq:fastep1}
-	\text{Cov}(\mathbf{X} -\boldsymbol{\mu})= \text{Cov}(\mathbf{S}\mathbf{W} +  \boldsymbol{\epsilon})
+\text{Cov}(\mathbf{X} -\boldsymbol{\mu})= \text{Cov}(\mathbf{S}\mathbf{W} +  \boldsymbol{\epsilon})
 \end{equation} 
 
 Under the previous constraints, and setting $\boldsymbol{\Sigma} = \text{Cov}(\mathbf{X} -\boldsymbol{\mu})$, Eq.~\ref{eq:fastep1} becomes:
 \begin{equation}
-	\boldsymbol{\Sigma} = \mathbf{S}\text{Cov}(\mathbf{W})\mathbf{S}^T - \text{Cov}(\boldsymbol{\epsilon})
+\boldsymbol{\Sigma} = \mathbf{S}\text{Cov}(\mathbf{W})\mathbf{S}^T - \text{Cov}(\boldsymbol{\epsilon})
 \end{equation}
 
 Since $\text{Cov}(\mathbf{W}) = \mathbf{I}$, and making $\text{Cov}(\boldsymbol{\epsilon})=\boldsymbol{\Psi}$, the diagonal matrix containing the specific variances of the reconstruction error, we obtain the alternative form of \ac{FA}: 
@@ -136,7 +132,7 @@ Since $\text{Cov}(\mathbf{W}) = \mathbf{I}$, and making $\text{Cov}(\boldsymbol{
 
 The mean $\boldsymbol{\mu}$, and the matrices $\mathbf{S}$ and $\boldsymbol{\Psi}$ are obtained via Maximum Likelihood estimation. To guarantee an unique solution, we impose that $\mathbf{S}^T\boldsymbol{\Psi}^{-1}\mathbf{S}$ is a diagonal matrix. Then, we obtain the parameters by maximizing the log-likelihood given by the following expression: 
 \begin{equation}
-	\ell(\mu,\mathbf{S},\boldsymbol{\Psi}) = - \frac{np}{2}\log{2\pi}- \frac{n}{2}\log{\left|\mathbf{SS}^T + \boldsymbol{\Psi}\right|} - \frac{1}{2}\sum_{i=1}^{n}(\mathbf{x}_i-\mu)^T(\mathbf{SS}^T+\boldsymbol{\Psi})(\mathbf{x}_i-\mu)
+\ell(\mu,\mathbf{S},\boldsymbol{\Psi}) = - \frac{np}{2}\log{2\pi}- \frac{n}{2}\log{\left|\mathbf{SS}^T + \boldsymbol{\Psi}\right|} - \frac{1}{2}\sum_{i=1}^{n}(\mathbf{x}_i-\mu)^T(\mathbf{SS}^T+\boldsymbol{\Psi})(\mathbf{x}_i-\mu)
 \end{equation} 
 
 \ac{FA} differs from \ac{PCA} mainly because it performs an estimation of the noise, and needs the number of factors $c$ as an input. Choosing $c$ is not a naive task. A large $c$ can yield a small reconstruction error, but the factors will not be representative enough, leading to overfitting of the subsequent model. Conversely, a small $c$ can lead to a large reconstruction error, causing information loss. We have computed the reconstruction error variance over the ADNI-PET dataset, and plotted it in Figure~\ref{fig:error} (similar graphs can be obtained for other databases. This proves that the error is assymptotical as we increase $c$, and therefore, once arrived at certain error, the improvements are not significant. To observe how the error affects the reconstruction, in Figure~\ref{fig:reconstructionFA} we can compare a reconstructed image with its corresponding original. 
@@ -149,15 +145,9 @@ The mean $\boldsymbol{\mu}$, and the matrices $\mathbf{S}$ and $\boldsymbol{\Psi
 \end{figure}
 
 \subsection{Independent Component Analysis}
-<<<<<<< HEAD
 \acf{ICA} \cite{Hyvarinen2000} is an algorithm that performs decomposition imposing that the resulting components must be independent. It was used in \cite{Alvarez2009,Martinez201141,Martinez-Murcia20129676} as part of a \ac{CAD} system, and it had been used in other medical imaging applications such as segmentation \cite{DeMartino2007}. 
 
 \ac{ICA} was born as a solution to the \textit{blind source separation} problem, in which the aim is to estimate $c$ independent sources from a series of mixed signals \cite{Hyvarinen2000}. To do so, we assume the source signals to be non-gaussian, in addition to the independence assumption that we mentioned before. That is why their authors consider \ac{ICA} to be a non-gaussian version of \ac{FA} \cite{Hyvaerinen2003}, although due to this assumption, the results are very different to those obtained in \ac{FA}. 
-=======
-\acf{ICA} \cite{Hyvarinen2000} is an algorithm that performs decomposition imposing that the resulting components must be independent. It was used in \cite{Alvarez2009,Martinez201141,Martinez-Murcia20129676} as part of a \ac{CAD} system, and it had been used in medical image segmentation as well \cite{DeMartino2007}. 
-
-
->>>>>>> 75a4ab11e3b1e5f3c31cce8cf3f7b7ba5da56079
 
 Unlike \ac{FA}, \ac{ICA} does not account for noise in the estimation procedure, and therefore the equation remains: 
 \begin{equation}\label{eq:icaecuation}
@@ -181,9 +171,9 @@ This procedure transform the mixing matrix to:
 \end{equation}
 which is indeed orthogonal, as can be seen here:
 \begin{equation}
- E\{\tilde{\mathbf{x}}_i\tilde{\mathbf{x}}_i^T\} = \tilde{\mathbf{W}} E\{\tilde{\mathbf{s}}_i\tilde{\mathbf{s}}_i^T\}\tilde{\mathbf{W}}^T 	=\tilde{\mathbf{W}}\tilde{\mathbf{W}}^T=\mathbf{I}
+E\{\tilde{\mathbf{x}}_i\tilde{\mathbf{x}}_i^T\} = \tilde{\mathbf{W}} E\{\tilde{\mathbf{s}}_i\tilde{\mathbf{s}}_i^T\}\tilde{\mathbf{W}}^T 	=\tilde{\mathbf{W}}\tilde{\mathbf{W}}^T=\mathbf{I}
 \end{equation}
- 
+
 This property reduces the number of parameters to be estimated, since an orthogonal matrix contains $n(n-1)/2$ degrees of freedom, in contrast to the $n^2$ degrees of freedom of the original mixing matrix $\mathbf{W}$. 
 
 Thanks to the central limit theorem, we assume that the sum of a large number of independent random variables tends will be approximately normally distributed, regardless of the individual statistical distributions \cite{Rice2006}. This property is used to maximize non-gaussianity and independence in the sources using any independence criteria such as the kurtosis or negentropy in any of the proposed algorithms. In this work, we will use the FastICA algorithm. 
@@ -193,7 +183,7 @@ FastICA is a block fixed-point iteration algorithm \cite{Oja1997,FastICA99} base
 
 The non-gaussianity measure used here is the negative entropy, or negentropy. The negentropy is a form of differential entropy, which for a random vector $\mathbf{y}$ is defined as: 
 \begin{equation}
-	J(\mathbf{y})=H(\mathbf{y}_{gauss})-H(\mathbf{y})
+J(\mathbf{y})=H(\mathbf{y}_{gauss})-H(\mathbf{y})
 \end{equation}
 where  $\mathbf{y}_{gauss}$ and $\mathbf{y}$ share the same covariance matrix, although $\mathbf{y}$ is not a gaussian random variable, and $\mathbf{y}_{gauss}$ is. There are many approximations to negentropy. The FastICA defines negentropy using the function: 
 \begin{equation}
@@ -221,8 +211,8 @@ This is the algorithm for one computational unit, or neuron, which computes one 
 
 The method used in this work uses a two-step iterative algorithm \cite{Hyvarinen2000} to decorrelate the outputs after each iteration: 
 \begin{enumerate}
-\item Let $\mathbf{W} = \mathbf{W}/\sqrt{\lVert\mathbf{W}\mathbf{W}^T\rVert}$. 
-\item Let $\mathbf{W} = \frac{3}{2} \mathbf{W}-\frac{1}{2} \mathbf{W} \mathbf{W}^T  \mathbf{W}$
+	\item Let $\mathbf{W} = \mathbf{W}/\sqrt{\lVert\mathbf{W}\mathbf{W}^T\rVert}$. 
+	\item Let $\mathbf{W} = \frac{3}{2} \mathbf{W}-\frac{1}{2} \mathbf{W} \mathbf{W}^T  \mathbf{W}$
 \end{enumerate}
 
 And repeat step 2 until convergence. For simplicity, the norm in step 1 can be computed as any norm but the Frobenius norm, for example, the L2-norm or the largest absolute row sum. 
@@ -457,16 +447,29 @@ Now we will focus on the specific performance values obtained at the operation p
 		&  & entropy & $ 0.947 \pm 0.045 $ & $ 0.940 \pm 0.066 $ & $ 0.955 \pm 0.076 $ \\
 		&  & wilcoxon & $ 0.952 \pm 0.037 $ & $ 0.940 \pm 0.066 $ & $ 0.964 \pm 0.064 $ \\
 		\bottomrule
-		\end{tabularx}
-		\caption[Performance values for the Parkinson's datasets]{Accuracy, sensitivity, specificity, and their standard deviation at the operation point for each method and its corresponding feature selection criterion, using three \protect\ac{PKS} datasets }
-		\label{tab:featurePKS}
+	\end{tabularx}
+	\caption[Performance values for the Parkinson's datasets]{Accuracy, sensitivity, specificity, and their standard deviation at the operation point for each method and its corresponding feature selection criterion, using three \protect\ac{PKS} datasets }
+	\label{tab:featurePKS}
 \end{table}
 
+In general, the systems using \ac{ICA} tend to perform slightly better than those using \ac{FA}, although the difference is small. There is little difference between selection criteria as well, although the combination of relative entropy and \ac{ICA} seems to work better, at least in the PPMI-DAT and VDLN-DAT (in VDLV-DAT all combinations perform equally well). 
+
+
+\FloatBarrier
 \section{Discussion}
+Now we will discuss the general behaviour of the selection and decomposition algorithm in the \ac{CAD} systems proposed and how they perform on the different diseases and databases. 
+
+Our \ac{CAD} system performs reasonably well on the \ac{AD} datasets, where it achieves around 90\% accuracy, and more than 92\% sensitivity. This is achieved in both systems composed by \ac{FA} and \ac{ICA} regardless of the selection criterion chosen. The system outperforms the visual analysis estimated by means of \ac{VAF} \cite{Stoeckel04} in both cases. In \cite{Martinez201141} and \cite{Martinez-Murcia20129676}, the systems achieved better performance (up to 95.1\% accuracy) when using multivariate quadratic classifiers and \ac{ICA}, different from the \ac{SVC} used here. 
+
+We have chosen to evaluate the system only on linear \acp{SVC} for two main reasons. First, it favours a side-by-side comparison between all methods applied to different datasets in this thesis. And second, linear \ac{SVC} has been proven to be better generalizable than other systems, even in environments where the small sample size is the norm \cite{Vapnik1997}. 
+
+The selected areas in these systems correspond to the 
 
 
+In most cases, the Wilcoxon and the $t$-test obtain similar performance, which can be due to their similarity under the normal distribution \cite{Fay10}. 
 
-One particular behaviours deserves to be analysed further: the combination of the 
+
+One particular behaviour deserves to be analysed further: the combination of the 
 
 Explore this: Again, this behaviour is consistent with the VDLN-DAT dataset, except for one case. It does seem that the interaction between the VDLN-DAT dataset and the relative entropy selection criterion leads to a wrong model. We will explore this question later, in the discussion. 
 
