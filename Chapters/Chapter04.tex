@@ -92,11 +92,11 @@ However, this number of features is still large, and therefore, further feature 
 \begin{figure}[bth]
 	\myfloatalign
 	\subfloat[Original]
-	{\includegraphics[width=.3\linewidth]{Graphics/ch4/originalImage.eps}}\quad
+	{\includegraphics[width=.3\linewidth]{Graphics/ch4/originalImage_inferno.eps}}\quad
 	\subfloat[\ac{FA} reconstruction]
-	{\includegraphics[width=.3\linewidth]{Graphics/ch4/transformedFA.eps}\label{fig:reconstructionFA}}\quad
+	{\includegraphics[width=.3\linewidth]{Graphics/ch4/transformedFA_inferno.eps}\label{fig:reconstructionFA}}\quad
 	\subfloat[\ac{ICA} reconstruction]
-	{\includegraphics[width=.3\linewidth]{Graphics/ch4/transformedICA.eps}}
+	{\includegraphics[width=.3\linewidth]{Graphics/ch4/transformedICA_inferno.eps}}
 	\caption[Original PET image and its reconstruction using FA or ICA.]{Original PET image from the ADNI-PET dataset, and examples of reconstruction using \ac{FA} or \ac{ICA}, with 10 components.}\label{fig:comparisonReconstructions}
 \end{figure}
 
@@ -377,6 +377,7 @@ Regarding the application of the \ac{ICA} decomposition model to the DaTSCAN dat
 In average, PPMI-DAT and VDLV-DAT achieve similar performance, while VDLN-DAT generally achieves much poorer results. However, the behaviour of the system when varying the number of voxels or number of components is similar in all three datasets. The tendency is that accuracy does not significantly vary when increasing the number of voxels (except in the case of the relative entropy and VDLN-DAT). In contrast, when varying the number of components, we observe that the maximum performance is achieved in the first components, typically between 5 and 10. 
 
 \subsubsection{At the Operation Point}
+Let us now have a look at the behaviour of this system at the operation point, using the parameters $c$ and $f$ for which our system is optimal. First, we can explore how the performance changes over the number of components when using \ac{FA} and \ac{ICA}, in Figure~\ref{fig:accuracyOP-PKS}. 
 
 \begin{figure}
 	\subfloat[]{\includegraphics[width=0.49\linewidth]{Graphics/ch4/accuracyOP-FA_vsN_comparison_PPMI-DAT.eps}\label{fig:PPMI-DAT-FA-OP}}
@@ -392,6 +393,9 @@ In average, PPMI-DAT and VDLV-DAT achieve similar performance, while VDLN-DAT ge
 	\label{fig:accuracyOP-PKS}
 \end{figure}
 
+In this first case, the most evident result is the general performance of our system in the three datasets. It is clear that the system performs better when tested on VDLV-DAT than when tested on PPMI-DAT, and both datasets outperform, VDLN-DAT. It is even clearer that when testing on VDLV-DAT, the results are similar using any type of decomposition and selection criteria, with similar performance. We will discuss this issue in more detail later. 
+
+The tendency of the performance at the operation point is similar to the average behaviour commented before. In general, there is an accuracy increasing in the first components (usually, between 5 and 10 depending on the decomposition) and then, the performance remains stable. Again, the combination of relative entropy selection and VDLN-DAT achieves striking results. For this dataset, the higher performance is obtained with more than 10 components ($c=14$), and shows higher variability than other datasets. 
 
 \begin{figure}
 	\subfloat[]{\includegraphics[width=0.49\linewidth]{Graphics/ch4/accuracyOP-FA_vsK_comparison_PPMI-DAT.eps}\label{fig:PPMI-DAT-FA-OP-vsN}}
