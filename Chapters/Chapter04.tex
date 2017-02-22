@@ -304,7 +304,9 @@ In Table~\ref{tab:featureAD} we show the performance values obtained at the oper
 	\begin{tabularx}{\linewidth}{Xllccc}
 		\tableheadline{DB} & \tableheadline{Dec.} & \tableheadline{Criterion} & \tableheadline{Accuracy} & \tableheadline{Sensitivity} & \tableheadline{Specificity}\\
 		\toprule
-		\multirow{6}{1.7cm}{ADNI- PET} & \multirow{3}{*}{\ac{FA}} & t-test & $ 0.893 \pm 0.074 $ & $ 0.886 \pm 0.119 $ & $ 0.901 \pm 0.101 $ \\
+		\multirow{7}{1.7cm}{ADNI- PET} & \ac{VAF} & - & $0.882 \pm 0.064$ & $0.876 \pm 0.099$ & $0.890 \pm 0.097$ \\
+		\cline{2-6}
+		&  \multirow{3}{*}{\ac{FA}} & t-test & $ 0.893 \pm 0.074 $ & $ 0.886 \pm 0.119 $ & $ 0.901 \pm 0.101 $ \\
 		&  & entropy & $ 0.893 \pm 0.074 $ & $ 0.894 \pm 0.092 $ & $ 0.891 \pm 0.088 $ \\
 		&  & wilcoxon & $ 0.903 \pm 0.066 $ & $ 0.917 \pm 0.079 $ & $ 0.891 \pm 0.082 $ \\
 		\cline{2-6}
@@ -326,10 +328,8 @@ In Table~\ref{tab:featureAD} we show the performance values obtained at the oper
 
 Overall, all methods achieve similar values of accuracy, sensitivity and specificity. When analysing the ADNI-PET dataset, the wilcoxon selection criteria seems to outperform the rest especially with \ac{ICA}, with a higher accuracy and sensitivity. On the other hand, with the VDLN-HMPAO dataset, either the $t$-test or the wilcoxon achieves higher sensitivity, but there is no difference in accuracy when decomposing with the \ac{ICA} algorithm. When using \ac{FA} decomposition, the relative entropy seems to perform better. In general, there seems to be little difference among methods, and a curious relationship between the relative entropy selection and the VDLN-HMPAO dataset that we will discuss later. 
 
-
 \FloatBarrier
 
-% DESDE AQUI
 \subsection{Parkinson's Disease}
 Now we will look at how the proposed \ac{CAD} system behaves when applied to the three DaTSCAN datasets: VDLN-DAT, VDLV-DAT and PPMI-DAT. For this experiment we will use a maximum of $1500$ selected voxels and $25$ components. 
 
@@ -358,6 +358,8 @@ Their behaviours are consistent. Usually, there is no variation with the number 
 Again, this behaviour is consistent with the VDLN-DAT dataset, except for one case. It does seem that the interaction between the VDLN-DAT dataset and the relative entropy selection criterion leads to a wrong model. We will explore this question later, in the discussion. 
 
 \subsubsection{Independent Component Analysis}
+Regarding the application of the \ac{ICA} decomposition model to the DaTSCAN datasets. In Figure~\ref{fig:accuracyMeanICA-PKS} we present the average accuracy achieved by this model using three different selection criteria and the three \ac{PKS} datasets. 
+
 \begin{figure}
 	\subfloat[]{\includegraphics[width=0.49\linewidth]{Graphics/ch4/accuracyMeanSTD-ICA_vsN_ttest_PKS.eps}\label{fig:PKS-AV-ICA-TTEST-VSN}}
 	\subfloat[]{\includegraphics[width=0.49\linewidth]{Graphics/ch4/accuracyMeanSTD-ICA_vsK_ttest_PKS.eps}\label{fig:PKS-AV-ICA-TTEST-VSK}}
@@ -372,6 +374,7 @@ Again, this behaviour is consistent with the VDLN-DAT dataset, except for one ca
 	\label{fig:accuracyMeanICA-PKS}
 \end{figure}
 
+In average, PPMI-DAT and VDLV-DAT achieve similar performance, while VDLN-DAT generally achieves much poorer results. However, the behaviour of the system when varying the number of voxels or number of components is similar in all three datasets. The tendency is that accuracy does not significantly vary when increasing the number of voxels (except in the case of the relative entropy and VDLN-DAT). In contrast, when varying the number of components, we observe that the maximum performance is achieved in the first components, typically between 5 and 10. 
 
 \subsubsection{At the Operation Point}
 
@@ -385,9 +388,26 @@ Again, this behaviour is consistent with the VDLN-DAT dataset, except for one ca
 	\subfloat[]{\includegraphics[width=0.49\linewidth]{Graphics/ch4/accuracyOP-FA_vsN_comparison_VDLV-DAT.eps}\label{fig:VDLV-DAT-FA-OP}}
 	\subfloat[]{\includegraphics[width=0.49\linewidth]{Graphics/ch4/accuracyOP-ICA_vsN_comparison_VDLV-DAT.eps}\label{fig:VDLV-DAT-ICA-OP}}
 	
-	\caption{Performance of the proposed system using the two \ac{PKS} datasets: PPMI-DAT, VDLN-DAT and VDLV-DAT at the operation point, and how they vary over the number of components used in the decomposition. } 
+	\caption[Performance at the operation point for the \ac{PKS} datasets, over the number of components.]{Performance of the proposed system using the two \ac{PKS} datasets: PPMI-DAT, VDLN-DAT and VDLV-DAT at the operation point, and how they vary over the number of components used in the decomposition. } 
 	\label{fig:accuracyOP-PKS}
 \end{figure}
+
+
+\begin{figure}
+	\subfloat[]{\includegraphics[width=0.49\linewidth]{Graphics/ch4/accuracyOP-FA_vsK_comparison_PPMI-DAT.eps}\label{fig:PPMI-DAT-FA-OP-vsN}}
+	\subfloat[]{\includegraphics[width=0.49\linewidth]{Graphics/ch4/accuracyOP-ICA_vsK_comparison_PPMI-DAT.eps}\label{fig:PPMI-DAT-ICA-OP-vsN}}
+	
+	\subfloat[]{\includegraphics[width=0.49\linewidth]{Graphics/ch4/accuracyOP-FA_vsK_comparison_VDLN-DAT.eps}\label{fig:VDLN-DAT-FA-OP-vsN}}
+	\subfloat[]{\includegraphics[width=0.49\linewidth]{Graphics/ch4/accuracyOP-ICA_vsK_comparison_VDLN-DAT.eps}\label{fig:VDLN-DAT-ICA-OP-vsN}}
+	
+	\subfloat[]{\includegraphics[width=0.49\linewidth]{Graphics/ch4/accuracyOP-FA_vsK_comparison_VDLV-DAT.eps}\label{fig:VDLV-DAT-FA-OP-vsN}}
+	\subfloat[]{\includegraphics[width=0.49\linewidth]{Graphics/ch4/accuracyOP-ICA_vsK_comparison_VDLV-DAT.eps}\label{fig:VDLV-DAT-ICA-OP-vsN}}
+	
+	\caption[Performance at the operation point for the \ac{PKS} datasets, over the number of selected voxels.]{Performance of the proposed system using the two \ac{PKS} datasets: PPMI-DAT, VDLN-DAT and VDLV-DAT at the operation point, and how they vary over the number of selected voxels. } 
+	\label{fig:accuracyOP-PKSvsN}
+\end{figure}
+
+
 
 
 \begin{table}
@@ -425,4 +445,11 @@ Again, this behaviour is consistent with the VDLN-DAT dataset, except for one ca
 
 \section{Discussion}
 
+
+
+One particular behaviours deserves to be analysed further: the combination of the 
+
 Explore this: Again, this behaviour is consistent with the VDLN-DAT dataset, except for one case. It does seem that the interaction between the VDLN-DAT dataset and the relative entropy selection criterion leads to a wrong model. We will explore this question later, in the discussion. 
+
+
+between the relative entropy selection and the VDLN-HMPAO dataset that we will discuss later. 
