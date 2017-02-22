@@ -267,7 +267,23 @@ The case is similar to the one presented in Section~\ref{sec:results_FA_AD}, whe
 The results change when varying the number of components. In this case, although good performance is obtained within the first 5 components in most cases, the model achieves similar performance in both datasets with components between 5 and 10, and then, the estimates diverge. In the VDLN-HMPAO, the performance starts to decrease after this number of components, whereas when using the ADNI-PET dataset, the higher average performance is obtained with $c>15$, especially in the case of the $t$-test or the wilcoxon selection criteria). 
 
 \subsubsection{At the Operation Point}
-Now we focus on non-averaged values, the values for which our system is optimal: the operation point. In this scenario we see that the tendency is that all systems behave similarly. The accuracy vary slightly with the number of components selected to build the model almost in any case, and there is a steep increase in the performance within the first five components in both \ac{FA} and \ac{ICA}. 
+Now we focus on non-averaged values, the values for which our system is optimal: the operation point. In this scenario we see that the tendency is that all systems behave similarly. 
+
+When increasing the number of selected voxels, we can see that there is always a tendency of slightly increase in both datasets and decomposition strategies, as can be seen in Figure~\ref{fig:accuracyOP-ADvsN}. For the ADNI-PET dataset, the maximum accuracies are obtained with a large number of voxels $f>15000$, however, in the case of VDLN-HMPAO, we obtain similar performance with fewer voxels, $f<7000$ in all selection criteria. 
+
+\begin{figure}
+	\centering
+	\subfloat[]{\includegraphics[width=0.49\linewidth]{Graphics/ch4/accuracyOP-FA_vsK_comparison_ADNI-PET.eps}\label{fig:ADNI-PET-FA-OP-VSN}}
+	\subfloat[]{\includegraphics[width=0.49\linewidth]{Graphics/ch4/accuracyOP-ICA_vsK_comparison_ADNI-PET.eps}\label{fig:ADNI-PET-ICA-OP-VSN}}
+	
+	\subfloat[]{\includegraphics[width=0.49\linewidth]{Graphics/ch4/accuracyOP-FA_vsK_comparison_VDLN-HMPAO.eps}\label{fig:VDLN-HMPAO-FA-OP-VSN}}
+	\subfloat[]{\includegraphics[width=0.49\linewidth]{Graphics/ch4/accuracyOP-ICA_vsK_comparison_VDLN-HMPAO.eps}\label{fig:VDLN-HMPAO-ICA-OP-VSN}}
+	
+	\caption{Performance of the proposed system using the two \ac{AD} datasets: ADNI-PET and VDLN-HMPAO at the operation point, and how they vary over the number of selected voxels. } 
+	\label{fig:accuracyOP-ADvsN}
+\end{figure}
+
+Now we can focus on the performance variations over the number of components in Figure~\ref{fig:accuracyOP-AD}. The accuracy slightly varies almost in any case, and there is a steep increase in the performance within the first five components in both \ac{FA} and \ac{ICA}. 
 
 \begin{figure}
 	\centering
@@ -282,20 +298,6 @@ Now we focus on non-averaged values, the values for which our system is optimal:
 \end{figure}
 
 A particular case is the combination of \ac{FA} and the relative entropy selection criteria applied to the VDLN-HMPAO dataset. In this case there seems to be a trend to achieve a maximum performance at between 5 components. But with the ADNI-PET dataset, the performance keeps and achieves maximum accuracy with $c\approxeq 20$. 
-
-As for the variation of the performance when increasing the number of selected voxels, we can see that there is always a tendency of slightly increase in both datasets and decomposition strategies, as can be seen in Figure~\ref{fig:accuracyOP-ADvsN}. For the ADNI-PET dataset, the maximum accuracies are obtained with a large number of voxels $f>15000$, however, in the case of VDLN-HMPAO, we obtain similar performance with fewer voxels, $f<7000$ in all selection criteria. 
-
-\begin{figure}
-	\centering
-	\subfloat[]{\includegraphics[width=0.49\linewidth]{Graphics/ch4/accuracyOP-FA_vsK_comparison_ADNI-PET.eps}\label{fig:ADNI-PET-FA-OP-VSN}}
-	\subfloat[]{\includegraphics[width=0.49\linewidth]{Graphics/ch4/accuracyOP-ICA_vsK_comparison_ADNI-PET.eps}\label{fig:ADNI-PET-ICA-OP-VSN}}
-	
-	\subfloat[]{\includegraphics[width=0.49\linewidth]{Graphics/ch4/accuracyOP-FA_vsK_comparison_VDLN-HMPAO.eps}\label{fig:VDLN-HMPAO-FA-OP-VSN}}
-	\subfloat[]{\includegraphics[width=0.49\linewidth]{Graphics/ch4/accuracyOP-ICA_vsK_comparison_VDLN-HMPAO.eps}\label{fig:VDLN-HMPAO-ICA-OP-VSN}}
-	
-	\caption{Performance of the proposed system using the two \ac{AD} datasets: ADNI-PET and VDLN-HMPAO at the operation point, and how they vary over the number of selected voxels. } 
-	\label{fig:accuracyOP-ADvsN}
-\end{figure}
 
 In Table~\ref{tab:featureAD} we show the performance values obtained at the operation point for our different test combining decomposition algorithms and selection criteria, for the two datasets analysed in this section. It is obvious that both datasets obtain similar performance in almost every case, with values close to $0.9$. 
 
@@ -377,7 +379,26 @@ Regarding the application of the \ac{ICA} decomposition model to the DaTSCAN dat
 In average, PPMI-DAT and VDLV-DAT achieve similar performance, while VDLN-DAT generally achieves much poorer results. However, the behaviour of the system when varying the number of voxels or number of components is similar in all three datasets. The tendency is that accuracy does not significantly vary when increasing the number of voxels (except in the case of the relative entropy and VDLN-DAT). In contrast, when varying the number of components, we observe that the maximum performance is achieved in the first components, typically between 5 and 10. 
 
 \subsubsection{At the Operation Point}
-Let us now have a look at the behaviour of this system at the operation point, using the parameters $c$ and $f$ for which our system is optimal. First, we can explore how the performance changes over the number of components when using \ac{FA} and \ac{ICA}, in Figure~\ref{fig:accuracyOP-PKS}. 
+Let us now have a look at the behaviour of this system at the operation point, using the parameters $c$ and $f$ for which our system is optimal. When varying the number of voxels selected, we obtain the graphs presented at Figure~\ref{fig:accuracyOP-PKSvsN}. 
+
+\begin{figure}
+	\subfloat[]{\includegraphics[width=0.49\linewidth]{Graphics/ch4/accuracyOP-FA_vsK_comparison_PPMI-DAT.eps}\label{fig:PPMI-DAT-FA-OP-vsN}}
+	\subfloat[]{\includegraphics[width=0.49\linewidth]{Graphics/ch4/accuracyOP-ICA_vsK_comparison_PPMI-DAT.eps}\label{fig:PPMI-DAT-ICA-OP-vsN}}
+	
+	\subfloat[]{\includegraphics[width=0.49\linewidth]{Graphics/ch4/accuracyOP-FA_vsK_comparison_VDLN-DAT.eps}\label{fig:VDLN-DAT-FA-OP-vsN}}
+	\subfloat[]{\includegraphics[width=0.49\linewidth]{Graphics/ch4/accuracyOP-ICA_vsK_comparison_VDLN-DAT.eps}\label{fig:VDLN-DAT-ICA-OP-vsN}}
+	
+	\subfloat[]{\includegraphics[width=0.49\linewidth]{Graphics/ch4/accuracyOP-FA_vsK_comparison_VDLV-DAT.eps}\label{fig:VDLV-DAT-FA-OP-vsN}}
+	\subfloat[]{\includegraphics[width=0.49\linewidth]{Graphics/ch4/accuracyOP-ICA_vsK_comparison_VDLV-DAT.eps}\label{fig:VDLV-DAT-ICA-OP-vsN}}
+	
+	\caption[Performance at the operation point for the \ac{PKS} datasets, over the number of selected voxels.]{Performance of the proposed system using the two \ac{PKS} datasets: PPMI-DAT, VDLN-DAT and VDLV-DAT at the operation point, and how they vary over the number of selected voxels. } 
+	\label{fig:accuracyOP-PKSvsN}
+\end{figure}
+
+
+
+
+Now, we can explore how the performance changes over the number of components when using \ac{FA} and \ac{ICA}, in Figure~\ref{fig:accuracyOP-PKS}. 
 
 \begin{figure}
 	\subfloat[]{\includegraphics[width=0.49\linewidth]{Graphics/ch4/accuracyOP-FA_vsN_comparison_PPMI-DAT.eps}\label{fig:PPMI-DAT-FA-OP}}
@@ -396,20 +417,6 @@ Let us now have a look at the behaviour of this system at the operation point, u
 In this first case, the most evident result is the general performance of our system in the three datasets. It is clear that the system performs better when tested on VDLV-DAT than when tested on PPMI-DAT, and both datasets outperform, VDLN-DAT. It is even clearer that when testing on VDLV-DAT, the results are similar using any type of decomposition and selection criteria, with similar performance. We will discuss this issue in more detail later. 
 
 The tendency of the performance at the operation point is similar to the average behaviour commented before. In general, there is an accuracy increasing in the first components (usually, between 5 and 10 depending on the decomposition) and then, the performance remains stable. Again, the combination of relative entropy selection and VDLN-DAT achieves striking results. For this dataset, the higher performance is obtained with more than 10 components ($c=14$), and shows higher variability than other datasets. 
-
-\begin{figure}
-	\subfloat[]{\includegraphics[width=0.49\linewidth]{Graphics/ch4/accuracyOP-FA_vsK_comparison_PPMI-DAT.eps}\label{fig:PPMI-DAT-FA-OP-vsN}}
-	\subfloat[]{\includegraphics[width=0.49\linewidth]{Graphics/ch4/accuracyOP-ICA_vsK_comparison_PPMI-DAT.eps}\label{fig:PPMI-DAT-ICA-OP-vsN}}
-	
-	\subfloat[]{\includegraphics[width=0.49\linewidth]{Graphics/ch4/accuracyOP-FA_vsK_comparison_VDLN-DAT.eps}\label{fig:VDLN-DAT-FA-OP-vsN}}
-	\subfloat[]{\includegraphics[width=0.49\linewidth]{Graphics/ch4/accuracyOP-ICA_vsK_comparison_VDLN-DAT.eps}\label{fig:VDLN-DAT-ICA-OP-vsN}}
-	
-	\subfloat[]{\includegraphics[width=0.49\linewidth]{Graphics/ch4/accuracyOP-FA_vsK_comparison_VDLV-DAT.eps}\label{fig:VDLV-DAT-FA-OP-vsN}}
-	\subfloat[]{\includegraphics[width=0.49\linewidth]{Graphics/ch4/accuracyOP-ICA_vsK_comparison_VDLV-DAT.eps}\label{fig:VDLV-DAT-ICA-OP-vsN}}
-	
-	\caption[Performance at the operation point for the \ac{PKS} datasets, over the number of selected voxels.]{Performance of the proposed system using the two \ac{PKS} datasets: PPMI-DAT, VDLN-DAT and VDLV-DAT at the operation point, and how they vary over the number of selected voxels. } 
-	\label{fig:accuracyOP-PKSvsN}
-\end{figure}
 
 
 
