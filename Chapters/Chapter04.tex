@@ -35,17 +35,6 @@ In this work, we will use filtering methods to perform feature selection. As we 
 
 Feature selection can be used before or after feature extraction. When using computationally-intensive algorithms such as \ac{FA} or especially \ac{ICA}, the selection of best features prior to the decomposition is key to obtain high performance while keeping the computation times small \cite{Martinez201141,Martinez-Murcia20129676}. This also removes noise in some cases where the decomposition algorithm cannot compute correctly the variance. 
 
-\begin{figure}[bth]
-	\myfloatalign
-	\subfloat[$t$-test.]
-	{\includegraphics[width=.3\linewidth]{Graphics/ch4/ttest_map.eps}\label{fig:ttest_map}}\quad
-	\subfloat[\ac{KL} divergence.]
-	{\includegraphics[width=.3\linewidth]{Graphics/ch4/kl_map.eps}\label{fig:kl_map}}\quad
-	\subfloat[\ac{MWW} $U$-test.]
-	{\includegraphics[width=.3\linewidth]{Graphics/ch4/wilcoxon_map.eps}\label{fig:wilcoxon_map}}
-	\caption[Comparison between the different filtering methods.]{Comparison between the different filtering methods, and the regions selected by them, in the ADNI-PET dataset. }\label{fig:comparisonSelection}
-\end{figure}
-
 Three feature selection algorithms have been used in this thesis, not only in the \ac{CAD} systems proposed in this chapter, but in many other models that will be presented later: the $t$-Test, the Kullback-Leibler divergence or Relative Entropy, and the Mann-Whitney-Wilcoxon rank test. 
 
 \subsection{$t$-test}
@@ -423,7 +412,9 @@ Now we will focus on the specific performance values obtained at the operation p
 	\begin{tabularx}{\linewidth}{Xllccc}
 		\tableheadline{DB} & \tableheadline{Dec.} & \tableheadline{Criterion} & \tableheadline{Accuracy} & \tableheadline{Sensitivity} & \tableheadline{Specificity}\\
 		\toprule
-		\multirow{6}{1.7cm}{PPMI-DAT} & \multirow{3}{*}{\ac{FA}} & t-test & $ 0.917 \pm 0.037 $ & $ 0.918 \pm 0.095 $ & $ 0.918 \pm 0.091 $ \\
+		\multirow{7}{1.7cm}{PPMI-DAT} & \ac{VAF} & - & $0.922 \pm 0.062$ & $0.900 \pm 0.094$ & $0.958 \pm 0.085$ \\
+		\cline{2-6}
+		& \multirow{3}{*}{\ac{FA}} & t-test & $ 0.917 \pm 0.037 $ & $ 0.918 \pm 0.095 $ & $ 0.918 \pm 0.091 $ \\
 		&  & entropy & $ 0.917 \pm 0.060 $ & $ 0.918 \pm 0.076 $ & $ 0.921 \pm 0.120 $ \\
 		&  & wilcoxon & $ 0.912 \pm 0.056 $ & $ 0.927 \pm 0.098 $ & $ 0.889 \pm 0.102 $ \\
 		\cline{2-6}
@@ -463,8 +454,35 @@ Our \ac{CAD} system performs reasonably well on the \ac{AD} datasets, where it a
 
 We have chosen to evaluate the system only on linear \acp{SVC} for two main reasons. First, it favours a side-by-side comparison between all methods applied to different datasets in this thesis. And second, linear \ac{SVC} has been proven to be better generalizable than other systems, even in environments where the small sample size is the norm \cite{Vapnik1997}. 
 
-The selected areas in these systems correspond to the 
+The selected areas on these \ac{CAD} systems correspond to the highlighted areas in Figure~\ref{fig:comparisonSelection_adnipet}, in the case of ADNI-PET dataset. These areas correspond fundamentally to 
 
+
+\begin{figure}[bth]
+	\myfloatalign
+	\subfloat[$t$-test.]
+	{\includegraphics[height=.25\textheight]{Graphics/ch4/ttest_map_adnipet.eps}\label{fig:ttest_map}}\quad
+	\subfloat[\ac{KL} divergence.]
+	{\includegraphics[height=.25\textheight]{Graphics/ch4/kl_map_adnipet.eps}\label{fig:kl_map}}\quad
+	\subfloat[\ac{MWW} $U$-test.]
+	{\includegraphics[height=.25\textheight]{Graphics/ch4/wilcoxon_map_adnipet.eps}\label{fig:wilcoxon_map}}
+	\caption[Comparison between the different filtering methods in ADNI-PET.]{Comparison between the different filtering methods, and the regions selected by them, in the ADNI-PET dataset. }\label{fig:comparisonSelection_adnipet}
+\end{figure}
+
+Similar areas are highlighted in the VDLN-HMPAO.
+
+
+\begin{figure}[bth]
+	\myfloatalign
+	\subfloat[$t$-test.]
+	{\includegraphics[height=.25\textheight]{Graphics/ch4/ttest_map_vdln-hmpao.eps}\label{fig:ttest_map_vdlnhmpao}}\quad
+	\subfloat[\ac{KL} divergence.]
+	{\includegraphics[height=.25\textheight]{Graphics/ch4/kl_map_vdln-hmpao.eps}\label{fig:kl_map_vdlnhmpao}}\quad
+	\subfloat[\ac{MWW} $U$-test.]
+	{\includegraphics[height=.25\textheight]{Graphics/ch4/wilcoxon_map_vdln-hmpao.eps}\label{fig:wilcoxon_map_vdlnhmpao}}
+	\caption[Comparison between the different filtering methods in ADNI-PET.]{Comparison between the different filtering methods, and the regions selected by them, in the ADNI-PET dataset. }\label{fig:comparisonSelection_vdlnhmpao}
+\end{figure}
+
+FIGURES AND COMMENTS ON AD . 
 
 In most cases, the Wilcoxon and the $t$-test obtain similar performance, which can be due to their similarity under the normal distribution \cite{Fay10}. 
 

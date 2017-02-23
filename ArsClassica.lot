@@ -30,58 +30,58 @@
 \defcounter {refsection}{0}\relax 
 \addvspace {10\p@ }
 \defcounter {refsection}{0}\relax 
-\contentsline {table}{\numberline {4.1}{\ignorespaces Performance values for the Alzheimer's datasets}}{54}{table.caption.85}
+\contentsline {table}{\numberline {4.1}{\ignorespaces Performance values for the Alzheimer's datasets}}{53}{table.caption.84}
 \defcounter {refsection}{0}\relax 
-\contentsline {table}{\numberline {4.2}{\ignorespaces Performance values for the Parkinson's datasets}}{61}{table.caption.90}
-\defcounter {refsection}{0}\relax 
-\addvspace {10\p@ }
-\defcounter {refsection}{0}\relax 
-\contentsline {table}{\numberline {5.1}{\ignorespaces Accuracy values obtained at the operation point, using Cluster Tendency as a feature. The $I_{th}$ used to compute the GLC matrix is also displayed. \relax }}{67}{table.caption.93}
-\defcounter {refsection}{0}\relax 
-\contentsline {table}{\numberline {5.2}{\ignorespaces Best results obtained in experiment 2, using three databases, in terms of its accuracy, sensitivity, specificity, Positive Likelihood and Negative Likelihood. The amount of features used to achieve these results is shown as a percentage of the total number of features (1560). Values obtained by leave-one-out.\relax }}{70}{table.caption.96}
-\defcounter {refsection}{0}\relax 
-\contentsline {table}{\numberline {5.3}{\ignorespaces Comparison of our proposed system (using different texture features) and some other methods in the bibliography: VAF system using the intensity-normalized images, a combination of intensity normalization strategies and classifiers (VAF-IN) \cite {Illan2012}, a SVD-based approach \cite {Segovia2012} and EMD using the third independent mode function (IMF3) \cite {Rojas2012}.\relax }}{71}{table.caption.97}
+\contentsline {table}{\numberline {4.2}{\ignorespaces Performance values for the Parkinson's datasets}}{60}{table.caption.89}
 \defcounter {refsection}{0}\relax 
 \addvspace {10\p@ }
 \defcounter {refsection}{0}\relax 
-\contentsline {table}{\numberline {6.1}{\ignorespaces Performance values (Average $\pm $ Standard Deviation) for the Voxels as Features approach in both \ac {GM} and \ac {WM} tissues.\relax }}{92}{table.caption.111}
+\contentsline {table}{\numberline {5.1}{\ignorespaces Accuracy values obtained at the operation point, using Cluster Tendency as a feature. The $I_{th}$ used to compute the GLC matrix is also displayed. \relax }}{67}{table.caption.94}
 \defcounter {refsection}{0}\relax 
-\contentsline {table}{\numberline {6.2}{\ignorespaces Performance values (Average $\pm $ Standard Deviation) for the different \ac {SBM} approaches.\relax }}{92}{table.caption.112}
+\contentsline {table}{\numberline {5.2}{\ignorespaces Best results obtained in experiment 2, using three databases, in terms of its accuracy, sensitivity, specificity, Positive Likelihood and Negative Likelihood. The amount of features used to achieve these results is shown as a percentage of the total number of features (1560). Values obtained by leave-one-out.\relax }}{70}{table.caption.97}
 \defcounter {refsection}{0}\relax 
-\contentsline {table}{\numberline {6.3}{\ignorespaces Performance values ($\pm $SD) for the selected paths as features, and using $t$-test to select the voxels.\relax }}{99}{table.caption.119}
-\defcounter {refsection}{0}\relax 
-\contentsline {table}{\numberline {6.4}{\ignorespaces Performance values ($\pm $SD) for each of the measures used in the \ac {SBM} article.\relax }}{100}{table.caption.120}
-\defcounter {refsection}{0}\relax 
-\contentsline {table}{\numberline {6.5}{\ignorespaces Performance values ($\pm $SD) for each of the 10 texture features.\relax }}{100}{table.caption.121}
-\defcounter {refsection}{0}\relax 
-\contentsline {table}{\numberline {6.6}{\ignorespaces Comparison between our algorithm performance values (best values for selected voxels in all paths and texture features) ($\pm $SD) and other methods in the bibliography\relax }}{107}{table.caption.125}
+\contentsline {table}{\numberline {5.3}{\ignorespaces Comparison of our proposed system (using different texture features) and some other methods in the bibliography: VAF system using the intensity-normalized images, a combination of intensity normalization strategies and classifiers (VAF-IN) \cite {Illan2012}, a SVD-based approach \cite {Segovia2012} and EMD using the third independent mode function (IMF3) \cite {Rojas2012}.\relax }}{71}{table.caption.98}
 \defcounter {refsection}{0}\relax 
 \addvspace {10\p@ }
 \defcounter {refsection}{0}\relax 
-\contentsline {table}{\numberline {7.1}{\ignorespaces Between-site classification accuracy ($\pm $ standard deviation) for different modalities and masks without and with \acs {SWPCA} correction.}}{120}{table.caption.133}
+\contentsline {table}{\numberline {6.1}{\ignorespaces Performance values (Average $\pm $ Standard Deviation) for the Voxels as Features approach in both \ac {GM} and \ac {WM} tissues.\relax }}{92}{table.caption.112}
 \defcounter {refsection}{0}\relax 
-\contentsline {table}{\numberline {7.2}{\ignorespaces Classification accuracy (Acc), sensitivity (Sen) and specificity (Spec) $\pm $ standard deviation for each modality and mask using the participants acquired at the LON and CAM sites.}}{121}{table.caption.134}
+\contentsline {table}{\numberline {6.2}{\ignorespaces Performance values (Average $\pm $ Standard Deviation) for the different \ac {SBM} approaches.\relax }}{92}{table.caption.113}
 \defcounter {refsection}{0}\relax 
-\contentsline {table}{\numberline {7.3}{\ignorespaces Classification accuracy (Acc), sensitivity (Sen), and specificity (Spec) $\pm $ STD for the different modalities and masks using ALL, before and after applying \acs {SWPCA}.}}{125}{table.caption.137}
+\contentsline {table}{\numberline {6.3}{\ignorespaces Performance values ($\pm $SD) for the selected paths as features, and using $t$-test to select the voxels.\relax }}{99}{table.caption.120}
 \defcounter {refsection}{0}\relax 
-\contentsline {table}{\numberline {7.4}{\ignorespaces Performance measures for the combined DaTSCAN dataset}}{129}{table.caption.138}
+\contentsline {table}{\numberline {6.4}{\ignorespaces Performance values ($\pm $SD) for each of the measures used in the \ac {SBM} article.\relax }}{100}{table.caption.121}
 \defcounter {refsection}{0}\relax 
-\addvspace {10\p@ }
+\contentsline {table}{\numberline {6.5}{\ignorespaces Performance values ($\pm $SD) for each of the 10 texture features.\relax }}{100}{table.caption.122}
 \defcounter {refsection}{0}\relax 
-\contentsline {table}{\numberline {8.1}{\ignorespaces Baseline performance of the set, using the original dataset.\relax }}{133}{table.caption.142}
-\defcounter {refsection}{0}\relax 
-\contentsline {table}{\numberline {8.2}{\ignorespaces Performance of Exp 1, demonstrating the predictive ability of the simulated images over the real dataset.\relax }}{133}{table.caption.143}
-\defcounter {refsection}{0}\relax 
-\contentsline {table}{\numberline {8.3}{\ignorespaces Performance of the Exp 3 proves the independence of the simulated images with respect to the originals.\relax }}{134}{table.caption.144}
+\contentsline {table}{\numberline {6.6}{\ignorespaces Comparison between our algorithm performance values (best values for selected voxels in all paths and texture features) ($\pm $SD) and other methods in the bibliography\relax }}{107}{table.caption.126}
 \defcounter {refsection}{0}\relax 
 \addvspace {10\p@ }
 \defcounter {refsection}{0}\relax 
+\contentsline {table}{\numberline {7.1}{\ignorespaces Between-site classification accuracy ($\pm $ standard deviation) for different modalities and masks without and with \acs {SWPCA} correction.}}{120}{table.caption.134}
+\defcounter {refsection}{0}\relax 
+\contentsline {table}{\numberline {7.2}{\ignorespaces Classification accuracy (Acc), sensitivity (Sen) and specificity (Spec) $\pm $ standard deviation for each modality and mask using the participants acquired at the LON and CAM sites.}}{121}{table.caption.135}
+\defcounter {refsection}{0}\relax 
+\contentsline {table}{\numberline {7.3}{\ignorespaces Classification accuracy (Acc), sensitivity (Sen), and specificity (Spec) $\pm $ STD for the different modalities and masks using ALL, before and after applying \acs {SWPCA}.}}{125}{table.caption.138}
+\defcounter {refsection}{0}\relax 
+\contentsline {table}{\numberline {7.4}{\ignorespaces Performance measures for the combined DaTSCAN dataset}}{129}{table.caption.139}
+\defcounter {refsection}{0}\relax 
 \addvspace {10\p@ }
 \defcounter {refsection}{0}\relax 
-\contentsline {table}{\numberline {A.1}{\ignorespaces Summary of the datasets used in this thesis.}}{141}{table.caption.145}
+\contentsline {table}{\numberline {8.1}{\ignorespaces Baseline performance of the set, using the original dataset.\relax }}{133}{table.caption.143}
 \defcounter {refsection}{0}\relax 
-\contentsline {table}{\numberline {A.2}{\ignorespaces Demographics of the AIMS-MRI dataset.}}{142}{table.caption.150}
+\contentsline {table}{\numberline {8.2}{\ignorespaces Performance of Exp 1, demonstrating the predictive ability of the simulated images over the real dataset.\relax }}{133}{table.caption.144}
 \defcounter {refsection}{0}\relax 
-\contentsline {table}{\numberline {A.3}{\ignorespaces Demographic details of the ADNI-PET dataset.}}{145}{table.caption.151}
+\contentsline {table}{\numberline {8.3}{\ignorespaces Performance of the Exp 3 proves the independence of the simulated images with respect to the originals.\relax }}{134}{table.caption.145}
+\defcounter {refsection}{0}\relax 
+\addvspace {10\p@ }
+\defcounter {refsection}{0}\relax 
+\addvspace {10\p@ }
+\defcounter {refsection}{0}\relax 
+\contentsline {table}{\numberline {A.1}{\ignorespaces Summary of the datasets used in this thesis.}}{141}{table.caption.146}
+\defcounter {refsection}{0}\relax 
+\contentsline {table}{\numberline {A.2}{\ignorespaces Demographics of the AIMS-MRI dataset.}}{142}{table.caption.151}
+\defcounter {refsection}{0}\relax 
+\contentsline {table}{\numberline {A.3}{\ignorespaces Demographic details of the ADNI-PET dataset.}}{145}{table.caption.152}
 \defcounter {refsection}{0}\relax 
 \addvspace {10\p@ }

@@ -40,7 +40,7 @@
   \DeclareRobustCommand{\spacedallcaps}[1]{\sffamily%
   \textssc{\MakeTextUppercase{#1}}}%
   \DeclareRobustCommand{\spacedlowsmallcaps}[1]%
-  {\sffamily\textssc{\MakeTextLowercase{#1}}}%
+  {\sffamily\textssc{{#1}}}%
 }{%
   \ifthenelse{\boolean{@pdfspacing}}%
   {%
@@ -48,7 +48,7 @@
     \DeclareRobustCommand{\spacedallcaps}[1]%
     {\sffamily\textls[160]{\MakeTextUppercase{#1}}}%
     \DeclareRobustCommand{\spacedlowsmallcaps}[1]%
-    {\sffamily\textls[80]{\scshape\MakeTextLowercase{#1}}}%
+    {\sffamily\textls[80]{\scshape{#1}}}%
   }{%
     \RequirePackage{soul} 
     \sodef\allcapsspacing{\sffamily\upshape}%
@@ -58,7 +58,7 @@
     \DeclareRobustCommand{\spacedallcaps}[1]%
     {\MakeTextUppercase{\allcapsspacing{#1}}}%   
 	\DeclareRobustCommand{\spacedlowsmallcaps}[1]%
-	{\MakeTextLowercase{\textsc%
+	{{\textsc%
 	   {\lowsmallcapsspacing{#1}}}}%
   }%
 }
@@ -69,7 +69,7 @@
 % Headlines
 %************************************************************
 \renewcommand{\sectionmark}[1]{\markright{\textsc%
-{\MakeTextLowercase{\thesection}} \spacedlowsmallcaps{#1}}}
+{{\thesection}} \spacedlowsmallcaps{#1}}}
 \lehead{\mbox{\llap{\small\thepage\kern1em\color{halfgray}%
 \vline}%
 \color{halfgray}\hspace{0.5em}\headmark\hfil}} 
@@ -91,7 +91,7 @@
     \titleformat{\part}[display]
         {\normalfont\centering\large}%
         {\thispagestyle{empty}\partname~\MakeTextUppercase{\thepart}}{1em}%
-        {\color{Maroon}\spacedallcaps}
+        {\color{Maroon}\bfseries\spacedallcaps}
     }{\relax}
     % chapters
     \ifthenelse{\boolean{@linedheaders}}%
@@ -107,25 +107,25 @@
         {\normalfont\Large\sffamily}%
         {{\color{halfgray}\chapterNumber\thechapter%
         \hspace{10pt}\vline}  }{10pt}%
-        {\spacedallcaps}}
+        {\bfseries\spacedallcaps}}
     % sections
     \titleformat{\section} 
     	  {\normalfont\Large\sffamily}{\textsc%
-	  {\MakeTextLowercase{\thesection}}}%
+	  {\MakeTextUppercase{\thesection}}}%
          {1em}{\spacedlowsmallcaps}
     % subsections
     \titleformat{\subsection}
-    {\normalfont\sffamily\bfseries}{\textsc{\MakeTextLowercase%
+    {\normalfont\sffamily\bfseries}{\textsc{%
     {\thesubsection}}}{1em}{\normalsize}
     % subsubsections
     \titleformat{\subsubsection}
     {\normalfont\sffamily\bfseries\itshape}{\textsc%
-    {\MakeTextLowercase{\thesubsubsection}}}%
+    {{\thesubsubsection}}}%
     {1em}{\normalsize\itshape}        
     % paragraphs
     \titleformat{\paragraph}[runin]
     {\normalfont\normalsize\sffamily\bfseries}{\textsc%
-    {\MakeTextLowercase{\theparagraph}}}%
+    {{\theparagraph}}}%
     {0pt}{\spacedlowsmallcaps}    
     % descriptionlabels
     \renewcommand{\descriptionlabel}[1]{\hspace*{\labelsep}%
