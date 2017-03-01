@@ -4223,6 +4223,41 @@
       \field{pages}{1483\bibrangedash 1492}
       \range{pages}{10}
     \endentry
+    \entry{Vapnik1997}{article}{}
+      \true{moreauthor}
+      \true{morelabelname}
+      \name{author}{3}{}{%
+        {{hash=c2b3e05872463585b4be6aab10d10d63}{%
+           family={Vapnik},
+           family_i={V\bibinitperiod},
+           given={Vladimir},
+           given_i={V\bibinitperiod}}}%
+        {{hash=98b7248250d4fb998b44390236489dab}{%
+           family={Golowich},
+           family_i={G\bibinitperiod},
+           given={Steven\bibnamedelima E},
+           given_i={S\bibinitperiod\bibinitdelim E\bibinitperiod}}}%
+        {{hash=a4d2eb3aadfce48c1b00303f0988e905}{%
+           family={Smola},
+           family_i={S\bibinitperiod},
+           given={Alex},
+           given_i={A\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Morgan Kaufmann Publishers}%
+      }
+      \strng{namehash}{80764a4315ca1ba1dd45b716bdb36ed5}
+      \strng{fullhash}{4aa28e88139d64238bf3db5971f8ab48}
+      \field{sortinit}{1}
+      \field{sortinithash}{53e85f4cf497d2a4e1d51786552bcbf1}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Advances in neural information processing systems}
+      \field{title}{Support vector method for function approximation, regression estimation, and signal processing}
+      \field{year}{1997}
+      \field{pages}{281\bibrangedash 287}
+      \range{pages}{7}
+    \endentry
     \entry{Arndt1996}{article}{}
       \name{author}{5}{}{%
         {{hash=d7446b0e86b0861f2eafc318b1fd8c98}{%
@@ -8900,6 +8935,41 @@
       \endverb
       \keyw{Automation; Female; Humans; Image Interpretation; {Computer-Assisted}; Male; Middle Aged; Parkinsonian Disorders; Principal Component Analysis; Tomography; {Emission-Computed}; {Single-Photon}; Tropanes}
     \endentry
+    \entry{Vapnik1997}{article}{}
+      \true{moreauthor}
+      \true{morelabelname}
+      \name{author}{3}{}{%
+        {{hash=c2b3e05872463585b4be6aab10d10d63}{%
+           family={Vapnik},
+           family_i={V\bibinitperiod},
+           given={Vladimir},
+           given_i={V\bibinitperiod}}}%
+        {{hash=98b7248250d4fb998b44390236489dab}{%
+           family={Golowich},
+           family_i={G\bibinitperiod},
+           given={Steven\bibnamedelima E},
+           given_i={S\bibinitperiod\bibinitdelim E\bibinitperiod}}}%
+        {{hash=a4d2eb3aadfce48c1b00303f0988e905}{%
+           family={Smola},
+           family_i={S\bibinitperiod},
+           given={Alex},
+           given_i={A\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Morgan Kaufmann Publishers}%
+      }
+      \strng{namehash}{80764a4315ca1ba1dd45b716bdb36ed5}
+      \strng{fullhash}{4aa28e88139d64238bf3db5971f8ab48}
+      \field{sortinit}{V}
+      \field{sortinithash}{d18f5ce25ce0b5ca7f924e3f6c04870e}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Advances in neural information processing systems}
+      \field{title}{Support vector method for function approximation, regression estimation, and signal processing}
+      \field{year}{1997}
+      \field{pages}{281\bibrangedash 287}
+      \range{pages}{7}
+    \endentry
     \entry{Weiskopf2013}{article}{}
       \name{author}{9}{}{%
         {{hash=32d6921b813a342d678cf6ee9395b067}{%
@@ -9130,48 +9200,48 @@
       \endverb
     \endentry
   \endsortlist
-  \missing{Zhao2007}
-  \missing{Inititative2010}
-  \missing{Zhou2008}
-  \missing{Chen2008}
-  \missing{Ram'irez2009}
-  \missing{Yen1995}
-  \missing{xu2009source}
-  \missing{Locatelli1998}
-  \missing{dougall_systematic_2004}
+  \missing{Unay2007}
   \missing{clausi2002analysis}
-  \missing{Grana2011}
-  \missing{Rojas2012}
-  \missing{Shaffer1995}
-  \missing{chan2001patterns}
-  \missing{soh1999texture}
+  \missing{kovalev2001three}
   \missing{Shepp82}
-  \missing{jobst_accurate_1998}
-  \missing{Ramirez2009}
-  \missing{PPMI}
-  \missing{Jong2008}
-  \missing{IAIllan2010}
-  \missing{Tzourio-Mazoyer2002}
-  \missing{han2006reliability}
-  \missing{Alvarez2009}
-  \missing{Fischl2004}
-  \missing{Botev2010}
+  \missing{Yen1995}
+  \missing{Medina2008}
+  \missing{Ojala1996}
+  \missing{dougall_systematic_2004}
+  \missing{xu2009source}
+  \missing{Vardi1985}
+  \missing{AAL}
+  \missing{Rojas2012}
   \missing{martinez2013texture}
   \missing{Evans1993}
-  \missing{Unay2007}
+  \missing{Kohavi1995a}
+  \missing{PPMI}
+  \missing{IAIllan2010}
+  \missing{Ortiz2013}
+  \missing{jobst_accurate_1998}
+  \missing{Zhao2007}
+  \missing{Inititative2010}
+  \missing{Ram'irez2009}
+  \missing{Segovia2012}
+  \missing{soh1999texture}
+  \missing{Fischl2004}
+  \missing{Tzourio-Mazoyer2002}
   \missing{Illan2012}
   \missing{sikio2015mr}
-  \missing{kovalev2001three}
-  \missing{Kohavi1995a}
-  \missing{Vapnik1982}
-  \missing{AAL}
-  \missing{Vardi1985}
-  \missing{Medina2008}
-  \missing{Ortiz2013}
+  \missing{chan2001patterns}
+  \missing{Alvarez2009}
+  \missing{Chen2008}
+  \missing{Zhou2008}
   \missing{Illan2014}
   \missing{Martinez-Murcia2014}
-  \missing{Segovia2012}
-  \missing{Ojala1996}
+  \missing{Shaffer1995}
+  \missing{Vapnik1982}
+  \missing{Botev2010}
+  \missing{Locatelli1998}
+  \missing{Jong2008}
+  \missing{Grana2011}
+  \missing{han2006reliability}
+  \missing{Ramirez2009}
 \endrefsection
 
 \refsection{1}

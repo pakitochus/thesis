@@ -1281,4 +1281,16 @@
   timestamp = {2009.02.11},
 }
 
+@Article{FastICA99,
+  author    = {Hyv{\"a}rinen, A.},
+  title     = {{Fast and Robust Fixed-Point Algorithms for Independent Component Analysis}},
+  journal   = {IEEE Transactions on Neural Networks},
+  year      = {1999},
+  volume    = {10},
+  number    = {3},
+  pages     = {626--634},
+  owner     = {pakitochus},
+  timestamp = {2011.08.30},
+}
+
 @Comment{jabref-meta: databaseType:bibtex;}
