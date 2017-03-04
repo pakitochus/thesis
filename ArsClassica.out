@@ -56,4 +56,69 @@
 \BOOKMARK [0][]{chapter.5}{5 Texture Features}{part.2}% 56
 \BOOKMARK [1][-]{section.5.1}{5.1 Introduction}{chapter.5}% 57
 \BOOKMARK [1][-]{section.5.2}{5.2 Haralick Texture Features}{chapter.5}% 58
-\BOOKMARK [
+\BOOKMARK [1][-]{section.5.3}{5.3 Results}{chapter.5}% 59
+\BOOKMARK [2][-]{subsection.5.3.1}{5.3.1 Experiment 1}{section.5.3}% 60
+\BOOKMARK [2][-]{subsection.5.3.2}{5.3.2 Experiment 2}{section.5.3}% 61
+\BOOKMARK [1][-]{section.5.4}{5.4 Discussion}{chapter.5}% 62
+\BOOKMARK [0][]{chapter.6}{6 Spherical Brain Mapping}{part.2}% 63
+\BOOKMARK [1][-]{section.6.1}{6.1 Introduction}{chapter.6}% 64
+\BOOKMARK [1][-]{section.6.2}{6.2 Spherical Brain Mapping}{chapter.6}% 65
+\BOOKMARK [2][-]{subsection.6.2.1}{6.2.1 Layered Extension}{section.6.2}% 66
+\BOOKMARK [1][-]{section.6.3}{6.3 Volumetric Radial LBP}{chapter.6}% 67
+\BOOKMARK [1][-]{section.6.4}{6.4 Path via Hidden Markov Models}{chapter.6}% 68
+\BOOKMARK [2][-]{subsection.6.4.1}{6.4.1 Radial Texture Features}{section.6.4}% 69
+\BOOKMARK [1][-]{section.6.5}{6.5 Results}{chapter.6}% 70
+\BOOKMARK [2][-]{subsection.6.5.1}{6.5.1 Experimental settings and validation}{section.6.5}% 71
+\BOOKMARK [2][-]{subsection.6.5.2}{6.5.2 Statistical Significance Analysis}{section.6.5}% 72
+\BOOKMARK [2][-]{subsection.6.5.3}{6.5.3 Classification Analysis}{section.6.5}% 73
+\BOOKMARK [2][-]{subsection.6.5.4}{6.5.4 Experimental Setup}{section.6.5}% 74
+\BOOKMARK [2][-]{subsection.6.5.5}{6.5.5 2D and 3D demonstrations}{section.6.5}% 75
+\BOOKMARK [2][-]{subsection.6.5.6}{6.5.6 Intensity paths}{section.6.5}% 76
+\BOOKMARK [2][-]{subsection.6.5.7}{6.5.7 Texture features}{section.6.5}% 77
+\BOOKMARK [1][-]{section.6.6}{6.6 Discussion}{chapter.6}% 78
+\BOOKMARK [2][-]{subsection.6.6.1}{6.6.1 Spherical Brain Mapping}{section.6.6}% 79
+\BOOKMARK [2][-]{subsection.6.6.2}{6.6.2 Paths via HMM}{section.6.6}% 80
+\BOOKMARK [-1][]{part.3}{Increasing the Sample Size}{}% 81
+\BOOKMARK [0][]{chapter.7}{7 Significance Weighted Principal Component Analysis}{part.3}% 82
+\BOOKMARK [1][-]{section.7.1}{7.1 Significance Weighted Principal Component Analysis}{chapter.7}% 83
+\BOOKMARK [2][-]{subsection.7.1.1}{7.1.1 Principal Component Analysis}{section.7.1}% 84
+\BOOKMARK [2][-]{subsection.7.1.2}{7.1.2 One-Way Analysis of Variance}{section.7.1}% 85
+\BOOKMARK [2][-]{subsection.7.1.3}{7.1.3 Weighting Function}{section.7.1}% 86
+\BOOKMARK [1][-]{section.7.2}{7.2 Results for AIMS-MRI Dataset}{chapter.7}% 87
+\BOOKMARK [2][-]{subsection.7.2.1}{7.2.1 Experiment 1: Effect of Acquisition Site}{section.7.2}% 88
+\BOOKMARK [2][-]{subsection.7.2.2}{7.2.2 Experiment 2: Within-site Between-Group Differences}{section.7.2}% 89
+\BOOKMARK [2][-]{subsection.7.2.3}{7.2.3 Experiment 3: Effect of SWPCA on Group Differences}{section.7.2}% 90
+\BOOKMARK [2][-]{subsection.7.2.4}{7.2.4 Discussion}{section.7.2}% 91
+\BOOKMARK [1][-]{section.7.3}{7.3 Results for DaTSCAN Datasets}{chapter.7}% 92
+\BOOKMARK [0][]{chapter.8}{8 Simulation of Functional Brain Images}{part.3}% 93
+\BOOKMARK [1][-]{section.8.1}{8.1 Simulation Procedure}{chapter.8}% 94
+\BOOKMARK [2][-]{subsection.8.1.1}{8.1.1 Decomposition via PCA}{section.8.1}% 95
+\BOOKMARK [2][-]{subsection.8.1.2}{8.1.2 Probability Density Modelling using Kernel Density Estimation}{section.8.1}% 96
+\BOOKMARK [2][-]{subsection.8.1.3}{8.1.3 Probability Density Modelling using Multivariate Gaussian}{section.8.1}% 97
+\BOOKMARK [2][-]{subsection.8.1.4}{8.1.4 Random Number Generation}{section.8.1}% 98
+\BOOKMARK [2][-]{subsection.8.1.5}{8.1.5 Brain Image Synthesis}{section.8.1}% 99
+\BOOKMARK [1][-]{section.8.2}{8.2 Experimental Setup}{chapter.8}% 100
+\BOOKMARK [1][-]{section.8.3}{8.3 Results for ADNI-PET Dataset}{chapter.8}% 101
+\BOOKMARK [2][-]{subsection.8.3.1}{8.3.1 Experiment 1}{section.8.3}% 102
+\BOOKMARK [1][-]{section.8.4}{8.4 Results for DaTSCAN Datasets}{chapter.8}% 103
+\BOOKMARK [-1][]{part.4}{General Discussion and Conclusions}{}% 104
+\BOOKMARK [0][]{chapter.9}{9 General Discussion and Conclusions}{part.4}% 105
+\BOOKMARK [1][-]{section.9.1}{9.1 General Discussion}{chapter.9}% 106
+\BOOKMARK [2][-]{subsection.9.1.1}{9.1.1 Discussion on the algorithms}{section.9.1}% 107
+\BOOKMARK [2][-]{subsection.9.1.2}{9.1.2 Discussion on the diseases}{section.9.1}% 108
+\BOOKMARK [1][-]{section.9.2}{9.2 Conclusions}{chapter.9}% 109
+\BOOKMARK [1][-]{section.9.3}{9.3 Future Work}{chapter.9}% 110
+\BOOKMARK [-1][]{part.5}{Appendix}{}% 111
+\BOOKMARK [0][]{appendix.A}{A Datasets}{part.5}% 112
+\BOOKMARK [1][-]{section.A.1}{A.1 Magnetic Resonance Imaging}{appendix.A}% 113
+\BOOKMARK [2][-]{subsection.A.1.1}{A.1.1 ADNI-MRI, Alzheimer's Disease Neuroimaging Initiative}{section.A.1}% 114
+\BOOKMARK [2][-]{subsection.A.1.2}{A.1.2 AIMS-MRI, MRC-AIMS Consortium}{section.A.1}% 115
+\BOOKMARK [1][-]{section.A.2}{A.2 Positron Emission Tomography}{appendix.A}% 116
+\BOOKMARK [2][-]{subsection.A.2.1}{A.2.1 ADNI-PET, Alzheimer's Disease Neuroimaging Initiative}{section.A.2}% 117
+\BOOKMARK [1][-]{section.A.3}{A.3 Single Photon Emission Computed Tomography}{appendix.A}% 118
+\BOOKMARK [2][-]{subsection.A.3.1}{A.3.1 VDLN-HMPAO, Virgen de las Nieves}{section.A.3}% 119
+\BOOKMARK [2][-]{subsection.A.3.2}{A.3.2 VDLN-DAT, Virgen de las Nieves}{section.A.3}% 120
+\BOOKMARK [2][-]{subsection.A.3.3}{A.3.3 VDLV-DAT, Virgen de la Victoria Hospital}{section.A.3}% 121
+\BOOKMARK [2][-]{subsection.A.3.4}{A.3.4 PPMI-DAT, Parkinson's Progression Markers Initiative}{section.A.3}% 122
+\BOOKMARK [0][]{appendix.B}{B Background on Support Vector Machines}{part.5}% 123
+\BOOKMARK [-1][]{equation.B.0.4}{Bibliography}{}% 124
