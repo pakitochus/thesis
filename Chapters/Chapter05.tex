@@ -10,7 +10,9 @@ Texture features can be classified in first, second and higher order analysis, d
 
 The most popular form, with a very developed theoretical background, is second-order statistical texture analysis. This particular form is based on the probability of finding a pair of similar intensities at a certain distance and orientation of a certain image. From these probabilities, many measures can be derived, being the most popular the Haralick texture analysis \cite{Haralick73}. 
 
-\section{Haralick Texture Features}
+In this work we have used Haralick texture analysis to extract features from DaTSCAN images and perform an automatic diagnosis of \ac{PD}, as in \cite{Martinez-Murcia2013266,martinez2014parametrization}. First we will provide an introduction to Haralick texture features at Section~\ref{sec:haralick}. Later, in Section~\ref{sec:ch5results} we define the experiments and show their results. Finally, at Section~\ref{sec:ch5discuss} we discuss the implications of this systems and the evaluation results of our texture-based \ac{CAD} system.
+
+\section{Haralick Texture Features}\label{sec:haralick}
 \subsubsection{Gray Level Co-occurrence Matrix}
 %Que son las matriz de coocurrencia y las texture features
 A co-occurrence matrix is a square matrix that counts the number of repetitions of co-occurring values over an image, given an offset that measures the distance from the central to the neighbor voxels. In this work we use a modification of the widely used co-occurrence matrix defined in \cite{Philips2008}, that generalizes this matrix to a three-dimensional space. For two different gray levels $i$ and $j$, the co-occurrence matrix $\mathbf{C}$ is defined over a $n \times m \times k$ three-dimensional image $\mathbf{I}$, given an offset $\Delta$ as follows: 
@@ -43,7 +45,7 @@ After computing the 3D-GLC matrix, twelve Haralick Texture Features \cite{Harali
 
 Thirteen spatial directions are considered to compute the GLC matrix (see  \cite{Philips2008}). Furthermore, these GLC matrices can be calculated taking into account all the voxels that are at a distance $d$ from the central voxel, so we have calculated one matrix for each distance $d=1...10$. Therefore, one GLC matrix in each of the $13$ spatial directions and each value of $d$ makes $13\times10=130$ matrices for each image. From each one, $12$ Haralick texture features are computed, so we obtain a feature vector $\mathbf{x}_0$ that contains $1560$ Haralick features that characterizes each image. A lower number of features is desirable in the clustering task, so in the next section, some measures are described to reduce the dimension of $\mathbf{x}_0$ by selecting the most discriminant features. 
 
-\section{Results}
+\section{Results}\label{sec:ch5results}
 \subsection{Experiment 1}
 In experiment 1, the influence and effect of using each of the twelve Haralick texture features on the results is tested, as in \cite{martinez2013texture}. GLC matrices are computed at a distance $d$ ranging from 1 to 10 voxels from the central one. As discussed later in this Section, the optimum sub-volume will have a smaller size than $40\times40\times50$, and so, the maximum value of $d=10$ correspond to at least $20\%$ of the brain sub-volume selected at that point; lower frequency textural changes can be neglected for diagnosis. Furthermore, as the voxel size of all databases is approximately 2x2x2mm, the maximum textural changes are computed within a 20x20x20mm area. This is approximately half the size of the striatum, which is enough to correctly extract the textural features of the area. 
 
@@ -192,4 +194,4 @@ For comparison purposes, we have established a baseline method proposed in Illan
 \end{table*}
 
 In Table \ref{tab:comparison}, performance values at the operation point are shown for Experiment 1 (using five texture features: Homogeneity, Cluster shade, Cluster tendency, Correlation and energy) and for Experiment 2 (using Relative Entropy, FDR or Student's $t$-Test). These values are compared with the VAF, SVD and EMD approaches previously cited. We can observe that the performance values obtained with Experiment 1 are very similar to other state-of-the-art methods, like the proposed in \cite{Segovia2012,Rojas2012}, whereas the methodology used in Experiment 2 outperform all previously used methods. Particularly, as we previously mentioned, the use of either FDR or $t$-Test to select the most discriminant features gives us results over a PL of $26$ and sensitivity over $99\%$, which proves the ability of some Haralick Textures, and the combination of them, in characterizing the different Parkinson's Disease patterns, and the robustness of the proposed methods. 
-\section{Discussion}
+\section{Discussion}\label{sec:ch5discuss}
