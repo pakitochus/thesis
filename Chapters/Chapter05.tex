@@ -10,7 +10,35 @@ Texture features can be classified in first, second and higher order analysis, d
 
 The most popular form, with a very developed theoretical background, is second-order statistical texture analysis. This particular form is based on the probability of finding a pair of similar intensities at a certain distance and orientation of a certain image. From these probabilities, many measures can be derived, being the most popular the Haralick texture analysis \cite{Haralick73}. 
 
-In this work we have used Haralick texture analysis to extract features from DaTSCAN images and perform an automatic diagnosis of \ac{PD}, as in \cite{Martinez-Murcia2013266,martinez2014parametrization}. First we will provide an introduction to Haralick texture features at Section~\ref{sec:haralick}. Later, in Section~\ref{sec:ch5results} we define the experiments and show their results. Finally, at Section~\ref{sec:ch5discuss} we discuss the implications of this systems and the evaluation results of our texture-based \ac{CAD} system.
+In this work we have used Haralick texture analysis to extract features from DaTSCAN images and perform an automatic diagnosis of \ac{PD}, as in \cite{Martinez-Murcia2013266,martinez2014parametrization}. First we will provide an introduction to the sub-volume selection procedure at Section~\ref{sec:volume}, and to the Haralick texture features at Section~\ref{sec:haralick}. Later, in Section~\ref{sec:ch5results} we define the experiments and show their results. Finally, at Section~\ref{sec:ch5discuss} we discuss the implications of this systems and the evaluation results of our texture-based \ac{CAD} system.
+
+\section{Volume selection}\label{sec:volume}
+Even the registered DaTSCAN images contain many voxels that are outside the brain. Therefore, to obtain a more robust estimation of the texture, it would be desirable to perform the computation of the features on subvolumes of those images (or subimages) that contain only voxels inside the brain. Many strategies can be performed for this, for example, force the computation of the \ac{GLCM} to ignore background voxels. 
+
+In this work, we opted for extracting a subvolume which contains only voxels higher than a certain intensity threshold $I_{th}$, which should be specified. To do so, we obtain the maximum and minimum coordinates for which $\mathbf{I}$ is higher than the threshold: 
+\begin{align}
+	p_{x,min} & = \argmin_x \left( \mathbf{I} > I_{th} \right)\\
+	p_{x,max} & = \argmax_x \left( \mathbf{I} > I_{th} \right)
+\end{align}
+
+And we do the same for the $y$ and $z$ axis of the array. Once this is computed, we can select the volume by: 
+
+\begin{equation}
+	\mathbf{I}_{sub} = \mathbf{I}[p_{x,min}:p_{x,max}, p_{y,min}:p_{y,max}, p_{z,min}:p_{z,max}]
+\end{equation}
+
+The resulting subvolume $\mathbf{I}_{sub}$ is the minimum box-shaped volume containing all the values for which $\mathbf{I}>I_{th}$, which allow us to select a $I_{th}$ so that only the regions of interest are contained within. 
+
+Different subimages and sizes are obtained when applying different $I_{th}$ In Figure~\ref{fig:comparisonIth} we depict a comparison between the resulting images for $I_{th} = [0.25, 0.30, 0.35]$. 
+
+\begin{figure}
+	\centering
+	\includegraphics[width=0.90\columnwidth]{Graphics/ch5/comparisonIth.eps}
+	\caption[Comparison of the different $I_{th}$ values.]{Comparison of the different $I_{th}$ values for a random subject extracted from the PPMI database.}
+	\label{fig:comparisonIth}
+\end{figure}
+
+
 
 \section{Haralick Texture Features}\label{sec:haralick}
 \subsection{Gray Level Co-occurrence Matrix}
@@ -35,26 +63,27 @@ from which the texture features will be derived
 
 \subsection{Haralick Texture Features}
 %Parámetros de haralick. 
-In \cite{Haralick73}, twelve texture features are derived from the probability matrix. These features are noted as:
+In \cite{Haralick73,Haralick1992a}, twelve texture features are derived from the probability matrix. These features are noted as:
+\begin{align}
+\text{Energy} & = \sum\limits_i\sum\limits_j \mathbf{P}(i,j)^2\\ 
+\text{Entropy} & = \sum\limits_i\sum\limits_j \mathbf{P}(i,j) \log \mathbf{P}(i,j)\\
+\text{Correlation} & = \frac{\sum_i\sum_j ij\mathbf{P}(i,j) - \mu_x\mu_y}{\sigma_x\sigma_y}\\
+\text{Contrast} & = \sum\limits_{n=0}^{N_g-1} n^2 \left\lbrace\sum\limits_{|i-j|=n}\mathbf{P}(i,j)\right\rbrace  \\
+\text{Variance} & \sum\limits_i\sum\limits_j (i-\mu_i)^2 \mathbf{P}(i,j)+ (j-\mu_j)^2\mathbf{P}(i,j)\\
+\text{Sum Mean} & = \frac{1}{2} \sum\limits_i\sum\limits_j(i\mathbf{P}(i,j)+j\mathbf{P}(i,j))\\
+\text{Inertia} & \sum\limits_i\sum\limits_j (i-j)^2\mathbf{P}(i,j)\\
+\text{Cluster Shade} & \sum\limits_i\sum\limits_j (i+j-\mu_x-\mu_y)^3 \mathbf{P}(i,j)\\
+\text{Cluster Tendency} & \sum\limits_i\sum\limits_j \{ i+j-\mu_x-\mu_y\}^4 \mathbf{P}(i,j)\\
+\text{Homogeneity} & = \sum\limits_i\sum\limits_j \frac{\mathbf{P}(i,j)}{1+|i-j|}\\
+\text{Max Probability} & = \max_{i,j} \mathbf{P}(i,j)\\
+\text{Inverse Variance} & = \sum\limits_i\sum\limits_j {\mathbf{P}(i,j) \over (i-j)^2}
+\end{align}
+where $\mu_i$, $\mu_j$, $\sigma_i$ and $\sigma_j$ are the column and row-wise mean and variance respectively. These feature measure things such as the randomness of the grey-level distribution (entropy), the number of repeated pairs (energy), the local contrast or homogeneity of the image, variance, the tendency to form clusters (cluster shade and tendency), among others. 
 
-\begin{center}
-	\begin{tabular}{r|c}
-		Energy & $\sum\limits_{i,j} \{ \mathbf{C}_{\Delta}(i,j)\}^2 $\\
-		Entropy & $-\sum\limits_{i,j} \mathbf{C}_{\Delta}(i,j)*\log(\mathbf{C}_{\Delta}(i,j)) $\\
-		Correlation & $\sum\limits_{i,j} {{(i-\mu_i)(j-\mu_j)\mathbf{C}_{\Delta}(i,j)}\over{\sigma_i\sigma_j}}$\\
-		Contrast & $\sum\limits_{i,j} |i-j|^2 \mathbf{C}_{\Delta}(i,j)$ \\
-		Variance & $\sum\limits_{i,j} (i-\mu_i)^2 \mathbf{C}_{\Delta}(i,j)+ (j-\mu_j)^2\mathbf{C}_{\Delta}(i,j)$\\
-		Sum Mean & ${1 \over 2} \sum\limits_{i,j}(i\mathbf{C}_{\Delta}(i,j)+j\mathbf{C}_{\Delta}(i,j))$\\
-		Inertia & $\sum\limits_{i,j}(i-j)^2*\mathbf{C}_{\Delta}(i,j)$\\
-		Cluster Shade & $\sum\limits_{i,j}(i+j-\mu_x-\mu_y)^3 * \mathbf{C}_{\Delta}(i,j)$\\
-		Cluster Tendency & $\sum\limits_{i,j}\{ i+j-\mu_x-\mu_y\}^4*\mathbf{C}_{\Delta}(i,j)$\\
-		Homogeneity & $\sum\limits_{i,j} {\mathbf{C}_{\Delta}(i,j) \over 1+|i-j|}$\\
-		Max Probability & $\max (\mathbf{C}_{\Delta})$\\
-		Inverse Variance & $\sum\limits_{i,j} {\mathbf{C}_{\Delta}(i,j) \over (i-j)^2}$\\
-	\end{tabular}
-\end{center}
+For this work we have used a distance $d$ ranging from 1 to 10, at each of the $13$ spatial directions. Therefore, we have computed $13\times10=130$ \acp{GLCM} per image, from which $12$ texture features are computed. Our final feature vector will therefore have $1560$ features in total. 
 
-Thirteen spatial directions are considered to compute the GLC matrix (see  \cite{Philips2008}). Furthermore, these GLC matrices can be calculated taking into account all the voxels that are at a distance $d$ from the central voxel, so we have calculated one matrix for each distance $d=1...10$. Therefore, one GLC matrix in each of the $13$ spatial directions and each value of $d$ makes $13\times10=130$ matrices for each image. From each one, $12$ Haralick texture features are computed, so we obtain a feature vector $\mathbf{x}_0$ that contains $1560$ Haralick features that characterizes each image. A lower number of features is desirable in the clustering task, so in the next section, some measures are described to reduce the dimension of $\mathbf{x}_0$ by selecting the most discriminant features. 
+To further reduce the dimensionality of the feature vector, we have performed feature selection using the $t$-test, \ac{MWW} $U$-test and the relative entropy (\ac{KL} divergence) criteria (see Section~\ref{sec:featureSelection}). 
+% DONE
 
 \section{Results}\label{sec:ch5results}
 \subsection{Experiment 1}

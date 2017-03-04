@@ -28,7 +28,7 @@ Many signal decomposition techniques are used in the literature, for example \ac
 	\label{fig:pipelineDecomposition}
 \end{figure}
 
-\section{Feature Selection}
+\section{Feature Selection}\label{sec:featureSelection}
 Feature selection is the first strategy used for feature reduction \cite{Martinez-Murcia2016b}, and it is often used along with feature extraction in order to build more complex pattern recognition systems. It refers to any strategy intended to find a subset of the original features containing the more suitable ones according to a certain criterion. Therefore, irrelevant features are discarded, and resultant models are faster and more cost-effective \cite{Guyon03}. However, it usually requires an additional optimization to find the parameters for the optimal feature subset, and furthermore, it is impossible to guarantee that the optimal features for the subset are the same of the full feature set \cite{DaelemansHosteMeulderEtAl2003}. 
 
 In this work, we will use filtering methods to perform feature selection. As we introduced in Section~\ref{sec:mvanalyses}, filtering methods are based on the computation of a feature relevance score directly on the data. The relevance score is used to sort the different features, discarding those with a lower score, and it is usually computed independently for each feature, in what is called a univariate approach \cite{SaeysInzaLarranaga2007}. 
