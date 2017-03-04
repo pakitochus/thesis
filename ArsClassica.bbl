@@ -4749,6 +4749,31 @@
       \field{pages}{189\bibrangedash 210}
       \range{pages}{22}
     \endentry
+    \entry{Haralick1992a}{misc}{}
+      \name{author}{2}{}{%
+        {{hash=739e326492d0a53e16dae093120d3d91}{%
+           family={Haralick},
+           family_i={H\bibinitperiod},
+           given={RM},
+           given_i={R\bibinitperiod}}}%
+        {{hash=65dcc76738a6e325b23f2cb776804511}{%
+           family={Shapiro},
+           family_i={S\bibinitperiod},
+           given={LG},
+           given_i={L\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Addison-Wesley, Reading, MA}%
+      }
+      \strng{namehash}{7eb5e66b4499b6d788219df4eb86e7bb}
+      \strng{fullhash}{7eb5e66b4499b6d788219df4eb86e7bb}
+      \field{sortinit}{1}
+      \field{sortinithash}{53e85f4cf497d2a4e1d51786552bcbf1}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Robot and Computer Vision (vols. 1 and 2)}
+      \field{year}{1992}
+    \endentry
     \entry{Talairach1988c}{misc}{}
       \name{author}{2}{}{%
         {{hash=0578dd11df2b3e5ef05a45a2fe6678ee}{%
@@ -6758,6 +6783,31 @@
       \field{year}{1973}
       \field{pages}{610\bibrangedash 621}
       \range{pages}{12}
+    \endentry
+    \entry{Haralick1992a}{misc}{}
+      \name{author}{2}{}{%
+        {{hash=739e326492d0a53e16dae093120d3d91}{%
+           family={Haralick},
+           family_i={H\bibinitperiod},
+           given={RM},
+           given_i={R\bibinitperiod}}}%
+        {{hash=65dcc76738a6e325b23f2cb776804511}{%
+           family={Shapiro},
+           family_i={S\bibinitperiod},
+           given={LG},
+           given_i={L\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Addison-Wesley, Reading, MA}%
+      }
+      \strng{namehash}{7eb5e66b4499b6d788219df4eb86e7bb}
+      \strng{fullhash}{7eb5e66b4499b6d788219df4eb86e7bb}
+      \field{sortinit}{H}
+      \field{sortinithash}{82012198d5dfa657b8c4a168793268a6}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Robot and Computer Vision (vols. 1 and 2)}
+      \field{year}{1992}
     \endentry
     \entry{Hastie2009}{inbook}{}
       \name{author}{3}{}{%
@@ -9764,46 +9814,45 @@
       \endverb
     \endentry
   \endsortlist
-  \missing{Inititative2010}
-  \missing{PPMI}
-  \missing{Martinez-Murcia2014}
-  \missing{soh1999texture}
-  \missing{martinez2013texture}
-  \missing{chan2001patterns}
-  \missing{Botev2010}
-  \missing{Jong2008}
-  \missing{Grana2011}
-  \missing{Medina2008}
   \missing{Zhou2008}
-  \missing{Unay2007}
-  \missing{Vardi1985}
   \missing{IAIllan2010}
-  \missing{Chen2008}
-  \missing{clausi2002analysis}
-  \missing{Shaffer1995}
-  \missing{Ortiz2013}
-  \missing{Alvarez2009}
-  \missing{Rojas2012}
-  \missing{Illan2014}
-  \missing{Kohavi1995a}
-  \missing{Ram'irez2009}
   \missing{han2006reliability}
   \missing{xu2009source}
-  \missing{Segovia2012}
-  \missing{Tzourio-Mazoyer2002}
-  \missing{Yen1995}
-  \missing{AAL}
-  \missing{dougall_systematic_2004}
-  \missing{Vapnik1982}
-  \missing{Locatelli1998}
-  \missing{Illan2012}
-  \missing{jobst_accurate_1998}
+  \missing{Ram'irez2009}
+  \missing{Fischl2004}
+  \missing{Zhao2007}
+  \missing{Ojala1996}
+  \missing{Shaffer1995}
   \missing{Evans1993}
   \missing{Ramirez2009}
-  \missing{Fischl2004}
-  \missing{Ojala1996}
-  \missing{Zhao2007}
+  \missing{Locatelli1998}
+  \missing{martinez2013texture}
+  \missing{Segovia2012}
+  \missing{Botev2010}
+  \missing{Ortiz2013}
+  \missing{Jong2008}
+  \missing{Kohavi1995a}
+  \missing{Vapnik1982}
+  \missing{clausi2002analysis}
+  \missing{chan2001patterns}
+  \missing{Inititative2010}
   \missing{Shepp82}
+  \missing{Alvarez2009}
+  \missing{Chen2008}
+  \missing{AAL}
+  \missing{Yen1995}
+  \missing{Rojas2012}
+  \missing{Tzourio-Mazoyer2002}
+  \missing{dougall_systematic_2004}
+  \missing{Grana2011}
+  \missing{Vardi1985}
+  \missing{Illan2012}
+  \missing{Illan2014}
+  \missing{PPMI}
+  \missing{Medina2008}
+  \missing{Unay2007}
+  \missing{soh1999texture}
+  \missing{jobst_accurate_1998}
 \endrefsection
 
 \refsection{1}

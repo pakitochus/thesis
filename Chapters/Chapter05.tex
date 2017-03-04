@@ -10,9 +10,18 @@ Texture features can be classified in first, second and higher order analysis, d
 
 The most popular form, with a very developed theoretical background, is second-order statistical texture analysis. This particular form is based on the probability of finding a pair of similar intensities at a certain distance and orientation of a certain image. From these probabilities, many measures can be derived, being the most popular the Haralick texture analysis \cite{Haralick73}. 
 
-In this work we have used Haralick texture analysis to extract features from DaTSCAN images and perform an automatic diagnosis of \ac{PD}, as in \cite{Martinez-Murcia2013266,martinez2014parametrization}. First we will provide an introduction to the sub-volume selection procedure at Section~\ref{sec:volume}, and to the Haralick texture features at Section~\ref{sec:haralick}. Later, in Section~\ref{sec:ch5results} we define the experiments and show their results. Finally, at Section~\ref{sec:ch5discuss} we discuss the implications of this systems and the evaluation results of our texture-based \ac{CAD} system.
+\begin{figure}[htp]
+\centering
+\includegraphics[width=0.9\linewidth]{Graphics/ch5/01-flowdiagram}
+\caption[Schema of the proposed Texture-based CAD system.]{Schema of the proposed Texture-based \ac{CAD} system, including an optional feature selection block.}
+\label{fig:textureCAD}
+\end{figure}
 
-\section{Volume selection}\label{sec:volume}
+In this work we have used Haralick texture analysis to extract features from DaTSCAN images and perform an automatic diagnosis of \ac{PD}. It follows the pipeline depicted at Figure~\ref{fig:textureCAD}, as in \cite{Martinez-Murcia2013266,martinez2014parametrization}. First we will provide an introduction to the methodology followed at Section~\ref{sec:methodsCh5}, including the volume selection tools, the Haralick texture analysis and the experiments used to validate the system. Later, in Section~\ref{sec:ch5results} we define the experiments and show their results. Finally, at Section~\ref{sec:ch5discuss} we discuss the implications of this systems and the evaluation results of our texture-based \ac{CAD} system.
+
+\section{Methodology}\label{sec:methodsCh5}
+
+\subsection{Volume selection}\label{sec:volume}
 Even the registered DaTSCAN images contain many voxels that are outside the brain. Therefore, to obtain a more robust estimation of the texture, it would be desirable to perform the computation of the features on subvolumes of those images (or subimages) that contain only voxels inside the brain. Many strategies can be performed for this, for example, force the computation of the \ac{GLCM} to ignore background voxels. 
 
 In this work, we opted for extracting a subvolume which contains only voxels higher than a certain intensity threshold $I_{th}$, which should be specified. To do so, we obtain the maximum and minimum coordinates for which $\mathbf{I}$ is higher than the threshold: 
@@ -38,10 +47,8 @@ Different subimages and sizes are obtained when applying different $I_{th}$ In F
 	\label{fig:comparisonIth}
 \end{figure}
 
-
-
-\section{Haralick Texture Features}\label{sec:haralick}
-\subsection{Gray Level Co-occurrence Matrix}
+\subsection{Haralick Texture Analysis}\label{sec:haralick}
+\subsubsection{Gray Level Co-occurrence Matrix}
 %Que son las matriz de coocurrencia y las texture features
 The Haralick texture analysis is based on the computation of a \acf{GLCM}, which is a form of evaluating second-order texture statistics. This matrix is a summary of the probabilities of finding a pair of similar grey levels at a certain distance and in a certain direction. 
 
@@ -61,7 +68,7 @@ We will compute one $16\times16$ \ac{GLCM} for each of the combinations of direc
 \end{equation}
 from which the texture features will be derived
 
-\subsection{Haralick Texture Features}
+\subsubsection{Haralick Texture Features}
 %Parámetros de haralick. 
 In \cite{Haralick73,Haralick1992a}, twelve texture features are derived from the probability matrix. These features are noted as:
 \begin{align}
@@ -83,13 +90,20 @@ where $\mu_i$, $\mu_j$, $\sigma_i$ and $\sigma_j$ are the column and row-wise me
 For this work we have used a distance $d$ ranging from 1 to 10, at each of the $13$ spatial directions. Therefore, we have computed $13\times10=130$ \acp{GLCM} per image, from which $12$ texture features are computed. Our final feature vector will therefore have $1560$ features in total. 
 
 To further reduce the dimensionality of the feature vector, we have performed feature selection using the $t$-test, \ac{MWW} $U$-test and the relative entropy (\ac{KL} divergence) criteria (see Section~\ref{sec:featureSelection}). 
+
+\subsection{Experiments}
+For evaluating the system proposed in this chapter, combining texture analysis and other feature selection algorithms, we propose two experiments: 
+\begin{itemize}
+	\item Experiment 1: Ability of the different texture features to differenciate between \ac{PD} affected subjects and \acp{CTL}. Each of the texture features is analysed in two different ways: a ''single approach'', which only considers one type of feature using only the matrices at a distance $d$ from the central voxel -and using all the spatial directions- and a ''cumulative approach'' which considers one type of feature too, but this time using all matrices in distances ranging from 1 to $d$. 
+	\item Experiment 2: Impact of the introduction of a feature selection algorithm after computing the texture features. This allow us to pool all texture features at all distances and directions, and then select the most discriminative ones according to some of these criteria.  
+\end{itemize}
+
+
 % DONE
 
 \section{Results}\label{sec:ch5results}
 \subsection{Experiment 1}
-In experiment 1, the influence and effect of using each of the twelve Haralick texture features on the results is tested, as in \cite{martinez2013texture}. GLC matrices are computed at a distance $d$ ranging from 1 to 10 voxels from the central one. As discussed later in this Section, the optimum sub-volume will have a smaller size than $40\times40\times50$, and so, the maximum value of $d=10$ correspond to at least $20\%$ of the brain sub-volume selected at that point; lower frequency textural changes can be neglected for diagnosis. Furthermore, as the voxel size of all databases is approximately 2x2x2mm, the maximum textural changes are computed within a 20x20x20mm area. This is approximately half the size of the striatum, which is enough to correctly extract the textural features of the area. 
-
-The computed GLC matrices are used to extract the Haralick Texture Features in two different ways: a ''single approach'', which only considers one type of feature using only the matrices at a distance $d$ from the central voxel -and using all the spatial directions- and a ''cumulative approach'' which considers one type of feature too, but this time using all matrices in distances ranging from 1 to $d$. 
+In experiment 1, the influence and effect of using each of the twelve Haralick texture features on the results is tested, as in \cite{Martinez-Murcia2013266}. GLC matrices are computed at a distance $d$ ranging from 1 to 10 voxels from the central one. As discussed later in this Section, the optimum sub-volume will have a smaller size than $40\times40\times50$, and so, the maximum value of $d=10$ correspond to at least $20\%$ of the brain sub-volume selected at that point; lower frequency textural changes can be neglected for diagnosis. Furthermore, as the voxel size of all databases is approximately 2x2x2mm, the maximum textural changes are computed within a 20x20x20mm area. This is approximately half the size of the striatum, which is enough to correctly extract the textural features of the area. 
 
 As commented before, we will use a normalization to the maximum strategy to normalize all the images in our three databases. After this, the 3D-GLC matrices will be computed over the selected subvolumes, given an intensity threshold $I_{th}$ (see Sec. \ref{sec:volume}). The optimum value of $I_{th}$ should be high enough to avoid introducing background voxels in the subvolume selected, yet adequately low to select the biggest subvolume containing only brain voxels. This should lead to the best performance, since the 3D GLC matrices (and the Haralick Texture Features) would have enough information, and would not include non-brain textural patterns. 
 
