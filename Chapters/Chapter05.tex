@@ -2,11 +2,14 @@
 \chapter{Texture Features}\label{ch:texture}
 %************************************************
 \section{Introduction}
-Texture analysis is any procedure intended to classify and quantify the spatial variation of voxel intensity throughout the image. In neuroimaging, they are more commonly used to classify images or to segment them (which can be also considered a form of classification). Depending on the number of variables studies, we can divide the methodology into first, second and higher order statistical texture analysis. In first-order statistics, only voxel intensity values are considered, and values such as average, variance, kurtosis or frequency (histogram) of intensity values are computed. 
+Texture is a household word outside image processing related fields. However, in that context, it lacks a definition that allow us to measure and quantify it. Patter recognition provides us with a mathematical definition that allow us to use texture as a feature in our \ac{CAD} systems. 
 
-Second-order statistical texture analysis is by far the most popular form. It is based on the probability of finding a pair of grey-level at a certain distance and orientation on a certain image. Most algorithms are based in the Grey Level Co-occurrence Matrix (GLCM), in which is known as Haralick Texture Analysis [59]. The GLCM can be thought of as a representation of the frequency of the adjacent pixel variations in a certain spatial direction and distance. For a three dimensional  brain image  and two different grey levels  and , at a given offset  the co-occurrence value is defined as:
+Texture analysis is defined as any procedure by which we can quantify and classify the spatial variation of intensity throughout an image. In neuroimaging, texture has been widely used in segmentation (tissue classification) of \ac{MRI} images \cite{}, although there exist a number of works using it for feature extraction in \ac{CAD}-like systems, like the works in \cite{}, or our work on \ac{PKS} feature extraction \cite{Martinez-Murcia2013266,Martinez-Murcia2014}. 
 
-\cite{Martinez-Murcia2013266,Martinez-Murcia2014}
+Texture features can be classified in first, second and higher order analysis, depending on the number of variables used. First order statistics \cite{bibid} are the most basic form of texture analysis, computing values such as average, variance or histogram of voxel intensity values \cite{}. 
+
+The most popular form, with a very developed theoretical background, is second-order statistical texture analysis. This particular form is based on the probability of finding a pair of similar intensities at a certain distance and orientation of a certain image. From these probabilities, many measures can be derived, being the most popular the Haralick texture analysis \cite{bibid}. 
+
 \section{Haralick Texture Features}
 \subsubsection{Gray Level Co-occurrence Matrix}
 %Que son las matriz de coocurrencia y las texture features
