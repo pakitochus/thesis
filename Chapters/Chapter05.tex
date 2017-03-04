@@ -13,18 +13,29 @@ The most popular form, with a very developed theoretical background, is second-o
 In this work we have used Haralick texture analysis to extract features from DaTSCAN images and perform an automatic diagnosis of \ac{PD}, as in \cite{Martinez-Murcia2013266,martinez2014parametrization}. First we will provide an introduction to Haralick texture features at Section~\ref{sec:haralick}. Later, in Section~\ref{sec:ch5results} we define the experiments and show their results. Finally, at Section~\ref{sec:ch5discuss} we discuss the implications of this systems and the evaluation results of our texture-based \ac{CAD} system.
 
 \section{Haralick Texture Features}\label{sec:haralick}
-\subsubsection{Gray Level Co-occurrence Matrix}
+\subsection{Gray Level Co-occurrence Matrix}
 %Que son las matriz de coocurrencia y las texture features
-A co-occurrence matrix is a square matrix that counts the number of repetitions of co-occurring values over an image, given an offset that measures the distance from the central to the neighbor voxels. In this work we use a modification of the widely used co-occurrence matrix defined in \cite{Philips2008}, that generalizes this matrix to a three-dimensional space. For two different gray levels $i$ and $j$, the co-occurrence matrix $\mathbf{C}$ is defined over a $n \times m \times k$ three-dimensional image $\mathbf{I}$, given an offset $\Delta$ as follows: 
+The Haralick texture analysis is based on the computation of a \acf{GLCM}, which is a form of evaluating second-order texture statistics. This matrix is a summary of the probabilities of finding a pair of similar grey levels at a certain distance and in a certain direction. 
+
+The combination of the unitary vector dimension and the distance defines the offset $\Delta=(d_x,d_y,d_z)$, whose norm is the distance $d$ and is defined in a given spatial direction. In this work, we use a three-dimensional approach to the computation of the \ac{GLCM}, based on \cite{Philips2008}, that uses thirteen spatial directions to generalize the standard 2D \ac{GLCM} to 3D. These offset define different angles and are used to get some degree of rotational invariance \cite{Philips2008}. 
+
+Medical images have different number precision, which can vary from regular 8bit integers (256 values) to the type float64 ($1.844\times10^{19}$ possible values). Using all these values, even in the smallest case, would lead to $256\times 256$ matrices, which would be both non representative of the real texture and computationally expensive. Therefore, prior to the \ac{GLCM} computation, we posterize the image, that is, the image is quantified to use only 16 grey levels. This leads to more tractable \ac{GLCM} without losing their representativeness. 
+
+Once images have been posterized, for two different grey levels $i$ and $j$, the value of the co-occurrence matrix $\mathbf{C}$ over a $n \times m \times k$ three-dimensional image $\mathbf{I}$ is defined as: 
 \begin{equation}\label{eq:cooc3D}
-\mathbf{C}_{\Delta}(i,j)=\sum_{p=(1,1,1)}^{(n,m,k)}\begin{cases} 1, & \mbox{if }\mathbf{I}(\mathbf{p})=i\mbox{ and }\mathbf{I}(\mathbf{p}+\Delta)=j \\ 0, & \mbox{otherwise}\end{cases}
+\mathbf{C}_{\Delta}(i,j)=\sum_{\mathbf{p}=(1,1,1)}^{(n,m,k)}\begin{cases} 1, & \mbox{if }\mathbf{I}(\mathbf{p})=i\mbox{ and }\mathbf{I}(\mathbf{p}+\Delta)=j \\ 0, & \mbox{otherwise}\end{cases}
 \end{equation}
-where $i$ and $j$ are different gray levels, $\mathbf{p}=(x,y,z)$ is the spatial position where $x=1...n, y=1...m, z=1...k$ and $\Delta=(d,d,d)$ is the offset vector, which  has been set as dependent only on the distance $d$. In this work, the 3D-GLC matrix is computed over a selected subimage, computed as defined in Sec. \ref{sec:volume}, and we have performed a rescaling of the original data into $16$ gray levels, leading to a best-performance.
+where $\Delta$ is the three dimensional offset that we defined previously, and $\mathbf{p}$ is the position of a given voxel inside the image. 
 
+We will compute one $16\times16$ \ac{GLCM} for each of the combinations of direction and distances. This matrix $\mathbf{C}_{\Delta}$ is later modified to create the probability matrix $\mathbf{P}$ as: 
+\begin{equation}
+\mathbf{P}(i,j) = \frac{\mathbf{C}_{\Delta}(i,j)}{\sum_{i,j}\mathbf{C}_{\Delta}(i,j)}
+\end{equation}
+from which the texture features will be derived
 
-\subsubsection{Haralick Texture Features}
+\subsection{Haralick Texture Features}
 %Parámetros de haralick. 
-After computing the 3D-GLC matrix, twelve Haralick Texture Features \cite{Haralick73} are derived, using the following expressions:
+In \cite{Haralick73}, twelve texture features are derived from the probability matrix. These features are noted as:
 
 \begin{center}
 	\begin{tabular}{r|c}
