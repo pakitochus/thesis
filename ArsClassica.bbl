@@ -534,6 +534,71 @@
       \endverb
       \keyw{sbm,lbp,vrlbp,mri,ad,alzheimer,own}
     \endentry
+    \entry{sikio2015mr}{article}{}
+      \name{author}{9}{}{%
+        {{hash=7cfd2c74d1ce7781e0602b560fecc043}{%
+           family={Sikiö},
+           family_i={S\bibinitperiod},
+           given={Minna},
+           given_i={M\bibinitperiod}}}%
+        {{hash=1c4815ea8ddb1470ab821aef179a8f3c}{%
+           family={Holli-Helenius},
+           family_i={H\bibinithyphendelim H\bibinitperiod},
+           given={Kirsi\bibnamedelima K},
+           given_i={K\bibinitperiod\bibinitdelim K\bibinitperiod}}}%
+        {{hash=4c5ceffa67102bf5421f8df8cab09eb0}{%
+           family={Harrison},
+           family_i={H\bibinitperiod},
+           given={Lara\bibnamedelima CV},
+           given_i={L\bibinitperiod\bibinitdelim C\bibinitperiod}}}%
+        {{hash=3e953f86fc4439a2928d7b52299ab8a3}{%
+           family={Ryymin},
+           family_i={R\bibinitperiod},
+           given={Pertti},
+           given_i={P\bibinitperiod}}}%
+        {{hash=32062a0994ea50afec3d8c0f9251c120}{%
+           family={Ruottinen},
+           family_i={R\bibinitperiod},
+           given={Hanna},
+           given_i={H\bibinitperiod}}}%
+        {{hash=4206d7c41946cf403cd90cfc38452d9d}{%
+           family={Saunamäki},
+           family_i={S\bibinitperiod},
+           given={Tiia},
+           given_i={T\bibinitperiod}}}%
+        {{hash=a88c4b3808e90a292bfe729fc6a23ee3}{%
+           family={Eskola},
+           family_i={E\bibinitperiod},
+           given={Hannu\bibnamedelima J},
+           given_i={H\bibinitperiod\bibinitdelim J\bibinitperiod}}}%
+        {{hash=c23cb06065e30454d4743e285633a7f8}{%
+           family={Elovaara},
+           family_i={E\bibinitperiod},
+           given={Irina},
+           given_i={I\bibinitperiod}}}%
+        {{hash=57eb91b70ee5c27ae7c569c0d28bb36c}{%
+           family={Dastidar},
+           family_i={D\bibinitperiod},
+           given={Prasun},
+           given_i={P\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {SAGE Publications}%
+      }
+      \strng{namehash}{45ff93bbb54de8c7559833e93c268900}
+      \strng{fullhash}{6a221088b085485b771cbff7197d1e40}
+      \field{sortinit}{2}
+      \field{sortinithash}{8343b463aacf48517c044b4d2c9c45ed}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Acta Radiologica}
+      \field{number}{1}
+      \field{title}{MR image texture in Parkinson{’}s disease: a longitudinal study}
+      \field{volume}{56}
+      \field{year}{2015}
+      \field{pages}{97\bibrangedash 104}
+      \range{pages}{8}
+    \endentry
     \entry{DiMartino2014}{article}{}
       \name{author}{42}{}{%
         {{hash=dca1816ffd4651bcb78e997c62dc8c3a}{%
@@ -2380,6 +2445,51 @@
       \endverb
       \keyw{Differential diagnosis; Parkinson's disease; Functional neuroimaging; Brain networks; PET; PCA; CAD}
     \endentry
+    \entry{Wang2009}{article}{}
+      \name{author}{5}{}{%
+        {{hash=944d21a090d2fc32d2cdd40c7a346126}{%
+           family={Wang},
+           family_i={W\bibinitperiod},
+           given={Li},
+           given_i={L\bibinitperiod}}}%
+        {{hash=ad6946d808437d072182796ea5a4f766}{%
+           family={Li},
+           family_i={L\bibinitperiod},
+           given={Chunming},
+           given_i={C\bibinitperiod}}}%
+        {{hash=6d22512ad016e6fae9fd5704171284ca}{%
+           family={Sun},
+           family_i={S\bibinitperiod},
+           given={Quansen},
+           given_i={Q\bibinitperiod}}}%
+        {{hash=161ff5ad0b6359231d6aad88ef6d4635}{%
+           family={Xia},
+           family_i={X\bibinitperiod},
+           given={Deshen},
+           given_i={D\bibinitperiod}}}%
+        {{hash=a2d894a37e1d28d0a4b3924855f29da5}{%
+           family={Kao},
+           family_i={K\bibinitperiod},
+           given={Chiu-Yen},
+           given_i={C\bibinithyphendelim Y\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Elsevier}%
+      }
+      \strng{namehash}{e3f3b9a24d52da2d0d4b1fe99638d06c}
+      \strng{fullhash}{43397374094565f55139df81bb7af8cd}
+      \field{sortinit}{2}
+      \field{sortinithash}{8343b463aacf48517c044b4d2c9c45ed}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Computerized Medical Imaging and Graphics}
+      \field{number}{7}
+      \field{title}{Active contours driven by local and global intensity fitting energy with application to brain MR image segmentation}
+      \field{volume}{33}
+      \field{year}{2009}
+      \field{pages}{520\bibrangedash 531}
+      \range{pages}{12}
+    \endentry
     \entry{Ikonomovic2008}{article}{}
       \name{author}{15}{}{%
         {{hash=731977372e1af39f24022c8baf00651b}{%
@@ -2523,6 +2633,32 @@
       \verb{doi}
       \verb 10.1109/BIOTECHNO.2008.24
       \endverb
+    \endentry
+    \entry{Srinivasan2008}{inproceedings}{}
+      \name{author}{2}{}{%
+        {{hash=1d30a292aeba2dbe42cb0250abb8c9da}{%
+           family={Srinivasan},
+           family_i={S\bibinitperiod},
+           given={GN},
+           given_i={G\bibinitperiod}}}%
+        {{hash=89e08b48c0e3706188062bcd2c8cb055}{%
+           family={Shobha},
+           family_i={S\bibinitperiod},
+           given={G},
+           given_i={G\bibinitperiod}}}%
+      }
+      \strng{namehash}{ff95d346510a005b5ddd40b6de1222b5}
+      \strng{fullhash}{ff95d346510a005b5ddd40b6de1222b5}
+      \field{sortinit}{2}
+      \field{sortinithash}{8343b463aacf48517c044b4d2c9c45ed}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{Proceedings of world academy of science, engineering and technology}
+      \field{title}{Statistical texture analysis}
+      \field{volume}{36}
+      \field{year}{2008}
+      \field{pages}{1264\bibrangedash 1269}
+      \range{pages}{6}
     \endentry
     \entry{tatsch2008extrapyramidal}{incollection}{}
       \name{author}{1}{}{%
@@ -3314,6 +3450,80 @@
       \field{pages}{654\bibrangedash 662}
       \range{pages}{9}
     \endentry
+    \entry{Alejo2003}{article}{}
+      \true{moreauthor}
+      \true{morelabelname}
+      \name{author}{10}{}{%
+        {{hash=5d670ae7ec5d4e6badeb5e79da675c96}{%
+           prefix={de},
+           prefix_i={d\bibinitperiod},
+           family={Alejo},
+           family_i={A\bibinitperiod},
+           given={Rigoberto\bibnamedelima Pérez},
+           given_i={R\bibinitperiod\bibinitdelim P\bibinitperiod}}}%
+        {{hash=34583a270fb3543987fd2c67ce7d1ac7}{%
+           family={Ruiz-Cabello},
+           family_i={R\bibinithyphendelim C\bibinitperiod},
+           given={Jesús},
+           given_i={J\bibinitperiod}}}%
+        {{hash=b5877eb2e8b5aa30a4d50014e41b0919}{%
+           family={Cortijo},
+           family_i={C\bibinitperiod},
+           given={Manuel},
+           given_i={M\bibinitperiod}}}%
+        {{hash=15f73d26df220ea41044ebffd0a3bd5b}{%
+           family={Rodriguez},
+           family_i={R\bibinitperiod},
+           given={Ignacio},
+           given_i={I\bibinitperiod}}}%
+        {{hash=7cd0bbc23f1755407fe1511401ea4c38}{%
+           family={Echave},
+           family_i={E\bibinitperiod},
+           given={Imanol},
+           given_i={I\bibinitperiod}}}%
+        {{hash=eac3944f370baed9ec3558d2c62f356f}{%
+           family={Regadera},
+           family_i={R\bibinitperiod},
+           given={Javier},
+           given_i={J\bibinitperiod}}}%
+        {{hash=1145eac5a7fdd7002d381748d72599a7}{%
+           family={Arrazola},
+           family_i={A\bibinitperiod},
+           given={Juan},
+           given_i={J\bibinitperiod}}}%
+        {{hash=6bd74614abb8dd4262ba3633e183b079}{%
+           family={Avilés},
+           family_i={A\bibinitperiod},
+           given={Pablo},
+           given_i={P\bibinitperiod}}}%
+        {{hash=996b18a18a41dd2a3db9ca746a79485a}{%
+           family={Barreiro},
+           family_i={B\bibinitperiod},
+           given={Pilar},
+           given_i={P\bibinitperiod}}}%
+        {{hash=c8e73137355d60d5fa171efee2ec42ae}{%
+           family={Gargallo},
+           family_i={G\bibinitperiod},
+           given={Domingo},
+           given_i={D\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Elsevier}%
+      }
+      \strng{namehash}{3308425f17298e1b5edd0bb38620ceac}
+      \strng{fullhash}{adc9eaa8235c292c7bb2a27b9b0bf68b}
+      \field{sortinit}{2}
+      \field{sortinithash}{8343b463aacf48517c044b4d2c9c45ed}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Magnetic resonance imaging}
+      \field{number}{8}
+      \field{title}{Computer-assisted enhanced volumetric segmentation magnetic resonance imaging data using a mixture of artificial neural networks}
+      \field{volume}{21}
+      \field{year}{2003}
+      \field{pages}{901\bibrangedash 912}
+      \range{pages}{12}
+    \endentry
     \entry{DaelemansHosteMeulderEtAl2003}{article}{}
       \name{author}{4}{}{%
         {{hash=de80d83604a86dc9aff51ca1ce3069e6}{%
@@ -3622,6 +3832,36 @@
       \field{pages}{13\bibrangedash 34}
       \range{pages}{22}
     \endentry
+    \entry{Saeed2002}{article}{}
+      \name{author}{2}{}{%
+        {{hash=dcb5cf83644bfd671bf5ad2badeee36d}{%
+           family={Saeed},
+           family_i={S\bibinitperiod},
+           given={N},
+           given_i={N\bibinitperiod}}}%
+        {{hash=11d1c68283560fbf56ad38e3a4e9584e}{%
+           family={Puri},
+           family_i={P\bibinitperiod},
+           given={BK},
+           given_i={B\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Elsevier}%
+      }
+      \strng{namehash}{64dd6c00f06f5674afb131dc37352651}
+      \strng{fullhash}{64dd6c00f06f5674afb131dc37352651}
+      \field{sortinit}{2}
+      \field{sortinithash}{8343b463aacf48517c044b4d2c9c45ed}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Magnetic resonance imaging}
+      \field{number}{5}
+      \field{title}{Cerebellum segmentation employing texture properties and knowledge based image processing: applied to normal adult controls and patients}
+      \field{volume}{20}
+      \field{year}{2002}
+      \field{pages}{425\bibrangedash 429}
+      \range{pages}{5}
+    \endentry
     \entry{Anderson2001}{article}{}
       \name{author}{2}{}{%
         {{hash=0f83e4422ae3237841aa9224998ad72e}{%
@@ -3746,6 +3986,48 @@
       \field{pages}{143\bibrangedash 156}
       \range{pages}{14}
       \keyw{Brain Mapping,methods; Costs and Cost Analysis; Humans; Image Processing,Computer-Assisted,economics,methods; Magnetic Resonance Imaging; Mathematics}
+    \endentry
+    \entry{kovalev2001three}{article}{}
+      \name{author}{4}{}{%
+        {{hash=f91479cdf45bc12f77cc8adcd2188e20}{%
+           family={Kovalev},
+           family_i={K\bibinitperiod},
+           given={Vassili\bibnamedelima A},
+           given_i={V\bibinitperiod\bibinitdelim A\bibinitperiod}}}%
+        {{hash=ea917c65ac1f4bea07bed112cf1be5c9}{%
+           family={Kruggel},
+           family_i={K\bibinitperiod},
+           given={Frithjof},
+           given_i={F\bibinitperiod}}}%
+        {{hash=2a317a4ec3b29a5af300a45695f78c06}{%
+           family={Gertz},
+           family_i={G\bibinitperiod},
+           given={H-J},
+           given_i={H\bibinithyphendelim J\bibinitperiod}}}%
+        {{hash=4aa7c01a0c245e1cbbb224797e774d05}{%
+           prefix={von},
+           prefix_i={v\bibinitperiod},
+           family={Cramon},
+           family_i={C\bibinitperiod},
+           given={D\bibnamedelima Yves},
+           given_i={D\bibinitperiod\bibinitdelim Y\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {IEEE}%
+      }
+      \strng{namehash}{ca024bb9601b7e9d9f9bf6999660a556}
+      \strng{fullhash}{a8b99ba2eaeffbb94323ef1cc9a5947c}
+      \field{sortinit}{2}
+      \field{sortinithash}{8343b463aacf48517c044b4d2c9c45ed}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Medical Imaging, IEEE Transactions on}
+      \field{number}{5}
+      \field{title}{Three-dimensional texture analysis of {MRI} brain datasets}
+      \field{volume}{20}
+      \field{year}{2001}
+      \field{pages}{424\bibrangedash 433}
+      \range{pages}{10}
     \endentry
     \entry{Mazziotta2001}{article}{}
       \name{author}{27}{}{%
@@ -4610,6 +4892,80 @@
     \endentry
   \endsortlist
   \sortlist[entry]{nyt/global/}
+    \entry{Alejo2003}{article}{}
+      \true{moreauthor}
+      \true{morelabelname}
+      \name{author}{10}{}{%
+        {{hash=5d670ae7ec5d4e6badeb5e79da675c96}{%
+           prefix={de},
+           prefix_i={d\bibinitperiod},
+           family={Alejo},
+           family_i={A\bibinitperiod},
+           given={Rigoberto\bibnamedelima Pérez},
+           given_i={R\bibinitperiod\bibinitdelim P\bibinitperiod}}}%
+        {{hash=34583a270fb3543987fd2c67ce7d1ac7}{%
+           family={Ruiz-Cabello},
+           family_i={R\bibinithyphendelim C\bibinitperiod},
+           given={Jesús},
+           given_i={J\bibinitperiod}}}%
+        {{hash=b5877eb2e8b5aa30a4d50014e41b0919}{%
+           family={Cortijo},
+           family_i={C\bibinitperiod},
+           given={Manuel},
+           given_i={M\bibinitperiod}}}%
+        {{hash=15f73d26df220ea41044ebffd0a3bd5b}{%
+           family={Rodriguez},
+           family_i={R\bibinitperiod},
+           given={Ignacio},
+           given_i={I\bibinitperiod}}}%
+        {{hash=7cd0bbc23f1755407fe1511401ea4c38}{%
+           family={Echave},
+           family_i={E\bibinitperiod},
+           given={Imanol},
+           given_i={I\bibinitperiod}}}%
+        {{hash=eac3944f370baed9ec3558d2c62f356f}{%
+           family={Regadera},
+           family_i={R\bibinitperiod},
+           given={Javier},
+           given_i={J\bibinitperiod}}}%
+        {{hash=1145eac5a7fdd7002d381748d72599a7}{%
+           family={Arrazola},
+           family_i={A\bibinitperiod},
+           given={Juan},
+           given_i={J\bibinitperiod}}}%
+        {{hash=6bd74614abb8dd4262ba3633e183b079}{%
+           family={Avilés},
+           family_i={A\bibinitperiod},
+           given={Pablo},
+           given_i={P\bibinitperiod}}}%
+        {{hash=996b18a18a41dd2a3db9ca746a79485a}{%
+           family={Barreiro},
+           family_i={B\bibinitperiod},
+           given={Pilar},
+           given_i={P\bibinitperiod}}}%
+        {{hash=c8e73137355d60d5fa171efee2ec42ae}{%
+           family={Gargallo},
+           family_i={G\bibinitperiod},
+           given={Domingo},
+           given_i={D\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Elsevier}%
+      }
+      \strng{namehash}{3308425f17298e1b5edd0bb38620ceac}
+      \strng{fullhash}{adc9eaa8235c292c7bb2a27b9b0bf68b}
+      \field{sortinit}{A}
+      \field{sortinithash}{b685c7856330eaee22789815b49de9bb}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Magnetic resonance imaging}
+      \field{number}{8}
+      \field{title}{Computer-assisted enhanced volumetric segmentation magnetic resonance imaging data using a mixture of artificial neural networks}
+      \field{volume}{21}
+      \field{year}{2003}
+      \field{pages}{901\bibrangedash 912}
+      \range{pages}{12}
+    \endentry
     \entry{Anderson2001}{article}{}
       \name{author}{2}{}{%
         {{hash=0f83e4422ae3237841aa9224998ad72e}{%
@@ -6982,6 +7338,48 @@
       \verb http://citeseer.ist.psu.edu/kohavi95study.html
       \endverb
     \endentry
+    \entry{kovalev2001three}{article}{}
+      \name{author}{4}{}{%
+        {{hash=f91479cdf45bc12f77cc8adcd2188e20}{%
+           family={Kovalev},
+           family_i={K\bibinitperiod},
+           given={Vassili\bibnamedelima A},
+           given_i={V\bibinitperiod\bibinitdelim A\bibinitperiod}}}%
+        {{hash=ea917c65ac1f4bea07bed112cf1be5c9}{%
+           family={Kruggel},
+           family_i={K\bibinitperiod},
+           given={Frithjof},
+           given_i={F\bibinitperiod}}}%
+        {{hash=2a317a4ec3b29a5af300a45695f78c06}{%
+           family={Gertz},
+           family_i={G\bibinitperiod},
+           given={H-J},
+           given_i={H\bibinithyphendelim J\bibinitperiod}}}%
+        {{hash=4aa7c01a0c245e1cbbb224797e774d05}{%
+           prefix={von},
+           prefix_i={v\bibinitperiod},
+           family={Cramon},
+           family_i={C\bibinitperiod},
+           given={D\bibnamedelima Yves},
+           given_i={D\bibinitperiod\bibinitdelim Y\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {IEEE}%
+      }
+      \strng{namehash}{ca024bb9601b7e9d9f9bf6999660a556}
+      \strng{fullhash}{a8b99ba2eaeffbb94323ef1cc9a5947c}
+      \field{sortinit}{K}
+      \field{sortinithash}{a7d5b3aec5a0890aae7baf85a209abfc}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Medical Imaging, IEEE Transactions on}
+      \field{number}{5}
+      \field{title}{Three-dimensional texture analysis of {MRI} brain datasets}
+      \field{volume}{20}
+      \field{year}{2001}
+      \field{pages}{424\bibrangedash 433}
+      \range{pages}{10}
+    \endentry
     \entry{Krishnaiah1982}{inbook}{}
       \name{editor}{2}{}{%
         {{hash=d01da202b8ee72460dadca33f51c7bd5}{%
@@ -8207,6 +8605,36 @@
       \field{title}{Mathematical statistics and data analysis}
       \field{year}{2006}
     \endentry
+    \entry{Saeed2002}{article}{}
+      \name{author}{2}{}{%
+        {{hash=dcb5cf83644bfd671bf5ad2badeee36d}{%
+           family={Saeed},
+           family_i={S\bibinitperiod},
+           given={N},
+           given_i={N\bibinitperiod}}}%
+        {{hash=11d1c68283560fbf56ad38e3a4e9584e}{%
+           family={Puri},
+           family_i={P\bibinitperiod},
+           given={BK},
+           given_i={B\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Elsevier}%
+      }
+      \strng{namehash}{64dd6c00f06f5674afb131dc37352651}
+      \strng{fullhash}{64dd6c00f06f5674afb131dc37352651}
+      \field{sortinit}{S}
+      \field{sortinithash}{fd1e7c5ab79596b13dbbb67f8d70fb5a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Magnetic resonance imaging}
+      \field{number}{5}
+      \field{title}{Cerebellum segmentation employing texture properties and knowledge based image processing: applied to normal adult controls and patients}
+      \field{volume}{20}
+      \field{year}{2002}
+      \field{pages}{425\bibrangedash 429}
+      \range{pages}{5}
+    \endentry
     \entry{SaeysInzaLarranaga2007}{article}{}
       \name{author}{3}{}{%
         {{hash=7e415d219905f66becd75b06920a8d3b}{%
@@ -8584,6 +9012,71 @@
       \field{pages}{50\bibrangedash 56}
       \range{pages}{7}
     \endentry
+    \entry{sikio2015mr}{article}{}
+      \name{author}{9}{}{%
+        {{hash=7cfd2c74d1ce7781e0602b560fecc043}{%
+           family={Sikiö},
+           family_i={S\bibinitperiod},
+           given={Minna},
+           given_i={M\bibinitperiod}}}%
+        {{hash=1c4815ea8ddb1470ab821aef179a8f3c}{%
+           family={Holli-Helenius},
+           family_i={H\bibinithyphendelim H\bibinitperiod},
+           given={Kirsi\bibnamedelima K},
+           given_i={K\bibinitperiod\bibinitdelim K\bibinitperiod}}}%
+        {{hash=4c5ceffa67102bf5421f8df8cab09eb0}{%
+           family={Harrison},
+           family_i={H\bibinitperiod},
+           given={Lara\bibnamedelima CV},
+           given_i={L\bibinitperiod\bibinitdelim C\bibinitperiod}}}%
+        {{hash=3e953f86fc4439a2928d7b52299ab8a3}{%
+           family={Ryymin},
+           family_i={R\bibinitperiod},
+           given={Pertti},
+           given_i={P\bibinitperiod}}}%
+        {{hash=32062a0994ea50afec3d8c0f9251c120}{%
+           family={Ruottinen},
+           family_i={R\bibinitperiod},
+           given={Hanna},
+           given_i={H\bibinitperiod}}}%
+        {{hash=4206d7c41946cf403cd90cfc38452d9d}{%
+           family={Saunamäki},
+           family_i={S\bibinitperiod},
+           given={Tiia},
+           given_i={T\bibinitperiod}}}%
+        {{hash=a88c4b3808e90a292bfe729fc6a23ee3}{%
+           family={Eskola},
+           family_i={E\bibinitperiod},
+           given={Hannu\bibnamedelima J},
+           given_i={H\bibinitperiod\bibinitdelim J\bibinitperiod}}}%
+        {{hash=c23cb06065e30454d4743e285633a7f8}{%
+           family={Elovaara},
+           family_i={E\bibinitperiod},
+           given={Irina},
+           given_i={I\bibinitperiod}}}%
+        {{hash=57eb91b70ee5c27ae7c569c0d28bb36c}{%
+           family={Dastidar},
+           family_i={D\bibinitperiod},
+           given={Prasun},
+           given_i={P\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {SAGE Publications}%
+      }
+      \strng{namehash}{45ff93bbb54de8c7559833e93c268900}
+      \strng{fullhash}{6a221088b085485b771cbff7197d1e40}
+      \field{sortinit}{S}
+      \field{sortinithash}{fd1e7c5ab79596b13dbbb67f8d70fb5a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Acta Radiologica}
+      \field{number}{1}
+      \field{title}{MR image texture in Parkinson{’}s disease: a longitudinal study}
+      \field{volume}{56}
+      \field{year}{2015}
+      \field{pages}{97\bibrangedash 104}
+      \range{pages}{8}
+    \endentry
     \entry{Smith2004}{article}{}
       \name{author}{17}{}{%
         {{hash=49a89c6ede91f785956919ac7c0878c3}{%
@@ -8737,6 +9230,32 @@
       \verb http://www.sciencedirect.com/science/article/B6WNP-4VCH6WN-1/2/fbde9dd344d47cc00f6923a23af3796a
       \endverb
       \keyw{Differential diagnosis; Parkinson's disease; Functional neuroimaging; Brain networks; PET; PCA; CAD}
+    \endentry
+    \entry{Srinivasan2008}{inproceedings}{}
+      \name{author}{2}{}{%
+        {{hash=1d30a292aeba2dbe42cb0250abb8c9da}{%
+           family={Srinivasan},
+           family_i={S\bibinitperiod},
+           given={GN},
+           given_i={G\bibinitperiod}}}%
+        {{hash=89e08b48c0e3706188062bcd2c8cb055}{%
+           family={Shobha},
+           family_i={S\bibinitperiod},
+           given={G},
+           given_i={G\bibinitperiod}}}%
+      }
+      \strng{namehash}{ff95d346510a005b5ddd40b6de1222b5}
+      \strng{fullhash}{ff95d346510a005b5ddd40b6de1222b5}
+      \field{sortinit}{S}
+      \field{sortinithash}{fd1e7c5ab79596b13dbbb67f8d70fb5a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{Proceedings of world academy of science, engineering and technology}
+      \field{title}{Statistical texture analysis}
+      \field{volume}{36}
+      \field{year}{2008}
+      \field{pages}{1264\bibrangedash 1269}
+      \range{pages}{6}
     \endentry
     \entry{Stoeckel04}{inproceedings}{}
       \name{author}{6}{}{%
@@ -8970,6 +9489,51 @@
       \field{pages}{281\bibrangedash 287}
       \range{pages}{7}
     \endentry
+    \entry{Wang2009}{article}{}
+      \name{author}{5}{}{%
+        {{hash=944d21a090d2fc32d2cdd40c7a346126}{%
+           family={Wang},
+           family_i={W\bibinitperiod},
+           given={Li},
+           given_i={L\bibinitperiod}}}%
+        {{hash=ad6946d808437d072182796ea5a4f766}{%
+           family={Li},
+           family_i={L\bibinitperiod},
+           given={Chunming},
+           given_i={C\bibinitperiod}}}%
+        {{hash=6d22512ad016e6fae9fd5704171284ca}{%
+           family={Sun},
+           family_i={S\bibinitperiod},
+           given={Quansen},
+           given_i={Q\bibinitperiod}}}%
+        {{hash=161ff5ad0b6359231d6aad88ef6d4635}{%
+           family={Xia},
+           family_i={X\bibinitperiod},
+           given={Deshen},
+           given_i={D\bibinitperiod}}}%
+        {{hash=a2d894a37e1d28d0a4b3924855f29da5}{%
+           family={Kao},
+           family_i={K\bibinitperiod},
+           given={Chiu-Yen},
+           given_i={C\bibinithyphendelim Y\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Elsevier}%
+      }
+      \strng{namehash}{e3f3b9a24d52da2d0d4b1fe99638d06c}
+      \strng{fullhash}{43397374094565f55139df81bb7af8cd}
+      \field{sortinit}{W}
+      \field{sortinithash}{99e3ba1b3f78bb6f073e7fa7ac11636b}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Computerized Medical Imaging and Graphics}
+      \field{number}{7}
+      \field{title}{Active contours driven by local and global intensity fitting energy with application to brain MR image segmentation}
+      \field{volume}{33}
+      \field{year}{2009}
+      \field{pages}{520\bibrangedash 531}
+      \range{pages}{12}
+    \endentry
     \entry{Weiskopf2013}{article}{}
       \name{author}{9}{}{%
         {{hash=32d6921b813a342d678cf6ee9395b067}{%
@@ -9200,48 +9764,46 @@
       \endverb
     \endentry
   \endsortlist
-  \missing{Unay2007}
-  \missing{clausi2002analysis}
-  \missing{kovalev2001three}
-  \missing{Shepp82}
-  \missing{Yen1995}
-  \missing{Medina2008}
-  \missing{Ojala1996}
-  \missing{dougall_systematic_2004}
-  \missing{xu2009source}
-  \missing{Vardi1985}
-  \missing{AAL}
-  \missing{Rojas2012}
-  \missing{martinez2013texture}
-  \missing{Evans1993}
-  \missing{Kohavi1995a}
-  \missing{PPMI}
-  \missing{IAIllan2010}
-  \missing{Ortiz2013}
-  \missing{jobst_accurate_1998}
-  \missing{Zhao2007}
   \missing{Inititative2010}
-  \missing{Ram'irez2009}
-  \missing{Segovia2012}
-  \missing{soh1999texture}
-  \missing{Fischl2004}
-  \missing{Tzourio-Mazoyer2002}
-  \missing{Illan2012}
-  \missing{sikio2015mr}
-  \missing{chan2001patterns}
-  \missing{Alvarez2009}
-  \missing{Chen2008}
-  \missing{Zhou2008}
-  \missing{Illan2014}
+  \missing{PPMI}
   \missing{Martinez-Murcia2014}
-  \missing{Shaffer1995}
-  \missing{Vapnik1982}
+  \missing{soh1999texture}
+  \missing{martinez2013texture}
+  \missing{chan2001patterns}
   \missing{Botev2010}
-  \missing{Locatelli1998}
   \missing{Jong2008}
   \missing{Grana2011}
+  \missing{Medina2008}
+  \missing{Zhou2008}
+  \missing{Unay2007}
+  \missing{Vardi1985}
+  \missing{IAIllan2010}
+  \missing{Chen2008}
+  \missing{clausi2002analysis}
+  \missing{Shaffer1995}
+  \missing{Ortiz2013}
+  \missing{Alvarez2009}
+  \missing{Rojas2012}
+  \missing{Illan2014}
+  \missing{Kohavi1995a}
+  \missing{Ram'irez2009}
   \missing{han2006reliability}
+  \missing{xu2009source}
+  \missing{Segovia2012}
+  \missing{Tzourio-Mazoyer2002}
+  \missing{Yen1995}
+  \missing{AAL}
+  \missing{dougall_systematic_2004}
+  \missing{Vapnik1982}
+  \missing{Locatelli1998}
+  \missing{Illan2012}
+  \missing{jobst_accurate_1998}
+  \missing{Evans1993}
   \missing{Ramirez2009}
+  \missing{Fischl2004}
+  \missing{Ojala1996}
+  \missing{Zhao2007}
+  \missing{Shepp82}
 \endrefsection
 
 \refsection{1}

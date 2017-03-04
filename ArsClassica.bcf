@@ -2268,10 +2268,16 @@
     <bcf:citekey order="123">Dubois2007</bcf:citekey>
     <bcf:citekey order="123">Claus1994</bcf:citekey>
     <bcf:citekey order="124">Fay10</bcf:citekey>
+    <bcf:citekey order="125">Saeed2002</bcf:citekey>
+    <bcf:citekey order="125">Alejo2003</bcf:citekey>
+    <bcf:citekey order="125">Wang2009</bcf:citekey>
+    <bcf:citekey order="126">kovalev2001three</bcf:citekey>
+    <bcf:citekey order="126">sikio2015mr</bcf:citekey>
     <bcf:citekey order="127">Martinez-Murcia2013266</bcf:citekey>
-    <bcf:citekey order="127">Martinez-Murcia2014</bcf:citekey>
-    <bcf:citekey order="128">bibid</bcf:citekey>
-    <bcf:citekey order="130">bibid</bcf:citekey>
+    <bcf:citekey order="127">martinez2014parametrization</bcf:citekey>
+    <bcf:citekey order="128">Martinez-Murcia2016b</bcf:citekey>
+    <bcf:citekey order="129">Srinivasan2008</bcf:citekey>
+    <bcf:citekey order="130">Haralick73</bcf:citekey>
     <bcf:citekey order="131">Philips2008</bcf:citekey>
     <bcf:citekey order="132">Haralick73</bcf:citekey>
     <bcf:citekey order="133">Philips2008</bcf:citekey>
@@ -2352,154 +2358,4 @@
     <bcf:citekey order="195">IAIllan2010</bcf:citekey>
     <bcf:citekey order="195">Ram&apos;irez2009</bcf:citekey>
     <bcf:citekey order="196">Grana2011</bcf:citekey>
-    <bcf:citekey order="196">Medina2008</bcf:citekey>
-    <bcf:citekey order="197">Grana2011</bcf:citekey>
-    <bcf:citekey order="197">Medina2008</bcf:citekey>
-    <bcf:citekey order="198">Tzourio-Mazoyer2002</bcf:citekey>
-    <bcf:citekey order="199">Dubois2007</bcf:citekey>
-    <bcf:citekey order="200">chan2001patterns</bcf:citekey>
-    <bcf:citekey order="200">Baron2001</bcf:citekey>
-    <bcf:citekey order="200">Jong2008</bcf:citekey>
-    <bcf:citekey order="201">chan2001patterns</bcf:citekey>
-    <bcf:citekey order="201">Baron2001</bcf:citekey>
-    <bcf:citekey order="202">Jong2008</bcf:citekey>
-    <bcf:citekey order="203">chan2001patterns</bcf:citekey>
-    <bcf:citekey order="203">Baron2001</bcf:citekey>
-    <bcf:citekey order="203">Jong2008</bcf:citekey>
-    <bcf:citekey order="204">sikio2015mr</bcf:citekey>
-    <bcf:citekey order="205">Martinez-Murcia2015</bcf:citekey>
-    <bcf:citekey order="206">Martinez-MurciaVRLBP</bcf:citekey>
-    <bcf:citekey order="207">Stoeckel04</bcf:citekey>
-    <bcf:citekey order="208">Ortiz2013</bcf:citekey>
-    <bcf:citekey order="209">Illan2014</bcf:citekey>
-    <bcf:citekey order="210">Stoeckel04</bcf:citekey>
-    <bcf:citekey order="211">Martinez-Murcia2015</bcf:citekey>
-    <bcf:citekey order="212">Martinez-MurciaVRLBP</bcf:citekey>
-    <bcf:citekey order="213">haar2014anatomical</bcf:citekey>
-    <bcf:citekey order="214">Martinez-Murcia2016a</bcf:citekey>
-    <bcf:citekey order="215">Ashburner2000</bcf:citekey>
-    <bcf:citekey order="216">xu2009source</bcf:citekey>
-    <bcf:citekey order="217">Chang2001</bcf:citekey>
-    <bcf:citekey order="218">Kohavi1995a</bcf:citekey>
-    <bcf:citekey order="219">Botev2010</bcf:citekey>
-    <bcf:citekey order="220">Stoeckel04</bcf:citekey>
-    <bcf:citekey order="221">jobst_accurate_1998</bcf:citekey>
-    <bcf:citekey order="221">dougall_systematic_2004</bcf:citekey>
-    <bcf:citekey order="222">Shepp82</bcf:citekey>
-    <bcf:citekey order="222">Vardi1985</bcf:citekey>
-    <bcf:citekey order="223">Ramirez2009</bcf:citekey>
-    <bcf:citekey order="224">Lozano2007</bcf:citekey>
-    <bcf:citekey order="225">PPMI</bcf:citekey>
-    <bcf:citekey order="225">Inititative2010</bcf:citekey>
-    <bcf:citekey order="226">Inititative2010</bcf:citekey>
-    <bcf:citekey order="227">Vapnik1982</bcf:citekey>
-  </bcf:section>
-  <bcf:sortlist section="1" name="ydnt/global/" type="entry" sortscheme="ydnt" sortnamekeyscheme="global" labelprefix="">
-  <bcf:sorting>
-    <bcf:sort order="1">
-      <bcf:sortitem order="1">presort</bcf:sortitem>
-    </bcf:sort>
-    <bcf:sort order="2" final="1">
-      <bcf:sortitem order="1">sortkey</bcf:sortitem>
-    </bcf:sort>
-    <bcf:sort order="3" sort_direction="descending">
-      <bcf:sortitem order="1" substring_side="left" substring_width="4">sortyear</bcf:sortitem>
-      <bcf:sortitem order="2" substring_side="left" substring_width="4">year</bcf:sortitem>
-      <bcf:sortitem order="3">9999</bcf:sortitem>
-    </bcf:sort>
-    <bcf:sort order="4">
-      <bcf:sortitem order="1">sortname</bcf:sortitem>
-      <bcf:sortitem order="2">author</bcf:sortitem>
-      <bcf:sortitem order="3">editor</bcf:sortitem>
-      <bcf:sortitem order="4">translator</bcf:sortitem>
-      <bcf:sortitem order="5">sorttitle</bcf:sortitem>
-      <bcf:sortitem order="6">title</bcf:sortitem>
-    </bcf:sort>
-    <bcf:sort order="5">
-      <bcf:sortitem order="1">sorttitle</bcf:sortitem>
-      <bcf:sortitem order="2">title</bcf:sortitem>
-    </bcf:sort>
-  </bcf:sorting>
-  </bcf:sortlist>
-  <bcf:sortlist section="1" name="ydnt/global/" type="entry" sortscheme="ydnt" sortnamekeyscheme="global" labelprefix="">
-  <bcf:sorting>
-    <bcf:sort order="1">
-      <bcf:sortitem order="1">presort</bcf:sortitem>
-    </bcf:sort>
-    <bcf:sort order="2" final="1">
-      <bcf:sortitem order="1">sortkey</bcf:sortitem>
-    </bcf:sort>
-    <bcf:sort order="3" sort_direction="descending">
-      <bcf:sortitem order="1" substring_side="left" substring_width="4">sortyear</bcf:sortitem>
-      <bcf:sortitem order="2" substring_side="left" substring_width="4">year</bcf:sortitem>
-      <bcf:sortitem order="3">9999</bcf:sortitem>
-    </bcf:sort>
-    <bcf:sort order="4">
-      <bcf:sortitem order="1">sortname</bcf:sortitem>
-      <bcf:sortitem order="2">author</bcf:sortitem>
-      <bcf:sortitem order="3">editor</bcf:sortitem>
-      <bcf:sortitem order="4">translator</bcf:sortitem>
-      <bcf:sortitem order="5">sorttitle</bcf:sortitem>
-      <bcf:sortitem order="6">title</bcf:sortitem>
-    </bcf:sort>
-    <bcf:sort order="5">
-      <bcf:sortitem order="1">sorttitle</bcf:sortitem>
-      <bcf:sortitem order="2">title</bcf:sortitem>
-    </bcf:sort>
-  </bcf:sorting>
-  </bcf:sortlist>
-  <bcf:sortlist section="1" name="ydnt/global/" type="entry" sortscheme="ydnt" sortnamekeyscheme="global" labelprefix="">
-  <bcf:sorting>
-    <bcf:sort order="1">
-      <bcf:sortitem order="1">presort</bcf:sortitem>
-    </bcf:sort>
-    <bcf:sort order="2" final="1">
-      <bcf:sortitem order="1">sortkey</bcf:sortitem>
-    </bcf:sort>
-    <bcf:sort order="3" sort_direction="descending">
-      <bcf:sortitem order="1" substring_side="left" substring_width="4">sortyear</bcf:sortitem>
-      <bcf:sortitem order="2" substring_side="left" substring_width="4">year</bcf:sortitem>
-      <bcf:sortitem order="3">9999</bcf:sortitem>
-    </bcf:sort>
-    <bcf:sort order="4">
-      <bcf:sortitem order="1">sortname</bcf:sortitem>
-      <bcf:sortitem order="2">author</bcf:sortitem>
-      <bcf:sortitem order="3">editor</bcf:sortitem>
-      <bcf:sortitem order="4">translator</bcf:sortitem>
-      <bcf:sortitem order="5">sorttitle</bcf:sortitem>
-      <bcf:sortitem order="6">title</bcf:sortitem>
-    </bcf:sort>
-    <bcf:sort order="5">
-      <bcf:sortitem order="1">sorttitle</bcf:sortitem>
-      <bcf:sortitem order="2">title</bcf:sortitem>
-    </bcf:sort>
-  </bcf:sorting>
-  </bcf:sortlist>
-  <bcf:sortlist section="0" name="ydnt/global/" type="entry" sortscheme="ydnt" sortnamekeyscheme="global" labelprefix="">
-  <bcf:sorting>
-    <bcf:sort order="1">
-      <bcf:sortitem order="1">presort</bcf:sortitem>
-    </bcf:sort>
-    <bcf:sort order="2" final="1">
-      <bcf:sortitem order="1">sortkey</bcf:sortitem>
-    </bcf:sort>
-    <bcf:sort order="3" sort_direction="descending">
-      <bcf:sortitem order="1" substring_side="left" substring_width="4">sortyear</bcf:sortitem>
-      <bcf:sortitem order="2" substring_side="left" substring_width="4">year</bcf:sortitem>
-      <bcf:sortitem order="3">9999</bcf:sortitem>
-    </bcf:sort>
-    <bcf:sort order="4">
-      <bcf:sortitem order="1">sortname</bcf:sortitem>
-      <bcf:sortitem order="2">author</bcf:sortitem>
-      <bcf:sortitem order="3">editor</bcf:sortitem>
-      <bcf:sortitem order="4">translator</bcf:sortitem>
-      <bcf:sortitem order="5">sorttitle</bcf:sortitem>
-      <bcf:sortitem order="6">title</bcf:sortitem>
-    </bcf:sort>
-    <bcf:sort order="5">
-      <bcf:sortitem order="1">sorttitle</bcf:sortitem>
-      <bcf:sortitem order="2">title</bcf:sortitem>
-    </bcf:sort>
-  </bcf:sorting>
-  </bcf:sortlist>
-</bcf:controlfile>
+    <bcf:citekey order
