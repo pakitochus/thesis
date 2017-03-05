@@ -212,11 +212,19 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {figure}{\numberline {5.2}{\ignorespaces Comparison of the different $I_{th}$ values.}}{69}{figure.caption.97}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {5.3}{\ignorespaces Average accuracy values obtained for \subref {fig:acc_dist} the single approach and \subref {fig:acc_cum} the cumulative approach.\relax }}{73}{figure.caption.98}
+\contentsline {figure}{\numberline {5.3}{\ignorespaces Evolution of the average accuracy with the intensity threshold.}}{73}{figure.caption.98}
 \defcounter {refsection}{0}\relax 
-\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Single approach}}}{73}{subfigure.3.1}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {No Normalization (Single)}}}{73}{subfigure.3.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Cumulative approach}}}{73}{subfigure.3.2}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {No Normalization (Cumulative)}}}{73}{subfigure.3.2}
+\defcounter {refsection}{0}\relax 
+\contentsline {subfigure}{\numberline {(c)}{\ignorespaces {Maximum (Single)}}}{73}{subfigure.3.3}
+\defcounter {refsection}{0}\relax 
+\contentsline {subfigure}{\numberline {(d)}{\ignorespaces {Maximum (Cumulative)}}}{73}{subfigure.3.4}
+\defcounter {refsection}{0}\relax 
+\contentsline {subfigure}{\numberline {(e)}{\ignorespaces {Integral (Single)}}}{73}{subfigure.3.5}
+\defcounter {refsection}{0}\relax 
+\contentsline {subfigure}{\numberline {(f)}{\ignorespaces {Integral (Cumulative)}}}{73}{subfigure.3.6}
 \defcounter {refsection}{0}\relax 
 \contentsline {figure}{\numberline {5.4}{\ignorespaces Box plot of all 130 accuracy values computed for each feature, using the ''single approach'', at 10 distances $d$ (ranging from 1 to 10) and 13 spatial directions, for \subref {fig:acc_distances_ppmi} PPMI database, \subref {fig:acc_distances_vdlv} VDLV database and \subref {fig:acc_distances_vdln} VDLN database. The red marks represent the outliers.\relax }}{74}{figure.caption.99}
 \defcounter {refsection}{0}\relax 

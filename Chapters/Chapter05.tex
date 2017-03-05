@@ -66,11 +66,11 @@ We will compute one $16\times16$ \ac{GLCM} for each of the combinations of direc
 \begin{equation}
 \mathbf{P}(i,j) = \frac{\mathbf{C}_{\Delta}(i,j)}{\sum_{i,j}\mathbf{C}_{\Delta}(i,j)}
 \end{equation}
-from which the texture features will be derived
+from which the texture features will be derived.
 
 \subsubsection{Haralick Texture Features}
 %Parámetros de haralick. 
-In \cite{Haralick73,Haralick1992a}, twelve texture features are derived from the probability matrix. These features are noted as:
+In \cite{Haralick73,Haralick1992a}, many texture features are derived from the probability matrix defined above. We have selected twelve of these features to use in this work. These features are: 
 \begin{align}
 \text{Energy} & = \sum\limits_i\sum\limits_j \mathbf{P}(i,j)^2\\ 
 \text{Entropy} & = \sum\limits_i\sum\limits_j \mathbf{P}(i,j) \log \mathbf{P}(i,j)\\
@@ -82,6 +82,8 @@ In \cite{Haralick73,Haralick1992a}, twelve texture features are derived from the
 \text{Cluster Shade} & \sum\limits_i\sum\limits_j (i+j-\mu_x-\mu_y)^3 \mathbf{P}(i,j)\\
 \text{Cluster Tendency} & \sum\limits_i\sum\limits_j \{ i+j-\mu_x-\mu_y\}^4 \mathbf{P}(i,j)\\
 \text{Homogeneity} & = \sum\limits_i\sum\limits_j \frac{\mathbf{P}(i,j)}{1+|i-j|}\\
+\end{align}
+\begin{align}
 \text{Max Probability} & = \max_{i,j} \mathbf{P}(i,j)\\
 \text{Inverse Variance} & = \sum\limits_i\sum\limits_j {\mathbf{P}(i,j) \over (i-j)^2}
 \end{align}
@@ -98,24 +100,26 @@ For evaluating the system proposed in this chapter, combining texture analysis a
 	\item Experiment 2: Impact of the introduction of a feature selection algorithm after computing the texture features. This allow us to pool all texture features at all distances and directions, and then select the most discriminative ones according to some of these criteria.  
 \end{itemize}
 
-
-% DONE
+All images used are intensity normalized using either normalization to the maximum or integral normalization (see Section~\ref{sec:intensityPrep}), and afterwards, a subvolume can be extracted using the intensity threshold methodology described at Section~\ref{sec:volume}. In addition to the feature extraction technique using texture analysis, and the feature selection procedure defined for Experiment 2, we use a linear \ac{SVC} for classifying, and 10-fold cross validation strategy (see Section~\ref{sec:validation} for more details). 
 
 \section{Results}\label{sec:ch5results}
 \subsection{Experiment 1}
-In experiment 1, the influence and effect of using each of the twelve Haralick texture features on the results is tested, as in \cite{Martinez-Murcia2013266}. GLC matrices are computed at a distance $d$ ranging from 1 to 10 voxels from the central one. As discussed later in this Section, the optimum sub-volume will have a smaller size than $40\times40\times50$, and so, the maximum value of $d=10$ correspond to at least $20\%$ of the brain sub-volume selected at that point; lower frequency textural changes can be neglected for diagnosis. Furthermore, as the voxel size of all databases is approximately 2x2x2mm, the maximum textural changes are computed within a 20x20x20mm area. This is approximately half the size of the striatum, which is enough to correctly extract the textural features of the area. 
+In this experiment, the influence and effect of each texture feature is tested, as in \cite{Martinez-Murcia2013266}. We have tested the computation of the \acp{GLCM} over the image subvolumes using different thresholds $I_{th}$ (see Sec. \ref{sec:volume}) ranging from 0 to 50\% of the maximum intensity value, and a range of distances $d=1,2,\dots10$ in the thirteen spatial directions.
 
-As commented before, we will use a normalization to the maximum strategy to normalize all the images in our three databases. After this, the 3D-GLC matrices will be computed over the selected subvolumes, given an intensity threshold $I_{th}$ (see Sec. \ref{sec:volume}). The optimum value of $I_{th}$ should be high enough to avoid introducing background voxels in the subvolume selected, yet adequately low to select the biggest subvolume containing only brain voxels. This should lead to the best performance, since the 3D GLC matrices (and the Haralick Texture Features) would have enough information, and would not include non-brain textural patterns. 
-
-To better illustrate the influence of the subvolume selection process, Figure \ref{fig:featuresIth} depicts the average accuracy values for the two aforementioned approaches: Single (only the textural features computed at a distance $d$) and Cumulative (all textural features computed in the 1 to $d$ distance range). In both cases, 10 values of $d$, 13 directions and 12 features have been averaged to obtain the accuracy for each value of the intensity threshold $I_{th}$. 
+To check which value of the intensity threshold is the best for computing the texture features, we can compute the general tendency of the system by averaging the accuracy values. Figure~\ref{fig:featuresIth} depicts the general trend of the performance over the intensity threshold for either the no normalized or normalized images. This is done for the single and cumulative approach. 
 
 \begin{figure*}% single and cumulative approach. 
 	\centering
-	\subfloat[Single approach]{\includegraphics[width=0.45\textwidth]{Graphics/ch5/featuresIthdis.eps}\label{fig:acc_dist}}
-	\subfloat[Cumulative approach]{\includegraphics[width=0.45\textwidth]{Graphics/ch5/featuresIthcum.eps}\label{fig:acc_cum}}
-	\caption{Average accuracy values obtained for \protect\subref{fig:acc_dist} the single approach and \protect\subref{fig:acc_cum} the cumulative approach.}
+	\subfloat[No Normalization (Single)]{\includegraphics[width=0.5\textwidth]{Graphics/ch5/featuresIthdis_no.eps}\label{fig:acc_dist_no}}
+	\subfloat[No Normalization (Cumulative)]{\includegraphics[width=0.5\textwidth]{Graphics/ch5/featuresIthcum_no.eps}\label{fig:acc_cum_no}}\\
+	\subfloat[Maximum (Single)]{\includegraphics[width=0.5\textwidth]{Graphics/ch5/featuresIthdis_max.eps}\label{fig:acc_dist_max}}
+	\subfloat[Maximum (Cumulative)]{\includegraphics[width=0.5\textwidth]{Graphics/ch5/featuresIthcum_max.eps}\label{fig:acc_cum_max}}\\
+	\subfloat[Integral (Single)]{\includegraphics[width=0.5\textwidth]{Graphics/ch5/featuresIthdis_int.eps}\label{fig:acc_dist_int}}
+	\subfloat[Integral (Cumulative)]{\includegraphics[width=0.5\textwidth]{Graphics/ch5/featuresIthcum_int.eps}\label{fig:acc_cum_int}}
+	\caption[Evolution of the average accuracy with the intensity threshold.]{Evolution of the average accuracy values obtained for the single approach and the cumulative approach over the intensity threshold, using no normalization, normalization to the maximum and integral normalization.}
 	\label{fig:featuresIth}
 \end{figure*}
+% DONE
 
 The effect of removing the background is clearly shown in these pictures, obtaining best results when using a $I_{th}>0.30\times I_{max}$ and then increasing the accuracy. Furthermore, the effect of the normalization is also clear in these two images. It is possible to notice that, when using no-normalized databases (those noted with a ``-no'' sufix) there are wide ranges of $I_{th}$ values in which similar performance values are obtained, while when using the normalized images, there are obvious peaks of accuracy around some values (usually, 0.30 or 0.35). Having applied no normalization to the images, the average image $I_{mean}$, from which the subvolume coordinates are extracted, is highly affected by the difference of intensities of different anatomical areas. Therefore, the subvolume computed will not be optimum, and for every value of $I_{th}$ there will be an set of samples in which the texture features will be correctly computed, and another set in which those will be poorly extracted. 
 
@@ -249,3 +253,10 @@ For comparison purposes, we have established a baseline method proposed in Illan
 
 In Table \ref{tab:comparison}, performance values at the operation point are shown for Experiment 1 (using five texture features: Homogeneity, Cluster shade, Cluster tendency, Correlation and energy) and for Experiment 2 (using Relative Entropy, FDR or Student's $t$-Test). These values are compared with the VAF, SVD and EMD approaches previously cited. We can observe that the performance values obtained with Experiment 1 are very similar to other state-of-the-art methods, like the proposed in \cite{Segovia2012,Rojas2012}, whereas the methodology used in Experiment 2 outperform all previously used methods. Particularly, as we previously mentioned, the use of either FDR or $t$-Test to select the most discriminant features gives us results over a PL of $26$ and sensitivity over $99\%$, which proves the ability of some Haralick Textures, and the combination of them, in characterizing the different Parkinson's Disease patterns, and the robustness of the proposed methods. 
 \section{Discussion}\label{sec:ch5discuss}
+
+
+
+As discussed later in this Section, the optimum sub-volume will have a smaller size than $40\times40\times50$, and so, the maximum value of $d=10$ correspond to at least $20\%$ of the brain sub-volume selected at that point; lower frequency textural changes can be neglected for diagnosis. Furthermore, as the voxel size of all databases is approximately 2x2x2mm, the maximum textural changes are computed within a 20x20x20mm area. This is approximately half the size of the striatum, which is enough to correctly extract the textural features of the area. 
+
+
+The optimum value of $I_{th}$ should be high enough to avoid introducing background voxels in the subvolume selected, yet adequately low to select the biggest subvolume containing only brain voxels. This should lead to the best performance, since the 3D GLC matrices (and the Haralick Texture Features) would have enough information, and would not include non-brain textural patterns. 
