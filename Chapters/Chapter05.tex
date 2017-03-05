@@ -119,6 +119,9 @@ To check which value of the intensity threshold is the best for computing the te
 	\caption[Evolution of the average accuracy with the intensity threshold.]{Evolution of the average accuracy values obtained for the single approach and the cumulative approach over the intensity threshold, using no normalization, normalization to the maximum and integral normalization.}
 	\label{fig:featuresIth}
 \end{figure*}
+
+In these figures, the effect of removing the background is extremely clear, since the accuracy significantly increases after a $I_{th}>0.30\times I_{max}$. Differences in the normalization procedure can also be spotted. It is interesting to note that the integral normalization behaves similarly to perform no normalization. Conversely, the normalization to the maximum decreases even the general trend 
+
 % DONE
 
 The effect of removing the background is clearly shown in these pictures, obtaining best results when using a $I_{th}>0.30\times I_{max}$ and then increasing the accuracy. Furthermore, the effect of the normalization is also clear in these two images. It is possible to notice that, when using no-normalized databases (those noted with a ``-no'' sufix) there are wide ranges of $I_{th}$ values in which similar performance values are obtained, while when using the normalized images, there are obvious peaks of accuracy around some values (usually, 0.30 or 0.35). Having applied no normalization to the images, the average image $I_{mean}$, from which the subvolume coordinates are extracted, is highly affected by the difference of intensities of different anatomical areas. Therefore, the subvolume computed will not be optimum, and for every value of $I_{th}$ there will be an set of samples in which the texture features will be correctly computed, and another set in which those will be poorly extracted. 
