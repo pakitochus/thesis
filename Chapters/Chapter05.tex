@@ -120,7 +120,13 @@ To check which value of the intensity threshold is the best for computing the te
 	\label{fig:featuresIth}
 \end{figure*}
 
-In these figures, the effect of removing the background is extremely clear, since the accuracy significantly increases after a $I_{th}>0.30\times I_{max}$. Differences in the normalization procedure can also be spotted. It is interesting to note that the integral normalization behaves similarly to perform no normalization. Conversely, the normalization to the maximum decreases even the general trend 
+The most obvious differences can be found between normalization procedures. As a general trend, the integral normalization barely has an impact over the performance achieved with the registered images. Furthermore, the normalization to the maximum even drops the performance for high $I_{th}$, however it increases the general performance in the range 0.1-0.3. From these graphs it is patent that normalization has no impact on the performance achieved by our system, which can be consider an advantage, since it reduces the preprocessing needed. 
+
+In this regard, the VDLV-DAT dataset has an strange behaviour. It performance holds and even increases when using normalization to the maximum, but significantly drops when integral normalization is used. This is exactly the opposite as happens to the other dataset, and will be discussed later.  
+
+In these images, we can observe a strong dependence of the system's performance with the intensity threshold $I_{th}$. In general, the performance increases with a more restrictive threshold (a smaller box around the striatum). This increase is probably due to removing the background from the texture analysis. In most cases, $I_{th}\approx 0.35\times I_{max}$ seems to be a critical value: either the global maximum or the inflection point from which accuracy stabilizes.
+
+ the general trend 
 
 % DONE
 
@@ -130,6 +136,8 @@ The behaviour of each of the Haralick texture features can also be analysed usin
 
 \begin{bigfigure}
 	\includegraphics[width=\textheight]{Graphics/ch5/features_acc.eps}\label{fig:acc_distances}
+	\caption{Violin plot of all accuracy values, grouped by database and normalization method.}
+	\label{fig:features_acc}
 \end{bigfigure}
 
 \begin{figure*}% Son los del experimento distances
@@ -267,3 +275,8 @@ As discussed later in this Section, the optimum sub-volume will have a smaller s
 
 
 The optimum value of $I_{th}$ should be high enough to avoid introducing background voxels in the subvolume selected, yet adequately low to select the biggest subvolume containing only brain voxels. This should lead to the best performance, since the 3D GLC matrices (and the Haralick Texture Features) would have enough information, and would not include non-brain textural patterns. 
+
+
+From these graphs it is patent that normalization has no impact on the performance achieved by our system, which can be consider an advantage, since it reduces the preprocessing needed. 
+
+In this regard, the VDLV-DAT dataset has an strange behaviour. It performance holds and even increases when using normalization to the maximum, but significantly drops when integral normalization is used. This is exactly the opposite as happens to the other dataset, and will be discussed later.  
