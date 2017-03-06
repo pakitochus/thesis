@@ -226,83 +226,83 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {subfigure}{\numberline {(f)}{\ignorespaces {Integral (Cumulative)}}}{73}{subfigure.3.6}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {5.4}{\ignorespaces Box plot of all 130 accuracy values computed for each feature, using the ''single approach'', at 10 distances $d$ (ranging from 1 to 10) and 13 spatial directions, for \subref {fig:acc_distances_ppmi} PPMI database, \subref {fig:acc_distances_vdlv} VDLV database and \subref {fig:acc_distances_vdln} VDLN database. The red marks represent the outliers.\relax }}{74}{figure.caption.99}
+\contentsline {figure}{\numberline {5.4}{\ignorespaces Box plot of all 130 accuracy values computed for each feature, using the ''single approach'', at 10 distances $d$ (ranging from 1 to 10) and 13 spatial directions, for \subref {fig:acc_distances_ppmi} PPMI database, \subref {fig:acc_distances_vdlv} VDLV database and \subref {fig:acc_distances_vdln} VDLN database. The red marks represent the outliers.\relax }}{76}{figure.caption.100}
 \defcounter {refsection}{0}\relax 
-\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {PPMI database}}}{74}{subfigure.4.1}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {PPMI database}}}{76}{subfigure.4.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {VDLN database}}}{74}{subfigure.4.2}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {VDLN database}}}{76}{subfigure.4.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {subfigure}{\numberline {(c)}{\ignorespaces {VDLV database}}}{74}{subfigure.4.3}
+\contentsline {subfigure}{\numberline {(c)}{\ignorespaces {VDLV database}}}{76}{subfigure.4.3}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {5.5}{\ignorespaces Accuracy obtained by averaging all accuracy values using a given volume selection threshold $I_{th}$\relax }}{76}{figure.caption.101}
+\contentsline {figure}{\numberline {5.5}{\ignorespaces Accuracy obtained by averaging all accuracy values using a given volume selection threshold $I_{th}$\relax }}{77}{figure.caption.102}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {5.6}{\ignorespaces Average accuracy computed for each selection criteria, using all accuracy values for intensity thresholds of $0.10$ to $0.45$. These values are plotted over $N$, the number of features selected using some of the ranking criteria defined in Sec. \ref {sec:discrimination} (where $N$ ranges from 1\% and 100\% of the $1560$ total Haralick features calculated). These values correspond to the images of the \subref {fig:experiment4-ppmi} PPMI database, \subref {fig:experiment4-vdlv} VDLV database and \subref {fig:experiment4-vdln} VDLN database (experiment 2).\relax }}{77}{figure.caption.102}
+\contentsline {figure}{\numberline {5.6}{\ignorespaces Average accuracy computed for each selection criteria, using all accuracy values for intensity thresholds of $0.10$ to $0.45$. These values are plotted over $N$, the number of features selected using some of the ranking criteria defined in Sec. \ref {sec:discrimination} (where $N$ ranges from 1\% and 100\% of the $1560$ total Haralick features calculated). These values correspond to the images of the \subref {fig:experiment4-ppmi} PPMI database, \subref {fig:experiment4-vdlv} VDLV database and \subref {fig:experiment4-vdln} VDLN database (experiment 2).\relax }}{78}{figure.caption.103}
 \defcounter {refsection}{0}\relax 
-\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {PPMI database}}}{77}{subfigure.6.1}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {PPMI database}}}{78}{subfigure.6.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {VDLN database}}}{77}{subfigure.6.2}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {VDLN database}}}{78}{subfigure.6.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {subfigure}{\numberline {(c)}{\ignorespaces {VDLV database}}}{77}{subfigure.6.3}
-\defcounter {refsection}{0}\relax 
-\addvspace {10\p@ }
-\defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {6.1}{\ignorespaces Flow diagram of the procedure used in the textural analysis of projected MR brain images.\relax }}{81}{figure.caption.105}
-\defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {6.2}{\ignorespaces Illustration of the computation of the mapping vector $\mathbf {v}_{\theta ,\varphi }$, the angles $\theta $ and $\varphi $ and the $r$-neighbourhood of $\mathbf {v}$ (see Section~\ref {sec:vrlbp}).\relax }}{83}{figure.caption.108}
-\defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {6.3}{\ignorespaces Resulting \ac {GM} and \ac {WM} maps of the same control subject using the six proposed measures: Surface, Thickness, Number of Folds, Average, Entropy and Kurtosis.\relax }}{85}{figure.caption.109}
-\defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {6.4}{\ignorespaces An example of the VRLBP projection for \ac {GM} and \ac {WM} Tissues. \relax }}{87}{figure.caption.110}
-\defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {6.5}{\ignorespaces Set of \acs {HMM} based paths over the MRI DARTEL template.}}{92}{figure.caption.112}
-\defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {6.6}{\ignorespaces Projection of different cortical regions. In the Frontal region, we can find: 1) Frontal Sup., 2) Frontal Mid., 3) Frontal Inf. Oper., 4) Frontal Inf. Tri., 5) Frontal Sup. Orb, 6) Frontal Mid. Orb, 7) Frontal Inf. Orb, 8) Frontal Sup. Medial, 9) Rectus, 10) Frontal Med. Orb., 11) Precentral, 12) Supp. Motor Area. In the Parietal region: 13) Paracentral Lobe, 14) Postcentral, 15) Parietal Sup., 16) Parietal Inf., 17) Supramarginal, 18) Angular. In the Occipital region: 19) Precuneus, 20) Cuneus, 21) Occipital Sup., 22) Occipital Mid., 23) Occipital Inf., 24) Lingual. In the Temporal region: 25) Temporal Sup., 26) Temporal Pole Sup., 27) Temporal Mid., 28) Temporal Pole Mid., 29) Temporal Inf, 30) Fusiform, 31) Parahippocampal. The Cerebellum, divided in: 32) Cerebelum Crus 1, 33) Cerebelum 3, 34) Cerebelum 4-5, 35) Cerebelum 6, 36) Cerebelum 7b, 37) Cerebelum 8, 38) Cerebelum 9, 39) Cerebelum 10. And additionally, the 40) Medulla, 41) Brain Stem and 42) Insula.\relax }}{95}{figure.caption.113}
-\defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {6.7}{\ignorespaces Projection of some important subcortical regions and organs. We observe the following subcortical structures: 1) Caudate Nucleus, 2) Olfactory Bulb, 3) Rolandic Operculum, 4) Heschl's gyri, 5) Putamen, 6) Globus Pallidus, 7) Amygdala, 8) Hippocampus, 9) Thalamus, 10) Lingual, 11) Vermis 4-5, 12) Vermis 7, 13) Vermis 9, 14) Vermis 1-2, 15) Cingulate Gyrus, 16) Corpus Callosum\relax }}{95}{figure.caption.114}
-\defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {6.8}{\ignorespaces $t$-maps that present the level of statistical relevance in the AD vs. NC paradigm, for each type of mapping and \ac {GM} and \ac {WM}. \relax }}{96}{figure.caption.115}
-\defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {6.9}{\ignorespaces $t$-maps that present the level of statistical relevance in the AD vs. NC paradigm, for a four-layered average mapping over a) \ac {GM} and b) \ac {WM}. \relax }}{98}{figure.caption.116}
-\defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {6.10}{\ignorespaces $t$-maps that present the level of statistical relevance in the AD vs. NC paradigm, for the VRLBP projections mapping over a) \ac {GM} and b) \ac {WM}. \relax }}{99}{figure.caption.117}
-\defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {6.11}{\ignorespaces Performance for the different \ac {SBM} approaches over the: a) Grey Matter and b) White Matter.\relax }}{102}{figure.caption.120}
-\defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {6.12}{\ignorespaces Performance for the different four-layered mappings over the: a) Grey Matter and b) White Matter at different levels of statistical significance.\relax }}{103}{figure.caption.121}
-\defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {6.13}{\ignorespaces Path traced over a gaussian mixture distribution of 4 isotropic gaussian kernels.\relax }}{104}{figure.caption.122}
-\defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {6.14}{\ignorespaces \ac {HMM} path computed inside a density distribution defined by an helix.\relax }}{105}{figure.caption.123}
-\defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {6.15}{\ignorespaces Simulation of the \ac {HMM}-based path tracing over an Iberian Peninsula height map, interconecting different cities.\relax }}{106}{figure.caption.124}
-\defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {6.16}{\ignorespaces DARTEL paths computed in each direction ($\varphi ,\theta $). Each path's colour represent the accuracy in a differential diagnosis. Only one in every five paths are shown for clarity purposes.\relax }}{107}{figure.caption.125}
-\defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {6.17}{\ignorespaces Performance at the operation point for the different mappings over the Grey Matter and White Matter, compared with the performance of \ac {VAF}.\relax }}{109}{figure.caption.129}
-\defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {6.18}{\ignorespaces ROC curves of the different mappings for the \ac {GM} and \ac {WM} tissues.\relax }}{111}{figure.caption.130}
-\defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {6.19}{\ignorespaces Paths that obtain more than 75\% accuracy, and a three-dimensional representation of the structures crossed by them.\relax }}{114}{figure.caption.131}
+\contentsline {subfigure}{\numberline {(c)}{\ignorespaces {VDLV database}}}{78}{subfigure.6.3}
 \defcounter {refsection}{0}\relax 
 \addvspace {10\p@ }
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {7.1}{\ignorespaces Summary of the \acs {SWPCA} algorithm, along with its context in the pipeline used in this article.}}{121}{figure.caption.133}
+\contentsline {figure}{\numberline {6.1}{\ignorespaces Flow diagram of the procedure used in the textural analysis of projected MR brain images.\relax }}{83}{figure.caption.106}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {7.2}{\ignorespaces Weighting function $\Lambda _c(p_c,p_{th})$ used in \acs {SWPCA}.}}{123}{figure.caption.135}
+\contentsline {figure}{\numberline {6.2}{\ignorespaces Illustration of the computation of the mapping vector $\mathbf {v}_{\theta ,\varphi }$, the angles $\theta $ and $\varphi $ and the $r$-neighbourhood of $\mathbf {v}$ (see Section~\ref {sec:vrlbp}).\relax }}{85}{figure.caption.109}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {7.3}{\ignorespaces Box-plot of the distribution of the component scores at each site of the AIMS-MRI dataset (see Sections~\ref {sec:swpcaAIMSresults} and \ref {sec:aims-mri}) in the four first components.}}{123}{figure.caption.136}
+\contentsline {figure}{\numberline {6.3}{\ignorespaces Resulting \ac {GM} and \ac {WM} maps of the same control subject using the six proposed measures: Surface, Thickness, Number of Folds, Average, Entropy and Kurtosis.\relax }}{87}{figure.caption.110}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {7.4}{\ignorespaces Brain t-map (\acs {VBM}) of significant ($p<0.01$, $|t|>2.57$) \acs {GM} and \acs {WM} between-group differences using \acs {qT1}, \acs {qT2}, \acs {synT1}, \acs {GM} and \acs {WM} modalities after applying \acs {SWPCA} to remove site effects.}}{126}{figure.caption.139}
+\contentsline {figure}{\numberline {6.4}{\ignorespaces An example of the VRLBP projection for \ac {GM} and \ac {WM} Tissues. \relax }}{89}{figure.caption.111}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {7.5}{\ignorespaces Brain t-map (\acs {VBM}) of significant ($p<0.01$, $|t|>2.57$) \acs {GM} and \acs {WM} differences in \acs {ASD} using \acs {qT1}, \acs {qT2}, \acs {synT1}, \acs {GM} and \acs {WM} maps before and after applying \acs {SWPCA} to remove site effects.}}{130}{figure.caption.142}
+\contentsline {figure}{\numberline {6.5}{\ignorespaces Set of \acs {HMM} based paths over the MRI DARTEL template.}}{94}{figure.caption.113}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {7.6}{\ignorespaces Brain Z-map (\acs {CBM}) of significant ($p<0.01$, $|t|>2.57$) \acs {GM} and \acs {WM} differences using \acs {qT1}, \acs {qT2}, \acs {synT1}, \acs {GM} and \acs {WM} maps before and after applying \acs {SWPCA} to remove site effects.}}{132}{figure.caption.143}
+\contentsline {figure}{\numberline {6.6}{\ignorespaces Projection of different cortical regions. In the Frontal region, we can find: 1) Frontal Sup., 2) Frontal Mid., 3) Frontal Inf. Oper., 4) Frontal Inf. Tri., 5) Frontal Sup. Orb, 6) Frontal Mid. Orb, 7) Frontal Inf. Orb, 8) Frontal Sup. Medial, 9) Rectus, 10) Frontal Med. Orb., 11) Precentral, 12) Supp. Motor Area. In the Parietal region: 13) Paracentral Lobe, 14) Postcentral, 15) Parietal Sup., 16) Parietal Inf., 17) Supramarginal, 18) Angular. In the Occipital region: 19) Precuneus, 20) Cuneus, 21) Occipital Sup., 22) Occipital Mid., 23) Occipital Inf., 24) Lingual. In the Temporal region: 25) Temporal Sup., 26) Temporal Pole Sup., 27) Temporal Mid., 28) Temporal Pole Mid., 29) Temporal Inf, 30) Fusiform, 31) Parahippocampal. The Cerebellum, divided in: 32) Cerebelum Crus 1, 33) Cerebelum 3, 34) Cerebelum 4-5, 35) Cerebelum 6, 36) Cerebelum 7b, 37) Cerebelum 8, 38) Cerebelum 9, 39) Cerebelum 10. And additionally, the 40) Medulla, 41) Brain Stem and 42) Insula.\relax }}{97}{figure.caption.114}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {6.7}{\ignorespaces Projection of some important subcortical regions and organs. We observe the following subcortical structures: 1) Caudate Nucleus, 2) Olfactory Bulb, 3) Rolandic Operculum, 4) Heschl's gyri, 5) Putamen, 6) Globus Pallidus, 7) Amygdala, 8) Hippocampus, 9) Thalamus, 10) Lingual, 11) Vermis 4-5, 12) Vermis 7, 13) Vermis 9, 14) Vermis 1-2, 15) Cingulate Gyrus, 16) Corpus Callosum\relax }}{97}{figure.caption.115}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {6.8}{\ignorespaces $t$-maps that present the level of statistical relevance in the AD vs. NC paradigm, for each type of mapping and \ac {GM} and \ac {WM}. \relax }}{98}{figure.caption.116}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {6.9}{\ignorespaces $t$-maps that present the level of statistical relevance in the AD vs. NC paradigm, for a four-layered average mapping over a) \ac {GM} and b) \ac {WM}. \relax }}{100}{figure.caption.117}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {6.10}{\ignorespaces $t$-maps that present the level of statistical relevance in the AD vs. NC paradigm, for the VRLBP projections mapping over a) \ac {GM} and b) \ac {WM}. \relax }}{101}{figure.caption.118}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {6.11}{\ignorespaces Performance for the different \ac {SBM} approaches over the: a) Grey Matter and b) White Matter.\relax }}{104}{figure.caption.121}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {6.12}{\ignorespaces Performance for the different four-layered mappings over the: a) Grey Matter and b) White Matter at different levels of statistical significance.\relax }}{105}{figure.caption.122}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {6.13}{\ignorespaces Path traced over a gaussian mixture distribution of 4 isotropic gaussian kernels.\relax }}{106}{figure.caption.123}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {6.14}{\ignorespaces \ac {HMM} path computed inside a density distribution defined by an helix.\relax }}{107}{figure.caption.124}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {6.15}{\ignorespaces Simulation of the \ac {HMM}-based path tracing over an Iberian Peninsula height map, interconecting different cities.\relax }}{108}{figure.caption.125}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {6.16}{\ignorespaces DARTEL paths computed in each direction ($\varphi ,\theta $). Each path's colour represent the accuracy in a differential diagnosis. Only one in every five paths are shown for clarity purposes.\relax }}{109}{figure.caption.126}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {6.17}{\ignorespaces Performance at the operation point for the different mappings over the Grey Matter and White Matter, compared with the performance of \ac {VAF}.\relax }}{111}{figure.caption.130}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {6.18}{\ignorespaces ROC curves of the different mappings for the \ac {GM} and \ac {WM} tissues.\relax }}{113}{figure.caption.131}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {6.19}{\ignorespaces Paths that obtain more than 75\% accuracy, and a three-dimensional representation of the structures crossed by them.\relax }}{116}{figure.caption.132}
 \defcounter {refsection}{0}\relax 
 \addvspace {10\p@ }
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {8.1}{\ignorespaces Schema of the brain image synthesis algorithm.\relax }}{139}{figure.caption.146}
+\contentsline {figure}{\numberline {7.1}{\ignorespaces Summary of the \acs {SWPCA} algorithm, along with its context in the pipeline used in this article.}}{123}{figure.caption.134}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {8.2}{\ignorespaces Comparison between simulated and original images from \acs {AD} and \acs {CTL} classes.}}{140}{figure.caption.147}
+\contentsline {figure}{\numberline {7.2}{\ignorespaces Weighting function $\Lambda _c(p_c,p_{th})$ used in \acs {SWPCA}.}}{125}{figure.caption.136}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {7.3}{\ignorespaces Box-plot of the distribution of the component scores at each site of the AIMS-MRI dataset (see Sections~\ref {sec:swpcaAIMSresults} and \ref {sec:aims-mri}) in the four first components.}}{125}{figure.caption.137}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {7.4}{\ignorespaces Brain t-map (\acs {VBM}) of significant ($p<0.01$, $|t|>2.57$) \acs {GM} and \acs {WM} between-group differences using \acs {qT1}, \acs {qT2}, \acs {synT1}, \acs {GM} and \acs {WM} modalities after applying \acs {SWPCA} to remove site effects.}}{128}{figure.caption.140}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {7.5}{\ignorespaces Brain t-map (\acs {VBM}) of significant ($p<0.01$, $|t|>2.57$) \acs {GM} and \acs {WM} differences in \acs {ASD} using \acs {qT1}, \acs {qT2}, \acs {synT1}, \acs {GM} and \acs {WM} maps before and after applying \acs {SWPCA} to remove site effects.}}{132}{figure.caption.143}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {7.6}{\ignorespaces Brain Z-map (\acs {CBM}) of significant ($p<0.01$, $|t|>2.57$) \acs {GM} and \acs {WM} differences using \acs {qT1}, \acs {qT2}, \acs {synT1}, \acs {GM} and \acs {WM} maps before and after applying \acs {SWPCA} to remove site effects.}}{134}{figure.caption.144}
+\defcounter {refsection}{0}\relax 
+\addvspace {10\p@ }
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {8.1}{\ignorespaces Schema of the brain image synthesis algorithm.\relax }}{141}{figure.caption.147}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {8.2}{\ignorespaces Comparison between simulated and original images from \acs {AD} and \acs {CTL} classes.}}{142}{figure.caption.148}
 \defcounter {refsection}{0}\relax 
 \addvspace {10\p@ }
 \defcounter {refsection}{0}\relax 

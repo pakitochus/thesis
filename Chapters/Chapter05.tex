@@ -128,6 +128,10 @@ The effect of removing the background is clearly shown in these pictures, obtain
 
 The behaviour of each of the Haralick texture features can also be analysed using a box plot (see Section \ref{sec:validation}), to show both numerical accuracy values and the properties (robustness, parameter independence) of using each one. Figure \ref{fig:features_acc_distances} depicts all $130$ accuracy results of the ''single approach'' for each feature extracted from a subimage that uses $I_{th}=0.30\times I_{max}$ at each distance $d$ (ranging from 1 to 10) in each of the 13 spatial directions. In this case, we can observe that best performance is obtained with the Cluster Tendency in all databases. Good values are also achieved using Homogeneity, Contrast and Correlation. This behaviour is consistent along all three databases, which allow us to propose Cluster Tendency as the best feature to characterize PD patterns. 
 
+\begin{bigfigure}
+	\includegraphics[width=\textheight]{Graphics/ch5/features_acc.eps}\label{fig:acc_distances}
+\end{bigfigure}
+
 \begin{figure*}% Son los del experimento distances
 	\centering
 	\subfloat[PPMI database]{\includegraphics[height=0.25\textheight]{Graphics/ch5/features_accPPMI.eps}\label{fig:acc_distances_ppmi}}
