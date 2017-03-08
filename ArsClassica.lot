@@ -38,11 +38,13 @@
 \defcounter {refsection}{0}\relax 
 \addvspace {10\p@ }
 \defcounter {refsection}{0}\relax 
-\contentsline {table}{\numberline {5.1}{\ignorespaces Accuracy values obtained at the operation point, using Cluster Tendency as a feature. The $I_{th}$ used to compute the GLC matrix is also displayed. \relax }}{72}{table.caption.101}
+\contentsline {table}{\numberline {5.1}{\ignorespaces Maximum scoring feature (single approach).}}{72}{table.caption.100}
 \defcounter {refsection}{0}\relax 
-\contentsline {table}{\numberline {5.2}{\ignorespaces Best results obtained in experiment 2, using three databases, in terms of its accuracy, sensitivity, specificity, Positive Likelihood and Negative Likelihood. The amount of features used to achieve these results is shown as a percentage of the total number of features (1560). Values obtained by leave-one-out.\relax }}{77}{table.caption.104}
+\contentsline {table}{\numberline {5.2}{\ignorespaces Maximum scoring feature (cumulative approach).}}{74}{table.caption.101}
 \defcounter {refsection}{0}\relax 
-\contentsline {table}{\numberline {5.3}{\ignorespaces Comparison of our proposed system (using different texture features) and some other methods in the bibliography: VAF system using the intensity-normalized images, a combination of intensity normalization strategies and classifiers (VAF-IN) \cite {Illan2012}, a SVD-based approach \cite {Segovia2012} and EMD using the third independent mode function (IMF3) \cite {Rojas2012}.\relax }}{78}{table.caption.105}
+\contentsline {table}{\numberline {5.3}{\ignorespaces Best results obtained in experiment 2, using three databases, in terms of its accuracy, sensitivity, specificity, Positive Likelihood and Negative Likelihood. The amount of features used to achieve these results is shown as a percentage of the total number of features (1560). Values obtained by leave-one-out.\relax }}{77}{table.caption.104}
+\defcounter {refsection}{0}\relax 
+\contentsline {table}{\numberline {5.4}{\ignorespaces Comparison of our proposed system (using different texture features) and some other methods in the bibliography: VAF system using the intensity-normalized images, a combination of intensity normalization strategies and classifiers (VAF-IN) \cite {Illan2012}, a SVD-based approach \cite {Segovia2012} and EMD using the third independent mode function (IMF3) \cite {Rojas2012}.\relax }}{78}{table.caption.105}
 \defcounter {refsection}{0}\relax 
 \addvspace {10\p@ }
 \defcounter {refsection}{0}\relax 

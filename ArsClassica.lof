@@ -228,23 +228,15 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {figure}{\numberline {5.4}{\ignorespaces Violin plot of all accuracy values, grouped by database.}}{73}{figure.caption.99}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {5.5}{\ignorespaces Box plot of all 130 accuracy values computed for each feature, using the ''single approach'', at 10 distances $d$ (ranging from 1 to 10) and 13 spatial directions, for \subref {fig:acc_distances_ppmi} PPMI database, \subref {fig:acc_distances_vdlv} VDLV database and \subref {fig:acc_distances_vdln} VDLN database. The red marks represent the outliers.\relax }}{74}{figure.caption.100}
+\contentsline {figure}{\numberline {5.5}{\ignorespaces Accuracy obtained by averaging all accuracy values using a given volume selection threshold $I_{th}$\relax }}{75}{figure.caption.102}
 \defcounter {refsection}{0}\relax 
-\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {PPMI database}}}{74}{subfigure.5.1}
+\contentsline {figure}{\numberline {5.6}{\ignorespaces Average accuracy computed for each selection criteria, using all accuracy values for intensity thresholds of $0.10$ to $0.45$. These values are plotted over $N$, the number of features selected using some of the ranking criteria defined in Sec. \ref {sec:discrimination} (where $N$ ranges from 1\% and 100\% of the $1560$ total Haralick features calculated). These values correspond to the images of the \subref {fig:experiment4-ppmi} PPMI database, \subref {fig:experiment4-vdlv} VDLV database and \subref {fig:experiment4-vdln} VDLN database (experiment 2).\relax }}{76}{figure.caption.103}
 \defcounter {refsection}{0}\relax 
-\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {VDLN database}}}{74}{subfigure.5.2}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {PPMI database}}}{76}{subfigure.6.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {subfigure}{\numberline {(c)}{\ignorespaces {VDLV database}}}{74}{subfigure.5.3}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {VDLN database}}}{76}{subfigure.6.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {5.6}{\ignorespaces Accuracy obtained by averaging all accuracy values using a given volume selection threshold $I_{th}$\relax }}{75}{figure.caption.102}
-\defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {5.7}{\ignorespaces Average accuracy computed for each selection criteria, using all accuracy values for intensity thresholds of $0.10$ to $0.45$. These values are plotted over $N$, the number of features selected using some of the ranking criteria defined in Sec. \ref {sec:discrimination} (where $N$ ranges from 1\% and 100\% of the $1560$ total Haralick features calculated). These values correspond to the images of the \subref {fig:experiment4-ppmi} PPMI database, \subref {fig:experiment4-vdlv} VDLV database and \subref {fig:experiment4-vdln} VDLN database (experiment 2).\relax }}{76}{figure.caption.103}
-\defcounter {refsection}{0}\relax 
-\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {PPMI database}}}{76}{subfigure.7.1}
-\defcounter {refsection}{0}\relax 
-\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {VDLN database}}}{76}{subfigure.7.2}
-\defcounter {refsection}{0}\relax 
-\contentsline {subfigure}{\numberline {(c)}{\ignorespaces {VDLV database}}}{76}{subfigure.7.3}
+\contentsline {subfigure}{\numberline {(c)}{\ignorespaces {VDLV database}}}{76}{subfigure.6.3}
 \defcounter {refsection}{0}\relax 
 \addvspace {10\p@ }
 \defcounter {refsection}{0}\relax 
