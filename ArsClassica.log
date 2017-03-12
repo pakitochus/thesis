@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016/Debian) (preloaded format=pdflatex 2016.12.7)  8 MAR 2017 17:52
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016/Debian) (preloaded format=pdflatex 2016.12.7)  12 MAR 2017 12:24
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1858,13 +1858,315 @@ Package biblatex Info: Automatic encoding selection.
 Package biblatex Info: Trying to load bibliographic data...
 Package biblatex Info: ... file 'ArsClassica.bbl' found.
 
-(./ArsClassica.bbl)
+(./ArsClassica.bbl
+
+Package biblatex Warning: Biber reported the following issues
+(biblatex)                with 'Hastie2009':
+(biblatex)                - Overwriting field 'year' with year value from field
+ 'date' for entry 'Hastie2009'.
+
+
+Package biblatex Warning: Biber reported the following issues
+(biblatex)                with 'DaelemansHosteMeulderEtAl2003':
+(biblatex)                - Overwriting field 'year' with year value from field
+ 'date' for entry 'DaelemansHosteMeulderEtAl2003'.
+
+
+Package biblatex Warning: Biber reported the following issues
+(biblatex)                with 'DaelemansHosteMeulderEtAl2003':
+(biblatex)                - Overwriting field 'month' with month value from fie
+ld 'date' for entry 'DaelemansHosteMeulderEtAl2003'.
+
+
+Package biblatex Warning: Biber reported the following issues
+(biblatex)                with 'DaelemansHosteMeulderEtAl2003':
+(biblatex)                - Overwriting field 'year' with year value from field
+ 'date' for entry 'DaelemansHosteMeulderEtAl2003'.
+
+
+Package biblatex Warning: Biber reported the following issues
+(biblatex)                with 'DaelemansHosteMeulderEtAl2003':
+(biblatex)                - Overwriting field 'month' with month value from fie
+ld 'date' for entry 'DaelemansHosteMeulderEtAl2003'.
+
+
+Package biblatex Warning: Biber reported the following issues
+(biblatex)                with 'Hastie2009':
+(biblatex)                - Overwriting field 'year' with year value from field
+ 'date' for entry 'Hastie2009'.
+
+
+Package biblatex Warning: The following entry could not be found
+(biblatex)                in the database:
+(biblatex)                Fischl2004
+(biblatex)                Please verify the spelling and rerun
+(biblatex)                LaTeX afterwards.
+
+
+Package biblatex Warning: The following entry could not be found
+(biblatex)                in the database:
+(biblatex)                Chen2008
+(biblatex)                Please verify the spelling and rerun
+(biblatex)                LaTeX afterwards.
+
+
+Package biblatex Warning: The following entry could not be found
+(biblatex)                in the database:
+(biblatex)                Ortiz2013
+(biblatex)                Please verify the spelling and rerun
+(biblatex)                LaTeX afterwards.
+
+
+Package biblatex Warning: The following entry could not be found
+(biblatex)                in the database:
+(biblatex)                Illan2012
+(biblatex)                Please verify the spelling and rerun
+(biblatex)                LaTeX afterwards.
+
+
+Package biblatex Warning: The following entry could not be found
+(biblatex)                in the database:
+(biblatex)                dougall_systematic_2004
+(biblatex)                Please verify the spelling and rerun
+(biblatex)                LaTeX afterwards.
+
+
+Package biblatex Warning: The following entry could not be found
+(biblatex)                in the database:
+(biblatex)                han2006reliability
+(biblatex)                Please verify the spelling and rerun
+(biblatex)                LaTeX afterwards.
+
+
+Package biblatex Warning: The following entry could not be found
+(biblatex)                in the database:
+(biblatex)                Illan2014
+(biblatex)                Please verify the spelling and rerun
+(biblatex)                LaTeX afterwards.
+
+
+Package biblatex Warning: The following entry could not be found
+(biblatex)                in the database:
+(biblatex)                Shepp82
+(biblatex)                Please verify the spelling and rerun
+(biblatex)                LaTeX afterwards.
+
+
+Package biblatex Warning: The following entry could not be found
+(biblatex)                in the database:
+(biblatex)                Shaffer1995
+(biblatex)                Please verify the spelling and rerun
+(biblatex)                LaTeX afterwards.
+
+
+Package biblatex Warning: The following entry could not be found
+(biblatex)                in the database:
+(biblatex)                Ramirez2009
+(biblatex)                Please verify the spelling and rerun
+(biblatex)                LaTeX afterwards.
+
+
+Package biblatex Warning: The following entry could not be found
+(biblatex)                in the database:
+(biblatex)                chan2001patterns
+(biblatex)                Please verify the spelling and rerun
+(biblatex)                LaTeX afterwards.
+
+
+Package biblatex Warning: The following entry could not be found
+(biblatex)                in the database:
+(biblatex)                Rojas2012
+(biblatex)                Please verify the spelling and rerun
+(biblatex)                LaTeX afterwards.
+
+
+Package biblatex Warning: The following entry could not be found
+(biblatex)                in the database:
+(biblatex)                Unay2007
+(biblatex)                Please verify the spelling and rerun
+(biblatex)                LaTeX afterwards.
+
+
+Package biblatex Warning: The following entry could not be found
+(biblatex)                in the database:
+(biblatex)                IAIllan2010
+(biblatex)                Please verify the spelling and rerun
+(biblatex)                LaTeX afterwards.
+
+
+Package biblatex Warning: The following entry could not be found
+(biblatex)                in the database:
+(biblatex)                Grana2011
+(biblatex)                Please verify the spelling and rerun
+(biblatex)                LaTeX afterwards.
+
+
+Package biblatex Warning: The following entry could not be found
+(biblatex)                in the database:
+(biblatex)                Zhao2007
+(biblatex)                Please verify the spelling and rerun
+(biblatex)                LaTeX afterwards.
+
+
+Package biblatex Warning: The following entry could not be found
+(biblatex)                in the database:
+(biblatex)                Kohavi1995a
+(biblatex)                Please verify the spelling and rerun
+(biblatex)                LaTeX afterwards.
+
+
+Package biblatex Warning: The following entry could not be found
+(biblatex)                in the database:
+(biblatex)                Inititative2010
+(biblatex)                Please verify the spelling and rerun
+(biblatex)                LaTeX afterwards.
+
+
+Package biblatex Warning: The following entry could not be found
+(biblatex)                in the database:
+(biblatex)                soh1999texture
+(biblatex)                Please verify the spelling and rerun
+(biblatex)                LaTeX afterwards.
+
+
+Package biblatex Warning: The following entry could not be found
+(biblatex)                in the database:
+(biblatex)                PPMI
+(biblatex)                Please verify the spelling and rerun
+(biblatex)                LaTeX afterwards.
+
+
+Package biblatex Warning: The following entry could not be found
+(biblatex)                in the database:
+(biblatex)                clausi2002analysis
+(biblatex)                Please verify the spelling and rerun
+(biblatex)                LaTeX afterwards.
+
+
+Package biblatex Warning: The following entry could not be found
+(biblatex)                in the database:
+(biblatex)                Botev2010
+(biblatex)                Please verify the spelling and rerun
+(biblatex)                LaTeX afterwards.
+
+
+Package biblatex Warning: The following entry could not be found
+(biblatex)                in the database:
+(biblatex)                Evans1993
+(biblatex)                Please verify the spelling and rerun
+(biblatex)                LaTeX afterwards.
+
+
+Package biblatex Warning: The following entry could not be found
+(biblatex)                in the database:
+(biblatex)                Segovia2012
+(biblatex)                Please verify the spelling and rerun
+(biblatex)                LaTeX afterwards.
+
+
+Package biblatex Warning: The following entry could not be found
+(biblatex)                in the database:
+(biblatex)                Alvarez2009
+(biblatex)                Please verify the spelling and rerun
+(biblatex)                LaTeX afterwards.
+
+
+Package biblatex Warning: The following entry could not be found
+(biblatex)                in the database:
+(biblatex)                Tzourio-Mazoyer2002
+(biblatex)                Please verify the spelling and rerun
+(biblatex)                LaTeX afterwards.
+
+
+Package biblatex Warning: The following entry could not be found
+(biblatex)                in the database:
+(biblatex)                Vapnik1982
+(biblatex)                Please verify the spelling and rerun
+(biblatex)                LaTeX afterwards.
+
+
+Package biblatex Warning: The following entry could not be found
+(biblatex)                in the database:
+(biblatex)                AAL
+(biblatex)                Please verify the spelling and rerun
+(biblatex)                LaTeX afterwards.
+
+
+Package biblatex Warning: The following entry could not be found
+(biblatex)                in the database:
+(biblatex)                Ram'irez2009
+(biblatex)                Please verify the spelling and rerun
+(biblatex)                LaTeX afterwards.
+
+
+Package biblatex Warning: The following entry could not be found
+(biblatex)                in the database:
+(biblatex)                Ojala1996
+(biblatex)                Please verify the spelling and rerun
+(biblatex)                LaTeX afterwards.
+
+
+Package biblatex Warning: The following entry could not be found
+(biblatex)                in the database:
+(biblatex)                Yen1995
+(biblatex)                Please verify the spelling and rerun
+(biblatex)                LaTeX afterwards.
+
+
+Package biblatex Warning: The following entry could not be found
+(biblatex)                in the database:
+(biblatex)                jobst_accurate_1998
+(biblatex)                Please verify the spelling and rerun
+(biblatex)                LaTeX afterwards.
+
+
+Package biblatex Warning: The following entry could not be found
+(biblatex)                in the database:
+(biblatex)                Locatelli1998
+(biblatex)                Please verify the spelling and rerun
+(biblatex)                LaTeX afterwards.
+
+
+Package biblatex Warning: The following entry could not be found
+(biblatex)                in the database:
+(biblatex)                Jong2008
+(biblatex)                Please verify the spelling and rerun
+(biblatex)                LaTeX afterwards.
+
+
+Package biblatex Warning: The following entry could not be found
+(biblatex)                in the database:
+(biblatex)                xu2009source
+(biblatex)                Please verify the spelling and rerun
+(biblatex)                LaTeX afterwards.
+
+
+Package biblatex Warning: The following entry could not be found
+(biblatex)                in the database:
+(biblatex)                Medina2008
+(biblatex)                Please verify the spelling and rerun
+(biblatex)                LaTeX afterwards.
+
+
+Package biblatex Warning: The following entry could not be found
+(biblatex)                in the database:
+(biblatex)                Vardi1985
+(biblatex)                Please verify the spelling and rerun
+(biblatex)                LaTeX afterwards.
+
+
+Package biblatex Warning: The following entry could not be found
+(biblatex)                in the database:
+(biblatex)                Zhou2008
+(biblatex)                Please verify the spelling and rerun
+(biblatex)                LaTeX afterwards.
+
+)
 Package biblatex Info: Reference section=0 on input line 54.
 Package biblatex Info: Reference segment=0 on input line 54.
 \AtBeginShipoutBox=\box46
 Package hyperref Info: Link coloring ON on input line 54.
-
-(/usr/share/texlive/texmf-dist/tex/latex/hyperref/nameref.sty
+ (/usr/share/texlive/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2016/05/21 v2.44 Cross-referencing by name of section
 
 (/usr/share/texlive/texmf-dist/tex/generic/oberdiek/gettitlestring.sty
@@ -1949,7 +2251,7 @@ Package thumbs Info: **********************************************.
 \c@pagesLTS.double.roman=\count368
 \c@pagesLTS.current.local.roman=\count369
 (./FrontBackMatter/Titlepage.tex
-<Graphics/escudougr.pdf, id=510, 419.67091pt x 394.96153pt>
+<Graphics/escudougr.pdf, id=514, 419.67091pt x 394.96153pt>
 File: Graphics/escudougr.pdf Graphic file (type pdf)
 
 <use Graphics/escudougr.pdf>
@@ -2098,21 +2400,21 @@ LaTeX Info: Redefining \% on input line 6.
 LaTeX Info: Redefining \. on input line 7.
 LaTeX Info: Redefining \% on input line 7.
 
-<../../Papeleo/gorriz.png, id=563, 258.2448pt x 113.9457pt>
+<../../Papeleo/gorriz.png, id=567, 258.2448pt x 113.9457pt>
 File: ../../Papeleo/gorriz.png Graphic file (type png)
 
 <use ../../Papeleo/gorriz.png>
 Package pdftex.def Info: ../../Papeleo/gorriz.png used on input line 25.
 (pdftex.def)             Requested size: 174.12968pt x 76.83351pt.
 
-<../../Papeleo/ramirez.png, id=565, 493.845pt x 239.89626pt>
+<../../Papeleo/ramirez.png, id=569, 493.845pt x 239.89626pt>
 File: ../../Papeleo/ramirez.png Graphic file (type png)
 
 <use ../../Papeleo/ramirez.png>
 Package pdftex.def Info: ../../Papeleo/ramirez.png used on input line 30.
 (pdftex.def)             Requested size: 174.12968pt x 84.58722pt.
 
-<../../Papeleo/paco.png, id=566, 361.35pt x 64.24pt>
+<../../Papeleo/paco.png, id=570, 361.35pt x 64.24pt>
 File: ../../Papeleo/paco.png Graphic file (type png)
 
 <use ../../Papeleo/paco.png>
@@ -2254,36 +2556,36 @@ Overfull \hbox (19.60844pt too wide) in paragraph at lines 229--229
 tabase. []  
  []
 
-LaTeX Font Info:    Font shape `T1/pplj/bx/n' in size <10.95> not available
-(Font)              Font shape `T1/pplj/b/n' tried instead on input line 233.
 
-LaTeX Warning: Reference `sec:discrimination' on page xvi undefined on input li
-ne 233.
+Overfull \hbox (4.13074pt too wide) in paragraph at lines 239--239
+ [][] []\T1/pplj/m/n/10.95 Average ac-cu-racy com-puted for each se-lec-tion cr
+i-te-ria over 
+ []
 
 Package acronym Info: Label `acro:GM' newly defined as it shall be overridden
-although it is yet undefined on input line 247.
+although it is yet undefined on input line 253.
 Package acronym Info: Label `acro:WM' newly defined as it shall be overridden
-although it is yet undefined on input line 247.
+although it is yet undefined on input line 253.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [16]
 Package acronym Info: Label `acro:SBM' newly defined as it shall be overridden
-although it is yet undefined on input line 263.
+although it is yet undefined on input line 269.
 
-Overfull \hbox (18.26712pt too wide) in paragraph at lines 267--267
+Overfull \hbox (18.26712pt too wide) in paragraph at lines 273--273
  [][] []\T1/pplj/m/n/10.95 Path traced over a gaus-sian mix-ture dis-tri-bu-tio
 n of 4 isotropic 
  []
 
 [17]
-Overfull \hbox (8.71321pt too wide) in paragraph at lines 271--271
+Overfull \hbox (8.71321pt too wide) in paragraph at lines 277--277
  \T1/pplj/m/n/10.95 Penin-sula height map, in-ter-conect-ing dif-fer-ent cities
 . []  
  []
 
 Package acronym Info: Label `acro:VAF' newly defined as it shall be overridden
-although it is yet undefined on input line 275.
+although it is yet undefined on input line 281.
 )
 \tf@lof=\write7
 \openout7 = `ArsClassica.lof'.
@@ -2304,12 +2606,8 @@ LaTeX Info: Redefining \. on input line 15.
 LaTeX Info: Redefining \% on input line 15.
 LaTeX Info: Redefining \. on input line 19.
 LaTeX Info: Redefining \% on input line 19.
-
-Overfull \hbox (11.3358pt too wide) in paragraph at lines 45--45
- [][] []\T1/pplj/m/n/10.95 Best re-sults ob-tained in ex-per-i-ment 2, us-ing t
-hree databases, 
- []
-
+LaTeX Font Info:    Font shape `T1/pplj/bx/n' in size <10.95> not available
+(Font)              Font shape `T1/pplj/b/n' tried instead on input line 47.
 
 Overfull \hbox (7.25076pt too wide) in paragraph at lines 47--47
  \T1/pplj/m/n/10.95 [[]] and EMD us-ing the third in-de-pen-dent mode 
@@ -2322,7 +2620,7 @@ nd other meth-ods in the bib-li-og-ra-phy []
  []
 
 
-Underfull \vbox (badness 2856) has occurred while \output is active []
+Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [19]
 Overfull \hbox (40.48932pt too wide) in paragraph at lines 71--71
@@ -2378,16 +2676,6 @@ Package acronym Info: Label `acro:CTL' newly defined as it shall be overridden
 although it is yet undefined on input line 7.
 Package acronym Info: Label `acro:CAD' newly defined as it shall be overridden
 although it is yet undefined on input line 9.
-
-LaTeX Warning: Citation 'Martinez-Murcia2016' on page 3 undefined on input line
- 9.
-
-
-LaTeX Warning: Citation 'Duin2000' on page 3 undefined on input line 11.
-
-
-LaTeX Warning: Citation 'Button2013' on page 3 undefined on input line 11.
-
 Package epstopdf Info: Source file: <Graphics/ch1/smallsample.eps>
 (epstopdf)                    date: 2017-02-12 16:38:33
 (epstopdf)                    size: 9097 bytes
@@ -2400,7 +2688,7 @@ ps-converted-to.pdf Graphics/ch1/smallsample.eps>
 (epstopdf)             \includegraphics on input line 15.
 Package epstopdf Info: Output file is already uptodate.
 
-<Graphics/ch1/smallsample-eps-converted-to.pdf, id=1123, 213.79875pt x 147.5512
+<Graphics/ch1/smallsample-eps-converted-to.pdf, id=1125, 213.79875pt x 147.5512
 5pt>
 File: Graphics/ch1/smallsample-eps-converted-to.pdf Graphic file (type pdf)
  <use Graphics/ch1/smallsample-eps-converted-to.pdf>
@@ -2417,62 +2705,17 @@ LaTeX Font Info:    Font shape `T1/GilliusADFNoTwo-LF/b/n' will be
 
 
 ]
-
-LaTeX Warning: Citation 'Duin2000' on page 4 undefined on input line 22.
-
-
-LaTeX Warning: Citation 'Stoeckel04' on page 4 undefined on input line 22.
-
-
-LaTeX Warning: Citation 'Button2013' on page 4 undefined on input line 26.
-
-
 Overfull \hbox (0.15726pt too wide) in paragraph at lines 26--27
 []\T1/pplj/m/n/10.95 In dif-fer-en-tial di-ag-no-sis stud-ies, the small sam-pl
 e size prob-lem leads to wrong
  []
 
-
-LaTeX Warning: Citation 'haar2014anatomical' on page 4 undefined on input line 
-28.
-
 [4 <./Graphics/ch1/smallsample-eps-converted-to.pdf>]
-
-LaTeX Warning: Citation 'DeMartino2007' on page 5 undefined on input line 30.
-
-
-LaTeX Warning: Citation 'xu2009source' on page 5 undefined on input line 30.
-
-
-LaTeX Warning: Citation 'Gorriz2010' on page 5 undefined on input line 30.
-
-
-LaTeX Warning: Citation 'Illan2011' on page 5 undefined on input line 30.
-
-
-LaTeX Warning: Citation 'Martinez-Murcia2016' on page 5 undefined on input line
- 30.
-
-
-LaTeX Warning: Citation 'Krishnaiah1982' on page 5 undefined on input line 32.
-
-
-LaTeX Warning: Citation 'Benjamini2010' on page 5 undefined on input line 32.
-
 Package acronym Info: Label `acro:PCA' newly defined as it shall be overridden
 although it is yet undefined on input line 44.
-
-LaTeX Warning: Citation 'Khedher2015' on page 5 undefined on input line 44.
-
-
-LaTeX Warning: Citation 'Towey2011' on page 5 undefined on input line 44.
-
-
-LaTeX Warning: Citation 'Segovia2013' on page 5 undefined on input line 44.
-
 Package acronym Info: Label `acro:ICA' newly defined as it shall be overridden
 although it is yet undefined on input line 47.
-[5]
+ [5]
 Package acronym Info: Label `acro:SWPCA' newly defined as it shall be overridde
 n
 although it is yet undefined on input line 54.
@@ -2488,7 +2731,7 @@ onverted-to.pdf Graphics/ch1/outline.eps>
 (epstopdf)             \includegraphics on input line 60.
 Package epstopdf Info: Output file is already uptodate.
 
-<Graphics/ch1/outline-eps-converted-to.pdf, id=1154, 566.115pt x 327.2225pt>
+<Graphics/ch1/outline-eps-converted-to.pdf, id=1182, 566.115pt x 327.2225pt>
 File: Graphics/ch1/outline-eps-converted-to.pdf Graphic file (type pdf)
 
 <use Graphics/ch1/outline-eps-converted-to.pdf>
@@ -2507,13 +2750,34 @@ LaTeX Font Warning: Font shape `T1/GilliusADFNoTwo-LF/bx/sc' undefined
 .
 
 
-Package biblatex Warning: Keyword 'own' not found on input line 83.
+Package biblatex Warning: Setting 'defernumbers=true' recommended.
 
 
-Package biblatex Warning: Type 'article' not found on input line 83.
+Package biblatex Warning: Setting 'defernumbers=true' recommended.
 
 
-LaTeX Warning: Empty bibliography on input line 83.
+Overfull \hbox (2.75603pt too wide) in paragraph at lines 83--83
+\T1/pplj/m/n/10.95 Pars-ing out Ac-qui-si-tion Site Ef-fects With Significance-
+Weighted Prin-ci-pal Com-
+ []
+
+
+Overfull \hbox (23.16982pt too wide) in paragraph at lines 83--83
+[]\T1/pplj/m/n/10.95 F.J. Martinez-Murcia, J.M. Gór-riz, J. Ramírez, and A. Or-
+tiz. ^^P  A Struc-tural Parametriza-
+ []
+
+[7]
+Overfull \hbox (3.26656pt too wide) in paragraph at lines 83--83
+[]\T1/pplj/m/n/10.95 F.J. Martínez-Murcia, J.M. Gór-riz, J. Ramírez, C.G. Pun-t
+onet, and I.A. Il-lán. ^^P  Func-
+ []
+
+
+Overfull \hbox (13.05125pt too wide) in paragraph at lines 83--83
+[]\T1/pplj/m/n/10.95 F.J. Martínez-Murcia, J.M. Gór-riz, J. Ramírez, C.G. Pun-t
+onet, and D. Salas-González.
+ []
 
 LaTeX Font Info:    Font shape `T1/GilliusADFNoTwo-LF/bx/sc' in size <10> not a
 vailable
@@ -2522,25 +2786,26 @@ ut line 84.
 LaTeX Font Info:    Font shape `T1/GilliusADFNoTwo-LF/b/n' will be
 (Font)              scaled to size 10.0pt on input line 84.
 
-Package biblatex Warning: Keyword 'own' not found on input line 85.
+Package biblatex Warning: Setting 'defernumbers=true' recommended.
 
 
-Package biblatex Warning: Type 'inproceedings' not found on input line 85.
+Package biblatex Warning: Setting 'defernumbers=true' recommended.
 
 
-LaTeX Warning: Empty bibliography on input line 85.
+Overfull \hbox (2.87831pt too wide) in paragraph at lines 85--85
+\T1/pplj/m/n/10.95 alzheimer's dis-ease^^Q. In: \T1/pplj/m/it/10.95 Ar-ti-fi-ci
+al Com-pu-ta-tion in Bi-ol-ogy and Medicine\T1/pplj/m/n/10.95 . Vol. 9107.
+ []
+
+[8]
+
+Package biblatex Warning: Setting 'defernumbers=true' recommended.
 
 
-Package biblatex Warning: Keyword 'own' not found on input line 87.
-
-
-Package biblatex Warning: Type 'inbook' not found on input line 87.
-
-
-LaTeX Warning: Empty bibliography on input line 87.
+Package biblatex Warning: Setting 'defernumbers=true' recommended.
 
 Package biblatex Info: Reference section=0 on input line 88.
-) (./Chapters/Chapter02.tex [7] [8
+) (./Chapters/Chapter02.tex [9] [10
 
 
 ]
@@ -2570,7 +2835,7 @@ o.pdf>
 (epstopdf)             \includegraphics on input line 16.
 Package epstopdf Info: Output file is already uptodate.
 
-<Graphics/ch2/example_MRIT1-eps-converted-to.pdf, id=1213, 1039.885pt x 439.642
+<Graphics/ch2/example_MRIT1-eps-converted-to.pdf, id=1276, 1039.885pt x 439.642
 5pt>
 File: Graphics/ch2/example_MRIT1-eps-converted-to.pdf Graphic file (type pdf)
  <use Graphics/ch2/example_MRIT1-eps-converted-to.pdf>
@@ -2589,7 +2854,7 @@ o.pdf>
 (epstopdf)             \includegraphics on input line 17.
 Package epstopdf Info: Output file is already uptodate.
 
-<Graphics/ch2/example_MRIT2-eps-converted-to.pdf, id=1214, 1298.8525pt x 548.04
+<Graphics/ch2/example_MRIT2-eps-converted-to.pdf, id=1277, 1298.8525pt x 548.04
 75pt>
 File: Graphics/ch2/example_MRIT2-eps-converted-to.pdf Graphic file (type pdf)
  <use Graphics/ch2/example_MRIT2-eps-converted-to.pdf>
@@ -2603,8 +2868,8 @@ although it is yet undefined on input line 22.
 
 Underfull \vbox (badness 1558) has occurred while \output is active []
 
- [9]
-[10 <./Graphics/ch2/example_MRIT1-eps-converted-to.pdf> <./Graphics/ch2/example
+ [11]
+[12 <./Graphics/ch2/example_MRIT1-eps-converted-to.pdf> <./Graphics/ch2/example
 _MRIT2-eps-converted-to.pdf>]
 Package acronym Info: Label `acro:CSF' newly defined as it shall be overridden
 although it is yet undefined on input line 33.
@@ -2612,10 +2877,6 @@ Package acronym Info: Label `acro:CT' newly defined as it shall be overridden
 although it is yet undefined on input line 36.
 Package acronym Info: Label `acro:FBP' newly defined as it shall be overridden
 although it is yet undefined on input line 38.
-
-
-LaTeX Warning: Citation 'Herman2009l' on page 11 undefined on input line 38.
-
 Package acronym Info: Label `acro:rCBF' newly defined as it shall be overridden
 
 although it is yet undefined on input line 40.
@@ -2631,7 +2892,7 @@ o.pdf>
 (epstopdf)             \includegraphics on input line 44.
 Package epstopdf Info: Output file is already uptodate.
 
-<Graphics/ch2/example_SPECT-eps-converted-to.pdf, id=1261, 1339.0025pt x 465.74
+<Graphics/ch2/example_SPECT-eps-converted-to.pdf, id=1324, 1339.0025pt x 465.74
 pt>
 File: Graphics/ch2/example_SPECT-eps-converted-to.pdf Graphic file (type pdf)
  <use Graphics/ch2/example_SPECT-eps-converted-to.pdf>
@@ -2650,7 +2911,7 @@ AN-eps-converted-to.pdf Graphics/ch2/example_DaTSCAN.eps>
 (epstopdf)             \includegraphics on input line 45.
 Package epstopdf Info: Output file is already uptodate.
 
-<Graphics/ch2/example_DaTSCAN-eps-converted-to.pdf, id=1262, 1339.0025pt x 465.
+<Graphics/ch2/example_DaTSCAN-eps-converted-to.pdf, id=1325, 1339.0025pt x 465.
 74pt>
 File: Graphics/ch2/example_DaTSCAN-eps-converted-to.pdf Graphic file (type pdf)
 
@@ -2662,10 +2923,7 @@ Package acronym Info: Label `acro:DAT' newly defined as it shall be overridden
 although it is yet undefined on input line 50.
 Package acronym Info: Label `acro:PD' newly defined as it shall be overridden
 although it is yet undefined on input line 50.
- [11]
-
-LaTeX Warning: Citation 'Carlson2016' on page 12 undefined on input line 55.
-
+ [13]
 Package epstopdf Info: Source file: <Graphics/ch2/example_PET.eps>
 (epstopdf)                    date: 2016-12-14 10:51:23
 (epstopdf)                    size: 2673073 bytes
@@ -2678,79 +2936,20 @@ ps-converted-to.pdf Graphics/ch2/example_PET.eps>
 (epstopdf)             \includegraphics on input line 59.
 Package epstopdf Info: Output file is already uptodate.
 
-<Graphics/ch2/example_PET-eps-converted-to.pdf, id=1284, 1339.0025pt x 465.74pt
+<Graphics/ch2/example_PET-eps-converted-to.pdf, id=1351, 1339.0025pt x 465.74pt
 >
 File: Graphics/ch2/example_PET-eps-converted-to.pdf Graphic file (type pdf)
  <use Graphics/ch2/example_PET-eps-converted-to.pdf>
 Package pdftex.def Info: Graphics/ch2/example_PET-eps-converted-to.pdf used on 
 input line 59.
 (pdftex.def)             Requested size: 270.86905pt x 94.21234pt.
-
-
-LaTeX Warning: Citation 'Newberg2002' on page 12 undefined on input line 64.
-
-
-LaTeX Warning: Citation 'Kelloff2005' on page 12 undefined on input line 64.
-
-[12 <./Graphics/ch2/example_SPECT-eps-converted-to.pdf> <./Graphics/ch2/example
-_DaTSCAN-eps-converted-to.pdf>]
+ [14 <./Graphics/ch2/example_SPECT-eps-converted-to.pdf> <./Graphics/ch2/exampl
+e_DaTSCAN-eps-converted-to.pdf>]
 Package acronym Info: Label `acro:AD' newly defined as it shall be overridden
 although it is yet undefined on input line 68.
-
-
-LaTeX Warning: Citation 'Association2016' on page 13 undefined on input line 68
-.
-
-
-LaTeX Warning: Citation 'Ballard2011' on page 13 undefined on input line 68.
-
-
-LaTeX Warning: Citation 'Sevigny2016' on page 13 undefined on input line 68.
-
-
-LaTeX Warning: Citation 'Ballard2011' on page 13 undefined on input line 70.
-
 Package acronym Info: Label `acro:MCI' newly defined as it shall be overridden
 although it is yet undefined on input line 72.
-
-LaTeX Warning: Citation 'Baron2001' on page 13 undefined on input line 75.
-
-
-LaTeX Warning: Citation 'Misra2009' on page 13 undefined on input line 75.
-
-
-LaTeX Warning: Citation 'Pievani2013' on page 13 undefined on input line 75.
-
-
-LaTeX Warning: Citation 'Dubois2007' on page 13 undefined on input line 75.
-
-
-LaTeX Warning: Citation 'Dubois2007' on page 13 undefined on input line 75.
-
-
-LaTeX Warning: Citation 'Baron2001' on page 13 undefined on input line 75.
-
-
-LaTeX Warning: Citation 'Misra2009' on page 13 undefined on input line 75.
-
-
-LaTeX Warning: Citation 'Pievani2013' on page 13 undefined on input line 75.
-
-[13 <./Graphics/ch2/example_PET-eps-converted-to.pdf>]
-
-LaTeX Warning: Citation 'Claus1994' on page 14 undefined on input line 77.
-
-
-LaTeX Warning: Citation 'Leon1983' on page 14 undefined on input line 77.
-
-
-LaTeX Warning: Citation 'Kogure2000' on page 14 undefined on input line 77.
-
-
-LaTeX Warning: Citation 'Ikonomovic2008' on page 14 undefined on input line 79.
-
-
-
+ [15 <./Graphics/ch2/example_PET-eps-converted-to.pdf>]
 Overfull \hbox (6.344pt too wide) in paragraph at lines 79--80
 []\T1/pplj/m/n/10.95 Recently, new more spe-cific ra-dio-phar-ma-ceu-ti-cals ha
 ve been de-vel-oped, among
@@ -2758,19 +2957,6 @@ ve been de-vel-oped, among
 
 Package acronym Info: Label `acro:PKS' newly defined as it shall be overridden
 although it is yet undefined on input line 84.
-
-LaTeX Warning: Citation 'Eckert2007' on page 14 undefined on input line 84.
-
-
-LaTeX Warning: Citation 'Eckert2007' on page 14 undefined on input line 84.
-
-
-LaTeX Warning: Citation 'Christine2004' on page 14 undefined on input line 84.
-
-
-LaTeX Warning: Citation 'tatsch2008extrapyramidal' on page 14 undefined on inpu
-t line 84.
-
 LaTeX Font Info:    Font shape `T1/GilliusADFNoTwo-LF/bx/it' in size <10.95> no
 t available
 (Font)              Font shape `T1/GilliusADFNoTwo-LF/b/it' tried instead on in
@@ -2782,96 +2968,38 @@ LaTeX Font Warning: Font shape `T1/GilliusADFNoTwo-LF/bx/scit' undefined
 (Font)              using `T1/GilliusADFNoTwo-LF/bx/n' instead on input line 86
 .
 
-
-LaTeX Warning: Citation 'Winogrodzka2003' on page 14 undefined on input line 89
-.
-
-
-LaTeX Warning: Citation 'PunalRioboo2007' on page 14 undefined on input line 89
-.
-
-
-LaTeX Warning: Citation 'Eckert2007' on page 14 undefined on input line 89.
-
-
-LaTeX Warning: Citation 'PunalRioboo2007' on page 14 undefined on input line 89
-.
-
-
-Overfull \hbox (1.21535pt too wide) in paragraph at lines 89--90
-[]\T1/pplj/m/n/10.95 , []], al-low-ing the es-ti-ma-tion of [][] den-sity by me
-ans
- []
-
-[14]
+[16]
 LaTeX Font Info:    Font shape `T1/GilliusADFNoTwo-LF/bx/scit' in size <10.95> 
 not available
 (Font)              Font shape `T1/GilliusADFNoTwo-LF/b/n' tried instead on inp
 ut line 91.
 LaTeX Font Info:    Font shape `T1/GilliusADFNoTwo-LF/b/n' will be
 (Font)              scaled to size 10.95pt on input line 91.
-
-
-LaTeX Warning: Citation 'tatsch2008extrapyramidal' on page 15 undefined on inpu
-t line 92.
-
-
-LaTeX Warning: Citation 'Segovia2016a' on page 15 undefined on input line 94.
-
 Package acronym Info: Label `acro:ASD' newly defined as it shall be overridden
 although it is yet undefined on input line 97.
-
-LaTeX Warning: Citation 'Szatmari1999' on page 15 undefined on input line 97.
-
-
-LaTeX Warning: Citation 'Ecker2014' on page 15 undefined on input line 99.
-
-
-LaTeX Warning: Citation 'haar2014anatomical' on page 15 undefined on input line
- 99.
-
 Package acronym Info: Label `acro:MRC-AIMS' newly defined as it shall be overri
 dden
 although it is yet undefined on input line 99.
-
-LaTeX Warning: Citation 'Ecker2012' on page 15 undefined on input line 99.
-
-
-LaTeX Warning: Citation 'Ecker2013' on page 15 undefined on input line 99.
-
-
-LaTeX Warning: Citation 'DiMartino2014' on page 15 undefined on input line 99.
-
 Package acronym Info: Label `acro:ROI' newly defined as it shall be overridden
 although it is yet undefined on input line 103.
 Package acronym Info: Label `acro:SPM' newly defined as it shall be overridden
 although it is yet undefined on input line 103.
-
-LaTeX Warning: Citation 'Friston1994' on page 15 undefined on input line 103.
-
 Package acronym Info: Label `acro:VBM' newly defined as it shall be overridden
 although it is yet undefined on input line 103.
-
-LaTeX Warning: Citation 'Ashburner2000' on page 15 undefined on input line 103.
-
-
-[15]
 Package acronym Info: Label `acro:fMRI' newly defined as it shall be overridden
 
 although it is yet undefined on input line 106.
-
-
-LaTeX Warning: Citation 'Friston1994' on page 16 undefined on input line 106.
-
 Package acronym Info: Label `acro:GLM' newly defined as it shall be overridden
 although it is yet undefined on input line 106.
+
+Underfull \vbox (badness 1194) has occurred while \output is active []
+
+ [17]
 Package acronym Info: Label `acro:ANOVA' newly defined as it shall be overridde
 n
 although it is yet undefined on input line 108.
 
-LaTeX Warning: Citation 'spm_book' on page 16 undefined on input line 108.
-
-<Graphics/ch2/example_SPM.png, id=1380, 483.30562pt x 422.32782pt>
+<Graphics/ch2/example_SPM.png, id=1512, 483.30562pt x 422.32782pt>
 File: Graphics/ch2/example_SPM.png Graphic file (type png)
 
 <use Graphics/ch2/example_SPM.png>
@@ -2885,69 +3013,14 @@ Overfull \hbox (7.98639pt too wide) in paragraph at lines 122--123
  in-ten-sity nor-mal-iza-tion, smooth-
  []
 
-[16] [17 <./Graphics/ch2/example_SPM.png>]
 
-LaTeX Warning: Citation 'Ashburner2000' on page 18 undefined on input line 125.
+Underfull \vbox (badness 10000) has occurred while \output is active []
 
-
-
-LaTeX Warning: Citation 'Martinez-Murcia2016book' on page 18 undefined on input
- line 127.
-
-
-Overfull \hbox (53.25375pt too wide) in paragraph at lines 127--128
-\T1/pplj/m/n/10.95 fer-ences in fold-ing pat-terns or mis-clas-si-fi-ca-tion of
- tis-sue types [[]].
- []
-
-
-LaTeX Warning: Citation 'xu2009source' on page 18 undefined on input line 129.
-
-
-LaTeX Warning: Citation 'bossa2010tensor' on page 18 undefined on input line 12
-9.
-
-
-Overfull \hbox (19.4183pt too wide) in paragraph at lines 129--130
-\T1/pplj/m/n/10.95 [[]], or mul-ti-di-men-sional Ten-sor Based Mor-phom-e-try [
-[]]. 
- []
-
-
-LaTeX Warning: Citation 'Dixon2003' on page 18 undefined on input line 138.
-
-[18]
+ [18]
+[19 <./Graphics/ch2/example_SPM.png>] [20]
 Package acronym Info: Label `acro:FDR' newly defined as it shall be overridden
 although it is yet undefined on input line 142.
-
-
-LaTeX Warning: Citation 'Shaffer1995' on page 19 undefined on input line 155.
-
-[19]
-
-LaTeX Warning: Citation 'spm_book' on page 20 undefined on input line 168.
-
-
-LaTeX Warning: Citation 'spm_book' on page 20 undefined on input line 171.
-
-
-LaTeX Warning: Citation 'Benjamini1995' on page 20 undefined on input line 173.
-
-
-
-LaTeX Warning: Citation 'Anderson2001' on page 20 undefined on input line 188.
-
-
-LaTeX Warning: Citation 'Winkler2014' on page 20 undefined on input line 188.
-
-
-LaTeX Warning: Citation 'Winkler2014' on page 20 undefined on input line 188.
-
-[20]
-
-LaTeX Warning: Citation 'Martinez-Murcia2016' on page 21 undefined on input lin
-e 191.
-
+ [21] [22]
 Package epstopdf Info: Source file: <Graphics/ch2/NI-CAD.eps>
 (epstopdf)                    date: 2017-02-12 16:16:27
 (epstopdf)                    size: 48549 bytes
@@ -2958,53 +3031,17 @@ Package epstopdf Info: Source file: <Graphics/ch2/NI-CAD.eps>
 nverted-to.pdf Graphics/ch2/NI-CAD.eps>
 (epstopdf)             \includegraphics on input line 197.
 Package epstopdf Info: Output file is already uptodate.
-<Graphics/ch2/NI-CAD-eps-converted-to.pdf, id=1470, 286.06876pt x 287.0725pt>
+
+<Graphics/ch2/NI-CAD-eps-converted-to.pdf, id=1619, 286.06876pt x 287.0725pt>
 File: Graphics/ch2/NI-CAD-eps-converted-to.pdf Graphic file (type pdf)
 
 <use Graphics/ch2/NI-CAD-eps-converted-to.pdf>
 Package pdftex.def Info: Graphics/ch2/NI-CAD-eps-converted-to.pdf used on input
  line 197.
 (pdftex.def)             Requested size: 193.47874pt x 194.1598pt.
-
-
-LaTeX Warning: Citation 'Stoeckel04' on page 21 undefined on input line 202.
-
-
-LaTeX Warning: Citation 'Stoeckel04' on page 21 undefined on input line 205.
-
+ [23 <./Graphics/ch2/NI-CAD-eps-converted-to.pdf>]
 Package acronym Info: Label `acro:SVC' newly defined as it shall be overridden
 although it is yet undefined on input line 205.
-[21]
-
-LaTeX Warning: Citation 'Spetsieris2009' on page 22 undefined on input line 207
-.
-
-
-LaTeX Warning: Citation 'Salas-Gonzalez2009' on page 22 undefined on input line
- 207.
-
-
-LaTeX Warning: Citation 'Martinez-Murcia2016' on page 22 undefined on input lin
-e 207.
-
-
-LaTeX Warning: Citation 'Stoeckel04' on page 22 undefined on input line 207.
-
-
-Overfull \hbox (20.78711pt too wide) in paragraph at lines 207--208
-[]\T1/pplj/m/n/10.95 It has been used in many works as a base-line [[], [],
- []
-
-
-LaTeX Warning: Citation 'Zhou2007' on page 22 undefined on input line 212.
-
-
-LaTeX Warning: Citation 'Lozano2007' on page 22 undefined on input line 212.
-
-
-LaTeX Warning: Citation 'Dale1999' on page 22 undefined on input line 212.
-
-[22 <./Graphics/ch2/NI-CAD-eps-converted-to.pdf>]
 Package epstopdf Info: Source file: <Graphics/ch2/corticalThickness.eps>
 (epstopdf)                    date: 2016-09-07 11:31:48
 (epstopdf)                    size: 371731 bytes
@@ -3017,7 +3054,7 @@ ness-eps-converted-to.pdf Graphics/ch2/corticalThickness.eps>
 (epstopdf)             \includegraphics on input line 216.
 Package epstopdf Info: Output file is already uptodate.
 
-<Graphics/ch2/corticalThickness-eps-converted-to.pdf, id=1519, 873.2625pt x 395
+<Graphics/ch2/corticalThickness-eps-converted-to.pdf, id=1672, 873.2625pt x 395
 .4775pt>
 File: Graphics/ch2/corticalThickness-eps-converted-to.pdf Graphic file (type pd
 f)
@@ -3027,61 +3064,12 @@ ed on input line 216.
 (pdftex.def)             Requested size: 309.56717pt x 140.19333pt.
 Package acronym Info: Label `acro:PLS' newly defined as it shall be overridden
 although it is yet undefined on input line 221.
+ [24])
+(./Chapters/Chapter03.tex [25 <./Graphics/ch2/corticalThickness-eps-converted-t
+o.pdf>] [26
 
 
-LaTeX Warning: Citation 'Spetsieris2009' on page 23 undefined on input line 221
-.
-
-
-LaTeX Warning: Citation 'Illan2011' on page 23 undefined on input line 221.
-
-
-LaTeX Warning: Citation 'Towey2011' on page 23 undefined on input line 221.
-
-
-LaTeX Warning: Citation 'Segovia2013' on page 23 undefined on input line 221.
-
-
-LaTeX Warning: Citation 'Khedher2015' on page 23 undefined on input line 221.
-
-
-LaTeX Warning: Citation 'Guyon03' on page 23 undefined on input line 223.
-
-
-LaTeX Warning: Citation 'Martinez-Murcia2016b' on page 23 undefined on input li
-ne 223.
-
-
-LaTeX Warning: Citation 'Martinez-Murcia2013255' on page 23 undefined on input 
-line 225.
-
-
-LaTeX Warning: Citation 'Martinez-Murcia2016b' on page 23 undefined on input li
-ne 225.
-
-
-Underfull \vbox (badness 7777) has occurred while \output is active []
-
- [23 <./Graphics/ch2/corticalThickness-eps-converted-to.pdf>]
-
-LaTeX Warning: Citation 'Kohavi1995' on page 24 undefined on input line 227.
-
-
-LaTeX Warning: Citation 'Guyon03' on page 24 undefined on input line 227.
-
-
-LaTeX Warning: Citation 'Kohavi1995' on page 24 undefined on input line 227.
-
-
-LaTeX Warning: Citation 'Gorriz2009' on page 24 undefined on input line 227.
-
-) (./Chapters/Chapter03.tex
-Overfull \hbox (12.28981pt too wide) in paragraph at lines 227--5
-\T1/pplj/m/n/10.95 ward se-lec-tion, back-ward elim-i-na-tion [[]], ge-netic al
--go-rithms [[]],
- []
-
-[24]
+]
 chapter 3.
 Package epstopdf Info: Source file: <Graphics/ch3/preProcessPL.eps>
 (epstopdf)                    date: 2016-06-02 14:07:54
@@ -3095,7 +3083,7 @@ eps-converted-to.pdf Graphics/ch3/preProcessPL.eps>
 (epstopdf)             \includegraphics on input line 19.
 Package epstopdf Info: Output file is already uptodate.
 
-<Graphics/ch3/preProcessPL-eps-converted-to.pdf, id=1544, 1284.8pt x 565.11125p
+<Graphics/ch3/preProcessPL-eps-converted-to.pdf, id=1726, 1284.8pt x 565.11125p
 t>
 File: Graphics/ch3/preProcessPL-eps-converted-to.pdf Graphic file (type pdf)
  <use Graphics/ch3/preProcessPL-eps-converted-to.pdf>
@@ -3105,32 +3093,12 @@ Package pdftex.def Info: Graphics/ch3/preProcessPL-eps-converted-to.pdf used on
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [25
-
-
-]
-
-LaTeX Warning: Citation 'Reuter2010' on page 26 undefined on input line 28.
-
-
-LaTeX Warning: Citation 'Smith2004' on page 26 undefined on input line 28.
-
-
-LaTeX Warning: Citation 'spm_book' on page 26 undefined on input line 28.
-
+ [27]
 Package acronym Info: Label `acro:SPM8' newly defined as it shall be overridden
 
 although it is yet undefined on input line 28.
-[26 <./Graphics/ch3/preProcessPL-eps-converted-to.pdf>]
 
-LaTeX Warning: Citation 'spm_book' on page 27 undefined on input line 79.
-
-
-LaTeX Warning: Citation 'Jenkinson2001' on page 27 undefined on input line 79.
-
-
-LaTeX Warning: Citation 'Reuter2012' on page 27 undefined on input line 79.
-
+[28 <./Graphics/ch3/preProcessPL-eps-converted-to.pdf>]
 Package epstopdf Info: Source file: <Graphics/ch3/regComparisonMRI.eps>
 (epstopdf)                    date: 2016-12-09 08:56:17
 (epstopdf)                    size: 1355565 bytes
@@ -3143,7 +3111,7 @@ MRI-eps-converted-to.pdf Graphics/ch3/regComparisonMRI.eps>
 (epstopdf)             \includegraphics on input line 86.
 Package epstopdf Info: Output file is already uptodate.
 
-<Graphics/ch3/regComparisonMRI-eps-converted-to.pdf, id=1584, 2254.4225pt x 953
+<Graphics/ch3/regComparisonMRI-eps-converted-to.pdf, id=1773, 2254.4225pt x 953
 .5625pt>
 File: Graphics/ch3/regComparisonMRI-eps-converted-to.pdf Graphic file (type pdf
 )
@@ -3171,7 +3139,7 @@ PET-eps-converted-to.pdf Graphics/ch3/regComparisonPET.eps>
 (epstopdf)             \includegraphics on input line 89.
 Package epstopdf Info: Output file is already uptodate.
 
-<Graphics/ch3/regComparisonPET-eps-converted-to.pdf, id=1587, 2254.4225pt x 953
+<Graphics/ch3/regComparisonPET-eps-converted-to.pdf, id=1776, 2254.4225pt x 953
 .5625pt>
 File: Graphics/ch3/regComparisonPET-eps-converted-to.pdf Graphic file (type pdf
 )
@@ -3182,57 +3150,23 @@ d on input line 89.
 Package acronym Info: Label `acro:ADNI' newly defined as it shall be overridden
 
 although it is yet undefined on input line 90.
- [27]
+ [29]
 Package acronym Info: Label `acro:MNI' newly defined as it shall be overridden
 although it is yet undefined on input line 98.
 
-
-LaTeX Warning: Citation 'Mazziotta2001' on page 28 undefined on input line 98.
-
-
-LaTeX Warning: Citation 'Talairach1988c' on page 28 undefined on input line 98.
-
-
-
-LaTeX Warning: Citation 'Fischl2002' on page 28 undefined on input line 101.
-
-
 Underfull \vbox (badness 6725) has occurred while \output is active []
 
- [28 <./Graphics/ch3/regComparisonMRI-eps-converted-to.pdf> <./Graphics/ch3/reg
+ [30 <./Graphics/ch3/regComparisonMRI-eps-converted-to.pdf> <./Graphics/ch3/reg
 ComparisonPET-eps-converted-to.pdf>]
 Package acronym Info: Label `acro:EM' newly defined as it shall be overridden
 although it is yet undefined on input line 103.
-
-
-LaTeX Warning: Citation 'Salas-Gonzalez2009' on page 29 undefined on input line
- 112.
-
-
-LaTeX Warning: Citation 'Martinez-Murcia20129676' on page 29 undefined on input
- line 112.
-
 Package acronym Info: Label `acro:PDF' newly defined as it shall be overridden
 although it is yet undefined on input line 112.
-[29]
-
-LaTeX Warning: Citation 'Scherfler2005' on page 30 undefined on input line 116.
-
-
-
-LaTeX Warning: Citation 'Arndt1996' on page 30 undefined on input line 122.
-
-
-LaTeX Warning: Citation 'Salas-Gonzalez2013' on page 30 undefined on input line
- 122.
-
+ [31]
 Package acronym Info: Label `acro:qT1' newly defined as it shall be overridden
 although it is yet undefined on input line 128.
 Package acronym Info: Label `acro:qT2' newly defined as it shall be overridden
 although it is yet undefined on input line 128.
-
-LaTeX Warning: Citation 'Weiskopf2013' on page 30 undefined on input line 128.
-
 Package epstopdf Info: Source file: <Graphics/ch3/norm_no.eps>
 (epstopdf)                    date: 2017-02-22 12:46:08
 (epstopdf)                    size: 679971 bytes
@@ -3244,7 +3178,8 @@ Package epstopdf Info: Source file: <Graphics/ch3/norm_no.eps>
 onverted-to.pdf Graphics/ch3/norm_no.eps>
 (epstopdf)             \includegraphics on input line 135.
 Package epstopdf Info: Output file is already uptodate.
-<Graphics/ch3/norm_no-eps-converted-to.pdf, id=1665, 405.515pt x 306.14375pt>
+
+<Graphics/ch3/norm_no-eps-converted-to.pdf, id=1871, 405.515pt x 306.14375pt>
 File: Graphics/ch3/norm_no-eps-converted-to.pdf Graphic file (type pdf)
 
 <use Graphics/ch3/norm_no-eps-converted-to.pdf>
@@ -3263,7 +3198,7 @@ converted-to.pdf Graphics/ch3/norm_max.eps>
 (epstopdf)             \includegraphics on input line 137.
 Package epstopdf Info: Output file is already uptodate.
 
-<Graphics/ch3/norm_max-eps-converted-to.pdf, id=1666, 405.515pt x 306.14375pt>
+<Graphics/ch3/norm_max-eps-converted-to.pdf, id=1872, 405.515pt x 306.14375pt>
 File: Graphics/ch3/norm_max-eps-converted-to.pdf Graphic file (type pdf)
 
 <use Graphics/ch3/norm_max-eps-converted-to.pdf>
@@ -3282,7 +3217,7 @@ converted-to.pdf Graphics/ch3/norm_int.eps>
 (epstopdf)             \includegraphics on input line 139.
 Package epstopdf Info: Output file is already uptodate.
 
-<Graphics/ch3/norm_int-eps-converted-to.pdf, id=1667, 405.515pt x 306.14375pt>
+<Graphics/ch3/norm_int-eps-converted-to.pdf, id=1873, 405.515pt x 306.14375pt>
 File: Graphics/ch3/norm_int-eps-converted-to.pdf Graphic file (type pdf)
 
 <use Graphics/ch3/norm_int-eps-converted-to.pdf>
@@ -3301,28 +3236,21 @@ converted-to.pdf Graphics/ch3/norm_est.eps>
 (epstopdf)             \includegraphics on input line 141.
 Package epstopdf Info: Output file is already uptodate.
 
-<Graphics/ch3/norm_est-eps-converted-to.pdf, id=1668, 405.515pt x 306.14375pt>
+<Graphics/ch3/norm_est-eps-converted-to.pdf, id=1874, 405.515pt x 306.14375pt>
 File: Graphics/ch3/norm_est-eps-converted-to.pdf Graphic file (type pdf)
 
 <use Graphics/ch3/norm_est-eps-converted-to.pdf>
 Package pdftex.def Info: Graphics/ch3/norm_est-eps-converted-to.pdf used on inp
 ut line 141.
 (pdftex.def)             Requested size: 174.12968pt x 131.46173pt.
- [30]
-
-LaTeX Warning: Citation 'Bradley1997' on page 31 undefined on input line 148.
-
+ [32]
 Package acronym Info: Label `acro:CV' newly defined as it shall be overridden
 although it is yet undefined on input line 150.
-[31 <./Graphics/ch3/norm_no-eps-converted-to.pdf> <./Graphics/ch3/norm_max-eps-
-converted-to.pdf> <./Graphics/ch3/norm_int-eps-converted-to.pdf> <./Graphics/ch
-3/norm_est-eps-converted-to.pdf>]
+ [33 <./Graphics/ch3/norm_no-eps-converted-to.pdf> <./Graphics/ch3/norm_max-eps
+-converted-to.pdf> <./Graphics/ch3/norm_int-eps-converted-to.pdf> <./Graphics/c
+h3/norm_est-eps-converted-to.pdf>]
 Package acronym Info: Label `acro:LOO' newly defined as it shall be overridden
 although it is yet undefined on input line 152.
-
-
-LaTeX Warning: Citation 'Hastie2009' on page 32 undefined on input line 152.
-
 Package epstopdf Info: Source file: <Graphics/ch3/evolutionKFold.eps>
 (epstopdf)                    date: 2017-02-22 19:33:43
 (epstopdf)                    size: 31663 bytes
@@ -3335,7 +3263,7 @@ d-eps-converted-to.pdf Graphics/ch3/evolutionKFold.eps>
 (epstopdf)             \includegraphics on input line 156.
 Package epstopdf Info: Output file is already uptodate.
 
-<Graphics/ch3/evolutionKFold-eps-converted-to.pdf, id=1708, 462.72874pt x 346.2
+<Graphics/ch3/evolutionKFold-eps-converted-to.pdf, id=1919, 462.72874pt x 346.2
 9375pt>
 File: Graphics/ch3/evolutionKFold-eps-converted-to.pdf Graphic file (type pdf)
  <use Graphics/ch3/evolutionKFold-eps-converted-to.pdf>
@@ -3343,19 +3271,9 @@ Package pdftex.def Info: Graphics/ch3/evolutionKFold-eps-converted-to.pdf used
 on input line 156.
 (pdftex.def)             Requested size: 270.86905pt x 202.71048pt.
 
-
-LaTeX Warning: Citation 'Kohavi1995' on page 32 undefined on input line 162.
-
-
-LaTeX Warning: Citation 'Hastie2009' on page 32 undefined on input line 162.
-
-
-LaTeX Warning: Citation 'Kohavi1995' on page 32 undefined on input line 162.
-
-
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [32 <./Graphics/ch3/evolutionKFold-eps-converted-to.pdf>]
+ [34 <./Graphics/ch3/evolutionKFold-eps-converted-to.pdf>]
 Package acronym Info: Label `acro:TP' newly defined as it shall be overridden
 although it is yet undefined on input line 183.
 Package acronym Info: Label `acro:TN' newly defined as it shall be overridden
@@ -3364,30 +3282,15 @@ Package acronym Info: Label `acro:FP' newly defined as it shall be overridden
 although it is yet undefined on input line 183.
 Package acronym Info: Label `acro:FN' newly defined as it shall be overridden
 although it is yet undefined on input line 183.
-) [33] [34
+) [35] [36
 
 
-] [35
+] [37
 
 
-] [36]
+] [38]
 (./Chapters/Chapter04.tex
 chapter 4.
-
-LaTeX Warning: Citation 'Martinez201141' on page 37 undefined on input line 5.
-
-
-LaTeX Warning: Citation 'Martinez-Murcia20129676' on page 37 undefined on input
- line 5.
-
-
-LaTeX Warning: Citation 'Martinez-Murcia2013255' on page 37 undefined on input 
-line 5.
-
-
-LaTeX Warning: Citation 'Martinez-Murcia201458' on page 37 undefined on input l
-ine 5.
-
 
 LaTeX Font Warning: Command \boldmath invalid in math mode on input line 10.
 
@@ -3422,7 +3325,7 @@ _overview-eps-converted-to.pdf Graphics/ch4/decomposition_overview.eps>
 (epstopdf)             \includegraphics on input line 17.
 Package epstopdf Info: Output file is already uptodate.
 
-<Graphics/ch4/decomposition_overview-eps-converted-to.pdf, id=1790, 656.4525pt 
+<Graphics/ch4/decomposition_overview-eps-converted-to.pdf, id=2011, 656.4525pt 
 x 224.84pt>
 File: Graphics/ch4/decomposition_overview-eps-converted-to.pdf Graphic file (ty
 pe pdf)
@@ -3430,23 +3333,6 @@ pe pdf)
 Package pdftex.def Info: Graphics/ch4/decomposition_overview-eps-converted-to.p
 df used on input line 17.
 (pdftex.def)             Requested size: 348.25937pt x 119.28127pt.
-
-
-LaTeX Warning: Citation 'Spetsieris2009' on page 37 undefined on input line 22.
-
-
-
-LaTeX Warning: Citation 'Illan2011' on page 37 undefined on input line 22.
-
-
-LaTeX Warning: Citation 'Towey2011' on page 37 undefined on input line 22.
-
-
-LaTeX Warning: Citation 'Segovia2013' on page 37 undefined on input line 22.
-
-
-LaTeX Warning: Citation 'Khedher2015' on page 37 undefined on input line 22.
-
 Package epstopdf Info: Source file: <Graphics/ch4/01-flowdiagram.eps>
 (epstopdf)                    date: 2017-01-11 12:41:34
 (epstopdf)                    size: 505726 bytes
@@ -3459,52 +3345,18 @@ m-eps-converted-to.pdf Graphics/ch4/01-flowdiagram.eps>
 (epstopdf)             \includegraphics on input line 26.
 Package epstopdf Info: Output file is already uptodate.
 
-<Graphics/ch4/01-flowdiagram-eps-converted-to.pdf, id=1803, 488.82625pt x 130.4
+<Graphics/ch4/01-flowdiagram-eps-converted-to.pdf, id=2029, 488.82625pt x 130.4
 875pt>
 File: Graphics/ch4/01-flowdiagram-eps-converted-to.pdf Graphic file (type pdf)
  <use Graphics/ch4/01-flowdiagram-eps-converted-to.pdf>
 Package pdftex.def Info: Graphics/ch4/01-flowdiagram-eps-converted-to.pdf used 
 on input line 26.
 (pdftex.def)             Requested size: 270.86905pt x 72.30592pt.
- [37
+ [39
 
 
  <./Graphics/ch4/decomposition_overview-eps-converted-to.pdf>]
 
-LaTeX Warning: Citation 'Martinez-Murcia2016b' on page 38 undefined on input li
-ne 32.
-
-
-LaTeX Warning: Citation 'Guyon03' on page 38 undefined on input line 32.
-
-
-LaTeX Warning: Citation 'DaelemansHosteMeulderEtAl2003' on page 38 undefined on
- input line 32.
-
-
-Overfull \hbox (48.52335pt too wide) in paragraph at lines 32--33
-[]\T1/pplj/m/n/10.95 Feature se-lec-tion is the first strat-egy used for fea-tu
-re re-duc-tion [[]],
- []
-
-
-LaTeX Warning: Citation 'SaeysInzaLarranaga2007' on page 38 undefined on input 
-line 34.
-
-
-LaTeX Warning: Citation 'Martinez201141' on page 38 undefined on input line 36.
-
-
-
-LaTeX Warning: Citation 'Martinez-Murcia20129676' on page 38 undefined on input
- line 36.
-
-
-Overfull \hbox (43.37689pt too wide) in paragraph at lines 36--37
-\T1/pplj/m/n/10.95 while keep-ing the com-pu-ta-tion times small [[], []].
- []
-
-
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `math shift' on input line 40.
 
@@ -3513,29 +3365,16 @@ Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `math shift' on input line 40.
 
 
-LaTeX Warning: Citation 'Fay10' on page 38 undefined on input line 41.
+Underfull \vbox (badness 10000) has occurred while \output is active []
 
-[38 <./Graphics/ch4/01-flowdiagram-eps-converted-to.pdf>]
-
-LaTeX Warning: Citation 'spm_book' on page 39 undefined on input line 46.
-
+ [40 <./Graphics/ch4/01-flowdiagram-eps-converted-to.pdf>]
 Package acronym Info: Label `acro:KL' newly defined as it shall be overridden
 although it is yet undefined on input line 49.
-
-LaTeX Warning: Citation 'Theodoridis1999' on page 39 undefined on input line 49
-.
-
 Package acronym Info: Label `acro:MWW' newly defined as it shall be overridden
 although it is yet undefined on input line 57.
-[39]
+ [41]
 
-LaTeX Warning: Citation 'Fay10' on page 40 undefined on input line 74.
-
-
-LaTeX Warning: Citation 'Fay10' on page 40 undefined on input line 74.
-
-
-LaTeX Warning: Reference `fig:comparisonSelection' on page 40 undefined on inpu
+LaTeX Warning: Reference `fig:comparisonSelection' on page 42 undefined on inpu
 t line 77.
 
 Package epstopdf Info: Source file: <Graphics/ch4/originalImage_inferno.eps>
@@ -3550,7 +3389,7 @@ _inferno-eps-converted-to.pdf Graphics/ch4/originalImage_inferno.eps>
 (epstopdf)             \includegraphics on input line 84.
 Package epstopdf Info: Output file is already uptodate.
 
-<Graphics/ch4/originalImage_inferno-eps-converted-to.pdf, id=1870, 190.7125pt x
+<Graphics/ch4/originalImage_inferno-eps-converted-to.pdf, id=2112, 190.7125pt x
  306.14375pt>
 File: Graphics/ch4/originalImage_inferno-eps-converted-to.pdf Graphic file (typ
 e pdf)
@@ -3570,7 +3409,7 @@ _inferno-eps-converted-to.pdf Graphics/ch4/transformedFA_inferno.eps>
 (epstopdf)             \includegraphics on input line 86.
 Package epstopdf Info: Output file is already uptodate.
 
-<Graphics/ch4/transformedFA_inferno-eps-converted-to.pdf, id=1871, 190.7125pt x
+<Graphics/ch4/transformedFA_inferno-eps-converted-to.pdf, id=2113, 190.7125pt x
  306.14375pt>
 File: Graphics/ch4/transformedFA_inferno-eps-converted-to.pdf Graphic file (typ
 e pdf)
@@ -3590,7 +3429,7 @@ A_inferno-eps-converted-to.pdf Graphics/ch4/transformedICA_inferno.eps>
 (epstopdf)             \includegraphics on input line 88.
 Package epstopdf Info: Output file is already uptodate.
 
-<Graphics/ch4/transformedICA_inferno-eps-converted-to.pdf, id=1874, 190.7125pt 
+<Graphics/ch4/transformedICA_inferno-eps-converted-to.pdf, id=2116, 190.7125pt 
 x 306.14375pt>
 File: Graphics/ch4/transformedICA_inferno-eps-converted-to.pdf Graphic file (ty
 pe pdf)
@@ -3599,20 +3438,7 @@ Package pdftex.def Info: Graphics/ch4/transformedICA_inferno-eps-converted-to.p
 df used on input line 88.
 (pdftex.def)             Requested size: 116.08842pt x 186.35034pt.
 
-
-LaTeX Warning: Citation 'Martinez201141' on page 40 undefined on input line 94.
-
-
-
-LaTeX Warning: Citation 'Martinez-Murcia20129676' on page 40 undefined on input
- line 94.
-
-
-Overfull \hbox (1.2153pt too wide) in paragraph at lines 94--95
-[]\T1/pplj/m/n/10.95 Factor Anal-y-sis ([])[] was used in [[], []]
- []
-
-[40] [41 <./Graphics/ch4/originalImage_inferno-eps-converted-to.pdf> <./Graphic
+[42] [43 <./Graphics/ch4/originalImage_inferno-eps-converted-to.pdf> <./Graphic
 s/ch4/transformedFA_inferno-eps-converted-to.pdf> <./Graphics/ch4/transformedIC
 A_inferno-eps-converted-to.pdf>]
 Package epstopdf Info: Source file: <Graphics/ch4/varError-K-ADNI.eps>
@@ -3627,7 +3453,7 @@ NI-eps-converted-to.pdf Graphics/ch4/varError-K-ADNI.eps>
 (epstopdf)             \includegraphics on input line 131.
 Package epstopdf Info: Output file is already uptodate.
 
-<Graphics/ch4/varError-K-ADNI-eps-converted-to.pdf, id=1921, 400.49625pt x 245.
+<Graphics/ch4/varError-K-ADNI-eps-converted-to.pdf, id=2166, 400.49625pt x 245.
 91875pt>
 File: Graphics/ch4/varError-K-ADNI-eps-converted-to.pdf Graphic file (type pdf)
 
@@ -3636,80 +3462,12 @@ Package pdftex.def Info: Graphics/ch4/varError-K-ADNI-eps-converted-to.pdf used
  on input line 131.
 (pdftex.def)             Requested size: 193.47874pt x 118.80515pt.
 
-
-LaTeX Warning: Citation 'Hyvarinen2000' on page 42 undefined on input line 137.
-
-
-
-LaTeX Warning: Citation 'Alvarez2009' on page 42 undefined on input line 137.
-
-
-LaTeX Warning: Citation 'Martinez201141' on page 42 undefined on input line 137
-.
-
-
-LaTeX Warning: Citation 'Martinez-Murcia20129676' on page 42 undefined on input
- line 137.
-
-
-LaTeX Warning: Citation 'DeMartino2007' on page 42 undefined on input line 137.
-
-
-
-Overfull \hbox (13.76448pt too wide) in paragraph at lines 137--138
-\T1/pplj/m/n/10.95 pen-dent. It was used in [[], [], []]
- []
-
-
 Underfull \vbox (badness 3029) has occurred while \output is active []
 
- [42 <./Graphics/ch4/varError-K-ADNI-eps-converted-to.pdf>]
-
-LaTeX Warning: Citation 'Hyvarinen2000' on page 43 undefined on input line 139.
-
-
-
-LaTeX Warning: Citation 'Hyvaerinen2003' on page 43 undefined on input line 139
-.
-
-
-Overfull \hbox (17.81734pt too wide) in paragraph at lines 139--140
-\T1/pplj/m/n/10.95 why their au-thors con-sider [][] to be a non-gaussian ver-s
-ion of [][] [[]],
- []
-
-
-LaTeX Warning: Citation 'Hyvarinen2000' on page 43 undefined on input line 145.
-
-
+ [44 <./Graphics/ch4/varError-K-ADNI-eps-converted-to.pdf>]
 Package acronym Info: Label `acro:EVD' newly defined as it shall be overridden
 although it is yet undefined on input line 151.
-
-LaTeX Warning: Citation 'Rice2006' on page 43 undefined on input line 168.
-
-[43]
-
-LaTeX Warning: Citation 'Oja1997' on page 44 undefined on input line 171.
-
-
-LaTeX Warning: Citation 'FastICA99' on page 44 undefined on input line 171.
-
-
-LaTeX Warning: Citation 'FastICA99' on page 44 undefined on input line 171.
-
-
-LaTeX Warning: Citation 'Hyvarinen2000' on page 44 undefined on input line 171.
-
-
-
-LaTeX Warning: Citation 'FastICA99' on page 44 undefined on input line 171.
-
-
-LaTeX Warning: Citation 'FastICA99' on page 44 undefined on input line 181.
-
-
-LaTeX Warning: Citation 'FastICA99' on page 44 undefined on input line 189.
-
+ [45]
 
 Class scrreprt Warning: deprecated old font command `\bf' used.
 (scrreprt)              You should note, that since 1994 LaTeX2e provides a
@@ -3878,7 +3636,6 @@ Class scrreprt Warning: deprecated old font command `\bf' used.
 (scrreprt)              `\bf' yourself you should replace it, e.g., by
 (scrreprt)              `\mathbf ' on input line 192.
 
-[44]
 
 Class scrreprt Warning: deprecated old font command `\bf' used.
 (scrreprt)              You should note, that since 1994 LaTeX2e provides a
@@ -3942,10 +3699,7 @@ Class scrreprt Warning: deprecated old font command `\bf' used.
 (scrreprt)              `\bf' yourself you should replace it, e.g., by
 (scrreprt)              `\mathbf ' on input line 193.
 
-
-LaTeX Warning: Citation 'Hyvarinen2000' on page 45 undefined on input line 197.
-
-
+[46]
 
 Class scrreprt Warning: deprecated old font command `\bf' used.
 (scrreprt)              You should note, that since 1994 LaTeX2e provides a
@@ -4115,20 +3869,9 @@ Class scrreprt Warning: deprecated old font command `\bf' used.
 (scrreprt)              `\mathbf ' on input line 199.
 
 
-LaTeX Warning: Citation 'Hyvarinen2000' on page 45 undefined on input line 199.
+Underfull \vbox (badness 1383) has occurred while \output is active []
 
-
-
-LaTeX Warning: Citation 'Hyvarinen2000' on page 45 undefined on input line 201.
-
-
-
-Overfull \hbox (20.73224pt too wide) in paragraph at lines 201--202
-[]\T1/pplj/m/n/10.95 The method used in this work uses a two-step it-er-a-tive 
-al-go-rithm [[]]
- []
-
-[45]
+ [47]
 Package epstopdf Info: Source file: <Graphics/ch4/accuracyMeanSTD-FA_vsN_ttest_
 AD.eps>
 (epstopdf)                    date: 2017-02-22 11:54:14
@@ -4143,7 +3886,7 @@ st_AD.eps>
 (epstopdf)             \includegraphics on input line 221.
 Package epstopdf Info: Output file is already uptodate.
 
-<Graphics/ch4/accuracyMeanSTD-FA_vsN_ttest_AD-eps-converted-to.pdf, id=1984, 43
+<Graphics/ch4/accuracyMeanSTD-FA_vsN_ttest_AD-eps-converted-to.pdf, id=2251, 43
 3.62pt x 289.08pt>
 File: Graphics/ch4/accuracyMeanSTD-FA_vsN_ttest_AD-eps-converted-to.pdf Graphic
  file (type pdf)
@@ -4166,7 +3909,7 @@ st_AD.eps>
 (epstopdf)             \includegraphics on input line 222.
 Package epstopdf Info: Output file is already uptodate.
 
-<Graphics/ch4/accuracyMeanSTD-FA_vsK_ttest_AD-eps-converted-to.pdf, id=1985, 43
+<Graphics/ch4/accuracyMeanSTD-FA_vsK_ttest_AD-eps-converted-to.pdf, id=2252, 43
 3.62pt x 289.08pt>
 File: Graphics/ch4/accuracyMeanSTD-FA_vsK_ttest_AD-eps-converted-to.pdf Graphic
  file (type pdf)
@@ -4189,7 +3932,7 @@ ntropy_AD.eps>
 (epstopdf)             \includegraphics on input line 224.
 Package epstopdf Info: Output file is already uptodate.
 
-<Graphics/ch4/accuracyMeanSTD-FA_vsN_entropy_AD-eps-converted-to.pdf, id=1986, 
+<Graphics/ch4/accuracyMeanSTD-FA_vsN_entropy_AD-eps-converted-to.pdf, id=2253, 
 433.62pt x 289.08pt>
 File: Graphics/ch4/accuracyMeanSTD-FA_vsN_entropy_AD-eps-converted-to.pdf Graph
 ic file (type pdf)
@@ -4212,7 +3955,7 @@ ntropy_AD.eps>
 (epstopdf)             \includegraphics on input line 225.
 Package epstopdf Info: Output file is already uptodate.
 
-<Graphics/ch4/accuracyMeanSTD-FA_vsK_entropy_AD-eps-converted-to.pdf, id=1987, 
+<Graphics/ch4/accuracyMeanSTD-FA_vsK_entropy_AD-eps-converted-to.pdf, id=2254, 
 433.62pt x 289.08pt>
 File: Graphics/ch4/accuracyMeanSTD-FA_vsK_entropy_AD-eps-converted-to.pdf Graph
 ic file (type pdf)
@@ -4235,7 +3978,7 @@ wilcoxon_AD.eps>
 (epstopdf)             \includegraphics on input line 227.
 Package epstopdf Info: Output file is already uptodate.
 
-<Graphics/ch4/accuracyMeanSTD-FA_vsN_wilcoxon_AD-eps-converted-to.pdf, id=1988,
+<Graphics/ch4/accuracyMeanSTD-FA_vsN_wilcoxon_AD-eps-converted-to.pdf, id=2255,
  433.62pt x 289.08pt>
 File: Graphics/ch4/accuracyMeanSTD-FA_vsN_wilcoxon_AD-eps-converted-to.pdf Grap
 hic file (type pdf)
@@ -4258,7 +4001,7 @@ wilcoxon_AD.eps>
 (epstopdf)             \includegraphics on input line 228.
 Package epstopdf Info: Output file is already uptodate.
 
-<Graphics/ch4/accuracyMeanSTD-FA_vsK_wilcoxon_AD-eps-converted-to.pdf, id=1989,
+<Graphics/ch4/accuracyMeanSTD-FA_vsK_wilcoxon_AD-eps-converted-to.pdf, id=2256,
  433.62pt x 289.08pt>
 File: Graphics/ch4/accuracyMeanSTD-FA_vsK_wilcoxon_AD-eps-converted-to.pdf Grap
 hic file (type pdf)
@@ -4281,7 +4024,7 @@ test_AD.eps>
 (epstopdf)             \includegraphics on input line 241.
 Package epstopdf Info: Output file is already uptodate.
 
-<Graphics/ch4/accuracyMeanSTD-ICA_vsN_ttest_AD-eps-converted-to.pdf, id=2011, 4
+<Graphics/ch4/accuracyMeanSTD-ICA_vsN_ttest_AD-eps-converted-to.pdf, id=2278, 4
 33.62pt x 289.08pt>
 File: Graphics/ch4/accuracyMeanSTD-ICA_vsN_ttest_AD-eps-converted-to.pdf Graphi
 c file (type pdf)
@@ -4304,7 +4047,7 @@ test_AD.eps>
 (epstopdf)             \includegraphics on input line 242.
 Package epstopdf Info: Output file is already uptodate.
 
-<Graphics/ch4/accuracyMeanSTD-ICA_vsK_ttest_AD-eps-converted-to.pdf, id=2012, 4
+<Graphics/ch4/accuracyMeanSTD-ICA_vsK_ttest_AD-eps-converted-to.pdf, id=2279, 4
 33.62pt x 289.08pt>
 File: Graphics/ch4/accuracyMeanSTD-ICA_vsK_ttest_AD-eps-converted-to.pdf Graphi
 c file (type pdf)
@@ -4327,7 +4070,7 @@ _entropy_AD.eps>
 (epstopdf)             \includegraphics on input line 244.
 Package epstopdf Info: Output file is already uptodate.
 
-<Graphics/ch4/accuracyMeanSTD-ICA_vsN_entropy_AD-eps-converted-to.pdf, id=2013,
+<Graphics/ch4/accuracyMeanSTD-ICA_vsN_entropy_AD-eps-converted-to.pdf, id=2280,
  433.62pt x 289.08pt>
 File: Graphics/ch4/accuracyMeanSTD-ICA_vsN_entropy_AD-eps-converted-to.pdf Grap
 hic file (type pdf)
@@ -4350,7 +4093,7 @@ _entropy_AD.eps>
 (epstopdf)             \includegraphics on input line 245.
 Package epstopdf Info: Output file is already uptodate.
 
-<Graphics/ch4/accuracyMeanSTD-ICA_vsK_entropy_AD-eps-converted-to.pdf, id=2014,
+<Graphics/ch4/accuracyMeanSTD-ICA_vsK_entropy_AD-eps-converted-to.pdf, id=2281,
  433.62pt x 289.08pt>
 File: Graphics/ch4/accuracyMeanSTD-ICA_vsK_entropy_AD-eps-converted-to.pdf Grap
 hic file (type pdf)
@@ -4373,7 +4116,7 @@ N_wilcoxon_AD.eps>
 (epstopdf)             \includegraphics on input line 247.
 Package epstopdf Info: Output file is already uptodate.
 
-<Graphics/ch4/accuracyMeanSTD-ICA_vsN_wilcoxon_AD-eps-converted-to.pdf, id=2015
+<Graphics/ch4/accuracyMeanSTD-ICA_vsN_wilcoxon_AD-eps-converted-to.pdf, id=2282
 , 433.62pt x 289.08pt>
 File: Graphics/ch4/accuracyMeanSTD-ICA_vsN_wilcoxon_AD-eps-converted-to.pdf Gra
 phic file (type pdf)
@@ -4396,7 +4139,7 @@ K_wilcoxon_AD.eps>
 (epstopdf)             \includegraphics on input line 248.
 Package epstopdf Info: Output file is already uptodate.
 
-<Graphics/ch4/accuracyMeanSTD-ICA_vsK_wilcoxon_AD-eps-converted-to.pdf, id=2016
+<Graphics/ch4/accuracyMeanSTD-ICA_vsK_wilcoxon_AD-eps-converted-to.pdf, id=2283
 , 433.62pt x 289.08pt>
 File: Graphics/ch4/accuracyMeanSTD-ICA_vsK_wilcoxon_AD-eps-converted-to.pdf Gra
 phic file (type pdf)
@@ -4408,13 +4151,13 @@ onverted-to.pdf used on input line 248.
 
 Underfull \vbox (badness 1377) has occurred while \output is active []
 
- [46]
-[47 <./Graphics/ch4/accuracyMeanSTD-FA_vsN_ttest_AD-eps-converted-to.pdf> <./Gr
+ [48]
+[49 <./Graphics/ch4/accuracyMeanSTD-FA_vsN_ttest_AD-eps-converted-to.pdf> <./Gr
 aphics/ch4/accuracyMeanSTD-FA_vsK_ttest_AD-eps-converted-to.pdf> <./Graphics/ch
 4/accuracyMeanSTD-FA_vsN_entropy_AD-eps-converted-to.pdf> <./Graphics/ch4/accur
 acyMeanSTD-FA_vsK_entropy_AD-eps-converted-to.pdf> <./Graphics/ch4/accuracyMean
 STD-FA_vsN_wilcoxon_AD-eps-converted-to.pdf> <./Graphics/ch4/accuracyMeanSTD-FA
-_vsK_wilcoxon_AD-eps-converted-to.pdf>] [48 <./Graphics/ch4/accuracyMeanSTD-ICA
+_vsK_wilcoxon_AD-eps-converted-to.pdf>] [50 <./Graphics/ch4/accuracyMeanSTD-ICA
 _vsN_ttest_AD-eps-converted-to.pdf> <./Graphics/ch4/accuracyMeanSTD-ICA_vsK_tte
 st_AD-eps-converted-to.pdf> <./Graphics/ch4/accuracyMeanSTD-ICA_vsN_entropy_AD-
 eps-converted-to.pdf> <./Graphics/ch4/accuracyMeanSTD-ICA_vsK_entropy_AD-eps-co
@@ -4435,8 +4178,8 @@ mparison_ADNI-PET.eps>
 (epstopdf)             \includegraphics on input line 265.
 Package epstopdf Info: Output file is already uptodate.
 
-<Graphics/ch4/accuracyOP-FA_vsK_comparison_ADNI-PET-eps-converted-to.pdf, id=26
-27, 433.62pt x 289.08pt>
+<Graphics/ch4/accuracyOP-FA_vsK_comparison_ADNI-PET-eps-converted-to.pdf, id=28
+95, 433.62pt x 289.08pt>
 File: Graphics/ch4/accuracyOP-FA_vsK_comparison_ADNI-PET-eps-converted-to.pdf G
 raphic file (type pdf)
 
@@ -4459,7 +4202,7 @@ comparison_ADNI-PET.eps>
 Package epstopdf Info: Output file is already uptodate.
 
 <Graphics/ch4/accuracyOP-ICA_vsK_comparison_ADNI-PET-eps-converted-to.pdf, id=2
-628, 433.62pt x 289.08pt>
+896, 433.62pt x 289.08pt>
 File: Graphics/ch4/accuracyOP-ICA_vsK_comparison_ADNI-PET-eps-converted-to.pdf 
 Graphic file (type pdf)
 
@@ -4482,7 +4225,7 @@ comparison_VDLN-HMPAO.eps>
 Package epstopdf Info: Output file is already uptodate.
 
 <Graphics/ch4/accuracyOP-FA_vsK_comparison_VDLN-HMPAO-eps-converted-to.pdf, id=
-2629, 433.62pt x 289.08pt>
+2897, 433.62pt x 289.08pt>
 File: Graphics/ch4/accuracyOP-FA_vsK_comparison_VDLN-HMPAO-eps-converted-to.pdf
  Graphic file (type pdf)
 
@@ -4505,7 +4248,7 @@ K_comparison_VDLN-HMPAO.eps>
 Package epstopdf Info: Output file is already uptodate.
 
 <Graphics/ch4/accuracyOP-ICA_vsK_comparison_VDLN-HMPAO-eps-converted-to.pdf, id
-=2630, 433.62pt x 289.08pt>
+=2898, 433.62pt x 289.08pt>
 File: Graphics/ch4/accuracyOP-ICA_vsK_comparison_VDLN-HMPAO-eps-converted-to.pd
 f Graphic file (type pdf)
 
@@ -4528,8 +4271,8 @@ mparison_ADNI-PET.eps>
 (epstopdf)             \includegraphics on input line 279.
 Package epstopdf Info: Output file is already uptodate.
 
-<Graphics/ch4/accuracyOP-FA_vsN_comparison_ADNI-PET-eps-converted-to.pdf, id=26
-36, 433.62pt x 289.08pt>
+<Graphics/ch4/accuracyOP-FA_vsN_comparison_ADNI-PET-eps-converted-to.pdf, id=29
+04, 433.62pt x 289.08pt>
 File: Graphics/ch4/accuracyOP-FA_vsN_comparison_ADNI-PET-eps-converted-to.pdf G
 raphic file (type pdf)
 
@@ -4552,7 +4295,7 @@ comparison_ADNI-PET.eps>
 Package epstopdf Info: Output file is already uptodate.
 
 <Graphics/ch4/accuracyOP-ICA_vsN_comparison_ADNI-PET-eps-converted-to.pdf, id=2
-637, 433.62pt x 289.08pt>
+905, 433.62pt x 289.08pt>
 File: Graphics/ch4/accuracyOP-ICA_vsN_comparison_ADNI-PET-eps-converted-to.pdf 
 Graphic file (type pdf)
 
@@ -4575,7 +4318,7 @@ comparison_VDLN-HMPAO.eps>
 Package epstopdf Info: Output file is already uptodate.
 
 <Graphics/ch4/accuracyOP-FA_vsN_comparison_VDLN-HMPAO-eps-converted-to.pdf, id=
-2638, 433.62pt x 289.08pt>
+2906, 433.62pt x 289.08pt>
 File: Graphics/ch4/accuracyOP-FA_vsN_comparison_VDLN-HMPAO-eps-converted-to.pdf
  Graphic file (type pdf)
 
@@ -4598,7 +4341,7 @@ N_comparison_VDLN-HMPAO.eps>
 Package epstopdf Info: Output file is already uptodate.
 
 <Graphics/ch4/accuracyOP-ICA_vsN_comparison_VDLN-HMPAO-eps-converted-to.pdf, id
-=2639, 433.62pt x 289.08pt>
+=2907, 433.62pt x 289.08pt>
 File: Graphics/ch4/accuracyOP-ICA_vsN_comparison_VDLN-HMPAO-eps-converted-to.pd
 f Graphic file (type pdf)
 
@@ -4610,21 +4353,17 @@ eps-converted-to.pdf used on input line 283.
 
 Underfull \vbox (badness 5490) has occurred while \output is active []
 
- [49 <./Graphics/ch4/accuracyOP-FA_vsK_comparison_ADNI-PET-eps-converted-to.pdf
+ [51 <./Graphics/ch4/accuracyOP-FA_vsK_comparison_ADNI-PET-eps-converted-to.pdf
 > <./Graphics/ch4/accuracyOP-ICA_vsK_comparison_ADNI-PET-eps-converted-to.pdf> 
 <./Graphics/ch4/accuracyOP-FA_vsK_comparison_VDLN-HMPAO-eps-converted-to.pdf> <
 ./Graphics/ch4/accuracyOP-ICA_vsK_comparison_VDLN-HMPAO-eps-converted-to.pdf>]
-
-LaTeX Warning: Citation 'Stoeckel04' on page 50 undefined on input line 291.
-
-
 Underfull \vbox (badness 5681) has occurred while \output is active []
 
- [50 <./Graphics/ch4/accuracyOP-FA_vsN_comparison_ADNI-PET-eps-converted-to.pdf
+ [52 <./Graphics/ch4/accuracyOP-FA_vsN_comparison_ADNI-PET-eps-converted-to.pdf
 > <./Graphics/ch4/accuracyOP-ICA_vsN_comparison_ADNI-PET-eps-converted-to.pdf> 
 <./Graphics/ch4/accuracyOP-FA_vsN_comparison_VDLN-HMPAO-eps-converted-to.pdf> <
 ./Graphics/ch4/accuracyOP-ICA_vsN_comparison_VDLN-HMPAO-eps-converted-to.pdf>] 
-[51]
+[53]
 Package epstopdf Info: Source file: <Graphics/ch4/accuracyMeanSTD-FA_vsN_ttest_
 PKS.eps>
 (epstopdf)                    date: 2017-02-11 14:20:17
@@ -4639,7 +4378,7 @@ est_PKS.eps>
 (epstopdf)             \includegraphics on input line 334.
 Package epstopdf Info: Output file is already uptodate.
 
-<Graphics/ch4/accuracyMeanSTD-FA_vsN_ttest_PKS-eps-converted-to.pdf, id=3068, 4
+<Graphics/ch4/accuracyMeanSTD-FA_vsN_ttest_PKS-eps-converted-to.pdf, id=3336, 4
 33.62pt x 289.08pt>
 File: Graphics/ch4/accuracyMeanSTD-FA_vsN_ttest_PKS-eps-converted-to.pdf Graphi
 c file (type pdf)
@@ -4662,7 +4401,7 @@ est_PKS.eps>
 (epstopdf)             \includegraphics on input line 335.
 Package epstopdf Info: Output file is already uptodate.
 
-<Graphics/ch4/accuracyMeanSTD-FA_vsK_ttest_PKS-eps-converted-to.pdf, id=3069, 4
+<Graphics/ch4/accuracyMeanSTD-FA_vsK_ttest_PKS-eps-converted-to.pdf, id=3337, 4
 33.62pt x 289.08pt>
 File: Graphics/ch4/accuracyMeanSTD-FA_vsK_ttest_PKS-eps-converted-to.pdf Graphi
 c file (type pdf)
@@ -4685,7 +4424,7 @@ entropy_PKS.eps>
 (epstopdf)             \includegraphics on input line 337.
 Package epstopdf Info: Output file is already uptodate.
 
-<Graphics/ch4/accuracyMeanSTD-FA_vsN_entropy_PKS-eps-converted-to.pdf, id=3070,
+<Graphics/ch4/accuracyMeanSTD-FA_vsN_entropy_PKS-eps-converted-to.pdf, id=3338,
  433.62pt x 289.08pt>
 File: Graphics/ch4/accuracyMeanSTD-FA_vsN_entropy_PKS-eps-converted-to.pdf Grap
 hic file (type pdf)
@@ -4708,7 +4447,7 @@ entropy_PKS.eps>
 (epstopdf)             \includegraphics on input line 338.
 Package epstopdf Info: Output file is already uptodate.
 
-<Graphics/ch4/accuracyMeanSTD-FA_vsK_entropy_PKS-eps-converted-to.pdf, id=3071,
+<Graphics/ch4/accuracyMeanSTD-FA_vsK_entropy_PKS-eps-converted-to.pdf, id=3339,
  433.62pt x 289.08pt>
 File: Graphics/ch4/accuracyMeanSTD-FA_vsK_entropy_PKS-eps-converted-to.pdf Grap
 hic file (type pdf)
@@ -4731,7 +4470,7 @@ _wilcoxon_PKS.eps>
 (epstopdf)             \includegraphics on input line 340.
 Package epstopdf Info: Output file is already uptodate.
 
-<Graphics/ch4/accuracyMeanSTD-FA_vsN_wilcoxon_PKS-eps-converted-to.pdf, id=3072
+<Graphics/ch4/accuracyMeanSTD-FA_vsN_wilcoxon_PKS-eps-converted-to.pdf, id=3340
 , 433.62pt x 289.08pt>
 File: Graphics/ch4/accuracyMeanSTD-FA_vsN_wilcoxon_PKS-eps-converted-to.pdf Gra
 phic file (type pdf)
@@ -4754,7 +4493,7 @@ _wilcoxon_PKS.eps>
 (epstopdf)             \includegraphics on input line 341.
 Package epstopdf Info: Output file is already uptodate.
 
-<Graphics/ch4/accuracyMeanSTD-FA_vsK_wilcoxon_PKS-eps-converted-to.pdf, id=3073
+<Graphics/ch4/accuracyMeanSTD-FA_vsK_wilcoxon_PKS-eps-converted-to.pdf, id=3341
 , 433.62pt x 289.08pt>
 File: Graphics/ch4/accuracyMeanSTD-FA_vsK_wilcoxon_PKS-eps-converted-to.pdf Gra
 phic file (type pdf)
@@ -4777,7 +4516,7 @@ ttest_PKS.eps>
 (epstopdf)             \includegraphics on input line 357.
 Package epstopdf Info: Output file is already uptodate.
 
-<Graphics/ch4/accuracyMeanSTD-ICA_vsN_ttest_PKS-eps-converted-to.pdf, id=3093, 
+<Graphics/ch4/accuracyMeanSTD-ICA_vsN_ttest_PKS-eps-converted-to.pdf, id=3361, 
 433.62pt x 289.08pt>
 File: Graphics/ch4/accuracyMeanSTD-ICA_vsN_ttest_PKS-eps-converted-to.pdf Graph
 ic file (type pdf)
@@ -4800,7 +4539,7 @@ ttest_PKS.eps>
 (epstopdf)             \includegraphics on input line 358.
 Package epstopdf Info: Output file is already uptodate.
 
-<Graphics/ch4/accuracyMeanSTD-ICA_vsK_ttest_PKS-eps-converted-to.pdf, id=3094, 
+<Graphics/ch4/accuracyMeanSTD-ICA_vsK_ttest_PKS-eps-converted-to.pdf, id=3362, 
 433.62pt x 289.08pt>
 File: Graphics/ch4/accuracyMeanSTD-ICA_vsK_ttest_PKS-eps-converted-to.pdf Graph
 ic file (type pdf)
@@ -4823,7 +4562,7 @@ N_entropy_PKS.eps>
 (epstopdf)             \includegraphics on input line 360.
 Package epstopdf Info: Output file is already uptodate.
 
-<Graphics/ch4/accuracyMeanSTD-ICA_vsN_entropy_PKS-eps-converted-to.pdf, id=3095
+<Graphics/ch4/accuracyMeanSTD-ICA_vsN_entropy_PKS-eps-converted-to.pdf, id=3363
 , 433.62pt x 289.08pt>
 File: Graphics/ch4/accuracyMeanSTD-ICA_vsN_entropy_PKS-eps-converted-to.pdf Gra
 phic file (type pdf)
@@ -4846,7 +4585,7 @@ K_entropy_PKS.eps>
 (epstopdf)             \includegraphics on input line 361.
 Package epstopdf Info: Output file is already uptodate.
 
-<Graphics/ch4/accuracyMeanSTD-ICA_vsK_entropy_PKS-eps-converted-to.pdf, id=3096
+<Graphics/ch4/accuracyMeanSTD-ICA_vsK_entropy_PKS-eps-converted-to.pdf, id=3364
 , 433.62pt x 289.08pt>
 File: Graphics/ch4/accuracyMeanSTD-ICA_vsK_entropy_PKS-eps-converted-to.pdf Gra
 phic file (type pdf)
@@ -4869,8 +4608,8 @@ sN_wilcoxon_PKS.eps>
 (epstopdf)             \includegraphics on input line 363.
 Package epstopdf Info: Output file is already uptodate.
 
-<Graphics/ch4/accuracyMeanSTD-ICA_vsN_wilcoxon_PKS-eps-converted-to.pdf, id=309
-7, 433.62pt x 289.08pt>
+<Graphics/ch4/accuracyMeanSTD-ICA_vsN_wilcoxon_PKS-eps-converted-to.pdf, id=336
+5, 433.62pt x 289.08pt>
 File: Graphics/ch4/accuracyMeanSTD-ICA_vsN_wilcoxon_PKS-eps-converted-to.pdf Gr
 aphic file (type pdf)
 
@@ -4892,8 +4631,8 @@ sK_wilcoxon_PKS.eps>
 (epstopdf)             \includegraphics on input line 364.
 Package epstopdf Info: Output file is already uptodate.
 
-<Graphics/ch4/accuracyMeanSTD-ICA_vsK_wilcoxon_PKS-eps-converted-to.pdf, id=309
-8, 433.62pt x 289.08pt>
+<Graphics/ch4/accuracyMeanSTD-ICA_vsK_wilcoxon_PKS-eps-converted-to.pdf, id=336
+6, 433.62pt x 289.08pt>
 File: Graphics/ch4/accuracyMeanSTD-ICA_vsK_wilcoxon_PKS-eps-converted-to.pdf Gr
 aphic file (type pdf)
 
@@ -4915,8 +4654,8 @@ mparison_PPMI-DAT.eps>
 (epstopdf)             \includegraphics on input line 376.
 Package epstopdf Info: Output file is already uptodate.
 
-<Graphics/ch4/accuracyOP-FA_vsK_comparison_PPMI-DAT-eps-converted-to.pdf, id=31
-16, 433.62pt x 289.08pt>
+<Graphics/ch4/accuracyOP-FA_vsK_comparison_PPMI-DAT-eps-converted-to.pdf, id=33
+84, 433.62pt x 289.08pt>
 File: Graphics/ch4/accuracyOP-FA_vsK_comparison_PPMI-DAT-eps-converted-to.pdf G
 raphic file (type pdf)
 
@@ -4939,7 +4678,7 @@ comparison_PPMI-DAT.eps>
 Package epstopdf Info: Output file is already uptodate.
 
 <Graphics/ch4/accuracyOP-ICA_vsK_comparison_PPMI-DAT-eps-converted-to.pdf, id=3
-117, 433.62pt x 289.08pt>
+385, 433.62pt x 289.08pt>
 File: Graphics/ch4/accuracyOP-ICA_vsK_comparison_PPMI-DAT-eps-converted-to.pdf 
 Graphic file (type pdf)
 
@@ -4961,8 +4700,8 @@ mparison_VDLN-DAT.eps>
 (epstopdf)             \includegraphics on input line 379.
 Package epstopdf Info: Output file is already uptodate.
 
-<Graphics/ch4/accuracyOP-FA_vsK_comparison_VDLN-DAT-eps-converted-to.pdf, id=31
-18, 433.62pt x 289.08pt>
+<Graphics/ch4/accuracyOP-FA_vsK_comparison_VDLN-DAT-eps-converted-to.pdf, id=33
+86, 433.62pt x 289.08pt>
 File: Graphics/ch4/accuracyOP-FA_vsK_comparison_VDLN-DAT-eps-converted-to.pdf G
 raphic file (type pdf)
 
@@ -4985,7 +4724,7 @@ comparison_VDLN-DAT.eps>
 Package epstopdf Info: Output file is already uptodate.
 
 <Graphics/ch4/accuracyOP-ICA_vsK_comparison_VDLN-DAT-eps-converted-to.pdf, id=3
-119, 433.62pt x 289.08pt>
+387, 433.62pt x 289.08pt>
 File: Graphics/ch4/accuracyOP-ICA_vsK_comparison_VDLN-DAT-eps-converted-to.pdf 
 Graphic file (type pdf)
 
@@ -5007,8 +4746,8 @@ mparison_VDLV-DAT.eps>
 (epstopdf)             \includegraphics on input line 382.
 Package epstopdf Info: Output file is already uptodate.
 
-<Graphics/ch4/accuracyOP-FA_vsK_comparison_VDLV-DAT-eps-converted-to.pdf, id=31
-20, 433.62pt x 289.08pt>
+<Graphics/ch4/accuracyOP-FA_vsK_comparison_VDLV-DAT-eps-converted-to.pdf, id=33
+88, 433.62pt x 289.08pt>
 File: Graphics/ch4/accuracyOP-FA_vsK_comparison_VDLV-DAT-eps-converted-to.pdf G
 raphic file (type pdf)
 
@@ -5031,7 +4770,7 @@ comparison_VDLV-DAT.eps>
 Package epstopdf Info: Output file is already uptodate.
 
 <Graphics/ch4/accuracyOP-ICA_vsK_comparison_VDLV-DAT-eps-converted-to.pdf, id=3
-121, 433.62pt x 289.08pt>
+389, 433.62pt x 289.08pt>
 File: Graphics/ch4/accuracyOP-ICA_vsK_comparison_VDLV-DAT-eps-converted-to.pdf 
 Graphic file (type pdf)
 
@@ -5042,13 +4781,13 @@ s-converted-to.pdf used on input line 383.
 
 Underfull \vbox (badness 3492) has occurred while \output is active []
 
- [52]
-[53 <./Graphics/ch4/accuracyMeanSTD-FA_vsN_ttest_PKS-eps-converted-to.pdf> <./G
+ [54]
+[55 <./Graphics/ch4/accuracyMeanSTD-FA_vsN_ttest_PKS-eps-converted-to.pdf> <./G
 raphics/ch4/accuracyMeanSTD-FA_vsK_ttest_PKS-eps-converted-to.pdf> <./Graphics/
 ch4/accuracyMeanSTD-FA_vsN_entropy_PKS-eps-converted-to.pdf> <./Graphics/ch4/ac
 curacyMeanSTD-FA_vsK_entropy_PKS-eps-converted-to.pdf> <./Graphics/ch4/accuracy
 MeanSTD-FA_vsN_wilcoxon_PKS-eps-converted-to.pdf> <./Graphics/ch4/accuracyMeanS
-TD-FA_vsK_wilcoxon_PKS-eps-converted-to.pdf>] [54 <./Graphics/ch4/accuracyMeanS
+TD-FA_vsK_wilcoxon_PKS-eps-converted-to.pdf>] [56 <./Graphics/ch4/accuracyMeanS
 TD-ICA_vsN_ttest_PKS-eps-converted-to.pdf> <./Graphics/ch4/accuracyMeanSTD-ICA_
 vsK_ttest_PKS-eps-converted-to.pdf> <./Graphics/ch4/accuracyMeanSTD-ICA_vsN_ent
 ropy_PKS-eps-converted-to.pdf> <./Graphics/ch4/accuracyMeanSTD-ICA_vsK_entropy_
@@ -5069,8 +4808,8 @@ mparison_PPMI-DAT.eps>
 (epstopdf)             \includegraphics on input line 394.
 Package epstopdf Info: Output file is already uptodate.
 
-<Graphics/ch4/accuracyOP-FA_vsN_comparison_PPMI-DAT-eps-converted-to.pdf, id=36
-86, 433.62pt x 289.08pt>
+<Graphics/ch4/accuracyOP-FA_vsN_comparison_PPMI-DAT-eps-converted-to.pdf, id=39
+55, 433.62pt x 289.08pt>
 File: Graphics/ch4/accuracyOP-FA_vsN_comparison_PPMI-DAT-eps-converted-to.pdf G
 raphic file (type pdf)
 
@@ -5093,7 +4832,7 @@ comparison_PPMI-DAT.eps>
 Package epstopdf Info: Output file is already uptodate.
 
 <Graphics/ch4/accuracyOP-ICA_vsN_comparison_PPMI-DAT-eps-converted-to.pdf, id=3
-687, 433.62pt x 289.08pt>
+956, 433.62pt x 289.08pt>
 File: Graphics/ch4/accuracyOP-ICA_vsN_comparison_PPMI-DAT-eps-converted-to.pdf 
 Graphic file (type pdf)
 
@@ -5115,8 +4854,8 @@ mparison_VDLN-DAT.eps>
 (epstopdf)             \includegraphics on input line 397.
 Package epstopdf Info: Output file is already uptodate.
 
-<Graphics/ch4/accuracyOP-FA_vsN_comparison_VDLN-DAT-eps-converted-to.pdf, id=36
-88, 433.62pt x 289.08pt>
+<Graphics/ch4/accuracyOP-FA_vsN_comparison_VDLN-DAT-eps-converted-to.pdf, id=39
+57, 433.62pt x 289.08pt>
 File: Graphics/ch4/accuracyOP-FA_vsN_comparison_VDLN-DAT-eps-converted-to.pdf G
 raphic file (type pdf)
 
@@ -5139,7 +4878,7 @@ comparison_VDLN-DAT.eps>
 Package epstopdf Info: Output file is already uptodate.
 
 <Graphics/ch4/accuracyOP-ICA_vsN_comparison_VDLN-DAT-eps-converted-to.pdf, id=3
-689, 433.62pt x 289.08pt>
+958, 433.62pt x 289.08pt>
 File: Graphics/ch4/accuracyOP-ICA_vsN_comparison_VDLN-DAT-eps-converted-to.pdf 
 Graphic file (type pdf)
 
@@ -5161,8 +4900,8 @@ mparison_VDLV-DAT.eps>
 (epstopdf)             \includegraphics on input line 400.
 Package epstopdf Info: Output file is already uptodate.
 
-<Graphics/ch4/accuracyOP-FA_vsN_comparison_VDLV-DAT-eps-converted-to.pdf, id=36
-90, 433.62pt x 289.08pt>
+<Graphics/ch4/accuracyOP-FA_vsN_comparison_VDLV-DAT-eps-converted-to.pdf, id=39
+59, 433.62pt x 289.08pt>
 File: Graphics/ch4/accuracyOP-FA_vsN_comparison_VDLV-DAT-eps-converted-to.pdf G
 raphic file (type pdf)
 
@@ -5185,7 +4924,7 @@ comparison_VDLV-DAT.eps>
 Package epstopdf Info: Output file is already uptodate.
 
 <Graphics/ch4/accuracyOP-ICA_vsN_comparison_VDLV-DAT-eps-converted-to.pdf, id=3
-691, 433.62pt x 289.08pt>
+960, 433.62pt x 289.08pt>
 File: Graphics/ch4/accuracyOP-ICA_vsN_comparison_VDLV-DAT-eps-converted-to.pdf 
 Graphic file (type pdf)
 
@@ -5194,43 +4933,22 @@ Package pdftex.def Info: Graphics/ch4/accuracyOP-ICA_vsN_comparison_VDLV-DAT-ep
 s-converted-to.pdf used on input line 401.
 (pdftex.def)             Requested size: 189.61128pt x 126.40602pt.
 
-[55] [56 <./Graphics/ch4/accuracyOP-FA_vsK_comparison_PPMI-DAT-eps-converted-to
+[57] [58 <./Graphics/ch4/accuracyOP-FA_vsK_comparison_PPMI-DAT-eps-converted-to
 .pdf> <./Graphics/ch4/accuracyOP-ICA_vsK_comparison_PPMI-DAT-eps-converted-to.p
 df> <./Graphics/ch4/accuracyOP-FA_vsK_comparison_VDLN-DAT-eps-converted-to.pdf>
  <./Graphics/ch4/accuracyOP-ICA_vsK_comparison_VDLN-DAT-eps-converted-to.pdf> <
 ./Graphics/ch4/accuracyOP-FA_vsK_comparison_VDLV-DAT-eps-converted-to.pdf> <./G
 raphics/ch4/accuracyOP-ICA_vsK_comparison_VDLV-DAT-eps-converted-to.pdf>]
-[57 <./Graphics/ch4/accuracyOP-FA_vsN_comparison_PPMI-DAT-eps-converted-to.pdf>
+[59 <./Graphics/ch4/accuracyOP-FA_vsN_comparison_PPMI-DAT-eps-converted-to.pdf>
  <./Graphics/ch4/accuracyOP-ICA_vsN_comparison_PPMI-DAT-eps-converted-to.pdf> <
 ./Graphics/ch4/accuracyOP-FA_vsN_comparison_VDLN-DAT-eps-converted-to.pdf> <./G
 raphics/ch4/accuracyOP-ICA_vsN_comparison_VDLN-DAT-eps-converted-to.pdf> <./Gra
 phics/ch4/accuracyOP-FA_vsN_comparison_VDLV-DAT-eps-converted-to.pdf> <./Graphi
-cs/ch4/accuracyOP-ICA_vsN_comparison_VDLV-DAT-eps-converted-to.pdf>] [58]
-
-LaTeX Warning: Citation 'Stoeckel04' on page 59 undefined on input line 460.
-
-
-LaTeX Warning: Citation 'Martinez201141' on page 59 undefined on input line 460
-.
-
-
-LaTeX Warning: Citation 'Martinez-Murcia20129676' on page 59 undefined on input
- line 460.
-
-
+cs/ch4/accuracyOP-ICA_vsN_comparison_VDLV-DAT-eps-converted-to.pdf>] [60]
 Overfull \hbox (5.80714pt too wide) in paragraph at lines 460--461
 []\T1/pplj/m/n/10.95 Our [][] sys-tem per-forms rea-son-ably well on the [][] d
 atasets, where it achieves
  []
-
-
-Overfull \hbox (14.24586pt too wide) in paragraph at lines 460--461
-\T1/pplj/m/n/10.95 The sys-tem out-per-forms the vi-sual anal-y-sis es-ti-mated
- by means of [][] [[]]
- []
-
-
-LaTeX Warning: Citation 'Vapnik1997' on page 59 undefined on input line 462.
 
 Package epstopdf Info: Source file: <Graphics/ch4/ttest_map_adnipet.eps>
 (epstopdf)                    date: 2017-02-22 18:08:57
@@ -5244,7 +4962,7 @@ ipet-eps-converted-to.pdf Graphics/ch4/ttest_map_adnipet.eps>
 (epstopdf)             \includegraphics on input line 469.
 Package epstopdf Info: Output file is already uptodate.
 
-<Graphics/ch4/ttest_map_adnipet-eps-converted-to.pdf, id=4325, 245.91875pt x 31
+<Graphics/ch4/ttest_map_adnipet-eps-converted-to.pdf, id=4597, 245.91875pt x 31
 0.15875pt>
 File: Graphics/ch4/ttest_map_adnipet-eps-converted-to.pdf Graphic file (type pd
 f)
@@ -5264,7 +4982,7 @@ t-eps-converted-to.pdf Graphics/ch4/kl_map_adnipet.eps>
 (epstopdf)             \includegraphics on input line 471.
 Package epstopdf Info: Output file is already uptodate.
 
-<Graphics/ch4/kl_map_adnipet-eps-converted-to.pdf, id=4326, 248.93pt x 310.1587
+<Graphics/ch4/kl_map_adnipet-eps-converted-to.pdf, id=4598, 248.93pt x 310.1587
 5pt>
 File: Graphics/ch4/kl_map_adnipet-eps-converted-to.pdf Graphic file (type pdf)
  <use Graphics/ch4/kl_map_adnipet-eps-converted-to.pdf>
@@ -5283,7 +5001,7 @@ adnipet-eps-converted-to.pdf Graphics/ch4/wilcoxon_map_adnipet.eps>
 (epstopdf)             \includegraphics on input line 473.
 Package epstopdf Info: Output file is already uptodate.
 
-<Graphics/ch4/wilcoxon_map_adnipet-eps-converted-to.pdf, id=4329, 261.97874pt x
+<Graphics/ch4/wilcoxon_map_adnipet-eps-converted-to.pdf, id=4601, 261.97874pt x
  310.15875pt>
 File: Graphics/ch4/wilcoxon_map_adnipet-eps-converted-to.pdf Graphic file (type
  pdf)
@@ -5303,7 +5021,7 @@ n-hmpao-eps-converted-to.pdf Graphics/ch4/ttest_map_vdln-hmpao.eps>
 (epstopdf)             \includegraphics on input line 482.
 Package epstopdf Info: Output file is already uptodate.
 
-<Graphics/ch4/ttest_map_vdln-hmpao-eps-converted-to.pdf, id=4333, 239.89626pt x
+<Graphics/ch4/ttest_map_vdln-hmpao-eps-converted-to.pdf, id=4605, 239.89626pt x
  310.15875pt>
 File: Graphics/ch4/ttest_map_vdln-hmpao-eps-converted-to.pdf Graphic file (type
  pdf)
@@ -5323,7 +5041,7 @@ mpao-eps-converted-to.pdf Graphics/ch4/kl_map_vdln-hmpao.eps>
 (epstopdf)             \includegraphics on input line 484.
 Package epstopdf Info: Output file is already uptodate.
 
-<Graphics/ch4/kl_map_vdln-hmpao-eps-converted-to.pdf, id=4334, 239.89626pt x 31
+<Graphics/ch4/kl_map_vdln-hmpao-eps-converted-to.pdf, id=4606, 239.89626pt x 31
 0.15875pt>
 File: Graphics/ch4/kl_map_vdln-hmpao-eps-converted-to.pdf Graphic file (type pd
 f)
@@ -5343,7 +5061,7 @@ vdln-hmpao-eps-converted-to.pdf Graphics/ch4/wilcoxon_map_vdln-hmpao.eps>
 (epstopdf)             \includegraphics on input line 486.
 Package epstopdf Info: Output file is already uptodate.
 
-<Graphics/ch4/wilcoxon_map_vdln-hmpao-eps-converted-to.pdf, id=4337, 261.97874p
+<Graphics/ch4/wilcoxon_map_vdln-hmpao-eps-converted-to.pdf, id=4609, 261.97874p
 t x 310.15875pt>
 File: Graphics/ch4/wilcoxon_map_vdln-hmpao-eps-converted-to.pdf Graphic file (t
 ype pdf)
@@ -5362,21 +5080,11 @@ Overfull \hbox (11.62444pt too wide) in paragraph at lines 521--521
 []|\T1/pplj/m/n/10.95 ParaHippocampal_R| 
  []
 
-
-LaTeX Warning: Citation 'Dubois2007' on page 59 undefined on input line 526.
-
-
-LaTeX Warning: Citation 'Claus1994' on page 59 undefined on input line 526.
-
-[59 <./Graphics/ch4/ttest_map_adnipet-eps-converted-to.pdf> <./Graphics/ch4/kl_
+[61 <./Graphics/ch4/ttest_map_adnipet-eps-converted-to.pdf> <./Graphics/ch4/kl_
 map_adnipet-eps-converted-to.pdf> <./Graphics/ch4/wilcoxon_map_adnipet-eps-conv
-erted-to.pdf>] [60]
-
-LaTeX Warning: Citation 'Fay10' on page 61 undefined on input line 530.
-
-[61 <./Graphics/ch4/ttest_map_vdln-hmpao-eps-converted-to.pdf> <./Graphics/ch4/
-kl_map_vdln-hmpao-eps-converted-to.pdf> <./Graphics/ch4/wilcoxon_map_vdln-hmpao
--eps-converted-to.pdf>]
+erted-to.pdf>] [62] [63 <./Graphics/ch4/ttest_map_vdln-hmpao-eps-converted-to.p
+df> <./Graphics/ch4/kl_map_vdln-hmpao-eps-converted-to.pdf> <./Graphics/ch4/wil
+coxon_map_vdln-hmpao-eps-converted-to.pdf>]
 Package acronym Info: Label `acro:SWEDD' newly defined as it shall be overridde
 n
 although it is yet undefined on input line 534.
@@ -5392,7 +5100,7 @@ i-dat-eps-converted-to.pdf Graphics/ch4/ttest_map_ppmi-dat.eps>
 (epstopdf)             \includegraphics on input line 547.
 Package epstopdf Info: Output file is already uptodate.
 
-<Graphics/ch4/ttest_map_ppmi-dat-eps-converted-to.pdf, id=4434, 245.91875pt x 3
+<Graphics/ch4/ttest_map_ppmi-dat-eps-converted-to.pdf, id=4710, 245.91875pt x 3
 10.15875pt>
 File: Graphics/ch4/ttest_map_ppmi-dat-eps-converted-to.pdf Graphic file (type p
 df)
@@ -5412,7 +5120,7 @@ at-eps-converted-to.pdf Graphics/ch4/kl_map_ppmi-dat.eps>
 (epstopdf)             \includegraphics on input line 549.
 Package epstopdf Info: Output file is already uptodate.
 
-<Graphics/ch4/kl_map_ppmi-dat-eps-converted-to.pdf, id=4435, 239.89626pt x 310.
+<Graphics/ch4/kl_map_ppmi-dat-eps-converted-to.pdf, id=4711, 239.89626pt x 310.
 15875pt>
 File: Graphics/ch4/kl_map_ppmi-dat-eps-converted-to.pdf Graphic file (type pdf)
 
@@ -5432,7 +5140,7 @@ ppmi-dat-eps-converted-to.pdf Graphics/ch4/wilcoxon_map_ppmi-dat.eps>
 (epstopdf)             \includegraphics on input line 551.
 Package epstopdf Info: Output file is already uptodate.
 
-<Graphics/ch4/wilcoxon_map_ppmi-dat-eps-converted-to.pdf, id=4438, 261.97874pt 
+<Graphics/ch4/wilcoxon_map_ppmi-dat-eps-converted-to.pdf, id=4714, 261.97874pt 
 x 310.15875pt>
 File: Graphics/ch4/wilcoxon_map_ppmi-dat-eps-converted-to.pdf Graphic file (typ
 e pdf)
@@ -5441,58 +5149,16 @@ Package pdftex.def Info: Graphics/ch4/wilcoxon_map_ppmi-dat-eps-converted-to.pd
 f used on input line 551.
 (pdftex.def)             Requested size: 120.45972pt x 142.61584pt.
 
-[62]) (./Chapters/Chapter05.tex [63 <./Graphics/ch4/ttest_map_ppmi-dat-eps-conv
-erted-to.pdf> <./Graphics/ch4/kl_map_ppmi-dat-eps-converted-to.pdf> <./Graphics
-/ch4/wilcoxon_map_ppmi-dat-eps-converted-to.pdf>] [64
+Underfull \vbox (badness 2197) has occurred while \output is active []
+
+ [64])
+(./Chapters/Chapter05.tex [65 <./Graphics/ch4/ttest_map_ppmi-dat-eps-converted-
+to.pdf> <./Graphics/ch4/kl_map_ppmi-dat-eps-converted-to.pdf> <./Graphics/ch4/w
+ilcoxon_map_ppmi-dat-eps-converted-to.pdf>] [66
 
 
 ]
 chapter 5.
-
-LaTeX Warning: Citation 'Saeed2002' on page 65 undefined on input line 7.
-
-
-LaTeX Warning: Citation 'Alejo2003' on page 65 undefined on input line 7.
-
-
-LaTeX Warning: Citation 'Wang2009' on page 65 undefined on input line 7.
-
-
-LaTeX Warning: Citation 'kovalev2001three' on page 65 undefined on input line 7
-.
-
-
-LaTeX Warning: Citation 'sikio2015mr' on page 65 undefined on input line 7.
-
-
-LaTeX Warning: Citation 'Martinez-Murcia2013266' on page 65 undefined on input 
-line 7.
-
-
-LaTeX Warning: Citation 'martinez2014parametrization' on page 65 undefined on i
-nput line 7.
-
-
-Overfull \hbox (87.39201pt too wide) in paragraph at lines 7--8
-\T1/pplj/m/n/10.95 [[], []], or our work on [][] fea-ture ex-trac-tion [[],
- []
-
-
-LaTeX Warning: Citation 'Martinez-Murcia2016b' on page 65 undefined on input li
-ne 9.
-
-
-LaTeX Warning: Citation 'Srinivasan2008' on page 65 undefined on input line 9.
-
-
-Overfull \hbox (34.10956pt too wide) in paragraph at lines 9--10
-\T1/pplj/m/n/10.95 pend-ing on the num-ber of vari-ables used. First or-der sta
-tis-tics [[]]
- []
-
-
-LaTeX Warning: Citation 'Haralick73' on page 65 undefined on input line 11.
-
 Package epstopdf Info: Source file: <Graphics/ch5/01-flowdiagram.eps>
 (epstopdf)                    date: 2017-03-04 20:37:40
 (epstopdf)                    size: 241333 bytes
@@ -5505,28 +5171,14 @@ m-eps-converted-to.pdf Graphics/ch5/01-flowdiagram.eps>
 (epstopdf)             \includegraphics on input line 15.
 Package epstopdf Info: Output file is already uptodate.
 
-<Graphics/ch5/01-flowdiagram-eps-converted-to.pdf, id=4497, 550.055pt x 102.382
+<Graphics/ch5/01-flowdiagram-eps-converted-to.pdf, id=4783, 550.055pt x 102.382
 5pt>
 File: Graphics/ch5/01-flowdiagram-eps-converted-to.pdf Graphic file (type pdf)
  <use Graphics/ch5/01-flowdiagram-eps-converted-to.pdf>
 Package pdftex.def Info: Graphics/ch5/01-flowdiagram-eps-converted-to.pdf used 
 on input line 15.
 (pdftex.def)             Requested size: 348.25937pt x 64.82312pt.
-
-
-LaTeX Warning: Citation 'Martinez-Murcia2013266' on page 65 undefined on input 
-line 20.
-
-
-LaTeX Warning: Citation 'martinez2014parametrization' on page 65 undefined on i
-nput line 20.
-
-
-Overfull \hbox (71.20078pt too wide) in paragraph at lines 20--21
-\T1/pplj/m/n/10.95 pipeline de-picted at Fig-ure [][]5.1[][], as in [[], []].
- []
-
-[65 <./Graphics/ch5/01-flowdiagram-eps-converted-to.pdf>]
+ [67 <./Graphics/ch5/01-flowdiagram-eps-converted-to.pdf>]
 Package acronym Info: Label `acro:GLCM' newly defined as it shall be overridden
 
 although it is yet undefined on input line 25.
@@ -5542,39 +5194,23 @@ o.pdf>
 (epstopdf)             \includegraphics on input line 45.
 Package epstopdf Info: Output file is already uptodate.
 
-<Graphics/ch5/comparisonIth-eps-converted-to.pdf, id=4516, 578.16pt x 216.81pt>
+<Graphics/ch5/comparisonIth-eps-converted-to.pdf, id=4814, 578.16pt x 216.81pt>
 File: Graphics/ch5/comparisonIth-eps-converted-to.pdf Graphic file (type pdf)
 <use Graphics/ch5/comparisonIth-eps-converted-to.pdf>
 Package pdftex.def Info: Graphics/ch5/comparisonIth-eps-converted-to.pdf used o
 n input line 45.
 (pdftex.def)             Requested size: 348.25937pt x 130.59647pt.
 
-Underfull \vbox (badness 2126) has occurred while \output is active []
+Underfull \vbox (badness 4168) has occurred while \output is active []
 
- [66]
-
-LaTeX Warning: Citation 'Philips2008' on page 67 undefined on input line 55.
-
-
-LaTeX Warning: Citation 'Philips2008' on page 67 undefined on input line 55.
-
-[67 <./Graphics/ch5/comparisonIth-eps-converted-to.pdf>]
-
-LaTeX Warning: Citation 'Haralick73' on page 68 undefined on input line 73.
-
-
-LaTeX Warning: Citation 'Haralick1992a' on page 68 undefined on input line 73.
-
+ [68]
+[69 <./Graphics/ch5/comparisonIth-eps-converted-to.pdf>]
 
 Package amsmath Warning: Foreign command \over;
 (amsmath)                \frac or \genfrac should be used instead
 (amsmath)                 on input line 89.
 
-[68] [69]
-
-LaTeX Warning: Citation 'Martinez-Murcia2013266' on page 70 undefined on input 
-line 107.
-
+[70] [71]
 Package epstopdf Info: Source file: <Graphics/ch5/featuresIthdis_no.eps>
 (epstopdf)                    date: 2017-03-05 21:15:31
 (epstopdf)                    size: 32804 bytes
@@ -5587,7 +5223,7 @@ s_no-eps-converted-to.pdf Graphics/ch5/featuresIthdis_no.eps>
 (epstopdf)             \includegraphics on input line 113.
 Package epstopdf Info: Output file is already uptodate.
 
-<Graphics/ch5/featuresIthdis_no-eps-converted-to.pdf, id=4597, 433.62pt x 216.8
+<Graphics/ch5/featuresIthdis_no-eps-converted-to.pdf, id=4902, 433.62pt x 216.8
 1pt>
 File: Graphics/ch5/featuresIthdis_no-eps-converted-to.pdf Graphic file (type pd
 f)
@@ -5607,7 +5243,7 @@ m_no-eps-converted-to.pdf Graphics/ch5/featuresIthcum_no.eps>
 (epstopdf)             \includegraphics on input line 114.
 Package epstopdf Info: Output file is already uptodate.
 
-<Graphics/ch5/featuresIthcum_no-eps-converted-to.pdf, id=4598, 433.62pt x 216.8
+<Graphics/ch5/featuresIthcum_no-eps-converted-to.pdf, id=4903, 433.62pt x 216.8
 1pt>
 File: Graphics/ch5/featuresIthcum_no-eps-converted-to.pdf Graphic file (type pd
 f)
@@ -5627,7 +5263,7 @@ s_max-eps-converted-to.pdf Graphics/ch5/featuresIthdis_max.eps>
 (epstopdf)             \includegraphics on input line 115.
 Package epstopdf Info: Output file is already uptodate.
 
-<Graphics/ch5/featuresIthdis_max-eps-converted-to.pdf, id=4599, 433.62pt x 216.
+<Graphics/ch5/featuresIthdis_max-eps-converted-to.pdf, id=4904, 433.62pt x 216.
 81pt>
 File: Graphics/ch5/featuresIthdis_max-eps-converted-to.pdf Graphic file (type p
 df)
@@ -5647,7 +5283,7 @@ m_max-eps-converted-to.pdf Graphics/ch5/featuresIthcum_max.eps>
 (epstopdf)             \includegraphics on input line 116.
 Package epstopdf Info: Output file is already uptodate.
 
-<Graphics/ch5/featuresIthcum_max-eps-converted-to.pdf, id=4600, 433.62pt x 216.
+<Graphics/ch5/featuresIthcum_max-eps-converted-to.pdf, id=4905, 433.62pt x 216.
 81pt>
 File: Graphics/ch5/featuresIthcum_max-eps-converted-to.pdf Graphic file (type p
 df)
@@ -5667,7 +5303,7 @@ s_int-eps-converted-to.pdf Graphics/ch5/featuresIthdis_int.eps>
 (epstopdf)             \includegraphics on input line 117.
 Package epstopdf Info: Output file is already uptodate.
 
-<Graphics/ch5/featuresIthdis_int-eps-converted-to.pdf, id=4601, 433.62pt x 216.
+<Graphics/ch5/featuresIthdis_int-eps-converted-to.pdf, id=4906, 433.62pt x 216.
 81pt>
 File: Graphics/ch5/featuresIthdis_int-eps-converted-to.pdf Graphic file (type p
 df)
@@ -5687,7 +5323,7 @@ m_int-eps-converted-to.pdf Graphics/ch5/featuresIthcum_int.eps>
 (epstopdf)             \includegraphics on input line 118.
 Package epstopdf Info: Output file is already uptodate.
 
-<Graphics/ch5/featuresIthcum_int-eps-converted-to.pdf, id=4602, 433.62pt x 216.
+<Graphics/ch5/featuresIthcum_int-eps-converted-to.pdf, id=4907, 433.62pt x 216.
 81pt>
 File: Graphics/ch5/featuresIthcum_int-eps-converted-to.pdf Graphic file (type p
 df)
@@ -5695,7 +5331,7 @@ df)
 Package pdftex.def Info: Graphics/ch5/featuresIthcum_int-eps-converted-to.pdf u
 sed on input line 118.
 (pdftex.def)             Requested size: 193.47874pt x 96.73984pt.
- [70] [71 <./Graphics/ch5/featuresIthdis_no-eps-converted-to.pdf> <./Graphics/c
+ [72] [73 <./Graphics/ch5/featuresIthdis_no-eps-converted-to.pdf> <./Graphics/c
 h5/featuresIthcum_no-eps-converted-to.pdf> <./Graphics/ch5/featuresIthdis_max-e
 ps-converted-to.pdf> <./Graphics/ch5/featuresIthcum_max-eps-converted-to.pdf> <
 ./Graphics/ch5/featuresIthdis_int-eps-converted-to.pdf> <./Graphics/ch5/feature
@@ -5712,302 +5348,209 @@ eps-converted-to.pdf Graphics/ch5/features_acc.eps>
 (epstopdf)             \includegraphics on input line 132.
 Package epstopdf Info: Output file is already uptodate.
 
-<Graphics/ch5/features_acc-eps-converted-to.pdf, id=4910, 798.985pt x 456.70625
+<Graphics/ch5/features_acc-eps-converted-to.pdf, id=5216, 798.985pt x 456.70625
 pt>
 File: Graphics/ch5/features_acc-eps-converted-to.pdf Graphic file (type pdf)
  <use Graphics/ch5/features_acc-eps-converted-to.pdf>
 Package pdftex.def Info: Graphics/ch5/features_acc-eps-converted-to.pdf used on
  input line 132.
 (pdftex.def)             Requested size: 570.46338pt x 326.09648pt.
- [72] [73 <./Graphics/ch5/features_acc-eps-converted-to.pdf>]
-
-LaTeX Warning: Reference `sec:discrimination' on page 74 undefined on input lin
-e 190.
-
-[74]
-Package epstopdf Info: Source file: <Graphics/ch5/accuracyOverIth.eps>
-(epstopdf)                    date: 2013-05-27 11:01:06
-(epstopdf)                    size: 14405 bytes
-(epstopdf)             Output file: <Graphics/ch5/accuracyOverIth-eps-converted
--to.pdf>
-(epstopdf)                    date: 2016-12-19 09:13:45
-(epstopdf)                    size: 10498 bytes
+ [74] [75 <./Graphics/ch5/features_acc-eps-converted-to.pdf>] [76]
+Package epstopdf Info: Source file: <Graphics/ch5/accuracyOverIth_no.eps>
+(epstopdf)                    date: 2017-03-08 18:45:41
+(epstopdf)                    size: 31508 bytes
+(epstopdf)             Output file: <Graphics/ch5/accuracyOverIth_no-eps-conver
+ted-to.pdf>
+(epstopdf)                    date: 2017-03-08 18:47:59
+(epstopdf)                    size: 22510 bytes
 (epstopdf)             Command: <repstopdf --outfile=Graphics/ch5/accuracyOverI
-th-eps-converted-to.pdf Graphics/ch5/accuracyOverIth.eps>
-(epstopdf)             \includegraphics on input line 196.
+th_no-eps-converted-to.pdf Graphics/ch5/accuracyOverIth_no.eps>
+(epstopdf)             \includegraphics on input line 192.
 Package epstopdf Info: Output file is already uptodate.
 
-<Graphics/ch5/accuracyOverIth-eps-converted-to.pdf, id=4977, 587.19376pt x 309.
-155pt>
-File: Graphics/ch5/accuracyOverIth-eps-converted-to.pdf Graphic file (type pdf)
+<Graphics/ch5/accuracyOverIth_no-eps-converted-to.pdf, id=5282, 433.62pt x 216.
+81pt>
+File: Graphics/ch5/accuracyOverIth_no-eps-converted-to.pdf Graphic file (type p
+df)
+ <use Graphics/ch5/accuracyOverIth_no-eps-converted-to.pdf>
+Package pdftex.def Info: Graphics/ch5/accuracyOverIth_no-eps-converted-to.pdf u
+sed on input line 192.
+(pdftex.def)             Requested size: 193.47874pt x 96.73984pt.
+Package epstopdf Info: Source file: <Graphics/ch5/accuracyOverIth_int.eps>
+(epstopdf)                    date: 2017-03-08 18:44:58
+(epstopdf)                    size: 32548 bytes
+(epstopdf)             Output file: <Graphics/ch5/accuracyOverIth_int-eps-conve
+rted-to.pdf>
+(epstopdf)                    date: 2017-03-08 18:47:59
+(epstopdf)                    size: 23256 bytes
+(epstopdf)             Command: <repstopdf --outfile=Graphics/ch5/accuracyOverI
+th_int-eps-converted-to.pdf Graphics/ch5/accuracyOverIth_int.eps>
+(epstopdf)             \includegraphics on input line 193.
+Package epstopdf Info: Output file is already uptodate.
 
- <use Graphics/ch5/accuracyOverIth-eps-converted-to.pdf>
-Package pdftex.def Info: Graphics/ch5/accuracyOverIth-eps-converted-to.pdf used
- on input line 196.
-(pdftex.def)             Requested size: 348.25937pt x 183.35747pt.
+<Graphics/ch5/accuracyOverIth_int-eps-converted-to.pdf, id=5283, 433.62pt x 216
+.81pt>
+File: Graphics/ch5/accuracyOverIth_int-eps-converted-to.pdf Graphic file (type 
+pdf)
+ <use Graphics/ch5/accuracyOverIth_int-eps-converted-to.pdf>
+Package pdftex.def Info: Graphics/ch5/accuracyOverIth_int-eps-converted-to.pdf 
+used on input line 193.
+(pdftex.def)             Requested size: 193.47874pt x 96.73984pt.
+Package epstopdf Info: Source file: <Graphics/ch5/accuracyOverIth_max.eps>
+(epstopdf)                    date: 2017-03-08 18:45:50
+(epstopdf)                    size: 32987 bytes
+(epstopdf)             Output file: <Graphics/ch5/accuracyOverIth_max-eps-conve
+rted-to.pdf>
+(epstopdf)                    date: 2017-03-08 18:48:00
+(epstopdf)                    size: 23517 bytes
+(epstopdf)             Command: <repstopdf --outfile=Graphics/ch5/accuracyOverI
+th_max-eps-converted-to.pdf Graphics/ch5/accuracyOverIth_max.eps>
+(epstopdf)             \includegraphics on input line 194.
+Package epstopdf Info: Output file is already uptodate.
 
-
-LaTeX Warning: Reference `fig:cut_thr30' on page 75 undefined on input line 201
-.
-
-[75 <./Graphics/ch5/accuracyOverIth-eps-converted-to.pdf>]
+<Graphics/ch5/accuracyOverIth_max-eps-converted-to.pdf, id=5284, 433.62pt x 216
+.81pt>
+File: Graphics/ch5/accuracyOverIth_max-eps-converted-to.pdf Graphic file (type 
+pdf)
+ <use Graphics/ch5/accuracyOverIth_max-eps-converted-to.pdf>
+Package pdftex.def Info: Graphics/ch5/accuracyOverIth_max-eps-converted-to.pdf 
+used on input line 194.
+(pdftex.def)             Requested size: 193.47874pt x 96.73984pt.
 Package epstopdf Info: Source file: <Graphics/ch5/features_avAccPPMI.eps>
-(epstopdf)                    date: 2013-10-07 11:05:29
-(epstopdf)                    size: 45171 bytes
+(epstopdf)                    date: 2017-03-08 19:23:26
+(epstopdf)                    size: 31921 bytes
 (epstopdf)             Output file: <Graphics/ch5/features_avAccPPMI-eps-conver
 ted-to.pdf>
-(epstopdf)                    date: 2016-12-19 09:13:45
-(epstopdf)                    size: 21338 bytes
+(epstopdf)                    date: 2017-03-08 19:24:01
+(epstopdf)                    size: 18807 bytes
 (epstopdf)             Command: <repstopdf --outfile=Graphics/ch5/features_avAc
 cPPMI-eps-converted-to.pdf Graphics/ch5/features_avAccPPMI.eps>
-(epstopdf)             \includegraphics on input line 207.
+(epstopdf)             \includegraphics on input line 203.
 Package epstopdf Info: Output file is already uptodate.
 
-<Graphics/ch5/features_avAccPPMI-eps-converted-to.pdf, id=4989, 614.295pt x 302
-.12875pt>
+<Graphics/ch5/features_avAccPPMI-eps-converted-to.pdf, id=5285, 433.62pt x 216.
+81pt>
 File: Graphics/ch5/features_avAccPPMI-eps-converted-to.pdf Graphic file (type p
 df)
  <use Graphics/ch5/features_avAccPPMI-eps-converted-to.pdf>
 Package pdftex.def Info: Graphics/ch5/features_avAccPPMI-eps-converted-to.pdf u
-sed on input line 207.
-(pdftex.def)             Requested size: 174.12968pt x 85.64195pt.
+sed on input line 203.
+(pdftex.def)             Requested size: 193.47874pt x 96.73984pt.
 Package epstopdf Info: Source file: <Graphics/ch5/features_avAccVDLN.eps>
-(epstopdf)                    date: 2013-10-07 11:06:05
-(epstopdf)                    size: 45239 bytes
+(epstopdf)                    date: 2017-03-08 19:23:27
+(epstopdf)                    size: 31715 bytes
 (epstopdf)             Output file: <Graphics/ch5/features_avAccVDLN-eps-conver
 ted-to.pdf>
-(epstopdf)                    date: 2016-12-19 09:13:46
-(epstopdf)                    size: 20619 bytes
+(epstopdf)                    date: 2017-03-08 19:24:01
+(epstopdf)                    size: 18730 bytes
 (epstopdf)             Command: <repstopdf --outfile=Graphics/ch5/features_avAc
 cVDLN-eps-converted-to.pdf Graphics/ch5/features_avAccVDLN.eps>
-(epstopdf)             \includegraphics on input line 208.
+(epstopdf)             \includegraphics on input line 204.
 Package epstopdf Info: Output file is already uptodate.
 
-<Graphics/ch5/features_avAccVDLN-eps-converted-to.pdf, id=4990, 614.295pt x 302
-.12875pt>
+<Graphics/ch5/features_avAccVDLN-eps-converted-to.pdf, id=5286, 433.62pt x 216.
+81pt>
 File: Graphics/ch5/features_avAccVDLN-eps-converted-to.pdf Graphic file (type p
 df)
  <use Graphics/ch5/features_avAccVDLN-eps-converted-to.pdf>
 Package pdftex.def Info: Graphics/ch5/features_avAccVDLN-eps-converted-to.pdf u
-sed on input line 208.
-(pdftex.def)             Requested size: 174.12968pt x 85.64195pt.
+sed on input line 204.
+(pdftex.def)             Requested size: 193.47874pt x 96.73984pt.
 Package epstopdf Info: Source file: <Graphics/ch5/features_avAccVDLV.eps>
-(epstopdf)                    date: 2013-10-07 11:06:31
-(epstopdf)                    size: 45110 bytes
+(epstopdf)                    date: 2017-03-08 19:23:27
+(epstopdf)                    size: 31976 bytes
 (epstopdf)             Output file: <Graphics/ch5/features_avAccVDLV-eps-conver
 ted-to.pdf>
-(epstopdf)                    date: 2016-12-19 09:13:46
-(epstopdf)                    size: 20489 bytes
+(epstopdf)                    date: 2017-03-08 19:24:01
+(epstopdf)                    size: 18724 bytes
 (epstopdf)             Command: <repstopdf --outfile=Graphics/ch5/features_avAc
 cVDLV-eps-converted-to.pdf Graphics/ch5/features_avAccVDLV.eps>
-(epstopdf)             \includegraphics on input line 209.
+(epstopdf)             \includegraphics on input line 205.
 Package epstopdf Info: Output file is already uptodate.
 
-<Graphics/ch5/features_avAccVDLV-eps-converted-to.pdf, id=4991, 614.295pt x 302
-.12875pt>
+<Graphics/ch5/features_avAccVDLV-eps-converted-to.pdf, id=5287, 433.62pt x 216.
+81pt>
 File: Graphics/ch5/features_avAccVDLV-eps-converted-to.pdf Graphic file (type p
 df)
  <use Graphics/ch5/features_avAccVDLV-eps-converted-to.pdf>
 Package pdftex.def Info: Graphics/ch5/features_avAccVDLV-eps-converted-to.pdf u
-sed on input line 209.
-(pdftex.def)             Requested size: 174.12968pt x 85.64195pt.
-
-Overfull \hbox (135.43156pt too wide) in paragraph at lines 207--210
- [][][][][][] 
- []
-
-LaTeX Font Info:    Font shape `T1/pplj/bx/n' in size <10> not available
-(Font)              Font shape `T1/pplj/b/n' tried instead on input line 210.
-
-LaTeX Warning: Reference `sec:discrimination' on page 76 undefined on input lin
-e 210.
-
-
-LaTeX Warning: Reference `sec:discrimination' on page 76 undefined on input lin
-e 210.
-
-
-Overfull \hbox (3.0262pt too wide) in paragraph at lines 214--215
-[]\T1/pplj/m/n/10.95 Some con-clu-sions about the amount of fea-tures that each
- of our discrimination-
- []
-
-
-Overfull \hbox (49.90446pt too wide) in paragraph at lines 220--243
- [][] 
- []
-
-
-Overfull \hbox (1.39468pt too wide) in paragraph at lines 247--248
+sed on input line 205.
+(pdftex.def)             Requested size: 193.47874pt x 96.73984pt.
+ [77 <./Graphics/ch5/accuracyOverIth_no-eps-converted-to.pdf> <./Graphics/ch5/a
+ccuracyOverIth_int-eps-converted-to.pdf> <./Graphics/ch5/accuracyOverIth_max-ep
+s-converted-to.pdf>] [78 <./Graphics/ch5/features_avAccPPMI-eps-converted-to.pd
+f> <./Graphics/ch5/features_avAccVDLN-eps-converted-to.pdf> <./Graphics/ch5/fea
+tures_avAccVDLV-eps-converted-to.pdf>]
+Overfull \hbox (1.39468pt too wide) in paragraph at lines 262--263
 []\T1/pplj/m/n/10.95 This ta-ble con-firms that the Mann-Whitney-Wilcoxon metho
 d can be no longer
  []
 
-
-Underfull \vbox (badness 2302) has occurred while \output is active []
-
- [76 <./Graphics/ch5/features_avAccPPMI-eps-converted-to.pdf> <./Graphics/ch5/f
-eatures_avAccVDLN-eps-converted-to.pdf> <./Graphics/ch5/features_avAccVDLV-eps-
-converted-to.pdf>] [77]
-
-LaTeX Warning: Citation 'Illan2012' on page 78 undefined on input line 249.
-
-
-LaTeX Warning: Citation 'Segovia2012' on page 78 undefined on input line 249.
-
-
-LaTeX Warning: Citation 'Rojas2012' on page 78 undefined on input line 249.
-
-
-LaTeX Warning: Citation 'Illan2012' on page 78 undefined on input line 274.
-
-
-LaTeX Warning: Citation 'Segovia2012' on page 78 undefined on input line 274.
-
-
-LaTeX Warning: Citation 'Rojas2012' on page 78 undefined on input line 274.
-
-
-LaTeX Warning: Citation 'Illan2012' on page 78 undefined on input line 274.
-
-
-LaTeX Warning: Citation 'Segovia2012' on page 78 undefined on input line 274.
-
-
-LaTeX Warning: Citation 'Rojas2012' on page 78 undefined on input line 274.
-
-
-LaTeX Warning: Citation 'Segovia2012' on page 78 undefined on input line 278.
-
-
-LaTeX Warning: Citation 'Rojas2012' on page 78 undefined on input line 278.
-
-[78]
-Overfull \hbox (0.58438pt too wide) in paragraph at lines 283--284
+[79] [80]
+Overfull \hbox (0.58438pt too wide) in paragraph at lines 265--266
 []\T1/pplj/m/n/10.95 As dis-cussed later in this Sec-tion, the op-ti-mum sub-vo
 lume will have a smaller
  []
 
 
-Overfull \hbox (0.83609pt too wide) in paragraph at lines 286--287
+Overfull \hbox (0.83609pt too wide) in paragraph at lines 268--269
 \T1/pplj/m/n/10.95 ground vox-els in the sub-vol-ume se-lected, yet ad-e-quatel
 y low to se-lect the biggest
  []
 
-) (./Chapters/Chapter06.tex [79] [80
-
-
-]
+LaTeX Font Info:    Font shape `T1/pplj/bx/n' in size <10> not available
+(Font)              Font shape `T1/pplj/b/n' tried instead on input line 306.
+) (./Chapters/Chapter06.tex [81] [82]
 chapter 6.
-
-LaTeX Warning: Citation 'Martinez-Murcia2015' on page 81 undefined on input lin
-e 6.
-
-<Graphics/ch6/01-flowdiagram.pdf, id=5041, 715.40817pt x 227.98582pt>
+<Graphics/ch6/01-flowdiagram.pdf, id=5570, 715.40817pt x 227.98582pt>
 File: Graphics/ch6/01-flowdiagram.pdf Graphic file (type pdf)
 
 <use Graphics/ch6/01-flowdiagram.pdf>
 Package pdftex.def Info: Graphics/ch6/01-flowdiagram.pdf used on input line 11.
 
 (pdftex.def)             Requested size: 309.56717pt x 98.65121pt.
-
-
-LaTeX Warning: Citation 'Martinez-Murcia2015' on page 81 undefined on input lin
-e 16.
-
 Package acronym Info: Label `acro:AC' newly defined as it shall be overridden
 although it is yet undefined on input line 16.
 Package acronym Info: Label `acro:LBP' newly defined as it shall be overridden
 although it is yet undefined on input line 16.
-
-LaTeX Warning: Citation 'Unay2007' on page 81 undefined on input line 16.
-
-
-LaTeX Warning: Citation 'Martinez-MurciaVRLBP' on page 81 undefined on input li
-ne 16.
-
-[81 <./Graphics/ch6/01-flowdiagram.pdf>]
-
-LaTeX Warning: Citation 'Haralick73' on page 82 undefined on input line 19.
+ [83
 
 
-LaTeX Warning: Citation 'martinez2014parametrization' on page 82 undefined on i
-nput line 19.
-
-
-LaTeX Warning: Citation 'sikio2015mr' on page 82 undefined on input line 19.
-
-
-Overfull \hbox (58.32361pt too wide) in paragraph at lines 19--20
-\T1/pplj/m/n/10.95 been used in the char-ac-ter-i-za-tion of brain in nu-mer-ou
-s works[[],
- []
-
-
-LaTeX Warning: Citation 'Martinez-Murcia2014225' on page 82 undefined on input 
-line 23.
-
-
-LaTeX Warning: Citation 'Martinez-MurciaVRLBP' on page 82 undefined on input li
-ne 23.
-
-
-LaTeX Warning: Citation 'Martinez-Murcia2015' on page 82 undefined on input lin
-e 23.
-
-
-LaTeX Warning: Citation 'Martinez-Murcia2016' on page 82 undefined on input lin
-e 23.
-
-
-Overfull \hbox (56.41005pt too wide) in paragraph at lines 22--24
-[]\T1/pplj/m/n/10.95 Original [][] [[], [], [],
- []
-
-<Graphics/ch6/02-projection.pdf, id=5150, 757.83125pt x 578.16pt>
+ <./Graphics/ch6/01-flowdiagram.pdf>]
+<Graphics/ch6/02-projection.pdf, id=5689, 757.83125pt x 578.16pt>
 File: Graphics/ch6/02-projection.pdf Graphic file (type pdf)
 
 <use Graphics/ch6/02-projection.pdf>
 Package pdftex.def Info: Graphics/ch6/02-projection.pdf used on input line 30.
 (pdftex.def)             Requested size: 309.56717pt x 236.17375pt.
- [82]
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [84]
 LaTeX Font Info:    Try loading font information for U+fplmbb on input line 52.
 
 
 (/usr/share/texlive/texmf-dist/tex/latex/psnfss/ufplmbb.fd
 File: ufplmbb.fd 2003/10/30 Fontinst v1.914 font definitions for U/fplmbb.
-) [83 <./Graphics/ch6/02-projection.pdf>]
-<Graphics/ch6/03-projections.pdf, id=5175, 1049.55504pt x 807.6829pt>
+) [85 <./Graphics/ch6/02-projection.pdf>]
+<Graphics/ch6/03-projections.pdf, id=5717, 1049.55504pt x 807.6829pt>
 File: Graphics/ch6/03-projections.pdf Graphic file (type pdf)
 
 <use Graphics/ch6/03-projections.pdf>
 Package pdftex.def Info: Graphics/ch6/03-projections.pdf used on input line 80.
 
 (pdftex.def)             Requested size: 386.95749pt x 297.7781pt.
- [84] [85 <./Graphics/ch6/03-projections.pdf>]
-
-LaTeX Warning: Citation 'Ojala1996' on page 86 undefined on input line 97.
-
-
-LaTeX Warning: Citation 'Zhao2007' on page 86 undefined on input line 97.
-
-
+ [86] [87 <./Graphics/ch6/03-projections.pdf>]
 Overfull \hbox (0.24115pt too wide) in paragraph at lines 97--98
 \T1/pplj/m/n/10.95 the tex-ture of an im-age with ap-pli-ca-tion to face recog-
 ni-tion. Later, in [[]],
  []
 
+[88]
 
-LaTeX Warning: Citation 'Zhao2007' on page 86 undefined on input line 99.
+LaTeX Warning: Reference `sec:mapping' on page 89 undefined on input line 115.
 
-
-LaTeX Warning: Citation 'Zhao2007' on page 86 undefined on input line 113.
-
-[86]
-
-LaTeX Warning: Reference `sec:mapping' on page 87 undefined on input line 115.
-
-<Graphics/ch6/04-vrlbp.pdf, id=5308, 694.93605pt x 189.97673pt>
+<Graphics/ch6/04-vrlbp.pdf, id=5850, 694.93605pt x 189.97673pt>
 File: Graphics/ch6/04-vrlbp.pdf Graphic file (type pdf)
 
 <use Graphics/ch6/04-vrlbp.pdf>
@@ -6019,141 +5562,40 @@ File: lstlang1.sty 2015/06/04 1.6 listings language file
 )
 LaTeX Font Info:    Font shape `T1/fvm/m/n' will be
 (Font)              scaled to size 8.50006pt on input line 139.
-
-
-LaTeX Warning: Citation 'Martinez-Murcia2015' on page 87 undefined on input lin
-e 156.
-
-
-LaTeX Warning: Citation 'Martinez-MurciaVRLBP' on page 87 undefined on input li
-ne 156.
-
-[87 <./Graphics/ch6/04-vrlbp.pdf>]
-
-LaTeX Warning: Citation 'Chen2008' on page 88 undefined on input line 163.
-
-
+ [89 <./Graphics/ch6/04-vrlbp.pdf>]
 Overfull \hbox (8.63908pt too wide) in paragraph at lines 163--164
 []\T1/pplj/m/n/10.95 Let us note a 3D path in a cer-tain di-rec-tion $\U/zeus/m
 /n/10.95 ¨\U/zeur/m/n/10.95 '\T1/pplj/m/n/10.95 , \U/zeur/m/n/10.95 ^^R\U/zeus/
 m/n/10.95 ©$ \T1/pplj/m/n/10.95 as a Markov Model[[]]: 
  []
 
-
-LaTeX Warning: Citation 'Evans1993' on page 88 undefined on input line 175.
-
-[88] [89]
-
-LaTeX Warning: Citation 'Yen1995' on page 90 undefined on input line 213.
-
-[90] <Graphics/ch6/cuts.pdf, id=5399, 1043.68521pt x 943.86073pt>
+[90] [91] [92] <Graphics/ch6/cuts.pdf, id=5944, 1043.68521pt x 943.86073pt>
 File: Graphics/ch6/cuts.pdf Graphic file (type pdf)
 
 <use Graphics/ch6/cuts.pdf>
 Package pdftex.def Info: Graphics/ch6/cuts.pdf used on input line 262.
 (pdftex.def)             Requested size: 144.54pt x 130.71379pt.
-
-
-LaTeX Warning: Citation 'Martinez-MurciaVRLBP' on page 91 undefined on input li
-ne 273.
-
-[91]
-
-LaTeX Warning: Citation 'Haralick73' on page 92 undefined on input line 275.
-
-
-LaTeX Warning: Citation 'kovalev2001three' on page 92 undefined on input line 2
-75.
-
-
-LaTeX Warning: Citation 'martinez2014parametrization' on page 92 undefined on i
-nput line 275.
-
-
+ [93]
 Underfull \vbox (badness 7944) has occurred while \output is active []
 
- [92 <./Graphics/ch6/cuts.pdf>]
-
-LaTeX Warning: Citation 'Haralick73' on page 93 undefined on input line 296.
-
-
-LaTeX Warning: Citation 'soh1999texture' on page 93 undefined on input line 296
-.
-
-
-LaTeX Warning: Citation 'clausi2002analysis' on page 93 undefined on input line
- 296.
-
-
-LaTeX Warning: Citation 'Haralick73' on page 93 undefined on input line 296.
-
-
-LaTeX Warning: Citation 'Haralick73' on page 93 undefined on input line 296.
-
-
-LaTeX Warning: Citation 'soh1999texture' on page 93 undefined on input line 296
-.
-
-
-LaTeX Warning: Citation 'Haralick73' on page 93 undefined on input line 296.
-
-
-LaTeX Warning: Citation 'soh1999texture' on page 93 undefined on input line 296
-.
-
-
-LaTeX Warning: Citation 'Haralick73' on page 93 undefined on input line 296.
-
-
-LaTeX Warning: Citation 'Haralick73' on page 93 undefined on input line 296.
-
-
-LaTeX Warning: Citation 'Haralick73' on page 93 undefined on input line 296.
-
-
-LaTeX Warning: Citation 'clausi2002analysis' on page 93 undefined on input line
- 296.
-
-
-LaTeX Warning: Citation 'clausi2002analysis' on page 93 undefined on input line
- 296.
-
-
-Overfull \hbox (90.6479pt too wide) in paragraph at lines 296--297
-\T1/pplj/m/n/10.95 Contrast[[]], Correlation[[]], Dissimilarity[[]], Energy[[]]
-,
+ [94 <./Graphics/ch6/cuts.pdf>]
+Overfull \hbox (83.31136pt too wide) in paragraph at lines 296--297
+\T1/pplj/m/n/10.95 trast[[][]100[][]], Cor-re-la-tion[[][]100[][]], Dissimilari
+ty[[]], En-ergy[[][]100[][]], Entropy[[]],
  []
 
 
-Overfull \hbox (27.86072pt too wide) in paragraph at lines 296--297
-\T1/pplj/m/n/10.95 Entropy[[]], Homogeneity[[]], Dif-fer-ence Variance[[]]
+Overfull \hbox (12.2789pt too wide) in paragraph at lines 296--297
+\T1/pplj/m/n/10.95 Ho-mo-gene-ity[[][]100[][]], Dif-fer-ence Vari-ance[[][]100[
+][]] (D. Vari-ance), Dif-fer-ence En-tropy[[][]100[][]]
  []
 
+[95]
 
-Overfull \hbox (116.3688pt too wide) in paragraph at lines 296--297
-\T1/pplj/m/n/10.95 Normalized[[]] (IDN) and In-verse Dif-fer-ence Mo-ment Norma
-lized[[]]
- []
-
-[93]
-
-LaTeX Warning: Citation 'Kohavi1995a' on page 94 undefined on input line 327.
-
-
-LaTeX Warning: Citation 'Chang2001' on page 94 undefined on input line 329.
-
-
-LaTeX Warning: Reference `sec:selection' on page 94 undefined on input line 332
+LaTeX Warning: Reference `sec:selection' on page 96 undefined on input line 332
 .
 
-
-LaTeX Warning: Citation 'AAL' on page 94 undefined on input line 335.
-
-
-LaTeX Warning: Citation 'Tzourio-Mazoyer2002' on page 94 undefined on input lin
-e 335.
-
-<Graphics/ch6/05-regions_cortical.pdf, id=5456, 426.59375pt x 218.8175pt>
+<Graphics/ch6/05-regions_cortical.pdf, id=6011, 426.59375pt x 218.8175pt>
 File: Graphics/ch6/05-regions_cortical.pdf Graphic file (type pdf)
 
 <use Graphics/ch6/05-regions_cortical.pdf>
@@ -6161,7 +5603,7 @@ Package pdftex.def Info: Graphics/ch6/05-regions_cortical.pdf used on input lin
 e 339.
 (pdftex.def)             Requested size: 270.86905pt x 138.94756pt.
 
-<Graphics/ch6/06-regions_subcortical.pdf, id=5457, 427.5975pt x 218.8175pt>
+<Graphics/ch6/06-regions_subcortical.pdf, id=6012, 427.5975pt x 218.8175pt>
 File: Graphics/ch6/06-regions_subcortical.pdf Graphic file (type pdf)
 
 <use Graphics/ch6/06-regions_subcortical.pdf>
@@ -6170,31 +5612,17 @@ line 347.
 (pdftex.def)             Requested size: 270.86905pt x 138.61366pt.
 
 
-LaTeX Warning: Reference `sec:mapping' on page 94 undefined on input line 354.
+LaTeX Warning: Reference `sec:mapping' on page 96 undefined on input line 354.
 
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [94]
-[95 <./Graphics/ch6/05-regions_cortical.pdf> <./Graphics/ch6/06-regions_subcort
-ical.pdf>] <Graphics/ch6/07-tmaps.pdf, id=5477, 1050.97673pt x 949.01132pt>
+<Graphics/ch6/07-tmaps.pdf, id=6014, 1050.97673pt x 949.01132pt>
 File: Graphics/ch6/07-tmaps.pdf Graphic file (type pdf)
 
 <use Graphics/ch6/07-tmaps.pdf>
 Package pdftex.def Info: Graphics/ch6/07-tmaps.pdf used on input line 358.
 (pdftex.def)             Requested size: 348.25937pt x 314.46349pt.
-
-
-LaTeX Warning: Citation 'Dubois2007' on page 96 undefined on input line 367.
-
-
-LaTeX Warning: Citation 'Pievani2013' on page 96 undefined on input line 367.
-
-[96 <./Graphics/ch6/07-tmaps.pdf>]
-
-LaTeX Warning: Citation 'Baron2001' on page 97 undefined on input line 369.
-
-<Graphics/ch6/08-Tmap4LayAverage.pdf, id=5702, 1043.9pt x 1113.15875pt>
+ [96] [97 <./Graphics/ch6/05-regions_cortical.pdf> <./Graphics/ch6/06-regions_s
+ubcortical.pdf>] [98 <./Graphics/ch6/07-tmaps.pdf>] <Graphics/ch6/08-Tmap4LayAv
+erage.pdf, id=6263, 1043.9pt x 1113.15875pt>
 File: Graphics/ch6/08-Tmap4LayAverage.pdf Graphic file (type pdf)
 
 <use Graphics/ch6/08-Tmap4LayAverage.pdf>
@@ -6202,17 +5630,7 @@ Package pdftex.def Info: Graphics/ch6/08-Tmap4LayAverage.pdf used on input line
  376.
 (pdftex.def)             Requested size: 386.95749pt x 412.62663pt.
 
-
-LaTeX Warning: Citation 'Dubois2007' on page 97 undefined on input line 381.
-
-
-LaTeX Warning: Citation 'Pievani2013' on page 97 undefined on input line 381.
-
-
-LaTeX Warning: Citation 'Baron2001' on page 97 undefined on input line 381.
-
-[97] [98 <./Graphics/ch6/08-Tmap4LayAverage.pdf>]
-<Graphics/ch6/09-tmaps_vrlbp.pdf, id=5742, 695.10251pt x 225.27542pt>
+<Graphics/ch6/09-tmaps_vrlbp.pdf, id=6274, 695.10251pt x 225.27542pt>
 File: Graphics/ch6/09-tmaps_vrlbp.pdf Graphic file (type pdf)
 
 <use Graphics/ch6/09-tmaps_vrlbp.pdf>
@@ -6220,11 +5638,12 @@ Package pdftex.def Info: Graphics/ch6/09-tmaps_vrlbp.pdf used on input line 388
 .
 (pdftex.def)             Requested size: 386.95749pt x 125.40744pt.
 
+Underfull \vbox (badness 10000) has occurred while \output is active []
 
-LaTeX Warning: Citation 'Stoeckel04' on page 99 undefined on input line 399.
-
-[99 <./Graphics/ch6/09-tmaps_vrlbp.pdf>] [100]
-<Graphics/ch6/10-comparisonPerformance.pdf, id=5879, 650.43pt x 738.76012pt>
+ [99]
+[100 <./Graphics/ch6/08-Tmap4LayAverage.pdf>] [101 <./Graphics/ch6/09-tmaps_vrl
+bp.pdf>] [102]
+<Graphics/ch6/10-comparisonPerformance.pdf, id=6443, 650.43pt x 738.76012pt>
 File: Graphics/ch6/10-comparisonPerformance.pdf Graphic file (type pdf)
 
 <use Graphics/ch6/10-comparisonPerformance.pdf>
@@ -6232,98 +5651,54 @@ Package pdftex.def Info: Graphics/ch6/10-comparisonPerformance.pdf used on inpu
 t line 457.
 (pdftex.def)             Requested size: 348.25937pt x 395.56529pt.
 
-<Graphics/ch6/11-layerPerf.pdf, id=5884, 855.195pt x 1088.065pt>
+<Graphics/ch6/11-layerPerf.pdf, id=6448, 855.195pt x 1088.065pt>
 File: Graphics/ch6/11-layerPerf.pdf Graphic file (type pdf)
 
 <use Graphics/ch6/11-layerPerf.pdf>
 Package pdftex.def Info: Graphics/ch6/11-layerPerf.pdf used on input line 466.
 (pdftex.def)             Requested size: 348.25937pt x 443.08789pt.
-
-
-LaTeX Warning: Citation 'Chang2001' on page 101 undefined on input line 481.
-
-
-LaTeX Warning: Citation 'Kohavi1995a' on page 101 undefined on input line 481.
-
-[101] [102 <./Graphics/ch6/10-comparisonPerformance.pdf>] [103 <./Graphics/ch6/
-11-layerPerf.pdf>]
-<Graphics/ch6/gaussian.pdf, id=7780, 348.36548pt x 287.55731pt>
+ [103] [104 <./Graphics/ch6/10-comparisonPerformance.pdf>] [105 <./Graphics/ch6
+/11-layerPerf.pdf>]
+<Graphics/ch6/gaussian.pdf, id=8345, 348.36548pt x 287.55731pt>
 File: Graphics/ch6/gaussian.pdf Graphic file (type pdf)
 
 <use Graphics/ch6/gaussian.pdf>
 Package pdftex.def Info: Graphics/ch6/gaussian.pdf used on input line 487.
 (pdftex.def)             Requested size: 108.405pt x 89.47969pt.
 
-<Graphics/ch6/spire.pdf, id=7782, 339.55856pt x 517.53348pt>
+<Graphics/ch6/spire.pdf, id=8347, 339.55856pt x 517.53348pt>
 File: Graphics/ch6/spire.pdf Graphic file (type pdf)
 
 <use Graphics/ch6/spire.pdf>
 Package pdftex.def Info: Graphics/ch6/spire.pdf used on input line 496.
 (pdftex.def)             Requested size: 108.405pt x 165.21924pt.
- [104 <./Graphics/ch6/gaussian.pdf>]
-<Graphics/ch6/spain.pdf, id=7809, 557.21175pt x 459.7175pt>
+ [106 <./Graphics/ch6/gaussian.pdf>]
+<Graphics/ch6/spain.pdf, id=8374, 557.21175pt x 459.7175pt>
 File: Graphics/ch6/spain.pdf Graphic file (type pdf)
 
 <use Graphics/ch6/spain.pdf>
 Package pdftex.def Info: Graphics/ch6/spain.pdf used on input line 506.
 (pdftex.def)             Requested size: 270.86905pt x 223.4818pt.
- [105 <./Graphics/ch6/spire.pdf>]
-<Graphics/ch6/accuracyPaths2.pdf, id=7844, 922.85912pt x 671.83388pt>
+
+<Graphics/ch6/accuracyPaths2.pdf, id=8378, 922.85912pt x 671.83388pt>
 File: Graphics/ch6/accuracyPaths2.pdf Graphic file (type pdf)
 
 <use Graphics/ch6/accuracyPaths2.pdf>
 Package pdftex.def Info: Graphics/ch6/accuracyPaths2.pdf used on input line 520
 .
 (pdftex.def)             Requested size: 386.95749pt x 281.69673pt.
-
-
-LaTeX Warning: Citation 'Martinez-Murcia2015' on page 106 undefined on input li
-ne 545.
-
-
-Overfull \hbox (21.19478pt too wide) in paragraph at lines 545--546
-[]\T1/pplj/m/n/10.95 Finally, we mimic the pro-ce-dure fol-lowed in the [][] ar
-ticle[[]].
- []
-
-
+ [107 <./Graphics/ch6/spire.pdf>]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [106 <./Graphics/ch6/spain.pdf>] [107 <./Graphics/ch6/accuracyPaths2.pdf>]
-
-LaTeX Warning: Citation 'Misra2009' on page 108 undefined on input line 587.
-
-
-LaTeX Warning: Citation 'Baron2001' on page 108 undefined on input line 587.
-
-
-LaTeX Warning: Citation 'Pievani2013' on page 108 undefined on input line 587.
-
-
-LaTeX Warning: Citation 'Stoeckel04' on page 108 undefined on input line 587.
-
-
-LaTeX Warning: Citation 'han2006reliability' on page 108 undefined on input lin
-e 587.
-
-
-LaTeX Warning: Citation 'Fischl2004' on page 108 undefined on input line 587.
-
-
-Overfull \hbox (6.95721pt too wide) in paragraph at lines 587--588
-\T1/pplj/m/n/10.95 mer's Dis-ease are widely doc-u-mented in the bib-li-og-ra-p
-hy [[], [],
- []
-
-
+ [108 <./Graphics/ch6/spain.pdf>] [109 <./Graphics/ch6/accuracyPaths2.pdf>]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [108]
+ [110]
 
-LaTeX Warning: Reference `sec:mapping' on page 109 undefined on input line 589.
+LaTeX Warning: Reference `sec:mapping' on page 111 undefined on input line 589.
 
 
-<Graphics/ch6/12-performance.pdf, id=8030, 650.43pt x 361.35pt>
+<Graphics/ch6/12-performance.pdf, id=8600, 650.43pt x 361.35pt>
 File: Graphics/ch6/12-performance.pdf Graphic file (type pdf)
 
 <use Graphics/ch6/12-performance.pdf>
@@ -6336,69 +5711,31 @@ Overfull \hbox (5.6322pt too wide) in paragraph at lines 600--601
 res pro-vided by widely-
  []
 
-[109 <./Graphics/ch6/12-performance.pdf>]
+[111 <./Graphics/ch6/12-performance.pdf>]
 
-LaTeX Warning: Citation 'Fischl2004' on page 110 undefined on input line 602.
-
-
-LaTeX Warning: Citation 'han2006reliability' on page 110 undefined on input lin
-e 602.
-
-
-LaTeX Warning: Citation 'Fischl2004' on page 110 undefined on input line 602.
-
-
-LaTeX Warning: Reference `sec:mapping' on page 110 undefined on input line 606.
+LaTeX Warning: Reference `sec:mapping' on page 112 undefined on input line 606.
 
 
 
-LaTeX Warning: Reference `sec:mapping' on page 110 undefined on input line 608.
+LaTeX Warning: Reference `sec:mapping' on page 112 undefined on input line 608.
 
 
-[110]
+[112]
 
-LaTeX Warning: Reference `sec:mapping' on page 111 undefined on input line 616.
+LaTeX Warning: Reference `sec:mapping' on page 113 undefined on input line 616.
 
 
-<Graphics/ch6/13-ROC.pdf, id=8216, 692.65979pt x 323.18942pt>
+<Graphics/ch6/13-ROC.pdf, id=8786, 692.65979pt x 323.18942pt>
 File: Graphics/ch6/13-ROC.pdf Graphic file (type pdf)
 
 <use Graphics/ch6/13-ROC.pdf>
 Package pdftex.def Info: Graphics/ch6/13-ROC.pdf used on input line 623.
 (pdftex.def)             Requested size: 309.56717pt x 144.43773pt.
-
-
-LaTeX Warning: Citation 'Zhou2008' on page 111 undefined on input line 632.
-
-
-LaTeX Warning: Citation 'Locatelli1998' on page 111 undefined on input line 632
-.
-
-
-LaTeX Warning: Citation 'IAIllan2010' on page 111 undefined on input line 633.
-
-
-LaTeX Warning: Citation 'Ram'irez2009' on page 111 undefined on input line 633.
-
-
-
-LaTeX Warning: Citation 'Grana2011' on page 111 undefined on input line 633.
-
-
-LaTeX Warning: Citation 'Medina2008' on page 111 undefined on input line 633.
-
-[111 <./Graphics/ch6/13-ROC.pdf>]
-
-LaTeX Warning: Citation 'Grana2011' on page 112 undefined on input line 642.
-
-
-LaTeX Warning: Citation 'Medina2008' on page 112 undefined on input line 642.
-
-
+ [113 <./Graphics/ch6/13-ROC.pdf>]
 Underfull \vbox (badness 3068) has occurred while \output is active []
 
- [112]
-<Graphics/ch6/radia&structures.pdf, id=8375, 470.55798pt x 452.08899pt>
+ [114]
+<Graphics/ch6/radia&structures.pdf, id=8945, 470.55798pt x 452.08899pt>
 File: Graphics/ch6/radia&structures.pdf Graphic file (type pdf)
 
 <use Graphics/ch6/radia&structures.pdf>
@@ -6406,106 +5743,32 @@ Package pdftex.def Info: Graphics/ch6/radia&structures.pdf used on input line 6
 46.
 (pdftex.def)             Requested size: 386.95749pt x 371.7846pt.
 
-
-LaTeX Warning: Citation 'Tzourio-Mazoyer2002' on page 113 undefined on input li
-ne 652.
-
-
-LaTeX Warning: Citation 'Dubois2007' on page 113 undefined on input line 654.
-
-
-LaTeX Warning: Citation 'chan2001patterns' on page 113 undefined on input line 
-654.
-
-
-LaTeX Warning: Citation 'Baron2001' on page 113 undefined on input line 654.
-
-
-LaTeX Warning: Citation 'Jong2008' on page 113 undefined on input line 654.
-
-
-LaTeX Warning: Citation 'chan2001patterns' on page 113 undefined on input line 
-654.
-
-
-LaTeX Warning: Citation 'Baron2001' on page 113 undefined on input line 654.
-
-
-LaTeX Warning: Citation 'Jong2008' on page 113 undefined on input line 654.
-
-
-LaTeX Warning: Citation 'chan2001patterns' on page 113 undefined on input line 
-654.
-
-
-LaTeX Warning: Citation 'Baron2001' on page 113 undefined on input line 654.
-
-
-LaTeX Warning: Citation 'Jong2008' on page 113 undefined on input line 654.
-
-
-Overfull \hbox (2.36908pt too wide) in paragraph at lines 654--655
-\T1/pplj/m/n/10.95 grey mat-ter suf-fer from atrophy[[], [], []], which
+Overfull \hbox (62.54886pt too wide) in paragraph at lines 654--655
+\T1/pplj/m/n/10.95 the NINCDS-ADRDA cri-te-ria for AD di-ag-no-sis[[][]53[][]] 
+and is widely accepted[[],
  []
 
 
-LaTeX Warning: Citation 'sikio2015mr' on page 113 undefined on input line 660.
-
-[113] [114 <./Graphics/ch6/radia&structures.pdf>]
-
-LaTeX Warning: Citation 'Martinez-Murcia2015' on page 115 undefined on input li
-ne 662.
-
-
-LaTeX Warning: Citation 'Martinez-MurciaVRLBP' on page 115 undefined on input l
-ine 662.
-
-
-LaTeX Warning: Citation 'Stoeckel04' on page 115 undefined on input line 662.
-
-
-LaTeX Warning: Citation 'Ortiz2013' on page 115 undefined on input line 662.
-
-
-LaTeX Warning: Citation 'Illan2014' on page 115 undefined on input line 662.
-
-
-Overfull \hbox (8.39432pt too wide) in paragraph at lines 662--663
-\T1/pplj/m/n/10.95 paper[[]], the [][]-VRLBP[[]], the Vox-
+Overfull \hbox (88.04181pt too wide) in paragraph at lines 654--655
+\T1/pplj/m/n/10.95 round-ing struc-tures (Amyg-dala, Parahip-pocam-pal and Fusi
+form Gyrus) as well[[],
  []
 
 
-Overfull \hbox (13.51483pt too wide) in paragraph at lines 662--663
-\T1/pplj/m/n/10.95 the ADNI database and in-volv-ing SVM clas-si-fiers such as 
-the LVQ-SVM[[]]
- []
+Underfull \vbox (badness 3803) has occurred while \output is active []
 
-
-LaTeX Warning: Citation 'Stoeckel04' on page 115 undefined on input line 690.
-
-
-LaTeX Warning: Citation 'Martinez-Murcia2015' on page 115 undefined on input li
-ne 690.
-
-
-LaTeX Warning: Citation 'Martinez-MurciaVRLBP' on page 115 undefined on input l
-ine 690.
-
-
+ [115]
+[116 <./Graphics/ch6/radia&structures.pdf>]
 Underfull \vbox (badness 1412) has occurred while \output is active []
 
- [115])
-[116] [117
+ [117])
+[118] [119
 
 
 
 
-] [118] (./Chapters/Chapter07.tex
+] [120] (./Chapters/Chapter07.tex
 chapter 7.
-
-LaTeX Warning: Citation 'haar2014anatomical' on page 119 undefined on input lin
-e 22.
-
 
 Overfull \hbox (6.43155pt too wide) in paragraph at lines 24--44
 \T1/pplj/m/n/10.95 from the multi-level (phe-no-typic, neu-ro-bi-o-log-i-cal, a
@@ -6515,14 +5778,10 @@ nd eti-o-log-i-cal) het-ero-geneities
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [119
+ [121
 
 
 ]
-
-LaTeX Warning: Citation 'Martinez-Murcia2016a' on page 120 undefined on input l
-ine 45.
-
 Package epstopdf Info: Source file: <Graphics/ch8/FIGURE01.eps>
 (epstopdf)                    date: 2016-06-28 10:46:46
 (epstopdf)                    size: 71536 bytes
@@ -6534,7 +5793,8 @@ Package epstopdf Info: Source file: <Graphics/ch8/FIGURE01.eps>
 converted-to.pdf Graphics/ch8/FIGURE01.eps>
 (epstopdf)             \includegraphics on input line 52.
 Package epstopdf Info: Output file is already uptodate.
-<Graphics/ch8/FIGURE01-eps-converted-to.pdf, id=8479, 367.3725pt x 152.57pt>
+
+<Graphics/ch8/FIGURE01-eps-converted-to.pdf, id=9063, 367.3725pt x 152.57pt>
 File: Graphics/ch8/FIGURE01-eps-converted-to.pdf Graphic file (type pdf)
 
 <use Graphics/ch8/FIGURE01-eps-converted-to.pdf>
@@ -6543,14 +5803,14 @@ ut line 52.
 (pdftex.def)             Requested size: 270.86905pt x 112.4996pt.
 Package acronym Info: Label `acro:SVD' newly defined as it shall be overridden
 although it is yet undefined on input line 71.
- [120] [121 <./Graphics/ch8/FIGURE01-eps-converted-to.pdf>]
-<Graphics/ch8/weighting2.pdf, id=8537, 561.89923pt x 322.50487pt>
+ [122] [123 <./Graphics/ch8/FIGURE01-eps-converted-to.pdf>]
+<Graphics/ch8/weighting2.pdf, id=9121, 561.89923pt x 322.50487pt>
 File: Graphics/ch8/weighting2.pdf Graphic file (type pdf)
 
 <use Graphics/ch8/weighting2.pdf>
 Package pdftex.def Info: Graphics/ch8/weighting2.pdf used on input line 118.
 (pdftex.def)             Requested size: 270.86905pt x 155.46983pt.
- [122]
+ [124]
 Package epstopdf Info: Source file: <Graphics/ch8/FIGURE02.eps>
 (epstopdf)                    date: 2016-10-06 10:13:55
 (epstopdf)                    size: 57832 bytes
@@ -6563,7 +5823,7 @@ converted-to.pdf Graphics/ch8/FIGURE02.eps>
 (epstopdf)             \includegraphics on input line 127.
 Package epstopdf Info: Output file is already uptodate.
 
-<Graphics/ch8/FIGURE02-eps-converted-to.pdf, id=8548, 841.1425pt x 302.12875pt>
+<Graphics/ch8/FIGURE02-eps-converted-to.pdf, id=9132, 841.1425pt x 302.12875pt>
 File: Graphics/ch8/FIGURE02-eps-converted-to.pdf Graphic file (type pdf)
 <use Graphics/ch8/FIGURE02-eps-converted-to.pdf>
 Package pdftex.def Info: Graphics/ch8/FIGURE02-eps-converted-to.pdf used on inp
@@ -6572,21 +5832,10 @@ ut line 127.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [123 <./Graphics/ch8/weighting2.pdf> <./Graphics/ch8/FIGURE02-eps-converted-to
+ [125 <./Graphics/ch8/weighting2.pdf> <./Graphics/ch8/FIGURE02-eps-converted-to
 .pdf>]
-
-LaTeX Warning: Citation 'Ashburner2000' on page 124 undefined on input line 135
-.
-
 Package acronym Info: Label `acro:CBM' newly defined as it shall be overridden
 although it is yet undefined on input line 135.
-
-LaTeX Warning: Citation 'xu2009source' on page 124 undefined on input line 135.
-
-
-
-LaTeX Warning: Citation 'Chang2001' on page 124 undefined on input line 137.
-
 
 Overfull \hbox (6.85796pt too wide) in paragraph at lines 137--138
 []\T1/pplj/m/n/10.95 A clas-si-fi-ca-tion anal-y-sis was un-der-taken us-ing a 
@@ -6594,15 +5843,12 @@ com-mon clas-si-fi-ca-tion pipeline
  []
 
 
-LaTeX Warning: Citation 'Kohavi1995a' on page 124 undefined on input line 139.
-
-
 Overfull \hbox (41.07738pt too wide) in paragraph at lines 139--140
 []\T1/pplj/m/n/10.95 The clas-si-fi-ca-tion was val-i-dated us-ing strat-i-fied
  10-fold cross-va-li-da-tion [[]].
  []
 
-[124]
+[126]
 Package acronym Info: Label `acro:synT1' newly defined as it shall be overridde
 n
 although it is yet undefined on input line 154.
@@ -6618,14 +5864,14 @@ converted-to.pdf Graphics/ch8/FIGURE03.eps>
 (epstopdf)             \includegraphics on input line 177.
 Package epstopdf Info: Output file is already uptodate.
 
-<Graphics/ch8/FIGURE03-eps-converted-to.pdf, id=8649, 469.755pt x 437.635pt>
+<Graphics/ch8/FIGURE03-eps-converted-to.pdf, id=9235, 469.755pt x 437.635pt>
 File: Graphics/ch8/FIGURE03-eps-converted-to.pdf Graphic file (type pdf)
 
 <use Graphics/ch8/FIGURE03-eps-converted-to.pdf>
 Package pdftex.def Info: Graphics/ch8/FIGURE03-eps-converted-to.pdf used on inp
 ut line 177.
 (pdftex.def)             Requested size: 386.95749pt x 360.49907pt.
- [125] [126 <./Graphics/ch8/FIGURE03-eps-converted-to.pdf>]
+ [127] [128 <./Graphics/ch8/FIGURE03-eps-converted-to.pdf>]
 Package epstopdf Info: Source file: <Graphics/ch8/FIGURE04.eps>
 (epstopdf)                    date: 2016-01-20 12:00:33
 (epstopdf)                    size: 4554548 bytes
@@ -6638,18 +5884,14 @@ converted-to.pdf Graphics/ch8/FIGURE04.eps>
 (epstopdf)             \includegraphics on input line 293.
 Package epstopdf Info: Output file is already uptodate.
 
-<Graphics/ch8/FIGURE04-eps-converted-to.pdf, id=8730, 469.755pt x 437.635pt>
+<Graphics/ch8/FIGURE04-eps-converted-to.pdf, id=9317, 469.755pt x 437.635pt>
 File: Graphics/ch8/FIGURE04-eps-converted-to.pdf Graphic file (type pdf)
 
 <use Graphics/ch8/FIGURE04-eps-converted-to.pdf>
 Package pdftex.def Info: Graphics/ch8/FIGURE04-eps-converted-to.pdf used on inp
 ut line 293.
 (pdftex.def)             Requested size: 386.95749pt x 360.49907pt.
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [127]
-[128] [129] [130 <./Graphics/ch8/FIGURE04-eps-converted-to.pdf>]
+ [129] [130] [131] [132 <./Graphics/ch8/FIGURE04-eps-converted-to.pdf>]
 Package epstopdf Info: Source file: <Graphics/ch8/FIGURE05.eps>
 (epstopdf)                    date: 2016-06-28 11:33:37
 (epstopdf)                    size: 3657438 bytes
@@ -6662,7 +5904,7 @@ converted-to.pdf Graphics/ch8/FIGURE05.eps>
 (epstopdf)             \includegraphics on input line 315.
 Package epstopdf Info: Output file is already uptodate.
 
-<Graphics/ch8/FIGURE05-eps-converted-to.pdf, id=8884, 464.73625pt x 440.64626pt
+<Graphics/ch8/FIGURE05-eps-converted-to.pdf, id=9470, 464.73625pt x 440.64626pt
 >
 File: Graphics/ch8/FIGURE05-eps-converted-to.pdf Graphic file (type pdf)
  <use Graphics/ch8/FIGURE05-eps-converted-to.pdf>
@@ -6672,9 +5914,12 @@ ut line 315.
 
 Underfull \vbox (badness 3068) has occurred while \output is active []
 
- [131]
-[132 <./Graphics/ch8/FIGURE05-eps-converted-to.pdf>] [133] [134] [135] [136])
-(./Chapters/Chapter08.tex [137] [138
+ [133]
+[134 <./Graphics/ch8/FIGURE05-eps-converted-to.pdf>] [135] [136] [137]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [138])
+(./Chapters/Chapter08.tex [139] [140
 
 
 ]
@@ -6691,7 +5936,7 @@ ion-eps-converted-to.pdf Graphics/ch9/SchemaGeneration.eps>
 (epstopdf)             \includegraphics on input line 8.
 Package epstopdf Info: Output file is already uptodate.
 
-<Graphics/ch9/SchemaGeneration-eps-converted-to.pdf, id=9071, 599.23875pt x 165
+<Graphics/ch9/SchemaGeneration-eps-converted-to.pdf, id=9657, 599.23875pt x 165
 .61874pt>
 File: Graphics/ch9/SchemaGeneration-eps-converted-to.pdf Graphic file (type pdf
 )
@@ -6700,28 +5945,28 @@ Package pdftex.def Info: Graphics/ch9/SchemaGeneration-eps-converted-to.pdf use
 d on input line 8.
 (pdftex.def)             Requested size: 386.95749pt x 106.95088pt.
 
-<Graphics/ch9/originalNOR.pdf, id=9075, 1175.2909pt x 130.086pt>
+<Graphics/ch9/originalNOR.pdf, id=9661, 1175.2909pt x 130.086pt>
 File: Graphics/ch9/originalNOR.pdf Graphic file (type pdf)
 
 <use Graphics/ch9/originalNOR.pdf>
 Package pdftex.def Info: Graphics/ch9/originalNOR.pdf used on input line 17.
 (pdftex.def)             Requested size: 270.86905pt x 29.98067pt.
 
-<Graphics/ch9/originalAD.pdf, id=9076, 1175.2909pt x 130.086pt>
+<Graphics/ch9/originalAD.pdf, id=9662, 1175.2909pt x 130.086pt>
 File: Graphics/ch9/originalAD.pdf Graphic file (type pdf)
 
 <use Graphics/ch9/originalAD.pdf>
 Package pdftex.def Info: Graphics/ch9/originalAD.pdf used on input line 18.
 (pdftex.def)             Requested size: 270.86905pt x 29.98067pt.
 
-<Graphics/ch9/generatedNOR.pdf, id=9077, 1175.2909pt x 130.086pt>
+<Graphics/ch9/generatedNOR.pdf, id=9663, 1175.2909pt x 130.086pt>
 File: Graphics/ch9/generatedNOR.pdf Graphic file (type pdf)
 
 <use Graphics/ch9/generatedNOR.pdf>
 Package pdftex.def Info: Graphics/ch9/generatedNOR.pdf used on input line 19.
 (pdftex.def)             Requested size: 270.86905pt x 29.98067pt.
 
-<Graphics/ch9/generatedAD.pdf, id=9078, 1175.2909pt x 130.086pt>
+<Graphics/ch9/generatedAD.pdf, id=9664, 1175.2909pt x 130.086pt>
 File: Graphics/ch9/generatedAD.pdf Graphic file (type pdf)
 
 <use Graphics/ch9/generatedAD.pdf>
@@ -6736,14 +5981,8 @@ although it is yet undefined on input line 26.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [139 <./Graphics/ch9/SchemaGeneration-eps-converted-to.pdf>]
-
-LaTeX Warning: Citation 'Botev2010' on page 140 undefined on input line 30.
-
-
-LaTeX Warning: Citation 'Stoeckel04' on page 140 undefined on input line 42.
-
-[140 <./Graphics/ch9/originalNOR.pdf> <./Graphics/ch9/originalAD.pdf
+ [141 <./Graphics/ch9/SchemaGeneration-eps-converted-to.pdf>] [142 <./Graphics/
+ch9/originalNOR.pdf> <./Graphics/ch9/originalAD.pdf
 
 pdfTeX warning: /usr/bin/pdflatex (file ./Graphics/ch9/originalAD.pdf): PDF inc
 lusion: multiple pdfs with page group included in a single page
@@ -6759,20 +5998,20 @@ clusion: multiple pdfs with page group included in a single page
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[141]) [142] [143
+[143]) [144] [145
 
 
 
 
-] [144] (./Chapters/Chapter09.tex
+] [146] (./Chapters/Chapter09.tex
 chapter 9.
-) [145
+) [147
 
 
-] [146
+] [148
 
 
-] [147] [148]
+] [149] [150]
 \openout2 = `Chapters/Chapter0A.aux'.
 
  (./Chapters/Chapter0A.tex
@@ -6788,11 +6027,11 @@ Underfull \hbox (badness 10000) in alignment at lines 25--25
 [][][][][] 
  []
 
-[149
+[151
 
 
 
-] [150]
+] [152]
 Overfull \hbox (2.69766pt too wide) in paragraph at lines 88--89
 []\T1/pplj/m/n/10.95 Data used in the prepa-ra-tion of this ar-ti-cle were ob-t
 ained from the Alzheimer's
@@ -6810,66 +6049,112 @@ Overfull \hbox (2.69766pt too wide) in paragraph at lines 90--91
 ained from the Alzheimer's
  []
 
-[151]
-
-LaTeX Warning: Citation 'jobst_accurate_1998' on page 152 undefined on input li
-ne 94.
-
-
-LaTeX Warning: Citation 'dougall_systematic_2004' on page 152 undefined on inpu
-t line 94.
-
-
-LaTeX Warning: Citation 'Shepp82' on page 152 undefined on input line 121.
-
-
-LaTeX Warning: Citation 'Vardi1985' on page 152 undefined on input line 121.
-
-
-LaTeX Warning: Citation 'Ramirez2009' on page 152 undefined on input line 121.
-
-
+[153]
 Underfull \vbox (badness 4913) has occurred while \output is active []
 
- [152]
-
-LaTeX Warning: Citation 'Lozano2007' on page 153 undefined on input line 125.
-
-[153]
-
-LaTeX Warning: Citation 'PPMI' on page 154 undefined on input line 130.
-
-
-LaTeX Warning: Citation 'Inititative2010' on page 154 undefined on input line 1
-30.
-
-
-LaTeX Warning: Citation 'Inititative2010' on page 154 undefined on input line 1
-34.
-
-) [154]
+ [154]
+[155]) [156]
 \openout2 = `Chapters/Chapter0B.aux'.
 
  (./Chapters/Chapter0B.tex
 chapter B.
 Package acronym Info: Label `acro:SVM' newly defined as it shall be overridden
 although it is yet undefined on input line 7.
-
-LaTeX Warning: Citation 'Vapnik1982' on page 155 undefined on input line 7.
-
-[155
+[157
 
 
 
 
-]) [156]
+]) [158]
 \openout2 = `FrontBackMatter/Bibliography.aux'.
 
  (./FrontBackMatter/Bibliography.tex)
+Overfull \hbox (6.68239pt too wide) in paragraph at lines 103--103
+\T1/pplj/m/n/10.95 Prin-ci-pal Com-po-nent Anal-y-sis^^Q. In: \T1/pplj/m/it/10.
+95 Hu-man Brain Map-ping \T1/pplj/m/n/10.95 38.3 (Mar. 2017). 
+ []
 
-LaTeX Warning: Empty bibliography on input line 16.
+
+Overfull \hbox (8.4337pt too wide) in paragraph at lines 103--103
+[]\T1/pplj/m/n/10.95 Jeff Se-vi-gny, Ping Chiao, Thierry Bus-sière, Paul H Wein
+-reb, Leslie Williams,
+ []
+
+[159
 
 
+
+
+
+
+]
+Overfull \hbox (16.74709pt too wide) in paragraph at lines 103--103
+[]\T1/pplj/m/n/10.95 Shlomi Haar, Si-gal Berman, Mar-lene Behrmann, and Ilan Di
+n-stein. ^^P  Anatom-
+ []
+
+[160]
+Overfull \hbox (0.7099pt too wide) in paragraph at lines 103--103
+[]\T1/pplj/m/n/10.95 Katherine S. But-ton, John P. A. Ioan-ni-dis, Claire Mokry
+sz, Brian A. Nosek,
+ []
+
+
+Overfull \hbox (21.88658pt too wide) in paragraph at lines 103--103
+\T1/pplj/m/n/10.95 tonet. ^^P  Tex-ture Fea-tures Based De-tec-tion of Parkin-s
+on's Dis-ease on DaTSCAN
+ []
+
+[161]
+Overfull \hbox (6.37051pt too wide) in paragraph at lines 103--103
+\T1/pplj/m/n/10.95 González. ^^P  Com-puter Aided Di-ag-no-sis tool for Alzheim
+er's Dis-ease based
+ []
+
+[162]
+Overfull \hbox (0.50772pt too wide) in paragraph at lines 103--103
+\T1/pplj/m/n/10.95 ^^P  GMM based SPECT im-age clas-si-fi-ca-tion for the di-ag
+-no-sis of Alzheimer's
+ []
+
+
+Overfull \hbox (1.9533pt too wide) in paragraph at lines 103--103
+\T1/pplj/m/it/10.95 Com-mu-ni-ca-tions \T1/pplj/m/n/10.95 32.8 (Aug. 2011). PMI
+D: 21659911, pp. 699^^U707. \T1/pplj/m/sc/10.95 issn\T1/pplj/m/n/10.95 : 1473-
+ []
+
+[163]
+Overfull \hbox (0.593pt too wide) in paragraph at lines 103--103
+\T1/pplj/m/sc/10.95 issn\T1/pplj/m/n/10.95 : 1053-8119. \T1/pplj/m/sc/10.95 url
+\T1/pplj/m/n/10.95 : [][]$\T1/fvm/m/n/10.95 http : / / www . sciencedirect . co
+m / science / article /
+ []
+
+[164]
+Overfull \hbox (14.37453pt too wide) in paragraph at lines 103--103
+\T1/pplj/m/it/10.95 Con-fer-ence on Bio-com-pu-ta-tion, Bioin-for-mat-ics, and 
+Biomed-i-cal Tech-nolo-gies \T1/pplj/m/n/10.95 (2008),
+ []
+
+[165]
+Overfull \hbox (43.34398pt too wide) in paragraph at lines 103--103
+\T1/pplj/m/n/10.95 ^^P  Us-ing a ref-er-ence tis-sue model with spa-tial con-st
+raint to quan-tify [11C]Pittsburgh
+ []
+
+
+Overfull \hbox (0.17741pt too wide) in paragraph at lines 103--103
+\T1/pplj/m/n/10.95 Siegel, Ed-ward Y Cheng, Bruce D Che-son, Joyce O'Shaughness
+y, Kathryn
+ []
+
+
+Overfull \hbox (4.55508pt too wide) in paragraph at lines 103--103
+\T1/pplj/m/n/10.95 Chris-tian Bren-neis, Irene Vir-golini, Gre-gor K Wen-ning, 
+and Werner Poewe.
+ []
+
+[166] [167] [168] [169] [170] 
 AED: pageslts setting LastPage 
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 105.
 Package atveryend Info: Executing hook `AfterLastShipout' on input line 105.
@@ -6904,7 +6189,7 @@ LaTeX Info: Redefining \% on input line 52.
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 105.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 105.
 Package rerunfilecheck Info: File `ArsClassica.out' has not changed.
-(rerunfilecheck)             Checksum: 64A59E7AF73F28A1A1196976B9BEA4D6;9604.
+(rerunfilecheck)             Checksum: 81623BDBC07FC4148CA89D7D0809D23A;9658.
 Package rerunfilecheck Info: File `ArsClassica.tmb' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
 
@@ -6914,20 +6199,15 @@ LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
 LaTeX Warning: There were undefined references.
 
-
-Package biblatex Warning: Please (re)run Biber on the file:
-(biblatex)                ArsClassica
-(biblatex)                and rerun LaTeX afterwards.
-
 Package logreq Info: Writing requests to 'ArsClassica.run.xml'.
 \openout1 = `ArsClassica.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 30678 strings out of 493013
- 545536 string characters out of 6135682
- 1302109 words of memory out of 5000000
- 32576 multiletter control sequences out of 15000+600000
+ 31418 strings out of 493013
+ 571127 string characters out of 6135682
+ 1502661 words of memory out of 5000000
+ 33183 multiletter control sequences out of 15000+600000
  173975 words of font info for 291 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  70i,23n,91p,8822b,3632s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -6960,10 +6240,10 @@ hvr.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/palatino/uplb8a.pfb></us
 r/share/texlive/texmf-dist/fonts/type1/urw/palatino/uplr8a.pfb></usr/share/texl
 ive/texmf-dist/fonts/type1/urw/palatino/uplri8a.pfb></usr/share/texlive/texmf-d
 ist/fonts/type1/urw/zapfding/uzdr.pfb>
-Output written on ArsClassica.pdf (180 pages, 22201772 bytes).
+Output written on ArsClassica.pdf (194 pages, 22304813 bytes).
 PDF statistics:
- 9849 PDF objects out of 10688 (max. 8388607)
- 5520 compressed objects within 56 object streams
- 757 named destinations out of 1000 (max. 500000)
- 52317 words of extra memory for PDF output out of 61914 (max. 10000000)
+ 10588 PDF objects out of 10688 (max. 8388607)
+ 6032 compressed objects within 61 object streams
+ 888 named destinations out of 1000 (max. 500000)
+ 52335 words of extra memory for PDF output out of 61914 (max. 10000000)
 

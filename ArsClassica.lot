@@ -26,66 +26,66 @@
 \defcounter {refsection}{0}\relax 
 \addvspace {10\p@ }
 \defcounter {refsection}{0}\relax 
-\contentsline {table}{\numberline {3.1}{\ignorespaces Confusion matrix and its parts\relax }}{33}{table.caption.68}
+\contentsline {table}{\numberline {3.1}{\ignorespaces Confusion matrix and its parts\relax }}{35}{table.caption.68}
 \defcounter {refsection}{0}\relax 
 \addvspace {10\p@ }
 \defcounter {refsection}{0}\relax 
-\contentsline {table}{\numberline {4.1}{\ignorespaces Performance values for the Alzheimer's datasets}}{51}{table.caption.84}
+\contentsline {table}{\numberline {4.1}{\ignorespaces Performance values for the Alzheimer's datasets}}{53}{table.caption.84}
 \defcounter {refsection}{0}\relax 
-\contentsline {table}{\numberline {4.2}{\ignorespaces Performance values for the Parkinson's datasets}}{58}{table.caption.89}
+\contentsline {table}{\numberline {4.2}{\ignorespaces Performance values for the Parkinson's datasets}}{60}{table.caption.89}
 \defcounter {refsection}{0}\relax 
-\contentsline {table}{\numberline {4.3}{\ignorespaces Percentage of overlap between the selected areas by each method and the AAL atlas regions.}}{60}{table.caption.92}
-\defcounter {refsection}{0}\relax 
-\addvspace {10\p@ }
-\defcounter {refsection}{0}\relax 
-\contentsline {table}{\numberline {5.1}{\ignorespaces Maximum scoring feature (single approach).}}{72}{table.caption.100}
-\defcounter {refsection}{0}\relax 
-\contentsline {table}{\numberline {5.2}{\ignorespaces Maximum scoring feature (cumulative approach).}}{74}{table.caption.101}
-\defcounter {refsection}{0}\relax 
-\contentsline {table}{\numberline {5.3}{\ignorespaces Best results obtained in experiment 2, using three databases, in terms of its accuracy, sensitivity, specificity, Positive Likelihood and Negative Likelihood. The amount of features used to achieve these results is shown as a percentage of the total number of features (1560). Values obtained by leave-one-out.\relax }}{77}{table.caption.104}
-\defcounter {refsection}{0}\relax 
-\contentsline {table}{\numberline {5.4}{\ignorespaces Comparison of our proposed system (using different texture features) and some other methods in the bibliography: VAF system using the intensity-normalized images, a combination of intensity normalization strategies and classifiers (VAF-IN) \cite {Illan2012}, a SVD-based approach \cite {Segovia2012} and EMD using the third independent mode function (IMF3) \cite {Rojas2012}.\relax }}{78}{table.caption.105}
+\contentsline {table}{\numberline {4.3}{\ignorespaces Percentage of overlap between the selected areas by each method and the AAL atlas regions.}}{62}{table.caption.92}
 \defcounter {refsection}{0}\relax 
 \addvspace {10\p@ }
 \defcounter {refsection}{0}\relax 
-\contentsline {table}{\numberline {6.1}{\ignorespaces Performance values (Average $\pm $ Standard Deviation) for the Voxels as Features approach in both \ac {GM} and \ac {WM} tissues.\relax }}{100}{table.caption.119}
+\contentsline {table}{\numberline {5.1}{\ignorespaces Maximum scoring feature (single approach).}}{74}{table.caption.100}
 \defcounter {refsection}{0}\relax 
-\contentsline {table}{\numberline {6.2}{\ignorespaces Performance values (Average $\pm $ Standard Deviation) for the different \ac {SBM} approaches.\relax }}{100}{table.caption.120}
+\contentsline {table}{\numberline {5.2}{\ignorespaces Maximum scoring feature (cumulative approach).}}{76}{table.caption.101}
 \defcounter {refsection}{0}\relax 
-\contentsline {table}{\numberline {6.3}{\ignorespaces Performance values ($\pm $SD) for the selected paths as features, and using $t$-test to select the voxels.\relax }}{107}{table.caption.127}
+\contentsline {table}{\numberline {5.3}{\ignorespaces Best results of the experiment 2 per database, normalization and selection criteria.}}{80}{table.caption.104}
 \defcounter {refsection}{0}\relax 
-\contentsline {table}{\numberline {6.4}{\ignorespaces Performance values ($\pm $SD) for each of the measures used in the \ac {SBM} article.\relax }}{108}{table.caption.128}
-\defcounter {refsection}{0}\relax 
-\contentsline {table}{\numberline {6.5}{\ignorespaces Performance values ($\pm $SD) for each of the 10 texture features.\relax }}{108}{table.caption.129}
-\defcounter {refsection}{0}\relax 
-\contentsline {table}{\numberline {6.6}{\ignorespaces Comparison between our algorithm performance values (best values for selected voxels in all paths and texture features) ($\pm $SD) and other methods in the bibliography\relax }}{115}{table.caption.133}
+\contentsline {table}{\numberline {5.4}{\ignorespaces Comparison of our proposed system (using different texture features) and some other methods in the bibliography: VAF system using the intensity-normalized images, a combination of intensity normalization strategies and classifiers (VAF-IN) \cite {Illan2012}, a SVD-based approach \cite {Segovia2012} and EMD using the third independent mode function (IMF3) \cite {Rojas2012}.\relax }}{82}{table.caption.105}
 \defcounter {refsection}{0}\relax 
 \addvspace {10\p@ }
 \defcounter {refsection}{0}\relax 
-\contentsline {table}{\numberline {7.1}{\ignorespaces Between-site classification accuracy ($\pm $ standard deviation) for different modalities and masks without and with \acs {SWPCA} correction.}}{128}{table.caption.141}
+\contentsline {table}{\numberline {6.1}{\ignorespaces Performance values (Average $\pm $ Standard Deviation) for the Voxels as Features approach in both \ac {GM} and \ac {WM} tissues.\relax }}{102}{table.caption.119}
 \defcounter {refsection}{0}\relax 
-\contentsline {table}{\numberline {7.2}{\ignorespaces Classification accuracy (Acc), sensitivity (Sen) and specificity (Spec) $\pm $ standard deviation for each modality and mask using the participants acquired at the LON and CAM sites.}}{129}{table.caption.142}
+\contentsline {table}{\numberline {6.2}{\ignorespaces Performance values (Average $\pm $ Standard Deviation) for the different \ac {SBM} approaches.\relax }}{102}{table.caption.120}
 \defcounter {refsection}{0}\relax 
-\contentsline {table}{\numberline {7.3}{\ignorespaces Classification accuracy (Acc), sensitivity (Sen), and specificity (Spec) $\pm $ STD for the different modalities and masks using ALL, before and after applying \acs {SWPCA}.}}{133}{table.caption.145}
+\contentsline {table}{\numberline {6.3}{\ignorespaces Performance values ($\pm $SD) for the selected paths as features, and using $t$-test to select the voxels.\relax }}{109}{table.caption.127}
 \defcounter {refsection}{0}\relax 
-\contentsline {table}{\numberline {7.4}{\ignorespaces Performance measures for the combined DaTSCAN dataset}}{137}{table.caption.146}
+\contentsline {table}{\numberline {6.4}{\ignorespaces Performance values ($\pm $SD) for each of the measures used in the \ac {SBM} article.\relax }}{110}{table.caption.128}
 \defcounter {refsection}{0}\relax 
-\addvspace {10\p@ }
+\contentsline {table}{\numberline {6.5}{\ignorespaces Performance values ($\pm $SD) for each of the 10 texture features.\relax }}{110}{table.caption.129}
 \defcounter {refsection}{0}\relax 
-\contentsline {table}{\numberline {8.1}{\ignorespaces Baseline performance of the set, using the original dataset.\relax }}{141}{table.caption.150}
-\defcounter {refsection}{0}\relax 
-\contentsline {table}{\numberline {8.2}{\ignorespaces Performance of Exp 1, demonstrating the predictive ability of the simulated images over the real dataset.\relax }}{141}{table.caption.151}
-\defcounter {refsection}{0}\relax 
-\contentsline {table}{\numberline {8.3}{\ignorespaces Performance of the Exp 3 proves the independence of the simulated images with respect to the originals.\relax }}{142}{table.caption.152}
+\contentsline {table}{\numberline {6.6}{\ignorespaces Comparison between our algorithm performance values (best values for selected voxels in all paths and texture features) ($\pm $SD) and other methods in the bibliography\relax }}{117}{table.caption.133}
 \defcounter {refsection}{0}\relax 
 \addvspace {10\p@ }
 \defcounter {refsection}{0}\relax 
+\contentsline {table}{\numberline {7.1}{\ignorespaces Between-site classification accuracy ($\pm $ standard deviation) for different modalities and masks without and with \acs {SWPCA} correction.}}{130}{table.caption.141}
+\defcounter {refsection}{0}\relax 
+\contentsline {table}{\numberline {7.2}{\ignorespaces Classification accuracy (Acc), sensitivity (Sen) and specificity (Spec) $\pm $ standard deviation for each modality and mask using the participants acquired at the LON and CAM sites.}}{131}{table.caption.142}
+\defcounter {refsection}{0}\relax 
+\contentsline {table}{\numberline {7.3}{\ignorespaces Classification accuracy (Acc), sensitivity (Sen), and specificity (Spec) $\pm $ STD for the different modalities and masks using ALL, before and after applying \acs {SWPCA}.}}{135}{table.caption.145}
+\defcounter {refsection}{0}\relax 
+\contentsline {table}{\numberline {7.4}{\ignorespaces Performance measures for the combined DaTSCAN dataset}}{139}{table.caption.146}
+\defcounter {refsection}{0}\relax 
 \addvspace {10\p@ }
 \defcounter {refsection}{0}\relax 
-\contentsline {table}{\numberline {A.1}{\ignorespaces Summary of the datasets used in this thesis.}}{149}{table.caption.153}
+\contentsline {table}{\numberline {8.1}{\ignorespaces Baseline performance of the set, using the original dataset.\relax }}{143}{table.caption.150}
 \defcounter {refsection}{0}\relax 
-\contentsline {table}{\numberline {A.2}{\ignorespaces Demographics of the AIMS-MRI dataset.}}{150}{table.caption.158}
+\contentsline {table}{\numberline {8.2}{\ignorespaces Performance of Exp 1, demonstrating the predictive ability of the simulated images over the real dataset.\relax }}{143}{table.caption.151}
 \defcounter {refsection}{0}\relax 
-\contentsline {table}{\numberline {A.3}{\ignorespaces Demographic details of the ADNI-PET dataset.}}{153}{table.caption.159}
+\contentsline {table}{\numberline {8.3}{\ignorespaces Performance of the Exp 3 proves the independence of the simulated images with respect to the originals.\relax }}{144}{table.caption.152}
+\defcounter {refsection}{0}\relax 
+\addvspace {10\p@ }
+\defcounter {refsection}{0}\relax 
+\addvspace {10\p@ }
+\defcounter {refsection}{0}\relax 
+\contentsline {table}{\numberline {A.1}{\ignorespaces Summary of the datasets used in this thesis.}}{151}{table.caption.153}
+\defcounter {refsection}{0}\relax 
+\contentsline {table}{\numberline {A.2}{\ignorespaces Demographics of the AIMS-MRI dataset.}}{152}{table.caption.158}
+\defcounter {refsection}{0}\relax 
+\contentsline {table}{\numberline {A.3}{\ignorespaces Demographic details of the ADNI-PET dataset.}}{155}{table.caption.159}
 \defcounter {refsection}{0}\relax 
 \addvspace {10\p@ }

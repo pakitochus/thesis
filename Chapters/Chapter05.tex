@@ -97,7 +97,7 @@ To further reduce the dimensionality of the feature vector, we have performed fe
 For evaluating the system proposed in this chapter, combining texture analysis and other feature selection algorithms, we propose two experiments: 
 \begin{itemize}
 	\item Experiment 1: Ability of the different texture features to differenciate between \ac{PD} affected subjects and \acp{CTL}. Each of the texture features is analysed in two different ways: a ''single approach'', which only considers one type of feature using only the matrices at a distance $d$ from the central voxel -and using all the spatial directions- and a ''cumulative approach'' which considers one type of feature too, but this time using all matrices in distances ranging from 1 to $d$. 
-	\item Experiment 2: Impact of the introduction of a feature selection algorithm after computing the texture features. This allow us to pool all texture features at all distances and directions, and then select the most discriminative ones according to some of these criteria.  
+	\item Experiment 2: Impact of the introduction of a feature selection algorithm (of those presented at Section~\ref{sec:featureSelection}) after computing the texture features. This allow us to pool all texture features at all distances and directions, and then select the most discriminative ones according to some of these criteria.  
 \end{itemize}
 
 All images used are intensity normalized using either normalization to the maximum or integral normalization (see Section~\ref{sec:intensityPrep}), and afterwards, a subvolume can be extracted using the intensity threshold methodology described at Section~\ref{sec:volume}. In addition to the feature extraction technique using texture analysis, and the feature selection procedure defined for Experiment 2, we use a linear \ac{SVC} for classifying, and 10-fold cross validation strategy (see Section~\ref{sec:validation} for more details). 
@@ -181,70 +181,102 @@ In Tables~\ref{tab:exp1AccSingle} and \ref{tab:exp1AccCumulative}, we take a loo
 The first noticeable feature is that, for both the single and cumulative approaches, the best scoring normalization method is using no normalization at all. As commented before, that will be discussed later. Secondly, as anticipated, the best scoring feature is Cluster Tendency in most cases, and the systems perform better when the intensity threshold is more restrictive. 
 
 When comparing the single approach with the cumulative one, it is obvious that best results are obtained with the cumulative one, except for the particular case of the VDLV-DAT. Whereas with the single approach there was no evident choice for the offset distance $d$, in the cumulative one results are obtained combining the first 5-7 distances at which the \ac{GLCM} was computed. This is reasonable, since for the single approach we only use the features contained at each $d$, while in the cumulative approach we pool much more information for training and testing the system. Nevertheless, the single approach obtains decent results in many cases, which proves the value of the Haralick texture features for characterizing DaTSCAN images. 
-% DONE
-
-
-
 
 \subsection{Experiment 2}
-For experiment 2, all features computed in the aforementioned experiments (the 13 direction vectors and 10 distances used to compute the 3D coocurrence matrix, and the 12 Haralick texture features extracted from these matrices) are used as an input to the classifier. But, in order to reduce dimensionality, we use the measures of discrimination ability proposed in Section \ref{sec:discrimination} to rank these features in a descending order of ability in distinguish PD patterns from normal controls, selecting the first $N$. 
-
-Firstly, the impact of our volume selection threshold $I_{th}$ (see Sec. \ref{sec:volume}) on the quality of the resulting Haralick Features, and thus, the accuracy of the experiment, will be analysed. As commented before, best results should be obtained when taking into account the biggest volume of the brain containing only brain voxels, and thus, eliminating the background. Regarding all databases, we obtain Figure \ref{fig:averageAcc_IthNorm}, in which average values of accuracy for every value of $I_{th}$ are plotted. These average values are computed in a similar way to Fig. \ref{fig:featuresIth}, by averaging all $50$ accuracy values that correspond to each value of $I_{th}$. The accuracy values are obtained using each of the 5 proposed selection methods, and using each value of percentage of features selected (ranging from 1 to 100\%, by steps of 10\%, of the total amount of 1560 features). 
+In experiment 2 we pool together all features derived from all \acp{GLCM}, and use a feature selection algorithm (see Section~\ref{sec:featureSelection}). This gives us 1560 features per subject, from a total 12 features computed at 13 directions and 10 distances. We will test how values such as $I_{th}$, the normalization algorithm or the percentage of selected voxels affects the performance of this system, and discuss the results. 
 
 \begin{figure}[htp]
 	\centering
-	\includegraphics[width=0.90\columnwidth]{Graphics/ch5/accuracyOverIth.eps}
+	\subfloat[Original images]{\includegraphics[width=0.5\textwidth]{Graphics/ch5/accuracyOverIth_no.eps}\label{fig:averageAcc_IthNorm_no}}
+	\subfloat[Integral Normalization]{\includegraphics[width=0.5\textwidth]{Graphics/ch5/accuracyOverIth_int.eps}\label{fig:averageAcc_IthNorm_int}}\\
+	\subfloat[Normalization to the Maximum]{\includegraphics[width=0.5\textwidth]{Graphics/ch5/accuracyOverIth_max.eps}\label{fig:averageAcc_IthNorm_max}}
 	\caption{Accuracy obtained by averaging all accuracy values using a given volume selection threshold $I_{th}$}
 	\label{fig:averageAcc_IthNorm}
 \end{figure}
 
-For two out of three databases there is a clear maximum in accuracy for an $I_{th} = 0.30\times I_{max}$, while the remaining one obtain similar results along a wide range of $I_{th}$. Furthermore, best average values are obtained using the normalized database, although the PPMI case is slightly different, due to the attenuation correction preprocessing. In Fig. \ref{fig:cut_thr30} the resulting subimage of applying this threshold was shown, to provide a better understanding of how the textural features are better defined in this. As suggested before, all no-brain voxels are removed from this images, all the textural features correspond only to the internal brain textural changes, and thus, to the textural patterns of the disease, leading to a better performance. 
+In Figure~\ref{fig:averageAcc_IthNorm} we show how the performance evolves when varying the $I_{th}$, as we did in Experiment 1, by displaying the average accuracy. As in the previous case, the integral normalization performs similarly to the original, non-normalized images. In this case, the normalization to the maximum strategy seems to affect more the VDLV-DAT dataset, slightly improving its performance. Again, best $I_{th}$ seems to be located at approximately 0.30 for all databases when using normalization to the maximum, although for other approaches, this happens with smaller $I_{th}$ (0.20 for VDLN-DAT and VDLV-DAT original images). For these values, there are still background voxels included in the computation of textures, but its negative influence might be overcome by the feature selection procedure. 
 
-As results suggest, the use of our volume selection strategy with a intensity threshold between $0.25$ and $0.45$ is profitable in all cases. Also, the use of intensity normalized images, using the normalization to the maximum algorithm has also a good impact on the performance of the system. In this context, Fig. \ref{fig:experiment4} analyses the behavior of our system using each of the discrimination-based ranking methods. On these three figures, the values of the computed average accuracy (using the values for intensity thresholds of $0.10$ to $0.45$) are plotted over the percentage of selected features (previously ranked from the most to the least discriminant, following different criteria) using the three databases. 
+These results corroborate that our volume selection strategy is profitable in almost any case, using a intensity threshold between $0.25$ and $0.45$. 
 
 \begin{figure*}
 	\centering
-	\subfloat[PPMI database]{\includegraphics[width=0.45\textwidth]{Graphics/ch5/features_avAccPPMI.eps}\label{fig:experiment4-ppmi}}
-	\subfloat[VDLN database]{\includegraphics[width=0.45\textwidth]{Graphics/ch5/features_avAccVDLN.eps}\label{fig:experiment4-vdln}}
-	\subfloat[VDLV database]{\includegraphics[width=0.45\textwidth]{Graphics/ch5/features_avAccVDLV.eps}\label{fig:experiment4-vdlv}}
-	\caption{Average accuracy computed for each selection criteria, using all accuracy values for intensity thresholds of $0.10$ to $0.45$. These values are plotted over $N$, the number of features selected using some of the ranking criteria defined in Sec. \ref{sec:discrimination} (where $N$ ranges from 1\% and 100\% of the $1560$ total Haralick features calculated). These values correspond to the images of the \protect\subref{fig:experiment4-ppmi} PPMI database, \protect\subref{fig:experiment4-vdlv} VDLV database and \protect\subref{fig:experiment4-vdln} VDLN database (experiment 2).}
+	\subfloat[PPMI-DAT]{\includegraphics[width=0.5\textwidth]{Graphics/ch5/features_avAccPPMI.eps}\label{fig:experiment4-ppmi}}
+	\subfloat[VDLN-DAT]{\includegraphics[width=0.5\textwidth]{Graphics/ch5/features_avAccVDLN.eps}\label{fig:experiment4-vdln}}\\
+	\subfloat[VDLV-DAT]{\includegraphics[width=0.5\textwidth]{Graphics/ch5/features_avAccVDLV.eps}\label{fig:experiment4-vdlv}}
+	\caption[Average accuracy computed for each selection criteria over $N$ in Experiment 2.]{Average accuracy computed for each selection criteria, using all accuracy values for intensity thresholds of $0.10$ to $0.45$, compared to the proportion of selected features for the PPMI-DAT, VDLV-DAT and VDLN-DAT databases.}
 	\label{fig:experiment4}
 \end{figure*}
 
-Some conclusions about the amount of features that each of our discrimination-ranking methods need can be extracted from these average accuracy graphs. Methods that obtain their maximum accuracy using less than 50\% of the features can be considered of great help, as they perform a significant feature reduction. Therefore, methods like Mann-Whitney-Wilcoxon (MWW) can no longer be considered, as it needs more than 50\% of features to obtain good results. The opposite behaviour is given by Bhattacharyya Distance (BD) and Relative Entropy (RE), that obtain their maximum average accuracy using the first 10\% of features. Fisher's Discriminant Ratio (FDR) and $t$-Test need a higher amount, but less than 50\%. 
+Regarding the different selection criteria, Fig.~\ref{fig:experiment4} analyses the behaviour of our system under the three proposed methods. For this purpose, we average all accuracy values for a given proportion of selected features (from 1\% to 100\% of the 1560 total texture features, previously ranked according to the selection criteria), using $I_{th}$ values ranging from 0.1 to 0.45. 
 
-The aforementioned behaviour correspond to an average behaviour in accuracy. To take a deeper look at the different evaluation parameters and different selection criteria, peak results obtained with each selection criteria are shown on Table \ref{tab:exp3Res}. 
+From these figures we can infer that either the $t$-test or the relative entropy criteria perform better than the \ac{MWW} U-test. Of these two, the relative entropy seems to perform the best in the PPMI-DAT and VDLN-DAT datasets, whereas when applied to the VDLV-DAT, the wilcoxon achieves similar results to the relative entropy. In these cases, the relative entropy criterion obtains its maximum average accuracy using the first 10\% of features, while wilcoxon needs more than 50\% of the features, which makes it less efficient. 
+
+After describing the general behaviour, we can take another look at the different combinations of normalization, datasets and selection criteria. In Table~\ref{tab:exp3Res}, the peak results of these combinations are shown, including the percentage of selected features needed to achieve this value. 
 
 \begin{table*}[htp]
 	\centering
-	\begin{tabular}{llcccccc}
-		Database 	 & Criterium	& Accuracy	& Sensitivity	& Specificity	& PL	& NL	& \% \\
-		\hline \hline
-		\multirow{5}{*}{\textbf{PPMI}}	& Bhattacharyya	& 0.967	& 0.973	& 0.962	& 25.62	& 0.028	& 49.1\\ % (59,1)
-		& Relative Entropy	& 0.967	& 0.982	& 0.956	& 22.16	& 0.019 & 30.8\\ % (37,1)
-		& FDR	& 0.974	& 0.991	& 0.962	& 26.10	& 0.009 & 34.2\\ % (41,1)
-		& $t$-Test	& 0.974	& 0.991	& 0.962	& 26.10	& 0.009 & 35.8\\ % (43,1)
-		& Wilcoxon	& 0.959	& 0.955	& 0.962	& 25.15	& 0.047 & 85.8\\ % (103,1)
-		\hline
-		\multirow{5}{*}{\textbf{VDLN}} &  Bhattacharyya	& 0.924	& 0.956	& 0.904	& 9.97	& 0.049 & 10.0\\ % (12,1
-		& Relative Entropy	& 0.924	& 0.933	& 0.918	& 11.36	& 0.073 & 20.0\\ % (24,1)
-		& FDR	& 0.941	& 0.933	& 0.945	& 17.03	& 0.071 & 16.7\\ % (20,1)
-		& $t$-Test	& 0.932	& 0.933	& 0.932	& 13.63	& 0.072 & 22.5\\ % (27,1)
-		& Wilcoxon	& 0.898	& 0.889	& 0.904	& 9.27	& 0.123 & 3.3\\ % (4,1)
-		\hline
-		\multirow{5}{*}{\textbf{VDLV}}	& Bhattacharyya	& 0.938	& 0.935	& 0.940	& 15.59	& 0.069 & 40.8\\ % (49,1)
-		& Relative Entropy	& 0.933	& 0.935	& 0.930	& 13.36	& 0.070 & 45.8\\ % (55,1)
-		& FDR	& 0.928	& 0.963	& 0.890	& 8.75	& 0.042 & 30.8 \\ % (37,1)
-		& $t$-Test	& 0.933	& 0.935	& 0.930	& 13.36	& 0.070 & 34.2\\ % (41,1)
-		& Wilcoxon	& 0.928	& 0.926	& 0.930	& 13.23	& 0.080 & 18.3\\ % (22,1)
-		
-		\hline\hline
-	\end{tabular}
-	\caption{Best results obtained in experiment 2, using three databases, in terms of its accuracy, sensitivity, specificity, Positive Likelihood and Negative Likelihood. The amount of features used to achieve these results is shown as a percentage of the total number of features (1560). Values obtained by leave-one-out.}
+\begin{tabular}{lllccccc}
+	\toprule
+	                          & Norm.                  & Selection & $I_{th}$ & acc.  & sens. & spec. &  \%   \\ \midrule
+	\multirow{9}{*}{PPMI-DAT} & \multirow{3}{*}{Orig.} & entropy   &    30    & 0.970 & 0.972 & 0.968 & 0.983 \\
+	                          &                        & t-test    &    30    & 0.966 & 0.972 & 0.962 & 0.966 \\
+	                          &                        & wilcoxon  &    30    & 0.959 & 0.954 & 0.962 & 0.858 \\ \cline{2-8}
+	                          & \multirow{3}{*}{Int.}  & entropy   &    25    & 0.966 & 0.981 & 0.955 & 0.308 \\
+	                          &                        & t-test    &    25    & 0.973 & 0.990 & 0.962 & 0.358 \\
+	                          &                        & wilcoxon  &    35    & 0.947 & 0.954 & 0.943 & 0.983 \\ \cline{2-8}
+	                          & \multirow{3}{*}{Max.}  & entropy   &    25    & 0.966 & 0.981 & 0.955 & 0.308 \\
+	                          &                        & t-test    &    25    & 0.973 & 0.990 & 0.962 & 0.358 \\
+	                          &                        & wilcoxon  &    30    & 0.959 & 0.954 & 0.962 & 0.858 \\ \midrule
+	\multirow{9}{*}{VDLN-DAT} & \multirow{3}{*}{Orig.} & entropy   &    30    & 0.932 & 0.933 & 0.931 & 0.175 \\
+	                          &                        & t-test    &    30    & 0.940 & 0.955 & 0.931 & 0.175 \\
+	                          &                        & wilcoxon  &    15    & 0.898 & 0.955 & 0.863 & 0.433 \\ \cline{2-8}
+	                          & \multirow{3}{*}{Int.}  & entropy   &    25    & 0.932 & 0.977 & 0.904 & 0.100 \\
+	                          &                        & t-test    &    25    & 0.915 & 0.955 & 0.890 & 0.100 \\
+	                          &                        & wilcoxon  &    25    & 0.915 & 0.911 & 0.917 & 0.966 \\ \cline{2-8}
+	                          & \multirow{3}{*}{Max.}  & entropy   &    20    & 0.923 & 1.000 & 0.876 & 0.233 \\
+	                          &                        & t-test    &    30    & 0.932 & 0.933 & 0.931 & 0.225 \\
+	                          &                        & wilcoxon  &    45    & 0.932 & 0.933 & 0.931 & 0.033 \\ \midrule
+	\multirow{9}{*}{VDLV-DAT} & \multirow{3}{*}{Orig.} & entropy   &    35    & 0.937 & 0.935 & 0.940 & 0.133 \\
+	                          &                        & t-test    &    35    & 0.932 & 0.953 & 0.910 & 0.350 \\
+	                          &                        & wilcoxon  &    20    & 0.927 & 0.916 & 0.940 & 0.383 \\ \cline{2-8}
+	                          & \multirow{3}{*}{Int.}  & entropy   &    20    & 0.937 & 0.935 & 0.940 & 0.983 \\
+	                          &                        & t-test    &    10    & 0.932 & 0.907 & 0.960 & 0.508 \\
+	                          &                        & wilcoxon  &    10    & 0.937 & 0.935 & 0.940 & 0.966 \\ \cline{2-8}
+	                          & \multirow{3}{*}{Max.}  & entropy   &    20    & 0.937 & 0.953 & 0.920 & 0.608 \\
+	                          &                        & t-test    &    35    & 0.932 & 0.935 & 0.930 & 0.341 \\
+	                          &                        & wilcoxon  &    20    & 0.932 & 0.925 & 0.940 & 0.141 \\ \bottomrule
+\end{tabular}
+	\caption[Best results of the experiment 2 per database, normalization and selection criteria.]{Best results of the experiment 2 per database, normalization and selection criteria. The $I_{th}$ and percentage of selected features (of the total 1560 features computed) at which each value is obtained is also shown for comparison. }
 	\label{tab:exp3Res}
 \end{table*}
 
+This table confirms that best values are obtained generally by the relative entropy criterion, with few exceptions. 
+
+
+% DONE
+
+
+The aforementioned behaviour correspond to an average behaviour in accuracy. To take a deeper look at the different evaluation parameters and different selection criteria, peak results obtained with each selection criteria are shown on Table \ref{tab:exp3Res}. 
+
+
 This table confirms that the Mann-Whitney-Wilcoxon method can be no longer considered, as it needs more than a 50\% of the features to obtain poorer results than all others. Regarding the remaining methods, we observe that those that needed a lower amount of features (BD and RE) obtain here lower values of accuracy that those that needed a higher amount ($t$-Test and FDR). So, the choice of the best method is, in this case, a matter of trade-off between the computer performance (the number of features to estimate) and the accuracy needed. As in clinical practice, accuracy (and PL) is the parameter that needs to be maximized, we can conclude that FDR and $t$-Test are the best discrimination-ranking methods to use in this task, although all other methods reveal the ability of our system in the PD detection with an relevant performance (over 90\% of accuracy in most cases). 
+
+\section{Discussion}\label{sec:ch5discuss}
+As discussed later in this Section, the optimum sub-volume will have a smaller size than $40\times40\times50$, and so, the maximum value of $d=10$ correspond to at least $20\%$ of the brain sub-volume selected at that point; lower frequency textural changes can be neglected for diagnosis. Furthermore, as the voxel size of all databases is approximately 2x2x2mm, the maximum textural changes are computed within a 20x20x20mm area. This is approximately half the size of the striatum, which is enough to correctly extract the textural features of the area. 
+
+
+The optimum value of $I_{th}$ should be high enough to avoid introducing background voxels in the subvolume selected, yet adequately low to select the biggest subvolume containing only brain voxels. This should lead to the best performance, since the 3D GLC matrices (and the Haralick Texture Features) would have enough information, and would not include non-brain textural patterns. 
+
+
+From these graphs it is patent that normalization has no impact on the performance achieved by our system, which can be consider an advantage, since it reduces the preprocessing needed. 
+
+In this regard, the VDLV-DAT dataset has an strange behaviour. It performance holds and even increases when using normalization to the maximum, but significantly drops when integral normalization is used. This is exactly the opposite as happens to the other dataset, and will be discussed later.  
+
+VDLV-DAT also achieves better results with the single appraoch than with the cumulative approach. 
+
+These results corroborate that our volume selection strategy is profitable in almost any case, using a intensity threshold between $0.25$ and $0.45$. Reduces dimensionality, enhances the descriptive capabilities of texutre featues, increases performance. 
+
+
 
 For comparison purposes, we have established a baseline method proposed in Illan et al \cite{Illan2012}, where a Voxels-as-Features (VAF) approach with SVM linear, using different normalization strategies were tested. Two additional methods have been compared with our proposed system in order to check the performance versus state-of-the-art algorithms. These methods have been an asymmetrical Single Value Decomposition (SVD) \cite{Segovia2012} that appplied SVD on both sides of the brain (since PD often appears only in one hemisphere), and a Empirical Mode Decomposition (EMD)  \cite{Rojas2012} using different Independent Mode Functions (IMF), particularly the IMF-3. Table \ref{tab:comparison} compares all the aforementioned methods. 
 
@@ -276,16 +308,3 @@ For comparison purposes, we have established a baseline method proposed in Illan
 \end{table*}
 
 In Table \ref{tab:comparison}, performance values at the operation point are shown for Experiment 1 (using five texture features: Homogeneity, Cluster shade, Cluster tendency, Correlation and energy) and for Experiment 2 (using Relative Entropy, FDR or Student's $t$-Test). These values are compared with the VAF, SVD and EMD approaches previously cited. We can observe that the performance values obtained with Experiment 1 are very similar to other state-of-the-art methods, like the proposed in \cite{Segovia2012,Rojas2012}, whereas the methodology used in Experiment 2 outperform all previously used methods. Particularly, as we previously mentioned, the use of either FDR or $t$-Test to select the most discriminant features gives us results over a PL of $26$ and sensitivity over $99\%$, which proves the ability of some Haralick Textures, and the combination of them, in characterizing the different Parkinson's Disease patterns, and the robustness of the proposed methods. 
-\section{Discussion}\label{sec:ch5discuss}
-
-
-
-As discussed later in this Section, the optimum sub-volume will have a smaller size than $40\times40\times50$, and so, the maximum value of $d=10$ correspond to at least $20\%$ of the brain sub-volume selected at that point; lower frequency textural changes can be neglected for diagnosis. Furthermore, as the voxel size of all databases is approximately 2x2x2mm, the maximum textural changes are computed within a 20x20x20mm area. This is approximately half the size of the striatum, which is enough to correctly extract the textural features of the area. 
-
-
-The optimum value of $I_{th}$ should be high enough to avoid introducing background voxels in the subvolume selected, yet adequately low to select the biggest subvolume containing only brain voxels. This should lead to the best performance, since the 3D GLC matrices (and the Haralick Texture Features) would have enough information, and would not include non-brain textural patterns. 
-
-
-From these graphs it is patent that normalization has no impact on the performance achieved by our system, which can be consider an advantage, since it reduces the preprocessing needed. 
-
-In this regard, the VDLV-DAT dataset has an strange behaviour. It performance holds and even increases when using normalization to the maximum, but significantly drops when integral normalization is used. This is exactly the opposite as happens to the other dataset, and will be discussed later.  
