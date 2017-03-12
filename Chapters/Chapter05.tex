@@ -289,31 +289,31 @@ Finally, we will compare our proposed system with other methods used in \ac{PD} 
 
 \begin{table*}[ht]
 	\centering
-	\begin{tabular}{l | rrrrr}
-		\hline\hline
-		\textbf{System}		& \textbf{Acc} 	& \textbf{Sens}	& \textbf{Spec}	& \textbf{PL}	& \textbf{NL}\\ 
-		\hline
-		Homogeneity & 0.959 & 0.973 & 0.949 & 19.22 & 0.028\\
-		Cluster Shade & 0.955 & 0.964 & 0.949 & 19.01 & 0.038\\
-		Cluster Tendency & 0.955 & 0.973 & 0.943 & 17.10 & 0.029\\
-		Correlation & 0.941 & 0.946 & 0.937 & 14.92 & 0.058\\
-		Energy & 0.937 & 0.964 & 0.918 & 11.73 & 0.039\\
-		\hline
-		Entropy	& 0.967	& 0.982	& 0.956	& 22.16	& 0.019 \\ % (37,1)
-		FDR	& 0.974	& 0.991	& 0.962	& 26.10	& 0.009 \\ % (41,1)
-		$t$-Test	& 0.974	& 0.991	& 0.962	& 26.10	& 0.009 \\ % (43,1)
-		\hline
-		VAF & 0.840	& 0.807	& 0.862	& 5.88	& 0.224 \\
-		VAF-IN & 0,913 & 0.890 & 0.932 & 13.08 & 0.118\\
-		SVD & 0.940 & 0.962 & 0.918 & 11.73 & 0.041\\
-		EMD-IMF3 & 0.950 & 0.951 & 0.948 & 18.28 & 0.051\\
-		\hline\hline
+	\begin{tabular}{l | rrr}
+		\toprule
+		\textbf{System}		& \textbf{Acc} 	& \textbf{Sens}	& \textbf{Spec}	\\ 
+		\midrule
+		SumMean &  0.951 &    0.972 &    0.936 \\ 
+		Homogeneity &  0.944 &    0.946 &    0.943\\
+		Cluster Shade &   0.940 &    0.936 &    0.943  \\
+		Cluster Tendency &  0.951 &    0.945 &    0.956\\
+		Energy &  0.936 &    0.954 &    0.924\\
+		Correlation &  0.944 &    0.963 &     0.930\\
+		\midrule
+		Entropy       & 0.970 & 0.972 & 0.968 \\
+		$t$-test       & 0.966 & 0.972 & 0.962  \\
+		Wilcoxon & 0.959 & 0.954 & 0.962  \\
+		\midrule
+		VAF & 0.840	& 0.807	& 0.862	 \\
+		VAF-IN & 0,913 & 0.890 & 0.932 \\
+		SVD & 0.940 & 0.962 & 0.918 \\
+		EMD-IMF3 & 0.950 & 0.951 & 0.948 \\
+		\bottomrule
 	\end{tabular}
 	\vspace{10pt}
-	\caption{Comparison of our proposed system (using different texture features) and some other methods in the bibliography: VAF system using the intensity-normalized images,  a combination of intensity normalization strategies and classifiers (VAF-IN) \cite{Illan2012}, a SVD-based approach \cite{Segovia2012} and EMD using the third independent mode function (IMF3) \cite{Rojas2012}.}
+	\caption[Comparison between our proposed system and other \ac{PD} diagnosis systems in the literature.]{Comparison between our proposed system and other \ac{PD} diagnosis systems in the literature: a VAF system using the intensity-normalized images,  a combination of intensity normalization strategies and classifiers (VAF-IN) \cite{Illan2012}, a SVD-based approach \cite{Segovia2012} and EMD using the third independent mode function (IMF3) \cite{Rojas2012}.}
 	\label{tab:comparison}
 \end{table*}
+
+In this table, we compare the values at the operation point for Experiment 1 and 2 with other methods in the literature. In Experiment 1, values for six texture features, such as Sum Mean, Homogeneity or Cluster Tendency are shown (using the single approach), and values for the three selection criteria are shown. The values of using only one texture feature match those obtained by state of the art methods like the ones proposed in \cite{Segovia2012,Rojas2012}, whereas the methodology used in Experiment 2 outperform all previously used methods. This holds for all feature selection criterion, proving the ability of the Haralick texture features to detect \ac{PD} patterns in DaTSCAN imaging. 
 % DONE
-
-
-In Table \ref{tab:comparison}, performance values at the operation point are shown for Experiment 1 (using five texture features: Homogeneity, Cluster shade, Cluster tendency, Correlation and energy) and for Experiment 2 (using Relative Entropy, FDR or Student's $t$-Test). These values are compared with the VAF, SVD and EMD approaches previously cited. We can observe that the performance values obtained with Experiment 1 are very similar to other state-of-the-art methods, like the proposed in \cite{Segovia2012,Rojas2012}, whereas the methodology used in Experiment 2 outperform all previously used methods. Particularly, as we previously mentioned, the use of either FDR or $t$-Test to select the most discriminant features gives us results over a PL of $26$ and sensitivity over $99\%$, which proves the ability of some Haralick Textures, and the combination of them, in characterizing the different Parkinson's Disease patterns, and the robustness of the proposed methods. 
