@@ -257,21 +257,29 @@ The application of intensity normalization algorithms does not imply an improvem
 The choice of a best selection method is here a matter of trade-off between the computer performance (the number of features to estimate) and the accuracy needed. In the case of the PPMI-DAT, it is patent that using normalized images and the t-Test selection criterion achieves best performance. For VDLN-DAT is more difficult to assure that any option will perform better than others, although the t-test still performs well with the original images. Finally, with the VDLV-DAT dataset, the preferred method will be again to use the original images, since the selection of features seems more optimal, especially when using relative entropy. Anyway, all the options reveal the ability of our system in the PD detection with an relevant performance (over 90\% of accuracy in most cases). 
 
 \section{Discussion}\label{sec:ch5discuss}
+The system proposed in this chapter was published in \cite{Martinez-Murcia2013266,martinez2014parametrization}, and fundamentally defines a new pipeline for the \ac{CAD} of \ac{PD} based on texture analysis. It combines intensity normalization, a subvolume extraction algorithm, texture analysis and classification via \ac{SVC}. 
+
+% Intensity normalization
+The application of a intensity normalization procedure was proved fundamental for feature extraction methods such as \ac{VAF} \cite{Illan2012}, \ac{SVD} \cite{Segovia2012} or \ac{PLS} \cite{Rojas2012}. These methods strongly rely on the absolute intensity values found at each anatomical position. Conversely, texture analysis depends on the computation of the \ac{GLCM}, which quantifies pixel relations. When analysing the behaviour of our system in both experiments, we can infer that normalizing the images does not pose any further improvement over using the original images themselves. 
+
+The different experiments still find improvement in using normalization, but these are very small. We find that the type of normalization depends on the database used, and no general trend could be stated. For example, VDLV-DAT has a preference for the normalization to the maximum, whereas the PPMI-DAT performs better when using integral normalization. There were even more cases where normalization decreased performance than those in which it improved the system. Therefore, we can assume that it yields no benefit at all, and therefore, our system can be intensity-independent, which we can consider an advantage. 
+
+% Volume selection
+
 % DONE
 As discussed later in this Section, the optimum sub-volume will have a smaller size than $40\times40\times50$, and so, the maximum value of $d=10$ correspond to at least $20\%$ of the brain sub-volume selected at that point; lower frequency textural changes can be neglected for diagnosis. Furthermore, as the voxel size of all databases is approximately 2x2x2mm, the maximum textural changes are computed within a 20x20x20mm area. This is approximately half the size of the striatum, which is enough to correctly extract the textural features of the area. 
 
-
-The optimum value of $I_{th}$ should be high enough to avoid introducing background voxels in the subvolume selected, yet adequately low to select the biggest subvolume containing only brain voxels. This should lead to the best performance, since the 3D GLC matrices (and the Haralick Texture Features) would have enough information, and would not include non-brain textural patterns. 
-
-
-From these graphs it is patent that normalization has no impact on the performance achieved by our system, which can be consider an advantage, since it reduces the preprocessing needed. 
-
-In this regard, the VDLV-DAT dataset has an strange behaviour. It performance holds and even increases when using normalization to the maximum, but significantly drops when integral normalization is used. This is exactly the opposite as happens to the other dataset, and will be discussed later.  
-
-VDLV-DAT also achieves better results with the single appraoch than with the cumulative approach. 
-
 These results corroborate that our volume selection strategy is profitable in almost any case, using a intensity threshold between $0.25$ and $0.45$. Reduces dimensionality, enhances the descriptive capabilities of texutre featues, increases performance. 
 
+
+% Textural features
+
+The optimum value of $I_{th}$ should be high enough to avoid introducing background voxels in the subvolume selected, yet adequately low to select the biggest subvolume containing only brain voxels. This should lead to the best performance, since the 3D GLC matrices (and the Haralick Texture Features) would have enough information, and would not include non-brain textural patterns. 
+VDLV-DAT also achieves better results with the single appraoch than with the cumulative approach. 
+
+
+
+% Whole system
 
 
 For comparison purposes, we have established a baseline method proposed in Illan et al \cite{Illan2012}, where a Voxels-as-Features (VAF) approach with SVM linear, using different normalization strategies were tested. Two additional methods have been compared with our proposed system in order to check the performance versus state-of-the-art algorithms. These methods have been an asymmetrical Single Value Decomposition (SVD) \cite{Segovia2012} that appplied SVD on both sides of the brain (since PD often appears only in one hemisphere), and a Empirical Mode Decomposition (EMD)  \cite{Rojas2012} using different Independent Mode Functions (IMF), particularly the IMF-3. Table \ref{tab:comparison} compares all the aforementioned methods. 
