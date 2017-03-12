@@ -265,18 +265,18 @@ The application of a intensity normalization procedure was proved fundamental fo
 The different experiments still find improvement in using normalization, but these are very small. We find that the type of normalization depends on the database used, and no general trend could be stated. For example, VDLV-DAT has a preference for the normalization to the maximum, whereas the PPMI-DAT performs better when using integral normalization. There were even more cases where normalization decreased performance than those in which it improved the system. Therefore, we can assume that it yields no benefit at all, and therefore, our system can be intensity-independent, which we can consider an advantage. 
 
 % Volume selection
+Now, regarding the volume selection algorithm, it has proved beneficial in almost any case. This can be due to a series of reasons. Firstly, the optimum sub-volume (for an intensity threshold around $0.30 I_{max}$) has a size smaller than $40\times40\times50$. The maximum value at which we computed the \acp{GLCM} was $d=10$, which correspond to at least a 20\% of the subvolume selected with the previous value. Since the voxel size of the images in the three databases is approximately $2\times2\times2$mm, the maximum textural changes that we could analyse were computed at a distance of 20mm, approximately half the size of the striatum. This is more than enough to characterize texture in these noisy images, since lower frequency textural changes can be obviated for diagnosis, enhancing the descriptive ability of the texture features. 
 
-% DONE
-As discussed later in this Section, the optimum sub-volume will have a smaller size than $40\times40\times50$, and so, the maximum value of $d=10$ correspond to at least $20\%$ of the brain sub-volume selected at that point; lower frequency textural changes can be neglected for diagnosis. Furthermore, as the voxel size of all databases is approximately 2x2x2mm, the maximum textural changes are computed within a 20x20x20mm area. This is approximately half the size of the striatum, which is enough to correctly extract the textural features of the area. 
-
-These results corroborate that our volume selection strategy is profitable in almost any case, using a intensity threshold between $0.25$ and $0.45$. Reduces dimensionality, enhances the descriptive capabilities of texutre featues, increases performance. 
-
+Secondly, the descriptive ability of the texture features is also enhanced with the removal of the background introduced by this subvolume extraction algorithm. Within the subvolume, the texture changes only correspond to real changes represented by the dopamine distribution, and no to the contrast between the brain and the background. And thirdly, computing the texture features over a subvolume is always faster than over the whole brain, which makes our system faster. 
 
 % Textural features
 
-The optimum value of $I_{th}$ should be high enough to avoid introducing background voxels in the subvolume selected, yet adequately low to select the biggest subvolume containing only brain voxels. This should lead to the best performance, since the 3D GLC matrices (and the Haralick Texture Features) would have enough information, and would not include non-brain textural patterns. 
-VDLV-DAT also achieves better results with the single appraoch than with the cumulative approach. 
 
+% DONE
+
+The optimum value of $I_{th}$ should be high enough to avoid introducing background voxels in the subvolume selected, yet adequately low to select the biggest subvolume containing only brain voxels. This should lead to the best performance, since the 3D GLC matrices (and the Haralick Texture Features) would have enough information, and would not include non-brain textural patterns. 
+
+VDLV-DAT also achieves better results with the single appraoch than with the cumulative approach. 
 
 
 % Whole system

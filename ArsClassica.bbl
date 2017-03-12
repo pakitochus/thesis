@@ -1419,6 +1419,72 @@
       \verb 10.1016/j.neurobiolaging.2013.01.016
       \endverb
     \endentry
+    \entry{Rojas2012}{article}{}
+      \name{author}{8}{}{%
+        {{hash=64851241de900972f950dac0b88ae082}{%
+           family={Rojas},
+           family_i={R\bibinitperiod},
+           given={A.},
+           given_i={A\bibinitperiod}}}%
+        {{hash=7abaa12fe16012bf9858fc761e93d487}{%
+           family={Górriz},
+           family_i={G\bibinitperiod},
+           given={J.M.},
+           given_i={J\bibinitperiod}}}%
+        {{hash=feb8d5aab03ec8ed81924ca4f258be62}{%
+           family={Ramírez},
+           family_i={R\bibinitperiod},
+           given={J.},
+           given_i={J\bibinitperiod}}}%
+        {{hash=6f0108e83178ae147834a62c7e3bc710}{%
+           family={Illán},
+           family_i={I\bibinitperiod},
+           given={I.A.},
+           given_i={I\bibinitperiod}}}%
+        {{hash=44d5da22feb443de558b01188109bfb7}{%
+           family={Martínez-Murcia},
+           family_i={M\bibinithyphendelim M\bibinitperiod},
+           given={F.J.},
+           given_i={F\bibinitperiod}}}%
+        {{hash=369a4f8925145c137ab158e861c8eda6}{%
+           family={Ortiz},
+           family_i={O\bibinitperiod},
+           given={A.},
+           given_i={A\bibinitperiod}}}%
+        {{hash=18fca851046462b1841ca480079ffee7}{%
+           family={Río},
+           family_i={R\bibinitperiod},
+           given={M.\bibnamedelimi Gómez},
+           given_i={M\bibinitperiod\bibinitdelim G\bibinitperiod}}}%
+        {{hash=eb0decf8e23ba090b0a8041bc9e020f9}{%
+           family={Moreno-Caballero},
+           family_i={M\bibinithyphendelim C\bibinitperiod},
+           given={M.},
+           given_i={M\bibinitperiod}}}%
+      }
+      \strng{namehash}{7ce36f1cfdb18631ce4c52e172be63d4}
+      \strng{fullhash}{c1a1a6f3086ec59a15e0191e45d9f196}
+      \field{sortinit}{2}
+      \field{sortinithash}{8343b463aacf48517c044b4d2c9c45ed}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Parkinsonism is the second most common neurodegenerative disorder. It includes several pathologies with similar symptoms, what makes the diagnosis really difficult. I-ioflupane allows to obtain in vivo images of the brain that can be used to assist the PS diagnosis and provides a way to improve its accuracy. In this paper a new method for brain SPECT image feature extraction is shown. This novel Computer Aided Diagnosis (CAD) system is based on the Empirical Mode Decomposition (EMD), which decomposes any non-linear and non-stationary time series into a small number of oscillatory Intrinsic Mode Functions (IMF) a monotonous Residuum. A 80-DaTSCAN image database from the 'Virgen de las Nieves' Hospital in Granada (Spain) was used to evaluate this method, yielding up to 95\% accuracy, which greatly improves the baseline Voxel-As-Feature (VAF) approach.}
+      \field{issn}{0957-4174}
+      \field{journaltitle}{Expert Systems with Applications}
+      \field{number}{7}
+      \field{title}{{Application of Empirical Mode Decomposition (EMD) on DaTSCAN SPECT images to explore Parkinson Disease}}
+      \field{volume}{40}
+      \field{year}{2013}
+      \field{pages}{2756\bibrangedash 2766}
+      \range{pages}{11}
+      \verb{doi}
+      \verb 10.1016/j.eswa.2012.11.017
+      \endverb
+      \verb{url}
+      \verb http://www.sciencedirect.com/science/article/pii/S0957417412012274
+      \endverb
+      \keyw{Parkinsonian Syndrome (PS)}
+    \endentry
     \entry{Salas-Gonzalez2013}{article}{}
       \name{author}{5}{}{%
         {{hash=80c0a5abb383820c98e1e918318b6214}{%
@@ -1648,6 +1714,54 @@
       \field{pages}{195\bibrangedash 209}
       \range{pages}{15}
     \endentry
+    \entry{Illan2012}{article}{}
+      \name{author}{6}{}{%
+        {{hash=d59c793e31fe7893bd91d7678a7b8d8a}{%
+           family={Illán},
+           family_i={I\bibinitperiod},
+           given={I.A.a},
+           given_i={I\bibinitperiod}}}%
+        {{hash=9048fe23f666110b1c6fd53e47137e84}{%
+           family={Górriz},
+           family_i={G\bibinitperiod},
+           given={J.M.a},
+           given_i={J\bibinitperiod}}}%
+        {{hash=8f8488205df2d91b5d8f1d83ebdad0fc}{%
+           family={Ramírez},
+           family_i={R\bibinitperiod},
+           given={J.a},
+           given_i={J\bibinitperiod}}}%
+        {{hash=e7e17e07996f4a485e4570ddaf3f2b76}{%
+           family={Segovia},
+           family_i={S\bibinitperiod},
+           given={F.a},
+           given_i={F\bibinitperiod}}}%
+        {{hash=7d2f988325067aecc9963c2ca9935ac1}{%
+           family={Jiménez-Hoyuela},
+           family_i={J\bibinithyphendelim H\bibinitperiod},
+           given={J.M.b},
+           given_i={J\bibinitperiod}}}%
+        {{hash=57c21d5a13aa01c69935ef1f3c048900}{%
+           family={{Ortega Lozano}},
+           family_i={O\bibinitperiod},
+           given={S.J.b},
+           given_i={S\bibinitperiod}}}%
+      }
+      \strng{namehash}{3769a2d12a9fdd384229dfa401018df6}
+      \strng{fullhash}{fa5c4a93487aba7111e225b51c4a1f3e}
+      \field{sortinit}{2}
+      \field{sortinithash}{8343b463aacf48517c044b4d2c9c45ed}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Purpose: In this work, an approach to computer aided diagnosis (CAD) system is proposed as a decision-making aid in Parkinsonian syndrome (PS) detection. This tool, intended for physicians, entails fully automatic preprocessing, normalization, and classification procedures for brain single-photon emission computed tomography images. Methods: Ioflupane[ 123I]FP-CIT images are used to provide in vivo information of the dopamine transporter density. These images are preprocessed using an automated template-based registration followed by two proposed approaches for intensity normalization. A support vector machine (SVM) is used and compared to other statistical classifiers in order to achieve an effective diagnosis using whole brain images in combination with voxel selection masks. Results: The CAD system is evaluated using a database consisting of 208 DaTSCAN images (100 controls, 108 PS). SVM-based classification is the most efficient choice when masked brain images are used. The generalization performance is estimated to be 89.02 (90.41-87.62) sensitivity and 93.21 (92.24-94.18) specificity. The area under the curve can take values of 0.9681 (0.9641-0.9722) when the image intensity is normalized to a maximum value, as derived from the receiver operating characteristics curves. Conclusions: The present analysis allows to evaluate the impact of the design elements for the development of a CAD-system when all the information encoded in the scans is considered. In this way, the proposed CAD-system shows interesting properties for clinical use, such as being fast, automatic, and robust. � 2012 American Association of Physicists in Medicine.}
+      \field{journaltitle}{Medical Physics}
+      \field{number}{10}
+      \field{title}{{Automatic assistance to Parkinsons disease diagnosis in DaTSCAN SPECT imaging}}
+      \field{volume}{39}
+      \field{year}{2012}
+      \field{pages}{5971\bibrangedash 5980}
+      \range{pages}{10}
+    \endentry
     \entry{Martinez-Murcia20129676}{article}{}
       \name{author}{5}{}{%
         {{hash=44d5da22feb443de558b01188109bfb7}{%
@@ -1741,6 +1855,53 @@
       \verb 10.1016/j.neuroimage.2012.02.084
       \endverb
       \keyw{Algorithms; Brain,anatomy & histology,physiology; Humans; Image Interpretation,Computer-Assisted,methods; Magnetic Resonance Imaging,methods}
+    \endentry
+    \entry{Segovia2012}{article}{}
+      \name{author}{6}{}{%
+        {{hash=a82a4a0f3202a8d229f302ebd30a4d13}{%
+           family={Segovia},
+           family_i={S\bibinitperiod},
+           given={F.},
+           given_i={F\bibinitperiod}}}%
+        {{hash=7874a31bf28a43fb11d4e5217882ae92}{%
+           family={Górriz},
+           family_i={G\bibinitperiod},
+           given={J.\bibnamedelimi M.},
+           given_i={J\bibinitperiod\bibinitdelim M\bibinitperiod}}}%
+        {{hash=feb8d5aab03ec8ed81924ca4f258be62}{%
+           family={Ramírez},
+           family_i={R\bibinitperiod},
+           given={J.},
+           given_i={J\bibinitperiod}}}%
+        {{hash=fc90170436b509411cf676b0646ae9d3}{%
+           family={Álvarez},
+           family_i={Á\bibinitperiod},
+           given={I.},
+           given_i={I\bibinitperiod}}}%
+        {{hash=59530e5494d48465dace69fe0393b6a0}{%
+           family={Jiménez-Hoyuela},
+           family_i={J\bibinithyphendelim H\bibinitperiod},
+           given={J.\bibnamedelimi M.},
+           given_i={J\bibinitperiod\bibinitdelim M\bibinitperiod}}}%
+        {{hash=8341243d237ba6cd25cf737a19191eed}{%
+           family={Ortega},
+           family_i={O\bibinitperiod},
+           given={S.\bibnamedelimi J.},
+           given_i={S\bibinitperiod\bibinitdelim J\bibinitperiod}}}%
+      }
+      \strng{namehash}{07d04e6e04fcab56219aca3581d20af5}
+      \strng{fullhash}{58c15936113720d02d664d3a1dcf8371}
+      \field{sortinit}{2}
+      \field{sortinithash}{8343b463aacf48517c044b4d2c9c45ed}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Medical physics}
+      \field{number}{7}
+      \field{title}{{Improved Parkinsonism diagnosis using a partial least squares based approach}}
+      \field{volume}{39}
+      \field{year}{2012}
+      \field{pages}{4395\bibrangedash 4403}
+      \range{pages}{9}
     \endentry
     \entry{Ballard2011}{article}{}
       \name{author}{6}{}{%
@@ -7153,6 +7314,54 @@
       \endverb
       \keyw{Alzheimer's disease (AD); Computer aided diagnosis; FDG-PET; Independent component analysis (ICA); Principal component analysis (PCA); Supervised learning; Support vector machine (SVM)}
     \endentry
+    \entry{Illan2012}{article}{}
+      \name{author}{6}{}{%
+        {{hash=d59c793e31fe7893bd91d7678a7b8d8a}{%
+           family={Illán},
+           family_i={I\bibinitperiod},
+           given={I.A.a},
+           given_i={I\bibinitperiod}}}%
+        {{hash=9048fe23f666110b1c6fd53e47137e84}{%
+           family={Górriz},
+           family_i={G\bibinitperiod},
+           given={J.M.a},
+           given_i={J\bibinitperiod}}}%
+        {{hash=8f8488205df2d91b5d8f1d83ebdad0fc}{%
+           family={Ramírez},
+           family_i={R\bibinitperiod},
+           given={J.a},
+           given_i={J\bibinitperiod}}}%
+        {{hash=e7e17e07996f4a485e4570ddaf3f2b76}{%
+           family={Segovia},
+           family_i={S\bibinitperiod},
+           given={F.a},
+           given_i={F\bibinitperiod}}}%
+        {{hash=7d2f988325067aecc9963c2ca9935ac1}{%
+           family={Jiménez-Hoyuela},
+           family_i={J\bibinithyphendelim H\bibinitperiod},
+           given={J.M.b},
+           given_i={J\bibinitperiod}}}%
+        {{hash=57c21d5a13aa01c69935ef1f3c048900}{%
+           family={{Ortega Lozano}},
+           family_i={O\bibinitperiod},
+           given={S.J.b},
+           given_i={S\bibinitperiod}}}%
+      }
+      \strng{namehash}{3769a2d12a9fdd384229dfa401018df6}
+      \strng{fullhash}{fa5c4a93487aba7111e225b51c4a1f3e}
+      \field{sortinit}{I}
+      \field{sortinithash}{25e99d37ba90f7c4fb20baf4e310faf3}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Purpose: In this work, an approach to computer aided diagnosis (CAD) system is proposed as a decision-making aid in Parkinsonian syndrome (PS) detection. This tool, intended for physicians, entails fully automatic preprocessing, normalization, and classification procedures for brain single-photon emission computed tomography images. Methods: Ioflupane[ 123I]FP-CIT images are used to provide in vivo information of the dopamine transporter density. These images are preprocessed using an automated template-based registration followed by two proposed approaches for intensity normalization. A support vector machine (SVM) is used and compared to other statistical classifiers in order to achieve an effective diagnosis using whole brain images in combination with voxel selection masks. Results: The CAD system is evaluated using a database consisting of 208 DaTSCAN images (100 controls, 108 PS). SVM-based classification is the most efficient choice when masked brain images are used. The generalization performance is estimated to be 89.02 (90.41-87.62) sensitivity and 93.21 (92.24-94.18) specificity. The area under the curve can take values of 0.9681 (0.9641-0.9722) when the image intensity is normalized to a maximum value, as derived from the receiver operating characteristics curves. Conclusions: The present analysis allows to evaluate the impact of the design elements for the development of a CAD-system when all the information encoded in the scans is considered. In this way, the proposed CAD-system shows interesting properties for clinical use, such as being fast, automatic, and robust. � 2012 American Association of Physicists in Medicine.}
+      \field{journaltitle}{Medical Physics}
+      \field{number}{10}
+      \field{title}{{Automatic assistance to Parkinsons disease diagnosis in DaTSCAN SPECT imaging}}
+      \field{volume}{39}
+      \field{year}{2012}
+      \field{pages}{5971\bibrangedash 5980}
+      \range{pages}{10}
+    \endentry
     \entry{Jenkinson2001}{article}{}
       \name{author}{2}{}{%
         {{hash=c8bee8f298b153cd679d1d62afe645ce}{%
@@ -8655,6 +8864,72 @@
       \field{title}{Mathematical statistics and data analysis}
       \field{year}{2006}
     \endentry
+    \entry{Rojas2012}{article}{}
+      \name{author}{8}{}{%
+        {{hash=64851241de900972f950dac0b88ae082}{%
+           family={Rojas},
+           family_i={R\bibinitperiod},
+           given={A.},
+           given_i={A\bibinitperiod}}}%
+        {{hash=7abaa12fe16012bf9858fc761e93d487}{%
+           family={Górriz},
+           family_i={G\bibinitperiod},
+           given={J.M.},
+           given_i={J\bibinitperiod}}}%
+        {{hash=feb8d5aab03ec8ed81924ca4f258be62}{%
+           family={Ramírez},
+           family_i={R\bibinitperiod},
+           given={J.},
+           given_i={J\bibinitperiod}}}%
+        {{hash=6f0108e83178ae147834a62c7e3bc710}{%
+           family={Illán},
+           family_i={I\bibinitperiod},
+           given={I.A.},
+           given_i={I\bibinitperiod}}}%
+        {{hash=44d5da22feb443de558b01188109bfb7}{%
+           family={Martínez-Murcia},
+           family_i={M\bibinithyphendelim M\bibinitperiod},
+           given={F.J.},
+           given_i={F\bibinitperiod}}}%
+        {{hash=369a4f8925145c137ab158e861c8eda6}{%
+           family={Ortiz},
+           family_i={O\bibinitperiod},
+           given={A.},
+           given_i={A\bibinitperiod}}}%
+        {{hash=18fca851046462b1841ca480079ffee7}{%
+           family={Río},
+           family_i={R\bibinitperiod},
+           given={M.\bibnamedelimi Gómez},
+           given_i={M\bibinitperiod\bibinitdelim G\bibinitperiod}}}%
+        {{hash=eb0decf8e23ba090b0a8041bc9e020f9}{%
+           family={Moreno-Caballero},
+           family_i={M\bibinithyphendelim C\bibinitperiod},
+           given={M.},
+           given_i={M\bibinitperiod}}}%
+      }
+      \strng{namehash}{7ce36f1cfdb18631ce4c52e172be63d4}
+      \strng{fullhash}{c1a1a6f3086ec59a15e0191e45d9f196}
+      \field{sortinit}{R}
+      \field{sortinithash}{c7387613477035a752d935acfc3e3ea2}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Parkinsonism is the second most common neurodegenerative disorder. It includes several pathologies with similar symptoms, what makes the diagnosis really difficult. I-ioflupane allows to obtain in vivo images of the brain that can be used to assist the PS diagnosis and provides a way to improve its accuracy. In this paper a new method for brain SPECT image feature extraction is shown. This novel Computer Aided Diagnosis (CAD) system is based on the Empirical Mode Decomposition (EMD), which decomposes any non-linear and non-stationary time series into a small number of oscillatory Intrinsic Mode Functions (IMF) a monotonous Residuum. A 80-DaTSCAN image database from the 'Virgen de las Nieves' Hospital in Granada (Spain) was used to evaluate this method, yielding up to 95\% accuracy, which greatly improves the baseline Voxel-As-Feature (VAF) approach.}
+      \field{issn}{0957-4174}
+      \field{journaltitle}{Expert Systems with Applications}
+      \field{number}{7}
+      \field{title}{{Application of Empirical Mode Decomposition (EMD) on DaTSCAN SPECT images to explore Parkinson Disease}}
+      \field{volume}{40}
+      \field{year}{2013}
+      \field{pages}{2756\bibrangedash 2766}
+      \range{pages}{11}
+      \verb{doi}
+      \verb 10.1016/j.eswa.2012.11.017
+      \endverb
+      \verb{url}
+      \verb http://www.sciencedirect.com/science/article/pii/S0957417412012274
+      \endverb
+      \keyw{Parkinsonian Syndrome (PS)}
+    \endentry
     \entry{Saeed2002}{article}{}
       \name{author}{2}{}{%
         {{hash=dcb5cf83644bfd671bf5ad2badeee36d}{%
@@ -8906,6 +9181,53 @@
       \verb 10.1093/brain/awh485
       \endverb
       \keyw{Aged; Case-Control Studies; Caudate Nucleus,metabolism; Cocaine,analogs & derivatives; Corpus Striatum,metabolism; Diagnosis,Differential; Discriminant Analysis; Dopamine,metabolism; Dopamine Plasma Membrane Transport Proteins; Female; Humans; Linear Models; Male; Membrane Glycoproteins,metabolism; Membrane Transport Proteins,metabolism; Mesencephalon,metabolism; Middle Aged; Multiple System Atrophy,metabolism,radionuclide imaging; Nerve Tissue Proteins,metabolism; Parkinson Disease,metabolism,radionuclide imaging; Radiopharmaceuticals; Receptors,Dopamine D2,metabolism; Tomography,Emission-Computed,Single-Photon}
+    \endentry
+    \entry{Segovia2012}{article}{}
+      \name{author}{6}{}{%
+        {{hash=a82a4a0f3202a8d229f302ebd30a4d13}{%
+           family={Segovia},
+           family_i={S\bibinitperiod},
+           given={F.},
+           given_i={F\bibinitperiod}}}%
+        {{hash=7874a31bf28a43fb11d4e5217882ae92}{%
+           family={Górriz},
+           family_i={G\bibinitperiod},
+           given={J.\bibnamedelimi M.},
+           given_i={J\bibinitperiod\bibinitdelim M\bibinitperiod}}}%
+        {{hash=feb8d5aab03ec8ed81924ca4f258be62}{%
+           family={Ramírez},
+           family_i={R\bibinitperiod},
+           given={J.},
+           given_i={J\bibinitperiod}}}%
+        {{hash=fc90170436b509411cf676b0646ae9d3}{%
+           family={Álvarez},
+           family_i={Á\bibinitperiod},
+           given={I.},
+           given_i={I\bibinitperiod}}}%
+        {{hash=59530e5494d48465dace69fe0393b6a0}{%
+           family={Jiménez-Hoyuela},
+           family_i={J\bibinithyphendelim H\bibinitperiod},
+           given={J.\bibnamedelimi M.},
+           given_i={J\bibinitperiod\bibinitdelim M\bibinitperiod}}}%
+        {{hash=8341243d237ba6cd25cf737a19191eed}{%
+           family={Ortega},
+           family_i={O\bibinitperiod},
+           given={S.\bibnamedelimi J.},
+           given_i={S\bibinitperiod\bibinitdelim J\bibinitperiod}}}%
+      }
+      \strng{namehash}{07d04e6e04fcab56219aca3581d20af5}
+      \strng{fullhash}{58c15936113720d02d664d3a1dcf8371}
+      \field{sortinit}{S}
+      \field{sortinithash}{fd1e7c5ab79596b13dbbb67f8d70fb5a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Medical physics}
+      \field{number}{7}
+      \field{title}{{Improved Parkinsonism diagnosis using a partial least squares based approach}}
+      \field{volume}{39}
+      \field{year}{2012}
+      \field{pages}{4395\bibrangedash 4403}
+      \range{pages}{9}
     \endentry
     \entry{Segovia2016a}{inproceedings}{}
       \name{author}{4}{}{%
@@ -9814,44 +10136,41 @@
       \endverb
     \endentry
   \endsortlist
-  \missing{Fischl2004}
-  \missing{Chen2008}
-  \missing{Ortiz2013}
-  \missing{Illan2012}
-  \missing{dougall_systematic_2004}
-  \missing{han2006reliability}
-  \missing{Illan2014}
   \missing{Shepp82}
+  \missing{soh1999texture}
+  \missing{jobst_accurate_1998}
+  \missing{Yen1995}
+  \missing{Zhou2008}
+  \missing{Vapnik1982}
+  \missing{PPMI}
+  \missing{Inititative2010}
+  \missing{Unay2007}
+  \missing{AAL}
+  \missing{dougall_systematic_2004}
+  \missing{clausi2002analysis}
+  \missing{Alvarez2009}
   \missing{Shaffer1995}
   \missing{Ramirez2009}
-  \missing{chan2001patterns}
-  \missing{Rojas2012}
-  \missing{Unay2007}
   \missing{IAIllan2010}
-  \missing{Grana2011}
+  \missing{Ojala1996}
+  \missing{Tzourio-Mazoyer2002}
+  \missing{Ram'irez2009}
+  \missing{Chen2008}
+  \missing{chan2001patterns}
+  \missing{han2006reliability}
+  \missing{Evans1993}
   \missing{Zhao2007}
   \missing{Kohavi1995a}
-  \missing{Inititative2010}
-  \missing{soh1999texture}
-  \missing{PPMI}
-  \missing{clausi2002analysis}
+  \missing{Fischl2004}
+  \missing{Illan2014}
+  \missing{Grana2011}
+  \missing{Ortiz2013}
   \missing{Botev2010}
-  \missing{Evans1993}
-  \missing{Segovia2012}
-  \missing{Alvarez2009}
-  \missing{Tzourio-Mazoyer2002}
-  \missing{Vapnik1982}
-  \missing{AAL}
-  \missing{Ram'irez2009}
-  \missing{Ojala1996}
-  \missing{Yen1995}
-  \missing{jobst_accurate_1998}
-  \missing{Locatelli1998}
   \missing{Jong2008}
-  \missing{xu2009source}
-  \missing{Medina2008}
   \missing{Vardi1985}
-  \missing{Zhou2008}
+  \missing{Medina2008}
+  \missing{Locatelli1998}
+  \missing{xu2009source}
 \endrefsection
 
 \refsection{1}
