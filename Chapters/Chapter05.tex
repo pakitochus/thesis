@@ -269,20 +269,23 @@ Now, regarding the volume selection algorithm, it has proved beneficial in almos
 
 Secondly, the descriptive ability of the texture features is also enhanced with the removal of the background introduced by this subvolume extraction algorithm. Within the subvolume, the texture changes only correspond to real changes represented by the dopamine distribution, and no to the contrast between the brain and the background. And thirdly, computing the texture features over a subvolume is always faster than over the whole brain, which makes our system faster. 
 
+\begin{figure*}
+	\centering
+	\subfloat[Feature number (PPMI-DAT)]{\includegraphics[width=0.5\textwidth]{Graphics/ch5/selectedFeaturesPPMI.eps}\label{fig:fnPPMI}}
+	\subfloat[Feature number (VDLN-DAT)]{\includegraphics[width=0.5\textwidth]{Graphics/ch5/selectedFeaturesVDLN.eps}\label{fig:fnVDLN}}\\
+	\subfloat[Feature number (VDLV-DAT)]{\includegraphics[width=0.5\textwidth]{Graphics/ch5/selectedFeaturesVDLV.eps}\label{fig:fnVDLV}}
+	
+	\caption{Distribution of the 100 first selected features by means of the different selection methods (using the $I_{th} = 0.35 I_{max}$) for PPMI-DAT, VDLN-DAT, VDLV-DAT database.} 
+	\label{fig:fnumber}
+\end{figure*}
+
 % Textural features
+The features that best describe the texture of DaTSCAN images are analysed in Experiment 1. In Fig.~\ref{fig:features_acc}, we saw that features such as homogeneity, Sum Mean and, overall, Cluster Tendency, achieve the best performance of our system in either the single and the cumulative approach, in all three datasets. Since Cluster tendency measures the grouping of voxels with a similar grey-level, it is obviously a good descriptor of the striatum shape, where most of the intensities of the images is concentrated. Higher values of Cluster Tendency can be associated with \ac{CTL}, whereas lower values can be related to people affected by dopaminergic deficit. 
 
-
-% DONE
-
-The optimum value of $I_{th}$ should be high enough to avoid introducing background voxels in the subvolume selected, yet adequately low to select the biggest subvolume containing only brain voxels. This should lead to the best performance, since the 3D GLC matrices (and the Haralick Texture Features) would have enough information, and would not include non-brain textural patterns. 
-
-VDLV-DAT also achieves better results with the single appraoch than with the cumulative approach. 
-
-
+The introduction of a feature selection algorithm using hypothesis testing improved the performance in the three datasets. Thanks to this, we can take best features according to a criterion, and use all of them regardless of what they measure. We would assume that most criteria would select fundamentally Cluster Tendency, Homogeneity and other high performance measures. In Figure~\ref{fig:fnumber} we count how many features of each type are in the 100 first ranked using each criterion and dataset. We see that the best-performing features such as cluster tendency, are not always selected, especially with the VDLN-DAT dataset, which could be responsible for its lower overall performance. It reveals that each database has internal characteristics, for example, the discarded cuts in VDLN-DAT, that are better modelled using other features, what could lead to the apparition of outliers in the computation, and a decrease in performance. However, the selection approach allow us to overcome the individual characteristics of each dataset, making the system extensible to other uses in clinical practice. 
 % Whole system
 
-
-For comparison purposes, we have established a baseline method proposed in Illan et al \cite{Illan2012}, where a Voxels-as-Features (VAF) approach with SVM linear, using different normalization strategies were tested. Two additional methods have been compared with our proposed system in order to check the performance versus state-of-the-art algorithms. These methods have been an asymmetrical Single Value Decomposition (SVD) \cite{Segovia2012} that appplied SVD on both sides of the brain (since PD often appears only in one hemisphere), and a Empirical Mode Decomposition (EMD)  \cite{Rojas2012} using different Independent Mode Functions (IMF), particularly the IMF-3. Table \ref{tab:comparison} compares all the aforementioned methods. 
+Finally, we will compare our proposed system with other methods used in \ac{PD} diagnosis in the literature. We will compare with the baseline \ac{VAF} from \cite{Illan2012}, and two additional methods. These are an asymmetrical Single Value Decomposition (SVD) \cite{Segovia2012} that appplied SVD on both sides of the brain (since PD often appears only in one hemisphere), and a Empirical Mode Decomposition (EMD)  \cite{Rojas2012} using different Independent Mode Functions (IMF), particularly the IMF-3. These systems are compared with either the cumulative approach and the system of experiment 2 with different criteria in Table~\ref{tab:comparison}.
 
 \begin{table*}[ht]
 	\centering
@@ -310,5 +313,7 @@ For comparison purposes, we have established a baseline method proposed in Illan
 	\caption{Comparison of our proposed system (using different texture features) and some other methods in the bibliography: VAF system using the intensity-normalized images,  a combination of intensity normalization strategies and classifiers (VAF-IN) \cite{Illan2012}, a SVD-based approach \cite{Segovia2012} and EMD using the third independent mode function (IMF3) \cite{Rojas2012}.}
 	\label{tab:comparison}
 \end{table*}
+% DONE
+
 
 In Table \ref{tab:comparison}, performance values at the operation point are shown for Experiment 1 (using five texture features: Homogeneity, Cluster shade, Cluster tendency, Correlation and energy) and for Experiment 2 (using Relative Entropy, FDR or Student's $t$-Test). These values are compared with the VAF, SVD and EMD approaches previously cited. We can observe that the performance values obtained with Experiment 1 are very similar to other state-of-the-art methods, like the proposed in \cite{Segovia2012,Rojas2012}, whereas the methodology used in Experiment 2 outperform all previously used methods. Particularly, as we previously mentioned, the use of either FDR or $t$-Test to select the most discriminant features gives us results over a PL of $26$ and sensitivity over $99\%$, which proves the ability of some Haralick Textures, and the combination of them, in characterizing the different Parkinson's Disease patterns, and the robustness of the proposed methods. 
