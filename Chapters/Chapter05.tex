@@ -190,7 +190,7 @@ In experiment 2 we pool together all features derived from all \acp{GLCM}, and u
 	\subfloat[Original images]{\includegraphics[width=0.5\textwidth]{Graphics/ch5/accuracyOverIth_no.eps}\label{fig:averageAcc_IthNorm_no}}
 	\subfloat[Integral Normalization]{\includegraphics[width=0.5\textwidth]{Graphics/ch5/accuracyOverIth_int.eps}\label{fig:averageAcc_IthNorm_int}}\\
 	\subfloat[Normalization to the Maximum]{\includegraphics[width=0.5\textwidth]{Graphics/ch5/accuracyOverIth_max.eps}\label{fig:averageAcc_IthNorm_max}}
-	\caption{Accuracy obtained by averaging all accuracy values using a given volume selection threshold $I_{th}$}
+	\caption{Accuracy obtained by averaging all accuracy values using a given volume selection threshold $I_{th}$.}
 	\label{fig:averageAcc_IthNorm}
 \end{figure}
 
@@ -218,31 +218,31 @@ After describing the general behaviour, we can take another look at the differen
 \begin{tabular}{lllccccc}
 	\toprule
 	                          & Norm.                  & Selection & $I_{th}$ & acc.  & sens. & spec. &  \%   \\ \midrule
-	\multirow{9}{*}{PPMI-DAT} & \multirow{3}{*}{Orig.} & entropy   &    30    & 0.970 & 0.972 & 0.968 & 0.983 \\
+	\multirow{9}{*}{PPMI-DAT} & \multirow{3}{*}{Orig.} & \textbf{entropy}   &    \textbf{30}    & \textbf{0.970} & \textbf{0.972} & \textbf{0.968} & \textbf{0.983} \\
 	                          &                        & t-test    &    30    & 0.966 & 0.972 & 0.962 & 0.966 \\
 	                          &                        & wilcoxon  &    30    & 0.959 & 0.954 & 0.962 & 0.858 \\ \cline{2-8}
 	                          & \multirow{3}{*}{Int.}  & entropy   &    25    & 0.966 & 0.981 & 0.955 & 0.308 \\
-	                          &                        & t-test    &    25    & 0.973 & 0.990 & 0.962 & 0.358 \\
+	                          &                        & \textbf{t-test }   &    \textbf{25}    & \textbf{0.973} & \textbf{0.990 }& \textbf{0.962} &\textbf{ 0.358} \\
 	                          &                        & wilcoxon  &    35    & 0.947 & 0.954 & 0.943 & 0.983 \\ \cline{2-8}
 	                          & \multirow{3}{*}{Max.}  & entropy   &    25    & 0.966 & 0.981 & 0.955 & 0.308 \\
-	                          &                        & t-test    &    25    & 0.973 & 0.990 & 0.962 & 0.358 \\
+	                          &                        & \textbf{t-test}    &    \textbf{25}    &\textbf{ 0.973} & \textbf{0.990} & \textbf{0.962} & \textbf{0.358} \\
 	                          &                        & wilcoxon  &    30    & 0.959 & 0.954 & 0.962 & 0.858 \\ \midrule
 	\multirow{9}{*}{VDLN-DAT} & \multirow{3}{*}{Orig.} & entropy   &    30    & 0.932 & 0.933 & 0.931 & 0.175 \\
-	                          &                        & t-test    &    30    & 0.940 & 0.955 & 0.931 & 0.175 \\
+	                          &                        &\textbf{ t-test}    &    \textbf{30}    & \textbf{0.940} & \textbf{0.955} & \textbf{0.931} & \textbf{0.175} \\
 	                          &                        & wilcoxon  &    15    & 0.898 & 0.955 & 0.863 & 0.433 \\ \cline{2-8}
-	                          & \multirow{3}{*}{Int.}  & entropy   &    25    & 0.932 & 0.977 & 0.904 & 0.100 \\
+	                          & \multirow{3}{*}{Int.}  & \textbf{entropy}   &    \textbf{25}    & \textbf{0.932} & \textbf{0.977} & \textbf{0.904} & \textbf{0.100} \\
 	                          &                        & t-test    &    25    & 0.915 & 0.955 & 0.890 & 0.100 \\
 	                          &                        & wilcoxon  &    25    & 0.915 & 0.911 & 0.917 & 0.966 \\ \cline{2-8}
 	                          & \multirow{3}{*}{Max.}  & entropy   &    20    & 0.923 & 1.000 & 0.876 & 0.233 \\
 	                          &                        & t-test    &    30    & 0.932 & 0.933 & 0.931 & 0.225 \\
-	                          &                        & wilcoxon  &    45    & 0.932 & 0.933 & 0.931 & 0.033 \\ \midrule
-	\multirow{9}{*}{VDLV-DAT} & \multirow{3}{*}{Orig.} & entropy   &    35    & 0.937 & 0.935 & 0.940 & 0.133 \\
+	                          &                        & \textbf{wilcoxon}  &    \textbf{45}    & \textbf{0.932} & \textbf{0.933} & \textbf{0.931} & \textbf{0.033} \\ \midrule
+	\multirow{9}{*}{VDLV-DAT} & \multirow{3}{*}{Orig.} & \textbf{entropy}   &    \textbf{35}    & \textbf{0.937} & \textbf{0.935} & \textbf{0.940} & \textbf{0.133 }\\
 	                          &                        & t-test    &    35    & 0.932 & 0.953 & 0.910 & 0.350 \\
 	                          &                        & wilcoxon  &    20    & 0.927 & 0.916 & 0.940 & 0.383 \\ \cline{2-8}
-	                          & \multirow{3}{*}{Int.}  & entropy   &    20    & 0.937 & 0.935 & 0.940 & 0.983 \\
+	                          & \multirow{3}{*}{Int.}  & \textbf{entropy}   &    \textbf{20}    & \textbf{0.937} & \textbf{0.935} & \textbf{0.940} & \textbf{0.983} \\
 	                          &                        & t-test    &    10    & 0.932 & 0.907 & 0.960 & 0.508 \\
 	                          &                        & wilcoxon  &    10    & 0.937 & 0.935 & 0.940 & 0.966 \\ \cline{2-8}
-	                          & \multirow{3}{*}{Max.}  & entropy   &    20    & 0.937 & 0.953 & 0.920 & 0.608 \\
+	                          & \multirow{3}{*}{Max.}  & \textbf{entropy}   &    \textbf{20}    & \textbf{0.937} & \textbf{0.953} & \textbf{0.920} & \textbf{0.608} \\
 	                          &                        & t-test    &    35    & 0.932 & 0.935 & 0.930 & 0.341 \\
 	                          &                        & wilcoxon  &    20    & 0.932 & 0.925 & 0.940 & 0.141 \\ \bottomrule
 \end{tabular}
@@ -250,18 +250,14 @@ After describing the general behaviour, we can take another look at the differen
 	\label{tab:exp3Res}
 \end{table*}
 
-This table confirms that best values are obtained generally by the relative entropy criterion, with few exceptions. 
+This table confirms that best values are obtained generally by the relative entropy criterion, with few exceptions. It also confirms that best performance is obtained when using the volume extraction method proposed in Sec.~\ref{sec:volume}, with values of $I_{th}$ between 0.25 and 0.30. As for the datasets, we see that PPMI-DAT achieves the best performance in all cases, with all selection criteria, whereas, contrary to their average performance examined in Figure~\ref{fig:averageAcc_IthNorm}, VDLN-DAT and VDLV-DAT can actually perform similarly. 
 
+The application of intensity normalization algorithms does not imply an improvement in performance, and most systems achieve good accuracy without any normalization at all. This was pointed in other analysis, and can be checked again at this table. However, there is only one benefit that can be inferred from the table, which is a decrease in number of selected features needed to achieve best performance with the PPMI-DAT. In this case, and partially in the case of VDLN-DAT as well, similar performance is obtained using either normalized or original images, but when using the normalized data, the percentage of selected features is smaller. Nevertheless, this does not hold for the VDLV-DAT, therefore we cannot consider it a general behaviour. 
 
-% DONE
-
-
-The aforementioned behaviour correspond to an average behaviour in accuracy. To take a deeper look at the different evaluation parameters and different selection criteria, peak results obtained with each selection criteria are shown on Table \ref{tab:exp3Res}. 
-
-
-This table confirms that the Mann-Whitney-Wilcoxon method can be no longer considered, as it needs more than a 50\% of the features to obtain poorer results than all others. Regarding the remaining methods, we observe that those that needed a lower amount of features (BD and RE) obtain here lower values of accuracy that those that needed a higher amount ($t$-Test and FDR). So, the choice of the best method is, in this case, a matter of trade-off between the computer performance (the number of features to estimate) and the accuracy needed. As in clinical practice, accuracy (and PL) is the parameter that needs to be maximized, we can conclude that FDR and $t$-Test are the best discrimination-ranking methods to use in this task, although all other methods reveal the ability of our system in the PD detection with an relevant performance (over 90\% of accuracy in most cases). 
+The choice of a best selection method is here a matter of trade-off between the computer performance (the number of features to estimate) and the accuracy needed. In the case of the PPMI-DAT, it is patent that using normalized images and the t-Test selection criterion achieves best performance. For VDLN-DAT is more difficult to assure that any option will perform better than others, although the t-test still performs well with the original images. Finally, with the VDLV-DAT dataset, the preferred method will be again to use the original images, since the selection of features seems more optimal, especially when using relative entropy. Anyway, all the options reveal the ability of our system in the PD detection with an relevant performance (over 90\% of accuracy in most cases). 
 
 \section{Discussion}\label{sec:ch5discuss}
+% DONE
 As discussed later in this Section, the optimum sub-volume will have a smaller size than $40\times40\times50$, and so, the maximum value of $d=10$ correspond to at least $20\%$ of the brain sub-volume selected at that point; lower frequency textural changes can be neglected for diagnosis. Furthermore, as the voxel size of all databases is approximately 2x2x2mm, the maximum textural changes are computed within a 20x20x20mm area. This is approximately half the size of the striatum, which is enough to correctly extract the textural features of the area. 
 
 
