@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016/Debian) (preloaded format=pdflatex 2016.12.7)  12 MAR 2017 21:44
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016/Debian) (preloaded format=pdflatex 2016.12.7)  13 MAR 2017 18:16
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -5544,272 +5544,280 @@ Underfull \vbox (badness 1038) has occurred while \output is active []
 /selectedFeaturesVDLN-eps-converted-to.pdf> <./Graphics/ch5/selectedFeaturesVDL
 V-eps-converted-to.pdf>]) (./Chapters/Chapter06.tex [83] [84]
 chapter 6.
-<Graphics/ch6/01-flowdiagram.pdf, id=5594, 715.40817pt x 227.98582pt>
+Package acronym Info: Label `acro:LBP' newly defined as it shall be overridden
+although it is yet undefined on input line 9.
+[85
+
+
+] <Graphics/ch6/01-flowdiagram.pdf, id=5605, 715.40817pt x 227.98582pt>
 File: Graphics/ch6/01-flowdiagram.pdf Graphic file (type pdf)
 
 <use Graphics/ch6/01-flowdiagram.pdf>
-Package pdftex.def Info: Graphics/ch6/01-flowdiagram.pdf used on input line 11.
+Package pdftex.def Info: Graphics/ch6/01-flowdiagram.pdf used on input line 18.
 
 (pdftex.def)             Requested size: 309.56717pt x 98.65121pt.
 Package acronym Info: Label `acro:AC' newly defined as it shall be overridden
-although it is yet undefined on input line 16.
-Package acronym Info: Label `acro:LBP' newly defined as it shall be overridden
-although it is yet undefined on input line 16.
- [85
-
-
- <./Graphics/ch6/01-flowdiagram.pdf>]
-<Graphics/ch6/02-projection.pdf, id=5714, 757.83125pt x 578.16pt>
-File: Graphics/ch6/02-projection.pdf Graphic file (type pdf)
-
-<use Graphics/ch6/02-projection.pdf>
-Package pdftex.def Info: Graphics/ch6/02-projection.pdf used on input line 30.
-(pdftex.def)             Requested size: 309.56717pt x 236.17375pt.
+although it is yet undefined on input line 23.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [86]
-LaTeX Font Info:    Try loading font information for U+fplmbb on input line 52.
+ [86 <./Graphics/ch6/01-flowdiagram.pdf>]
+<Graphics/ch6/02-projection.pdf, id=5726, 757.83125pt x 578.16pt>
+File: Graphics/ch6/02-projection.pdf Graphic file (type pdf)
+
+<use Graphics/ch6/02-projection.pdf>
+Package pdftex.def Info: Graphics/ch6/02-projection.pdf used on input line 37.
+(pdftex.def)             Requested size: 309.56717pt x 236.17375pt.
+ [87 <./Graphics/ch6/02-projection.pdf>]
+LaTeX Font Info:    Try loading font information for U+fplmbb on input line 59.
 
 
 (/usr/share/texlive/texmf-dist/tex/latex/psnfss/ufplmbb.fd
 File: ufplmbb.fd 2003/10/30 Fontinst v1.914 font definitions for U/fplmbb.
-) [87 <./Graphics/ch6/02-projection.pdf>]
-<Graphics/ch6/03-projections.pdf, id=5741, 1049.55504pt x 807.6829pt>
+)
+<Graphics/ch6/03-projections.pdf, id=5744, 1049.55504pt x 807.6829pt>
 File: Graphics/ch6/03-projections.pdf Graphic file (type pdf)
 
 <use Graphics/ch6/03-projections.pdf>
-Package pdftex.def Info: Graphics/ch6/03-projections.pdf used on input line 80.
+Package pdftex.def Info: Graphics/ch6/03-projections.pdf used on input line 87.
 
 (pdftex.def)             Requested size: 386.95749pt x 297.7781pt.
  [88] [89 <./Graphics/ch6/03-projections.pdf>]
-Overfull \hbox (0.24115pt too wide) in paragraph at lines 97--98
+Overfull \hbox (0.24115pt too wide) in paragraph at lines 104--105
 \T1/pplj/m/n/10.95 the tex-ture of an im-age with ap-pli-ca-tion to face recog-
 ni-tion. Later, in [[]],
  []
 
-[90]
 
-LaTeX Warning: Reference `sec:mapping' on page 91 undefined on input line 115.
+Underfull \vbox (badness 4569) has occurred while \output is active []
 
-<Graphics/ch6/04-vrlbp.pdf, id=5874, 694.93605pt x 189.97673pt>
+ [90]
+
+LaTeX Warning: Reference `sec:mapping' on page 91 undefined on input line 122.
+
+<Graphics/ch6/04-vrlbp.pdf, id=5877, 694.93605pt x 189.97673pt>
 File: Graphics/ch6/04-vrlbp.pdf Graphic file (type pdf)
 
 <use Graphics/ch6/04-vrlbp.pdf>
-Package pdftex.def Info: Graphics/ch6/04-vrlbp.pdf used on input line 132.
+Package pdftex.def Info: Graphics/ch6/04-vrlbp.pdf used on input line 139.
 (pdftex.def)             Requested size: 386.95749pt x 105.78618pt.
 
 (/usr/share/texlive/texmf-dist/tex/latex/listings/lstlang1.sty
 File: lstlang1.sty 2015/06/04 1.6 listings language file
 )
 LaTeX Font Info:    Font shape `T1/fvm/m/n' will be
-(Font)              scaled to size 8.50006pt on input line 139.
- [91 <./Graphics/ch6/04-vrlbp.pdf>]
-Overfull \hbox (8.63908pt too wide) in paragraph at lines 163--164
+(Font)              scaled to size 8.50006pt on input line 146.
+ [91]
+Overfull \hbox (8.63908pt too wide) in paragraph at lines 170--171
 []\T1/pplj/m/n/10.95 Let us note a 3D path in a cer-tain di-rec-tion $\U/zeus/m
 /n/10.95 ¨\U/zeur/m/n/10.95 '\T1/pplj/m/n/10.95 , \U/zeur/m/n/10.95 ^^R\U/zeus/
 m/n/10.95 ©$ \T1/pplj/m/n/10.95 as a Markov Model[[]]: 
  []
 
-[92] [93] [94] <Graphics/ch6/cuts.pdf, id=5968, 1043.68521pt x 943.86073pt>
+
+Underfull \vbox (badness 2181) has occurred while \output is active []
+
+ [92 <./Graphics/ch6/04-vrlbp.pdf>] [93] [94]
+<Graphics/ch6/cuts.pdf, id=5970, 1043.68521pt x 943.86073pt>
 File: Graphics/ch6/cuts.pdf Graphic file (type pdf)
 
 <use Graphics/ch6/cuts.pdf>
-Package pdftex.def Info: Graphics/ch6/cuts.pdf used on input line 262.
+Package pdftex.def Info: Graphics/ch6/cuts.pdf used on input line 269.
 (pdftex.def)             Requested size: 144.54pt x 130.71379pt.
- [95]
-Underfull \vbox (badness 7944) has occurred while \output is active []
 
- [96 <./Graphics/ch6/cuts.pdf>]
-Overfull \hbox (83.31136pt too wide) in paragraph at lines 296--297
+Underfull \vbox (badness 1152) has occurred while \output is active []
+
+ [95]
+[96 <./Graphics/ch6/cuts.pdf>]
+Overfull \hbox (83.31136pt too wide) in paragraph at lines 303--304
 \T1/pplj/m/n/10.95 trast[[][]103[][]], Cor-re-la-tion[[][]103[][]], Dissimilari
 ty[[]], En-ergy[[][]103[][]], Entropy[[]],
  []
 
 
-Overfull \hbox (12.2789pt too wide) in paragraph at lines 296--297
+Overfull \hbox (12.2789pt too wide) in paragraph at lines 303--304
 \T1/pplj/m/n/10.95 Ho-mo-gene-ity[[][]103[][]], Dif-fer-ence Vari-ance[[][]103[
 ][]] (D. Vari-ance), Dif-fer-ence En-tropy[[][]103[][]]
  []
 
 [97]
+Underfull \vbox (badness 1515) has occurred while \output is active []
 
-LaTeX Warning: Reference `sec:selection' on page 98 undefined on input line 332
+ [98]
+
+LaTeX Warning: Reference `sec:selection' on page 99 undefined on input line 339
 .
 
-<Graphics/ch6/05-regions_cortical.pdf, id=6036, 426.59375pt x 218.8175pt>
+<Graphics/ch6/05-regions_cortical.pdf, id=6045, 426.59375pt x 218.8175pt>
 File: Graphics/ch6/05-regions_cortical.pdf Graphic file (type pdf)
 
 <use Graphics/ch6/05-regions_cortical.pdf>
 Package pdftex.def Info: Graphics/ch6/05-regions_cortical.pdf used on input lin
-e 339.
+e 346.
 (pdftex.def)             Requested size: 270.86905pt x 138.94756pt.
 
-<Graphics/ch6/06-regions_subcortical.pdf, id=6037, 427.5975pt x 218.8175pt>
+<Graphics/ch6/06-regions_subcortical.pdf, id=6046, 427.5975pt x 218.8175pt>
 File: Graphics/ch6/06-regions_subcortical.pdf Graphic file (type pdf)
 
 <use Graphics/ch6/06-regions_subcortical.pdf>
 Package pdftex.def Info: Graphics/ch6/06-regions_subcortical.pdf used on input 
-line 347.
+line 354.
 (pdftex.def)             Requested size: 270.86905pt x 138.61366pt.
 
 
-LaTeX Warning: Reference `sec:mapping' on page 98 undefined on input line 354.
+LaTeX Warning: Reference `sec:mapping' on page 99 undefined on input line 361.
 
-<Graphics/ch6/07-tmaps.pdf, id=6039, 1050.97673pt x 949.01132pt>
+<Graphics/ch6/07-tmaps.pdf, id=6048, 1050.97673pt x 949.01132pt>
 File: Graphics/ch6/07-tmaps.pdf Graphic file (type pdf)
 
 <use Graphics/ch6/07-tmaps.pdf>
-Package pdftex.def Info: Graphics/ch6/07-tmaps.pdf used on input line 358.
+Package pdftex.def Info: Graphics/ch6/07-tmaps.pdf used on input line 365.
 (pdftex.def)             Requested size: 348.25937pt x 314.46349pt.
- [98] [99 <./Graphics/ch6/05-regions_cortical.pdf> <./Graphics/ch6/06-regions_s
-ubcortical.pdf>] [100 <./Graphics/ch6/07-tmaps.pdf>] <Graphics/ch6/08-Tmap4LayA
-verage.pdf, id=6287, 1043.9pt x 1113.15875pt>
+ [99] [100 <./Graphics/ch6/05-regions_cortical.pdf> <./Graphics/ch6/06-regions_
+subcortical.pdf>] [101 <./Graphics/ch6/07-tmaps.pdf>] <Graphics/ch6/08-Tmap4Lay
+Average.pdf, id=6296, 1043.9pt x 1113.15875pt>
 File: Graphics/ch6/08-Tmap4LayAverage.pdf Graphic file (type pdf)
 
 <use Graphics/ch6/08-Tmap4LayAverage.pdf>
 Package pdftex.def Info: Graphics/ch6/08-Tmap4LayAverage.pdf used on input line
- 376.
+ 383.
 (pdftex.def)             Requested size: 386.95749pt x 412.62663pt.
-
-<Graphics/ch6/09-tmaps_vrlbp.pdf, id=6298, 695.10251pt x 225.27542pt>
+ [102] [103 <./Graphics/ch6/08-Tmap4LayAverage.pdf>]
+<Graphics/ch6/09-tmaps_vrlbp.pdf, id=6338, 695.10251pt x 225.27542pt>
 File: Graphics/ch6/09-tmaps_vrlbp.pdf Graphic file (type pdf)
 
 <use Graphics/ch6/09-tmaps_vrlbp.pdf>
-Package pdftex.def Info: Graphics/ch6/09-tmaps_vrlbp.pdf used on input line 388
+Package pdftex.def Info: Graphics/ch6/09-tmaps_vrlbp.pdf used on input line 395
 .
 (pdftex.def)             Requested size: 386.95749pt x 125.40744pt.
+ [104 <./Graphics/ch6/09-tmaps_vrlbp.pdf>]
+Underfull \vbox (badness 1325) has occurred while \output is active []
 
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [101]
-[102 <./Graphics/ch6/08-Tmap4LayAverage.pdf>] [103 <./Graphics/ch6/09-tmaps_vrl
-bp.pdf>] [104]
-<Graphics/ch6/10-comparisonPerformance.pdf, id=6467, 650.43pt x 738.76012pt>
+ [105]
+<Graphics/ch6/10-comparisonPerformance.pdf, id=6477, 650.43pt x 738.76012pt>
 File: Graphics/ch6/10-comparisonPerformance.pdf Graphic file (type pdf)
 
 <use Graphics/ch6/10-comparisonPerformance.pdf>
 Package pdftex.def Info: Graphics/ch6/10-comparisonPerformance.pdf used on inpu
-t line 457.
+t line 464.
 (pdftex.def)             Requested size: 348.25937pt x 395.56529pt.
 
-<Graphics/ch6/11-layerPerf.pdf, id=6472, 855.195pt x 1088.065pt>
+<Graphics/ch6/11-layerPerf.pdf, id=6482, 855.195pt x 1088.065pt>
 File: Graphics/ch6/11-layerPerf.pdf Graphic file (type pdf)
 
 <use Graphics/ch6/11-layerPerf.pdf>
-Package pdftex.def Info: Graphics/ch6/11-layerPerf.pdf used on input line 466.
+Package pdftex.def Info: Graphics/ch6/11-layerPerf.pdf used on input line 473.
 (pdftex.def)             Requested size: 348.25937pt x 443.08789pt.
- [105] [106 <./Graphics/ch6/10-comparisonPerformance.pdf>] [107 <./Graphics/ch6
+ [106] [107 <./Graphics/ch6/10-comparisonPerformance.pdf>] [108 <./Graphics/ch6
 /11-layerPerf.pdf>]
-<Graphics/ch6/gaussian.pdf, id=8369, 348.36548pt x 287.55731pt>
+<Graphics/ch6/gaussian.pdf, id=8378, 348.36548pt x 287.55731pt>
 File: Graphics/ch6/gaussian.pdf Graphic file (type pdf)
 
 <use Graphics/ch6/gaussian.pdf>
-Package pdftex.def Info: Graphics/ch6/gaussian.pdf used on input line 487.
+Package pdftex.def Info: Graphics/ch6/gaussian.pdf used on input line 494.
 (pdftex.def)             Requested size: 108.405pt x 89.47969pt.
 
-<Graphics/ch6/spire.pdf, id=8371, 339.55856pt x 517.53348pt>
+<Graphics/ch6/spire.pdf, id=8380, 339.55856pt x 517.53348pt>
 File: Graphics/ch6/spire.pdf Graphic file (type pdf)
 
 <use Graphics/ch6/spire.pdf>
-Package pdftex.def Info: Graphics/ch6/spire.pdf used on input line 496.
+Package pdftex.def Info: Graphics/ch6/spire.pdf used on input line 503.
 (pdftex.def)             Requested size: 108.405pt x 165.21924pt.
- [108 <./Graphics/ch6/gaussian.pdf>]
-<Graphics/ch6/spain.pdf, id=8398, 557.21175pt x 459.7175pt>
+ [109 <./Graphics/ch6/gaussian.pdf>]
+<Graphics/ch6/spain.pdf, id=8407, 557.21175pt x 459.7175pt>
 File: Graphics/ch6/spain.pdf Graphic file (type pdf)
 
 <use Graphics/ch6/spain.pdf>
-Package pdftex.def Info: Graphics/ch6/spain.pdf used on input line 506.
+Package pdftex.def Info: Graphics/ch6/spain.pdf used on input line 513.
 (pdftex.def)             Requested size: 270.86905pt x 223.4818pt.
 
-<Graphics/ch6/accuracyPaths2.pdf, id=8402, 922.85912pt x 671.83388pt>
+Underfull \vbox (badness 7613) has occurred while \output is active []
+
+ [110 <./Graphics/ch6/spire.pdf>]
+<Graphics/ch6/accuracyPaths2.pdf, id=8442, 922.85912pt x 671.83388pt>
 File: Graphics/ch6/accuracyPaths2.pdf Graphic file (type pdf)
 
 <use Graphics/ch6/accuracyPaths2.pdf>
-Package pdftex.def Info: Graphics/ch6/accuracyPaths2.pdf used on input line 520
+Package pdftex.def Info: Graphics/ch6/accuracyPaths2.pdf used on input line 527
 .
 (pdftex.def)             Requested size: 386.95749pt x 281.69673pt.
- [109 <./Graphics/ch6/spire.pdf>]
-Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [110 <./Graphics/ch6/spain.pdf>] [111 <./Graphics/ch6/accuracyPaths2.pdf>]
-Underfull \vbox (badness 10000) has occurred while \output is active []
+Underfull \vbox (badness 1320) has occurred while \output is active []
 
- [112]
+ [111 <./Graphics/ch6/spain.pdf>] [112 <./Graphics/ch6/accuracyPaths2.pdf>]
+Underfull \vbox (badness 4441) has occurred while \output is active []
 
-LaTeX Warning: Reference `sec:mapping' on page 113 undefined on input line 589.
+ [113]
+
+LaTeX Warning: Reference `sec:mapping' on page 114 undefined on input line 596.
 
 
-<Graphics/ch6/12-performance.pdf, id=8625, 650.43pt x 361.35pt>
+<Graphics/ch6/12-performance.pdf, id=8634, 650.43pt x 361.35pt>
 File: Graphics/ch6/12-performance.pdf Graphic file (type pdf)
 
 <use Graphics/ch6/12-performance.pdf>
-Package pdftex.def Info: Graphics/ch6/12-performance.pdf used on input line 593
+Package pdftex.def Info: Graphics/ch6/12-performance.pdf used on input line 600
 .
 (pdftex.def)             Requested size: 348.25937pt x 193.483pt.
-
-Overfull \hbox (5.6322pt too wide) in paragraph at lines 600--601
+ [114 <./Graphics/ch6/12-performance.pdf>]
+Overfull \hbox (5.6322pt too wide) in paragraph at lines 607--608
 []\T1/pplj/m/n/10.95 Surface and Thick-ness are highly re-lated to other mea-su
 res pro-vided by widely-
  []
 
-[113 <./Graphics/ch6/12-performance.pdf>]
 
-LaTeX Warning: Reference `sec:mapping' on page 114 undefined on input line 606.
-
+LaTeX Warning: Reference `sec:mapping' on page 115 undefined on input line 613.
 
 
-LaTeX Warning: Reference `sec:mapping' on page 114 undefined on input line 608.
+
+LaTeX Warning: Reference `sec:mapping' on page 115 undefined on input line 615.
 
 
-[114]
+[115]
 
-LaTeX Warning: Reference `sec:mapping' on page 115 undefined on input line 616.
+LaTeX Warning: Reference `sec:mapping' on page 116 undefined on input line 623.
 
 
-<Graphics/ch6/13-ROC.pdf, id=8810, 692.65979pt x 323.18942pt>
+<Graphics/ch6/13-ROC.pdf, id=8819, 692.65979pt x 323.18942pt>
 File: Graphics/ch6/13-ROC.pdf Graphic file (type pdf)
 
 <use Graphics/ch6/13-ROC.pdf>
-Package pdftex.def Info: Graphics/ch6/13-ROC.pdf used on input line 623.
+Package pdftex.def Info: Graphics/ch6/13-ROC.pdf used on input line 630.
 (pdftex.def)             Requested size: 309.56717pt x 144.43773pt.
- [115 <./Graphics/ch6/13-ROC.pdf>]
-Underfull \vbox (badness 3068) has occurred while \output is active []
+ [116 <./Graphics/ch6/13-ROC.pdf>]
+Underfull \vbox (badness 1571) has occurred while \output is active []
 
- [116]
-<Graphics/ch6/radia&structures.pdf, id=8969, 470.55798pt x 452.08899pt>
+ [117]
+<Graphics/ch6/radia&structures.pdf, id=8979, 470.55798pt x 452.08899pt>
 File: Graphics/ch6/radia&structures.pdf Graphic file (type pdf)
 
 <use Graphics/ch6/radia&structures.pdf>
 Package pdftex.def Info: Graphics/ch6/radia&structures.pdf used on input line 6
-46.
+53.
 (pdftex.def)             Requested size: 386.95749pt x 371.7846pt.
 
-Overfull \hbox (62.54886pt too wide) in paragraph at lines 654--655
+Overfull \hbox (62.54886pt too wide) in paragraph at lines 661--662
 \T1/pplj/m/n/10.95 the NINCDS-ADRDA cri-te-ria for AD di-ag-no-sis[[][]56[][]] 
 and is widely accepted[[],
  []
 
 
-Overfull \hbox (88.04181pt too wide) in paragraph at lines 654--655
+Overfull \hbox (88.04181pt too wide) in paragraph at lines 661--662
 \T1/pplj/m/n/10.95 round-ing struc-tures (Amyg-dala, Parahip-pocam-pal and Fusi
 form Gyrus) as well[[],
  []
 
-
-Underfull \vbox (badness 3803) has occurred while \output is active []
-
- [117]
-[118 <./Graphics/ch6/radia&structures.pdf>]
+[118] [119 <./Graphics/ch6/radia&structures.pdf>]
 Underfull \vbox (badness 1412) has occurred while \output is active []
 
- [119])
-[120] [121
+ [120])
+[121] [122
 
 
+] [123
 
 
-] [122] (./Chapters/Chapter07.tex
+] [124] (./Chapters/Chapter07.tex
 chapter 7.
 
 Overfull \hbox (6.43155pt too wide) in paragraph at lines 24--44
@@ -5820,7 +5828,7 @@ nd eti-o-log-i-cal) het-ero-geneities
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [123
+ [125
 
 
 ]
@@ -5836,21 +5844,21 @@ converted-to.pdf Graphics/ch8/FIGURE01.eps>
 (epstopdf)             \includegraphics on input line 52.
 Package epstopdf Info: Output file is already uptodate.
 
-<Graphics/ch8/FIGURE01-eps-converted-to.pdf, id=9087, 367.3725pt x 152.57pt>
+<Graphics/ch8/FIGURE01-eps-converted-to.pdf, id=9100, 367.3725pt x 152.57pt>
 File: Graphics/ch8/FIGURE01-eps-converted-to.pdf Graphic file (type pdf)
 
 <use Graphics/ch8/FIGURE01-eps-converted-to.pdf>
 Package pdftex.def Info: Graphics/ch8/FIGURE01-eps-converted-to.pdf used on inp
 ut line 52.
 (pdftex.def)             Requested size: 270.86905pt x 112.4996pt.
- [124] [125 <./Graphics/ch8/FIGURE01-eps-converted-to.pdf>]
-<Graphics/ch8/weighting2.pdf, id=9144, 561.89923pt x 322.50487pt>
+ [126] [127 <./Graphics/ch8/FIGURE01-eps-converted-to.pdf>]
+<Graphics/ch8/weighting2.pdf, id=9158, 561.89923pt x 322.50487pt>
 File: Graphics/ch8/weighting2.pdf Graphic file (type pdf)
 
 <use Graphics/ch8/weighting2.pdf>
 Package pdftex.def Info: Graphics/ch8/weighting2.pdf used on input line 118.
 (pdftex.def)             Requested size: 270.86905pt x 155.46983pt.
- [126]
+ [128]
 Package epstopdf Info: Source file: <Graphics/ch8/FIGURE02.eps>
 (epstopdf)                    date: 2016-10-06 10:13:55
 (epstopdf)                    size: 57832 bytes
@@ -5863,7 +5871,7 @@ converted-to.pdf Graphics/ch8/FIGURE02.eps>
 (epstopdf)             \includegraphics on input line 127.
 Package epstopdf Info: Output file is already uptodate.
 
-<Graphics/ch8/FIGURE02-eps-converted-to.pdf, id=9156, 841.1425pt x 302.12875pt>
+<Graphics/ch8/FIGURE02-eps-converted-to.pdf, id=9169, 841.1425pt x 302.12875pt>
 File: Graphics/ch8/FIGURE02-eps-converted-to.pdf Graphic file (type pdf)
 <use Graphics/ch8/FIGURE02-eps-converted-to.pdf>
 Package pdftex.def Info: Graphics/ch8/FIGURE02-eps-converted-to.pdf used on inp
@@ -5872,7 +5880,7 @@ ut line 127.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [127 <./Graphics/ch8/weighting2.pdf> <./Graphics/ch8/FIGURE02-eps-converted-to
+ [129 <./Graphics/ch8/weighting2.pdf> <./Graphics/ch8/FIGURE02-eps-converted-to
 .pdf>]
 Package acronym Info: Label `acro:CBM' newly defined as it shall be overridden
 although it is yet undefined on input line 135.
@@ -5888,7 +5896,7 @@ Overfull \hbox (41.07738pt too wide) in paragraph at lines 139--140
  10-fold cross-va-li-da-tion [[]].
  []
 
-[128]
+[130]
 Package acronym Info: Label `acro:synT1' newly defined as it shall be overridde
 n
 although it is yet undefined on input line 154.
@@ -5904,14 +5912,14 @@ converted-to.pdf Graphics/ch8/FIGURE03.eps>
 (epstopdf)             \includegraphics on input line 177.
 Package epstopdf Info: Output file is already uptodate.
 
-<Graphics/ch8/FIGURE03-eps-converted-to.pdf, id=9258, 469.755pt x 437.635pt>
+<Graphics/ch8/FIGURE03-eps-converted-to.pdf, id=9272, 469.755pt x 437.635pt>
 File: Graphics/ch8/FIGURE03-eps-converted-to.pdf Graphic file (type pdf)
 
 <use Graphics/ch8/FIGURE03-eps-converted-to.pdf>
 Package pdftex.def Info: Graphics/ch8/FIGURE03-eps-converted-to.pdf used on inp
 ut line 177.
 (pdftex.def)             Requested size: 386.95749pt x 360.49907pt.
- [129] [130 <./Graphics/ch8/FIGURE03-eps-converted-to.pdf>]
+ [131] [132 <./Graphics/ch8/FIGURE03-eps-converted-to.pdf>]
 Package epstopdf Info: Source file: <Graphics/ch8/FIGURE04.eps>
 (epstopdf)                    date: 2016-01-20 12:00:33
 (epstopdf)                    size: 4554548 bytes
@@ -5924,14 +5932,14 @@ converted-to.pdf Graphics/ch8/FIGURE04.eps>
 (epstopdf)             \includegraphics on input line 293.
 Package epstopdf Info: Output file is already uptodate.
 
-<Graphics/ch8/FIGURE04-eps-converted-to.pdf, id=9341, 469.755pt x 437.635pt>
+<Graphics/ch8/FIGURE04-eps-converted-to.pdf, id=9354, 469.755pt x 437.635pt>
 File: Graphics/ch8/FIGURE04-eps-converted-to.pdf Graphic file (type pdf)
 
 <use Graphics/ch8/FIGURE04-eps-converted-to.pdf>
 Package pdftex.def Info: Graphics/ch8/FIGURE04-eps-converted-to.pdf used on inp
 ut line 293.
 (pdftex.def)             Requested size: 386.95749pt x 360.49907pt.
- [131] [132] [133] [134 <./Graphics/ch8/FIGURE04-eps-converted-to.pdf>]
+ [133] [134] [135] [136 <./Graphics/ch8/FIGURE04-eps-converted-to.pdf>]
 Package epstopdf Info: Source file: <Graphics/ch8/FIGURE05.eps>
 (epstopdf)                    date: 2016-06-28 11:33:37
 (epstopdf)                    size: 3657438 bytes
@@ -5944,7 +5952,7 @@ converted-to.pdf Graphics/ch8/FIGURE05.eps>
 (epstopdf)             \includegraphics on input line 315.
 Package epstopdf Info: Output file is already uptodate.
 
-<Graphics/ch8/FIGURE05-eps-converted-to.pdf, id=9493, 464.73625pt x 440.64626pt
+<Graphics/ch8/FIGURE05-eps-converted-to.pdf, id=9507, 464.73625pt x 440.64626pt
 >
 File: Graphics/ch8/FIGURE05-eps-converted-to.pdf Graphic file (type pdf)
  <use Graphics/ch8/FIGURE05-eps-converted-to.pdf>
@@ -5954,12 +5962,12 @@ ut line 315.
 
 Underfull \vbox (badness 3068) has occurred while \output is active []
 
- [135]
-[136 <./Graphics/ch8/FIGURE05-eps-converted-to.pdf>] [137] [138] [139]
+ [137]
+[138 <./Graphics/ch8/FIGURE05-eps-converted-to.pdf>] [139] [140] [141]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [140])
-(./Chapters/Chapter08.tex [141] [142
+ [142])
+(./Chapters/Chapter08.tex [143] [144
 
 
 ]
@@ -5976,7 +5984,7 @@ ion-eps-converted-to.pdf Graphics/ch9/SchemaGeneration.eps>
 (epstopdf)             \includegraphics on input line 8.
 Package epstopdf Info: Output file is already uptodate.
 
-<Graphics/ch9/SchemaGeneration-eps-converted-to.pdf, id=9681, 599.23875pt x 165
+<Graphics/ch9/SchemaGeneration-eps-converted-to.pdf, id=9694, 599.23875pt x 165
 .61874pt>
 File: Graphics/ch9/SchemaGeneration-eps-converted-to.pdf Graphic file (type pdf
 )
@@ -5985,28 +5993,28 @@ Package pdftex.def Info: Graphics/ch9/SchemaGeneration-eps-converted-to.pdf use
 d on input line 8.
 (pdftex.def)             Requested size: 386.95749pt x 106.95088pt.
 
-<Graphics/ch9/originalNOR.pdf, id=9685, 1175.2909pt x 130.086pt>
+<Graphics/ch9/originalNOR.pdf, id=9698, 1175.2909pt x 130.086pt>
 File: Graphics/ch9/originalNOR.pdf Graphic file (type pdf)
 
 <use Graphics/ch9/originalNOR.pdf>
 Package pdftex.def Info: Graphics/ch9/originalNOR.pdf used on input line 17.
 (pdftex.def)             Requested size: 270.86905pt x 29.98067pt.
 
-<Graphics/ch9/originalAD.pdf, id=9686, 1175.2909pt x 130.086pt>
+<Graphics/ch9/originalAD.pdf, id=9699, 1175.2909pt x 130.086pt>
 File: Graphics/ch9/originalAD.pdf Graphic file (type pdf)
 
 <use Graphics/ch9/originalAD.pdf>
 Package pdftex.def Info: Graphics/ch9/originalAD.pdf used on input line 18.
 (pdftex.def)             Requested size: 270.86905pt x 29.98067pt.
 
-<Graphics/ch9/generatedNOR.pdf, id=9687, 1175.2909pt x 130.086pt>
+<Graphics/ch9/generatedNOR.pdf, id=9700, 1175.2909pt x 130.086pt>
 File: Graphics/ch9/generatedNOR.pdf Graphic file (type pdf)
 
 <use Graphics/ch9/generatedNOR.pdf>
 Package pdftex.def Info: Graphics/ch9/generatedNOR.pdf used on input line 19.
 (pdftex.def)             Requested size: 270.86905pt x 29.98067pt.
 
-<Graphics/ch9/generatedAD.pdf, id=9688, 1175.2909pt x 130.086pt>
+<Graphics/ch9/generatedAD.pdf, id=9701, 1175.2909pt x 130.086pt>
 File: Graphics/ch9/generatedAD.pdf Graphic file (type pdf)
 
 <use Graphics/ch9/generatedAD.pdf>
@@ -6021,7 +6029,7 @@ although it is yet undefined on input line 26.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [143 <./Graphics/ch9/SchemaGeneration-eps-converted-to.pdf>] [144 <./Graphics/
+ [145 <./Graphics/ch9/SchemaGeneration-eps-converted-to.pdf>] [146 <./Graphics/
 ch9/originalNOR.pdf> <./Graphics/ch9/originalAD.pdf
 
 pdfTeX warning: /usr/bin/pdflatex (file ./Graphics/ch9/originalAD.pdf): PDF inc
@@ -6038,20 +6046,20 @@ clusion: multiple pdfs with page group included in a single page
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[145]) [146] [147
+[147]) [148] [149
 
 
 
 
-] [148] (./Chapters/Chapter09.tex
+] [150] (./Chapters/Chapter09.tex
 chapter 9.
-) [149
+) [151
 
 
-] [150
+] [152
 
 
-] [151] [152]
+] [153] [154]
 \openout2 = `Chapters/Chapter0A.aux'.
 
  (./Chapters/Chapter0A.tex
@@ -6067,11 +6075,11 @@ Underfull \hbox (badness 10000) in alignment at lines 25--25
 [][][][][] 
  []
 
-[153
+[155
 
 
 
-] [154]
+] [156]
 Overfull \hbox (2.69766pt too wide) in paragraph at lines 88--89
 []\T1/pplj/m/n/10.95 Data used in the prepa-ra-tion of this ar-ti-cle were ob-t
 ained from the Alzheimer's
@@ -6089,23 +6097,23 @@ Overfull \hbox (2.69766pt too wide) in paragraph at lines 90--91
 ained from the Alzheimer's
  []
 
-[155]
+[157]
 Underfull \vbox (badness 4913) has occurred while \output is active []
 
- [156]
-[157]) [158]
+ [158]
+[159]) [160]
 \openout2 = `Chapters/Chapter0B.aux'.
 
  (./Chapters/Chapter0B.tex
 chapter B.
 Package acronym Info: Label `acro:SVM' newly defined as it shall be overridden
 although it is yet undefined on input line 7.
-[159
+[161
 
 
 
 
-]) [160]
+]) [162]
 \openout2 = `FrontBackMatter/Bibliography.aux'.
 
  (./FrontBackMatter/Bibliography.tex)
@@ -6120,7 +6128,7 @@ Overfull \hbox (8.4337pt too wide) in paragraph at lines 103--103
 -reb, Leslie Williams,
  []
 
-[161
+[163
 
 
 
@@ -6133,7 +6141,7 @@ Overfull \hbox (16.74709pt too wide) in paragraph at lines 103--103
 n-stein. ^^P  Anatom-
  []
 
-[162]
+[164]
 Overfull \hbox (0.7099pt too wide) in paragraph at lines 103--103
 []\T1/pplj/m/n/10.95 Katherine S. But-ton, John P. A. Ioan-ni-dis, Claire Mokry
 sz, Brian A. Nosek,
@@ -6145,13 +6153,13 @@ Overfull \hbox (21.88658pt too wide) in paragraph at lines 103--103
 on's Dis-ease on DaTSCAN
  []
 
-[163]
+[165]
 Overfull \hbox (6.37051pt too wide) in paragraph at lines 103--103
 \T1/pplj/m/n/10.95 González. ^^P  Com-puter Aided Di-ag-no-sis tool for Alzheim
 er's Dis-ease based
  []
 
-[164]
+[166]
 Overfull \hbox (0.50772pt too wide) in paragraph at lines 103--103
 \T1/pplj/m/n/10.95 ^^P  GMM based SPECT im-age clas-si-fi-ca-tion for the di-ag
 -no-sis of Alzheimer's
@@ -6163,20 +6171,20 @@ Overfull \hbox (1.9533pt too wide) in paragraph at lines 103--103
 D: 21659911, pp. 699^^U707. \T1/pplj/m/sc/10.95 issn\T1/pplj/m/n/10.95 : 1473-
  []
 
-[165]
+[167]
 Overfull \hbox (0.593pt too wide) in paragraph at lines 103--103
 \T1/pplj/m/sc/10.95 issn\T1/pplj/m/n/10.95 : 1053-8119. \T1/pplj/m/sc/10.95 url
 \T1/pplj/m/n/10.95 : [][]$\T1/fvm/m/n/10.95 http : / / www . sciencedirect . co
 m / science / article /
  []
 
-[166]
+[168]
 Overfull \hbox (14.37453pt too wide) in paragraph at lines 103--103
 \T1/pplj/m/it/10.95 Con-fer-ence on Bio-com-pu-ta-tion, Bioin-for-mat-ics, and 
 Biomed-i-cal Tech-nolo-gies \T1/pplj/m/n/10.95 (2008),
  []
 
-[167]
+[169]
 Overfull \hbox (43.34398pt too wide) in paragraph at lines 103--103
 \T1/pplj/m/n/10.95 ^^P  Us-ing a ref-er-ence tis-sue model with spa-tial con-st
 raint to quan-tify [11C]Pittsburgh
@@ -6194,7 +6202,7 @@ Overfull \hbox (4.55508pt too wide) in paragraph at lines 103--103
 and Werner Poewe.
  []
 
-[168] [169] [170] [171] [172] 
+[170] [171] [172] [173] [174] 
 AED: pageslts setting LastPage 
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 105.
 Package atveryend Info: Executing hook `AfterLastShipout' on input line 105.
@@ -6244,9 +6252,9 @@ Package logreq Info: Writing requests to 'ArsClassica.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 31462 strings out of 493013
- 572518 string characters out of 6135682
- 1514847 words of memory out of 5000000
+ 31464 strings out of 493013
+ 572534 string characters out of 6135682
+ 1516681 words of memory out of 5000000
  33217 multiletter control sequences out of 15000+600000
  173975 words of font info for 291 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
@@ -6280,10 +6288,10 @@ hvr.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/palatino/uplb8a.pfb></us
 r/share/texlive/texmf-dist/fonts/type1/urw/palatino/uplr8a.pfb></usr/share/texl
 ive/texmf-dist/fonts/type1/urw/palatino/uplri8a.pfb></usr/share/texlive/texmf-d
 ist/fonts/type1/urw/zapfding/uzdr.pfb>
-Output written on ArsClassica.pdf (194 pages, 22312898 bytes).
+Output written on ArsClassica.pdf (196 pages, 22314676 bytes).
 PDF statistics:
- 10616 PDF objects out of 10688 (max. 8388607)
- 6086 compressed objects within 61 object streams
- 895 named destinations out of 1000 (max. 500000)
+ 10629 PDF objects out of 10688 (max. 8388607)
+ 6097 compressed objects within 61 object streams
+ 897 named destinations out of 1000 (max. 500000)
  52350 words of extra memory for PDF output out of 61914 (max. 10000000)
 

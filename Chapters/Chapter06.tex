@@ -2,12 +2,11 @@
 \chapter{Spherical Brain Mapping}\label{ch:sbm}
 %************************************************
 \section{Introduction}
-In this section we will deal with a feature extraction technique called \acf{SBM}. \ac{SBM} is based on the use of spherical coordinates to extract radial features from \ac{MRI} images, segmented. Using the features at each coordinate, we can characterize the texture in each direction, and even project the information to a bidimensional maps, which provides a significant feature reduction  
+In this section we will deal with a feature extraction technique called \acf{SBM}. \ac{SBM} is based on the use of spherical coordinates to extract radial features from \ac{MRI} images, segmented. Using the features at each coordinate, we can characterize the texture in each direction, and even project the information to a bidimensional maps, which provides a significant feature reduction and a visual aid for diagnosis. 
 
-% DONE
+The most basic form is the standard \ac{SBM} \cite{Martinez-Murcia2014225,Martinez-Murcia2015}, in which all voxels crossed by a rectilinear vector in a spherical coordinate pair ($\theta,\varphi$) are selected, and then, a certain measure is extracted from that set. In this sense, statistical and morphological measures such as tissue thickness, average or entropy, among others, are computed. 
 
-The main aim of this work is to provide a new framework that allows the mapping  of a 3D brain image to a two-dimensional space by means of some statistical measures \cite{Martinez-Murcia2015}. The system is based on a conversion from 3D spherical to 2D rectangular coordinates. For each spherical coordinate pair ($\theta,\varphi$), a vector containing all voxels  in the radius is selected, and a number of values are computed, including statistical values (average, entropy, kurtosis) and morphological values (tissue thickness, distance to the central point, number of non-zero blocks). These values conform a two-dimensional image that can be computationally or even visually analysed. In this paper, we proceed using an statistical mask computed using a two-sample $t$-Test, and a SVM classifier. We have achieved performance results that match those obtained with a priori information but using a complete automated procedure, which furthermore reduces the dimensionality of the original images from more than two million voxels to hardly tens of thousands pixels. These maps can be successfully used by itself, but also allow further processing by using them combined and applying some univariate or multivariate algorithms for dimensional reduction. 
-
+Further improvements can be made to this simple approach, for example, with a layering extension \cite{Martinez-Murcia2015}, in which the mapping vector is divided in $n$ subsets containing the same number of voxels. Therefore, instead of a single map, we can obtain $n$ maps at different distances from the centre of the brain. Another useful approach is the characterization of texture features via \acf{LBP}, computed around the mapping vector, which yielded very good results in \cite{Martinez-MurciaVRLBP}.
 
 \begin{figure*}[htp]
 	\centering
@@ -15,6 +14,13 @@ The main aim of this work is to provide a new framework that allows the mapping 
 	\caption{Flow diagram of the procedure used in the textural analysis of projected MR brain images.}
 	\label{fig:flowdiagram}
 \end{figure*}
+
+The most relevant extension to the \ac{SBM} was proposed in \cite{Martinez-Murcia2016}. In this work, 
+
+% DONE
+
+The main aim of this work is to provide a new framework that allows the mapping  of a 3D brain image to a two-dimensional space by means of some statistical measures \cite{Martinez-Murcia2015}. The system is based on a conversion from 3D spherical to 2D rectangular coordinates. For each spherical coordinate pair ($\theta,\varphi$), a vector containing all voxels  in the radius is selected, and a number of values are computed, including statistical values (average, entropy, kurtosis) and morphological values (tissue thickness, distance to the central point, number of non-zero blocks). These values conform a two-dimensional image that can be computationally or even visually analysed. In this paper, we proceed using an statistical mask computed using a two-sample $t$-Test, and a SVM classifier. We have achieved performance results that match those obtained with a priori information but using a complete automated procedure, which furthermore reduces the dimensionality of the original images from more than two million voxels to hardly tens of thousands pixels. These maps can be successfully used by itself, but also allow further processing by using them combined and applying some univariate or multivariate algorithms for dimensional reduction. 
+
 
 In \cite{Martinez-Murcia2015} a new framework called \acf{SBM} was proposed. It was intended to perform feature extraction in MR Brain Images by reducing the whole images to bidimensional maps representing a number a number of statistical and morphological measures. Each pixel in the maps was the result of computing a certain measure on a set of voxels crossed by the mapping vector, a rectilinear vector centred at the \acf{AC} and spanning over all values of azimuth and elevation angles. The bidimensional maps were related to anatomical changes such as brain atrophy or cortical thickness, yielding high performance in differential diagnosis. Furthermore, they provided a significant feature reduction, as well as a visual representation of the underlying information. An extension to the framework using texture and volumetric \acf{LBP} ~\cite{Unay2007} around the mapping vector was proposed in \cite{Martinez-MurciaVRLBP}. 
 
