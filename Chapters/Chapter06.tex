@@ -2,6 +2,9 @@
 \chapter{Spherical Brain Mapping}\label{ch:sbm}
 %************************************************
 \section{Introduction}
+In this section we will deal with a feature extraction technique called \acf{SBM}. \ac{SBM} is based on the use of spherical coordinates to extract radial features from \ac{MRI} images, segmented. Using the features at each coordinate, we can characterize the texture in each direction, and even project the information to a bidimensional maps, which provides a significant feature reduction  
+
+% DONE
 
 The main aim of this work is to provide a new framework that allows the mapping  of a 3D brain image to a two-dimensional space by means of some statistical measures \cite{Martinez-Murcia2015}. The system is based on a conversion from 3D spherical to 2D rectangular coordinates. For each spherical coordinate pair ($\theta,\varphi$), a vector containing all voxels  in the radius is selected, and a number of values are computed, including statistical values (average, entropy, kurtosis) and morphological values (tissue thickness, distance to the central point, number of non-zero blocks). These values conform a two-dimensional image that can be computationally or even visually analysed. In this paper, we proceed using an statistical mask computed using a two-sample $t$-Test, and a SVM classifier. We have achieved performance results that match those obtained with a priori information but using a complete automated procedure, which furthermore reduces the dimensionality of the original images from more than two million voxels to hardly tens of thousands pixels. These maps can be successfully used by itself, but also allow further processing by using them combined and applying some univariate or multivariate algorithms for dimensional reduction. 
 
