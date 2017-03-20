@@ -103,7 +103,7 @@
   document_type = {Conference Paper},
   doi           = {10.1007/978-3-319-18914-7_3},
   journal       = {Lecture Notes in Computer Science (including subseries Lecture Notes in Artificial Intelligence and Lecture Notes in Bioinformatics)},
-  keywords      = {sbm, lbp, vrlbp, mri, ad, alzheimer},
+  keywords      = {sbm, lbp, vrlbp, mri, ad, alzheimer, own},
   source        = {Scopus},
 }
 
@@ -309,6 +309,7 @@
   year     = {2017},
   volume   = {38},
   number   = {3},
+  pages    = {1208--1223},
   month    = mar,
   doi      = {10.1002/hbm.23449},
   keywords = {own},

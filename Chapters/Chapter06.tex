@@ -2,11 +2,11 @@
 \chapter{Spherical Brain Mapping}\label{ch:sbm}
 %************************************************
 \section{Introduction}
-In this section we will deal with a feature extraction technique called \acf{SBM}. \ac{SBM} is based on the use of spherical coordinates to extract radial features from \ac{MRI} images, segmented. Using the features at each coordinate, we can characterize the texture in each direction, and even project the information to a bidimensional maps, which provides a significant feature reduction and a visual aid for diagnosis. 
+In this section we will present a feature extraction technique called \acf{SBM}. \ac{SBM} is based on the use of spherical coordinates to extract radial features from structural \ac{MRI} images. Using the features at each coordinate, we can characterize the texture in each direction, and even project the information to a bidimensional maps, which provides a significant feature reduction and a visual aid for diagnosis. 
 
 The most basic form is the standard \ac{SBM} \cite{Martinez-Murcia2014225,Martinez-Murcia2015}, in which all voxels crossed by a rectilinear vector in a spherical coordinate pair ($\theta,\varphi$) are selected, and then, a certain measure is extracted from that set. In this sense, statistical and morphological measures such as tissue thickness, average or entropy, among others, are computed. 
 
-Further improvements can be made to this simple approach, for example, with a layering extension \cite{Martinez-Murcia2015}, in which the mapping vector is divided in $n$ subsets containing the same number of voxels. Therefore, instead of a single map, we can obtain $n$ maps at different distances from the centre of the brain. Another useful approach is the characterization of texture features via \acf{LBP}, computed around the mapping vector, which yielded very good results in \cite{Martinez-MurciaVRLBP}.
+Further improvements can be made to this simple approach, for example, with the layering extension \cite{Martinez-Murcia2015}, in which the mapping vector is divided in $n$ subsets containing the same number of voxels. Therefore, instead of a single map, we can obtain $n$ maps at different distances from the centre of the brain. Another useful approach is the characterization of texture features via \acf{LBP}, computed around the mapping vector, which yielded very good results in \cite{Martinez-MurciaVRLBP}.
 
 \begin{figure*}[htp]
 	\centering
@@ -17,30 +17,28 @@ Further improvements can be made to this simple approach, for example, with a la
 
 The most relevant extension to the \ac{SBM} was proposed in \cite{Martinez-Murcia2016}. In this work, instead of using rectilinear vectors to select voxels, we developed a path creation algorithm that follows a minimum-intensity change path towards an attractor placed in its corresponding spherical coordinate pair ($\theta,\varphi$). This way, the mapping paths follow the structural features of the \ac{MRI} image, which could be used to create the bidimensional \ac{SBM} maps as well as directly use the intensity distribution along the path. This was extended to make use of the \ac{GLCM} and Haralick texture analysis (see Chapter~\ref{ch:texture}) to characterize the brain texture along each path and its neighbourhood. 
 
-% DONE
 
 \section{Spherical Brain Mapping}
-Original \ac{SBM}
-\cite{Martinez-Murcia2014225,Martinez-MurciaVRLBP,Martinez-Murcia2015,Martinez-Murcia2016}
-
-The technique proposed to perform the mapping of the 3D brain images to a 2D map using spherical coordinates -from now on \acf{SBM}-  is based on the use of spherical coordinates in the brain. A base  point is set in the central voxel of the MRI image, and a mapping vector $\mathbf{v}_{\theta,\varphi}$ of length $N$ is defined for each inclination ($\theta$) and azimuth ($\varphi$) angles in the range $0^{\circ}<\theta<180^{\circ}$ and $0^{\circ}<\varphi<360^{\circ}$ (see Figure~\ref{fig:brainmapping}). Therefore, we will define the sampled set $V_{\theta,\varphi}$, a set that contains $P$ voxels crossed by the sampling vector $\mathbf{v}_{\theta,\varphi}$.
-For each set $\mathbf{v}_{\theta,\varphi}$, a mapping value $v$ is computed from the sampled voxels $V_{\theta,\varphi}$, depending on the  measure used. In this section, six basic measures are proposed:
+The original \ac{SBM} proposed in \cite{Martinez-Murcia2014225,Martinez-Murcia2015} was based on the use of spherical coordinates in the brain. The central voxel is used as the origin point from which a number of mapping vectors $\mathbf{v}_{\theta,\varphi}$ are defined for each inclination ($\theta$) and azimuth ($\varphi$) angles in the range $0^{\circ}<\theta<180^{\circ}$ and $0^{\circ}<\varphi<360^{\circ}$ (see Figure~\ref{fig:brainmapping}). The voxels crossed by this mapping vector are selected, to form the sampled set $V_{\theta,\varphi}$, a set that contains $P$ voxels crossed by the mapping vector $\mathbf{v}_{\theta,\varphi}$.
 
 \begin{figure}[htp]
 	\centering
-	\includegraphics[width=0.8\columnwidth]{Graphics/ch6/02-projection}
+	\includegraphics[width=0.7\columnwidth]{Graphics/ch6/02-projection}
 	\caption{Illustration of the computation of the mapping vector $\mathbf{v}_{\theta,\varphi}$, the angles $\theta$ and $\varphi$ and the $r$-neighbourhood of $\mathbf{v}$ (see Section~\ref{sec:vrlbp}).}
 	\label{fig:brainmapping}
 \end{figure}
 
+The basic form in which \ac{SBM} works is by computing a mapping value $v$ from each set $V_{\theta,\varphi}$ at each coordinate pair $(\theta,\varphi)$. In \cite{Martinez-Murcia2014225,Martinez-Murcia2015}, six basic measures were proposed: 
+
+
 \begin{itemize}
-	\item A basic \underline{brain surface} approach, that accounts for the distance between the central voxel and the last tissue voxel in $V_{\theta,\varphi}$ that is greater than a threshold $I_{th}$. This might allow our system to observe structural degeneration and tissue loss in the surface of the tissue. 
+	\item A basic \underline{brain surface} approach, which is intended to characterize the surface of either \ac{GM} or \ac{WM} tissue. It accounts for the distance between the origin and the last tissue voxel in $V_{\theta,\varphi}$ greater than a threshold $I_{th}$. This might correlate with structural neurodegeneration and tissue loss in the surface of the tissue. 
 	\begin{equation}\label{eq:surface}
 	v_{surf}= \argmax_i \lbrace V_{\theta,\varphi}(i)>I_{th}\rbrace \quad \forall i=1,\dots P
 	\end{equation}  
 	
-	\item Another parameter used is \underline{thickness} of the tissue. This can be useful when measuring the thickness of segmented Gray Matter or White Matter MR images. It is defined as the distance between the last and first elements in $V_{\theta,\varphi}$
-	with an intensity greater than a threshold $I_{th}$ (typically 0): 
+	\item The \underline{thickness} of the tissue. It is defined as the distance between the last and first elements in $V_{\theta,\varphi}$
+	with an intensity greater than a threshold $I_{th}$ (typically 0). This can be useful when measuring the thickness of segmented \ac{GM} or \ac{WM} maps, and, although less powerful than other implementations like Freesurfer's \cite{Dale1999}, it might be representative enough and easier to compute : 
 	\begin{equation}\label{eq:thickness}
 	v_{thick}=\argmax_i \lbrace V_{\theta,\varphi}(i)>I_{th}\rbrace- \argmin_i \lbrace V_{\theta,\varphi}(i)>I_{th}\rbrace
 	\quad \forall i=1,\dots P
@@ -73,18 +71,19 @@ For each set $\mathbf{v}_{\theta,\varphi}$, a mapping value $v$ is computed from
 	where $\bar{V}_{\theta,\varphi}$ is the average of all voxels in $V_{\theta,\varphi}$ (same value as $v_{av}$, described in Eq.~\ref{eq:mean}). 
 	
 \end{itemize}
+% DONE
+
 
 The resulting \ac{GM} and \ac{WM} maps are depicted in Figure~\ref{fig:masksGM}. 
 
 \begin{figure*}[htp]
 	\centering
 	\includegraphics[width=1\textwidth]{Graphics/ch6/03-projections}
-	
 	\caption{Resulting \ac{GM} and \ac{WM} maps of the same control subject using the six proposed measures: Surface, Thickness, Number of Folds, Average, Entropy and Kurtosis.}
 	\label{fig:masksGM}
 \end{figure*}
 
-The resulting maps will contain the value $v$ mapped in each direction $(\theta,\varphi)$. As the inclination angle $\theta$ ranges from $0^{\circ}$ to $180^{\circ}$ and the azimuth $\varphi$ from $0^{\circ}$ to $360^{\circ}$, the resulting maps will have a size of $181\times361$, where each pixel is the $v$ value for each direction. The whole algorithm can be downloaded at \url{http://wdb.ugr.es/~fjesusmartinez/portfolio/sbm/}.
+The resulting maps will contain the value $v$ mapped in each direction $(\theta,\varphi)$. As the inclination angle $\theta$ ranges from $0^{\circ}$ to $180^{\circ}$ and the azimuth $\varphi$ from $0^{\circ}$ to $360^{\circ}$, the resulting maps will have a size of $181\times361$, where each pixel is the $v$ value for each direction. The whole algorithm can be downloaded at \url{http://pakitochus.github.io/mapBrain/}.
 
 This methodology defines the sampling set as the voxels that are crossed by the sampling vector $\mathbf{v}_{\theta,\varphi}$. When projecting a structure as complex as the brain, this implies a loss of contextual information of both the neighbourhood and the layers crossed by $\mathbf{v}_{\theta,\varphi}$. Two approaches have been suggested to overcome this problem: the first one extends the system by dividing the sampling set $V_{\theta,\varphi}$ in $n$ equal parts in a so-called ``Layered approach'', and the second one uses a helical sampling and Local Binary Patterns (LBP) to map the neighbourhood of the sampling vector and characterize the texture of the area.
 
