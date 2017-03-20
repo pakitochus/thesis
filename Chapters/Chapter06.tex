@@ -44,7 +44,7 @@ The basic form in which \ac{SBM} works is by computing a mapping value $v$ from 
 	\quad \forall i=1,\dots P
 	\end{equation}  
 	
-	\item The \underline{number of folds} represents the number of overlapping segments of tissue in the set $V_{\theta,\varphi}$. It is computed by thresholding $V_{\theta,\varphi}$ using the value $I_{th}$ and counting the number of resulting connected subsets. Let $A_{\theta,\varphi}$ be the set that contains all the indices of the voxels in $V_{\theta,\varphi}$ with an intensity greater than $I_{th}$:
+	\item The \underline{number of folds} represents the number of overlapping segments of tissue in the set $V_{\theta,\varphi}$. It is computed by counting the number of connected subsets in a thresholded $V_{\theta,\varphi}$ using the value $I_{th}$. Let $A_{\theta,\varphi}$ be the set that contains all the indices of the voxels in $V_{\theta,\varphi}$ with an intensity greater than $I_{th}$:
 	\begin{equation}
 	A_{\theta,\varphi} = \lbrace i \; / \: V_{\theta,\varphi}(i)>I_{th} \rbrace
 	\end{equation}
@@ -54,12 +54,12 @@ The basic form in which \ac{SBM} works is by computing a mapping value $v$ from 
 	\end{equation}
 	Therefore, our $v_{nf}=J$, the number of disjoint connected subsets in $A_{\theta,\varphi}$.
 	
-	\item An \underline{average} approach, where the average of all the intensity values in the set $V_{\theta,\varphi}$ is computed as: 
+	\item The \underline{average} of $V_{\theta,\varphi}$: 
 	\begin{equation}\label{eq:mean}
 	v_{av}=\frac{1}{N}\sum_i V_{\theta,\varphi}(i) \quad \forall i=1,\dots P
 	\end{equation}  
 	
-	\item The \underline{entropy} assumes that the set $V_{\theta,\varphi}$ is a probability mass vector (probability of belonging to a certain tissue, normalized) and computes $v$ as:
+	\item The \underline{entropy} of $V_{\theta,\varphi}$, assuming it is a probability mass vector (probability of belonging to a certain tissue, normalized). It computes $v$ as:
 	\begin{equation}
 	v_{ent}=\sum_i V_{\theta,\varphi}(i)*\log(V_{\theta,\varphi}(i)) \quad \forall i \in \arg_i\lbrace V_{\theta,\varphi}(i)>0\rbrace
 	\end{equation}
@@ -71,10 +71,8 @@ The basic form in which \ac{SBM} works is by computing a mapping value $v$ from 
 	where $\bar{V}_{\theta,\varphi}$ is the average of all voxels in $V_{\theta,\varphi}$ (same value as $v_{av}$, described in Eq.~\ref{eq:mean}). 
 	
 \end{itemize}
-% DONE
 
-
-The resulting \ac{GM} and \ac{WM} maps are depicted in Figure~\ref{fig:masksGM}. 
+We can compute each of these six maps over the \ac{GM} or \ac{WM} tissue maps of a segmented \ac{MRI}, which are depicted in Figure~\ref{fig:masksGM}. In these maps, the value $v$ computed at each direction $(\theta,\varphi)$ is represented, where the azimuth $\varphi$ is represented in the x-axis, from $0^{\circ}$ to $360^{\circ}$ and the inclination angle $\theta$ in the y-axis, from $0^{\circ}$ to $180^{\circ}$. The whole algorithm that produces these maps can be downloaded at \url{http://pakitochus.github.io/mapBrain/}.
 
 \begin{figure*}[htp]
 	\centering
@@ -83,10 +81,9 @@ The resulting \ac{GM} and \ac{WM} maps are depicted in Figure~\ref{fig:masksGM}.
 	\label{fig:masksGM}
 \end{figure*}
 
-The resulting maps will contain the value $v$ mapped in each direction $(\theta,\varphi)$. As the inclination angle $\theta$ ranges from $0^{\circ}$ to $180^{\circ}$ and the azimuth $\varphi$ from $0^{\circ}$ to $360^{\circ}$, the resulting maps will have a size of $181\times361$, where each pixel is the $v$ value for each direction. The whole algorithm can be downloaded at \url{http://pakitochus.github.io/mapBrain/}.
+This methodology defines the sampling set as the voxels that are crossed by the sampling vector $\mathbf{v}_{\theta,\varphi}$. This implies a loss of information on the neighbourhood of $\mathbf{v}_{\theta,\varphi}$ that increases with the distance to the origin. To overcome this problem, two different approaches have been suggested. In the first one, the sampled set $V_{\theta,\varphi}$ is divided in $n$ equal parts, and one map is computed for each of the $n$ parts, in the ``Layered approach''. A second approach uses \acf{LBP} and helical sampling to map the neighbourhood of $\mathbf{v}_{\theta,\varphi}$ and characterize texture. 
 
-This methodology defines the sampling set as the voxels that are crossed by the sampling vector $\mathbf{v}_{\theta,\varphi}$. When projecting a structure as complex as the brain, this implies a loss of contextual information of both the neighbourhood and the layers crossed by $\mathbf{v}_{\theta,\varphi}$. Two approaches have been suggested to overcome this problem: the first one extends the system by dividing the sampling set $V_{\theta,\varphi}$ in $n$ equal parts in a so-called ``Layered approach'', and the second one uses a helical sampling and Local Binary Patterns (LBP) to map the neighbourhood of the sampling vector and characterize the texture of the area.
-
+% DONE
 
 \subsection{Layered Extension}\label{sec:layered}
 The first strategy used to improve the descriptive abilities of the mappings is the Layered Extension. In this approach, the sampled voxels set $V_{\theta,\varphi}$ can be divided in $n$ equal subsets, using each one to project one section -or layer- of the brain. If, for example, we use $n=4$, $4$ subsets containing the same number of voxels  will be derived from $V_{\theta,\varphi}$, and therefore $4$ different maps  will be depicted, from the closest to the centre to the farthest. This layered approach reveals  the different anatomical structures found in the brain at different depths, potentially revealing a more detailed distribution the features  of the mappings . These layered maps and their performance will be discussed later.
