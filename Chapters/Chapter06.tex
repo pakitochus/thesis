@@ -83,10 +83,16 @@ We can compute each of these six maps over the \ac{GM} or \ac{WM} tissue maps of
 
 This methodology defines the sampling set as the voxels that are crossed by the sampling vector $\mathbf{v}_{\theta,\varphi}$. This implies a loss of information on the neighbourhood of $\mathbf{v}_{\theta,\varphi}$ that increases with the distance to the origin. To overcome this problem, two different approaches have been suggested. In the first one, the sampled set $V_{\theta,\varphi}$ is divided in $n$ equal parts, and one map is computed for each of the $n$ parts, in the ``Layered approach''. A second approach uses \acf{LBP} and helical sampling to map the neighbourhood of $\mathbf{v}_{\theta,\varphi}$ and characterize texture. 
 
-% DONE
+\section{Layered Extension}\label{sec:layered}
+The layered extension is the simplest approach to keep relevant information of the different ``layers'' of tissue in our \ac{SBM} maps. To do so, we divide each sampled set $V_{\theta,\varphi}$ in $n$ equal subsets, from which $n$ maps will be derived. For example, with a $n=4$, 4 subsets will be used to compute 4 different maps at different distances from the origin, from the closest to the farthest. We assume that this approach features more detail, since overlapping structures placed at different depths will be contained within different maps. 
 
-\subsection{Layered Extension}\label{sec:layered}
-The first strategy used to improve the descriptive abilities of the mappings is the Layered Extension. In this approach, the sampled voxels set $V_{\theta,\varphi}$ can be divided in $n$ equal subsets, using each one to project one section -or layer- of the brain. If, for example, we use $n=4$, $4$ subsets containing the same number of voxels  will be derived from $V_{\theta,\varphi}$, and therefore $4$ different maps  will be depicted, from the closest to the centre to the farthest. This layered approach reveals  the different anatomical structures found in the brain at different depths, potentially revealing a more detailed distribution the features  of the mappings . These layered maps and their performance will be discussed later.
+\begin{figure*}[htp]
+	\centering
+	\includegraphics[width=0.9\textwidth]{Graphics/ch6/layeredAverageGM}
+	\caption[Example of the layered approach using the average measure on \ac{GM} maps.]{Example of the layered approach using the average measure on \ac{GM} maps. Some internal \ac{GM} structures such as the Putamen or Globus Pallidus can be identified at Layer 2 (see anatomical reference at Figures~\ref{fig:regionsCort} and \ref{fig:regionsSub}).}
+	\label{fig:layeredGM}
+\end{figure*}
+% DONE
 
 \section{Volumetric Radial LBP}\label{sec:vrlbp}
 In a second attempt to overcome the loss of per layer information, we have expanded the influence of $\mathbf{v}_{\theta,\varphi}$ to its $r$-neighbourhood. This has been done by defining a $v$ measure that describes not only the features of the voxels crossed by $\mathbf{v}_{\theta,\varphi}$, but the texture of its neighbourhood using a Volumetric Radial Volumetric Radial Local Binary Pattern (VRLBP) descriptor.
