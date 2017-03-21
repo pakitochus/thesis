@@ -96,17 +96,33 @@ The layered extension is the simplest approach to keep relevant information of t
 \subsection{Volumetric Radial LBP}\label{sec:vrlbp}
 Another addition that can be made to the original \ac{SBM} is the inclusion of the $r$-neighbourhood of the mapping vector $\mathbf{v}_{\theta,\varphi}$ in the computation of $v$. We do so by computing the \acf{VRLBP}, based on the \ac{LBP} descriptors proposed in \cite{Ojala1996}. 
 
-\ac{LBP} was devised to describe the texture of a image, with an initial application to face recognition. Later, it was extended to Volumetric \ac{LBP}, in which the texture 
-% DONE
+\begin{figure*}[htp]
+	\centering
+	\includegraphics[width=0.8\textwidth]{Graphics/ch6/lbpLinear}
+	\caption{Example of how the basic \ac{LBP} is computed.}
+	\label{fig:lbpBasic}
+\end{figure*}
 
+\ac{LBP} was devised to describe the texture of a image, with an initial application to face recognition. In its basic form, it consist of three steps: sampling, calculating the difference and thresholding (See Figure~\ref{fig:lbpBasic}). The value of the \ac{LBP} is defined as:
+\begin{equation}
+v_{LBP} = \sum_{p=0}^{P-1} s(I_p - I_c)2^p
+\end{equation}
+where $P$ is the number of neighbours at a distance $r$ of the central voxel, and $I_p$ and $I_c$ are the intensities of the $p^{th}$ voxel and the central voxel for which the value $v_{LBP}$ is being computed. The threshold step is performed using the sign function $s(x)$, defined as:
+\begin{equation} % He simplificado la formula usando "cases"
+s(x) = 
+\begin{cases}
+1      &  x \geq 0 \\
+0      &  x < 0
+\end{cases}
+\end{equation}
 
-Local Binary Patterns (LBP) were first introduced in \cite{Ojala1996} to describe the texture of an image with application to face recognition. Later, in \cite{Zhao2007}, the technique was extended to a Volume LBP (VLBP), defining a 3D texture in a local neighbourhood by using a cylinder oriented in one direction and whose radius define the neighbourhood used to compute the LBP descriptor. 
-
-In the VRLBP, the sampling method devised in \cite{Zhao2007} has been updated to follow helical coordinates around the mapping vector $\mathbf{v}_{\theta,\varphi}$ (see helix around $\mathbf{v}_{\theta,\varphi}$ in Figure~\ref{fig:brainmapping}). Formally, we note $V_{\theta,\varphi}^{P,r}$ the set of $P$ sampled voxels of the image $I$ in the $r$-neighbourhood of $\mathbf{v}_{\theta,\varphi}$ taken by helical sampling:
+This basic approach was extended to Volumetric \ac{LBP} \cite{Zhao2007}, in which a 3D texture is defined in a local neighbourhood using a cylinder of radius $r$ oriented in one direction. For this work, we will update the sampling procedure proposed in \cite{Zhao2007} using a helix around the mapping vector $\mathbf{v}_{\theta,\varphi}$ (see Figure~\ref{fig:brainmapping}). This new helical sampling defines the set of $P$ sampled voxels on the image $I$ using a $r$-neighbourhood $V_{\theta,\varphi}^{P,r}$ as:
 
 \begin{equation}
 V_{\theta,\varphi}^{P,r}=\lbrace I(g_{\theta,\varphi}^{0,r}), I(g_{\theta,\varphi}^{1,r}), I(g_{\theta,\varphi}^{2,r}), \dots I(g_{\theta,\varphi}^{P-1,r})\rbrace
 \end{equation} 
+% DONE
+
 where the coordinates $g_{\theta,\varphi}^{p,r}$ of each voxel are computed in the direction of $\mathbf{v}_{\theta,\varphi}$ by: 
 \begin{equation}
 \label{ec:helical_coordinates}

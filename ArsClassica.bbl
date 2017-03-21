@@ -21,8 +21,8 @@
   \sortlist[entry]{ydnt/global/}
     \entry{Martinez-Murcia2016a}{article}{}
       \name{author}{13}{}{%
-        {{hash=f13fcabedae6437aaa5e694f277d9fcb}{%
-           family={Martinez-Murcia},
+        {{hash=44d5da22feb443de558b01188109bfb7}{%
+           family={Martínez-Murcia},
            family_i={M\bibinithyphendelim M\bibinitperiod},
            given={F.J.},
            given_i={F\bibinitperiod}}}%
@@ -87,8 +87,8 @@
            given={J.},
            given_i={J\bibinitperiod}}}%
       }
-      \strng{namehash}{027fb8d9c9034ba8a121687e98c3ea8c}
-      \strng{fullhash}{6f8324b2e0311d2ebce0d255edaaa03c}
+      \strng{namehash}{e0974fe65d08a6012a897eea86b04d7d}
+      \strng{fullhash}{c42f00c84e07b921e4a08312c55498a5}
       \field{sortinit}{2}
       \field{sortinithash}{8343b463aacf48517c044b4d2c9c45ed}
       \field{labelnamesource}{author}
@@ -99,6 +99,8 @@
       \field{title}{On the Brain Structure Heterogeneity of Autism: Parsing out Acquisition Site Effects With Significance-Weighted Principal Component Analysis}
       \field{volume}{38}
       \field{year}{2017}
+      \field{pages}{1208\bibrangedash 1223}
+      \range{pages}{16}
       \verb{doi}
       \verb 10.1002/hbm.23449
       \endverb
@@ -3196,6 +3198,45 @@
       \endverb
       \keyw{Algorithms; Artificial Intelligence; Computational Biology,methods; Computer Simulation; Gene Expression Profiling,methods; Models,Biological; Pattern Recognition,Automated,methods; Sequence Analysis,methods}
     \endentry
+    \entry{Zhao2007}{article}{}
+      \name{author}{2}{}{%
+        {{hash=55041c4176ce3227670a02683c00b654}{%
+           family={Zhao},
+           family_i={Z\bibinitperiod},
+           given={Guoying},
+           given_i={G\bibinitperiod}}}%
+        {{hash=b21df68b3d6c107d4dcdab256d82947e}{%
+           family={Pietikainen},
+           family_i={P\bibinitperiod},
+           given={Matti},
+           given_i={M\bibinitperiod}}}%
+      }
+      \list{location}{1}{%
+        {Washington, DC, USA}%
+      }
+      \list{publisher}{1}{%
+        {IEEE Computer Society}%
+      }
+      \strng{namehash}{58eec60b2c065cf52b1ce95e8cd9021a}
+      \strng{fullhash}{58eec60b2c065cf52b1ce95e8cd9021a}
+      \field{sortinit}{2}
+      \field{sortinithash}{8343b463aacf48517c044b4d2c9c45ed}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issn}{0162-8828}
+      \field{journaltitle}{IEEE Transactions on Pattern Analysis and Machine Intelligence}
+      \field{month}{06}
+      \field{number}{6}
+      \field{title}{Dynamic Texture Recognition Using Local Binary Patterns with an Application to Facial Expressions}
+      \field{volume}{29}
+      \field{year}{2007}
+      \field{pages}{915\bibrangedash 928}
+      \range{pages}{14}
+      \verb{doi}
+      \verb 10.1109/TPAMI.2007.1110
+      \endverb
+      \keyw{Temporal texture,Temporal texture,motion,facial image analysis,facial expression,local binary pattern.,facial expression,facial image analysis,local binary pattern.,motion}
+    \endentry
     \entry{Zhou2007}{article}{}
       \name{author}{9}{}{%
         {{hash=18f7b54bd6a465f2209e979aa6a31329}{%
@@ -4750,6 +4791,45 @@
       \endverb
       \keyw{Analysis of Variance; Blood Flow Velocity; Brain,anatomy & histology,physiology,radionuclide imaging; Cerebrovascular Circulation; Humans; Magnetic Resonance Imaging; Memory,physiology; Reference Values; Regional Blood Flow,physiology; Statistics,Nonparametric; Tomography,Emission-Computed}
     \endentry
+    \entry{Ojala1996}{article}{}
+      \name{author}{3}{}{%
+        {{hash=b0483cd486d1e6f4e40503191aa7817b}{%
+           family={Ojala},
+           family_i={O\bibinitperiod},
+           given={Timo},
+           given_i={T\bibinitperiod}}}%
+        {{hash=9f01d72b772651a0eaa57c9b22e31b85}{%
+           family={Pietikäinen},
+           family_i={P\bibinitperiod},
+           given={Matti},
+           given_i={M\bibinitperiod}}}%
+        {{hash=0066f82967def6e72815eab2b58baba3}{%
+           family={Harwood},
+           family_i={H\bibinitperiod},
+           given={David},
+           given_i={D\bibinitperiod}}}%
+      }
+      \strng{namehash}{f1d28e65a323858967b58aba8855341f}
+      \strng{fullhash}{f1d28e65a323858967b58aba8855341f}
+      \field{sortinit}{1}
+      \field{sortinithash}{53e85f4cf497d2a4e1d51786552bcbf1}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{{This paper evaluates the performance both of some texture measures which have been successfully used in various applications and of some new promising approaches proposed recently. For classification a method based on Kullback discrimination of sample and prototype distributions is used. The classification results for single features with one-dimensional feature value distributions and for pairs of complementary features with two-dimensional distributions are presented}}
+      \field{issn}{00313203}
+      \field{journaltitle}{Pattern Recognition}
+      \field{month}{01}
+      \field{number}{1}
+      \field{title}{{A comparative study of texture measures with classification based on featured distributions}}
+      \field{volume}{29}
+      \field{year}{1996}
+      \field{pages}{51\bibrangedash 59}
+      \range{pages}{9}
+      \verb{doi}
+      \verb 10.1016/0031-3203(95)00067-4
+      \endverb
+      \keyw{classification,lbp,texture}
+    \endentry
     \entry{Benjamini1995}{article}{}
       \name{author}{2}{}{%
         {{hash=2bf06df9b6fb1b6a6811f2965ef58db2}{%
@@ -4800,6 +4880,31 @@
       \verb{url}
       \verb http://citeseer.ist.psu.edu/kohavi95study.html
       \endverb
+    \endentry
+    \entry{Shaffer1995}{article}{}
+      \name{author}{1}{}{%
+        {{hash=51209134026323e94219be3effebe133}{%
+           family={Shaffer},
+           family_i={S\bibinitperiod},
+           given={Juliet\bibnamedelima Popper},
+           given_i={J\bibinitperiod\bibinitdelim P\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Annual Reviews 4139 El Camino Way, PO Box 10139, Palo Alto, CA 94303-0139, USA}%
+      }
+      \strng{namehash}{51209134026323e94219be3effebe133}
+      \strng{fullhash}{51209134026323e94219be3effebe133}
+      \field{sortinit}{1}
+      \field{sortinithash}{53e85f4cf497d2a4e1d51786552bcbf1}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Annual review of psychology}
+      \field{number}{1}
+      \field{title}{Multiple hypothesis testing}
+      \field{volume}{46}
+      \field{year}{1995}
+      \field{pages}{561\bibrangedash 584}
+      \range{pages}{24}
     \endentry
     \entry{Claus1994}{article}{}
       \name{author}{7}{}{%
@@ -8298,8 +8403,8 @@
     \endentry
     \entry{Martinez-Murcia2016a}{article}{}
       \name{author}{13}{}{%
-        {{hash=f13fcabedae6437aaa5e694f277d9fcb}{%
-           family={Martinez-Murcia},
+        {{hash=44d5da22feb443de558b01188109bfb7}{%
+           family={Martínez-Murcia},
            family_i={M\bibinithyphendelim M\bibinitperiod},
            given={F.J.},
            given_i={F\bibinitperiod}}}%
@@ -8364,8 +8469,8 @@
            given={J.},
            given_i={J\bibinitperiod}}}%
       }
-      \strng{namehash}{027fb8d9c9034ba8a121687e98c3ea8c}
-      \strng{fullhash}{6f8324b2e0311d2ebce0d255edaaa03c}
+      \strng{namehash}{e0974fe65d08a6012a897eea86b04d7d}
+      \strng{fullhash}{c42f00c84e07b921e4a08312c55498a5}
       \field{sortinit}{M}
       \field{sortinithash}{2684bec41e9697b92699b46491061da2}
       \field{labelnamesource}{author}
@@ -8376,6 +8481,8 @@
       \field{title}{On the Brain Structure Heterogeneity of Autism: Parsing out Acquisition Site Effects With Significance-Weighted Principal Component Analysis}
       \field{volume}{38}
       \field{year}{2017}
+      \field{pages}{1208\bibrangedash 1223}
+      \range{pages}{16}
       \verb{doi}
       \verb 10.1002/hbm.23449
       \endverb
@@ -8613,6 +8720,45 @@
       \field{year}{2002}
       \field{pages}{13\bibrangedash 34}
       \range{pages}{22}
+    \endentry
+    \entry{Ojala1996}{article}{}
+      \name{author}{3}{}{%
+        {{hash=b0483cd486d1e6f4e40503191aa7817b}{%
+           family={Ojala},
+           family_i={O\bibinitperiod},
+           given={Timo},
+           given_i={T\bibinitperiod}}}%
+        {{hash=9f01d72b772651a0eaa57c9b22e31b85}{%
+           family={Pietikäinen},
+           family_i={P\bibinitperiod},
+           given={Matti},
+           given_i={M\bibinitperiod}}}%
+        {{hash=0066f82967def6e72815eab2b58baba3}{%
+           family={Harwood},
+           family_i={H\bibinitperiod},
+           given={David},
+           given_i={D\bibinitperiod}}}%
+      }
+      \strng{namehash}{f1d28e65a323858967b58aba8855341f}
+      \strng{fullhash}{f1d28e65a323858967b58aba8855341f}
+      \field{sortinit}{O}
+      \field{sortinithash}{7803d2715d5e795e70382b084ab8d00e}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{{This paper evaluates the performance both of some texture measures which have been successfully used in various applications and of some new promising approaches proposed recently. For classification a method based on Kullback discrimination of sample and prototype distributions is used. The classification results for single features with one-dimensional feature value distributions and for pairs of complementary features with two-dimensional distributions are presented}}
+      \field{issn}{00313203}
+      \field{journaltitle}{Pattern Recognition}
+      \field{month}{01}
+      \field{number}{1}
+      \field{title}{{A comparative study of texture measures with classification based on featured distributions}}
+      \field{volume}{29}
+      \field{year}{1996}
+      \field{pages}{51\bibrangedash 59}
+      \range{pages}{9}
+      \verb{doi}
+      \verb 10.1016/0031-3203(95)00067-4
+      \endverb
+      \keyw{classification,lbp,texture}
     \endentry
     \entry{Philips2008}{article}{}
       \name{author}{4}{}{%
@@ -9384,6 +9530,31 @@
       \field{pages}{50\bibrangedash 56}
       \range{pages}{7}
     \endentry
+    \entry{Shaffer1995}{article}{}
+      \name{author}{1}{}{%
+        {{hash=51209134026323e94219be3effebe133}{%
+           family={Shaffer},
+           family_i={S\bibinitperiod},
+           given={Juliet\bibnamedelima Popper},
+           given_i={J\bibinitperiod\bibinitdelim P\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Annual Reviews 4139 El Camino Way, PO Box 10139, Palo Alto, CA 94303-0139, USA}%
+      }
+      \strng{namehash}{51209134026323e94219be3effebe133}
+      \strng{fullhash}{51209134026323e94219be3effebe133}
+      \field{sortinit}{S}
+      \field{sortinithash}{fd1e7c5ab79596b13dbbb67f8d70fb5a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Annual review of psychology}
+      \field{number}{1}
+      \field{title}{Multiple hypothesis testing}
+      \field{volume}{46}
+      \field{year}{1995}
+      \field{pages}{561\bibrangedash 584}
+      \range{pages}{24}
+    \endentry
     \entry{sikio2015mr}{article}{}
       \name{author}{9}{}{%
         {{hash=7cfd2c74d1ce7781e0602b560fecc043}{%
@@ -10067,6 +10238,45 @@
       \verb 10.1136/jnnp.74.3.294
       \endverb
     \endentry
+    \entry{Zhao2007}{article}{}
+      \name{author}{2}{}{%
+        {{hash=55041c4176ce3227670a02683c00b654}{%
+           family={Zhao},
+           family_i={Z\bibinitperiod},
+           given={Guoying},
+           given_i={G\bibinitperiod}}}%
+        {{hash=b21df68b3d6c107d4dcdab256d82947e}{%
+           family={Pietikainen},
+           family_i={P\bibinitperiod},
+           given={Matti},
+           given_i={M\bibinitperiod}}}%
+      }
+      \list{location}{1}{%
+        {Washington, DC, USA}%
+      }
+      \list{publisher}{1}{%
+        {IEEE Computer Society}%
+      }
+      \strng{namehash}{58eec60b2c065cf52b1ce95e8cd9021a}
+      \strng{fullhash}{58eec60b2c065cf52b1ce95e8cd9021a}
+      \field{sortinit}{Z}
+      \field{sortinithash}{fdda4caaa6b5fa63e0c081dcb159543a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issn}{0162-8828}
+      \field{journaltitle}{IEEE Transactions on Pattern Analysis and Machine Intelligence}
+      \field{month}{06}
+      \field{number}{6}
+      \field{title}{Dynamic Texture Recognition Using Local Binary Patterns with an Application to Facial Expressions}
+      \field{volume}{29}
+      \field{year}{2007}
+      \field{pages}{915\bibrangedash 928}
+      \range{pages}{14}
+      \verb{doi}
+      \verb 10.1109/TPAMI.2007.1110
+      \endverb
+      \keyw{Temporal texture,Temporal texture,motion,facial image analysis,facial expression,local binary pattern.,facial expression,facial image analysis,local binary pattern.,motion}
+    \endentry
     \entry{Zhou2007}{article}{}
       \name{author}{9}{}{%
         {{hash=18f7b54bd6a465f2209e979aa6a31329}{%
@@ -10137,48 +10347,44 @@
     \endentry
   \endsortlist
   \missing{Shepp82}
-  \missing{soh1999texture}
-  \missing{jobst_accurate_1998}
-  \missing{Yen1995}
-  \missing{Zhou2008}
-  \missing{Vapnik1982}
-  \missing{PPMI}
-  \missing{Inititative2010}
-  \missing{Unay2007}
-  \missing{AAL}
-  \missing{dougall_systematic_2004}
-  \missing{clausi2002analysis}
-  \missing{Alvarez2009}
-  \missing{Shaffer1995}
-  \missing{Ramirez2009}
-  \missing{IAIllan2010}
-  \missing{Ojala1996}
-  \missing{Tzourio-Mazoyer2002}
-  \missing{Ram'irez2009}
-  \missing{Chen2008}
-  \missing{chan2001patterns}
   \missing{han2006reliability}
-  \missing{Evans1993}
-  \missing{Zhao2007}
-  \missing{Kohavi1995a}
   \missing{Fischl2004}
-  \missing{Illan2014}
-  \missing{Grana2011}
-  \missing{Ortiz2013}
-  \missing{Botev2010}
+  \missing{jobst_accurate_1998}
   \missing{Jong2008}
+  \missing{IAIllan2010}
+  \missing{Evans1993}
+  \missing{soh1999texture}
+  \missing{dougall_systematic_2004}
+  \missing{Alvarez2009}
   \missing{Vardi1985}
-  \missing{Medina2008}
-  \missing{Locatelli1998}
+  \missing{Chen2008}
+  \missing{Botev2010}
+  \missing{Zhou2008}
+  \missing{Inititative2010}
+  \missing{Kohavi1995a}
+  \missing{PPMI}
+  \missing{AAL}
+  \missing{Tzourio-Mazoyer2002}
+  \missing{Yen1995}
+  \missing{chan2001patterns}
   \missing{xu2009source}
+  \missing{Ortiz2013}
+  \missing{clausi2002analysis}
+  \missing{Vapnik1982}
+  \missing{Grana2011}
+  \missing{Ram'irez2009}
+  \missing{Illan2014}
+  \missing{Medina2008}
+  \missing{Ramirez2009}
+  \missing{Locatelli1998}
 \endrefsection
 
 \refsection{1}
   \sortlist[entry]{ydnt/global/}
     \entry{Martinez-Murcia2016a}{article}{}
       \name{author}{13}{}{%
-        {{hash=f13fcabedae6437aaa5e694f277d9fcb}{%
-           family={Martinez-Murcia},
+        {{hash=44d5da22feb443de558b01188109bfb7}{%
+           family={Martínez-Murcia},
            family_i={M\bibinithyphendelim M\bibinitperiod},
            given={F.J.},
            given_i={F\bibinitperiod}}}%
@@ -10243,8 +10449,8 @@
            given={J.},
            given_i={J\bibinitperiod}}}%
       }
-      \strng{namehash}{027fb8d9c9034ba8a121687e98c3ea8c}
-      \strng{fullhash}{6f8324b2e0311d2ebce0d255edaaa03c}
+      \strng{namehash}{e0974fe65d08a6012a897eea86b04d7d}
+      \strng{fullhash}{c42f00c84e07b921e4a08312c55498a5}
       \field{sortinit}{2}
       \field{sortinithash}{8343b463aacf48517c044b4d2c9c45ed}
       \field{labelnamesource}{author}
@@ -10255,6 +10461,8 @@
       \field{title}{On the Brain Structure Heterogeneity of Autism: Parsing out Acquisition Site Effects With Significance-Weighted Principal Component Analysis}
       \field{volume}{38}
       \field{year}{2017}
+      \field{pages}{1208\bibrangedash 1223}
+      \range{pages}{16}
       \verb{doi}
       \verb 10.1002/hbm.23449
       \endverb
@@ -12010,8 +12218,8 @@
     \endentry
     \entry{Martinez-Murcia2016a}{article}{}
       \name{author}{13}{}{%
-        {{hash=f13fcabedae6437aaa5e694f277d9fcb}{%
-           family={Martinez-Murcia},
+        {{hash=44d5da22feb443de558b01188109bfb7}{%
+           family={Martínez-Murcia},
            family_i={M\bibinithyphendelim M\bibinitperiod},
            given={F.J.},
            given_i={F\bibinitperiod}}}%
@@ -12076,8 +12284,8 @@
            given={J.},
            given_i={J\bibinitperiod}}}%
       }
-      \strng{namehash}{027fb8d9c9034ba8a121687e98c3ea8c}
-      \strng{fullhash}{6f8324b2e0311d2ebce0d255edaaa03c}
+      \strng{namehash}{e0974fe65d08a6012a897eea86b04d7d}
+      \strng{fullhash}{c42f00c84e07b921e4a08312c55498a5}
       \field{sortinit}{M}
       \field{sortinithash}{2684bec41e9697b92699b46491061da2}
       \field{labelnamesource}{author}
@@ -12088,6 +12296,8 @@
       \field{title}{On the Brain Structure Heterogeneity of Autism: Parsing out Acquisition Site Effects With Significance-Weighted Principal Component Analysis}
       \field{volume}{38}
       \field{year}{2017}
+      \field{pages}{1208\bibrangedash 1223}
+      \range{pages}{16}
       \verb{doi}
       \verb 10.1002/hbm.23449
       \endverb
