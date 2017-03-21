@@ -18,7 +18,7 @@ Further improvements can be made to this simple approach, for example, with the 
 The most relevant extension to the \ac{SBM} was proposed in \cite{Martinez-Murcia2016}. In this work, instead of using rectilinear vectors to select voxels, we developed a path creation algorithm that follows a minimum-intensity change path towards an attractor placed in its corresponding spherical coordinate pair ($\theta,\varphi$). This way, the mapping paths follow the structural features of the \ac{MRI} image, which could be used to create the bidimensional \ac{SBM} maps as well as directly use the intensity distribution along the path. This was extended to make use of the \ac{GLCM} and Haralick texture analysis (see Chapter~\ref{ch:texture}) to characterize the brain texture along each path and its neighbourhood. 
 
 
-\section{Spherical Brain Mapping}
+\section{Spherical Brain Mapping}\label{sec:mapping}
 The original \ac{SBM} proposed in \cite{Martinez-Murcia2014225,Martinez-Murcia2015} was based on the use of spherical coordinates in the brain. The central voxel is used as the origin point from which a number of mapping vectors $\mathbf{v}_{\theta,\varphi}$ are defined for each inclination ($\theta$) and azimuth ($\varphi$) angles in the range $0^{\circ}<\theta<180^{\circ}$ and $0^{\circ}<\varphi<360^{\circ}$ (see Figure~\ref{fig:brainmapping}). The voxels crossed by this mapping vector are selected, to form the sampled set $V_{\theta,\varphi}$, a set that contains $P$ voxels crossed by the mapping vector $\mathbf{v}_{\theta,\varphi}$.
 
 \begin{figure}[htp]
@@ -116,38 +116,28 @@ s(x) =
 \end{cases}
 \end{equation}
 
-This basic approach was extended to Volumetric \ac{LBP} \cite{Zhao2007}, in which a 3D texture is defined in a local neighbourhood using a cylinder of radius $r$ oriented in one direction. For this work, we will update the sampling procedure proposed in \cite{Zhao2007} using a helix around the mapping vector $\mathbf{v}_{\theta,\varphi}$ (see Figure~\ref{fig:brainmapping}). This new helical sampling defines the set of $P$ sampled voxels on the image $I$ using a $r$-neighbourhood $V_{\theta,\varphi}^{P,r}$ as:
+This basic approach was extended to Volumetric \ac{LBP} \cite{Zhao2007}, in which a 3D texture is defined in a local neighbourhood using a cylinder of radius $r$ oriented in one direction. For this work, we will update the sampling procedure proposed in \cite{Zhao2007} using a helix around the mapping vector $\mathbf{v}_{\theta,\varphi}$ (see Figure~\ref{fig:brainmapping}). This new helical sampling of \cite{Martinez-MurciaVRLBP} defines the set of $P$ sampled voxels on the image $I$ using a $r$-neighbourhood $V_{\theta,\varphi}^{P,r}$ as:
 
 \begin{equation}
-V_{\theta,\varphi}^{P,r}=\lbrace I(g_{\theta,\varphi}^{0,r}), I(g_{\theta,\varphi}^{1,r}), I(g_{\theta,\varphi}^{2,r}), \dots I(g_{\theta,\varphi}^{P-1,r})\rbrace
+V_{\theta,\varphi}^{P,r}=\lbrace I(\mathbf{g}_{\theta,\varphi}^{0,r}), I(\mathbf{g}_{\theta,\varphi}^{1,r}), I(\mathbf{g}_{\theta,\varphi}^{2,r}), \dots I(\mathbf{g}_{\theta,\varphi}^{P-1,r})\rbrace
 \end{equation} 
-% DONE
-
-where the coordinates $g_{\theta,\varphi}^{p,r}$ of each voxel are computed in the direction of $\mathbf{v}_{\theta,\varphi}$ by: 
+where the coordinate vector $\mathbf{g}_{\theta,\varphi}^{p,r}$ of each voxel are computed in the direction of $\mathbf{v}_{\theta,\varphi}$ by: 
 \begin{equation}
 \label{ec:helical_coordinates}
-g_{\theta,\varphi}^{p,r}=\begin{cases}
-x_{\theta,\varphi}^{p,r}=p\sin(\varphi)\cos(\theta)-r\sin(2\pi n\frac{p}{P})\\
-y_{\theta,\varphi}^{p,r}=p\sin(\varphi)\sin(\theta)+r\cos(2\pi n\frac{p}{P})\\
+\mathbf{g}_{\theta,\varphi}^{p,r}=\begin{cases}
+x_{\theta,\varphi}^{p,r}=p\sin(\varphi)\cos(\theta)-r\sin(2\pi np/P)\\
+y_{\theta,\varphi}^{p,r}=p\sin(\varphi)\sin(\theta)+r\cos(2\pi np/P)\\
 z_{\theta,\varphi}^{p,r}=p\cos(\varphi) 
 \end{cases} \quad p=\{0,...,P-1\}, P \in \mathbb{N}
 \end{equation}
-being $n$ the number of loops in the helix. Following \cite{Zhao2007}, voxels that do not fall exactly at the coordinates computed in the equations \ref{ec:helical_coordinates} are estimated by interpolation.
+being $n$ the number of turns in the helical sampling. We use linear interpolation to estimate the intensities in positions that do not fall exactly at the coordinates computed in Eq.~\ref{ec:helical_coordinates}, as in \cite{Zhao2007}. 
 
-Let us assume, without lost of generality, that $P$ and $r$ are fixed. This way, set of sampled voxels $V_{\theta,\varphi}^{P,r}$ becomes $V_{\theta,\varphi}$, which matches the definition of Section~\ref{sec:mapping}. Following this notation, the value $v$ for this VRLBP approach is computed using: 
-
+If we fix $P$ and $r$ to constant values, the set of sampled voxels $V_{\theta,\varphi}^{P,r}$ becomes $V_{\theta,\varphi}$, which is similar to the definition of \ac{SBM} found in Section~\ref{sec:mapping}. The value $v$ of the \ac{VRLBP} approach is therefore defined as: 
 \begin{equation}
-v_{VRLBP} = \sum_{i} s(V_{\theta,\varphi}(i)-V_{\theta,\varphi}(0))\cdot 2^{i} \quad \forall i=1,\dots P
+v_{VRLBP} = \sum_{p} s(V_{\theta,\varphi}(p)-V_{\theta,\varphi}(0))\cdot 2^{p} \quad \forall p=1,\dots P
 \end{equation}
-where $s(x)$ is the sign function, defined as: 
-\begin{equation} % He simplificado la formula usando "cases"
-s(x) = 
-\begin{cases}
-1      &  x \geq 0 \\
-0      &  x < 0
-\end{cases}
-\end{equation}
-This approach provides textural information about all brain structures in a certain direction, as it can be seen in Figure~\ref{fig:vrlbp}. 
+
+The resulting texture maps for \ac{GM} and \ac{WM} tissues can be found at Figure~\ref{fig:vrlbp}. 
 
 \begin{figure*}[htp]
 	\centering
@@ -156,25 +146,27 @@ This approach provides textural information about all brain structures in a cert
 	\label{fig:vrlbp}
 \end{figure*}
 
+%\lstset{language=python} 
+%\begin{lstlisting}
+%	def foo():
+%		hola amigo
+%		print('amigo')
+%	
+%	eh = foo("amigo")
+%	
+%	string title = "This is a Unicode $\pi$ in the sky"
+%	/*
+%	Defined as $\pi=\lim_{n\to\infty}\frac{P_n}{d}$ where $P$ is the perimeter
+%	of an $n$-sided regular polygon circumscribing a
+%	circle of diameter $d$.
+%	*/
+%	const double pi = 3.1415926535
+%\end{lstlisting}
 
-\lstset{language=python} 
-\begin{lstlisting}
-	def foo():
-		hola amigo
-		print('amigo')
-	
-	eh = foo("amigo")
-	
-	string title = "This is a Unicode $\pi$ in the sky"
-	/*
-	Defined as $\pi=\lim_{n\to\infty}\frac{P_n}{d}$ where $P$ is the perimeter
-	of an $n$-sided regular polygon circumscribing a
-	circle of diameter $d$.
-	*/
-	const double pi = 3.1415926535
-\end{lstlisting}
+% DONE
+\section{Sampling Paths via Hidden Markov Models}
+The rectilinear mapping vector used in the original \ac{SBM} \cite{Martinez-Murcia2014225,Martinez-MurciaVRLBP,Martinez-Murcia2015} has some limitations, partially overcome by the \ac{VRLBP} and the layered extension. However, a more flexible sampling could be beneficial for the computation of texture measures. 
 
-\section{Path via Hidden Markov Models}
 We have already talked about the limitations of the rectilinear mapping vector used in \cite{Martinez-Murcia2015} and \cite{Martinez-MurciaVRLBP}. Therefore, it would be desirable to define new mapping paths that use all the available intensity and spatial information in MRI images. This way, the resulting sets of selected voxels (and the resulting maps) would contain information about both the intensities and structure.
 
 % Algoritmo base de extracción de puntos
