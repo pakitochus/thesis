@@ -181,50 +181,52 @@ or its equivalent, the probability of all the nodes:
 \begin{equation}\label{eq:probPath}
 P(\mathbb{P}_{\varphi,\theta}) = P(\mathbf{p}_0, \mathbf{p}_1, \mathbf{p}_2, \dots \mathbf{p}_N)
 \end{equation}
-with $\mathbf{p}_0$ being the origin of the spherical coordinates, and $\mathbf{p}_N$ is the last possible coordinate within $\mathbb{I}$ in the current direction $(\varphi,\theta)$. In this work, we have placed $\mathbf{p}_0$ at the \ac{AC} of the image, although other options, such as setting the origin at the middle point of $\mathbb{I}$ could be considered. This choice is a convention when using the \ac{MNI} coordinates \cite{Evans1993}, sharing conectivity with both hemispheres, therefore allowing the optimal computation of our paths. 
-
-% DONE
-
-
-where $\mathbf{p}_0$ is the node located at the origin of the image and $\mathbf{p}_N$ is the theoretical projection of the current direction $(\varphi,\theta)$ in the limits of the image $\mathbb{I}$. Setting $\mathbf{x}_0$ at the AC is not a random choice; it is a convention when using the \ac{MNI} coordinates\cite{Evans1993} and furthermore, since it is a point that shares connectivity with both hemispheres, the resulting paths will be optimal, covering most of the brain. We can assume a first-order \acf{HMM} for the tracing of the path, and the $i$-th node will be computed as:
+with $\mathbf{p}_0$ being the origin of the spherical coordinates, and $\mathbf{p}_N$ is the last possible coordinate within $\mathbb{I}$ in the current direction $(\varphi,\theta)$. In this work, we have placed $\mathbf{p}_0$ at the \ac{AC} of the image, although other options, such as setting the origin at the middle point of $\mathbb{I}$ could be considered. This choice is a convention when using the \ac{MNI} coordinates \cite{Evans1993}, sharing conectivity with both hemispheres, therefore allowing the optimal computation of our paths. If we assume a first-order \acf{HMM} for the tracing of the path, the probability of the $i$-th node in the path can be approximated as:
 \begin{equation}
-P(\mathbf{x}_i | \mathbf{x}_{i-1}, \mathbf{x}_{i-2}, \dots \mathbf{x}_0) \approx P(\mathbf{x}_i|\mathbf{x}_{i-1})
+P(\mathbf{p}_i | \mathbf{p}_{i-1}, \mathbf{p}_{i-2}, \dots \mathbf{p}_0) \approx P(\mathbf{p}_i|\mathbf{p}_{i-1})
 \end{equation}
-and with this assumption, (\ref{eq:probPath}) becomes:
+
+Using this assumption, Eq.~\ref{eq:probPath} becomes:
 \begin{equation}
-P(\mathbb{P}_{\varphi,\theta}) = P(\mathbf{x}_0, \mathbf{x}_1, \dots \mathbf{x}_N) = \prod_{i=1}^{N} P(\mathbf{x}_i|\mathbf{x}_{i-1})
+P(\mathbb{P}_{\varphi,\theta}) = P(\mathbf{p}_0, \mathbf{p}_1, \dots \mathbf{p}_N) = \prod_{i=1}^{N} P(\mathbf{p}_i|\mathbf{p}_{i-1})
 \end{equation} 
 
-In our case, we will assume that the hidden state of each node will be its intensity $I(\mathbf{x}_i)$. Let $\mathbf{I} = \{I(\mathbf{x}_0), I(\mathbf{x}_1), \dots I(\mathbf{x}_N)\}$ be the vector of the intensities in each node. With the introduction of these factors, our optimal path defined in (\ref{eq:optimalPath}) can be view as:
+Using this \ac{HMM} definition, the hidden state of each node will be its intensity $I(\mathbf{p}_i)$. Similarly to the original \ac{SBM}, let $V_{\varphi,\theta} = \{I(\mathbf{p}_0), I(\mathbf{p}_1), \dots I(\mathbf{p}_N)\}$ be the set containing all the intensities at each node of the path. Thank to this, our optimal path (Eq.~\ref{eq:optimalPath}) can be defined as:
 \begin{align}
-\mathbb{P}_{\varphi,\theta}^{opt} & = \argmax_\mathbb{P}_{\varphi,\theta} \{P(\mathbb{P}_{\varphi,\theta}|\mathbf{I})\}\\
-P(\mathbb{P}_{\varphi,\theta}|\mathbf{I}) & = P(\mathbf{x}_0, \dots x_N| I(\mathbf{x}_0), \dots I(\mathbf{x}_N))\\
-& = \frac{P(I(\mathbf{x}_0), \dots I(\mathbf{x}_N)|\mathbf{x}_0, \dots x_N)\cdot P(\mathbf{x}_0, \dots x_N)}{P(I(\mathbf{x}_0), \dots I(\mathbf{x}_N))}\label{eq:final}
+\mathbb{P}_{\varphi,\theta}^{opt} & = \argmax_{\mathbb{P}_{\varphi,\theta}} \{P(\mathbb{P}_{\varphi,\theta}|\mathbf{I})\}\\
+P(\mathbb{P}_{\varphi,\theta}|\mathbf{I}) & = P(\mathbf{p}_0, \dots x_N| I(\mathbf{p}_0), \dots I(\mathbf{p}_N))\\
+& = \frac{P(I(\mathbf{p}_0), \dots I(\mathbf{p}_N)|\mathbf{p}_0, \dots \mathbf{p}_N)\cdot P(\mathbf{p}_0, \dots \mathbf{p}_N)}{P(I(\mathbf{p}_0), \dots I(\mathbf{p}_N))}\label{eq:final}
 \end{align}
 where:
 \begin{equation}\label{eq:intP}
-P(I(\mathbf{x}_0), \dots I(\mathbf{x}_N)|\mathbf{x}_0, \dots x_N)  = \prod_{i=1}^{N} P (I(\mathbf{x}_i)|\mathbf{x}_i)
+P(I(\mathbf{p}_0), \dots I(\mathbf{p}_N)|\mathbf{p}_0, \dots \mathbf{p}_N)  = \prod_{i=1}^{N} P (I(\mathbf{p}_i)|\mathbf{p}_i)
 \end{equation}
-and $P(I(\mathbf{x}_0), \dots I(\mathbf{x}_N))$ is the \textit{a priori} probability of the intensities in the path. We can assume, without lack of generality, that this term is constant along the path, and therefore, it plays no part in the optimization process.
+and $P(I(\mathbf{p}_0), \dots I(\mathbf{p}_N))$ is the \textit{a priori} probability of the intensities in the path. We can ignore this term in the optimization process under the assumption that it is constant along the path, which is generally true. 
 
-For computational purposes, we will compute all the needed probabilities on a set of candidates $\mathbb{P}_{\varphi,\theta}_c = \{\mathbf{x}_{c,1}, \mathbf{x}_{c,2}, \dots \mathbf{x}_{c,M} \}$ defined by $\mathbf{x}_{i-1}$. This candidates are contained inside the $L^2$-norm support ball $B_{2,r}(\mathbf{x}-\mathbf{x}_{i-1})$ of radius $r$ centred in $\mathbf{x}_{i-1}$.
+To avoid computational overload, we will define a restricted set of candidates from which we will derive all the needed probabilities. This set of candidates are defined inside the $L2$-norm support ball $B_{2,r}(\mathbf{p}-\mathbf{p}_{i-1})$ of radius $r$ centred in $\mathbf{p}_{i-1}$, resulting in the candidate set $\mathbb{P}_{\varphi,\theta}^c = \{\mathbf{p}_{c,1}, \mathbf{p}_{c,2}, \dots \mathbf{p}_{c,M} \}$. 
 
-To estimate the individual probabilities needed for (\ref{eq:intP}) $P (I(\mathbf{x}_i)|\mathbf{x}_i)$, we can assume a normal distribution of intensities of the candidates with mean $I(\mathbf{x}_{i-1})$ and variance $\sigma_c^2$ the variance of the intensities of the candidate set. By assuming this, the probability of a certain intensity in the candidate node $\mathbf{x}_i$ increases as the intensity becomes more similar to the intensity of $\mathbf{x}_{i-1}$. Therefore, the assumption supports the tracing of minimal intensity difference paths. The probability of the intensity of a candidate $\mathbf{x}_i$ will be: 
+Individual probabilities $P (I(\mathbf{p}_i)|\mathbf{p}_i)$ needed in the computation of Eq.~\ref{eq:intP} can be computed under the assumption of a normally distributed candidate set $V_{\varphi,\theta}^c$ with mean $I(\mathbf{p}_{i-1})$ and variance $\sigma_c^2$. We will estimate the probability of the i$^th$ candidate node $\mathbf{p}_i$ as: 
 \begin{equation}\label{eq:intensity}
-P(I(\mathbf{x}_i)|\mathbf{x}_i) =\frac{1}{\sqrt{2\pi \sigma_c^2}}\exp\left(-\frac{(I(\mathbf{x}_i)-I(\mathbf{x}_{i-1}))^2}{2\sigma_c^2}\right)
+P(I(\mathbf{p}_i)|\mathbf{p}_i) =\frac{1}{\sqrt{2\pi \sigma_c^2}}\exp\left(-\frac{(I(\mathbf{p}_i)-I(\mathbf{p}_{i-1}))^2}{2\sigma_c^2}\right)
 \end{equation}
 
-The last term $P(\mathbf{x}_0, \dots \mathbf{x}_N)$ to be defined in (\ref{eq:final}) is directly related to the \ac{SBM} framework defined before, as it will depend on the radial direction $(\varphi, \theta)$ that we want to ``force'' in the path. To define this term, we will define an attractor located in the position $\mathbf{x}_N$ (the projection of the current direction $(\varphi,\theta)$ in the limits of the image $\mathbb{I}$). We assume that this attractor defines the conditionality, that is, that it affects the transition probability between states by means of an isotropic Gaussian radial basis function (RBF), as defined in (\ref{eq:rbf}). This definition helps the attractor to lightly condition the direction of the path at first, and more strongly as the path approaches the cortex, leading to a better representation of the underlying structure. 
+This support the assumption of minimal intensity change paths, since the $I(\mathbf{p}_i)$ maximizes its probability when similar to $I(\mathbf{p}_{i-1})$. 
+
+Finally, the 
+% DONE
+
+
+The last term $P(\mathbf{p}_0, \dots \mathbf{p}_N)$ to be defined in (\ref{eq:final}) is directly related to the \ac{SBM} framework defined before, as it will depend on the radial direction $(\varphi, \theta)$ that we want to ``force'' in the path. To define this term, we will define an attractor located in the position $\mathbf{p}_N$ (the projection of the current direction $(\varphi,\theta)$ in the limits of the image $\mathbb{I}$). We assume that this attractor defines the conditionality, that is, that it affects the transition probability between states by means of an isotropic Gaussian radial basis function (RBF), as defined in (\ref{eq:rbf}). This definition helps the attractor to lightly condition the direction of the path at first, and more strongly as the path approaches the cortex, leading to a better representation of the underlying structure. 
 \begin{align}\label{eq:rbf}
-&P(\mathbf{x}_0, \dots \mathbf{x}_N) = P(\mathbf{x}_i|\mathbf{x}_N)  \\&= \frac{1}{\sqrt{(2\pi)^d|\Sigma|}} \exp\left(-\frac{1}{2}(\mathbf{x}_i-\mathbf{x}_N)\Sigma^{-1}(\mathbf{x}_i-\mathbf{x}_N)\right) 
+&P(\mathbf{p}_0, \dots \mathbf{p}_N) = P(\mathbf{p}_i|\mathbf{p}_N)  \\&= \frac{1}{\sqrt{(2\pi)^d|\Sigma|}} \exp\left(-\frac{1}{2}(\mathbf{p}_i-\mathbf{p}_N)\Sigma^{-1}(\mathbf{p}_i-\mathbf{p}_N)\right) 
 \end{align}
-where $\Sigma$ is the covariance matrix of the given distribution. As we will consider only isotropic gaussian kernel, the matrix can be considered as a $3\times3$ diagonal matrix whose diagonal elements are a scalar value $\sigma^2$, which we set in each iteration to the euclidean distance between $\mathbf{x}_i$ and $\mathbf{x}_N$. 
+where $\Sigma$ is the covariance matrix of the given distribution. As we will consider only isotropic gaussian kernel, the matrix can be considered as a $3\times3$ diagonal matrix whose diagonal elements are a scalar value $\sigma^2$, which we set in each iteration to the euclidean distance between $\mathbf{p}_i$ and $\mathbf{p}_N$. 
 
 \subsubsection{Step Size}
-In this algorithm, instead of using a fixed step size, we evaluate each candidate point $\mathbf{x} \in B_{2,r}(\mathbf{x}-\mathbf{x}_i)$, and thus, the only parameter to regulate is the radius of the L2-norm support ball $r$. As a trade-off between computational issues and definition of the defined path, we will use a value of $r=3$ voxels, which gives approximately $200$ candidate points in each iteration. 
+In this algorithm, instead of using a fixed step size, we evaluate each candidate point $\mathbf{p} \in B_{2,r}(\mathbf{p}-\mathbf{p}_i)$, and thus, the only parameter to regulate is the radius of the L2-norm support ball $r$. As a trade-off between computational issues and definition of the defined path, we will use a value of $r=3$ voxels, which gives approximately $200$ candidate points in each iteration. 
 
 \subsubsection{Stop Condition}
-Although the paths could be defined until they reach the last point $\mathbf{x}_N$ (remember, the projection of the general direction onto the limits of $\mathbb{I}$), our interest is to model the paths inside the brain, and therefore we establish a stop condition using an intensity threshold. This threshold is computed using the entropic thresholding, as defined in \cite{Yen1995}. Let $G_m \equiv \{I_0, I_1, ... I_m\} $ denote the set of intensity levels of the whole image. We can compute a histogram to obtain the observed frequencies $f_{I_i}$, and thus, the observed probability of the different Grey levels $p_{i} = f_{I_i}/N$, where $N$ is the number of voxels in our image $\mathbb{I}$.
+Although the paths could be defined until they reach the last point $\mathbf{p}_N$ (remember, the projection of the general direction onto the limits of $\mathbb{I}$), our interest is to model the paths inside the brain, and therefore we establish a stop condition using an intensity threshold. This threshold is computed using the entropic thresholding, as defined in \cite{Yen1995}. Let $G_m \equiv \{I_0, I_1, ... I_m\} $ denote the set of intensity levels of the whole image. We can compute a histogram to obtain the observed frequencies $f_{I_i}$, and thus, the observed probability of the different Grey levels $p_{i} = f_{I_i}/N$, where $N$ is the number of voxels in our image $\mathbb{I}$.
 
 For a given intensity threshold $I_{th}=I_s$, if $\sum_{i=0}^{s-1}p_i$ is larger than zero and smaller than 1, the following distributions can be derived from this distribution after normalization:
 \begin{align}
@@ -245,25 +247,25 @@ A summary of our \ac{HMM}-based path tracing method is shown in Algorithm~\ref{a
 	\SetKwData{PathList}{pathList}
 	\SetKwInOut{Input}{input}
 	\SetKwInOut{Output}{output}
-	\Input{MRI Brain Image $I$ of size $U\times V\times W$, $\mathbf{x}_0$}
+	\Input{MRI Brain Image $I$ of size $U\times V\times W$, $\mathbf{p}_0$}
 	\Output{List of nodes in the optimum path $\mathbb{P}_{\varphi,\theta}_{opt}$}
 	\BlankLine
 	Compute the $I_{th} = I_s$ where $s$ maximizes $TE(s)$\;
-	Set $\mathbf{x}_0$ to the AC\;
+	Set $\mathbf{p}_0$ to the AC\;
 	%\For{$\varphi\leftarrow -180$ \KwTo $180$}{
 	%	\For{$\theta\leftarrow -90$ \KwTo $90$}{
-	Compute the attractor position $\mathbf{x}_N$ in the direction $(\varphi, \theta)$\;
-	$\mathbf{x}_i \leftarrow \mathbf{x}_0$\;
-	\While{$(i<\text{IterLimit})$ \& $(I(\mathbf{x}_i)>I_{th})$ \& ($\mathbf{x}_i \in \mathbb{I}$)}{
-		Get the node candidates $\mathbb{P}_{\varphi,\theta}_c = \{\mathbf{x}_{c,1}, \mathbf{x}_{c,2}, \dots \mathbf{x}_{c,M}\}$ where $\mathbf{x}_{c,m} \in B_{2,r}(\mathbf{x}_{c,m}-\mathbf{x}_i)$\;
-		Get the intensities of the candidates $I(\mathbf{x}_c) \quad \forall \mathbf{x}_c \in \mathbb{P}_{\varphi,\theta}_c$\;
-		\textbf{foreach} $\mathbf{x}_c \in \mathbb{P}_{\varphi,\theta}_c${
-			compute $P(\mathbf{x}_c|\mathbf{x}_N)$ and $P(I(\mathbf{x}_c)|\mathbf{x}_i)$  \;
+	Compute the attractor position $\mathbf{p}_N$ in the direction $(\varphi, \theta)$\;
+	$\mathbf{p}_i \leftarrow \mathbf{p}_0$\;
+	\While{$(i<\text{IterLimit})$ \& $(I(\mathbf{p}_i)>I_{th})$ \& ($\mathbf{p}_i \in \mathbb{I}$)}{
+		Get the node candidates $\mathbb{P}_{\varphi,\theta}_c = \{\mathbf{p}_{c,1}, \mathbf{p}_{c,2}, \dots \mathbf{p}_{c,M}\}$ where $\mathbf{p}_{c,m} \in B_{2,r}(\mathbf{p}_{c,m}-\mathbf{p}_i)$\;
+		Get the intensities of the candidates $I(\mathbf{p}_c) \quad \forall \mathbf{p}_c \in \mathbb{P}_{\varphi,\theta}_c$\;
+		\textbf{foreach} $\mathbf{p}_c \in \mathbb{P}_{\varphi,\theta}_c${
+			compute $P(\mathbf{p}_c|\mathbf{p}_N)$ and $P(I(\mathbf{p}_c)|\mathbf{p}_i)$  \;
 		}
-		$\mathbf{x}_{i+1} = \argmax_{\mathbf{x}_c} [P(I(\mathbf{x}_c)|\mathbf{x}_i)\cdot P(\mathbf{x}_c|\mathbf{x}_N)]$\;
+		$\mathbf{p}_{i+1} = \argmax_{\mathbf{p}_c} [P(I(\mathbf{p}_c)|\mathbf{p}_i)\cdot P(\mathbf{p}_c|\mathbf{p}_N)]$\;
 		$i=i+1$\;
 	}
-	$\mathbb{P}_{\varphi,\theta}_{opt}\leftarrow \{\mathbf{x}_0, \mathbf{x}_1, \dots \mathbf{x}_N\}$\; 
+	$\mathbb{P}_{\varphi,\theta}_{opt}\leftarrow \{\mathbf{p}_0, \mathbf{p}_1, \dots \mathbf{p}_N\}$\; 
 	%	}
 	%}
 	
@@ -288,21 +290,21 @@ Conversely, the strategy proposed in \cite{Martinez-MurciaVRLBP}, which uses Loc
 
 The GLCM, proposed by Haralick\cite{Haralick73}, is one of the most widely used methods in texture characterization, and it has been successfully applied to medical imaging in the past\cite{kovalev2001three,martinez2014parametrization}. It works by storing the number of voxel-wise correspondences between $K$ grey levels with a certain position offset $\Delta$ on a  $K\times K$ matrix ($C_{\Delta}$) along all the image. 
 
-Our modification will compute a node-wise GLC matrix, in which the number of grey-level transitions between adjacent nodes, noted as $\mathbf{x}_i$ and $\mathbf{x}_{i+1}$, is stored along the whole path $\mathbb{P}_{\varphi,\theta} = \{\mathbf{x}_0, \mathbf{x}_1 \dots \mathbf{x}_N\}$. Mathematically, the computation of the GLCM in each point in the path will be: 
+Our modification will compute a node-wise GLC matrix, in which the number of grey-level transitions between adjacent nodes, noted as $\mathbf{p}_i$ and $\mathbf{p}_{i+1}$, is stored along the whole path $\mathbb{P}_{\varphi,\theta} = \{\mathbf{p}_0, \mathbf{p}_1 \dots \mathbf{p}_N\}$. Mathematically, the computation of the GLCM in each point in the path will be: 
 \begin{equation}\label{eq:glcm}
 C_{\Delta_i}(j,k) = \sum_{i=0}^{N-1}
 \begin{cases}
-1 & I(\mathbf{x}_i) = j, I(\mathbf{x}_{i+1})=k\\
+1 & I(\mathbf{p}_i) = j, I(\mathbf{p}_{i+1})=k\\
 0 & otherwise
 \end{cases}
 \end{equation}
-where the offset is different for each pair of nodes $\Delta_i=\mathbf{x}_{i+1}-\mathbf{x}_i$. 
+where the offset is different for each pair of nodes $\Delta_i=\mathbf{p}_{i+1}-\mathbf{p}_i$. 
 
-The definition provided in (\ref{eq:glcm}) is intended for computing the values in each node. However, we can generalize this construction to include not only the nodes, but the intensity information around each node in the computation, which could potentially lead to more significant texture features. Let us note a set containing all the voxels in the closed neighbourhood of $\mathbf{x}_i$ as $X_i$. Therefore, (\ref{eq:glcm}) can be generalized for any voxel $\mathbf{x} \in X_i$ as:
+The definition provided in (\ref{eq:glcm}) is intended for computing the values in each node. However, we can generalize this construction to include not only the nodes, but the intensity information around each node in the computation, which could potentially lead to more significant texture features. Let us note a set containing all the voxels in the closed neighbourhood of $\mathbf{p}_i$ as $X_i$. Therefore, (\ref{eq:glcm}) can be generalized for any voxel $\mathbf{p} \in X_i$ as:
 \begin{equation}\label{eq:glcmGen}
-C(j,k) = \sum_{i=0}^{N-1} \sum_{\mathbf{x} \in X_i}
+C(j,k) = \sum_{i=0}^{N-1} \sum_{\mathbf{p} \in X_i}
 \begin{cases}
-1 & I(\mathbf{x}) = j, I(\mathbf{x}+\Delta_i)=k\\
+1 & I(\mathbf{p}) = j, I(\mathbf{p}+\Delta_i)=k\\
 0 & otherwise
 \end{cases}
 \end{equation}
@@ -495,7 +497,7 @@ In order to test our \ac{HMM}-based path tracing algorithm, we propose the follo
 For sections \ref{sec:intensity} and \ref{sec:texture} a similar strategy is used to obtain performance results. Once a set of features has been extracted (intensity values in each path and statistical measures for Section~\ref{sec:intensity} and texture features for Section~\ref{sec:texture}), they are used to train and classify a Support Vector Machine (SVM) classifier with linear kernel, as implemented in \texttt{LIBSVM}\cite{Chang2001}, to classify the component scores. The classification was validated using stratified 10-fold cross-validation, as recommended in \cite{Kohavi1995a}.
 
 \subsection{2D and 3D demonstrations}\label{sec:demo}
-A demonstration of the ability of our \ac{HMM} path tracing algorithm can be found in Figures~\ref{fig:gaussian} and \ref{fig:spire}. In Fig.~\ref{fig:gaussian}, the path tracing algorithm has been tested over a synthesized gaussian mixture probability density function using four isotropic gaussian kernels. The initial point was located at $\mathbf{x}_0 = (120,20)$ and the attractor at $\mathbf{x}_N = (20, 60)$. The resulting path maximizes both the orientation of the path (towards $\mathbf{x}_N$) and the minimum change in the intensity values, which is specially visible in the last nodes of the path, where it approaches $\mathbf{x}_N$ surrounding the nearby kernel. In this case, the chosen L2-norm of the support ball has been $r=3$. 
+A demonstration of the ability of our \ac{HMM} path tracing algorithm can be found in Figures~\ref{fig:gaussian} and \ref{fig:spire}. In Fig.~\ref{fig:gaussian}, the path tracing algorithm has been tested over a synthesized gaussian mixture probability density function using four isotropic gaussian kernels. The initial point was located at $\mathbf{p}_0 = (120,20)$ and the attractor at $\mathbf{p}_N = (20, 60)$. The resulting path maximizes both the orientation of the path (towards $\mathbf{p}_N$) and the minimum change in the intensity values, which is specially visible in the last nodes of the path, where it approaches $\mathbf{p}_N$ surrounding the nearby kernel. In this case, the chosen L2-norm of the support ball has been $r=3$. 
 \begin{figure}
 	\begin{center}
 		\includegraphics[width=1.5in]{Graphics/ch6/gaussian}
@@ -504,7 +506,7 @@ A demonstration of the ability of our \ac{HMM} path tracing algorithm can be fou
 	\end{center}
 \end{figure}
 
-The algorithm has been tested on a three-dimensional, helix-shaped point distribution as well (Fig.~\ref{fig:spire}). The tracing algorithm needs per-voxel intensity (or probability) values, therefore we have estimated the probability distribution of the points as the number of points within each voxel over the total number of points. Using $\mathbf{x}_0$ as the point with minimum $z$ coordinate in the data distribution and $\mathbf{x}_N$ the one with maximum $z$, the resulting path follows the data distribution consistently until it reaches the attractor. 
+The algorithm has been tested on a three-dimensional, helix-shaped point distribution as well (Fig.~\ref{fig:spire}). The tracing algorithm needs per-voxel intensity (or probability) values, therefore we have estimated the probability distribution of the points as the number of points within each voxel over the total number of points. Using $\mathbf{p}_0$ as the point with minimum $z$ coordinate in the data distribution and $\mathbf{p}_N$ the one with maximum $z$, the resulting path follows the data distribution consistently until it reaches the attractor. 
 \begin{figure}
 	\begin{center}
 		\includegraphics[width=1.5in]{Graphics/ch6/spire}
@@ -513,7 +515,7 @@ The algorithm has been tested on a three-dimensional, helix-shaped point distrib
 	\end{center}
 \end{figure}
 
-Finally, we have tested the algorithm on a real world example, using a digital elevation model (DEM) of the Iberian Peninsula, generated by the LANDSAT SRTM30+ mission (see Fig.~\ref{fig:spainmap}). We have tested a multiple path tracing by establishing sequentially $\mathbf{x}_0$ and $\mathbf{x}_N$ in ten cities. The resulting paths optimize both the distance and height variation, as well as resembling -in most cases- the roads that connect these cities in the real world. Given the dimensions of the image, in this case, the L2-norm of the support ball has been set to $r=30$. 
+Finally, we have tested the algorithm on a real world example, using a digital elevation model (DEM) of the Iberian Peninsula, generated by the LANDSAT SRTM30+ mission (see Fig.~\ref{fig:spainmap}). We have tested a multiple path tracing by establishing sequentially $\mathbf{p}_0$ and $\mathbf{p}_N$ in ten cities. The resulting paths optimize both the distance and height variation, as well as resembling -in most cases- the roads that connect these cities in the real world. Given the dimensions of the image, in this case, the L2-norm of the support ball has been set to $r=30$. 
 
 \begin{figure}[htp]
 	\centering
