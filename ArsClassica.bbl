@@ -2653,6 +2653,43 @@
       \field{pages}{520\bibrangedash 531}
       \range{pages}{12}
     \endentry
+    \entry{Chen2008}{article}{}
+      \name{author}{4}{}{%
+        {{hash=733ab03db51a7a85058f6fc1b46b7fac}{%
+           family={Chen},
+           family_i={C\bibinitperiod},
+           given={H.C.},
+           given_i={H\bibinitperiod}}}%
+        {{hash=20fc8712a86a7e97449b88fa312d3394}{%
+           family={Goldberg},
+           family_i={G\bibinitperiod},
+           given={M.},
+           given_i={M\bibinitperiod}}}%
+        {{hash=782536c66bf3595ab32c38ed179f308a}{%
+           family={Magdon-Ismail},
+           family_i={M\bibinithyphendelim I\bibinitperiod},
+           given={M.},
+           given_i={M\bibinitperiod}}}%
+        {{hash=e1ca58798c955f2095b8eda8eb40a84e}{%
+           family={Wallace},
+           family_i={W\bibinitperiod},
+           given={W.A.},
+           given_i={W\bibinitperiod}}}%
+      }
+      \strng{namehash}{12f38afece6265680798a4ae37321dc5}
+      \strng{fullhash}{20ac2269947310e28cc44f13f3be27af}
+      \field{sortinit}{2}
+      \field{sortinithash}{8343b463aacf48517c044b4d2c9c45ed}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{International Journal of Neural Systems}
+      \field{number}{06}
+      \field{title}{Reverse Engineering a Social Agent-Based Hidden {Markov} Model - ViSAGE}
+      \field{volume}{18}
+      \field{year}{2008}
+      \field{pages}{491\bibrangedash 526}
+      \range{pages}{36}
+    \endentry
     \entry{Ikonomovic2008}{article}{}
       \name{author}{15}{}{%
         {{hash=731977372e1af39f24022c8baf00651b}{%
@@ -5744,6 +5781,43 @@
       \verb{doi}
       \verb 10.1145/1961189.1961199
       \endverb
+    \endentry
+    \entry{Chen2008}{article}{}
+      \name{author}{4}{}{%
+        {{hash=733ab03db51a7a85058f6fc1b46b7fac}{%
+           family={Chen},
+           family_i={C\bibinitperiod},
+           given={H.C.},
+           given_i={H\bibinitperiod}}}%
+        {{hash=20fc8712a86a7e97449b88fa312d3394}{%
+           family={Goldberg},
+           family_i={G\bibinitperiod},
+           given={M.},
+           given_i={M\bibinitperiod}}}%
+        {{hash=782536c66bf3595ab32c38ed179f308a}{%
+           family={Magdon-Ismail},
+           family_i={M\bibinithyphendelim I\bibinitperiod},
+           given={M.},
+           given_i={M\bibinitperiod}}}%
+        {{hash=e1ca58798c955f2095b8eda8eb40a84e}{%
+           family={Wallace},
+           family_i={W\bibinitperiod},
+           given={W.A.},
+           given_i={W\bibinitperiod}}}%
+      }
+      \strng{namehash}{12f38afece6265680798a4ae37321dc5}
+      \strng{fullhash}{20ac2269947310e28cc44f13f3be27af}
+      \field{sortinit}{C}
+      \field{sortinithash}{59f25d509f3381b07695554a9f35ecb2}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{International Journal of Neural Systems}
+      \field{number}{06}
+      \field{title}{Reverse Engineering a Social Agent-Based Hidden {Markov} Model - ViSAGE}
+      \field{volume}{18}
+      \field{year}{2008}
+      \field{pages}{491\bibrangedash 526}
+      \range{pages}{36}
     \endentry
     \entry{Christine2004}{article}{}
       \name{author}{2}{}{%
@@ -10346,37 +10420,36 @@
       \endverb
     \endentry
   \endsortlist
-  \missing{Shepp82}
-  \missing{han2006reliability}
+  \missing{Yen1995}
+  \missing{Vapnik1982}
   \missing{Fischl2004}
+  \missing{Vardi1985}
+  \missing{Ramirez2009}
+  \missing{soh1999texture}
+  \missing{Kohavi1995a}
+  \missing{Ram'irez2009}
+  \missing{Alvarez2009}
+  \missing{Zhou2008}
+  \missing{xu2009source}
   \missing{jobst_accurate_1998}
+  \missing{Tzourio-Mazoyer2002}
+  \missing{Illan2014}
+  \missing{Locatelli1998}
   \missing{Jong2008}
   \missing{IAIllan2010}
   \missing{Evans1993}
-  \missing{soh1999texture}
-  \missing{dougall_systematic_2004}
-  \missing{Alvarez2009}
-  \missing{Vardi1985}
-  \missing{Chen2008}
-  \missing{Botev2010}
-  \missing{Zhou2008}
-  \missing{Inititative2010}
-  \missing{Kohavi1995a}
-  \missing{PPMI}
-  \missing{AAL}
-  \missing{Tzourio-Mazoyer2002}
-  \missing{Yen1995}
-  \missing{chan2001patterns}
-  \missing{xu2009source}
   \missing{Ortiz2013}
-  \missing{clausi2002analysis}
-  \missing{Vapnik1982}
-  \missing{Grana2011}
-  \missing{Ram'irez2009}
-  \missing{Illan2014}
+  \missing{PPMI}
+  \missing{dougall_systematic_2004}
+  \missing{han2006reliability}
   \missing{Medina2008}
-  \missing{Ramirez2009}
-  \missing{Locatelli1998}
+  \missing{Shepp82}
+  \missing{clausi2002analysis}
+  \missing{chan2001patterns}
+  \missing{AAL}
+  \missing{Grana2011}
+  \missing{Inititative2010}
+  \missing{Botev2010}
 \endrefsection
 
 \refsection{1}

@@ -205,27 +205,24 @@ and $P(I(\mathbf{p}_0), \dots I(\mathbf{p}_N))$ is the \textit{a priori} probabi
 
 To avoid computational overload, we will define a restricted set of candidates from which we will derive all the needed probabilities. This set of candidates are defined inside the $L2$-norm support ball $B_{2,r}(\mathbf{p}-\mathbf{p}_{i-1})$ of radius $r$ centred in $\mathbf{p}_{i-1}$, resulting in the candidate set $\mathbb{P}_{\varphi,\theta}^c = \{\mathbf{p}_{c,1}, \mathbf{p}_{c,2}, \dots \mathbf{p}_{c,M} \}$. 
 
-Individual probabilities $P (I(\mathbf{p}_i)|\mathbf{p}_i)$ needed in the computation of Eq.~\ref{eq:intP} can be computed under the assumption of a normally distributed candidate set $V_{\varphi,\theta}^c$ with mean $I(\mathbf{p}_{i-1})$ and variance $\sigma_c^2$. We will estimate the probability of the i$^th$ candidate node $\mathbf{p}_i$ as: 
+Individual probabilities $P (I(\mathbf{p}_i)|\mathbf{p}_i)$ needed in the computation of Eq.~\ref{eq:intP} can be computed under the assumption of a normally distributed intensity candidate set $V_{\varphi,\theta}^c$ (containing the intensities of the candidate set $\mathbb{P}_{\varphi,\theta}^c$) with mean $I(\mathbf{p}_{i-1})$ and variance $\sigma_c^2$. We will estimate the probability of the i$^{th}$ candidate node $\mathbf{p}_i$ as: 
 \begin{equation}\label{eq:intensity}
 P(I(\mathbf{p}_i)|\mathbf{p}_i) =\frac{1}{\sqrt{2\pi \sigma_c^2}}\exp\left(-\frac{(I(\mathbf{p}_i)-I(\mathbf{p}_{i-1}))^2}{2\sigma_c^2}\right)
 \end{equation}
 
 This support the assumption of minimal intensity change paths, since the $I(\mathbf{p}_i)$ maximizes its probability when similar to $I(\mathbf{p}_{i-1})$. 
 
-Finally, the 
-% DONE
-
-
-The last term $P(\mathbf{p}_0, \dots \mathbf{p}_N)$ to be defined in (\ref{eq:final}) is directly related to the \ac{SBM} framework defined before, as it will depend on the radial direction $(\varphi, \theta)$ that we want to ``force'' in the path. To define this term, we will define an attractor located in the position $\mathbf{p}_N$ (the projection of the current direction $(\varphi,\theta)$ in the limits of the image $\mathbb{I}$). We assume that this attractor defines the conditionality, that is, that it affects the transition probability between states by means of an isotropic Gaussian radial basis function (RBF), as defined in (\ref{eq:rbf}). This definition helps the attractor to lightly condition the direction of the path at first, and more strongly as the path approaches the cortex, leading to a better representation of the underlying structure. 
+Finally, we must restrict the direction of the computed path $\mathbb{P}_{\varphi,\theta}$, to match the definition of the \ac{SBM} framework. We do this by defining the last term $P(\mathbf{p}_0, \dots \mathbf{p}_N)$ in Eq.~\ref{eq:final}, setting an attractor located in the position $\mathbf{p}_N$, the last possible coordinate within $\mathbb{I}$ in the current direction $(\varphi,\theta)$. It should affect the transition probability between states by means of an isotropic \acf{RBF}, defined in Eq.~\ref{eq:rbf}:
 \begin{align}\label{eq:rbf}
 &P(\mathbf{p}_0, \dots \mathbf{p}_N) = P(\mathbf{p}_i|\mathbf{p}_N)  \\&= \frac{1}{\sqrt{(2\pi)^d|\Sigma|}} \exp\left(-\frac{1}{2}(\mathbf{p}_i-\mathbf{p}_N)\Sigma^{-1}(\mathbf{p}_i-\mathbf{p}_N)\right) 
 \end{align}
-where $\Sigma$ is the covariance matrix of the given distribution. As we will consider only isotropic gaussian kernel, the matrix can be considered as a $3\times3$ diagonal matrix whose diagonal elements are a scalar value $\sigma^2$, which we set in each iteration to the euclidean distance between $\mathbf{p}_i$ and $\mathbf{p}_N$. 
+where $\Sigma$ is the covariance matrix of the \ac{RBF}. For simplicity we will employ an isotropic gaussian kernel, so that $\Sigma$ is a matrix whose diagonal elements constant and equal to the euclidean distance between $\mathbf{p}_i$ and $\mathbf{p}_N$. This way, the attractor conditions the direction of the path, very slightly in the first nodes, and more strongly as it approaches the cortex, leading to a better representation of the underlying structure.  
 
 \subsubsection{Step Size}
-In this algorithm, instead of using a fixed step size, we evaluate each candidate point $\mathbf{p} \in B_{2,r}(\mathbf{p}-\mathbf{p}_i)$, and thus, the only parameter to regulate is the radius of the L2-norm support ball $r$. As a trade-off between computational issues and definition of the defined path, we will use a value of $r=3$ voxels, which gives approximately $200$ candidate points in each iteration. 
+This algorithms considers all candidate points $\mathbf{p} \in B_{2,r}(\mathbf{p}-\mathbf{p}_i)$ for each member of the final path $\mathbb{P}_{\varphi,\theta}$. Therefore, instead of a fixed step size, we will define the radius $r$ of the support ball. To avoid computational overload while maintaining good results, we will set $r=3$, which yields approximately $200$ candidate points per iteration. 
 
 \subsubsection{Stop Condition}
+% DONE
 Although the paths could be defined until they reach the last point $\mathbf{p}_N$ (remember, the projection of the general direction onto the limits of $\mathbb{I}$), our interest is to model the paths inside the brain, and therefore we establish a stop condition using an intensity threshold. This threshold is computed using the entropic thresholding, as defined in \cite{Yen1995}. Let $G_m \equiv \{I_0, I_1, ... I_m\} $ denote the set of intensity levels of the whole image. We can compute a histogram to obtain the observed frequencies $f_{I_i}$, and thus, the observed probability of the different Grey levels $p_{i} = f_{I_i}/N$, where $N$ is the number of voxels in our image $\mathbb{I}$.
 
 For a given intensity threshold $I_{th}=I_s$, if $\sum_{i=0}^{s-1}p_i$ is larger than zero and smaller than 1, the following distributions can be derived from this distribution after normalization:
@@ -248,7 +245,7 @@ A summary of our \ac{HMM}-based path tracing method is shown in Algorithm~\ref{a
 	\SetKwInOut{Input}{input}
 	\SetKwInOut{Output}{output}
 	\Input{MRI Brain Image $I$ of size $U\times V\times W$, $\mathbf{p}_0$}
-	\Output{List of nodes in the optimum path $\mathbb{P}_{\varphi,\theta}_{opt}$}
+	\Output{List of nodes in the optimum path $\mathbb{P}_{\varphi,\theta}^{opt}$}
 	\BlankLine
 	Compute the $I_{th} = I_s$ where $s$ maximizes $TE(s)$\;
 	Set $\mathbf{p}_0$ to the AC\;
@@ -257,15 +254,15 @@ A summary of our \ac{HMM}-based path tracing method is shown in Algorithm~\ref{a
 	Compute the attractor position $\mathbf{p}_N$ in the direction $(\varphi, \theta)$\;
 	$\mathbf{p}_i \leftarrow \mathbf{p}_0$\;
 	\While{$(i<\text{IterLimit})$ \& $(I(\mathbf{p}_i)>I_{th})$ \& ($\mathbf{p}_i \in \mathbb{I}$)}{
-		Get the node candidates $\mathbb{P}_{\varphi,\theta}_c = \{\mathbf{p}_{c,1}, \mathbf{p}_{c,2}, \dots \mathbf{p}_{c,M}\}$ where $\mathbf{p}_{c,m} \in B_{2,r}(\mathbf{p}_{c,m}-\mathbf{p}_i)$\;
-		Get the intensities of the candidates $I(\mathbf{p}_c) \quad \forall \mathbf{p}_c \in \mathbb{P}_{\varphi,\theta}_c$\;
-		\textbf{foreach} $\mathbf{p}_c \in \mathbb{P}_{\varphi,\theta}_c${
+		Get the node candidates $\mathbb{P}_{\varphi,\theta}^c = \{\mathbf{p}_{c,1}, \mathbf{p}_{c,2}, \dots \mathbf{p}_{c,M}\}$ where $\mathbf{p}_{c,m} \in B_{2,r}(\mathbf{p}_{c,m}-\mathbf{p}_i)$\;
+		Get the intensities of the candidates $I(\mathbf{p}_c) \quad \forall \mathbf{p}_c \in \mathbb{P}_{\varphi,\theta}^c$\;
+		\textbf{foreach} $\mathbf{p}_c \in \mathbb{P}_{\varphi,\theta}^c${
 			compute $P(\mathbf{p}_c|\mathbf{p}_N)$ and $P(I(\mathbf{p}_c)|\mathbf{p}_i)$  \;
 		}
 		$\mathbf{p}_{i+1} = \argmax_{\mathbf{p}_c} [P(I(\mathbf{p}_c)|\mathbf{p}_i)\cdot P(\mathbf{p}_c|\mathbf{p}_N)]$\;
 		$i=i+1$\;
 	}
-	$\mathbb{P}_{\varphi,\theta}_{opt}\leftarrow \{\mathbf{p}_0, \mathbf{p}_1, \dots \mathbf{p}_N\}$\; 
+	$\mathbb{P}_{\varphi,\theta}^{opt}\leftarrow \{\mathbf{p}_0, \mathbf{p}_1, \dots \mathbf{p}_N\}$\; 
 	%	}
 	%}
 	
