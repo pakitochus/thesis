@@ -163,6 +163,25 @@ The resulting texture maps for \ac{GM} and \ac{WM} tissues can be found at Figur
 %	const double pi = 3.1415926535
 %\end{lstlisting}
 
+\subsection{Anatomical Reference}\label{sec:anatomical}
+To better understand the \ac{SBM} maps, and the location of different features, we have projected the widely known \cite{AAL} atlas \cite{Tzourio-Mazoyer2002} using \ac{SBM}. That way, we have an anatomical reference of the different structures and their position in the different coordinate pairs $(\theta,\varphi)$. The regions are displayed in  Figures~\ref{fig:regionsCort} and \ref{fig:regionsSub}. 
+
+\begin{figure*}[htp]
+	\centering
+	\includegraphics[width=0.7\textwidth]{Graphics/ch6/05-regions_cortical}
+	
+	\caption[SBM mapping of different cortical regions.]{\ac{SBM} mapping of different cortical regions. In the Frontal region, we can find: 1) Frontal Sup., 2) Frontal Mid., 3) Frontal Inf. Oper., 4) Frontal Inf. Tri., 5) Frontal Sup. Orb, 6) Frontal Mid. Orb, 7) Frontal Inf. Orb, 8) Frontal Sup. Medial, 9) Rectus, 10) Frontal Med. Orb., 11) Precentral, 12) Supp. Motor Area. In the Parietal region: 13) Paracentral Lobe, 14) Postcentral, 15) Parietal Sup., 16) Parietal Inf., 17) Supramarginal, 18) Angular. In the Occipital region: 19) Precuneus, 20) Cuneus, 21) Occipital Sup., 22) Occipital Mid., 23) Occipital Inf., 24) Lingual. In the Temporal region: 25) Temporal Sup., 26) Temporal Pole Sup., 27) Temporal Mid., 28) Temporal Pole Mid., 29) Temporal Inf, 30) Fusiform, 31) Parahippocampal. The Cerebellum, divided in: 32) Cerebelum Crus 1, 33) Cerebelum 3, 34) Cerebelum 4-5, 35) Cerebelum 6, 36) Cerebelum 7b, 37) Cerebelum 8, 38) Cerebelum 9, 39) Cerebelum 10. And additionally, the 40) Medulla, 41) Brain Stem and 42) Insula.}
+	\label{fig:regionsCort}
+\end{figure*}
+
+\begin{figure*}[htp]
+	\centering
+	\includegraphics[width=0.7\textwidth]{Graphics/ch6/06-regions_subcortical}
+	
+	\caption[SBM mapping of some subcortical regions and organs.]{\ac{SBM} mapping of of some important subcortical regions and organs. We observe the following subcortical structures: 1) Caudate Nucleus, 2) Olfactory Bulb, 3) Rolandic Operculum, 4) Heschl's gyri, 5) Putamen, 6) Globus Pallidus, 7) Amygdala, 8) Hippocampus, 9) Thalamus, 10) Lingual, 11) Vermis 4-5, 12) Vermis 7, 13) Vermis 9, 14) Vermis 1-2, 15) Cingulate Gyrus, 16) Corpus Callosum}
+	\label{fig:regionsSub}
+\end{figure*}
+
 \section{Sampling Paths via Hidden Markov Models}
 The rectilinear mapping vector used in the original \ac{SBM} \cite{Martinez-Murcia2014225,Martinez-MurciaVRLBP,Martinez-Murcia2015} has some limitations, partially overcome by the \ac{VRLBP} and the layered extension. However, a more flexible sampling could be beneficial for the computation of texture measures. In this section we present the technique used to define minimum intensity change sampling paths via Hidden Markov Models, that was firstly proposed in \cite{Martinez-Murcia2016}. These paths are defined so that the resulting sampled sets contain information about both intensity and structure of the brain. 
 
@@ -284,7 +303,7 @@ A summary of our \ac{HMM}-based path tracing method is shown in Algorithm~\ref{a
 \subsection{Radial Texture Features}\label{sec:rtextfeat}
 The paths $\mathbb{P}_{\theta,\varphi}$ proposed above could theoretically be used as a feature selection tool to extract the set of intensities $V_{\theta,\varphi}$ as in the standard \ac{SBM}. However, since these new paths contain geometric information, they encode the internal structure, which is itself an additional feature. This encoding could be used to characterize the texture in the neighbourhood of $\mathbb{P}_{\theta,\varphi}$. 
 
-In \cite{Martinez-MurciaVRLBP} a helical sampling was proposed to define the neighbourhood of the mapping vector $\mathbf{v}_{\theta,\varphi}$. Due to the topology of the \ac{HMM} pahts, that is an approach that could not work. Conversely, we propose a modification of the \ac{GCLM} (see Section~\ref{sec:haralick}) that instead of computing the texture in a given direction, characterizes it along the defined \ac{HMM} paths. 
+In \cite{Martinez-MurciaVRLBP} a helical sampling was proposed to define the neighbourhood of the mapping vector $\mathbf{v}_{\theta,\varphi}$. Due to the topology of the \ac{HMM} pahts, that is an approach that could not work. Conversely, we propose a modification of the \ac{GLCM} (see Section~\ref{sec:haralick}) that instead of computing the texture in a given direction, characterizes it along the defined \ac{HMM} paths. 
 
 This is basically a node-wise \ac{GLCM}, in which the number of grey-level transitions between adjacent nodes, which we could note as $\mathbf{p}_i$ and $\mathbf{p}_{i+1}$, is stored along the whole path $\mathbb{P}_{\theta,\varphi} = \{\mathbf{p}_0, \mathbf{p}_1 \dots \mathbf{p}_N\}$. Mathematically, the computation of the GLCM in each point in the path will be: 
 \begin{equation}\label{eq:glcm}
@@ -315,41 +334,22 @@ Once the \ac{GLCM} is computed, we can extract a variety of texture descriptors,
 \text{IDMN} &= \sum_i\sum_j \frac{\mathbf{P}(i,j)}{i+(j-j)^2/N^2}
 \end{align}
 
+\subsection{Experiments}
+In this chapter, we have proposed a completely new framework for extracting features and visualizing structural \ac{MRI} images from the ADNI-MRI database. To evaluate them, we will combine statistical significance assessment and classification analysis. For this purpose, we propose the following experiments: 
+\begin{itemize}
+	\item Experiment 1: assessment of the original \ac{SBM} maps and the \ac{VRLBP} over segmented \ac{GM} and \ac{WM} images. We will provide a statistical significance analysis and a classification analysis under the \ac{AD} vs \ac{CTL} scenario of the six proposed maps. 
+	\item Experiment 2: assessment of the layered extension of the \ac{SBM} over segmented \ac{GM} and \ac{WM} images. That way, we want to prove if dividing the sampling set, and thus, increasing the depth resolution of the system affects the overall performance of our system. We will provide statistical significance analysis and classification analysis under the \ac{AD} vs \ac{CTL} scenario . 
+	\item Experiment 3: evaluation of the \ac{HMM} based paths on simulated datasets, to demonstrate the ability of this algorithm to adapt to different intensity distributions. 
+	\item Experiment 4: evaluation of the \ac{HMM} based paths on a real \ac{MRI} dataset, by taking the different paths as feature selectors, and evaluating the performance obtained by each individual paths, and a combination of them. We provide a classification analysis of the selected features under the \ac{AD} vs \ac{CTL} scenario.
+	\item Experiment 5: evaluation of the texture maps derived from the \ac{HMM} based paths on the T1-weighted \ac{MRI} dataset, under a classification analysis of \ac{AD} vs \ac{CTL} subjects. 
+\end{itemize}
+
+In te first three experiments, we will used segmented \ac{GM} and \ac{WM} maps, where in experiments 5 and 6, we will use raw, T1-weighted images. The classification analysis is performed by using a linear \ac{SVC} for classifying, and 10-fold cross validation strategy (see Section~\ref{sec:validation} for more details). For estimating statistical significance, we use a two-sample $t$-test as defined in Section~\ref{sec:ttestEq}. 
+
 
 \section{Results}
 
-% DONE
-\subsection{Experimental settings and validation}\label{sec:experimental}
-In this work, have considered a binary classification problem: AD vs. NC, where we have evaluate separately each type of mapping. First, in Section~\ref{sec:significance}, we will analyse our maps by means of the $t$ statistic, where the areas of higher statistical significance (AD vs NC) will be highlighted. To better interpret the results, an anatomical reference is provided.
-
-Second, we have perform a classification analysis using feature selection by means of $t$-Test, then training and testing a linear SVM classifier. The method has been validated using
-stratified 10-fold cross-validation, as recommended in \cite{Kohavi1995a}.  This procedure consists on randomly partition the whole datasets into 10 subsets that contains the same proportion of individual of both classes as the whole database. Then, one subset is used for testing and the remaining 9 are used for training. This is repeated for each of the subsets as training sets. Finally, the whole cross-validation strategy will be repeated 10 times to avoid the possible bias and random effects of the partitions, and obtain the average and standard deviation of the performance values. 
-
-Values of accuracy (acc), sensitivity (sens) and specificity (spec) along with their standard deviation  will be employed to evaluate the performance of the different mappings. Selection of parameter $C$ of the SVM classifier (as implemented in \texttt{LIBSVM} \cite{Chang2001}) will be performed using an inner 5-fold cross-validation on the training subset. 
-
-\subsection{Statistical Significance Analysis}\label{sec:significance}
-In this section, we will study the statistical significance of the \ac{SBM} maps by using a two-sample $t$-Test with pooled variance estimate, as defined in Section~\ref{sec:selection}. The computed $t$ values for each coordinate pair in the maps $(\theta,\varphi)$ will be displayed later in Section~\ref{sec:sbmttest} for the six original measures, in Section~\ref{sec:layeredttest} for the layered extension and in Section~\ref{sec:vrlbpttest} for the VRLBP. However, to provide a better understanding of these $t$-maps, an anatomical reference is provided in Section~\ref{sec:anatomical}.
-
-\subsubsection{Anatomical Reference}\label{sec:anatomical}
-Our \ac{SBM} technique maps all sampled voxels selected by our mapping vector $\mathbf{v}_{\theta,\varphi}$ to a single point in the projected map. These points cross different anatomical regions, however it is difficult to know at first which regions are crossed, given the coordinate pairs $(\theta,\varphi)$. To clarify this and provide a better understanding, we have mapped the widely known \cite{AAL} atlas \cite{Tzourio-Mazoyer2002} using \ac{SBM}, and the regions are displayed in Figures~\ref{fig:regionsCort} and \ref{fig:regionsSub}. 
-
-\begin{figure*}[htp]
-	\centering
-	\includegraphics[width=0.7\textwidth]{Graphics/ch6/05-regions_cortical}
-	
-	\caption[SBM mapping of different cortical regions.]{\ac{SBM} mapping of different cortical regions. In the Frontal region, we can find: 1) Frontal Sup., 2) Frontal Mid., 3) Frontal Inf. Oper., 4) Frontal Inf. Tri., 5) Frontal Sup. Orb, 6) Frontal Mid. Orb, 7) Frontal Inf. Orb, 8) Frontal Sup. Medial, 9) Rectus, 10) Frontal Med. Orb., 11) Precentral, 12) Supp. Motor Area. In the Parietal region: 13) Paracentral Lobe, 14) Postcentral, 15) Parietal Sup., 16) Parietal Inf., 17) Supramarginal, 18) Angular. In the Occipital region: 19) Precuneus, 20) Cuneus, 21) Occipital Sup., 22) Occipital Mid., 23) Occipital Inf., 24) Lingual. In the Temporal region: 25) Temporal Sup., 26) Temporal Pole Sup., 27) Temporal Mid., 28) Temporal Pole Mid., 29) Temporal Inf, 30) Fusiform, 31) Parahippocampal. The Cerebellum, divided in: 32) Cerebelum Crus 1, 33) Cerebelum 3, 34) Cerebelum 4-5, 35) Cerebelum 6, 36) Cerebelum 7b, 37) Cerebelum 8, 38) Cerebelum 9, 39) Cerebelum 10. And additionally, the 40) Medulla, 41) Brain Stem and 42) Insula.}
-	\label{fig:regionsCort}
-\end{figure*}
-
-\begin{figure*}[htp]
-	\centering
-	\includegraphics[width=0.7\textwidth]{Graphics/ch6/06-regions_subcortical}
-	
-	\caption[SBM mapping of some subcortical regions and organs.]{\ac{SBM} mapping of of some important subcortical regions and organs. We observe the following subcortical structures: 1) Caudate Nucleus, 2) Olfactory Bulb, 3) Rolandic Operculum, 4) Heschl's gyri, 5) Putamen, 6) Globus Pallidus, 7) Amygdala, 8) Hippocampus, 9) Thalamus, 10) Lingual, 11) Vermis 4-5, 12) Vermis 7, 13) Vermis 9, 14) Vermis 1-2, 15) Cingulate Gyrus, 16) Corpus Callosum}
-	\label{fig:regionsSub}
-\end{figure*}
-
-\subsubsection{Spherical Brain Mapping}\label{sec:sbmttest}
+\subsection{Experiment 1: Original and VRLBP Spherical Brain Mapping}
 In this section, the six measures proposed in Section~\ref{sec:mapping} will be analysed using a $t$-test. To proceed, a $t$-value will be computed for each pixel in the maps, yielding a significance map. These significance maps, or $t$-maps, are presented in Figure~\ref{fig:tmaps}. 
 
 \begin{figure*}[htp]
@@ -367,19 +367,6 @@ In the remaining \ac{GM} mappings, greater $t$-values are located in the frontal
 
 Conversely, in the \ac{WM} mappings the selected regions are different. When using Number of Folds and Thickness, the selected areas are located in the vicinity of those obtained in \ac{GM}. However, our spherical maps, especially Average and Entropy, behave differently. There is still high $t$-values that correspond to the White Matter of the Parahippocampal gyrus, but large areas of negative $t$-values that are located in areas corresponding to the Caudate Nucleus, Globus Pallidus and Putamen. The areas corresponding to the Posterior Cingulate gyrus and adjacent Precuneus present also values related to cell loss, as suggested in \cite{Baron2001}.
 
-\subsubsection{Layered Extension}\label{sec:layeredttest}
-The significance levels of the layered mappings has been assessed as well. However, due to space restrictions, we will only analyse the anatomical features of one of the mappings: a four-layered average mapping of the \ac{GM}, that can be checked in Figure~\ref{fig:tmaplayered}.
-
-\begin{figure*}[htp]
-	\centering
-	\includegraphics[width=\textwidth]{Graphics/ch6/08-Tmap4LayAverage}
-	\caption{$t$-maps that present the level of statistical relevance in the AD vs. NC paradigm, for a four-layered average mapping over a) \ac{GM} and b) \ac{WM}. }
-	\label{fig:tmaplayered}
-\end{figure*} 
-
-It is plain to see that most of the neurological changes in \ac{GM} appear in layers 2 and 3, specifically in the Hippocampus, Parahippocampal lobe and Amygdala (layer 2) and the temporal lobe (layer 3), where the values of the average mapping (equivalent to the density of the tissue) are higher in normal control subjects than in AD affected patients. This reveals atrophy in these organs, as it has been previously reported in the bibliography \cite{Dubois2007,Pievani2013}. In the case of \ac{WM}, however, the changes are negative in the areas where the Rolandic Operculum, Heschl's gyri, Putamen and Globus Pallidus are found, and positive in some sections of the Hippocampus and the White Matter contained in the Parahippocampal lobe and the remaining parts of temporal lobe (layer 2 and 3). Nevertheless, the most significant differences are located in layer 1, in the borders between ventricles and Thalamus, and specially in the Cuneus, Precuneus and Posterior Cingulate gyrus, which were reported in \cite{Baron2001}. 
-
-\subsubsection{VRLBP}\label{sec:vrlbpttest}
 Finally, to end this statistical significance analysis, the $t$-maps of the more complex VRLBP mapping are presented in Figure~\ref{fig:tmapvrlbp}.
 
 \begin{figure*}[htp]
@@ -391,25 +378,6 @@ Finally, to end this statistical significance analysis, the $t$-maps of the more
 
 These maps present low absolute $t$ levels in most of the projection, however some small regions present high significance. These regions correspond to small areas in temporal lobe, Amygdala and Hippocampus in the \ac{GM}, and even smaller regions in the \ac{WM} corresponding to the limits between Hippocampus and Amygdala. 
 
-\subsection{Classification Analysis}\label{sec:classification}
-To obtain comparable performance metrics suitable to analyse the generalization capabilities of \ac{SBM}, in this section a number of classification results are presented. A baseline is established in Section~\ref{sec:baseline} and then the performance of our maps, included the layered extension and VRLBP, is presented in Section~\ref{sec:sbmclass}.
-
-\subsubsection{Baseline - VAF}\label{sec:baseline}
-In order to establish a baseline to assess the predictive ability of our maps, we will use the \acf{VAF} paradigm, described in \cite{Stoeckel04}. This approach uses the whole 3D \ac{GM} or \ac{WM} segmented MR images and then uses all voxels of the 3D images as features in the SVM classification, yielding the performance values shown in Table~\ref{tab:perfVAF}. The performance of the \ac{SBM} maps will be compared to these. 
-
-\begin{table*}[htp]
-	\myfloatalign
-	\begin{tabularx}{\textwidth}{Xccc}
-		\tableheadline{Approach}  & \tableheadline{Accuracy} & \tableheadline{Sensitivity} & \tableheadline{Specificity}\\
-		\midrule
-		\ac{VAF} (\ac{GM})  & $0.768 \pm 0.011$ & $0.752 \pm 0.016$ & $0.785 \pm 0.016$ \\
-		\ac{VAF} (\ac{WM})  & $0.642 \pm 0.009$ & $0.668 \pm 0.012$ & $0.617 \pm 0.013$ \\
-		\bottomrule
-	\end{tabularx}
-	\caption{Performance values (Average $\pm$ Standard Deviation) for the  Voxels as Features approach in both \ac{GM} and \ac{WM} tissues.\label{tab:perfVAF}}
-\end{table*}
-
-\subsubsection{Spherical Brain Mapping}\label{sec:sbmclass}
 In this analysis, we have proceed as commented before, by computing the significance of each pixel using a $t$-test and then selecting a proportion of the most relevant, once they have been ranked according to their $t$-value. Later, these features are used to train and test a linear SVM classifier.
 
 \begin{table*}[htp]
@@ -458,6 +426,19 @@ The evolution of the performance of the maps as the number of selected pixels va
 	\label{fig:figureGM}
 \end{figure*}
 
+\subsection{Experiment 2: Layered Extension}
+The significance levels of the layered mappings has been assessed as well. However, due to space restrictions, we will only analyse the anatomical features of one of the mappings: a four-layered average mapping of the \ac{GM}, that can be checked in Figure~\ref{fig:tmaplayered}.
+
+\begin{figure*}[htp]
+	\centering
+	\includegraphics[width=\textwidth]{Graphics/ch6/08-Tmap4LayAverage}
+	\caption{$t$-maps that present the level of statistical relevance in the AD vs. NC paradigm, for a four-layered average mapping over a) \ac{GM} and b) \ac{WM}. }
+	\label{fig:tmaplayered}
+\end{figure*} 
+
+It is plain to see that most of the neurological changes in \ac{GM} appear in layers 2 and 3, specifically in the Hippocampus, Parahippocampal lobe and Amygdala (layer 2) and the temporal lobe (layer 3), where the values of the average mapping (equivalent to the density of the tissue) are higher in normal control subjects than in AD affected patients. This reveals atrophy in these organs, as it has been previously reported in the bibliography \cite{Dubois2007,Pievani2013}. In the case of \ac{WM}, however, the changes are negative in the areas where the Rolandic Operculum, Heschl's gyri, Putamen and Globus Pallidus are found, and positive in some sections of the Hippocampus and the White Matter contained in the Parahippocampal lobe and the remaining parts of temporal lobe (layer 2 and 3). Nevertheless, the most significant differences are located in layer 1, in the borders between ventricles and Thalamus, and specially in the Cuneus, Precuneus and Posterior Cingulate gyrus, which were reported in \cite{Baron2001}. 
+
+
 Regarding the four-layer extension to \ac{SBM}, the performance values obtained by different mappings at different layers and thresholds ($t$-values of 2, 4, 8 and 10) is presented in Figure~\ref{fig:layeredPerf}. 
 
 \begin{figure*}[htp]
@@ -469,17 +450,7 @@ Regarding the four-layer extension to \ac{SBM}, the performance values obtained 
 
 The first thing that we can observe is that for both \ac{GM} and \ac{WM} tissues, the better performance is achieved with the second layer. This is specially surprising in the \ac{WM} case, as the highest $t$-values were located in layer 1. 
 
-\subsection{Experimental Setup}
-In order to test our \ac{HMM}-based path tracing algorithm, we propose the following experiments: 
-\begin{itemize}
-	\item Firstly, in Sec.~\ref{sec:demo} an evaluation of the algorithm over two synthetic 2D and 3D images. 
-	\item Secondly, in Sec.~\ref{sec:intensity}, the \ac{HMM} paths created using the DARTEL template will be evaluated in the differential diagnosis (NC versus AD). 
-	\item Finally, in Sec.~\ref{sec:texture}, the proposed texture feature maps computed along the DARTEL \ac{HMM} paths will be evaluated in a differential diagnosis as well. 
-\end{itemize}
-
-For sections \ref{sec:intensity} and \ref{sec:texture} a similar strategy is used to obtain performance results. Once a set of features has been extracted (intensity values in each path and statistical measures for Section~\ref{sec:intensity} and texture features for Section~\ref{sec:texture}), they are used to train and classify a Support Vector Machine (SVM) classifier with linear kernel, as implemented in \texttt{LIBSVM}\cite{Chang2001}, to classify the component scores. The classification was validated using stratified 10-fold cross-validation, as recommended in \cite{Kohavi1995a}.
-
-\subsection{2D and 3D demonstrations}\label{sec:demo}
+\subsection{Experiment 4: HMM on Synthetic Datasets}
 A demonstration of the ability of our \ac{HMM} path tracing algorithm can be found in Figures~\ref{fig:gaussian} and \ref{fig:spire}. In Fig.~\ref{fig:gaussian}, the path tracing algorithm has been tested over a synthesized gaussian mixture probability density function using four isotropic gaussian kernels. The initial point was located at $\mathbf{p}_0 = (120,20)$ and the attractor at $\mathbf{p}_N = (20, 60)$. The resulting path maximizes both the orientation of the path (towards $\mathbf{p}_N$) and the minimum change in the intensity values, which is specially visible in the last nodes of the path, where it approaches $\mathbf{p}_N$ surrounding the nearby kernel. In this case, the chosen L2-norm of the support ball has been $r=3$. 
 \begin{figure}
 	\begin{center}
@@ -508,8 +479,8 @@ Finally, we have tested the algorithm on a real world example, using a digital e
 \end{figure}
 
 
+\subsection{Experiment 5: Feature Selection using HMM Paths}
 
-\subsection{Intensity paths}\label{sec:intensity}
 In this section, we present the results of the first experiment involving paths in MRI. To do so, we define a set of canonical paths that are computed on the DARTEL template. These DARTEL paths model the anatomy of a normal subject to whom all other images have been registered. This means that we have fixed the location of the nodes to the structural information of the template, and by extension, to the general anatomy of all images in the database. Therefore, we can characterize the structural differences by the intensity distribution --in other words, the tissue density--  of the voxels at the path nodes. Comparing the intensity distribution found in controls to the one found in AD affected subjects is thus the first logical step to measure how these paths can distinguish the different classes.
 
 To test the algorithm we use the $180\times360=64800$ DARTEL paths computed in each spatial direction $(\theta,\varphi)$, with $\varphi\in[0,360]$ and $\theta\in[-90,90]$, to select the intensities in the voxels that are placed at the nodes. The amount of voxels selected ranges from 2 to several dozens. The set of selected intensities are used as features to train and test a SVM classifier. The accuracy reached by each path (using the aforementioned cross-validation strategy) is presented as colour information in Figure~\ref{fig:accuracyMap}. The higher accuracy obtained using only one path is $0.8028\pm0.0873$, and corresponds to the light green paths that cross the temporal lobe. 
@@ -557,7 +528,7 @@ Finally, we mimic the procedure followed in the \ac{SBM} article\cite{Martinez-M
 	\label{tab:sbm_perf}
 \end{table}
 
-\subsection{Texture features}\label{sec:texture}
+\subsection{Experiment 6: Texture SBM Maps based on HMM Paths}
 The second experiment is intended to extract texture features from the DARTEL paths. With this approach, we obtain one single value per texture feature and path in the subjects, values that intrinsically contain information from their location in the path, in contrast to standard \ac{SBM} measures. In the end, each subject will be characterized by a 2D, $361\times181$ array of scalars, one for each texture feature applied to the paths. Performance values for the nine texture features maps from Section~\ref{sec:rtextfeat} are presented in Table~\ref{tab:texture}.
 
 \begin{table*}
@@ -580,6 +551,33 @@ The second experiment is intended to extract texture features from the DARTEL pa
 \end{table*}
 
 The higher accuracy obtained by the texture maps is $0.736 \pm 0.070$, corresponding to Difference Variance. The performance values of the different texture features, all obtaining accuracies higher than $65\%$ (most of them above $70\%$) reveal the discrimination abilities of these textures, although these values are not as good as those obtained using the voxel intensities or the \ac{SBM} features. 
+
+% DONE
+
+\subsubsection{Layered Extension}\label{sec:layeredttest}
+
+
+\subsubsection{VRLBP}\label{sec:vrlbpttest}
+
+
+\subsection{Classification Analysis}\label{sec:classification}
+To obtain comparable performance metrics suitable to analyse the generalization capabilities of \ac{SBM}, in this section a number of classification results are presented. A baseline is established in Section~\ref{sec:baseline} and then the performance of our maps, included the layered extension and VRLBP, is presented in Section~\ref{sec:sbmclass}.
+
+\subsubsection{Baseline - VAF}\label{sec:baseline}
+In order to establish a baseline to assess the predictive ability of our maps, we will use the \acf{VAF} paradigm, described in \cite{Stoeckel04}. This approach uses the whole 3D \ac{GM} or \ac{WM} segmented MR images and then uses all voxels of the 3D images as features in the SVM classification, yielding the performance values shown in Table~\ref{tab:perfVAF}. The performance of the \ac{SBM} maps will be compared to these. 
+
+\begin{table*}[htp]
+	\myfloatalign
+	\begin{tabularx}{\textwidth}{Xccc}
+		\tableheadline{Approach}  & \tableheadline{Accuracy} & \tableheadline{Sensitivity} & \tableheadline{Specificity}\\
+		\midrule
+		\ac{VAF} (\ac{GM})  & $0.768 \pm 0.011$ & $0.752 \pm 0.016$ & $0.785 \pm 0.016$ \\
+		\ac{VAF} (\ac{WM})  & $0.642 \pm 0.009$ & $0.668 \pm 0.012$ & $0.617 \pm 0.013$ \\
+		\bottomrule
+	\end{tabularx}
+	\caption{Performance values (Average $\pm$ Standard Deviation) for the  Voxels as Features approach in both \ac{GM} and \ac{WM} tissues.\label{tab:perfVAF}}
+\end{table*}
+
 
 \section{Discussion}
 \subsection{Spherical Brain Mapping}
