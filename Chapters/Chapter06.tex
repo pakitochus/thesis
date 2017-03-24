@@ -169,32 +169,32 @@ The rectilinear mapping vector used in the original \ac{SBM} \cite{Martinez-Murc
 % Algoritmo base de extracción de puntos
 To define the paths, we consider each three-dimensional image as a tuple that contains spatial information in the image range (the coordinates $\mathbf{p} \in \mathbb{I}$) where $\mathbb{I}\subset \mathbb{R}^3$) as well as intensity information ($I(\mathbf{p}) \in \mathbb{R}$). The intensity information will be interpreted as a sampling of the underlying tissue density, and therefore, an estimation of the probability of finding tissue in each position. 
 
-Following the notation of the \ac{VBM} defined in Section~\ref{sec:mapping}, we formulate a 3D path tracing algorithm that defines a curvilinear mapping set of positions $\mathbb{P}_{\varphi,\theta}$ directly linked to each direction $(\varphi,\theta)$ that is, at the same time, representative of the underlying intensity distribution. We then use both spatial and intensity information to construct the minimum intensity change paths oriented in the direction $(\varphi,\theta)$. Thus, we could note our 3D path in a certain direction as a Markov Model \cite{Chen2008}: 
+Following the notation of the \ac{VBM} defined in Section~\ref{sec:mapping}, we formulate a 3D path tracing algorithm that defines a curvilinear mapping set of positions $\mathbb{P}_{\theta,\varphi}$ directly linked to each direction $(\theta,\varphi)$ that is, at the same time, representative of the underlying intensity distribution. We then use both spatial and intensity information to construct the minimum intensity change paths oriented in the direction $(\theta,\varphi)$. Thus, we could note our 3D path in a certain direction as a Markov Model \cite{Chen2008}: 
 \begin{equation}
-\mathbb{P}_{\varphi,\theta} = \{\mathbf{p}_0, \mathbf{p}_1, \mathbf{p}_2, \dots \mathbf{p}_N\}
+\mathbb{P}_{\theta,\varphi} = \{\mathbf{p}_0, \mathbf{p}_1, \mathbf{p}_2, \dots \mathbf{p}_N\}
 \end{equation}
 Therefore, our optimum path would be the one that maximizes the probability of the path:
 \begin{equation}\label{eq:optimalPath}
-\mathbb{P}_{\varphi,\theta}^{opt} = \argmax_{\mathbb{P}_{\varphi,\theta}} \{P(\mathbb{P}_{\varphi,\theta})\}
+\mathbb{P}_{\theta,\varphi}^{opt} = \argmax_{\mathbb{P}_{\theta,\varphi}} \{P(\mathbb{P}_{\theta,\varphi})\}
 \end{equation}
 or its equivalent, the probability of all the nodes:
 \begin{equation}\label{eq:probPath}
-P(\mathbb{P}_{\varphi,\theta}) = P(\mathbf{p}_0, \mathbf{p}_1, \mathbf{p}_2, \dots \mathbf{p}_N)
+P(\mathbb{P}_{\theta,\varphi}) = P(\mathbf{p}_0, \mathbf{p}_1, \mathbf{p}_2, \dots \mathbf{p}_N)
 \end{equation}
-with $\mathbf{p}_0$ being the origin of the spherical coordinates, and $\mathbf{p}_N$ is the last possible coordinate within $\mathbb{I}$ in the current direction $(\varphi,\theta)$. In this work, we have placed $\mathbf{p}_0$ at the \ac{AC} of the image, although other options, such as setting the origin at the middle point of $\mathbb{I}$ could be considered. This choice is a convention when using the \ac{MNI} coordinates \cite{Evans1993}, sharing conectivity with both hemispheres, therefore allowing the optimal computation of our paths. If we assume a first-order \acf{HMM} for the tracing of the path, the probability of the $i$-th node in the path can be approximated as:
+with $\mathbf{p}_0$ being the origin of the spherical coordinates, and $\mathbf{p}_N$ is the last possible coordinate within $\mathbb{I}$ in the current direction $(\theta,\varphi)$. In this work, we have placed $\mathbf{p}_0$ at the \ac{AC} of the image, although other options, such as setting the origin at the middle point of $\mathbb{I}$ could be considered. This choice is a convention when using the \ac{MNI} coordinates \cite{Evans1993}, sharing conectivity with both hemispheres, therefore allowing the optimal computation of our paths. If we assume a first-order \acf{HMM} for the tracing of the path, the probability of the $i$-th node in the path can be approximated as:
 \begin{equation}
 P(\mathbf{p}_i | \mathbf{p}_{i-1}, \mathbf{p}_{i-2}, \dots \mathbf{p}_0) \approx P(\mathbf{p}_i|\mathbf{p}_{i-1})
 \end{equation}
 
 Using this assumption, Eq.~\ref{eq:probPath} becomes:
 \begin{equation}
-P(\mathbb{P}_{\varphi,\theta}) = P(\mathbf{p}_0, \mathbf{p}_1, \dots \mathbf{p}_N) = \prod_{i=1}^{N} P(\mathbf{p}_i|\mathbf{p}_{i-1})
+P(\mathbb{P}_{\theta,\varphi}) = P(\mathbf{p}_0, \mathbf{p}_1, \dots \mathbf{p}_N) = \prod_{i=1}^{N} P(\mathbf{p}_i|\mathbf{p}_{i-1})
 \end{equation} 
 
-Using this \ac{HMM} definition, the hidden state of each node will be its intensity $I(\mathbf{p}_i)$. Similarly to the original \ac{SBM}, let $V_{\varphi,\theta} = \{I(\mathbf{p}_0), I(\mathbf{p}_1), \dots I(\mathbf{p}_N)\}$ be the set containing all the intensities at each node of the path. Thank to this, our optimal path (Eq.~\ref{eq:optimalPath}) can be defined as:
+Using this \ac{HMM} definition, the hidden state of each node will be its intensity $I(\mathbf{p}_i)$. Similarly to the original \ac{SBM}, let $V_{\theta,\varphi} = \{I(\mathbf{p}_0), I(\mathbf{p}_1), \dots I(\mathbf{p}_N)\}$ be the set containing all the intensities at each node of the path. Thank to this, our optimal path (Eq.~\ref{eq:optimalPath}) can be defined as:
 \begin{align}
-\mathbb{P}_{\varphi,\theta}^{opt} & = \argmax_{\mathbb{P}_{\varphi,\theta}} \{P(\mathbb{P}_{\varphi,\theta}|\mathbf{I})\}\\
-P(\mathbb{P}_{\varphi,\theta}|\mathbf{I}) & = P(\mathbf{p}_0, \dots x_N| I(\mathbf{p}_0), \dots I(\mathbf{p}_N))\\
+\mathbb{P}_{\theta,\varphi}^{opt} & = \argmax_{\mathbb{P}_{\theta,\varphi}} \{P(\mathbb{P}_{\theta,\varphi}|\mathbf{I})\}\\
+P(\mathbb{P}_{\theta,\varphi}|\mathbf{I}) & = P(\mathbf{p}_0, \dots x_N| I(\mathbf{p}_0), \dots I(\mathbf{p}_N))\\
 & = \frac{P(I(\mathbf{p}_0), \dots I(\mathbf{p}_N)|\mathbf{p}_0, \dots \mathbf{p}_N)\cdot P(\mathbf{p}_0, \dots \mathbf{p}_N)}{P(I(\mathbf{p}_0), \dots I(\mathbf{p}_N))}\label{eq:final}
 \end{align}
 where:
@@ -203,41 +203,42 @@ P(I(\mathbf{p}_0), \dots I(\mathbf{p}_N)|\mathbf{p}_0, \dots \mathbf{p}_N)  = \p
 \end{equation}
 and $P(I(\mathbf{p}_0), \dots I(\mathbf{p}_N))$ is the \textit{a priori} probability of the intensities in the path. We can ignore this term in the optimization process under the assumption that it is constant along the path, which is generally true. 
 
-To avoid computational overload, we will define a restricted set of candidates from which we will derive all the needed probabilities. This set of candidates are defined inside the $L2$-norm support ball $B_{2,r}(\mathbf{p}-\mathbf{p}_{i-1})$ of radius $r$ centred in $\mathbf{p}_{i-1}$, resulting in the candidate set $\mathbb{P}_{\varphi,\theta}^c = \{\mathbf{p}_{c,1}, \mathbf{p}_{c,2}, \dots \mathbf{p}_{c,M} \}$. 
+To avoid computational overload, we will define a restricted set of candidates from which we will derive all the needed probabilities. This set of candidates are defined inside the $L2$-norm support ball $B_{2,r}(\mathbf{p}-\mathbf{p}_{i-1})$ of radius $r$ centred in $\mathbf{p}_{i-1}$, resulting in the candidate set $\mathbb{P}_{\theta,\varphi}^c = \{\mathbf{p}_{c,1}, \mathbf{p}_{c,2}, \dots \mathbf{p}_{c,M} \}$. 
 
-Individual probabilities $P (I(\mathbf{p}_i)|\mathbf{p}_i)$ needed in the computation of Eq.~\ref{eq:intP} can be computed under the assumption of a normally distributed intensity candidate set $V_{\varphi,\theta}^c$ (containing the intensities of the candidate set $\mathbb{P}_{\varphi,\theta}^c$) with mean $I(\mathbf{p}_{i-1})$ and variance $\sigma_c^2$. We will estimate the probability of the i$^{th}$ candidate node $\mathbf{p}_i$ as: 
+Individual probabilities $P (I(\mathbf{p}_i)|\mathbf{p}_i)$ needed in the computation of Eq.~\ref{eq:intP} can be computed under the assumption of a normally distributed intensity candidate set $V_{\theta,\varphi}^c$ (containing the intensities of the candidate set $\mathbb{P}_{\theta,\varphi}^c$) with mean $I(\mathbf{p}_{i-1})$ and variance $\sigma_c^2$. We will estimate the probability of the i$^{th}$ candidate node $\mathbf{p}_i$ as: 
 \begin{equation}\label{eq:intensity}
 P(I(\mathbf{p}_i)|\mathbf{p}_i) =\frac{1}{\sqrt{2\pi \sigma_c^2}}\exp\left(-\frac{(I(\mathbf{p}_i)-I(\mathbf{p}_{i-1}))^2}{2\sigma_c^2}\right)
 \end{equation}
 
 This support the assumption of minimal intensity change paths, since the $I(\mathbf{p}_i)$ maximizes its probability when similar to $I(\mathbf{p}_{i-1})$. 
 
-Finally, we must restrict the direction of the computed path $\mathbb{P}_{\varphi,\theta}$, to match the definition of the \ac{SBM} framework. We do this by defining the last term $P(\mathbf{p}_0, \dots \mathbf{p}_N)$ in Eq.~\ref{eq:final}, setting an attractor located in the position $\mathbf{p}_N$, the last possible coordinate within $\mathbb{I}$ in the current direction $(\varphi,\theta)$. It should affect the transition probability between states by means of an isotropic \acf{RBF}, defined in Eq.~\ref{eq:rbf}:
+Finally, we must restrict the direction of the computed path $\mathbb{P}_{\theta,\varphi}$, to match the definition of the \ac{SBM} framework. We do this by defining the last term $P(\mathbf{p}_0, \dots \mathbf{p}_N)$ in Eq.~\ref{eq:final}, setting an attractor located in the position $\mathbf{p}_N$, the last possible coordinate within $\mathbb{I}$ in the current direction $(\theta,\varphi)$. It should affect the transition probability between states by means of an isotropic \acf{RBF}, defined in Eq.~\ref{eq:rbf}:
 \begin{align}\label{eq:rbf}
 &P(\mathbf{p}_0, \dots \mathbf{p}_N) = P(\mathbf{p}_i|\mathbf{p}_N)  \\&= \frac{1}{\sqrt{(2\pi)^d|\Sigma|}} \exp\left(-\frac{1}{2}(\mathbf{p}_i-\mathbf{p}_N)\Sigma^{-1}(\mathbf{p}_i-\mathbf{p}_N)\right) 
 \end{align}
 where $\Sigma$ is the covariance matrix of the \ac{RBF}. For simplicity we will employ an isotropic gaussian kernel, so that $\Sigma$ is a matrix whose diagonal elements constant and equal to the euclidean distance between $\mathbf{p}_i$ and $\mathbf{p}_N$. This way, the attractor conditions the direction of the path, very slightly in the first nodes, and more strongly as it approaches the cortex, leading to a better representation of the underlying structure.  
 
 \subsubsection{Step Size}
-This algorithms considers all candidate points $\mathbf{p} \in B_{2,r}(\mathbf{p}-\mathbf{p}_i)$ for each member of the final path $\mathbb{P}_{\varphi,\theta}$. Therefore, instead of a fixed step size, we will define the radius $r$ of the support ball. To avoid computational overload while maintaining good results, we will set $r=3$, which yields approximately $200$ candidate points per iteration. 
+This algorithms considers all candidate points $\mathbf{p} \in B_{2,r}(\mathbf{p}-\mathbf{p}_i)$ for each member of the final path $\mathbb{P}_{\theta,\varphi}$. Therefore, instead of a fixed step size, we will define the radius $r$ of the support ball. To avoid computational overload while maintaining good results, we will set $r=3$, which yields approximately $200$ candidate points per iteration. 
 
 \subsubsection{Stop Condition}
-% DONE
-Although the paths could be defined until they reach the last point $\mathbf{p}_N$ (remember, the projection of the general direction onto the limits of $\mathbb{I}$), our interest is to model the paths inside the brain, and therefore we establish a stop condition using an intensity threshold. This threshold is computed using the entropic thresholding, as defined in \cite{Yen1995}. Let $G_m \equiv \{I_0, I_1, ... I_m\} $ denote the set of intensity levels of the whole image. We can compute a histogram to obtain the observed frequencies $f_{I_i}$, and thus, the observed probability of the different Grey levels $p_{i} = f_{I_i}/N$, where $N$ is the number of voxels in our image $\mathbb{I}$.
+The image $\mathbb{I}$ not only contains information about the structure of the brain, but also many empty space. If the attractor is located at the last point $ \mathbf{p} \in \mathbb{I}$, we expect the resulting path to reach that point. However, what we are really interested on is the brain itself, so we define a stop condition that considers that the path is finished once it reaches the last voxel inside the brain. To do so, we use an intensity threshold. 
 
-For a given intensity threshold $I_{th}=I_s$, if $\sum_{i=0}^{s-1}p_i$ is larger than zero and smaller than 1, the following distributions can be derived from this distribution after normalization:
+This threshold is calculated under the entropic thresholding, as in \cite{Yen1995}. If we note $G_m \equiv \{I_0, I_1, ... I_m\} $ the set containing all intensity levels in the image $\mathbf{I}$ (a vectorized image of length $m$), we can compute a histogram that characterizes the observed frequencies. From these frequencies we can derive the observed probability of the different grey levels. The entropic thresholding defines two distributions after normalization: 
 \begin{align}
 & A \equiv \left\{\frac{p_0}{P(I_{s})}, \frac{p_1}{P(I_{s})}, \dots, \frac{p_{s-1}}{P(I_{s})} \right\}\\
 & B \equiv \left\{\frac{p_{s}}{1-P(I_{s})}, \frac{p_{s+1}}{1-P(I_{s})}, \dots, \frac{p_m}{1-P(I_{s})} \right\}
 \end{align}
-where $P(I_s) = \sum_{i}^{s}p_{I_i}$ is the cumulative density function for the $s$-th Grey level. Therefore, we choose the threshold so that the total amount of information provided by $A$ and $B$ (foreground and background of the image) is maximized. The total information provided by the $s$-th Grey level is: 
+where $P(I_s) = \sum_{i}^{s}p_{I_i}$ is the cumulative density function for the $s$-th grey level. The algorithm is called entropic thresholding because we choose the threshold $I_{th}=I_s$ so that the total amount of information provided by $A$ and $B$ (which we can consider the foreground and background of the image) is maximized. Therefore, we can define the total information provided by choosing the $s$-th grey level as: 
 \begin{align}
 TE(s) & = E_A(s) + E_B(s) \\
 & = -\sum_{i=0}^{s-1}\left(\frac{p_i}{P(I_s)}\right)\log\left(\frac{p_i}{P(I_s)}\right) \\
 & - \sum_{i=s}^{m-1}\left(\frac{p_i}{1-P(I_s)}\right)\log\left(\frac{p_i}{1-P(I_s)}\right)
 \end{align}
 
-A summary of our \ac{HMM}-based path tracing method is shown in Algorithm~\ref{alg:hmmPath}. To illustrate the effect of the algorithm on a real example, Fig.~\ref{fig:cuts} depicts the resulting set of paths computed over the standard MRI DARTEL template. 
+The $s$ that maximizes that latter equation is the grey level that we choose as threshold. 
+
+A summary of our \ac{HMM}-based path tracing method is shown in Algorithm~\ref{alg:hmmPath}. In Figure~\ref{fig:cuts} we show all paths computed in all directions $(\theta,\varphi)$ for $0^o<\varphi<360^o$ and $0^o<\theta<180^o$ at an interval of $1^o$. 
 
 \begin{algorithm*}
 	\SetKwData{CandInt}{candInt}
@@ -245,7 +246,7 @@ A summary of our \ac{HMM}-based path tracing method is shown in Algorithm~\ref{a
 	\SetKwInOut{Input}{input}
 	\SetKwInOut{Output}{output}
 	\Input{MRI Brain Image $I$ of size $U\times V\times W$, $\mathbf{p}_0$}
-	\Output{List of nodes in the optimum path $\mathbb{P}_{\varphi,\theta}^{opt}$}
+	\Output{List of nodes in the optimum path $\mathbb{P}_{\theta,\varphi}^{opt}$}
 	\BlankLine
 	Compute the $I_{th} = I_s$ where $s$ maximizes $TE(s)$\;
 	Set $\mathbf{p}_0$ to the AC\;
@@ -254,15 +255,15 @@ A summary of our \ac{HMM}-based path tracing method is shown in Algorithm~\ref{a
 	Compute the attractor position $\mathbf{p}_N$ in the direction $(\varphi, \theta)$\;
 	$\mathbf{p}_i \leftarrow \mathbf{p}_0$\;
 	\While{$(i<\text{IterLimit})$ \& $(I(\mathbf{p}_i)>I_{th})$ \& ($\mathbf{p}_i \in \mathbb{I}$)}{
-		Get the node candidates $\mathbb{P}_{\varphi,\theta}^c = \{\mathbf{p}_{c,1}, \mathbf{p}_{c,2}, \dots \mathbf{p}_{c,M}\}$ where $\mathbf{p}_{c,m} \in B_{2,r}(\mathbf{p}_{c,m}-\mathbf{p}_i)$\;
-		Get the intensities of the candidates $I(\mathbf{p}_c) \quad \forall \mathbf{p}_c \in \mathbb{P}_{\varphi,\theta}^c$\;
-		\textbf{foreach} $\mathbf{p}_c \in \mathbb{P}_{\varphi,\theta}^c${
+		Get the node candidates $\mathbb{P}_{\theta,\varphi}^c = \{\mathbf{p}_{c,1}, \mathbf{p}_{c,2}, \dots \mathbf{p}_{c,M}\}$ where $\mathbf{p}_{c,m} \in B_{2,r}(\mathbf{p}_{c,m}-\mathbf{p}_i)$\;
+		Get the intensities of the candidates $I(\mathbf{p}_c) \quad \forall \mathbf{p}_c \in \mathbb{P}_{\theta,\varphi}^c$\;
+		\textbf{foreach} $\mathbf{p}_c \in \mathbb{P}_{\theta,\varphi}^c${
 			compute $P(\mathbf{p}_c|\mathbf{p}_N)$ and $P(I(\mathbf{p}_c)|\mathbf{p}_i)$  \;
 		}
 		$\mathbf{p}_{i+1} = \argmax_{\mathbf{p}_c} [P(I(\mathbf{p}_c)|\mathbf{p}_i)\cdot P(\mathbf{p}_c|\mathbf{p}_N)]$\;
 		$i=i+1$\;
 	}
-	$\mathbb{P}_{\varphi,\theta}^{opt}\leftarrow \{\mathbf{p}_0, \mathbf{p}_1, \dots \mathbf{p}_N\}$\; 
+	$\mathbb{P}_{\theta,\varphi}^{opt}\leftarrow \{\mathbf{p}_0, \mathbf{p}_1, \dots \mathbf{p}_N\}$\; 
 	%	}
 	%}
 	
@@ -272,11 +273,12 @@ A summary of our \ac{HMM}-based path tracing method is shown in Algorithm~\ref{a
 
 \begin{figure}
 	\begin{center}
-		\includegraphics[width=2in]{Graphics/ch6/cuts}
+		\includegraphics[width=0.7\textwidth]{Graphics/ch6/cuts}
 		\caption[Set of \acs{HMM} based paths over the MRI DARTEL template.]{Set of \ac{HMM} based paths over the MRI DARTEL template.}
 		\label{fig:cuts}
 	\end{center}
 \end{figure}
+% DONE
 
 
 % Con o sin suavizado
@@ -287,7 +289,7 @@ Conversely, the strategy proposed in \cite{Martinez-MurciaVRLBP}, which uses Loc
 
 The GLCM, proposed by Haralick\cite{Haralick73}, is one of the most widely used methods in texture characterization, and it has been successfully applied to medical imaging in the past\cite{kovalev2001three,martinez2014parametrization}. It works by storing the number of voxel-wise correspondences between $K$ grey levels with a certain position offset $\Delta$ on a  $K\times K$ matrix ($C_{\Delta}$) along all the image. 
 
-Our modification will compute a node-wise GLC matrix, in which the number of grey-level transitions between adjacent nodes, noted as $\mathbf{p}_i$ and $\mathbf{p}_{i+1}$, is stored along the whole path $\mathbb{P}_{\varphi,\theta} = \{\mathbf{p}_0, \mathbf{p}_1 \dots \mathbf{p}_N\}$. Mathematically, the computation of the GLCM in each point in the path will be: 
+Our modification will compute a node-wise GLC matrix, in which the number of grey-level transitions between adjacent nodes, noted as $\mathbf{p}_i$ and $\mathbf{p}_{i+1}$, is stored along the whole path $\mathbb{P}_{\theta,\varphi} = \{\mathbf{p}_0, \mathbf{p}_1 \dots \mathbf{p}_N\}$. Mathematically, the computation of the GLCM in each point in the path will be: 
 \begin{equation}\label{eq:glcm}
 C_{\Delta_i}(j,k) = \sum_{i=0}^{N-1}
 \begin{cases}
@@ -526,12 +528,12 @@ Finally, we have tested the algorithm on a real world example, using a digital e
 \subsection{Intensity paths}\label{sec:intensity}
 In this section, we present the results of the first experiment involving paths in MRI. To do so, we define a set of canonical paths that are computed on the DARTEL template. These DARTEL paths model the anatomy of a normal subject to whom all other images have been registered. This means that we have fixed the location of the nodes to the structural information of the template, and by extension, to the general anatomy of all images in the database. Therefore, we can characterize the structural differences by the intensity distribution --in other words, the tissue density--  of the voxels at the path nodes. Comparing the intensity distribution found in controls to the one found in AD affected subjects is thus the first logical step to measure how these paths can distinguish the different classes.
 
-To test the algorithm we use the $180\times360=64800$ DARTEL paths computed in each spatial direction $(\varphi,\theta)$, with $\varphi\in[0,360]$ and $\theta\in[-90,90]$, to select the intensities in the voxels that are placed at the nodes. The amount of voxels selected ranges from 2 to several dozens. The set of selected intensities are used as features to train and test a SVM classifier. The accuracy reached by each path (using the aforementioned cross-validation strategy) is presented as colour information in Figure~\ref{fig:accuracyMap}. The higher accuracy obtained using only one path is $0.8028\pm0.0873$, and corresponds to the light green paths that cross the temporal lobe. 
+To test the algorithm we use the $180\times360=64800$ DARTEL paths computed in each spatial direction $(\theta,\varphi)$, with $\varphi\in[0,360]$ and $\theta\in[-90,90]$, to select the intensities in the voxels that are placed at the nodes. The amount of voxels selected ranges from 2 to several dozens. The set of selected intensities are used as features to train and test a SVM classifier. The accuracy reached by each path (using the aforementioned cross-validation strategy) is presented as colour information in Figure~\ref{fig:accuracyMap}. The higher accuracy obtained using only one path is $0.8028\pm0.0873$, and corresponds to the light green paths that cross the temporal lobe. 
 
 \begin{figure}
 	\begin{center}
 		\includegraphics[width=\columnwidth]{Graphics/ch6/accuracyPaths2}
-		\caption{DARTEL paths computed in each direction ($\varphi,\theta$). Each path's colour represent the accuracy in a differential diagnosis. Only one in every five paths are shown for clarity purposes.}
+		\caption{DARTEL paths computed in each direction ($\theta,\varphi$). Each path's colour represent the accuracy in a differential diagnosis. Only one in every five paths are shown for clarity purposes.}
 		\label{fig:accuracyMap}
 	\end{center}
 \end{figure}
@@ -650,7 +652,7 @@ Additionally, our mapping method is potentially applicable to other imaging moda
 \subsection{Paths via \ac{HMM}}\label{sec:discussion}
 In this work we propose a new path tracing algorithm based on Hidden Markov Models used to trace similar intensity paths inside the brain. The paths are meant to be used as a feature extraction tool in the \ac{SBM} framework either by selecting voxels or computing features. We have performed several experiments to evaluate these approaches in a differential diagnosis of AD using MRI brain images. 
 
-Our paths are defined so that they construct a minimum intensity variation path starting at the AC and oriented in a general direction set by the spherical coordinate pair $(\varphi,\theta)$. As commented before, the AC is the obvious starting point, given its privileged position in the middle of the left and right hemispheres. A different starting point will reveal suboptimal, stopping at disconnected regions such as the ventricles, and yielding incomplete paths. 
+Our paths are defined so that they construct a minimum intensity variation path starting at the AC and oriented in a general direction set by the spherical coordinate pair $(\theta,\varphi)$. As commented before, the AC is the obvious starting point, given its privileged position in the middle of the left and right hemispheres. A different starting point will reveal suboptimal, stopping at disconnected regions such as the ventricles, and yielding incomplete paths. 
 
 The paths adapt to the intensity changes in a certain direction in the brain, modelling grey level connectivity in all spherical directions. Since grey level is directly related to tissue density, we can assume that the outcome follows smooth, same-density paths that start in white matter and progressively transition to grey matter in a specific direction. Therefore, they are not functional connectivity maps like Diffusion Tensor Imaging (DTI), which have been used as well in the diagnosis of AD\cite{Grana2011,Medina2008}. While DTI fibers are the result of a tensor processing over diffusion images that quantify the water molecule motion -in both direction and average magnitude- at the voxel level, our \ac{HMM} paths only characterize grey level connectivity in static MRI images, and are meant to be used for feature selection. 
 
