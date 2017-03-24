@@ -68,19 +68,19 @@ We will compute one $16\times16$ \ac{GLCM} for each of the combinations of direc
 \end{equation}
 from which the texture features will be derived.
 
-\subsubsection{Haralick Texture Features}
+\subsubsection{Haralick Texture Features}\label{sec:haralickFeatures}
 %Parámetros de haralick. 
 In \cite{Haralick73,Haralick1992a}, many texture features are derived from the probability matrix defined above. We have selected twelve of these features to use in this work. These features are: 
-\begin{align}
-\text{Energy} & = \sum\limits_i\sum\limits_j \mathbf{P}(i,j)^2\\ 
-\text{Entropy} & = \sum\limits_i\sum\limits_j \mathbf{P}(i,j) \log \mathbf{P}(i,j)\\
-\text{Correlation} & = \frac{\sum_i\sum_j ij\mathbf{P}(i,j) - \mu_x\mu_y}{\sigma_x\sigma_y}\\
+\begin{align}\label{eq:energy}
+\text{Energy} & = \sum\limits_i\sum\limits_j \mathbf{P}(i,j)^2\\ \label{eq:entropy}
+\text{Entropy} & = \sum\limits_i\sum\limits_j \mathbf{P}(i,j) \log \mathbf{P}(i,j)\\\label{eq:correlation}
+\text{Correlation} & = \frac{\sum_i\sum_j ij\mathbf{P}(i,j) - \mu_x\mu_y}{\sigma_x\sigma_y}\\\label{eq:contrastHar}
 \text{Contrast} & = \sum\limits_{n=0}^{N_g-1} n^2 \left\lbrace\sum\limits_{|i-j|=n}\mathbf{P}(i,j)\right\rbrace  \\
 \text{Variance} & \sum\limits_i\sum\limits_j (i-\mu_i)^2 \mathbf{P}(i,j)+ (j-\mu_j)^2\mathbf{P}(i,j)\\
 \text{Sum Mean} & = \frac{1}{2} \sum\limits_i\sum\limits_j(i\mathbf{P}(i,j)+j\mathbf{P}(i,j))\\
 \text{Inertia} & \sum\limits_i\sum\limits_j (i-j)^2\mathbf{P}(i,j)\\
 \text{Cluster Shade} & \sum\limits_i\sum\limits_j (i+j-\mu_x-\mu_y)^3 \mathbf{P}(i,j)\\
-\text{Cluster Tendency} & \sum\limits_i\sum\limits_j \{ i+j-\mu_x-\mu_y\}^4 \mathbf{P}(i,j)\\
+\text{Cluster Tendency} & \sum\limits_i\sum\limits_j \{ i+j-\mu_x-\mu_y\}^4 \mathbf{P}(i,j)\\\label{eq:homogeneity}
 \text{Homogeneity} & = \sum\limits_i\sum\limits_j \frac{\mathbf{P}(i,j)}{1+|i-j|}\\
 \end{align}
 \begin{align}

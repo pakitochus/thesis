@@ -3943,6 +3943,31 @@
       \verb 10.1136/jnnp.74.3.294
       \endverb
     \endentry
+    \entry{clausi2002analysis}{article}{}
+      \name{author}{1}{}{%
+        {{hash=3bc354c2bced5813e072f02000c1186f}{%
+           family={Clausi},
+           family_i={C\bibinitperiod},
+           given={David\bibnamedelima A},
+           given_i={D\bibinitperiod\bibinitdelim A\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {NRC Research Press Ottawa, Canada}%
+      }
+      \strng{namehash}{3bc354c2bced5813e072f02000c1186f}
+      \strng{fullhash}{3bc354c2bced5813e072f02000c1186f}
+      \field{sortinit}{2}
+      \field{sortinithash}{8343b463aacf48517c044b4d2c9c45ed}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Canadian Journal of remote sensing}
+      \field{number}{1}
+      \field{title}{An analysis of co-occurrence texture statistics as a function of grey level quantization}
+      \field{volume}{28}
+      \field{year}{2002}
+      \field{pages}{45\bibrangedash 62}
+      \range{pages}{18}
+    \endentry
     \entry{Fischl2002}{article}{}
       \name{author}{14}{}{%
         {{hash=e4210e5a0305aced45740a9ccb645743}{%
@@ -4636,6 +4661,36 @@
       \field{year}{1999}
       \field{pages}{626\bibrangedash 634}
       \range{pages}{9}
+    \endentry
+    \entry{soh1999texture}{article}{}
+      \name{author}{2}{}{%
+        {{hash=6700a180c47eed07cb94e60c63cb218c}{%
+           family={Soh},
+           family_i={S\bibinitperiod},
+           given={L-K},
+           given_i={L\bibinithyphendelim K\bibinitperiod}}}%
+        {{hash=f3ff72599ad1338a0e2a9725a3e05866}{%
+           family={Tsatsoulis},
+           family_i={T\bibinitperiod},
+           given={Costas},
+           given_i={C\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {IEEE}%
+      }
+      \strng{namehash}{506eaaf9233e86c0d592cd20a2a119a4}
+      \strng{fullhash}{506eaaf9233e86c0d592cd20a2a119a4}
+      \field{sortinit}{1}
+      \field{sortinithash}{53e85f4cf497d2a4e1d51786552bcbf1}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Geoscience and Remote Sensing, IEEE Transactions on}
+      \field{number}{2}
+      \field{title}{Texture analysis of {SAR} sea ice imagery using gray level co-occurrence matrices}
+      \field{volume}{37}
+      \field{year}{1999}
+      \field{pages}{780\bibrangedash 795}
+      \range{pages}{16}
     \endentry
     \entry{Szatmari1999}{article}{}
       \name{author}{1}{}{%
@@ -5912,6 +5967,31 @@
       \verb{doi}
       \verb 10.1159/000051283
       \endverb
+    \endentry
+    \entry{clausi2002analysis}{article}{}
+      \name{author}{1}{}{%
+        {{hash=3bc354c2bced5813e072f02000c1186f}{%
+           family={Clausi},
+           family_i={C\bibinitperiod},
+           given={David\bibnamedelima A},
+           given_i={D\bibinitperiod\bibinitdelim A\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {NRC Research Press Ottawa, Canada}%
+      }
+      \strng{namehash}{3bc354c2bced5813e072f02000c1186f}
+      \strng{fullhash}{3bc354c2bced5813e072f02000c1186f}
+      \field{sortinit}{C}
+      \field{sortinithash}{59f25d509f3381b07695554a9f35ecb2}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Canadian Journal of remote sensing}
+      \field{number}{1}
+      \field{title}{An analysis of co-occurrence texture statistics as a function of grey level quantization}
+      \field{volume}{28}
+      \field{year}{2002}
+      \field{pages}{45\bibrangedash 62}
+      \range{pages}{18}
     \endentry
     \entry{DaelemansHosteMeulderEtAl2003}{article}{}
       \name{author}{4}{}{%
@@ -9801,6 +9881,36 @@
       \endverb
       \keyw{Bayes Theorem; Brain,anatomy & histology,physiology; Databases,Factual; Humans; Image Processing,Computer-Assisted; Magnetic Resonance Imaging,statistics & numerical data; Models,Neurological; Models,Statistical; Software}
     \endentry
+    \entry{soh1999texture}{article}{}
+      \name{author}{2}{}{%
+        {{hash=6700a180c47eed07cb94e60c63cb218c}{%
+           family={Soh},
+           family_i={S\bibinitperiod},
+           given={L-K},
+           given_i={L\bibinithyphendelim K\bibinitperiod}}}%
+        {{hash=f3ff72599ad1338a0e2a9725a3e05866}{%
+           family={Tsatsoulis},
+           family_i={T\bibinitperiod},
+           given={Costas},
+           given_i={C\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {IEEE}%
+      }
+      \strng{namehash}{506eaaf9233e86c0d592cd20a2a119a4}
+      \strng{fullhash}{506eaaf9233e86c0d592cd20a2a119a4}
+      \field{sortinit}{S}
+      \field{sortinithash}{fd1e7c5ab79596b13dbbb67f8d70fb5a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Geoscience and Remote Sensing, IEEE Transactions on}
+      \field{number}{2}
+      \field{title}{Texture analysis of {SAR} sea ice imagery using gray level co-occurrence matrices}
+      \field{volume}{37}
+      \field{year}{1999}
+      \field{pages}{780\bibrangedash 795}
+      \range{pages}{16}
+    \endentry
     \entry{Spetsieris2009}{article}{}
       \name{author}{4}{}{%
         {{hash=337cf33caded62f9ba2c01cd2ad6cb3e}{%
@@ -10420,36 +10530,34 @@
       \endverb
     \endentry
   \endsortlist
-  \missing{Yen1995}
-  \missing{Vapnik1982}
-  \missing{Fischl2004}
-  \missing{Vardi1985}
-  \missing{Ramirez2009}
-  \missing{soh1999texture}
-  \missing{Kohavi1995a}
-  \missing{Ram'irez2009}
-  \missing{Alvarez2009}
   \missing{Zhou2008}
   \missing{xu2009source}
-  \missing{jobst_accurate_1998}
   \missing{Tzourio-Mazoyer2002}
-  \missing{Illan2014}
-  \missing{Locatelli1998}
-  \missing{Jong2008}
-  \missing{IAIllan2010}
+  \missing{chan2001patterns}
+  \missing{Fischl2004}
+  \missing{Shepp82}
+  \missing{Botev2010}
+  \missing{Medina2008}
+  \missing{Alvarez2009}
+  \missing{han2006reliability}
+  \missing{Kohavi1995a}
   \missing{Evans1993}
+  \missing{AAL}
+  \missing{jobst_accurate_1998}
+  \missing{Vapnik1982}
+  \missing{Inititative2010}
+  \missing{Locatelli1998}
+  \missing{Ram'irez2009}
+  \missing{dougall_systematic_2004}
   \missing{Ortiz2013}
   \missing{PPMI}
-  \missing{dougall_systematic_2004}
-  \missing{han2006reliability}
-  \missing{Medina2008}
-  \missing{Shepp82}
-  \missing{clausi2002analysis}
-  \missing{chan2001patterns}
-  \missing{AAL}
   \missing{Grana2011}
-  \missing{Inititative2010}
-  \missing{Botev2010}
+  \missing{IAIllan2010}
+  \missing{Illan2014}
+  \missing{Yen1995}
+  \missing{Jong2008}
+  \missing{Vardi1985}
+  \missing{Ramirez2009}
 \endrefsection
 
 \refsection{1}
