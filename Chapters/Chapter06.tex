@@ -288,9 +288,9 @@ In \cite{Martinez-MurciaVRLBP} a helical sampling was proposed to define the nei
 
 This is basically a node-wise \ac{GLCM}, in which the number of grey-level transitions between adjacent nodes, which we could note as $\mathbf{p}_i$ and $\mathbf{p}_{i+1}$, is stored along the whole path $\mathbb{P}_{\theta,\varphi} = \{\mathbf{p}_0, \mathbf{p}_1 \dots \mathbf{p}_N\}$. Mathematically, the computation of the GLCM in each point in the path will be: 
 \begin{equation}\label{eq:glcm}
-C_{\Delta_i}(j,k) = \sum_{i=0}^{N-1}
+\mathbf{C}_{\Delta_n}(i,j) = \sum_{n=0}^{N-1}
 \begin{cases}
-1 & I(\mathbf{p}_i) = j, I(\mathbf{p}_{i+1})=k\\
+1 & I(\mathbf{p}_n) = i, I(\mathbf{p}_{n+1})=j\\
 0 & otherwise
 \end{cases}
 \end{equation}
@@ -298,9 +298,9 @@ where the offset is different for each pair of nodes $\Delta_i=\mathbf{p}_{i+1}-
 
 The definition in Eq.~\ref{eq:glcm} computes the values at each node, without considering the neighbourhood. We can generalize it to include the surrounding vicinity of the $i$-th node $\mathbf{p}_i$ in the \ac{HMM} path, which we have noted as the set $\mathbb{X}_i$. Under this generalization, equation~\ref{eq:glcm} becomes: 
 \begin{equation}\label{eq:glcmGen}
-C(j,k) = \sum_{i=0}^{N-1} \sum_{\mathbf{p} \in X_i}
+\mathbf{C}(i,j) = \sum_{n=0}^{N-1} \sum_{\mathbf{p} \in \mathbb{X}_i}
 \begin{cases}
-1 & I(\mathbf{p}) = j, I(\mathbf{p}+\Delta_i)=k\\
+1 & I(\mathbf{p}) = i, I(\mathbf{p}+\Delta_n)=j\\
 0 & otherwise
 \end{cases}
 \end{equation}
@@ -311,15 +311,14 @@ Once the \ac{GLCM} is computed, we can extract a variety of texture descriptors,
 \text{Dissimilarity} & = \sum_i\sum_j\{|i-j|\mathbf{P}(i,j)\}\\\label{eq:dvar}
 \text{D. Variance} &=  \text{VAR}\left\lbrace\sum_{|i-j|=k}\mathbf{P}(i,j)\right\rbrace\\\label{eq:dent}
 \text{D. Entropy} &= -\sum\limits_{k=0}^{N_g-1} \sum_{|i-j|=k}\mathbf{P}(i,j) \log \left\lbrace \sum_{|i-j|=k}\mathbf{P}(i,j)\right\rbrace \\\label{eq:idn}
-\text{IDN} &= \textstyle\sum_i\sum_j \frac{\mathbf{P}(i,j)}{1+|i-j|/N}\\ \label{eq:idmn}
-\text{IDMN} &= \textstyle\sum_i\sum_j \frac{\mathbf{P}(i,j)}{i+(j-j)^2/N^2}
+\text{IDN} &= \sum_i\sum_j \frac{\mathbf{P}(i,j)}{1+|i-j|/N}\\ \label{eq:idmn}
+\text{IDMN} &= \sum_i\sum_j \frac{\mathbf{P}(i,j)}{i+(j-j)^2/N^2}
 \end{align}
- 
-% DONE
 
 
 \section{Results}
 
+% DONE
 \subsection{Experimental settings and validation}\label{sec:experimental}
 In this work, have considered a binary classification problem: AD vs. NC, where we have evaluate separately each type of mapping. First, in Section~\ref{sec:significance}, we will analyse our maps by means of the $t$ statistic, where the areas of higher statistical significance (AD vs NC) will be highlighted. To better interpret the results, an anatomical reference is provided.
 
