@@ -411,7 +411,7 @@ Now, we perform a classification analysis of the images. To this purpose, we wil
 
 We can see a general trend in which the statistical measures (average, entropy and kurtosis) clearly outperform the morphological ones (surface, thickness and number of folds), although the tissue thickness is the best performing of these, as it could be expected. For \ac{GM} maps, average ($0.879 \pm 0.005$) and entropy ($0.846 \pm 0.008$) achieve the best perforance, followed by thickness ($0.781 \pm 0.007$), kurtosis ($0.753 \pm 0.019$), and finally, the number of folds ($0.749 \pm 0.013$) and surface ($0.638 \pm 0.006$). These results match what we presented previously with the statistical maps, in which the surface contained the less significant measures. 
 
-As for the performance of the \ac{SBM} measures based on \ac{WM} maps, the rank is very similar to that obtained for \ac{GM}. Again, average ($0.800 \pm 0.011$) and entropy ($0.796 \pm 0.006$) are the best performing features among the original measures. They are followed by thickness and the number of folds, with respectively $0.758 \pm 0.009$ and$0.757 \pm 0.005$. Finally, the kurtosis and the surface are the less discriminant measures again, with $0.697 \pm 0.008$ and $0.672 \pm 0.007$. All these measures are outperformed by the \ac{VRLBP} approach, which achieves more than 90\% accuracy in both \ac{GM} and \ac{WM}. 
+As for the performance of the \ac{SBM} measures based on \ac{WM} maps, the rank is very similar to that obtained for \ac{GM}. Again, average ($0.800 \pm 0.011$) and entropy ($0.796 \pm 0.006$) are the best performing features among the original measures. They are followed by thickness and the number of folds, with respectively $0.758 \pm 0.009$ and $0.757 \pm 0.005$. Finally, the kurtosis and the surface are the less discriminant measures again, with $0.697 \pm 0.008$ and $0.672 \pm 0.007$. All these measures are outperformed by the \ac{VRLBP} approach, which achieves more than 90\% accuracy in both \ac{GM} and \ac{WM}. 
 
 \begin{figure*}[htp]
 	\centering
@@ -424,8 +424,20 @@ As for the performance of the \ac{SBM} measures based on \ac{WM} maps, the rank 
 In Figure~\ref{fig:figureGM} we explore the evolution of the performance as the number of selected pixels varies. Very small differences in the accuracy exist for most measures, and so, we can consider that the performance of the \ac{SBM}, once that a few thousand significant pixels (a 10\% of $181\times361=65341$) have been selected, the system performs well independently of that number. That is, however, not the case of the surface approach, and more remarkably, of the \ac{VRLBP}. In this latter case, for both tissues, the performance is high in the first 40\% of selected voxels, but after that, it dramatically decreases down to less than 70\% accuracy. 
 
 \subsection{Experiment 2: Layered Extension}
-% DONE
-The significance levels of the layered mappings has been assessed as well. However, due to space restrictions, we will only analyse the anatomical features of one of the mappings: a four-layered average mapping of the \ac{GM}, that can be checked in Figure~\ref{fig:tmaplayered}.
+In Experiment 2, we have assessed how the performance of our \ac{SBM} varies when adding different layers, which could theoretically improve the accuracy of the \ac{SBM} representation. First, we will take a look at the performance achieved by this extension on all six original \ac{SBM} maps, using 4 layers and different $t$-thresholds (2, 4, 8 and 10). This is presented at Figure~\ref{fig:layeredPerf}. 
+
+\begin{figure*}[htp]
+	\centering
+	\includegraphics[width=0.9\textwidth]{Graphics/ch6/layerPerfGM}\\
+	\includegraphics[width=0.9\textwidth]{Graphics/ch6/layerPerfWM}
+	
+	\caption[Performance of the four-layered mappings.]{Performance for the different four-layered mappings over the: a) Grey Matter and b) White Matter at different levels of statistical significance.}
+	\label{fig:layeredPerf}
+\end{figure*}
+
+The first thing that we can observe is that for both \ac{GM} and \ac{WM} tissues, the better performance is achieved with the second layer. This is specially surprising in the \ac{WM} case, as the highest $t$-values were located in layer 1. 
+
+Performing this analysis on the 4 layer extension of the 7 proposed \ac{SBM} maps over the \ac{GM} and \ac{WM} images could be infeasible for this thesis, therefore we will focus on the best performing measure: the average on the \ac{GM} and \ac{WM} tissues. The significance assessing of this case is found at Figure~\ref{fig:tmaplayered}.
 
 \begin{figure*}[htp]
 	\centering
@@ -434,19 +446,9 @@ The significance levels of the layered mappings has been assessed as well. Howev
 	\label{fig:tmaplayered}
 \end{figure*} 
 
-It is plain to see that most of the neurological changes in \ac{GM} appear in layers 2 and 3, specifically in the Hippocampus, Parahippocampal lobe and Amygdala (layer 2) and the temporal lobe (layer 3), where the values of the average mapping (equivalent to the density of the tissue) are higher in normal control subjects than in AD affected patients. This reveals atrophy in these organs, as it has been previously reported in the bibliography \cite{Dubois2007,Pievani2013}. In the case of \ac{WM}, however, the changes are negative in the areas where the Rolandic Operculum, Heschl's gyri, Putamen and Globus Pallidus are found, and positive in some sections of the Hippocampus and the White Matter contained in the Parahippocampal lobe and the remaining parts of temporal lobe (layer 2 and 3). Nevertheless, the most significant differences are located in layer 1, in the borders between ventricles and Thalamus, and specially in the Cuneus, Precuneus and Posterior Cingulate gyrus, which were reported in \cite{Baron2001}. 
+In \ac{GM}, the most obvious changes are located in layers 2 and 3, specifically at the hippocampus, parahippocampal lobe and amygdala (layer 2), and the temporal lobe (layer 3), where the values achieved by \ac{CTL} subjects are much higher than those found in \ac{AD}. This could reveal atrophy in these organs, as it has been reported in the literature \cite{Dubois2007,Pievani2013} and will be discussed later. For \ac{WM}, we obtain large negative $t$-values in areas occupied by the rolandic operculum, heschl's gyri, putamen and globus pallidus, with positive values in parts of the hippocampus, and parts of the temporal lobe. Nevertheless, the most significant differences can be located in layer 1, at the borders between ventricles and thalamus, and the cuneus, precuneus and posterior cingulate gyrus, which have been reported in \cite{Baron2001}.
+% DONE
 
-
-Regarding the four-layer extension to \ac{SBM}, the performance values obtained by different mappings at different layers and thresholds ($t$-values of 2, 4, 8 and 10) is presented in Figure~\ref{fig:layeredPerf}. 
-
-\begin{figure*}[htp]
-	\centering
-	\includegraphics[width=0.9\textwidth]{Graphics/ch6/11-layerPerf}
-	\caption{Performance for the different four-layered mappings over the: a) Grey Matter and b) White Matter at different levels of statistical significance.}
-	\label{fig:layeredPerf}
-\end{figure*}
-
-The first thing that we can observe is that for both \ac{GM} and \ac{WM} tissues, the better performance is achieved with the second layer. This is specially surprising in the \ac{WM} case, as the highest $t$-values were located in layer 1. 
 
 \subsection{Experiment 4: HMM on Synthetic Datasets}
 A demonstration of the ability of our \ac{HMM} path tracing algorithm can be found in Figures~\ref{fig:gaussian} and \ref{fig:spire}. In Fig.~\ref{fig:gaussian}, the path tracing algorithm has been tested over a synthesized gaussian mixture probability density function using four isotropic gaussian kernels. The initial point was located at $\mathbf{p}_0 = (120,20)$ and the attractor at $\mathbf{p}_N = (20, 60)$. The resulting path maximizes both the orientation of the path (towards $\mathbf{p}_N$) and the minimum change in the intensity values, which is specially visible in the last nodes of the path, where it approaches $\mathbf{p}_N$ surrounding the nearby kernel. In this case, the chosen L2-norm of the support ball has been $r=3$. 

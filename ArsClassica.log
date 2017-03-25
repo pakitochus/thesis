@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016/Debian) (preloaded format=pdflatex 2016.12.7)  25 MAR 2017 12:06
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016/Debian) (preloaded format=pdflatex 2016.12.7)  25 MAR 2017 13:22
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -2574,15 +2574,15 @@ Overfull \hbox (37.25435pt too wide) in paragraph at lines 47--47
  []
 
 
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [18]
 Overfull \hbox (18.0747pt too wide) in paragraph at lines 61--61
  \T1/pplj/m/n/10.95 fea-tures) ($\U/zeus/m/n/10.95 ^^F$\T1/pplj/m/n/10.95 SD) a
 nd other meth-ods in the bib-li-og-ra-phy []  
  []
 
 
+Underfull \vbox (badness 1931) has occurred while \output is active []
+
+ [18]
 Overfull \hbox (40.48932pt too wide) in paragraph at lines 71--71
  [][] []\T1/pplj/m/n/10.95 Performance mea-sures for the com-bined DaTSCAN data
 set []  
@@ -5659,17 +5659,17 @@ ed-to.pdf>
 (epstopdf)                    size: 28445 bytes
 (epstopdf)             Command: <repstopdf --outfile=Graphics/ch6/GMperformance
 Comp-eps-converted-to.pdf Graphics/ch6/GMperformanceComp.eps>
-(epstopdf)             \includegraphics on input line 430.
+(epstopdf)             \includegraphics on input line 418.
 Package epstopdf Info: Output file is already uptodate.
 
-<Graphics/ch6/GMperformanceComp-eps-converted-to.pdf, id=6547, 456.70625pt x 26
+<Graphics/ch6/GMperformanceComp-eps-converted-to.pdf, id=6543, 456.70625pt x 26
 1.97874pt>
 File: Graphics/ch6/GMperformanceComp-eps-converted-to.pdf Graphic file (type pd
 f)
  <use Graphics/ch6/GMperformanceComp-eps-converted-to.pdf>
 Package pdftex.def Info: Graphics/ch6/GMperformanceComp-eps-converted-to.pdf us
-ed on input line 430.
-(pdftex.def)             Requested size: 309.56717pt x 177.57954pt.
+ed on input line 418.
+(pdftex.def)             Requested size: 348.25937pt x 199.77748pt.
 Package epstopdf Info: Source file: <Graphics/ch6/WMperformanceComp.eps>
 (epstopdf)                    date: 2017-03-25 12:05:43
 (epstopdf)                    size: 67926 bytes
@@ -5679,150 +5679,168 @@ ed-to.pdf>
 (epstopdf)                    size: 28080 bytes
 (epstopdf)             Command: <repstopdf --outfile=Graphics/ch6/WMperformance
 Comp-eps-converted-to.pdf Graphics/ch6/WMperformanceComp.eps>
-(epstopdf)             \includegraphics on input line 431.
+(epstopdf)             \includegraphics on input line 419.
 Package epstopdf Info: Output file is already uptodate.
 
-<Graphics/ch6/WMperformanceComp-eps-converted-to.pdf, id=6548, 456.70625pt x 26
+<Graphics/ch6/WMperformanceComp-eps-converted-to.pdf, id=6544, 456.70625pt x 26
 1.97874pt>
 File: Graphics/ch6/WMperformanceComp-eps-converted-to.pdf Graphic file (type pd
 f)
  <use Graphics/ch6/WMperformanceComp-eps-converted-to.pdf>
 Package pdftex.def Info: Graphics/ch6/WMperformanceComp-eps-converted-to.pdf us
-ed on input line 431.
-(pdftex.def)             Requested size: 309.56717pt x 177.57954pt.
+ed on input line 419.
+(pdftex.def)             Requested size: 348.25937pt x 199.77748pt.
+Package epstopdf Info: Source file: <Graphics/ch6/layerPerfGM.eps>
+(epstopdf)                    date: 2017-03-25 13:21:22
+(epstopdf)                    size: 68334 bytes
+(epstopdf)             Output file: <Graphics/ch6/layerPerfGM-eps-converted-to.
+pdf>
+(epstopdf)                    date: 2017-03-25 13:21:56
+(epstopdf)                    size: 23843 bytes
+(epstopdf)             Command: <repstopdf --outfile=Graphics/ch6/layerPerfGM-e
+ps-converted-to.pdf Graphics/ch6/layerPerfGM.eps>
+(epstopdf)             \includegraphics on input line 431.
+Package epstopdf Info: Output file is already uptodate.
 
-<Graphics/ch6/08-Tmap4LayAverage.pdf, id=6553, 1043.9pt x 1113.15875pt>
+<Graphics/ch6/layerPerfGM-eps-converted-to.pdf, id=6554, 726.715pt x 446.66875p
+t>
+File: Graphics/ch6/layerPerfGM-eps-converted-to.pdf Graphic file (type pdf)
+ <use Graphics/ch6/layerPerfGM-eps-converted-to.pdf>
+Package pdftex.def Info: Graphics/ch6/layerPerfGM-eps-converted-to.pdf used on 
+input line 431.
+(pdftex.def)             Requested size: 348.25937pt x 214.05777pt.
+Package epstopdf Info: Source file: <Graphics/ch6/layerPerfWM.eps>
+(epstopdf)                    date: 2017-03-25 13:21:32
+(epstopdf)                    size: 69779 bytes
+(epstopdf)             Output file: <Graphics/ch6/layerPerfWM-eps-converted-to.
+pdf>
+(epstopdf)                    date: 2017-03-25 13:21:56
+(epstopdf)                    size: 23669 bytes
+(epstopdf)             Command: <repstopdf --outfile=Graphics/ch6/layerPerfWM-e
+ps-converted-to.pdf Graphics/ch6/layerPerfWM.eps>
+(epstopdf)             \includegraphics on input line 432.
+Package epstopdf Info: Output file is already uptodate.
+
+<Graphics/ch6/layerPerfWM-eps-converted-to.pdf, id=6555, 726.715pt x 446.66875p
+t>
+File: Graphics/ch6/layerPerfWM-eps-converted-to.pdf Graphic file (type pdf)
+ <use Graphics/ch6/layerPerfWM-eps-converted-to.pdf>
+Package pdftex.def Info: Graphics/ch6/layerPerfWM-eps-converted-to.pdf used on 
+input line 432.
+(pdftex.def)             Requested size: 348.25937pt x 214.05777pt.
+
+<Graphics/ch6/08-Tmap4LayAverage.pdf, id=6565, 1043.9pt x 1113.15875pt>
 File: Graphics/ch6/08-Tmap4LayAverage.pdf Graphic file (type pdf)
 
 <use Graphics/ch6/08-Tmap4LayAverage.pdf>
 Package pdftex.def Info: Graphics/ch6/08-Tmap4LayAverage.pdf used on input line
- 441.
+ 444.
 (pdftex.def)             Requested size: 386.95749pt x 412.62663pt.
  [104] [105 <./Graphics/ch6/GMperformanceComp-eps-converted-to.pdf> <./Graphics
-/ch6/WMperformanceComp-eps-converted-to.pdf>] [106 <./Graphics/ch6/08-Tmap4LayA
-verage.pdf>]
-<Graphics/ch6/11-layerPerf.pdf, id=6707, 855.195pt x 1088.065pt>
-File: Graphics/ch6/11-layerPerf.pdf Graphic file (type pdf)
-
-<use Graphics/ch6/11-layerPerf.pdf>
-Package pdftex.def Info: Graphics/ch6/11-layerPerf.pdf used on input line 453.
-(pdftex.def)             Requested size: 348.25937pt x 443.08789pt.
-
-<Graphics/ch6/gaussian.pdf, id=6715, 348.36548pt x 287.55731pt>
+/ch6/WMperformanceComp-eps-converted-to.pdf>] [106 <./Graphics/ch6/layerPerfGM-
+eps-converted-to.pdf> <./Graphics/ch6/layerPerfWM-eps-converted-to.pdf>] [107 <
+./Graphics/ch6/08-Tmap4LayAverage.pdf>] <Graphics/ch6/gaussian.pdf, id=6814, 34
+8.36548pt x 287.55731pt>
 File: Graphics/ch6/gaussian.pdf Graphic file (type pdf)
 
 <use Graphics/ch6/gaussian.pdf>
-Package pdftex.def Info: Graphics/ch6/gaussian.pdf used on input line 464.
+Package pdftex.def Info: Graphics/ch6/gaussian.pdf used on input line 457.
 (pdftex.def)             Requested size: 108.405pt x 89.47969pt.
 
-<Graphics/ch6/spire.pdf, id=6717, 339.55856pt x 517.53348pt>
+<Graphics/ch6/spire.pdf, id=6816, 339.55856pt x 517.53348pt>
 File: Graphics/ch6/spire.pdf Graphic file (type pdf)
 
 <use Graphics/ch6/spire.pdf>
-Package pdftex.def Info: Graphics/ch6/spire.pdf used on input line 473.
+Package pdftex.def Info: Graphics/ch6/spire.pdf used on input line 466.
 (pdftex.def)             Requested size: 108.405pt x 165.21924pt.
-
-<Graphics/ch6/spain.pdf, id=6721, 557.21175pt x 459.7175pt>
+ [108 <./Graphics/ch6/gaussian.pdf>]
+<Graphics/ch6/spain.pdf, id=6843, 557.21175pt x 459.7175pt>
 File: Graphics/ch6/spain.pdf Graphic file (type pdf)
 
 <use Graphics/ch6/spain.pdf>
-Package pdftex.def Info: Graphics/ch6/spain.pdf used on input line 483.
+Package pdftex.def Info: Graphics/ch6/spain.pdf used on input line 476.
 (pdftex.def)             Requested size: 270.86905pt x 223.4818pt.
 
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [107]
-[108 <./Graphics/ch6/11-layerPerf.pdf>] [109 <./Graphics/ch6/gaussian.pdf> <./G
-raphics/ch6/spire.pdf
-
-pdfTeX warning: /usr/bin/pdflatex (file ./Graphics/ch6/spire.pdf): PDF inclusio
-n: multiple pdfs with page group included in a single page
->] <Graphics/ch6/accuracyPaths2.pdf, id=6795, 922.85912pt x 671.83388pt>
+<Graphics/ch6/accuracyPaths2.pdf, id=6847, 922.85912pt x 671.83388pt>
 File: Graphics/ch6/accuracyPaths2.pdf Graphic file (type pdf)
 
 <use Graphics/ch6/accuracyPaths2.pdf>
-Package pdftex.def Info: Graphics/ch6/accuracyPaths2.pdf used on input line 497
+Package pdftex.def Info: Graphics/ch6/accuracyPaths2.pdf used on input line 490
 .
 (pdftex.def)             Requested size: 386.95749pt x 281.69673pt.
+ [109 <./Graphics/ch6/spire.pdf>]
+Underfull \vbox (badness 10000) has occurred while \output is active []
 
-Underfull \vbox (badness 2913) has occurred while \output is active []
+ [110 <./Graphics/ch6/spain.pdf>] [111 <./Graphics/ch6/accuracyPaths2.pdf>]
 
- [110 <./Graphics/ch6/spain.pdf>]
-Underfull \vbox (badness 2922) has occurred while \output is active []
-
- [111 <./Graphics/ch6/accuracyPaths2.pdf>]
-
-LaTeX Warning: Reference `sec:sbmclass' on page 112 undefined on input line 571
+LaTeX Warning: Reference `sec:sbmclass' on page 112 undefined on input line 564
 .
 
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [112]
-[113] <Graphics/ch6/12-performance.pdf, id=7020, 650.43pt x 361.35pt>
+[113] <Graphics/ch6/12-performance.pdf, id=7102, 650.43pt x 361.35pt>
 File: Graphics/ch6/12-performance.pdf Graphic file (type pdf)
 
 <use Graphics/ch6/12-performance.pdf>
-Package pdftex.def Info: Graphics/ch6/12-performance.pdf used on input line 597
+Package pdftex.def Info: Graphics/ch6/12-performance.pdf used on input line 590
 .
 (pdftex.def)             Requested size: 348.25937pt x 193.483pt.
 
-Overfull \hbox (5.6322pt too wide) in paragraph at lines 604--605
+Overfull \hbox (5.6322pt too wide) in paragraph at lines 597--598
 []\T1/pplj/m/n/10.95 Surface and Thick-ness are highly re-lated to other mea-su
 res pro-vided by widely-
  []
 
 [114 <./Graphics/ch6/12-performance.pdf>] [115]
-<Graphics/ch6/13-ROC.pdf, id=7208, 692.65979pt x 323.18942pt>
+<Graphics/ch6/13-ROC.pdf, id=7290, 692.65979pt x 323.18942pt>
 File: Graphics/ch6/13-ROC.pdf Graphic file (type pdf)
 
 <use Graphics/ch6/13-ROC.pdf>
-Package pdftex.def Info: Graphics/ch6/13-ROC.pdf used on input line 627.
+Package pdftex.def Info: Graphics/ch6/13-ROC.pdf used on input line 620.
 (pdftex.def)             Requested size: 309.56717pt x 144.43773pt.
  [116 <./Graphics/ch6/13-ROC.pdf>]
-Underfull \vbox (badness 3068) has occurred while \output is active []
-
- [117]
-<Graphics/ch6/radia&structures.pdf, id=7368, 470.55798pt x 452.08899pt>
+<Graphics/ch6/radia&structures.pdf, id=7445, 470.55798pt x 452.08899pt>
 File: Graphics/ch6/radia&structures.pdf Graphic file (type pdf)
 
 <use Graphics/ch6/radia&structures.pdf>
 Package pdftex.def Info: Graphics/ch6/radia&structures.pdf used on input line 6
-50.
+43.
 (pdftex.def)             Requested size: 386.95749pt x 371.7846pt.
 
-Overfull \hbox (62.54886pt too wide) in paragraph at lines 658--659
+Overfull \hbox (62.54886pt too wide) in paragraph at lines 651--652
 \T1/pplj/m/n/10.95 the NINCDS-ADRDA cri-te-ria for AD di-ag-no-sis[[][]57[][]] 
 and is widely accepted[[],
  []
 
 
-Overfull \hbox (88.04181pt too wide) in paragraph at lines 658--659
+Overfull \hbox (88.04181pt too wide) in paragraph at lines 651--652
 \T1/pplj/m/n/10.95 round-ing struc-tures (Amyg-dala, Parahip-pocam-pal and Fusi
 form Gyrus) as well[[],
  []
 
 
-Underfull \vbox (badness 3803) has occurred while \output is active []
+Underfull \vbox (badness 1571) has occurred while \output is active []
 
- [118]
-[119 <./Graphics/ch6/radia&structures.pdf>]
+ [117]
+[118 <./Graphics/ch6/radia&structures.pdf>]
 
-LaTeX Warning: Reference `sec:intensity' on page 120 undefined on input line 66
-6.
-
-
-LaTeX Warning: Reference `sec:intensity' on page 120 undefined on input line 66
-6.
+LaTeX Warning: Reference `sec:intensity' on page 119 undefined on input line 65
+9.
 
 
-LaTeX Warning: Reference `sec:texture' on page 120 undefined on input line 666.
+LaTeX Warning: Reference `sec:intensity' on page 119 undefined on input line 65
+9.
 
 
+LaTeX Warning: Reference `sec:texture' on page 119 undefined on input line 659.
 
-Underfull \vbox (badness 1412) has occurred while \output is active []
 
- [120])
+[119])
+Underfull \vbox (badness 3354) has occurred while \output is active []
+
+ [120]
 [121] [122
 
 
@@ -5856,7 +5874,7 @@ converted-to.pdf Graphics/ch8/FIGURE01.eps>
 (epstopdf)             \includegraphics on input line 52.
 Package epstopdf Info: Output file is already uptodate.
 
-<Graphics/ch8/FIGURE01-eps-converted-to.pdf, id=7486, 367.3725pt x 152.57pt>
+<Graphics/ch8/FIGURE01-eps-converted-to.pdf, id=7568, 367.3725pt x 152.57pt>
 File: Graphics/ch8/FIGURE01-eps-converted-to.pdf Graphic file (type pdf)
 
 <use Graphics/ch8/FIGURE01-eps-converted-to.pdf>
@@ -5864,7 +5882,7 @@ Package pdftex.def Info: Graphics/ch8/FIGURE01-eps-converted-to.pdf used on inp
 ut line 52.
 (pdftex.def)             Requested size: 270.86905pt x 112.4996pt.
  [126] [127 <./Graphics/ch8/FIGURE01-eps-converted-to.pdf>]
-<Graphics/ch8/weighting2.pdf, id=7543, 561.89923pt x 322.50487pt>
+<Graphics/ch8/weighting2.pdf, id=7626, 561.89923pt x 322.50487pt>
 File: Graphics/ch8/weighting2.pdf Graphic file (type pdf)
 
 <use Graphics/ch8/weighting2.pdf>
@@ -5883,7 +5901,7 @@ converted-to.pdf Graphics/ch8/FIGURE02.eps>
 (epstopdf)             \includegraphics on input line 127.
 Package epstopdf Info: Output file is already uptodate.
 
-<Graphics/ch8/FIGURE02-eps-converted-to.pdf, id=7555, 841.1425pt x 302.12875pt>
+<Graphics/ch8/FIGURE02-eps-converted-to.pdf, id=7637, 841.1425pt x 302.12875pt>
 File: Graphics/ch8/FIGURE02-eps-converted-to.pdf Graphic file (type pdf)
 <use Graphics/ch8/FIGURE02-eps-converted-to.pdf>
 Package pdftex.def Info: Graphics/ch8/FIGURE02-eps-converted-to.pdf used on inp
@@ -5924,7 +5942,7 @@ converted-to.pdf Graphics/ch8/FIGURE03.eps>
 (epstopdf)             \includegraphics on input line 177.
 Package epstopdf Info: Output file is already uptodate.
 
-<Graphics/ch8/FIGURE03-eps-converted-to.pdf, id=7659, 469.755pt x 437.635pt>
+<Graphics/ch8/FIGURE03-eps-converted-to.pdf, id=7741, 469.755pt x 437.635pt>
 File: Graphics/ch8/FIGURE03-eps-converted-to.pdf Graphic file (type pdf)
 
 <use Graphics/ch8/FIGURE03-eps-converted-to.pdf>
@@ -5944,7 +5962,7 @@ converted-to.pdf Graphics/ch8/FIGURE04.eps>
 (epstopdf)             \includegraphics on input line 293.
 Package epstopdf Info: Output file is already uptodate.
 
-<Graphics/ch8/FIGURE04-eps-converted-to.pdf, id=7741, 469.755pt x 437.635pt>
+<Graphics/ch8/FIGURE04-eps-converted-to.pdf, id=7823, 469.755pt x 437.635pt>
 File: Graphics/ch8/FIGURE04-eps-converted-to.pdf Graphic file (type pdf)
 
 <use Graphics/ch8/FIGURE04-eps-converted-to.pdf>
@@ -5964,7 +5982,7 @@ converted-to.pdf Graphics/ch8/FIGURE05.eps>
 (epstopdf)             \includegraphics on input line 315.
 Package epstopdf Info: Output file is already uptodate.
 
-<Graphics/ch8/FIGURE05-eps-converted-to.pdf, id=7894, 464.73625pt x 440.64626pt
+<Graphics/ch8/FIGURE05-eps-converted-to.pdf, id=7976, 464.73625pt x 440.64626pt
 >
 File: Graphics/ch8/FIGURE05-eps-converted-to.pdf Graphic file (type pdf)
  <use Graphics/ch8/FIGURE05-eps-converted-to.pdf>
@@ -5996,7 +6014,7 @@ ion-eps-converted-to.pdf Graphics/ch9/SchemaGeneration.eps>
 (epstopdf)             \includegraphics on input line 8.
 Package epstopdf Info: Output file is already uptodate.
 
-<Graphics/ch9/SchemaGeneration-eps-converted-to.pdf, id=8081, 599.23875pt x 165
+<Graphics/ch9/SchemaGeneration-eps-converted-to.pdf, id=8163, 599.23875pt x 165
 .61874pt>
 File: Graphics/ch9/SchemaGeneration-eps-converted-to.pdf Graphic file (type pdf
 )
@@ -6005,28 +6023,28 @@ Package pdftex.def Info: Graphics/ch9/SchemaGeneration-eps-converted-to.pdf use
 d on input line 8.
 (pdftex.def)             Requested size: 386.95749pt x 106.95088pt.
 
-<Graphics/ch9/originalNOR.pdf, id=8085, 1175.2909pt x 130.086pt>
+<Graphics/ch9/originalNOR.pdf, id=8167, 1175.2909pt x 130.086pt>
 File: Graphics/ch9/originalNOR.pdf Graphic file (type pdf)
 
 <use Graphics/ch9/originalNOR.pdf>
 Package pdftex.def Info: Graphics/ch9/originalNOR.pdf used on input line 17.
 (pdftex.def)             Requested size: 270.86905pt x 29.98067pt.
 
-<Graphics/ch9/originalAD.pdf, id=8086, 1175.2909pt x 130.086pt>
+<Graphics/ch9/originalAD.pdf, id=8168, 1175.2909pt x 130.086pt>
 File: Graphics/ch9/originalAD.pdf Graphic file (type pdf)
 
 <use Graphics/ch9/originalAD.pdf>
 Package pdftex.def Info: Graphics/ch9/originalAD.pdf used on input line 18.
 (pdftex.def)             Requested size: 270.86905pt x 29.98067pt.
 
-<Graphics/ch9/generatedNOR.pdf, id=8087, 1175.2909pt x 130.086pt>
+<Graphics/ch9/generatedNOR.pdf, id=8169, 1175.2909pt x 130.086pt>
 File: Graphics/ch9/generatedNOR.pdf Graphic file (type pdf)
 
 <use Graphics/ch9/generatedNOR.pdf>
 Package pdftex.def Info: Graphics/ch9/generatedNOR.pdf used on input line 19.
 (pdftex.def)             Requested size: 270.86905pt x 29.98067pt.
 
-<Graphics/ch9/generatedAD.pdf, id=8088, 1175.2909pt x 130.086pt>
+<Graphics/ch9/generatedAD.pdf, id=8170, 1175.2909pt x 130.086pt>
 File: Graphics/ch9/generatedAD.pdf Graphic file (type pdf)
 
 <use Graphics/ch9/generatedAD.pdf>
@@ -6264,10 +6282,10 @@ Package logreq Info: Writing requests to 'ArsClassica.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 31034 strings out of 493013
- 569880 string characters out of 6135682
- 1520706 words of memory out of 5000000
- 32793 multiletter control sequences out of 15000+600000
+ 31039 strings out of 493013
+ 570157 string characters out of 6135682
+ 1519657 words of memory out of 5000000
+ 32797 multiletter control sequences out of 15000+600000
  174727 words of font info for 290 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  70i,23n,91p,8822b,3632s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -6300,10 +6318,10 @@ hvr.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/palatino/uplb8a.pfb></us
 r/share/texlive/texmf-dist/fonts/type1/urw/palatino/uplr8a.pfb></usr/share/texl
 ive/texmf-dist/fonts/type1/urw/palatino/uplri8a.pfb></usr/share/texlive/texmf-d
 ist/fonts/type1/urw/zapfding/uzdr.pfb>
-Output written on ArsClassica.pdf (197 pages, 22210653 bytes).
+Output written on ArsClassica.pdf (197 pages, 22228558 bytes).
 PDF statistics:
- 9021 PDF objects out of 10688 (max. 8388607)
- 4990 compressed objects within 50 object streams
+ 9103 PDF objects out of 10688 (max. 8388607)
+ 4999 compressed objects within 50 object streams
  890 named destinations out of 1000 (max. 500000)
- 51861 words of extra memory for PDF output out of 61914 (max. 10000000)
+ 51866 words of extra memory for PDF output out of 61914 (max. 10000000)
 
