@@ -365,19 +365,18 @@ We first note that the surface measure, tested in both \ac{GM} and \ac{WM} maps,
 
 In the remaining \ac{GM} maps, we observe similar behaviours, with higher absolute $t$-values located in the frontal, occipital and parietal lobes. But again, the most significant areas can be found at the temporal lobe. It is more obvious in the average and entropy measures, but can also be found at the thickness, or negatively in the number of folds and kurtosis maps. This points to the well kown fact that most of the neurodegeneration in \ac{GM} occurs within the structures that are mapped to these directions, including mid temporal lobe, amygdala, hippocampus or parahippocampal lobe, considered a strong indicator in the NINCDS-ADRDA criteria \cite{Dubois2007}. Other \ac{GM} structures such as the caudate nucleus and putamen also appear with significant $t$ values, especially in the entropy and kurtosis maps (with negative $t$) \cite{Pievani2013}. 
 
-
-Conversely, in the \ac{WM} mappings the selected regions are different. When using Number of Folds and Thickness, the selected areas are located in the vicinity of those obtained in \ac{GM}. However, our spherical maps, especially Average and Entropy, behave differently. There is still high $t$-values that correspond to the White Matter of the Parahippocampal gyrus, but large areas of negative $t$-values that are located in areas corresponding to the Caudate Nucleus, Globus Pallidus and Putamen. The areas corresponding to the Posterior Cingulate gyrus and adjacent Precuneus present also values related to cell loss, as suggested in \cite{Baron2001}.
-
-Finally, to end this statistical significance analysis, the $t$-maps of the more complex VRLBP mapping are presented in Figure~\ref{fig:tmapvrlbp}.
+In the \ac{WM}, the levels of significance achieved are smaller than in the \ac{GM}, but still high. We see the higher levels of number of folds and thickness located in the vicinity of those obtained for \ac{GM}, but in negative. For the average, entropy and kurtosis measures, we observe a different behaviours. These maps present large areas of negative $t$-values located in the Caudate Nucleus, Globus Pallidus and Putamen. Areas around the posterior cingulate gyrus and the adjacent precuneus also present reduced $t$ values, which could be related to cell loss, as suggested in \cite{Baron2001}.
 
 \begin{figure*}[htp]
 	\centering
 	\includegraphics[width=\textwidth]{Graphics/ch6/09-tmaps_vrlbp}
-	\caption{$t$-maps that present the level of statistical relevance in the AD vs. NC paradigm, for the VRLBP projections mapping over a) \ac{GM} and b) \ac{WM}. }
+	\caption{Maps that present the level of the $t$ statistic in the \ac{AD} vs. \ac{CTL} paradigm, for the VRLBP projections mapping over a) \ac{GM} and b) \ac{WM}. }
 	\label{fig:tmapvrlbp}
 \end{figure*}
 
-These maps present low absolute $t$ levels in most of the projection, however some small regions present high significance. These regions correspond to small areas in temporal lobe, Amygdala and Hippocampus in the \ac{GM}, and even smaller regions in the \ac{WM} corresponding to the limits between Hippocampus and Amygdala. 
+Now, we take a look at the statistical significance of the \ac{VRLBP} maps. In Figure~\ref{fig:tmapvrlbp}, we can observe that most of the image features small $t$ values, however there are small areas that contain higher significance. These areas correspond to the temporal lobe, amygdala and hippocampus (in the \ac{GM} maps) and smaller regions located at the limits between the hippocampus and amygdala (in \ac{WM}).
+
+
 
 In this analysis, we have proceed as commented before, by computing the significance of each pixel using a $t$-test and then selecting a proportion of the most relevant, once they have been ranked according to their $t$-value. Later, these features are used to train and test a linear SVM classifier.
 
