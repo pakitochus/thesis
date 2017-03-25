@@ -374,11 +374,9 @@ In the \ac{WM}, the levels of significance achieved are smaller than in the \ac{
 	\label{fig:tmapvrlbp}
 \end{figure*}
 
-Now, we take a look at the statistical significance of the \ac{VRLBP} maps. In Figure~\ref{fig:tmapvrlbp}, we can observe that most of the image features small $t$ values, however there are small areas that contain higher significance. These areas correspond to the temporal lobe, amygdala and hippocampus (in the \ac{GM} maps) and smaller regions located at the limits between the hippocampus and amygdala (in \ac{WM}).
+Finally, we take a look at the statistical significance of the \ac{VRLBP} maps. In Figure~\ref{fig:tmapvrlbp}, we can observe that most of the image features small $t$ values, however there are small areas that contain higher significance. These areas correspond to the temporal lobe, amygdala and hippocampus (in the \ac{GM} maps) and smaller regions located at the limits between the hippocampus and amygdala (in \ac{WM}).
 
-
-
-In this analysis, we have proceed as commented before, by computing the significance of each pixel using a $t$-test and then selecting a proportion of the most relevant, once they have been ranked according to their $t$-value. Later, these features are used to train and test a linear SVM classifier.
+Now, we perform a classification analysis of the images. To this purpose, we will use the computed $t$-maps to select the most relevant pixels in the \ac{SBM} maps, which will be used to train and test a \ac{SVC}. The performance results for the six original measures and the \ac{VRLBP} approach, including the percentage of selected pixels (perc.), can be found at Table~\ref{tab:perfProj}. 
 
 \begin{table*}[htp]
 	\myfloatalign
@@ -411,22 +409,22 @@ In this analysis, we have proceed as commented before, by computing the signific
 	\label{tab:perfProj}
 \end{table*}
 
-The results for each type of map are presented in Table~\ref{tab:perfProj}, including the percentage of selected voxels (perc.) at which each value is obtained. Regarding the Grey Matter, we can observe that the best type of mappings in the diagnosis task, in terms of average accuracy, are the Average ($0.879 \pm 0.005$) and Entropy ($0.846 \pm 0.008$). There results are followed by the measures of Thickness ($0.781 \pm 0.007$), Kurtosis ($0.753 \pm 0.019$) and the worse accuracy estimates are for Number of Folds ($0.749 \pm 0.013$) and Surface ($0.638 \pm 0.006$). 
+We can see a general trend in which the statistical measures (average, entropy and kurtosis) clearly outperform the morphological ones (surface, thickness and number of folds), although the tissue thickness is the best performing of these, as it could be expected. For \ac{GM} maps, average ($0.879 \pm 0.005$) and entropy ($0.846 \pm 0.008$) achieve the best perforance, followed by thickness ($0.781 \pm 0.007$), kurtosis ($0.753 \pm 0.019$), and finally, the number of folds ($0.749 \pm 0.013$) and surface ($0.638 \pm 0.006$). These results match what we presented previously with the statistical maps, in which the surface contained the less significant measures. 
 
-In the case of White Matter, and according to Table~\ref{tab:perfProj}, the performance is again higher in Average ($0.800 \pm 0.011$) and Entropy ($0.796 \pm 0.006$). Thickness and Number of Folds present similar, but lower, perfomance values, respectively $0.758 \pm 0.009$ and$0.757 \pm 0.005$, and being the Kurtosis ($0.697 \pm 0.008$) and Surface ($0.672 \pm 0.007$) maps the less powerful. 
-
-However, VRLBP outperform all these approaches by obtaining an accuracy of $0.903 \pm 0.010$ for \ac{GM} and $0.909 \pm 0.014$ for \ac{WM}, revealing itself as the best technique. 
-
-The evolution of the performance of the maps as the number of selected pixels varies is shown in Figure~\ref{fig:figureGM}. In general, it is possible to see very small differences in the accuracy of the system, which makes its performance almost independent from the number of selected pixels. However, this is not the case of the Surface, and, more remarkable, the VRLBP. In the latter, the performance is the best for both tissues when the proportion of selected pixels is small, but degrades significantly as its number increases. 
+As for the performance of the \ac{SBM} measures based on \ac{WM} maps, the rank is very similar to that obtained for \ac{GM}. Again, average ($0.800 \pm 0.011$) and entropy ($0.796 \pm 0.006$) are the best performing features among the original measures. They are followed by thickness and the number of folds, with respectively $0.758 \pm 0.009$ and$0.757 \pm 0.005$. Finally, the kurtosis and the surface are the less discriminant measures again, with $0.697 \pm 0.008$ and $0.672 \pm 0.007$. All these measures are outperformed by the \ac{VRLBP} approach, which achieves more than 90\% accuracy in both \ac{GM} and \ac{WM}. 
 
 \begin{figure*}[htp]
 	\centering
-	\includegraphics[width=0.9\textwidth]{Graphics/ch6/10-comparisonPerformance}
+	\includegraphics[width=0.9\textwidth]{Graphics/ch6/GMperformanceComp}\\
+	\includegraphics[width=0.9\textwidth]{Graphics/ch6/WMperformanceComp}
 	\caption{Performance for the different \ac{SBM} approaches over the: a) Grey Matter and b) White Matter.}
 	\label{fig:figureGM}
 \end{figure*}
 
+In Figure~\ref{fig:figureGM} we explore the evolution of the performance as the number of selected pixels varies. Very small differences in the accuracy exist for most measures, and so, we can consider that the performance of the \ac{SBM}, once that a few thousand significant pixels (a 10\% of $181\times361=65341$) have been selected, the system performs well independently of that number. That is, however, not the case of the surface approach, and more remarkably, of the \ac{VRLBP}. In this latter case, for both tissues, the performance is high in the first 40\% of selected voxels, but after that, it dramatically decreases down to less than 70\% accuracy. 
+
 \subsection{Experiment 2: Layered Extension}
+% DONE
 The significance levels of the layered mappings has been assessed as well. However, due to space restrictions, we will only analyse the anatomical features of one of the mappings: a four-layered average mapping of the \ac{GM}, that can be checked in Figure~\ref{fig:tmaplayered}.
 
 \begin{figure*}[htp]
