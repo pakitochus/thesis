@@ -344,26 +344,27 @@ In this chapter, we have proposed a completely new framework for extracting feat
 	\item Experiment 5: evaluation of the texture maps derived from the \ac{HMM} based paths on the T1-weighted \ac{MRI} dataset, under a classification analysis of \ac{AD} vs \ac{CTL} subjects. 
 \end{itemize}
 
-In te first three experiments, we will used segmented \ac{GM} and \ac{WM} maps, where in experiments 5 and 6, we will use raw, T1-weighted images. The classification analysis is performed by using a linear \ac{SVC} for classifying, and 10-fold cross validation strategy (see Section~\ref{sec:validation} for more details). For estimating statistical significance, we use a two-sample $t$-test as defined in Section~\ref{sec:ttestEq}. 
+In te first three experiments, we will used segmented \ac{GM} and \ac{WM} maps, where in experiments 5 and 6, we will use raw, T1-weighted images. The classification analysis is performed by using a linear \ac{SVC} for classifying, and 10-fold cross validation strategy (see Section~\ref{sec:validation} for more details). For estimating statistical significance, we use the two-sample $t$-test defined in Section~\ref{sec:ttestEq}. 
 
 
 \section{Results}
 
 \subsection{Experiment 1: Original and VRLBP Spherical Brain Mapping}
-In this section, the six measures proposed in Section~\ref{sec:mapping} will be analysed using a $t$-test. To proceed, a $t$-value will be computed for each pixel in the maps, yielding a significance map. These significance maps, or $t$-maps, are presented in Figure~\ref{fig:tmaps}. 
+First, with experiment 1, we test the original and \ac{VRLBP} \ac{SBM} maps, by means of significance and classification analysis. To start with, we provide the significance maps computed under the \ac{AD} vs \ac{CTL} scenario in the six original \ac{SBM} measures (surface, thickness, number of folds, average, entropy and kurtosis) in  Figure~\ref{fig:tmaps}. 
 
 \begin{figure*}[htp]
 	\centering
 	\includegraphics[width=0.9\textwidth]{Graphics/ch6/07-tmaps}
-	\caption{$t$-maps that present the level of statistical relevance in the AD vs. NC paradigm, for each type of mapping and \ac{GM} and \ac{WM}. }
+	\caption[\acs{SBM} t-maps under the \acs{AD} vs \acs{CTL} for \acs{GM} and \acs{WM} images.]{$t$-maps to assess the regions with a higher statistical relevance in the \acs{AD} vs \acs{CTL} paradigm, for each \ac{SBM} measure and using \ac{GM} and \ac{WM} maps. }
 	\label{fig:tmaps}
 \end{figure*}
 
-Absolute $t$-values higher than $1.96$ can be considered to be significant, with a $p<0.05$. In this case the areas of greater significance are in dark red and dark blue, where red is a positive $t$-value, meaning a higher value in controls than in AD subjects, and blue is a negative $t$-value, and conversely, blue means negative values, which are related to a higher value in AD than in controls. 
+For $p<0.05$, in the database subset of the ADNI-MRI, the signifcance threshold can be established at $|t|>1.96$. This means that, in Figure~\ref{fig:tmaps}, the most relevant differences between classes can be found at the areas coloured in dark red (positive, \ac{CTL} subjects have a higher measure) and dark blue (negative, \ac{AD} subjects have a higher measure). For the anatomic structures, we refer to the anatomical reference presented in Section~\ref{sec:anatomical}. 
 
-The first thing to note is that the distribution of the $t$ values in the Surface mapping, in both \ac{GM} and \ac{WM}, is not relevant at all, with very few significant pixels distributed along the whole image. 
+We first note that the surface measure, tested in both \ac{GM} and \ac{WM} maps, does not look relevant. Very few significant pixels are scattered throughout the image, although with a slightly higher concentration in the areas corresponding to the temporal lobe. 
 
-In the remaining \ac{GM} mappings, greater $t$-values are located in the frontal, occipital and parietal lobes, but the most significant areas can be found in the temporal lobe. This is most obvious in the Average and Entropy mappings, but can also be found in Thickness. Number of Folds and Kurtosis present high, but however negative, $t$-values in these areas as well. This suggests that for \ac{GM}, most of the neurodegeneration is located in the temporal lobe and all the underlying structures that are projected in this area, including the Hippocampus and Parahippocampal gyrus, which are considered a fundamental disease indicator in the NINCDS-ADRDA criteria \cite{Dubois2007}. Additionally, some structures that are located in the same area have been recently related to the progression of the disease, such as the Caudate Nucleus and Putamen \cite{Pievani2013}. These changes are more precisely located when using one of our spherical maps such as the Average or Entropy.
+In the remaining \ac{GM} maps, we observe similar behaviours, with higher absolute $t$-values located in the frontal, occipital and parietal lobes. But again, the most significant areas can be found at the temporal lobe. It is more obvious in the average and entropy measures, but can also be found at the thickness, or negatively in the number of folds and kurtosis maps. This points to the well kown fact that most of the neurodegeneration in \ac{GM} occurs within the structures that are mapped to these directions, including mid temporal lobe, amygdala, hippocampus or parahippocampal lobe, considered a strong indicator in the NINCDS-ADRDA criteria \cite{Dubois2007}. Other \ac{GM} structures such as the caudate nucleus and putamen also appear with significant $t$ values, especially in the entropy and kurtosis maps (with negative $t$) \cite{Pievani2013}. 
+
 
 Conversely, in the \ac{WM} mappings the selected regions are different. When using Number of Folds and Thickness, the selected areas are located in the vicinity of those obtained in \ac{GM}. However, our spherical maps, especially Average and Entropy, behave differently. There is still high $t$-values that correspond to the White Matter of the Parahippocampal gyrus, but large areas of negative $t$-values that are located in areas corresponding to the Caudate Nucleus, Globus Pallidus and Putamen. The areas corresponding to the Posterior Cingulate gyrus and adjacent Precuneus present also values related to cell loss, as suggested in \cite{Baron2001}.
 
