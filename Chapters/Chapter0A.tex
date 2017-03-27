@@ -29,6 +29,24 @@ Many dataset are used in this thesis, covering three imaging modalities and thre
 \section{Magnetic Resonance Imaging}
 \subsection{ADNI-MRI, Alzheimer's Disease Neuroimaging Initiative}\label{sec:adnimri}
 AD
+
+\subsubsection{Baseline - VAF}\label{sec:baseline}
+In order to establish a baseline to assess the predictive ability of our maps, we will use the \acf{VAF} paradigm, described in \cite{Stoeckel04}. This approach uses the whole 3D \ac{GM} or \ac{WM} segmented MR images and then uses all voxels of the 3D images as features in the SVM classification, yielding the performance values shown in Table~\ref{tab:perfVAF}. The performance of the \ac{SBM} maps will be compared to these. 
+
+\begin{table*}[htp]
+	\myfloatalign
+	\begin{tabularx}{\textwidth}{Xccc}
+		\tableheadline{Approach}  & \tableheadline{Accuracy} & \tableheadline{Sensitivity} & \tableheadline{Specificity}\\
+		\midrule
+		\ac{VAF} (\ac{GM})  & $0.768 \pm 0.011$ & $0.752 \pm 0.016$ & $0.785 \pm 0.016$ \\
+		\ac{VAF} (\ac{WM})  & $0.642 \pm 0.009$ & $0.668 \pm 0.012$ & $0.617 \pm 0.013$ \\
+
+		\bottomrule
+	\end{tabularx}
+	\caption{Performance values (Average $\pm$ Standard Deviation) for the  Voxels as Features approach in both \ac{GM} and \ac{WM} tissues.\label{tab:perfVAF}}
+\end{table*}
+
+
 \subsection{AIMS-MRI, MRC-AIMS Consortium}\label{sec:aims-mri}
 Structural MRI were analysed from 136 adult, right-handed males (68 with ASD and 68 matched controls) with no significant mean differences in age and full-scale IQ, acquired from the centres contributing to the UK Medical Research Council Autism Imaging Multi-centre Study (MRC AIMS) (Ecker, et al., 2013; Ecker, et al., 2012) and recruited by advertisement. In this work, only participants recruited at the Institute of Psychiatry, King’s College London (LON) and the Autism Research Centre, University of Cambridge (CAM) were included where an equivalent set of images were acquired from each participant. 
 

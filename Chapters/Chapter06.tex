@@ -423,7 +423,7 @@ As for the performance of the \ac{SBM} measures based on \ac{WM} maps, the rank 
 
 In Figure~\ref{fig:figureGM} we explore the evolution of the performance as the number of selected pixels varies. Very small differences in the accuracy exist for most measures, and so, we can consider that the performance of the \ac{SBM}, once that a few thousand significant pixels (a 10\% of $181\times361=65341$) have been selected, the system performs well independently of that number. That is, however, not the case of the surface approach, and more remarkably, of the \ac{VRLBP}. In this latter case, for both tissues, the performance is high in the first 40\% of selected voxels, but after that, it dramatically decreases down to less than 70\% accuracy. 
 
-\subsection{Experiment 2: Layered Extension}
+\subsection{Experiment 2: Layered Extension}\label{sec:layeredttest}
 In Experiment 2, we have assessed how the performance of our \ac{SBM} varies when adding different layers, which could theoretically improve the accuracy of the \ac{SBM} representation. First, we will take a look at the performance achieved by this extension on all six original \ac{SBM} maps, using 4 layers and different $t$-thresholds (2, 4, 8 and 10). This is presented at Figure~\ref{fig:layeredPerf}. 
 
 \begin{figure*}[htp]
@@ -449,27 +449,28 @@ Performing a significance analysis on the 4 layer extension of the 7 proposed \a
 In \ac{GM}, the most obvious changes are located in layers 2 and 3, specifically at the hippocampus, parahippocampal lobe and amygdala (layer 2), and the temporal lobe (layer 3), where the values achieved by \ac{CTL} subjects are much higher than those found in \ac{AD}. This could reveal atrophy in these organs, as it has been reported in the literature \cite{Dubois2007,Pievani2013} and will be discussed later. For \ac{WM}, we obtain large negative $t$-values in areas occupied by the rolandic operculum, heschl's gyri, putamen and globus pallidus, with positive values in parts of the hippocampus, and parts of the temporal lobe. Nevertheless, the most significant differences can be located in layer 1, at the borders between ventricles and thalamus, and the cuneus, precuneus and posterior cingulate gyrus, which have been reported in \cite{Baron2001}.
 
 \subsection{Experiment 3: HMM on Synthetic Datasets}
-Now, we will analyse the behaviour of the \ac{HMM} paths on some examples. In Figure~\ref{fig:gaussian}, we used a gaussian mixture probability density function, with four isotropic gaussian kernel, to generate a synthetic image. We wanted to test the direction of the \ac{HMM} paths on this image, by locating the initial point $\mathbf{p}_0 = (120,20)$ and the attractor at the centre of one of the kernels, $\mathbf{p}_N = (20, 60)$. This simple example illustrates how the generated paths maximizes both the orientation of the path (towards $\mathbf{p}_N$) and the minimum change in the intensity values. This was specially noticeable in the last nodes of the path, where the approximation to $\mathbf{p}_N$ is very gradual, due to the restrictions imposed. In this example, we used a support ball with $r=3$.
 
 \begin{figure}
 	\begin{center}
-		\includegraphics[width=1.5in]{Graphics/ch6/gaussian}
+		\includegraphics[width=0.5\textwidth]{Graphics/ch6/gaussian}
 		\caption{Path traced over a gaussian mixture distribution of 4 isotropic gaussian kernels.}
 		\label{fig:gaussian}
 	\end{center}
 \end{figure}
 
-Afterwards, we wanted to demonstrate how these paths adapt to three-dimensional structures. In this case, we created a helix-shaped point distribution in Fig.~\ref{fig:spire}. Since we need per-voxel intensity values (probailities) to estimate the paths, we have approximate this by the number of points within each voxel over the total number of points. By setting $\mathbf{p}_0$ to the point on the helix distribution with smallest $z$ coordinate, and $\mathbf{p}_N$ to the one with maximum $z$, we trace the path shown in Fig.~\ref{fig:spire}. This paths addapt to the distribution and follows it consistently until it reaches the attractor at the top of the helix.
+Now, we will analyse the behaviour of the \ac{HMM} paths on some examples. In Figure~\ref{fig:gaussian}, we used a gaussian mixture probability density function, with four isotropic gaussian kernel, to generate a synthetic image. We wanted to test the direction of the \ac{HMM} paths on this image, by locating the initial point $\mathbf{p}_0 = (120,20)$ and the attractor at the centre of one of the kernels, $\mathbf{p}_N = (20, 60)$. This simple example illustrates how the generated paths maximizes both the orientation of the path (towards $\mathbf{p}_N$) and the minimum change in the intensity values. This was specially noticeable in the last nodes of the path, where the approximation to $\mathbf{p}_N$ is very gradual, due to the restrictions imposed. In this example, we used a support ball with $r=3$.
+
 
 \begin{figure}
 	\begin{center}
-		\includegraphics[width=1.5in]{Graphics/ch6/spire}
+		\includegraphics[width=0.3\textwidth]{Graphics/ch6/spire}
 		\caption{\ac{HMM} path computed inside a density distribution defined by an helix.}
 		\label{fig:spire}
 	\end{center}
 \end{figure}
 
-Finally, and prior to the three-dimensional brain images, we test the algorithm on a bidimensional real-world example: a digital elevation model of the Iberian Peninsula. The image was acquired by the LANDSAT SRTM30+ mission, and its intensity represents height. We tested multiple paths by establishing sequentially $\mathbf{p}_0$ and $\mathbf{p}_N$ in ten different cities. The paths shown at Figure~\ref{fig:spainmap} optimize both the distance and height variation as well as resembling -in most cases- the roads that connect these cities in the real world. Given the dimensions of the image, in this case, the L2-norm of the support ball has been set to $r=30$. 
+Afterwards, we wanted to demonstrate how these paths adapt to three-di\-men\-sio\-nal structures. In this case, we created a helix-shaped point distribution in Fig.~\ref{fig:spire}. Since we need per-voxel intensity values (probailities) to estimate the paths, we have approximate this by the number of points within each voxel over the total number of points. By setting $\mathbf{p}_0$ to the point on the helix distribution with smallest $z$ coordinate, and $\mathbf{p}_N$ to the one with maximum $z$, we trace the path shown in Fig.~\ref{fig:spire}. This paths adapt to the distribution and follows it consistently until it reaches the attractor at the top of the helix.
+
 
 \begin{figure}[htp]
 	\centering
@@ -478,58 +479,74 @@ Finally, and prior to the three-dimensional brain images, we test the algorithm 
 	\label{fig:spainmap}
 \end{figure}
 
-\subsection{Experiment 5: Feature Selection using HMM Paths}
+Finally, and prior to the three-dimensional brain images, we test the algorithm on a bidimensional real-world example: a digital elevation model of the Iberian Peninsula. The image was acquired by the LANDSAT SRTM30+ mission, and its intensity represents height. We tested multiple paths by establishing sequentially $\mathbf{p}_0$ and $\mathbf{p}_N$ in ten different cities. The paths shown at Figure~\ref{fig:spainmap} optimize both the distance and height variation as well as resembling -in most cases- the roads that connect these cities in the real world. Given the dimensions of the image, in this case, the L2-norm of the support ball has been set to $r=30$. 
 
-% DONE
-In this section, we present the results of the first experiment involving paths in MRI. To do so, we define a set of canonical paths that are computed on the DARTEL template. These DARTEL paths model the anatomy of a normal subject to whom all other images have been registered. This means that we have fixed the location of the nodes to the structural information of the template, and by extension, to the general anatomy of all images in the database. Therefore, we can characterize the structural differences by the intensity distribution --in other words, the tissue density--  of the voxels at the path nodes. Comparing the intensity distribution found in controls to the one found in AD affected subjects is thus the first logical step to measure how these paths can distinguish the different classes.
 
-To test the algorithm we use the $180\times360=64800$ DARTEL paths computed in each spatial direction $(\theta,\varphi)$, with $\varphi\in[0,360]$ and $\theta\in[-90,90]$, to select the intensities in the voxels that are placed at the nodes. The amount of voxels selected ranges from 2 to several dozens. The set of selected intensities are used as features to train and test a SVM classifier. The accuracy reached by each path (using the aforementioned cross-validation strategy) is presented as colour information in Figure~\ref{fig:accuracyMap}. The higher accuracy obtained using only one path is $0.8028\pm0.0873$, and corresponds to the light green paths that cross the temporal lobe. 
+\subsection{Experiment 4: Feature Selection using HMM Paths}
+In Experiment 4 we begin to apply the \ac{HMM} paths to real \ac{MRI} images from the ADNI-MRI dataset. We have first defined a set of paths over the DARTEL template, which we call the canonical paths. The canonical paths follow the anatomy of a normal subject to whom all other images have been registered. Therefore, the location of the different nodes on the paths are fixed throughout the general anatomy of all images, and we could characterize the differences between classes by analysing the intensity distribution on these paths --in other words, the tissue density--. In short, we apply the canonical paths as a feature selection algorithm to the different images. 
+
+To start with, we will take all the $180\times360=64800$ canonical paths computed in all  spatial directions defined by $\varphi\in[0,360]$ and $\theta\in[-90,90]$. These paths will be used to select the voxel intensities where the nodes are placed, as in the original \ac{SBM}. Due to the influence of the different variables (trace of the paths, stop condition), the amount of values varies from 2 to several tens. First we will test the accuracy achieved by each path itself, using the set of intensities as features in a \ac{SVC} classifier. The accuracy reached by each path is represented by colour in Figure~\ref{fig:accuracyMap}. 
 
 \begin{figure}
 	\begin{center}
 		\includegraphics[width=\columnwidth]{Graphics/ch6/accuracyPaths2}
-		\caption{DARTEL paths computed in each direction ($\theta,\varphi$). Each path's colour represent the accuracy in a differential diagnosis. Only one in every five paths are shown for clarity purposes.}
+		\caption{canonical paths computed in each direction ($\theta,\varphi$). Each path's colour represent the accuracy in a differential diagnosis. Only one in every five paths are shown for clarity purposes.}
 		\label{fig:accuracyMap}
 	\end{center}
 \end{figure}
 
-It is interesting to question if the performance of this differential diagnosis could be improved using the information contained in more than one path at a time. To this end, we first take the higher accuracy ($\text{accuracy} \ge0.7$) paths according to the aforementioned performance and select all voxels located in the nodes of these paths. Additionally, we use a $t$-test over the set of voxels selected by these paths, to further reduce the set to those voxels that have significant ($p<0.05$) $t$-values ($|t|>1.96$). The performance values for the experiment involving all voxels in the paths (first row) and the one that uses only those significant voxels (second row) are presented in Table~\ref{tab:acc}. 
+The highest performance is achieved by some of the light green paths that cross the temporal lobe, where they reach a decent accuracy up to $0.8028\pm0.0873$. Compared to the \ac{VAF} approach obtained in the ADNI-MRI dataset, under the AD vs NOR scenario (76.8\% for \ac{GM} and 0.64\% for \ac{WM}) XXXXMODIFICAR, this is a dramatic feature reduction while increasing the performance of the system. 
+
+Then, we want to test whether using all the intensities contained within the highest scoring paths can increase this raw performance. To do so, we select the paths that achieved accuracies $\ge0.7$, and afterwards, we used a $t$-test over the set of intensities selected by these paths. We used a threshold $|t|>1.96$ ($p<0.05$) and all the significant intensities were used to construct a new training set. The performance for using either all voxels in the selected paths or only the significant voxels is presented at Table~\ref{tab:accHMMPaths}, for left, right and both sides. 
 
 \begin{table}
 	\myfloatalign
-	\begin{tabularx}{\textwidth}{Xccc}
-		\tableheadline{Side} & \tableheadline{Accuracy} & \tableheadline{Sensitivity} & \tableheadline{Specificity} \\ \midrule
-		Both & $0.806 \pm 0.069 $ & $0.733 \pm 0.073$ & $0.878 \pm 0.097$\\
-		Left & $0.769 \pm 0.035 $ & $0.717 \pm 0.061$ & $0.822 \pm 0.057$\\
-		Right & $0.792 \pm 0.080 $ & $0.706 \pm 0.120$ & $0.878 \pm 0.101$\\
+	\begin{tabular}{llccc}
+		\tableheadline{Selection} & \tableheadline{Side} & \tableheadline{Accuracy} & \tableheadline{Sensitivity} & \tableheadline{Specificity} \\ \midrule
+		\multirow{3}{*}{All} & Left & $0.769 \pm 0.035 $ & $0.717 \pm 0.061$ & $0.822 \pm 0.057$\\
+		& Right & $0.792 \pm 0.080 $ & $0.706 \pm 0.120$ & $0.878 \pm 0.101$\\
+		& Both & $0.806 \pm 0.069 $ & $0.733 \pm 0.073$ & $0.878 \pm 0.097$\\
 		\midrule 
-		Both & $0.828 \pm 0.054 $ & $0.794 \pm 0.095$ & $0.861 \pm 0.039$\\
-		Left & $0.733 \pm 0.037 $ & $0.694 \pm 0.099$ & $0.772 \pm 0.124$\\
-		Right & $0.781 \pm 0.085 $ & $0.711 \pm 0.122$ & $0.850 \pm 0.083$\\
+		\multirow{3}{*}{$t$-test}& Left & $0.733 \pm 0.037 $ & $0.694 \pm 0.099$ & $0.772 \pm 0.124$\\
+		& Right & $0.781 \pm 0.085 $ & $0.711 \pm 0.122$ & $0.850 \pm 0.083$\\
+		& Both & $0.828 \pm 0.054 $ & $0.794 \pm 0.095$ & $0.861 \pm 0.039$\\
 		\bottomrule
-	\end{tabularx}
-	\caption{Performance values ($\pm$SD) for the selected paths as features, and using $t$-test to select the voxels.} 
-	\label{tab:acc}
+	\end{tabular}
+	\caption[Performnace values for using the \acs{HMM} paths in feature selection.]{Performance values ($\pm$SD) for the selected paths as features. First three rows correspond to using all intensities in the selected paths, and the following rows use only significant intensities (asessed by $t$-test).} 
+	\label{tab:accHMMPaths}
 \end{table}
 
-Finally, we mimic the procedure followed in the \ac{SBM} article\cite{Martinez-Murcia2015}. That is, we first compute the average, variance, entropy and kurtosis maps of each brain, but instead of using rectilinear paths, we use the DARTEL paths. Afterwards, all the features contained in these maps are used as an input to the SVM classifier. The performance results are shown in Table~\ref{tab:sbm_perf}. 
+Finally, we proceed as in the original \ac{SBM} article \cite{Martinez-Murcia2015}, by computing different \ac{SBM} measures using each set of intensities $V_{\theta,\varphi}$ selected by the \ac{HMM} path at the direction of the attractor $(\theta,\varphi)$. We will compute the average, entropy and kurtosis measures, as well as an additional variance term, which proved to be a good approach. An example of the computed maps is provided in Figure~\ref{fig:hmmstatmaps}.
+
+\begin{figure}
+\centering
+\includegraphics[width=\linewidth]{Graphics/ch6/HMMStatMaps}
+\caption{}
+\label{fig:hmmstatmaps}
+\end{figure}
+
+The resulting maps are very different from the original \ac{SBM} ones, and the different structures cannot be so easily located. This is mainly due to the adaptivity of the \ac{HMM} paths, featuring a large number of twists and turns in their direction, and making them less powerful for visualization. However, the performance of using these hybrid \ac{HMM}-\ac{SBM} maps can still be high, as we can find at Table~\ref{tab:HMMsbm_perf}. 
 
 \begin{table}
 	\myfloatalign
-	\begin{tabularx}{\textwidth}{Xccc}
+	\begin{tabular}{lccc}
 		\tableheadline{Feature} & \tableheadline{Accuracy} & \tableheadline{Sensitivity} & \tableheadline{Specificity} \\ \midrule
 		Average & $0.594 \pm 0.062 $ & $0.661 \pm 0.121$ & $0.528 \pm 0.106$\\
 		Variance & $0.750 \pm 0.064 $ & $0.633 \pm 0.131$ & $0.867 \pm 0.102$\\
 		Entropy & $0.603 \pm 0.069 $ & $0.661 \pm 0.071$ & $0.544 \pm 0.125$\\
 		Kurtosis & $0.756 \pm 0.105 $ & $0.733 \pm 0.165$ & $0.778 \pm 0.150$\\
 		\bottomrule
-	\end{tabularx}
-	\caption{Performance values ($\pm$SD) for each of the measures used in the \ac{SBM} article.} 
-	\label{tab:sbm_perf}
+	\end{tabular}
+	\caption{Performance values ($\pm$SD) for the hybrid \ac{HMM}-\ac{SBM} maps, using some statistical measures.} 
+	\label{tab:HMMsbm_perf}
 \end{table}
 
-\subsection{Experiment 6: Texture SBM Maps based on HMM Paths}
-The second experiment is intended to extract texture features from the DARTEL paths. With this approach, we obtain one single value per texture feature and path in the subjects, values that intrinsically contain information from their location in the path, in contrast to standard \ac{SBM} measures. In the end, each subject will be characterized by a 2D, $361\times181$ array of scalars, one for each texture feature applied to the paths. Performance values for the nine texture features maps from Section~\ref{sec:rtextfeat} are presented in Table~\ref{tab:texture}.
+
+% DONE
+
+
+\subsection{Experiment 5: Texture SBM Maps based on HMM Paths}
+The second experiment is intended to extract texture features from the canonical paths. With this approach, we obtain one single value per texture feature and path in the subjects, values that intrinsically contain information from their location in the path, in contrast to standard \ac{SBM} measures. In the end, each subject will be characterized by a 2D, $361\times181$ array of scalars, one for each texture feature applied to the paths. Performance values for the nine texture features maps from Section~\ref{sec:rtextfeat} are presented in Table~\ref{tab:texture}.
 
 \begin{table*}
 	\myfloatalign
@@ -552,31 +569,10 @@ The second experiment is intended to extract texture features from the DARTEL pa
 
 The higher accuracy obtained by the texture maps is $0.736 \pm 0.070$, corresponding to Difference Variance. The performance values of the different texture features, all obtaining accuracies higher than $65\%$ (most of them above $70\%$) reveal the discrimination abilities of these textures, although these values are not as good as those obtained using the voxel intensities or the \ac{SBM} features. 
 
-% DONE
-
-\subsubsection{Layered Extension}\label{sec:layeredttest}
-
-
-\subsubsection{VRLBP}\label{sec:vrlbpttest}
 
 
 \subsection{Classification Analysis}\label{sec:classification}
 To obtain comparable performance metrics suitable to analyse the generalization capabilities of \ac{SBM}, in this section a number of classification results are presented. A baseline is established in Section~\ref{sec:baseline} and then the performance of our maps, included the layered extension and VRLBP, is presented in Section~\ref{sec:sbmclass}.
-
-\subsubsection{Baseline - VAF}\label{sec:baseline}
-In order to establish a baseline to assess the predictive ability of our maps, we will use the \acf{VAF} paradigm, described in \cite{Stoeckel04}. This approach uses the whole 3D \ac{GM} or \ac{WM} segmented MR images and then uses all voxels of the 3D images as features in the SVM classification, yielding the performance values shown in Table~\ref{tab:perfVAF}. The performance of the \ac{SBM} maps will be compared to these. 
-
-\begin{table*}[htp]
-	\myfloatalign
-	\begin{tabularx}{\textwidth}{Xccc}
-		\tableheadline{Approach}  & \tableheadline{Accuracy} & \tableheadline{Sensitivity} & \tableheadline{Specificity}\\
-		\midrule
-		\ac{VAF} (\ac{GM})  & $0.768 \pm 0.011$ & $0.752 \pm 0.016$ & $0.785 \pm 0.016$ \\
-		\ac{VAF} (\ac{WM})  & $0.642 \pm 0.009$ & $0.668 \pm 0.012$ & $0.617 \pm 0.013$ \\
-		\bottomrule
-	\end{tabularx}
-	\caption{Performance values (Average $\pm$ Standard Deviation) for the  Voxels as Features approach in both \ac{GM} and \ac{WM} tissues.\label{tab:perfVAF}}
-\end{table*}
 
 
 \section{Discussion}
@@ -684,6 +680,6 @@ Table \ref{tab:comparison2} presents some of the best results of our methodology
 	\end{table*}
 	
 	
-	\ac{VAF} is often used as a baseline when comparing different methodology, as it has been described as a good estimator of the accuracy obtained by means of visual analysis \cite{Stoeckel04}. As we commented before, the raw voxel intensities selected by our DARTEL paths achieve higher accuracy than statistical or texture features, and it is the only strategy that outperforms \ac{VAF}. Texture and statistical features obtain poorer, although still good, performance (around 75\% accuracy). When compared to other methods, the difference is greater, although inside the range of 1 SD. Most of the \ac{SBM} features proposed in \cite{Martinez-Murcia2015} perform better than our DARTEL paths, and the case of \cite{Martinez-MurciaVRLBP} even surpass the barrier of 90\% accuracy. However, there is a significant difference with these approaches, and it is that these measures used segmented \ac{GM} and \ac{WM} images, instead of using the whole MRI. Segmentation, thus, enhances the detection and extraction of features from the images, whereas the tracing of paths over the whole images is a more complex operation. When compared to LVQ-SVM or SCA, the difference in performance is even smaller and still inside the range of 1 SD, which gives us an idea of the ability of our methodology to detect patterns with a significant feature reduction.
+	\ac{VAF} is often used as a baseline when comparing different methodology, as it has been described as a good estimator of the accuracy obtained by means of visual analysis \cite{Stoeckel04}. As we commented before, the raw voxel intensities selected by our canonical paths achieve higher accuracy than statistical or texture features, and it is the only strategy that outperforms \ac{VAF}. Texture and statistical features obtain poorer, although still good, performance (around 75\% accuracy). When compared to other methods, the difference is greater, although inside the range of 1 SD. Most of the \ac{SBM} features proposed in \cite{Martinez-Murcia2015} perform better than our canonical paths, and the case of \cite{Martinez-MurciaVRLBP} even surpass the barrier of 90\% accuracy. However, there is a significant difference with these approaches, and it is that these measures used segmented \ac{GM} and \ac{WM} images, instead of using the whole MRI. Segmentation, thus, enhances the detection and extraction of features from the images, whereas the tracing of paths over the whole images is a more complex operation. When compared to LVQ-SVM or SCA, the difference in performance is even smaller and still inside the range of 1 SD, which gives us an idea of the ability of our methodology to detect patterns with a significant feature reduction.
 	
 	Finally, one might argue if a different approach to the path tracing, such as tracing the set of paths in each subject individually might be of use. This strategy would still characterize the individual brain structure; however the way this structure is defined would be different: the spatial location of the nodes and topology of the paths instead of the intensity distribution. Given the time our algorithm takes to model one single MRI (around 2 hours) it can be extraordinarily computationally expensive, although faster than other methodology like DTI fiber tracing or Freesurfer surface extraction. Consequently, it would be an interesting option to explore in future works. 
