@@ -301,9 +301,9 @@ A summary of our \ac{HMM}-based path tracing method is shown in Algorithm~\ref{a
 
 % Con o sin suavizado
 \subsection{Radial Texture Features}\label{sec:rtextfeat}
-The paths $\mathbb{P}_{\theta,\varphi}$ proposed above could theoretically be used as a feature selection tool to extract the set of intensities $V_{\theta,\varphi}$ as in the standard \ac{SBM}. However, since these new paths contain geometric information, they encode the internal structure, which is itself an additional feature. This encoding could be used to characterize the texture in the neighbourhood of $\mathbb{P}_{\theta,\varphi}$. 
+The paths $\mathbb{P}_{\theta,\varphi}$ proposed above could theoretically be used as a feature selection tool to extract the set of intensities $V_{\theta,\varphi}$ as in the standard \ac{SBM}, and even create hybrid \ac{HMM}-\ac{SBM} maps from that set. However, since these new paths contain geometric information, they encode the internal structure, which is itself an additional feature. This encoding could be used to characterize the texture in the neighbourhood of $\mathbb{P}_{\theta,\varphi}$. 
 
-In \cite{Martinez-MurciaVRLBP} a helical sampling was proposed to define the neighbourhood of the mapping vector $\mathbf{v}_{\theta,\varphi}$. Due to the topology of the \ac{HMM} pahts, that is an approach that could not work. Conversely, we propose a modification of the \ac{GLCM} (see Section~\ref{sec:haralick}) that instead of computing the texture in a given direction, characterizes it along the defined \ac{HMM} paths. 
+In \cite{Martinez-MurciaVRLBP} a helical sampling was proposed to define the neighbourhood of the mapping vector $\mathbf{v}_{\theta,\varphi}$. That is infeasible in this case, due to the topology of the \ac{HMM} paths. Conversely, we propose a modification of the \ac{GLCM} (see Section~\ref{sec:haralick}) that instead of computing the texture in a given direction, characterizes it along the defined \ac{HMM} paths. 
 
 This is basically a node-wise \ac{GLCM}, in which the number of grey-level transitions between adjacent nodes, which we could note as $\mathbf{p}_i$ and $\mathbf{p}_{i+1}$, is stored along the whole path $\mathbb{P}_{\theta,\varphi} = \{\mathbf{p}_0, \mathbf{p}_1 \dots \mathbf{p}_N\}$. Mathematically, the computation of the GLCM in each point in the path will be: 
 \begin{equation}\label{eq:glcm}
@@ -340,7 +340,7 @@ In this chapter, we have proposed a completely new framework for extracting feat
 	\item Experiment 1: assessment of the original \ac{SBM} maps and the \ac{VRLBP} over segmented \ac{GM} and \ac{WM} images. We will provide a statistical significance analysis and a classification analysis under the \ac{AD} vs \ac{CTL} scenario of the six proposed maps. 
 	\item Experiment 2: assessment of the layered extension of the \ac{SBM} over segmented \ac{GM} and \ac{WM} images. That way, we want to prove if dividing the sampling set, and thus, increasing the depth resolution of the system affects the overall performance of our system. We will provide statistical significance analysis and classification analysis under the \ac{AD} vs \ac{CTL} scenario . 
 	\item Experiment 3: evaluation of the \ac{HMM} based paths on simulated datasets, to demonstrate the ability of this algorithm to adapt to different intensity distributions. 
-	\item Experiment 4: evaluation of the \ac{HMM} based paths on a real \ac{MRI} dataset, by taking the different paths as feature selectors, and evaluating the performance obtained by each individual paths, and a combination of them. We provide a classification analysis of the selected features under the \ac{AD} vs \ac{CTL} scenario.
+	\item Experiment 4: evaluation of the \ac{HMM} based paths on a real \ac{MRI} dataset, by taking the different paths as feature selectors, and evaluating the performance obtained by the set of intensities selected by each individual path, a combination of them, and the further construction of hybrid \ac{HMM}-\ac{SBM} maps. We provide a classification analysis of the selected features under the \ac{AD} vs \ac{CTL} scenario. 
 	\item Experiment 5: evaluation of the texture maps derived from the \ac{HMM} based paths on the T1-weighted \ac{MRI} dataset, under a classification analysis of \ac{AD} vs \ac{CTL} subjects. 
 \end{itemize}
 
@@ -541,23 +541,19 @@ The resulting maps are very different from the original \ac{SBM} ones, and the d
 	\label{tab:HMMsbm_perf}
 \end{table}
 
-
-% DONE
-
-
 \subsection{Experiment 5: Texture SBM Maps based on HMM Paths}
-The second experiment is intended to extract texture features from the canonical paths. With this approach, we obtain one single value per texture feature and path in the subjects, values that intrinsically contain information from their location in the path, in contrast to standard \ac{SBM} measures. In the end, each subject will be characterized by a 2D, $361\times181$ array of scalars, one for each texture feature applied to the paths. Performance values for the nine texture features maps from Section~\ref{sec:rtextfeat} are presented in Table~\ref{tab:texture}.
+After evaluating the \ac{HMM} paths as a feature selection method, and the hybrid \ac{HMM}-\ac{SBM} maps, we want to compute new texture maps, similar to the approach used in the \ac{VRLBP} extension, but using a path-based \ac{GLCM}.  To do so, we will derive a \ac{GLCM} from each of the canonical paths, and extract one single value per texture feature and direction, which allow us to construct texture \ac{SBM} maps. In Table Table~\ref{tab:textureSBM} we show the performance values for the maps built using each of the texture features proposed in Section~\ref{sec:rtextfeat}
 
 \begin{table*}
 	\myfloatalign
 	\begin{tabularx}{\textwidth}{Xccc}
 		\tableheadline{Feature} & \tableheadline{Accuracy} & \tableheadline{Sensitivity} & \tableheadline{Specificity} \\ \midrule
-		Contrast & $0.733 \pm 0.060 $ & $0.689 \pm 0.126$ & $0.778 \pm 0.105$\\
-		Correlation & $0.672 \pm 0.068 $ & $0.672 \pm 0.112$ & $0.672 \pm 0.100$\\
-		Dissimilarity & $0.711 \pm 0.085 $ & $0.678 \pm 0.110$ & $0.744 \pm 0.102$\\
 		Energy & $0.689 \pm 0.061 $ & $0.700 \pm 0.115$ & $0.678 \pm 0.073$\\
 		Entropy & $0.675 \pm 0.101 $ & $0.672 \pm 0.115$ & $0.678 \pm 0.159$\\
+		Correlation & $0.672 \pm 0.068 $ & $0.672 \pm 0.112$ & $0.672 \pm 0.100$\\
+		Contrast & $0.733 \pm 0.060 $ & $0.689 \pm 0.126$ & $0.778 \pm 0.105$\\
 		Homogeneity & $0.697 \pm 0.058 $ & $0.700 \pm 0.115$ & $0.694 \pm 0.106$\\
+		Dissimilarity & $0.711 \pm 0.085 $ & $0.678 \pm 0.110$ & $0.744 \pm 0.102$\\
 		Difference Variance & $0.736 \pm 0.070 $ & $0.683 \pm 0.098$ & $0.789 \pm 0.090$\\
 		Difference Entropy & $0.725 \pm 0.122 $ & $0.683 \pm 0.176$ & $0.767 \pm 0.114$\\
 		IDN & $0.719 \pm 0.065 $ & $0.683 \pm 0.108$ & $0.756 \pm 0.105$\\
@@ -567,16 +563,11 @@ The second experiment is intended to extract texture features from the canonical
 	\caption{Performance values ($\pm$SD) for each of the 10 texture features.} \label{tab:texture}
 \end{table*}
 
-The higher accuracy obtained by the texture maps is $0.736 \pm 0.070$, corresponding to Difference Variance. The performance values of the different texture features, all obtaining accuracies higher than $65\%$ (most of them above $70\%$) reveal the discrimination abilities of these textures, although these values are not as good as those obtained using the voxel intensities or the \ac{SBM} features. 
-
-
-
-\subsection{Classification Analysis}\label{sec:classification}
-To obtain comparable performance metrics suitable to analyse the generalization capabilities of \ac{SBM}, in this section a number of classification results are presented. A baseline is established in Section~\ref{sec:baseline} and then the performance of our maps, included the layered extension and VRLBP, is presented in Section~\ref{sec:sbmclass}.
-
+Difference variance achieves here the higher accuracy, $0.736 \pm 0.070$, a value similar to the \ac{VAF} approach in this database. The performance achieved by these texture features is always higher than $65\%$ (most of them above $70\%$) which reveals a discrete discrimination ability, although much smaller than the one shown by the \ac{HMM} paths, used as feature selection tool. 
 
 \section{Discussion}
 \subsection{Spherical Brain Mapping}
+% DONE
 The structural changes in MR images during the progression of the Al\-zhei\-mer's Disease are widely documented in the bibliography \cite{Misra2009,Baron2001,Pievani2013,Stoeckel04,han2006reliability,Fischl2004}. According to our current knowledge, the neurodegeneration and posterior atrophy occurs mainly in the \ac{GM} tissue, although significant changes are present also in \ac{WM}. 
 
 The mappings defined throughout Sections~\ref{sec:mapping}, \ref{sec:layered} and \ref{sec:vrlbp} account for different properties of the tissues crossed by $\mathbf{v}_{\theta,\varphi}$. As it can be seen in Figure~\ref{fig:performance}, our mappings show in general a higher performance when using the \ac{GM} tissue, which is consistent with the literature. There are some exceptions, however, being the clearest the VRLBP, and, to a lesser extent, the number of folds and surface. The different mappings and their utility will be described in the following paragraphs. 

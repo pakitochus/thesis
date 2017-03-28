@@ -1499,4 +1499,26 @@
   publisher = {NRC Research Press Ottawa, Canada},
 }
 
+@Article{han2006reliability,
+  author    = {Han, Xiao and Jovicich, Jorge and Salat, David and van der Kouwe, Andre and Quinn, Brian and Czanner, Silvester and Busa, Evelina and Pacheco, Jenni and Albert, Marilyn and Killiany, Ronald and others},
+  title     = {Reliability of {MRI}-derived measurements of human cerebral cortical thickness: the effects of field strength, scanner upgrade and manufacturer},
+  journal   = {Neuroimage},
+  year      = {2006},
+  volume    = {32},
+  number    = {1},
+  pages     = {180--194},
+  publisher = {Elsevier},
+}
+
+@Article{Fischl2004,
+  author    = {Fischl, Bruce and van der Kouwe, Andr{\'e} and Destrieux, Christophe and Halgren, Eric and S{\'e}gonne, Florent and Salat, David H and Busa, Evelina and Seidman, Larry J and Goldstein, Jill and Kennedy, David and others},
+  title     = {Automatically parcellating the human cerebral cortex},
+  journal   = {Cerebral cortex},
+  year      = {2004},
+  volume    = {14},
+  number    = {1},
+  pages     = {11--22},
+  publisher = {Oxford Univ Press},
+}
+
 @Comment{jabref-meta: databaseType:bibtex;}

@@ -3342,6 +3342,80 @@
       \verb http://www.sciencedirect.com/science/article/B6WNP-4N8M886-1/2/de5a061a0cf2d3250bcac48cc4f77be2
       \endverb
     \endentry
+    \entry{han2006reliability}{article}{}
+      \true{moreauthor}
+      \true{morelabelname}
+      \name{author}{10}{}{%
+        {{hash=e455b4baac829220a95ebc58f137271d}{%
+           family={Han},
+           family_i={H\bibinitperiod},
+           given={Xiao},
+           given_i={X\bibinitperiod}}}%
+        {{hash=bca8adb07eff8b85daa4581e8ef48e1d}{%
+           family={Jovicich},
+           family_i={J\bibinitperiod},
+           given={Jorge},
+           given_i={J\bibinitperiod}}}%
+        {{hash=b5b7822b956ce1d74a014c25304809f0}{%
+           family={Salat},
+           family_i={S\bibinitperiod},
+           given={David},
+           given_i={D\bibinitperiod}}}%
+        {{hash=39e331470b0c0ff76c0576aa21e4bb8f}{%
+           prefix={van\bibnamedelima der},
+           prefix_i={v\bibinitperiod\bibinitdelim d\bibinitperiod},
+           family={Kouwe},
+           family_i={K\bibinitperiod},
+           given={Andre},
+           given_i={A\bibinitperiod}}}%
+        {{hash=4c1eb8f28b7b890a2fcd93cd6c58d2f7}{%
+           family={Quinn},
+           family_i={Q\bibinitperiod},
+           given={Brian},
+           given_i={B\bibinitperiod}}}%
+        {{hash=049710e132f695e14be75e72204eb902}{%
+           family={Czanner},
+           family_i={C\bibinitperiod},
+           given={Silvester},
+           given_i={S\bibinitperiod}}}%
+        {{hash=5466a58d15c5f1a0a3a0bf30c7d1f093}{%
+           family={Busa},
+           family_i={B\bibinitperiod},
+           given={Evelina},
+           given_i={E\bibinitperiod}}}%
+        {{hash=620f6e8d420610dc315d3cc8e305dd57}{%
+           family={Pacheco},
+           family_i={P\bibinitperiod},
+           given={Jenni},
+           given_i={J\bibinitperiod}}}%
+        {{hash=acbc3da85af1be708b3a182ebf3d3870}{%
+           family={Albert},
+           family_i={A\bibinitperiod},
+           given={Marilyn},
+           given_i={M\bibinitperiod}}}%
+        {{hash=2ec34e002ad22d8666d4c4422fc1ae20}{%
+           family={Killiany},
+           family_i={K\bibinitperiod},
+           given={Ronald},
+           given_i={R\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Elsevier}%
+      }
+      \strng{namehash}{3c94d67199ff9f0aa6eee3a99fc9df20}
+      \strng{fullhash}{a4ab039cfbb1a0f7950cbf2a4180af41}
+      \field{sortinit}{2}
+      \field{sortinithash}{8343b463aacf48517c044b4d2c9c45ed}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Neuroimage}
+      \field{number}{1}
+      \field{title}{Reliability of {MRI}-derived measurements of human cerebral cortical thickness: the effects of field strength, scanner upgrade and manufacturer}
+      \field{volume}{32}
+      \field{year}{2006}
+      \field{pages}{180\bibrangedash 194}
+      \range{pages}{15}
+    \endentry
     \entry{Rice2006}{book}{}
       \name{author}{1}{}{%
         {{hash=2c6d52c5198f5f18ca729b1c318f9d80}{%
@@ -3531,6 +3605,80 @@
       \verb{url}
       \verb http://www.sciencedirect.com/science/article/pii/S0002934304003626
       \endverb
+    \endentry
+    \entry{Fischl2004}{article}{}
+      \true{moreauthor}
+      \true{morelabelname}
+      \name{author}{10}{}{%
+        {{hash=e4210e5a0305aced45740a9ccb645743}{%
+           family={Fischl},
+           family_i={F\bibinitperiod},
+           given={Bruce},
+           given_i={B\bibinitperiod}}}%
+        {{hash=c6f0c36d00912dbdf15cae11ecc32583}{%
+           prefix={van\bibnamedelima der},
+           prefix_i={v\bibinitperiod\bibinitdelim d\bibinitperiod},
+           family={Kouwe},
+           family_i={K\bibinitperiod},
+           given={André},
+           given_i={A\bibinitperiod}}}%
+        {{hash=fca16e3ace199e1941ddd2fd6c2779c9}{%
+           family={Destrieux},
+           family_i={D\bibinitperiod},
+           given={Christophe},
+           given_i={C\bibinitperiod}}}%
+        {{hash=92cb60d789a72953e628c237edca47d1}{%
+           family={Halgren},
+           family_i={H\bibinitperiod},
+           given={Eric},
+           given_i={E\bibinitperiod}}}%
+        {{hash=2e6fb3bf4cc9ea82a7ee620614faeaf8}{%
+           family={Ségonne},
+           family_i={S\bibinitperiod},
+           given={Florent},
+           given_i={F\bibinitperiod}}}%
+        {{hash=5a4ed17ec17aebf49c642f1fbc0dd296}{%
+           family={Salat},
+           family_i={S\bibinitperiod},
+           given={David\bibnamedelima H},
+           given_i={D\bibinitperiod\bibinitdelim H\bibinitperiod}}}%
+        {{hash=5466a58d15c5f1a0a3a0bf30c7d1f093}{%
+           family={Busa},
+           family_i={B\bibinitperiod},
+           given={Evelina},
+           given_i={E\bibinitperiod}}}%
+        {{hash=4a33ab6a5894cd80e5314170bb67a084}{%
+           family={Seidman},
+           family_i={S\bibinitperiod},
+           given={Larry\bibnamedelima J},
+           given_i={L\bibinitperiod\bibinitdelim J\bibinitperiod}}}%
+        {{hash=04aa8c63d95f58ecc76b7e0f8f63d50a}{%
+           family={Goldstein},
+           family_i={G\bibinitperiod},
+           given={Jill},
+           given_i={J\bibinitperiod}}}%
+        {{hash=d6c2265c37f283b48f1e4194b7a3d0ae}{%
+           family={Kennedy},
+           family_i={K\bibinitperiod},
+           given={David},
+           given_i={D\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Oxford Univ Press}%
+      }
+      \strng{namehash}{afcbe227c3adc6239c6f90e03040bb6d}
+      \strng{fullhash}{0e930e5e6b184ddcdbf373427c7c95d3}
+      \field{sortinit}{2}
+      \field{sortinithash}{8343b463aacf48517c044b4d2c9c45ed}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Cerebral cortex}
+      \field{number}{1}
+      \field{title}{Automatically parcellating the human cerebral cortex}
+      \field{volume}{14}
+      \field{year}{2004}
+      \field{pages}{11\bibrangedash 22}
+      \range{pages}{12}
     \endentry
     \entry{Smith2004}{article}{}
       \name{author}{17}{}{%
@@ -6926,6 +7074,80 @@
       \range{pages}{15}
       \keyw{Aged; Alzheimer Disease,diagnosis,pathology; Brain,anatomy & histology,pathology; Brain Mapping; Female; Humans; Magnetic Resonance Imaging,methods; Male; Reproducibility of Results}
     \endentry
+    \entry{Fischl2004}{article}{}
+      \true{moreauthor}
+      \true{morelabelname}
+      \name{author}{10}{}{%
+        {{hash=e4210e5a0305aced45740a9ccb645743}{%
+           family={Fischl},
+           family_i={F\bibinitperiod},
+           given={Bruce},
+           given_i={B\bibinitperiod}}}%
+        {{hash=c6f0c36d00912dbdf15cae11ecc32583}{%
+           prefix={van\bibnamedelima der},
+           prefix_i={v\bibinitperiod\bibinitdelim d\bibinitperiod},
+           family={Kouwe},
+           family_i={K\bibinitperiod},
+           given={André},
+           given_i={A\bibinitperiod}}}%
+        {{hash=fca16e3ace199e1941ddd2fd6c2779c9}{%
+           family={Destrieux},
+           family_i={D\bibinitperiod},
+           given={Christophe},
+           given_i={C\bibinitperiod}}}%
+        {{hash=92cb60d789a72953e628c237edca47d1}{%
+           family={Halgren},
+           family_i={H\bibinitperiod},
+           given={Eric},
+           given_i={E\bibinitperiod}}}%
+        {{hash=2e6fb3bf4cc9ea82a7ee620614faeaf8}{%
+           family={Ségonne},
+           family_i={S\bibinitperiod},
+           given={Florent},
+           given_i={F\bibinitperiod}}}%
+        {{hash=5a4ed17ec17aebf49c642f1fbc0dd296}{%
+           family={Salat},
+           family_i={S\bibinitperiod},
+           given={David\bibnamedelima H},
+           given_i={D\bibinitperiod\bibinitdelim H\bibinitperiod}}}%
+        {{hash=5466a58d15c5f1a0a3a0bf30c7d1f093}{%
+           family={Busa},
+           family_i={B\bibinitperiod},
+           given={Evelina},
+           given_i={E\bibinitperiod}}}%
+        {{hash=4a33ab6a5894cd80e5314170bb67a084}{%
+           family={Seidman},
+           family_i={S\bibinitperiod},
+           given={Larry\bibnamedelima J},
+           given_i={L\bibinitperiod\bibinitdelim J\bibinitperiod}}}%
+        {{hash=04aa8c63d95f58ecc76b7e0f8f63d50a}{%
+           family={Goldstein},
+           family_i={G\bibinitperiod},
+           given={Jill},
+           given_i={J\bibinitperiod}}}%
+        {{hash=d6c2265c37f283b48f1e4194b7a3d0ae}{%
+           family={Kennedy},
+           family_i={K\bibinitperiod},
+           given={David},
+           given_i={D\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Oxford Univ Press}%
+      }
+      \strng{namehash}{afcbe227c3adc6239c6f90e03040bb6d}
+      \strng{fullhash}{0e930e5e6b184ddcdbf373427c7c95d3}
+      \field{sortinit}{F}
+      \field{sortinithash}{c6a7d9913bbd7b20ea954441c0460b78}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Cerebral cortex}
+      \field{number}{1}
+      \field{title}{Automatically parcellating the human cerebral cortex}
+      \field{volume}{14}
+      \field{year}{2004}
+      \field{pages}{11\bibrangedash 22}
+      \range{pages}{12}
+    \endentry
     \entry{Friston1994}{article}{}
       \name{author}{6}{}{%
         {{hash=3bd4ac786cc0b7cb996e2dbf8a77848d}{%
@@ -7171,6 +7393,80 @@
       \verb{doi}
       \verb 10.1093/cercor/bhu242
       \endverb
+    \endentry
+    \entry{han2006reliability}{article}{}
+      \true{moreauthor}
+      \true{morelabelname}
+      \name{author}{10}{}{%
+        {{hash=e455b4baac829220a95ebc58f137271d}{%
+           family={Han},
+           family_i={H\bibinitperiod},
+           given={Xiao},
+           given_i={X\bibinitperiod}}}%
+        {{hash=bca8adb07eff8b85daa4581e8ef48e1d}{%
+           family={Jovicich},
+           family_i={J\bibinitperiod},
+           given={Jorge},
+           given_i={J\bibinitperiod}}}%
+        {{hash=b5b7822b956ce1d74a014c25304809f0}{%
+           family={Salat},
+           family_i={S\bibinitperiod},
+           given={David},
+           given_i={D\bibinitperiod}}}%
+        {{hash=39e331470b0c0ff76c0576aa21e4bb8f}{%
+           prefix={van\bibnamedelima der},
+           prefix_i={v\bibinitperiod\bibinitdelim d\bibinitperiod},
+           family={Kouwe},
+           family_i={K\bibinitperiod},
+           given={Andre},
+           given_i={A\bibinitperiod}}}%
+        {{hash=4c1eb8f28b7b890a2fcd93cd6c58d2f7}{%
+           family={Quinn},
+           family_i={Q\bibinitperiod},
+           given={Brian},
+           given_i={B\bibinitperiod}}}%
+        {{hash=049710e132f695e14be75e72204eb902}{%
+           family={Czanner},
+           family_i={C\bibinitperiod},
+           given={Silvester},
+           given_i={S\bibinitperiod}}}%
+        {{hash=5466a58d15c5f1a0a3a0bf30c7d1f093}{%
+           family={Busa},
+           family_i={B\bibinitperiod},
+           given={Evelina},
+           given_i={E\bibinitperiod}}}%
+        {{hash=620f6e8d420610dc315d3cc8e305dd57}{%
+           family={Pacheco},
+           family_i={P\bibinitperiod},
+           given={Jenni},
+           given_i={J\bibinitperiod}}}%
+        {{hash=acbc3da85af1be708b3a182ebf3d3870}{%
+           family={Albert},
+           family_i={A\bibinitperiod},
+           given={Marilyn},
+           given_i={M\bibinitperiod}}}%
+        {{hash=2ec34e002ad22d8666d4c4422fc1ae20}{%
+           family={Killiany},
+           family_i={K\bibinitperiod},
+           given={Ronald},
+           given_i={R\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Elsevier}%
+      }
+      \strng{namehash}{3c94d67199ff9f0aa6eee3a99fc9df20}
+      \strng{fullhash}{a4ab039cfbb1a0f7950cbf2a4180af41}
+      \field{sortinit}{H}
+      \field{sortinithash}{82012198d5dfa657b8c4a168793268a6}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Neuroimage}
+      \field{number}{1}
+      \field{title}{Reliability of {MRI}-derived measurements of human cerebral cortical thickness: the effects of field strength, scanner upgrade and manufacturer}
+      \field{volume}{32}
+      \field{year}{2006}
+      \field{pages}{180\bibrangedash 194}
+      \range{pages}{15}
     \endentry
     \entry{Haralick73}{article}{}
       \name{author}{3}{}{%
@@ -10530,34 +10826,32 @@
       \endverb
     \endentry
   \endsortlist
-  \missing{Illan2014}
-  \missing{Yen1995}
-  \missing{xu2009source}
-  \missing{Ram'irez2009}
-  \missing{Vapnik1982}
-  \missing{chan2001patterns}
-  \missing{Locatelli1998}
-  \missing{IAIllan2010}
   \missing{Tzourio-Mazoyer2002}
-  \missing{jobst_accurate_1998}
-  \missing{PPMI}
-  \missing{Ramirez2009}
-  \missing{AAL}
-  \missing{Kohavi1995a}
-  \missing{Zhou2008}
-  \missing{Evans1993}
-  \missing{Inititative2010}
-  \missing{han2006reliability}
+  \missing{Illan2014}
   \missing{Ortiz2013}
-  \missing{Fischl2004}
-  \missing{Medina2008}
-  \missing{Alvarez2009}
-  \missing{Shepp82}
-  \missing{Botev2010}
+  \missing{jobst_accurate_1998}
   \missing{Grana2011}
+  \missing{Ramirez2009}
+  \missing{IAIllan2010}
+  \missing{Ram'irez2009}
+  \missing{Botev2010}
   \missing{Jong2008}
+  \missing{Evans1993}
+  \missing{Yen1995}
+  \missing{AAL}
+  \missing{chan2001patterns}
+  \missing{PPMI}
+  \missing{Inititative2010}
+  \missing{Shepp82}
   \missing{Vardi1985}
   \missing{dougall_systematic_2004}
+  \missing{Zhou2008}
+  \missing{xu2009source}
+  \missing{Alvarez2009}
+  \missing{Vapnik1982}
+  \missing{Locatelli1998}
+  \missing{Medina2008}
+  \missing{Kohavi1995a}
 \endrefsection
 
 \refsection{1}
