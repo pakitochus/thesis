@@ -294,29 +294,27 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {figure}{\numberline {6.20}{\ignorespaces Performance at the operation point for the different mappings over the Grey Matter and White Matter, compared with the performance of \ac {VAF}.\relax }}{115}{figure.caption.136}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {6.21}{\ignorespaces ROC curves of the different mappings for the \ac {GM} and \ac {WM} tissues.\relax }}{117}{figure.caption.137}
-\defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {6.22}{\ignorespaces Paths that obtain more than 75\% accuracy, and a three-dimensional representation of the structures crossed by them.\relax }}{119}{figure.caption.138}
+\contentsline {figure}{\numberline {6.21}{\ignorespaces Paths that obtain more than 75\% accuracy, and a three-dimensional representation of the structures crossed by them.\relax }}{118}{figure.caption.137}
 \defcounter {refsection}{0}\relax 
 \addvspace {10\p@ }
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {7.1}{\ignorespaces Summary of the \acs {SWPCA} algorithm, along with its context in the pipeline used in this article.}}{127}{figure.caption.140}
+\contentsline {figure}{\numberline {7.1}{\ignorespaces Summary of the \acs {SWPCA} algorithm, along with its context in the pipeline used in this article.}}{127}{figure.caption.139}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {7.2}{\ignorespaces Weighting function $\Lambda _c(p_c,p_{th})$ used in \acs {SWPCA}.}}{129}{figure.caption.141}
+\contentsline {figure}{\numberline {7.2}{\ignorespaces Weighting function $\Lambda _c(p_c,p_{th})$ used in \acs {SWPCA}.}}{129}{figure.caption.140}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {7.3}{\ignorespaces Box-plot of the distribution of the component scores at each site of the AIMS-MRI dataset (see Sections~\ref {sec:swpcaAIMSresults} and \ref {sec:aims-mri}) in the four first components.}}{129}{figure.caption.142}
+\contentsline {figure}{\numberline {7.3}{\ignorespaces Box-plot of the distribution of the component scores at each site of the AIMS-MRI dataset (see Sections~\ref {sec:swpcaAIMSresults} and \ref {sec:aims-mri}) in the four first components.}}{129}{figure.caption.141}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {7.4}{\ignorespaces Brain t-map (\acs {VBM}) of significant ($p<0.01$, $|t|>2.57$) \acs {GM} and \acs {WM} between-group differences using \acs {qT1}, \acs {qT2}, \acs {synT1}, \acs {GM} and \acs {WM} modalities after applying \acs {SWPCA} to remove site effects.}}{132}{figure.caption.145}
+\contentsline {figure}{\numberline {7.4}{\ignorespaces Brain t-map (\acs {VBM}) of significant ($p<0.01$, $|t|>2.57$) \acs {GM} and \acs {WM} between-group differences using \acs {qT1}, \acs {qT2}, \acs {synT1}, \acs {GM} and \acs {WM} modalities after applying \acs {SWPCA} to remove site effects.}}{132}{figure.caption.144}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {7.5}{\ignorespaces Brain t-map (\acs {VBM}) of significant ($p<0.01$, $|t|>2.57$) \acs {GM} and \acs {WM} differences in \acs {ASD} using \acs {qT1}, \acs {qT2}, \acs {synT1}, \acs {GM} and \acs {WM} maps before and after applying \acs {SWPCA} to remove site effects.}}{136}{figure.caption.148}
+\contentsline {figure}{\numberline {7.5}{\ignorespaces Brain t-map (\acs {VBM}) of significant ($p<0.01$, $|t|>2.57$) \acs {GM} and \acs {WM} differences in \acs {ASD} using \acs {qT1}, \acs {qT2}, \acs {synT1}, \acs {GM} and \acs {WM} maps before and after applying \acs {SWPCA} to remove site effects.}}{136}{figure.caption.147}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {7.6}{\ignorespaces Brain Z-map (\acs {CBM}) of significant ($p<0.01$, $|t|>2.57$) \acs {GM} and \acs {WM} differences using \acs {qT1}, \acs {qT2}, \acs {synT1}, \acs {GM} and \acs {WM} maps before and after applying \acs {SWPCA} to remove site effects.}}{138}{figure.caption.149}
+\contentsline {figure}{\numberline {7.6}{\ignorespaces Brain Z-map (\acs {CBM}) of significant ($p<0.01$, $|t|>2.57$) \acs {GM} and \acs {WM} differences using \acs {qT1}, \acs {qT2}, \acs {synT1}, \acs {GM} and \acs {WM} maps before and after applying \acs {SWPCA} to remove site effects.}}{138}{figure.caption.148}
 \defcounter {refsection}{0}\relax 
 \addvspace {10\p@ }
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {8.1}{\ignorespaces Schema of the brain image synthesis algorithm.\relax }}{145}{figure.caption.152}
+\contentsline {figure}{\numberline {8.1}{\ignorespaces Schema of the brain image synthesis algorithm.\relax }}{145}{figure.caption.151}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {8.2}{\ignorespaces Comparison between simulated and original images from \acs {AD} and \acs {CTL} classes.}}{146}{figure.caption.153}
+\contentsline {figure}{\numberline {8.2}{\ignorespaces Comparison between simulated and original images from \acs {AD} and \acs {CTL} classes.}}{146}{figure.caption.152}
 \defcounter {refsection}{0}\relax 
 \addvspace {10\p@ }
 \defcounter {refsection}{0}\relax 
