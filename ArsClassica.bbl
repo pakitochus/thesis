@@ -2432,6 +2432,43 @@
       \field{pages}{956\bibrangedash 969}
       \range{pages}{14}
     \endentry
+    \entry{Botev2010}{article}{}
+      \true{moreauthor}
+      \true{morelabelname}
+      \name{author}{3}{}{%
+        {{hash=86b065ae3060aa1d512ee5eebc55a5d2}{%
+           family={Botev},
+           family_i={B\bibinitperiod},
+           given={ZI},
+           given_i={Z\bibinitperiod}}}%
+        {{hash=67943b40938c7730db7f877db565e46c}{%
+           family={Grotowski},
+           family_i={G\bibinitperiod},
+           given={JF},
+           given_i={J\bibinitperiod}}}%
+        {{hash=212c549188f5686f08c570e962232d0b}{%
+           family={Kroese},
+           family_i={K\bibinitperiod},
+           given={DP},
+           given_i={D\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Institute of Mathematical Statistics}%
+      }
+      \strng{namehash}{977f56e60ce1de89c9a6c125259a677b}
+      \strng{fullhash}{e61fb40b19f5336e41de2919e85e14ce}
+      \field{sortinit}{2}
+      \field{sortinithash}{8343b463aacf48517c044b4d2c9c45ed}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{The Annals of Statistics}
+      \field{number}{5}
+      \field{title}{Kernel density estimation via diffusion}
+      \field{volume}{38}
+      \field{year}{2010}
+      \field{pages}{2916\bibrangedash 2957}
+      \range{pages}{42}
+    \endentry
     \entry{Fay10}{article}{}
       \name{author}{2}{}{%
         {{hash=45de870ab3d8fc493f80327859d227a3}{%
@@ -6190,6 +6227,43 @@
       \field{year}{2010}
       \field{pages}{956\bibrangedash 969}
       \range{pages}{14}
+    \endentry
+    \entry{Botev2010}{article}{}
+      \true{moreauthor}
+      \true{morelabelname}
+      \name{author}{3}{}{%
+        {{hash=86b065ae3060aa1d512ee5eebc55a5d2}{%
+           family={Botev},
+           family_i={B\bibinitperiod},
+           given={ZI},
+           given_i={Z\bibinitperiod}}}%
+        {{hash=67943b40938c7730db7f877db565e46c}{%
+           family={Grotowski},
+           family_i={G\bibinitperiod},
+           given={JF},
+           given_i={J\bibinitperiod}}}%
+        {{hash=212c549188f5686f08c570e962232d0b}{%
+           family={Kroese},
+           family_i={K\bibinitperiod},
+           given={DP},
+           given_i={D\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Institute of Mathematical Statistics}%
+      }
+      \strng{namehash}{977f56e60ce1de89c9a6c125259a677b}
+      \strng{fullhash}{e61fb40b19f5336e41de2919e85e14ce}
+      \field{sortinit}{B}
+      \field{sortinithash}{4ecbea03efd0532989d3836d1a048c32}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{The Annals of Statistics}
+      \field{number}{5}
+      \field{title}{Kernel density estimation via diffusion}
+      \field{volume}{38}
+      \field{year}{2010}
+      \field{pages}{2916\bibrangedash 2957}
+      \range{pages}{42}
     \endentry
     \entry{Bradley1997}{article}{}
       \name{author}{1}{}{%
@@ -11516,22 +11590,23 @@
       \endverb
     \endentry
   \endsortlist
-  \missing{dougall_systematic_2004}
-  \missing{Shepp82}
   \missing{Kohavi1995a}
-  \missing{Evans1993}
-  \missing{PPMI}
-  \missing{IAIllan2010}
-  \missing{xu2009source}
   \missing{Yen1995}
-  \missing{Vardi1985}
-  \missing{Ram'irez2009}
-  \missing{Botev2010}
-  \missing{Ramirez2009}
+  \missing{jobst_accurate_1998}
+  \missing{dougall_systematic_2004}
+  \missing{Evans1993}
   \missing{Inititative2010}
   \missing{Vapnik1982}
-  \missing{jobst_accurate_1998}
+  \missing{Simonoff2012}
+  \missing{Shepp82}
+  \missing{xu2009source}
+  \missing{Saxena1998}
+  \missing{Markiewicz2009}
+  \missing{Ramirez2009}
   \missing{Alvarez2009}
+  \missing{Vardi1985}
+  \missing{PPMI}
+  \missing{Brown2009}
 \endrefsection
 
 \refsection{1}

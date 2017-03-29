@@ -49,7 +49,7 @@ The \acf{SWPCA} is an algorithm to reduce, in this case, undesired intensity var
 
 \begin{figure}
 \centering
-\includegraphics[width=0.7\linewidth]{Graphics/ch8/FIGURE01}
+\includegraphics[width=0.7\linewidth]{Graphics/ch7/FIGURE01}
 \caption[Summary of the \acs{SWPCA} algorithm, along with its context in the pipeline used in this article.]{Summary of the \ac{SWPCA} algorithm, along with its context in the pipeline used in this article. Circles represent the input data, both images (green shading) and class (group and acquisition site, purple shading). Rectangles represent the different procedures applied, comprising the DARTEL normalization and registration, the different steps contained in \ac{SWPCA}, \ac{ANOVA} and obtaining the weighting function $\Lambda(c)$- and the subsequent analysis.}
 \label{fig:swpcaschema}
 \end{figure}
@@ -89,6 +89,26 @@ where  $\mathbf{A}_C$ is the pseudoinverse of the truncated matrix of
 component loadings  $\mathbf{W}_C$, and  $\hat{\mathbf{X}}$ is the
 reconstructed set of images.
 
+
+Intuitively, PCA defines a new space where the first spatial direction is defined so that it explains the maximum variance in the data. The subsequent directions will try to explain the remaining variance in decreasing order. All these directions, or components, are meant to be uncorrelated. This way, the maximum information about the data is contained in the first components, and the remaining can be considered noise. 
+
+Mathematically \cite{Brown2009}, PCA works as an orthogonal transformation that maps a correlated set of observations $\mathbf{X}$ (in this work, our set of images, of size $K\times N$ containing $K$ images of length $N$) into a set of uncorrelated data $\mathbf{S}$ that contains $K$ vectors in a $M$-dimensional space, defined by $\mathbf{W}$, a vector whose $M$ columns contains the basis of the new space. That way, the mapping is obtained by: 
+\begin{equation}\label{eq:pcabasic}
+\mathbf{S} = \mathbf{X}\mathbf{W}
+\end{equation}
+where the columns of $\mathbf{W}$ contain the eigenvalues of $\mathbf{X}^T\mathbf{X}$, the empirical covariance matrix of $\mathbf{X}$. 
+
+This is done, ideally, by obtaining the eigenvalue decomposition of the empirical covariance matrix of the data. A very extended way of computing $\mathbf{W}$, the matrix of eigenvectors, also known as `eigenbrains' in the neuroscience literature \cite{Illan2011}, is via the Singular Value Decomposition (SVD) of $\mathbf{X}$:
+\begin{equation}
+\mathbf{X} = \mathbf{U} \boldsymbol{\Sigma} \mathbf{V}^* 
+\end{equation}
+where $\mathbf{U}$ is a $K\times K$ orthogonal matrix, $\mathbf{\Sigma}$ is a $K\times M$ non-negative real diagonal matrix, and the $M\times M$ unitary matrix $\mathbf{V}^*$ denotes the conjugate transpose of the $M\times M$ unitary matrix $\mathbf{V}$. Using this decomposition, we can rewrite Eq.~\ref{eq:pcabasic} as: 
+\begin{equation}\label{eq:trunkPCA}
+\mathbf{S} =  \mathbf{X} \mathbf{W} = \mathbf{U}\mathbf{\Sigma} 
+\end{equation}
+Given that the conjugate transpose of a unitary matrix is its inverse, the matrix $\mathbf{W}$ is equivalent to $\mathbf{V}$. There exist very efficient algorithms to compute the SVD. In this work, we will use an implementation that computes only the first $K$ components for efficiency.  
+
+
 \subsection{One-Way Analysis of Variance}
 The estimated PCs effectively model the variability of the image dataset. The next step was to assess each PC as a source of inter-site variance with one-way \acf{ANOVA}. \ac{ANOVA} estimates the $F$-statistic, defined as the ratio between the estimated variance within groups and the variance between groups:
 \begin{equation}
@@ -115,7 +135,7 @@ where  ${p}_{c}$ is the statistical significance of the $c_{th}$ component with 
 
 \begin{figure}
 	\centering
-	\includegraphics[width=0.7\linewidth]{Graphics/ch8/weighting2}
+	\includegraphics[width=0.7\linewidth]{Graphics/ch7/weighting2}
 	\caption[Weighting function $\Lambda_c(p_c,p_{th})$ used in \acs{SWPCA}.]{Weighting function $\Lambda_c(p_c,p_{th})$ used in \ac{SWPCA}.}
 	\label{fig:swpcasweigthing}
 \end{figure}
@@ -124,7 +144,7 @@ This procedure is illustrated in Figure~\ref{fig:swpcaboxplot}, where a boxplot 
 
 \begin{figure}
 	\centering
-	\includegraphics[width=0.7\linewidth]{Graphics/ch8/FIGURE02}
+	\includegraphics[width=0.7\linewidth]{Graphics/ch7/FIGURE02}
 	\caption[Box-plot of the distribution of the component scores at each site of the AIMS-MRI dataset (see Sections~\ref{sec:swpcaAIMSresults} and \ref{sec:aims-mri}) in the four first components.]{Box-plot of the distribution of the component scores at each site of the AIMS-MRI dataset (see Sections~\ref{sec:swpcaAIMSresults} and \ref{sec:aims-mri}) in the four first components. We assume that bigger differences between distributions imply a bigger influence of the acquisition site on the portion of variance modelled by that component and therefore, to parse out those differences, the resulting weight will be smaller.}
 	\label{fig:swpcaboxplot}
 \end{figure}
@@ -174,7 +194,7 @@ Table~\ref{tab:swpcaAqSite}.
 	
 \begin{figure}
 	\centering
-	\includegraphics[width=\linewidth]{Graphics/ch8/FIGURE03}
+	\includegraphics[width=\linewidth]{Graphics/ch7/FIGURE03}
 	\caption[Brain t-map (\acs{VBM}) of significant ($p<0.01$, $|t|>2.57$) \acs{GM} and \acs{WM} between-group differences using \acs{qT1}, \acs{qT2}, \acs{synT1}, \acs{GM} and \acs{WM} modalities after applying \acs{SWPCA} to remove site effects.]{Brain t-map (\ac{VBM}) of significant ($p<0.01$, $|t|>2.57$) \ac{GM} and \ac{WM} between-group differences using \ac{qT1}, \ac{qT2}, \ac{synT1}, \ac{GM} and \ac{WM} modalities after applying \ac{SWPCA} to remove site effects.}
 	\label{fig:swpcaFIGURE03}
 \end{figure}
@@ -290,7 +310,7 @@ cerebellar hemisphere (z=-26).
 
 \begin{figure}
 	\centering
-	\includegraphics[width=\linewidth]{Graphics/ch8/FIGURE04}
+	\includegraphics[width=\linewidth]{Graphics/ch7/FIGURE04}
 	\caption[Brain t-map (\acs{VBM}) of significant ($p<0.01$, $|t|>2.57$) \acs{GM} and \acs{WM} differences in \acs{ASD} using \acs{qT1}, \acs{qT2}, \acs{synT1}, \acs{GM} and \acs{WM} maps before and after applying \acs{SWPCA} to remove site effects.]{Brain t-map (\ac{VBM}) of significant ($p<0.01$, $|t|>2.57$) \ac{GM} and \ac{WM} differences in \ac{ASD} using \ac{qT1}, \ac{qT2}, \ac{synT1}, \ac{GM} and \ac{WM} maps before and after applying \ac{SWPCA} to remove site effects.}
 	\label{fig:swpcaFIGURE04}
 \end{figure}
@@ -312,7 +332,7 @@ three participants, which will be discussed later.
 
 \begin{figure}
 	\centering
-	\includegraphics[width=\linewidth]{Graphics/ch8/FIGURE05}
+	\includegraphics[width=\linewidth]{Graphics/ch7/FIGURE05}
 	\caption[Brain Z-map (\acs{CBM}) of significant ($p<0.01$, $|t|>2.57$) \acs{GM} and \acs{WM} differences using \acs{qT1}, \acs{qT2}, \acs{synT1}, \acs{GM} and \acs{WM} maps before and after applying \acs{SWPCA} to remove site effects.]{Brain Z-map (\ac{CBM}) of significant ($p<0.01$, $|t|>2.57$) \acs{GM} and \acs{WM} differences using \ac{qT1}, \ac{qT2}, \ac{synT1}, \ac{GM} and \ac{WM} maps before and after applying \ac{SWPCA} to remove site effects.}
 	\label{fig:swpcaFIGURE05}
 \end{figure}

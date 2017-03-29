@@ -22,7 +22,7 @@
 \defcounter {refsection}{0}\relax 
 \addvspace {10\p@ }
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {1.1}{\ignorespaces Illustration of one and two-dimensional spaces.}}{4}{figure.caption.20}
+\contentsline {figure}{\numberline {1.1}{\ignorespaces Illustration of one and two-dimensional spaces.}}{4}{figure.caption.21}
 \defcounter {refsection}{0}\relax 
 \contentsline {figure}{\numberline {1.2}{\ignorespaces Structure of the thesis.}}{6}{figure.caption.24}
 \defcounter {refsection}{0}\relax 
@@ -300,21 +300,33 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {figure}{\numberline {7.1}{\ignorespaces Summary of the \acs {SWPCA} algorithm, along with its context in the pipeline used in this article.}}{127}{figure.caption.141}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {7.2}{\ignorespaces Weighting function $\Lambda _c(p_c,p_{th})$ used in \acs {SWPCA}.}}{129}{figure.caption.142}
+\contentsline {figure}{\numberline {7.2}{\ignorespaces Weighting function $\Lambda _c(p_c,p_{th})$ used in \acs {SWPCA}.}}{130}{figure.caption.142}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {7.3}{\ignorespaces Box-plot of the distribution of the component scores at each site of the AIMS-MRI dataset (see Sections~\ref {sec:swpcaAIMSresults} and \ref {sec:aims-mri}) in the four first components.}}{129}{figure.caption.143}
+\contentsline {figure}{\numberline {7.3}{\ignorespaces Box-plot of the distribution of the component scores at each site of the AIMS-MRI dataset (see Sections~\ref {sec:swpcaAIMSresults} and \ref {sec:aims-mri}) in the four first components.}}{130}{figure.caption.143}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {7.4}{\ignorespaces Brain t-map (\acs {VBM}) of significant ($p<0.01$, $|t|>2.57$) \acs {GM} and \acs {WM} between-group differences using \acs {qT1}, \acs {qT2}, \acs {synT1}, \acs {GM} and \acs {WM} modalities after applying \acs {SWPCA} to remove site effects.}}{132}{figure.caption.146}
+\contentsline {figure}{\numberline {7.4}{\ignorespaces Brain t-map (\acs {VBM}) of significant ($p<0.01$, $|t|>2.57$) \acs {GM} and \acs {WM} between-group differences using \acs {qT1}, \acs {qT2}, \acs {synT1}, \acs {GM} and \acs {WM} modalities after applying \acs {SWPCA} to remove site effects.}}{133}{figure.caption.146}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {7.5}{\ignorespaces Brain t-map (\acs {VBM}) of significant ($p<0.01$, $|t|>2.57$) \acs {GM} and \acs {WM} differences in \acs {ASD} using \acs {qT1}, \acs {qT2}, \acs {synT1}, \acs {GM} and \acs {WM} maps before and after applying \acs {SWPCA} to remove site effects.}}{136}{figure.caption.149}
+\contentsline {figure}{\numberline {7.5}{\ignorespaces Brain t-map (\acs {VBM}) of significant ($p<0.01$, $|t|>2.57$) \acs {GM} and \acs {WM} differences in \acs {ASD} using \acs {qT1}, \acs {qT2}, \acs {synT1}, \acs {GM} and \acs {WM} maps before and after applying \acs {SWPCA} to remove site effects.}}{137}{figure.caption.149}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {7.6}{\ignorespaces Brain Z-map (\acs {CBM}) of significant ($p<0.01$, $|t|>2.57$) \acs {GM} and \acs {WM} differences using \acs {qT1}, \acs {qT2}, \acs {synT1}, \acs {GM} and \acs {WM} maps before and after applying \acs {SWPCA} to remove site effects.}}{138}{figure.caption.150}
+\contentsline {figure}{\numberline {7.6}{\ignorespaces Brain Z-map (\acs {CBM}) of significant ($p<0.01$, $|t|>2.57$) \acs {GM} and \acs {WM} differences using \acs {qT1}, \acs {qT2}, \acs {synT1}, \acs {GM} and \acs {WM} maps before and after applying \acs {SWPCA} to remove site effects.}}{139}{figure.caption.150}
 \defcounter {refsection}{0}\relax 
 \addvspace {10\p@ }
 \defcounter {refsection}{0}\relax 
 \contentsline {figure}{\numberline {8.1}{\ignorespaces Schema of the brain image synthesis algorithm.\relax }}{145}{figure.caption.153}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {8.2}{\ignorespaces Comparison between simulated and original images from \acs {AD} and \acs {CTL} classes.}}{146}{figure.caption.154}
+\contentsline {figure}{\numberline {8.2}{\ignorespaces Illustration of the three first eigenbrains in PCA.\relax }}{154}{figure.caption.160}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {8.3}{\ignorespaces Comparison between the \acs {MVN} and \acs {KDE} \acs {PDF} estimation methods for the first component and the three groups, setting the histogram as reference.\relax }}{155}{figure.caption.161}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {8.4}{\ignorespaces Pairplot plotting the coordinates of the subjects in the ADNI-PET database over the four first eigenbrains. In the diagonal, distribution of the classes estimated using \acs {KDE} for each eigenbrain.\relax }}{156}{figure.caption.162}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {8.5}{\ignorespaces Examples of some original and simulated subjects from the ADNI-PET dataset.\relax }}{157}{figure.caption.163}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {8.6}{\ignorespaces Examples of some original and simulated subjects from the PPMI dataset.\relax }}{158}{figure.caption.164}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {8.7}{\ignorespaces \acs {SPM} Analysis of the ADNI dataset.}}{159}{figure.caption.165}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {8.8}{\ignorespaces \acs {SPM} Analysis of the PPMI dataset.}}{160}{figure.caption.166}
 \defcounter {refsection}{0}\relax 
 \addvspace {10\p@ }
 \defcounter {refsection}{0}\relax 

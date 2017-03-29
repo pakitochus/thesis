@@ -1,54 +1,55 @@
 [0] Config.pm:343> INFO - This is Biber 2.5
 [0] Config.pm:346> INFO - Logfile is 'ArsClassica.blg'
-[52] biber:290> INFO - === mié mar 29, 2017, 11:47:33
-[166] Biber.pm:352> INFO - Reading 'ArsClassica.bcf'
-[329] Biber.pm:777> INFO - Found 14 citekeys in bib section 0
-[329] Biber.pm:774> INFO - Using all citekeys in bib section 1
-[333] Biber.pm:777> INFO - Found 119 citekeys in bib section 0
-[359] Biber.pm:3494> INFO - Processing section 0
-[369] Biber.pm:3658> INFO - Looking for bibtex format file 'referencias.bib' for section 0
-[917] bibtex.pm:1176> INFO - Decoding LaTeX character macros into UTF-8
-[1366] bibtex.pm:1037> INFO - Found BibTeX data source 'referencias.bib'
-[1675] Utils.pm:149> WARN - Overwriting field 'year' with year value from field 'date' for entry 'Hastie2009'
-[1679] Utils.pm:149> WARN - Overwriting field 'year' with year value from field 'date' for entry 'DaelemansHosteMeulderEtAl2003'
-[1679] Utils.pm:149> WARN - Overwriting field 'month' with month value from field 'date' for entry 'DaelemansHosteMeulderEtAl2003'
-[1786] Biber.pm:3658> INFO - Looking for bibtex format file 'FJMM_Publications.bib' for section 0
-[1864] bibtex.pm:1176> INFO - Decoding LaTeX character macros into UTF-8
-[1927] bibtex.pm:1037> INFO - Found BibTeX data source 'FJMM_Publications.bib'
-[1968] Utils.pm:149> WARN - I didn't find a database entry for 'xu2009source' (section 0)
-[1968] Utils.pm:149> WARN - I didn't find a database entry for 'Alvarez2009' (section 0)
-[1968] Utils.pm:149> WARN - I didn't find a database entry for 'Evans1993' (section 0)
-[1968] Utils.pm:149> WARN - I didn't find a database entry for 'Yen1995' (section 0)
-[1968] Utils.pm:149> WARN - I didn't find a database entry for 'IAIllan2010' (section 0)
-[1969] Utils.pm:149> WARN - I didn't find a database entry for 'Ram'irez2009' (section 0)
-[1969] Utils.pm:149> WARN - I didn't find a database entry for 'Kohavi1995a' (section 0)
-[1969] Utils.pm:149> WARN - I didn't find a database entry for 'Botev2010' (section 0)
-[1969] Utils.pm:149> WARN - I didn't find a database entry for 'jobst_accurate_1998' (section 0)
-[1969] Utils.pm:149> WARN - I didn't find a database entry for 'dougall_systematic_2004' (section 0)
-[1969] Utils.pm:149> WARN - I didn't find a database entry for 'Shepp82' (section 0)
-[1969] Utils.pm:149> WARN - I didn't find a database entry for 'Vardi1985' (section 0)
-[1969] Utils.pm:149> WARN - I didn't find a database entry for 'Ramirez2009' (section 0)
-[1969] Utils.pm:149> WARN - I didn't find a database entry for 'PPMI' (section 0)
-[1969] Utils.pm:149> WARN - I didn't find a database entry for 'Inititative2010' (section 0)
-[1969] Utils.pm:149> WARN - I didn't find a database entry for 'Vapnik1982' (section 0)
-[2139] UCollate.pm:66> INFO - Overriding locale 'en-US' defaults 'variable = shifted' with 'variable = non-ignorable'
-[2139] UCollate.pm:66> INFO - Overriding locale 'en-US' defaults 'normalization = NFD' with 'normalization = prenormalized'
-[2139] Biber.pm:3307> INFO - Sorting list 'ydnt/global/' of type 'entry' with scheme 'ydnt' and locale 'en-US'
-[2139] Biber.pm:3311> INFO - No sort tailoring available for locale 'en-US'
-[2303] UCollate.pm:66> INFO - Overriding locale 'en-US' defaults 'normalization = NFD' with 'normalization = prenormalized'
-[2303] UCollate.pm:66> INFO - Overriding locale 'en-US' defaults 'variable = shifted' with 'variable = non-ignorable'
-[2303] Biber.pm:3307> INFO - Sorting list 'nyt/global/' of type 'entry' with scheme 'nyt' and locale 'en-US'
-[2303] Biber.pm:3311> INFO - No sort tailoring available for locale 'en-US'
-[2460] Biber.pm:3494> INFO - Processing section 1
-[2460] Biber.pm:3658> INFO - Looking for bibtex format file 'FJMM_Publications.bib' for section 1
-[2562] UCollate.pm:66> INFO - Overriding locale 'en-US' defaults 'normalization = NFD' with 'normalization = prenormalized'
-[2562] UCollate.pm:66> INFO - Overriding locale 'en-US' defaults 'variable = shifted' with 'variable = non-ignorable'
-[2562] Biber.pm:3307> INFO - Sorting list 'ydnt/global/' of type 'entry' with scheme 'ydnt' and locale 'en-US'
-[2562] Biber.pm:3311> INFO - No sort tailoring available for locale 'en-US'
-[2595] UCollate.pm:66> INFO - Overriding locale 'en-US' defaults 'variable = shifted' with 'variable = non-ignorable'
-[2595] UCollate.pm:66> INFO - Overriding locale 'en-US' defaults 'normalization = NFD' with 'normalization = prenormalized'
-[2595] Biber.pm:3307> INFO - Sorting list 'nyt/global/' of type 'entry' with scheme 'nyt' and locale 'en-US'
-[2596] Biber.pm:3311> INFO - No sort tailoring available for locale 'en-US'
-[2622] bbl.pm:526> INFO - Writing 'ArsClassica.bbl' with encoding 'UTF-8'
-[4540] bbl.pm:619> INFO - Output to ArsClassica.bbl
-[4541] Biber.pm:109> INFO - WARNINGS: 19
+[57] biber:290> INFO - === mié mar 29, 2017, 12:24:37
+[177] Biber.pm:352> INFO - Reading 'ArsClassica.bcf'
+[341] Biber.pm:777> INFO - Found 14 citekeys in bib section 0
+[341] Biber.pm:774> INFO - Using all citekeys in bib section 1
+[344] Biber.pm:777> INFO - Found 121 citekeys in bib section 0
+[370] Biber.pm:3494> INFO - Processing section 0
+[381] Biber.pm:3658> INFO - Looking for bibtex format file 'referencias.bib' for section 0
+[947] bibtex.pm:1176> INFO - Decoding LaTeX character macros into UTF-8
+[1399] bibtex.pm:1037> INFO - Found BibTeX data source 'referencias.bib'
+[1720] Utils.pm:149> WARN - Overwriting field 'year' with year value from field 'date' for entry 'Hastie2009'
+[1724] Utils.pm:149> WARN - Overwriting field 'year' with year value from field 'date' for entry 'DaelemansHosteMeulderEtAl2003'
+[1725] Utils.pm:149> WARN - Overwriting field 'month' with month value from field 'date' for entry 'DaelemansHosteMeulderEtAl2003'
+[1832] Biber.pm:3658> INFO - Looking for bibtex format file 'FJMM_Publications.bib' for section 0
+[1941] bibtex.pm:1176> INFO - Decoding LaTeX character macros into UTF-8
+[2004] bibtex.pm:1037> INFO - Found BibTeX data source 'FJMM_Publications.bib'
+[2045] Utils.pm:149> WARN - I didn't find a database entry for 'xu2009source' (section 0)
+[2045] Utils.pm:149> WARN - I didn't find a database entry for 'Alvarez2009' (section 0)
+[2045] Utils.pm:149> WARN - I didn't find a database entry for 'Evans1993' (section 0)
+[2046] Utils.pm:149> WARN - I didn't find a database entry for 'Yen1995' (section 0)
+[2046] Utils.pm:149> WARN - I didn't find a database entry for 'Brown2009' (section 0)
+[2046] Utils.pm:149> WARN - I didn't find a database entry for 'Kohavi1995a' (section 0)
+[2046] Utils.pm:149> WARN - I didn't find a database entry for 'Saxena1998' (section 0)
+[2046] Utils.pm:149> WARN - I didn't find a database entry for 'Markiewicz2009' (section 0)
+[2046] Utils.pm:149> WARN - I didn't find a database entry for 'Simonoff2012' (section 0)
+[2046] Utils.pm:149> WARN - I didn't find a database entry for 'jobst_accurate_1998' (section 0)
+[2046] Utils.pm:149> WARN - I didn't find a database entry for 'dougall_systematic_2004' (section 0)
+[2046] Utils.pm:149> WARN - I didn't find a database entry for 'Shepp82' (section 0)
+[2046] Utils.pm:149> WARN - I didn't find a database entry for 'Vardi1985' (section 0)
+[2046] Utils.pm:149> WARN - I didn't find a database entry for 'Ramirez2009' (section 0)
+[2046] Utils.pm:149> WARN - I didn't find a database entry for 'PPMI' (section 0)
+[2047] Utils.pm:149> WARN - I didn't find a database entry for 'Inititative2010' (section 0)
+[2047] Utils.pm:149> WARN - I didn't find a database entry for 'Vapnik1982' (section 0)
+[2220] UCollate.pm:66> INFO - Overriding locale 'en-US' defaults 'variable = shifted' with 'variable = non-ignorable'
+[2220] UCollate.pm:66> INFO - Overriding locale 'en-US' defaults 'normalization = NFD' with 'normalization = prenormalized'
+[2220] Biber.pm:3307> INFO - Sorting list 'ydnt/global/' of type 'entry' with scheme 'ydnt' and locale 'en-US'
+[2220] Biber.pm:3311> INFO - No sort tailoring available for locale 'en-US'
+[2387] UCollate.pm:66> INFO - Overriding locale 'en-US' defaults 'normalization = NFD' with 'normalization = prenormalized'
+[2387] UCollate.pm:66> INFO - Overriding locale 'en-US' defaults 'variable = shifted' with 'variable = non-ignorable'
+[2387] Biber.pm:3307> INFO - Sorting list 'nyt/global/' of type 'entry' with scheme 'nyt' and locale 'en-US'
+[2387] Biber.pm:3311> INFO - No sort tailoring available for locale 'en-US'
+[2544] Biber.pm:3494> INFO - Processing section 1
+[2544] Biber.pm:3658> INFO - Looking for bibtex format file 'FJMM_Publications.bib' for section 1
+[2646] UCollate.pm:66> INFO - Overriding locale 'en-US' defaults 'normalization = NFD' with 'normalization = prenormalized'
+[2646] UCollate.pm:66> INFO - Overriding locale 'en-US' defaults 'variable = shifted' with 'variable = non-ignorable'
+[2646] Biber.pm:3307> INFO - Sorting list 'ydnt/global/' of type 'entry' with scheme 'ydnt' and locale 'en-US'
+[2646] Biber.pm:3311> INFO - No sort tailoring available for locale 'en-US'
+[2679] UCollate.pm:66> INFO - Overriding locale 'en-US' defaults 'normalization = NFD' with 'normalization = prenormalized'
+[2679] UCollate.pm:66> INFO - Overriding locale 'en-US' defaults 'variable = shifted' with 'variable = non-ignorable'
+[2679] Biber.pm:3307> INFO - Sorting list 'nyt/global/' of type 'entry' with scheme 'nyt' and locale 'en-US'
+[2679] Biber.pm:3311> INFO - No sort tailoring available for locale 'en-US'
+[2706] bbl.pm:526> INFO - Writing 'ArsClassica.bbl' with encoding 'UTF-8'
+[4560] bbl.pm:619> INFO - Output to ArsClassica.bbl
+[4560] Biber.pm:109> INFO - WARNINGS: 20
