@@ -2105,7 +2105,7 @@
     <bcf:citekey order="5">Button2013</bcf:citekey>
     <bcf:citekey order="6">haar2014anatomical</bcf:citekey>
     <bcf:citekey order="7">DeMartino2007</bcf:citekey>
-    <bcf:citekey order="7">xu2009source</bcf:citekey>
+    <bcf:citekey order="7">Xu2009</bcf:citekey>
     <bcf:citekey order="7">Gorriz2010</bcf:citekey>
     <bcf:citekey order="7">Illan2011</bcf:citekey>
     <bcf:citekey order="7">Martinez-Murcia2016</bcf:citekey>
@@ -2166,7 +2166,7 @@
     <bcf:citekey order="41">spm_book</bcf:citekey>
     <bcf:citekey order="42">Ashburner2000</bcf:citekey>
     <bcf:citekey order="43">Martinez-Murcia2016book</bcf:citekey>
-    <bcf:citekey order="44">xu2009source</bcf:citekey>
+    <bcf:citekey order="44">Xu2009</bcf:citekey>
     <bcf:citekey order="45">bossa2010tensor</bcf:citekey>
     <bcf:citekey order="46">Dixon2003</bcf:citekey>
     <bcf:citekey order="47">Shaffer1995</bcf:citekey>
@@ -2448,16 +2448,24 @@
     <bcf:citekey order="248">martinez2014parametrization</bcf:citekey>
     <bcf:citekey order="249">spm_book</bcf:citekey>
     <bcf:citekey order="250">Stoeckel04</bcf:citekey>
-    <bcf:citekey order="251">jobst_accurate_1998</bcf:citekey>
-    <bcf:citekey order="251">dougall_systematic_2004</bcf:citekey>
-    <bcf:citekey order="252">Shepp82</bcf:citekey>
-    <bcf:citekey order="252">Vardi1985</bcf:citekey>
-    <bcf:citekey order="253">Ramirez2009</bcf:citekey>
-    <bcf:citekey order="254">Lozano2007</bcf:citekey>
-    <bcf:citekey order="255">PPMI</bcf:citekey>
-    <bcf:citekey order="255">Inititative2010</bcf:citekey>
-    <bcf:citekey order="256">Inititative2010</bcf:citekey>
-    <bcf:citekey order="257">Vapnik1982</bcf:citekey>
+    <bcf:citekey order="251">Lord1994</bcf:citekey>
+    <bcf:citekey order="252">Lord2000</bcf:citekey>
+    <bcf:citekey order="253">Wechsler1999a</bcf:citekey>
+    <bcf:citekey order="254">deoni2008standardized</bcf:citekey>
+    <bcf:citekey order="255">Ecker2013</bcf:citekey>
+    <bcf:citekey order="255">Ecker2012</bcf:citekey>
+    <bcf:citekey order="255">Lai2012</bcf:citekey>
+    <bcf:citekey order="256">spm_book</bcf:citekey>
+    <bcf:citekey order="257">jobst_accurate_1998</bcf:citekey>
+    <bcf:citekey order="257">dougall_systematic_2004</bcf:citekey>
+    <bcf:citekey order="258">Shepp82</bcf:citekey>
+    <bcf:citekey order="258">Vardi1985</bcf:citekey>
+    <bcf:citekey order="259">Ramirez2009</bcf:citekey>
+    <bcf:citekey order="260">Lozano2007</bcf:citekey>
+    <bcf:citekey order="261">PPMI</bcf:citekey>
+    <bcf:citekey order="261">Inititative2010</bcf:citekey>
+    <bcf:citekey order="262">Inititative2010</bcf:citekey>
+    <bcf:citekey order="263">Vapnik1998</bcf:citekey>
   </bcf:section>
   <bcf:sortlist section="1" name="ydnt/global/" type="entry" sortscheme="ydnt" sortnamekeyscheme="global" labelprefix="">
   <bcf:sorting>
