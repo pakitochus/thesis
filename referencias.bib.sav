@@ -1365,11 +1365,10 @@
 }
 
 @Misc{Haralick1992a,
-  author        = {Haralick, RM and Shapiro, LG},
-  title         = {Robot and Computer Vision (vols. 1 and 2)},
-  year          = {1992},
-  __markedentry = {[pakitochus:]},
-  publisher     = {Addison-Wesley, Reading, MA},
+  author    = {Haralick, RM and Shapiro, LG},
+  title     = {Robot and Computer Vision (vols. 1 and 2)},
+  year      = {1992},
+  publisher = {Addison-Wesley, Reading, MA},
 }
 
 @Article{Segovia2012,
@@ -1413,15 +1412,14 @@
 }
 
 @Article{Shaffer1995,
-  author        = {Shaffer, Juliet Popper},
-  title         = {Multiple hypothesis testing},
-  journal       = {Annual review of psychology},
-  year          = {1995},
-  volume        = {46},
-  number        = {1},
-  pages         = {561--584},
-  __markedentry = {[pakitochus:6]},
-  publisher     = {Annual Reviews 4139 El Camino Way, PO Box 10139, Palo Alto, CA 94303-0139, USA},
+  author    = {Shaffer, Juliet Popper},
+  title     = {Multiple hypothesis testing},
+  journal   = {Annual review of psychology},
+  year      = {1995},
+  volume    = {46},
+  number    = {1},
+  pages     = {561--584},
+  publisher = {Annual Reviews 4139 El Camino Way, PO Box 10139, Palo Alto, CA 94303-0139, USA},
 }
 
 @Article{Zhao2007,
@@ -1654,15 +1652,100 @@
 }
 
 @Article{Ma1993,
-  author        = {Ma, Y and Kamber, M and Evans, AC},
-  title         = {3D simulation of PET brain images using segmented MRI data and positron tomograph characteristics},
-  journal       = {Computerized medical imaging and graphics},
-  year          = {1993},
-  volume        = {17},
-  number        = {4-5},
-  pages         = {365--371},
+  author    = {Ma, Y and Kamber, M and Evans, AC},
+  title     = {3D simulation of PET brain images using segmented MRI data and positron tomograph characteristics},
+  journal   = {Computerized medical imaging and graphics},
+  year      = {1993},
+  volume    = {17},
+  number    = {4-5},
+  pages     = {365--371},
+  publisher = {Elsevier},
+}
+
+@Article{friedman2006report,
+  author    = {Friedman, Lee and Glover, Gary H},
+  title     = {Report on a multicenter fMRI quality assurance protocol},
+  journal   = {Journal of Magnetic Resonance Imaging},
+  year      = {2006},
+  volume    = {23},
+  number    = {6},
+  pages     = {827--839},
+  owner     = {pakitochus},
+  publisher = {Wiley Online Library},
+  timestamp = {2015.07.06},
+}
+
+@Article{Jovicich2006,
+  author    = {Jovicich, Jorge and Czanner, Silvester and Greve, Douglas and Haley, Elizabeth and van der Kouwe, Andre and Gollub, Randy and Kennedy, David and Schmitt, Franz and Brown, Gregory and MacFall, James and others},
+  title     = {Reliability in multi-site structural MRI studies: effects of gradient non-linearity correction on phantom and human data},
+  journal   = {Neuroimage},
+  year      = {2006},
+  volume    = {30},
+  number    = {2},
+  pages     = {436--443},
+  publisher = {Elsevier},
+}
+
+@Article{Stonnington2008,
+  author    = {Stonnington, Cynthia M and Tan, Geoffrey and Kl{\"o}ppel, Stefan and Chu, Carlton and Draganski, Bogdan and Jack, Clifford R and Chen, Kewei and Ashburner, John and Frackowiak, Richard SJ},
+  title     = {Interpreting scan data acquired from multiple scanners: a study with Alzheimer's disease},
+  journal   = {Neuroimage},
+  year      = {2008},
+  volume    = {39},
+  number    = {3},
+  pages     = {1180--1185},
+  publisher = {Elsevier},
+}
+
+@Article{Turner2013,
+  author    = {Turner, Jessica A and Damaraju, Eswar and Van Erp, Theo GM and Mathalon, Daniel H and Ford, Judith M and Voyvodic, James and Mueller, Bryon A and Belger, Aysenil and Bustillo, Juan and McEwen, Sarah Christine and others},
+  title     = {A multi-site resting state fMRI study on the amplitude of low frequency fluctuations in schizophrenia},
+  journal   = {Frontiers in neuroscience},
+  year      = {2013},
+  volume    = {7},
+  pages     = {137},
+  publisher = {Frontiers},
+}
+
+@Article{Clementz2015,
+  author    = {Clementz, Brett A and Sweeney, John A and Hamm, Jordan P and Ivleva, Elena I and Ethridge, Lauren E and Pearlson, Godfrey D and Keshavan, Matcheri S and Tamminga, Carol A},
+  title     = {Identification of distinct psychosis biotypes using brain-based biomarkers},
+  journal   = {American Journal of Psychiatry},
+  year      = {2015},
+  volume    = {173},
+  number    = {4},
+  pages     = {373--384},
+  publisher = {Am Psychiatric Assoc},
+}
+
+@Article{Wang2015,
+  author    = {Wang, Zheng and Meda, Shashwath A and Keshavan, Matcheri S and Tamminga, Carol A and Sweeney, John A and Clementz, Brett A and Schretlen, David J and Calhoun, Vince D and Lui, Su and Pearlson, Godfrey D},
+  title     = {Large-scale fusion of gray matter and resting-state functional MRI reveals common and distinct biological markers across the psychosis spectrum in the B-SNIP cohort},
+  journal   = {Frontiers in psychiatry},
+  year      = {2015},
+  volume    = {6},
+  pages     = {174},
+  publisher = {Frontiers},
+}
+
+@Article{VanHorn2009,
+  author        = {Van Horn, John Darrell and Toga, Arthur W},
+  title         = {Multi-site neuroimaging trials},
+  journal       = {Current opinion in neurology},
+  year          = {2009},
+  volume        = {22},
+  number        = {4},
+  pages         = {370},
+  __markedentry = {[pakitochus:]},
+  publisher     = {NIH Public Access},
+}
+
+@Misc{Pearlson2009,
+  author        = {Pearlson, Godfrey},
+  title         = {Multisite collaborations and large databases in psychiatric neuroimaging: advantages, problems, and challenges},
+  year          = {2009},
   __markedentry = {[pakitochus:6]},
-  publisher     = {Elsevier},
+  publisher     = {MPRC},
 }
 
 @Comment{jabref-meta: databaseType:bibtex;}

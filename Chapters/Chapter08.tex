@@ -1,8 +1,10 @@
 %************************************************
 \chapter{Simulation of Functional Brain Images}\label{ch:simulation}
 %************************************************
-In this chapter, we propose a simulation procedure (see Figure~\ref{fig:simulationSchema}) intended to generate a new set of images that share characteristics with the original one. Our system aims at simulating nuclear imaging techniques such as \ac{PET} or \ac{SPECT}, using \ac{PCA} to project the dataset to the eigenbrain space and a statistical distribution estimator to model the distribution of the brains and classes in this new space. Once the statistical distribution of the classes is known, we can generate new coordinates on the eigenbrain space belonging to the same class, that can be then projected to the brain space.
+In Chapter~\ref{ch:swpca}, we proposed a novel methodology for eliminating inhomogeneities due to acquisition site in multi-centre datasets. This is a good approach for \ac{MRI} images, but still requires a large recruitment procedure and individual analyses and assessments. In this chapter, we propose a simulation procedure (see Figure~\ref{fig:simulationSchema}) intended to synthesize completely new samples of an existing database that share the same properties as the original set of subjects belonging to a certain class.  
 
+Our system is focused on nuclear imaging techniques such as \ac{PET} or \ac{SPECT}, using \ac{PCA} to project the dataset to the eigenbrain space and a statistical distribution estimator to model the distribution of the brains and classes in this new space. Once the statistical distribution of the classes is known, we can generate new coordinates on the eigenbrain space belonging to the same class, that can be then projected to the brain space.
+ 
 \begin{figure}[htp]
 	\centering
 	\includegraphics[width=\textwidth]{Graphics/ch8/SchemaGeneration}
@@ -163,8 +165,6 @@ In the PPMI dataset, the differences are subtle. While the \ac{MVN} estimator ac
 
 
 \subsection{Experiment 2: Independence of the Simulated Images}
-With this experiment, we aim to check whether the simulated images are independent enough from the original set so that a trained classifier can be confound by them. To do so, at each cross-validation iteration, we use the original training set as test set, assuming that it will yield almost perfect performance. Afterwards, to test whether the simulated images are different from these or not, we generate a equivalent number of subjects of both classes, and evaluate how the test performance loss. Results are given in Table~\ref{tab:clas2syn}. 
-
 \begin{bigtable}
 	\begin{tabular}{ccccccc}
 		\toprule
@@ -195,9 +195,11 @@ With this experiment, we aim to check whether the simulated images are independe
 	\label{tab:clas2syn}
 \end{bigtable}
 
+With this experiment, we aim to check whether the simulated images are independent enough from the original set so that a trained classifier can be confound by them. To do so, at each cross-validation iteration, we use the original training set as test set, assuming that it will yield almost perfect performance. Afterwards, to test whether the simulated images are different from these or not, we generate a equivalent number of subjects of both classes, and evaluate how the test performance loss. Results are provided at Table~\ref{tab:clas2syn}. 
+
 With this experiment, we can see that the \ac{MVN} estimator achieves no performance loss, when compared with the original test set. Conversely, with the \ac{KDE} estimator, the differences are far more significant, with a performance loss of more than 0.15 in accuracy in both datasets. That means that the images simulated using a \ac{KDE} estimator are far more independent from the original set than those simulated using the \ac{MVN}. This occurs in both datasets, which gives us an idea of which method generates more independent images. 
 
-\section{Discussion}
+\origsection{Discussion}
 In this chapter we propose an brain image synthesis algorithm that can analyse a dataset, extract its most relevant characteristics and then simulate new images that share the same properties. The algorithm is based upon \ac{PCA}, which defines a new common space for each dataset, in which the individual images are represented as points. Therefore, by analysing the distribution of these points and generate new points belonging to each distribution, we can do the inverse transformation of these points to images. 
 
 % PCA Analysis 
@@ -263,37 +265,63 @@ Here is were we compare the two different estimation methods proposed: a \acf{MV
 A visual analysis of the synthesized images in Figures~\ref{fig:samplesPET} and \ref{fig:samplesDAT} reveals that the new images preserve similar characteristics of the original datasets. For example, it is easy to appreciate differences in glucose metabolism in Figure~\ref{fig:samplesPET} typically associated with \ac{AD}, such as a smaller activity at the temporal lobe or the striatum \cite{Stoeckel04,Illan2011}. In the simulated DaTSCAN images (Fig.~\ref{fig:samplesDAT}) differences in shape and intensity of the striatum, and bilateral differences \cite{Towey2011,Illan2012,martinez2014parametrization} can also be noticed, using both \ac{MVN} and \ac{KDE} modelling.
 
 % Analysis of the SPM analysis 
-To deepen the analysis of the synthesized figures, we will perform a \ac{SPM} analysis \cite{spm_book}, using the SPM12 software. In Figure~\ref{fig:spmAD}, we can look at the differences ($t$-maps, FWE corrected, $p<0.05$) between \ac{AD} and \ac{CTL} images with the original, and two synthesized datasets with 200 samples per class, using either \ac{MVN} or \ac{KDE} modelling. In these maps, the differences are located in similar places in both synthesized databases, that are as well, although less intense, represented in the \ac{SPM} analysis of the original dataset. The aforementioned regions such as the precuneus, angular, mid-temporal lobe, hippocampus, amygdala, among others, are represented in both the original and simulated datasets, with a special mention of the cingulum, which also is the main difference in the \ac{MCI} vs \ac{CTL} scenario (see supplementary material). 
+To deepen the analysis of the synthesized figures, we will perform a \ac{SPM} analysis \cite{spm_book}, using the SPM12 software. In Figure~\ref{fig:spmAD}, we can look at the differences ($t$-maps, FWE corrected, $p<0.05$) between \ac{AD} and \ac{CTL} images with the original, and two synthesized datasets with 200 samples per class, using either \ac{MVN} or \ac{KDE} modelling. In these maps, the differences are located in similar places in both synthesized databases, that are as well, although less intense, represented in the \ac{SPM} analysis of the original dataset. The aforementioned regions such as the precuneus, angular, mid-temporal lobe, hippocampus, amygdala, among others, are represented in both the original and simulated datasets, in both the \ac{CTL} vs \ac{AD} (fig.~\ref{fig:spmAD}) and \ac{MCI} vs \ac{AD} (fig.~\ref{fig:spmMCIvsAD}) scenarios, with a special mention to the cingulum, which also is the main difference in the \ac{MCI} vs \ac{CTL} (fig.~\ref{fig:spmNORvsMCI}). 
 
 \begin{figure}
 	\centering
-	Original ADNI images\\
-	\includegraphics[width=0.8\linewidth]{Graphics/ch8/NORvsAD_Orig_glass}\\
+	Original ADNI-PET images\\
+	\includegraphics[width=\linewidth]{Graphics/ch8/NORvsAD_Orig_glass}\\
 	\ac{MVN} Model\\
-	\includegraphics[width=0.8\linewidth]{Graphics/ch8/NORvsAD_MVN_glass}\\
+	\includegraphics[width=\linewidth]{Graphics/ch8/NORvsAD_MVN_glass}\\
 	\ac{KDE} Model\\
-	\includegraphics[width=0.8\linewidth]{Graphics/ch8/NORvsAD_KDE_glass}
-	\caption[\acs{SPM} Analysis of the ADNI dataset.]{\ac{SPM} Analysis of the ADNI dataset (\ac{AD} vs \ac{CTL}), \ac{FWE} corrected, with $p=0.05$, for the original and the simulated images.}
+	\includegraphics[width=\linewidth]{Graphics/ch8/NORvsAD_KDE_glass}
+	\caption[\acs{SPM} Analysis of the ADNI dataset (\acs{AD} vs \acs{CTL}).]{\ac{SPM} Analysis of the ADNI dataset (\ac{AD} vs \ac{CTL}), \ac{FWE} corrected, with $p=0.05$, for the original and the simulated images.}
 	\label{fig:spmAD}
-\end{figure}chapter
+\end{figure}
+
+
+\begin{figure}
+	\centering
+	Original ADNI-PET images\\
+	\includegraphics[width=\linewidth]{Graphics/ch8/NORvsMCI_Orig_glass}\\
+	\ac{MVN} Model\\
+	\includegraphics[width=\linewidth]{Graphics/ch8/NORvsMCI_MVN_glass}\\
+	\ac{KDE} Model\\
+	\includegraphics[width=\linewidth]{Graphics/ch8/NORvsMCI_KDE_glass}
+	\caption[\acs{SPM} Analysis of the ADNI dataset (\acs{CTL} vs \acs{MCI}).]{\ac{SPM} Analysis of the ADNI dataset (\ac{CTL} vs \ac{MCI}), \ac{FWE} corrected, with $p=0.05$, for the original and the simulated images.}
+	\label{fig:spmNORvsMCI}
+\end{figure}
+
+
+\begin{figure}
+	\centering
+	Original ADNI-PET images\\
+	\includegraphics[width=\linewidth]{Graphics/ch8/MCIvsAD_Orig_glass}\\
+	\ac{MVN} Model\\
+	\includegraphics[width=\linewidth]{Graphics/ch8/MCIvsAD_MVN_glass}\\
+	\ac{KDE} Model\\
+	\includegraphics[width=\linewidth]{Graphics/ch8/MCIvsAD_KDE_glass}
+	\caption[\acs{SPM} Analysis of the ADNI dataset (\acs{MCI} vs \acs{AD}).]{\ac{SPM} Analysis of the ADNI dataset (\ac{MCI} vs \ac{AD}), \ac{FWE} corrected, with $p=0.05$, for the original and the simulated images.}
+	\label{fig:spmMCIvsAD}
+\end{figure}
 
 In the PPMI dataset, the \ac{SPM} analysis revealed (Figure~\ref{fig:spmPKS}) that the main differences are located in the posterior part of the striatum, specifically at the posterior part of the putamen and globus pallidus. This behaviour is consistent in both original and synthesized images, although with more statistical significance in the case of the \ac{MVN} model, and a more homogeneous distribution of the negative differences under the \ac{KDE} model. 
 
 
 \begin{figure}
 	\centering
-	Original PPMI images\\
-	\includegraphics[width=0.8\linewidth]{Graphics/ch8/NORvsPD_Orig_glass}\\
+	Original PPMI-DAT images\\
+	\includegraphics[width=\linewidth]{Graphics/ch8/NORvsPD_Orig_glass}\\
 	\ac{MVN} Model\\
-	\includegraphics[width=0.8\linewidth]{Graphics/ch8/NORvsPD_MVN_glass}\\
+	\includegraphics[width=\linewidth]{Graphics/ch8/NORvsPD_MVN_glass}\\
 	\ac{KDE} Model\\
-	\includegraphics[width=0.8\linewidth]{Graphics/ch8/NORvsPD_KDE_glass}
+	\includegraphics[width=\linewidth]{Graphics/ch8/NORvsPD_KDE_glass}
 	\caption[\acs{SPM} Analysis of the PPMI dataset.]{\ac{SPM} Analysis of the PPMI dataset (\ac{PD} vs \ac{CTL}), \ac{FWE} corrected, with $p=0.05$, for the original and the simulated images.}
 	\label{fig:spmPKS}
 \end{figure}
 
 % Analysis of the three experiments
-As for the classification analysis, first we will compare the baseline performance of the simulated dataset with the original. From Table~\ref{baselineSyn}, we can infer that \ac{MVN} produces minimally overlapping classes, whereas \ac{KDE} yields more similar images. This might be an indication of the more realistic distribution of classes when using \ac{KDE} modeling. Experiments 1 and 2 will give us more information on this.
+As for the classification analysis, first we will compare the baseline performance of the simulated dataset with the original. From Table~\ref{tab:baselineSyn}, we can infer that \ac{MVN} produces minimally overlapping classes, whereas \ac{KDE} yields more similar images. This might be an indication of the more realistic distribution of classes when using \ac{KDE} modeling. Experiments 1 and 2 will give us more information on this.
 
 First, in Experiment 1, we tested the predictive power of the simulated images. In this case, the SVC is trained with a set of simulated images, and then real images from the original dataset are predicted. In this case, we obtain higher accuracy when using \ac{MVN} modelling. This could point to either a more similar distribution of the synthesized images on the eigenbrain space, or a better definition of the support vectors of the decision plane of the classifier. In the first case, that would mean that the images synthesized using \ac{MVN} would be more similar to the original dataset. On the other hand, the decision plane could be better defined due to more concentrated classes, as hinted in the baseline experiment. For its part, the \ac{KDE} synthesis produces more disperse classes, which encompass the original dataset, degrading its performance in predicting the original dataset. 
 

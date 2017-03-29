@@ -69,12 +69,12 @@
 %-------------------------------------------------------------
 \newcommand{\myfloatalign}{\centering} % to be used with each float for alignment
 
-\newenvironment{bigtable}[1][\unskip]{%
-	\begin{sidewaystable}\myfloatalign}
+\newenvironment{bigtable}[1][]{%
+	\begin{sidewaystable}[htbp]\myfloatalign}
 		{\end{sidewaystable}}
 
-\newenvironment{bigfigure}[1][\unskip]{%
-	\begin{sidewaysfigure}\myfloatalign}
+\newenvironment{bigfigure}[1][]{%
+	\begin{sidewaysfigure}[htbp]\myfloatalign}
 		{\end{sidewaysfigure}}
 
 
