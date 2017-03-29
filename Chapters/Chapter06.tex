@@ -164,7 +164,7 @@ The resulting texture maps for \ac{GM} and \ac{WM} tissues can be found at Figur
 %\end{lstlisting}
 
 \subsection{Anatomical Reference}\label{sec:anatomical}
-To better understand the \ac{SBM} maps, and the location of different features, we have projected the widely known \cite{AAL} atlas \cite{Tzourio-Mazoyer2002} using \ac{SBM}. That way, we have an anatomical reference of the different structures and their position in the different coordinate pairs $(\theta,\varphi)$. The regions are displayed in  Figures~\ref{fig:regionsCort} and \ref{fig:regionsSub}. 
+To better understand the \ac{SBM} maps, and the location of different features, we have projected the widely known \ac{AAL} atlas \cite{Tzourio-Mazoyer2002} using \ac{SBM}. That way, we have an anatomical reference of the different structures and their position in the different coordinate pairs $(\theta,\varphi)$. The regions are displayed in  Figures~\ref{fig:regionsCort} and \ref{fig:regionsSub}. 
 
 \begin{figure*}[htp]
 	\centering
@@ -620,62 +620,57 @@ Our paths demonstrated in Experiment 3 that they can adapt easily to two and thr
 
 \begin{figure}
 	\begin{center}
-		\includegraphics[width=0.5\textwidth]{Graphics/ch6/radia&structures}
+		\includegraphics[width=0.9\textwidth]{Graphics/ch6/radia&structures}
 		\caption{Paths that obtain more than 75\% accuracy, and a three-dimensional representation of the structures crossed by them.}
 		\label{fig:bestPaths}
 	\end{center}
 \end{figure}
 
-Later, in Experiment 4, we used the \ac{HMM} paths as a feature selection tool to construct the set of selected intensities $V_{\theta,\varphi}$, as in the original \ac{SBM}. Individual paths as well as a the pooled intensities of all paths in a hemisphere were tested using a \ac{SVC}. The differences between intensity sets in \ac{AD} and \ac{CTL} were significant enough to achieve accuracies over 80\% in some paths. The paths that 
+Later, in Experiment 4, we used the \ac{HMM} paths as a feature selection tool to construct the set of selected intensities $V_{\theta,\varphi}$, as in the original \ac{SBM}. Individual paths as well as a the pooled intensities of all paths in a hemisphere were tested using a \ac{SVC}. The differences between intensity sets in \ac{AD} and \ac{CTL} were significant enough to achieve accuracies over 80\% in some paths. The paths that achieved more than 75\% accuracy are shown in Figure~\ref{fig:bestPaths}, along with the rendered structures crossed by them, according to the \ac{AAL} brain atlas \cite{Tzourio-Mazoyer2002}. 
 
-% DONE
+The structures that are crossed by the best-performing paths are the Hippocampus, Amygdala, Thalamus, Fusiform and Inferior Temporal Gyrus. \ac{GM} loss in the hippocampus has been extensively reported in the literature \cite{Dubois2007,Baron2001,Jong2008}, as well as its surrounding structures (Amygdala, Parahippocampal lobe and Fusiform) \cite{Baron2001}. Some studies have also reported neurodegeneration at the Thalamus and Putamen, also related to early \ac{AD} \cite{Jong2008}, and in advanced \ac{AD}, atrophy in most of the neocortex \cite{Dubois2007,Baron2001,Jong2008}. However, pooling all the intensities selected by these paths together did not increase the performance achieved by the best performing paths. 
 
+The last test of Experiment 4 was the hybrid \ac{SBM}-\ac{HMM} maps. Average, entropy, kurtosis and variance maps were tested, and we found that they were discriminant (accuracy above 70\% in most cases), yet not very powerful. This is however coherent with the definition of the paths, where the intensity changes are small and progressive, and therefore, higher order statistics that focus on this (such as variance or kurtosis) are more representative of this behaviour. 
 
-Our first experiment uses \ac{HMM} paths computed on the DARTEL template to describe how the intensity of the set of voxels corresponding to a certain path can be used as discriminant features in a SVM classifier. The differences in the distribution of intensities between controls and AD affected subjects are used to identify structural changes in AD. Fig.~\ref{fig:bestPaths} depicts the paths that achieved best performance (accuracy higher than $0.75$) in this differential diagnosis, superimposed to some structures rendered from the Automated Anatomical Labeling (AAL) brain atlas\cite{Tzourio-Mazoyer2002}.
+Finally, we tested the \ac{HMM} paths' application to compute radial \ac{GLCM} and texture features at Experiment 5. Here we saw that the performance achieved with any of the texture feature maps was smaller than using the best paths themselves, or even the most significant paths. However, the real utility of the texture \ac{HMM} maps could reside in its application to longitudinal studies. Texture has been already related to the evolution of \ac{AD} \cite{sikio2015mr}, and so, the evolution of the generated texture maps over the canonical paths throughout time could be a good indicator of the progression of \ac{AD}. 
 
-The paths that obtained higher accuracy are those that cross structures such as the Hippocampus, Amygdala, Thalamus, Fusiform and Inferior Temporal Gyrus. Particularly, grey matter loss in the Hippocampus has been described in the NINCDS-ADRDA criteria for AD diagnosis\cite{Dubois2007} and is widely accepted\cite{chan2001patterns,Baron2001,Jong2008}. Furthermore, the evidence suggest that atrophy affects the surrounding structures (Amygdala, Parahippocampal and Fusiform Gyrus) as well\cite{chan2001patterns,Baron2001}. Some studies have found significant atrophy in the Thalamus and Putamen in early AD\cite{Jong2008} as well. Generally, in advanced AD, most of the neocortex and grey matter suffer from atrophy\cite{chan2001patterns,Baron2001,Jong2008}, which explains why most of the paths that involve the neocortex in Fig.~\ref{fig:accuracyMap} obtain accuracy rates around $0.7$. 
+Further improvements could be made by computing an independent set of paths per subject, and then extract morphological measures such as curvature or torsion, or extend the computation of textural features to longitudinal studies, as we mentioned previously. This seem a very promising approach that will be tested in future works. 
 
-A number of feature maps have been computed as well. These are the result of applying some of the \ac{SBM} measures to the voxels selected by the \ac{HMM} paths. Variance and kurtosis have been proved as the most discriminative maps (with accuracy higher than $0.7$). This is coherent with the definition of the paths, where the intensity transitions are minimal. Therefore, average would be the less discriminative in this case, being higher order statistics such as variance or more representative of the tissue density distribution of each class. 
+\subsection{General Discussion of \acs{SBM}}
+To obtain a general view of the \ac{SBM} and its extension within the state of the art, in Table~\ref{tab:comparison2} we present some of the best results that have been already commented. We first present the values for the \ac{VAF} approach \cite{Stoeckel04} in T1, \ac{GM} and \ac{WM} images. Then, we present the performance of the average and \ac{VRLBP} maps of our \ac{SBM}, and the \ac{HMM} paths, both as feature selection tool (individual paths and selected features from the paths), the hybrid \ac{HMM}-\ac{SBM} tool (variance and kurtosis) and the best scoring texture feature (difference variance). 
 
-Regarding texture analysis, we have again discriminative features (with accuracy that surpass the 70\%) yet not very powerful. This situation might be due to the definition of the paths as minimum intensity variation paths, being the textural changes along the path minimal.  
+Then, we provide reference values of some state of the art methodology that has been tested against the ADNI-MRI database. These are: LVQ) a Learning Vector Quantization (LVQ) \cite{Ortiz2013} used to model the tissue distribution of \ac{CTL} and \ac{AD} images and project the images to a new space, just to use the projections in a \ac{SVC}; and SCA) the Spatial Component Analysis proposed in \cite{Illan2014}, a bayesian network modelling of the dependencies between affected regions (or spatial components) in \ac{AD}. 
 
-However the real utility of these texture features could be in its application to longitudinal studies, since textsure can be related to evolution of the disease\cite{sikio2015mr}. It is very convenient to use a scalar to characterize a measure (in our case, texture features) in each direction. The texture obtained in each session can be used to construct a function of neurodegeneration that allows the exploration of the different stages of the disease as the changes in the brain texture along the time within a single patient. 
-
-Table \ref{tab:comparison2} presents some of the best results of our methodology involving \ac{HMM} paths in this order: the performance of a single path and using the selected paths as features (Section~\ref{sec:intensity}), the performance of using projected maps (in this case, variance and kurtosis) like in the \ac{SBM} paper (Section~\ref{sec:intensity}) and the results of computing texture maps using radial GLCM and Haralick Texture Features (Section~\ref{sec:texture}). It is compared with the methods using in the \ac{SBM} paper\cite{Martinez-Murcia2015}, the \ac{SBM}-VRLBP\cite{Martinez-MurciaVRLBP}, the \acf{VAF}\cite{Stoeckel04} algorithm and different approaches used in the ADNI database and involving SVM classifiers such as the LVQ-SVM\cite{Ortiz2013} or Spatial Component Analysis (SCA)\cite{Illan2014}. 
-
-\begin{table*}
+\begin{table}
 	\myfloatalign
-	\begin{tabularx}{\textwidth}{Xccc}
-			\tableheadline{Feature} & \tableheadline{Accuracy} & \tableheadline{Sensitivity} & \tableheadline{Specificity} \\ \midrule
-			Paths & $0.806 \pm 0.069 $ & $0.733 \pm 0.073$ & $0.878 \pm 0.097$\\
-			Selected Paths & $0.828 \pm 0.054 $ & $0.794 \pm 0.095$ & $0.861 \pm 0.039$\\
-			Variance & $0.750 \pm 0.064 $ & $0.633 \pm 0.131$ & $0.867 \pm 0.102$\\
-			Kurtosis & $0.756 \pm 0.105 $ & $0.733 \pm 0.165$ & $0.778 \pm 0.150$\\
-			Texture (Difference Variance) & $0.736 \pm 0.070 $ & $0.683 \pm 0.098$ & $0.789 \pm 0.090$\\
+	\begin{tabular}{lllccc}
+			\tableheadline{App.} & \tableheadline{Feature} & \tableheadline{Tis.} & \tableheadline{Accuracy} & \tableheadline{Sensitivity} & \tableheadline{Specificity} \\ \midrule
+			\multirow{3}{*}{\ac{VAF}}  & Intensity & T1 &  $0.768 \pm 0.011$ & $0.752 \pm 0.016$ & $0.785 \pm 0.016$ \\
+			 & Intensity& \ac{GM} &  $0.768 \pm 0.011$ & $0.752 \pm 0.016$ & $0.785 \pm 0.016$ \\
+			 & Intensity& \ac{WM} & $0.642 \pm 0.009$ & $0.668 \pm 0.012$ & $0.617 \pm 0.013$ \\
+			\midrule
+			\multirow{4}{*}{\ac{SBM}} & average & \ac{GM}  & $0.879 \pm 0.005$ & $0.897 \pm 0.006$ & $0.861 \pm 0.006$ \\
+			& average &\ac{WM}  & $0.800 \pm 0.011$ & $0.802 \pm 0.013$ & $0.798 \pm 0.009$ \\ 
+			& \ac{VRLBP}&\ac{GM}  & $0.903 \pm 0.010$ & $0.890 \pm 0.012$ & $0.916 \pm 0.018$ \\
+			& \ac{VRLBP} &\ac{WM} & $0.909 \pm 0.014$ & $0.899 \pm 0.028$ & $0.919 \pm 0.018$ \\ \midrule
+			\multirow{5}{*}{\ac{HMM}} & Ind. Paths & T1 & $0.806 \pm 0.069 $ & $0.733 \pm 0.073$ & $0.878 \pm 0.097$\\
+			& Sel. Paths & T1 & $0.828 \pm 0.054 $ & $0.794 \pm 0.095$ & $0.861 \pm 0.039$\\
+			& Variance & T1 & $0.750 \pm 0.064 $ & $0.633 \pm 0.131$ & $0.867 \pm 0.102$\\
+			& Kurtosis & T1 & $0.756 \pm 0.105 $ & $0.733 \pm 0.165$ & $0.778 \pm 0.150$\\
+			& D. Variance & T1 & $0.736 \pm 0.070 $ & $0.683 \pm 0.098$ & $0.789 \pm 0.090$\\
 			\midrule 
-			\ac{VAF}  & $0.768 \pm 0.011$ & $0.752 \pm 0.016$ & $0.785 \pm 0.016$ \\
-			\ac{SBM}-average (\ac{GM})  & $0.879 \pm 0.005$ & $0.897 \pm 0.006$ & $0.861 \pm 0.006$ \\
-			\ac{SBM}-average (\ac{WM})  & $0.800 \pm 0.011$ & $0.802 \pm 0.013$ & $0.798 \pm 0.009$ \\ 
-			\ac{SBM}-VRLBP (\ac{GM})  & $0.903 \pm 0.010$ & $0.890 \pm 0.012$ & $0.916 \pm 0.018$ \\
-			\ac{SBM}-VRLBP (\ac{WM}) & $0.909 \pm 0.014$ & $0.899 \pm 0.028$ & $0.919 \pm 0.018$ \\
-			LVQ-SVM (\ac{GM}) & $0.869 \pm 0.101$ & $0.822\pm0.120$ & $0.890\pm0.102$ \\ 	
-			SCA (\ac{GM}) & $0.880 \pm0.0^* $ & $0.926\pm0.0^* $ & $0.845\pm0.0^*$ \\ 
-			SCA (\ac{WM}) & $0.808 \pm 0.0^*$ & $0.817\pm0.0^*$ & $0.800\pm0.0^*$ \\ 	
+			LVQ & - & \ac{GM} & $0.869 \pm 0.101$ & $0.822\pm0.120$ & $0.890\pm0.102$ \\ 	
+			SCA &- & \ac{GM} & $0.880 \pm0.0^* $ & $0.926\pm0.0^* $ & $0.845\pm0.0^*$ \\ 
+			SCA &- & \ac{WM} &$0.808 \pm 0.0^*$ & $0.817\pm0.0^*$ & $0.800\pm0.0^*$ \\ 	
 			\bottomrule
-			\multicolumn{4}{l}{$^*$ SCA used leave-one-out cross-validation. SD is 0.}
-		\end{tabularx}
-		
+		\end{tabular}
+	\\
+	{\small $^*$ SCA used leave-one-out cross-validation. SD is 0.}
 		\caption{Comparison between our algorithm performance values (best values for selected voxels in all paths and texture features) ($\pm$SD) and other methods in the bibliography} \label{tab:comparison2}
-	\end{table*}
-	
-	
-	\ac{VAF} is often used as a baseline when comparing different methodology, as it has been described as a good estimator of the accuracy obtained by means of visual analysis \cite{Stoeckel04}. As we commented before, the raw voxel intensities selected by our canonical paths achieve higher accuracy than statistical or texture features, and it is the only strategy that outperforms \ac{VAF}. Texture and statistical features obtain poorer, although still good, performance (around 75\% accuracy). When compared to other methods, the difference is greater, although inside the range of 1 SD. Most of the \ac{SBM} features proposed in \cite{Martinez-Murcia2015} perform better than our canonical paths, and the case of \cite{Martinez-MurciaVRLBP} even surpass the barrier of 90\% accuracy. However, there is a significant difference with these approaches, and it is that these measures used segmented \ac{GM} and \ac{WM} images, instead of using the whole MRI. Segmentation, thus, enhances the detection and extraction of features from the images, whereas the tracing of paths over the whole images is a more complex operation. When compared to LVQ-SVM or SCA, the difference in performance is even smaller and still inside the range of 1 SD, which gives us an idea of the ability of our methodology to detect patterns with a significant feature reduction.
-	
-	Finally, one might argue if a different approach to the path tracing, such as tracing the set of paths in each subject individually might be of use. This strategy would still characterize the individual brain structure; however the way this structure is defined would be different: the spatial location of the nodes and topology of the paths instead of the intensity distribution. Given the time our algorithm takes to model one single MRI (around 2 hours) it can be extraordinarily computationally expensive, although faster than other methodology like DTI fiber tracing or Freesurfer surface extraction. Consequently, it would be an interesting option to explore in future works. 
-	
-	
+	\end{table}
 
-To end with, we want to remark that the \ac{SBM} defines a whole framework that can easily be extended with different strategies. We already proposed the layered extension or the neighbourhood helical sampling that we tested with the \ac{VRLBP}, but many others can be made. Higher order statistics on the set of intensities $V_{\varphi,\theta}$, or the computation of \acp{GLCM} around the mapping vector can focus on different properties of the structure of the image. They could also be applied to other imaging modalities such as \ac{PET} or \ac{SPECT}, where the structural information is not always present
+The original \ac{SBM} achieve generally better results than its counterpart using \ac{HMM} paths. That gives us an idea that the utility of these paths is not to generate the \ac{SBM} maps, but to characterize the structure itself of the brain, which could have applications when applying a morphological characterization of the individual set of paths computed over each subject, or even in segmentation of the images. The seven \ac{SBM} measures proposed here have been of great utility, clearly outperforming the \ac{VAF} approach, and achieving results similar to state-of-the-art methodology in the field, while providing a useful two-dimensional representation of the brain. This is especially the case of the \ac{VRLBP}, which according to the statistical significance analysis, was able to locate major differences in very small regions of the brain. 
 
-
-Additionally, our mapping method is potentially applicable to other imaging modalities, such as PET and SPECT, where the structural information is sometimes lost \cite{IAIllan2010,Ram'irez2009}. Our technique does not need the use of complex co-registering of MRI and functional imaging to locate cerebral structures, as it rely only in their angle and depth. Moreover, in the case of Diffusion Tensor Imaging (DTI), which has proven itself as a good tool for the diagnosis of Alzheimer's Disease \cite{Grana2011,Medina2008}, \ac{SBM} could be modified to replace $\mathbf{v}_{\theta,\varphi}$ with each tract, and subsequently project a given feature, resulting in a summary of the tract's behaviour in a single two-dimensional image. 
+To end with, we want to remark that the \ac{SBM} defines a whole framework that can easily be extended with different strategies. We already proposed the layered extension or the neighbourhood helical sampling that we tested with the \ac{VRLBP}, but many others can be made. Higher order statistics on the set of intensities $V_{\varphi,\theta}$, or the computation of \acp{GLCM} around the mapping vector can focus on different properties of the structure of the image. We could even, instead of using the \ac{HMM} paths, use the fibre tracts defined in \ac{DTI} modalities to compute features that are related to brain connectivity, and could be potential indicators of neurodegeneration, or even apply \ac{SBM} to other imaging modalities such as \ac{PET} or \ac{SPECT}, where the structural information is not always present.
+% DONE
+	

@@ -905,6 +905,52 @@
       \verb 10.1093/cercor/bhu242
       \endverb
     \endentry
+    \entry{Illan2014}{article}{}
+      \name{author}{4}{}{%
+        {{hash=bf4ba9bcae72e93b405f919e1ed15776}{%
+           family={Illán},
+           family_i={I\bibinitperiod},
+           given={Ignacio\bibnamedelima A.},
+           given_i={I\bibinitperiod\bibinitdelim A\bibinitperiod}}}%
+        {{hash=ac116f321c15bd7945e4777fa0aca447}{%
+           family={Górriz},
+           family_i={G\bibinitperiod},
+           given={Juan\bibnamedelima M.},
+           given_i={J\bibinitperiod\bibinitdelim M\bibinitperiod}}}%
+        {{hash=6450d056a7ef88a8321faa1c9474f31c}{%
+           family={Ramírez},
+           family_i={R\bibinitperiod},
+           given={Javier},
+           given_i={J\bibinitperiod}}}%
+        {{hash=871563e8ea0337aac923dd6077c6a826}{%
+           family={Meyer-Base},
+           family_i={M\bibinithyphendelim B\bibinitperiod},
+           given={Anke},
+           given_i={A\bibinitperiod}}}%
+      }
+      \list{institution}{1}{%
+        {Department of Scientific Computing, Florida State University Tallahassee, FL, USA.}%
+      }
+      \list{language}{1}{%
+        {eng}%
+      }
+      \strng{namehash}{aad209b035194bbebbafe09ed53bca1c}
+      \strng{fullhash}{7bb348c69b51a2952d1c505e2b3786d2}
+      \field{sortinit}{2}
+      \field{sortinithash}{8343b463aacf48517c044b4d2c9c45ed}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{This work presents a spatial-component (SC) based approach to aid the diagnosis of Alzheimer's disease (AD) using magnetic resonance images. In this approach, the whole brain image is subdivided in regions or spatial components, and a Bayesian network is used to model the dependencies between affected regions of AD. The structure of relations between affected regions allows to detect neurodegeneration with an estimated performance of 88\% on more than 400 subjects and predict neurodegeneration with 80\% accuracy, supporting the conclusion that modeling the dependencies between components increases the recognition of different patterns of brain degeneration in AD.}
+      \field{journaltitle}{Frontiers in Computational Neuroscience}
+      \field{title}{Spatial component analysis of {MRI} data for Alzheimer's disease diagnosis: a {Bayesian} network approach.}
+      \field{volume}{8}
+      \field{year}{2014}
+      \field{pages}{156}
+      \range{pages}{1}
+      \verb{doi}
+      \verb 10.3389/fncom.2014.00156
+      \endverb
+    \endentry
     \entry{Martinez-Murcia2014225}{inproceedings}{}
       \name{author}{6}{}{%
         {{hash=44d5da22feb443de558b01188109bfb7}{%
@@ -1360,6 +1406,51 @@
       \verb 10.1016/j.cmpb.2013.03.015
       \endverb
       \keyw{ica,decomposition,feature,spect,pet,adni,ad,alzheimer,own}
+    \endentry
+    \entry{Ortiz2013}{article}{}
+      \name{author}{4}{}{%
+        {{hash=86a202e90c876869a1743e263611ef08}{%
+           family={Ortiz},
+           family_i={O\bibinitperiod},
+           given={Andrés},
+           given_i={A\bibinitperiod}}}%
+        {{hash=f4228f125c42361b9f47bb676e4c04bb}{%
+           family={Górriz},
+           family_i={G\bibinitperiod},
+           given={Juan\bibnamedelima M},
+           given_i={J\bibinitperiod\bibinitdelim M\bibinitperiod}}}%
+        {{hash=6450d056a7ef88a8321faa1c9474f31c}{%
+           family={Ramírez},
+           family_i={R\bibinitperiod},
+           given={Javier},
+           given_i={J\bibinitperiod}}}%
+        {{hash=7df619f6d9b97a86939be426ac15de53}{%
+           family={Martínez-Murcia},
+           family_i={M\bibinithyphendelim M\bibinitperiod},
+           given={Francisco\bibnamedelima Jesús},
+           given_i={F\bibinitperiod\bibinitdelim J\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {North-Holland}%
+      }
+      \strng{namehash}{092da2a3dbe67a661c0a51aa570ecd59}
+      \strng{fullhash}{5bade4651669b7b7229093725db3ba89}
+      \field{sortinit}{2}
+      \field{sortinithash}{8343b463aacf48517c044b4d2c9c45ed}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issn}{0167-8655}
+      \field{journaltitle}{Pattern Recognition Letters}
+      \field{month}{10}
+      \field{number}{14}
+      \field{title}{LVQ-{SVM} Based {CAD} tool applied to structural {MRI} for the diagnosis of the Alzheimer's disease}
+      \field{volume}{34}
+      \field{year}{2013}
+      \field{pages}{1725\bibrangedash 1733}
+      \range{pages}{9}
+      \verb{doi}
+      \verb 10.1016/j.patrec.2013.04.014
+      \endverb
     \endentry
     \entry{Pievani2013}{article}{}
       \name{author}{7}{}{%
@@ -2848,6 +2939,99 @@
       \verb 10.1093/brain/awn016
       \endverb
       \keyw{Alzheimer Disease,diagnostic imaging,pathology; Amyloid beta-Peptides,analysis,metabolism; Aniline Compounds,metabolism; Autopsy; Brain,diagnostic imaging,pathology; Carbon Radioisotopes,metabolism; Enzyme-Linked Immunosorbent Assay,methods; Female; Humans; Image Interpretation,Computer-Assisted; Immunohistochemistry; Magnetic Resonance Imaging; Middle Aged; Neurofibrillary Tangles,diagnostic imaging,pathology; Plaque,Amyloid,diagnostic imaging,pathology; Positron-Emission Tomography,methods; Reproducibility of Results; Thiazoles,metabolism; tau Proteins,analysis,metabolism}
+    \endentry
+    \entry{Jong2008}{article}{}
+      \name{author}{10}{}{%
+        {{hash=5cd555d14cb3d3b5164eecc3fa054740}{%
+           prefix={de},
+           prefix_i={d\bibinitperiod},
+           family={Jong},
+           family_i={J\bibinitperiod},
+           given={L.\bibnamedelimi W.},
+           given_i={L\bibinitperiod\bibinitdelim W\bibinitperiod}}}%
+        {{hash=ad85b5e56c36d82731ae79987a2bc638}{%
+           prefix={van\bibnamedelima der},
+           prefix_i={v\bibinitperiod\bibinitdelim d\bibinitperiod},
+           family={Hiele},
+           family_i={H\bibinitperiod},
+           given={K.},
+           given_i={K\bibinitperiod}}}%
+        {{hash=b5fb781abaadd21c12050d9cb06e88a9}{%
+           family={Veer},
+           family_i={V\bibinitperiod},
+           given={I.\bibnamedelimi M.},
+           given_i={I\bibinitperiod\bibinitdelim M\bibinitperiod}}}%
+        {{hash=5e3b0df3c32fe67b79eeb31bdc566012}{%
+           family={Houwing},
+           family_i={H\bibinitperiod},
+           given={J.\bibnamedelimi J.},
+           given_i={J\bibinitperiod\bibinitdelim J\bibinitperiod}}}%
+        {{hash=401b042aa22e440d22f39b76b7874699}{%
+           family={Westendorp},
+           family_i={W\bibinitperiod},
+           given={R.\bibnamedelimi G.\bibnamedelimi J.},
+           given_i={R\bibinitperiod\bibinitdelim G\bibinitperiod\bibinitdelim J\bibinitperiod}}}%
+        {{hash=ae082cef06b939ce9b7fcd34690b6cfb}{%
+           family={Bollen},
+           family_i={B\bibinitperiod},
+           given={E.\bibnamedelimi L.\bibnamedelimi E.\bibnamedelimi M.},
+           given_i={E\bibinitperiod\bibinitdelim L\bibinitperiod\bibinitdelim E\bibinitperiod\bibinitdelim M\bibinitperiod}}}%
+        {{hash=0e22bf87b65df8fe8d4c08d9d36e0358}{%
+           prefix={de},
+           prefix_i={d\bibinitperiod},
+           family={Bruin},
+           family_i={B\bibinitperiod},
+           given={P.\bibnamedelimi W.},
+           given_i={P\bibinitperiod\bibinitdelim W\bibinitperiod}}}%
+        {{hash=d5cbcad81e0e50a23acc7efa3aa27400}{%
+           family={Middelkoop},
+           family_i={M\bibinitperiod},
+           given={H.\bibnamedelimi A.\bibnamedelimi M.},
+           given_i={H\bibinitperiod\bibinitdelim A\bibinitperiod\bibinitdelim M\bibinitperiod}}}%
+        {{hash=ba6b42cedca152311cd6821d221a9a2f}{%
+           prefix={van},
+           prefix_i={v\bibinitperiod},
+           family={Buchem},
+           family_i={B\bibinitperiod},
+           given={M.\bibnamedelimi A.},
+           given_i={M\bibinitperiod\bibinitdelim A\bibinitperiod}}}%
+        {{hash=36498ffa7f91c3487a2fc84595962953}{%
+           prefix={van\bibnamedelima der},
+           prefix_i={v\bibinitperiod\bibinitdelim d\bibinitperiod},
+           family={Grond},
+           family_i={G\bibinitperiod},
+           given={J.},
+           given_i={J\bibinitperiod}}}%
+      }
+      \list{institution}{1}{%
+        {Department of Radiology, University Medical Center, Leiden, The Netherlands. L.W.de_Jong@lumc.nl}%
+      }
+      \list{language}{1}{%
+        {eng}%
+      }
+      \list{publisher}{1}{%
+        {Oxford University Press (OUP)}%
+      }
+      \strng{namehash}{6475cb750b78e027de7ac68c607a9d0e}
+      \strng{fullhash}{eea56a4cf1b214ef4cb009e1e5a359e4}
+      \field{sortinit}{2}
+      \field{sortinithash}{8343b463aacf48517c044b4d2c9c45ed}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Atrophy is regarded a sensitive marker of neurodegenerative pathology. In addition to confirming the well-known presence of decreased global grey matter and hippocampal volumes in Alzheimer's disease, this study investigated whether deep grey matter structure also suffer degeneration in Alzheimer's disease, and whether such degeneration is associated with cognitive deterioration. In this cross-sectional correlation study, two groups were compared on volumes of seven subcortical regions: 70 memory complainers (MCs) and 69 subjects diagnosed with probable Alzheimer's disease. Using 3T 3D T1 MR images, volumes of nucleus accumbens, amygdala, caudate nucleus, hippocampus, pallidum, putamen and thalamus were automatically calculated by the FMRIB's Integrated Registration and Segmentation Tool (FIRST)--algorithm FMRIB's Software Library (FSL). Subsequently, the volumes of the different regions were correlated with cognitive test results. In addition to finding the expected association between hippocampal atrophy and cognitive decline in Alzheimer's disease, volumes of putamen and thalamus were significantly reduced in patients diagnosed with probable Alzheimer's disease. We also found that the decrease in volume correlated linearly with impaired global cognitive performance. These findings strongly suggest that, beside neo-cortical atrophy, deep grey matter structures in Alzheimer's disease suffer atrophy as well and that degenerative processes in the putamen and thalamus, like the hippocampus, may contribute to cognitive decline in Alzheimer's disease.}
+      \field{issn}{1460-2156}
+      \field{journaltitle}{Brain}
+      \field{month}{11}
+      \field{number}{12}
+      \field{title}{Strongly reduced volumes of putamen and thalamus in Alzheimer{’}s disease: an {MRI} study}
+      \field{volume}{131}
+      \field{year}{2008}
+      \field{pages}{3277\bibrangedash 3285}
+      \range{pages}{9}
+      \verb{doi}
+      \verb 10.1093/brain/awn278
+      \endverb
+      \keyw{Aged; Aged,80 and over; Alzheimer Disease,pathology/psychology; Atrophy,pathology/psychology; Cognition Disorders,etiology/pathology; Cross-Sectional Studies; Female; Hippocampus,pathology; Humans; Magnetic Resonance Imaging,methods; Male; Middle Aged; Neuropsychological Tests; Putamen,pathology; Thalamus,pathology}
     \endentry
     \entry{Medina2008}{article}{}
       \name{author}{2}{}{%
@@ -4368,6 +4552,72 @@
       \field{year}{2002}
       \field{pages}{425\bibrangedash 429}
       \range{pages}{5}
+    \endentry
+    \entry{Tzourio-Mazoyer2002}{article}{}
+      \name{author}{8}{}{%
+        {{hash=8cc7c5c0f6d1067bc5a75caa36fc0514}{%
+           family={Tzourio-Mazoyer},
+           family_i={T\bibinithyphendelim M\bibinitperiod},
+           given={N.},
+           given_i={N\bibinitperiod}}}%
+        {{hash=476fe8a862577523ad361c20fc8c574b}{%
+           family={Landeau},
+           family_i={L\bibinitperiod},
+           given={B.},
+           given_i={B\bibinitperiod}}}%
+        {{hash=ef4e694c0d4e91201121a016656aa4a4}{%
+           family={Papathanassiou},
+           family_i={P\bibinitperiod},
+           given={D.},
+           given_i={D\bibinitperiod}}}%
+        {{hash=adf6be2cea05aa7225b6f085df18802a}{%
+           family={Crivello},
+           family_i={C\bibinitperiod},
+           given={F.},
+           given_i={F\bibinitperiod}}}%
+        {{hash=e5fdeacf842a3c1fc3e1c68408f0def1}{%
+           family={Etard},
+           family_i={E\bibinitperiod},
+           given={O.},
+           given_i={O\bibinitperiod}}}%
+        {{hash=8e49c0fef038636bbcb42382456ef3e6}{%
+           family={Delcroix},
+           family_i={D\bibinitperiod},
+           given={N.},
+           given_i={N\bibinitperiod}}}%
+        {{hash=1a01e7a77f391e91273ce8b3e2339a54}{%
+           family={Mazoyer},
+           family_i={M\bibinitperiod},
+           given={B.},
+           given_i={B\bibinitperiod}}}%
+        {{hash=f4ea020c46a9d677821ac11c5d6ebc02}{%
+           family={Joliot},
+           family_i={J\bibinitperiod},
+           given={M.},
+           given_i={M\bibinitperiod}}}%
+      }
+      \list{institution}{1}{%
+        {Groupe d'Imagerie Neurofonctionnelle, UMR 6095 CNRS CEA, Université de Caen, Université de Paris 5, France.}%
+      }
+      \strng{namehash}{b16cb46e5de95f8e361ff7b94f36a4e6}
+      \strng{fullhash}{916e485f8bd3cd806423062968b6eb3f}
+      \field{sortinit}{2}
+      \field{sortinithash}{8343b463aacf48517c044b4d2c9c45ed}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{An anatomical parcellation of the spatially normalized single-subject high-resolution T1 volume provided by the Montreal Neurological Institute (MNI) (D. L. Collins et al., 1998, Trans. Med. Imag. 17, 463-468) was performed. The MNI single-subject main sulci were first delineated and further used as landmarks for the 3D definition of 45 anatomical volumes of interest (AVOI) in each hemisphere. This procedure was performed using a dedicated software which allowed a 3D following of the sulci course on the edited brain. Regions of interest were then drawn manually with the same software every 2 mm on the axial slices of the high-resolution MNI single subject. The 90 AVOI were reconstructed and assigned a label. Using this parcellation method, three procedures to perform the automated anatomical labeling of functional studies are proposed: (1) labeling of an extremum defined by a set of coordinates, (2) percentage of voxels belonging to each of the AVOI intersected by a sphere centered by a set of coordinates, and (3) percentage of voxels belonging to each of the AVOI intersected by an activated cluster. An interface with the Statistical Parametric Mapping package (SPM, J. Ashburner and K. J. Friston, 1999, Hum. Brain Mapp. 7, 254-266) is provided as a freeware to researchers of the neuroimaging community. We believe that this tool is an improvement for the macroscopical labeling of activated area compared to labeling assessed using the Talairach atlas brain in which deformations are well known. However, this tool does not alleviate the need for more sophisticated labeling strategies based on anatomical or cytoarchitectonic probabilistic maps.}
+      \field{journaltitle}{Neuroimage}
+      \field{month}{01}
+      \field{number}{1}
+      \field{title}{Automated anatomical labeling of activations in SPM using a macroscopic anatomical parcellation of the MNI {MRI} single-subject brain.}
+      \field{volume}{15}
+      \field{year}{2002}
+      \field{pages}{273\bibrangedash 289}
+      \range{pages}{17}
+      \verb{doi}
+      \verb 10.1006/nimg.2001.0978
+      \endverb
+      \keyw{Brain Mapping; Brain,anatomy /&/ histology; Computer Graphics; Dominance,Cerebral,physiology; Humans; Image Processing,Computer-Assisted; Imaging,Three-Dimensional; Magnetic Resonance Imaging; Reference Values}
     \endentry
     \entry{Anderson2001}{article}{}
       \name{author}{2}{}{%
@@ -8072,6 +8322,52 @@
       \field{pages}{5971\bibrangedash 5980}
       \range{pages}{10}
     \endentry
+    \entry{Illan2014}{article}{}
+      \name{author}{4}{}{%
+        {{hash=bf4ba9bcae72e93b405f919e1ed15776}{%
+           family={Illán},
+           family_i={I\bibinitperiod},
+           given={Ignacio\bibnamedelima A.},
+           given_i={I\bibinitperiod\bibinitdelim A\bibinitperiod}}}%
+        {{hash=ac116f321c15bd7945e4777fa0aca447}{%
+           family={Górriz},
+           family_i={G\bibinitperiod},
+           given={Juan\bibnamedelima M.},
+           given_i={J\bibinitperiod\bibinitdelim M\bibinitperiod}}}%
+        {{hash=6450d056a7ef88a8321faa1c9474f31c}{%
+           family={Ramírez},
+           family_i={R\bibinitperiod},
+           given={Javier},
+           given_i={J\bibinitperiod}}}%
+        {{hash=871563e8ea0337aac923dd6077c6a826}{%
+           family={Meyer-Base},
+           family_i={M\bibinithyphendelim B\bibinitperiod},
+           given={Anke},
+           given_i={A\bibinitperiod}}}%
+      }
+      \list{institution}{1}{%
+        {Department of Scientific Computing, Florida State University Tallahassee, FL, USA.}%
+      }
+      \list{language}{1}{%
+        {eng}%
+      }
+      \strng{namehash}{aad209b035194bbebbafe09ed53bca1c}
+      \strng{fullhash}{7bb348c69b51a2952d1c505e2b3786d2}
+      \field{sortinit}{I}
+      \field{sortinithash}{25e99d37ba90f7c4fb20baf4e310faf3}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{This work presents a spatial-component (SC) based approach to aid the diagnosis of Alzheimer's disease (AD) using magnetic resonance images. In this approach, the whole brain image is subdivided in regions or spatial components, and a Bayesian network is used to model the dependencies between affected regions of AD. The structure of relations between affected regions allows to detect neurodegeneration with an estimated performance of 88\% on more than 400 subjects and predict neurodegeneration with 80\% accuracy, supporting the conclusion that modeling the dependencies between components increases the recognition of different patterns of brain degeneration in AD.}
+      \field{journaltitle}{Frontiers in Computational Neuroscience}
+      \field{title}{Spatial component analysis of {MRI} data for Alzheimer's disease diagnosis: a {Bayesian} network approach.}
+      \field{volume}{8}
+      \field{year}{2014}
+      \field{pages}{156}
+      \range{pages}{1}
+      \verb{doi}
+      \verb 10.3389/fncom.2014.00156
+      \endverb
+    \endentry
     \entry{Jenkinson2001}{article}{}
       \name{author}{2}{}{%
         {{hash=c8bee8f298b153cd679d1d62afe645ce}{%
@@ -8102,6 +8398,99 @@
       \field{pages}{143\bibrangedash 156}
       \range{pages}{14}
       \keyw{Brain Mapping,methods; Costs and Cost Analysis; Humans; Image Processing,Computer-Assisted,economics,methods; Magnetic Resonance Imaging; Mathematics}
+    \endentry
+    \entry{Jong2008}{article}{}
+      \name{author}{10}{}{%
+        {{hash=5cd555d14cb3d3b5164eecc3fa054740}{%
+           prefix={de},
+           prefix_i={d\bibinitperiod},
+           family={Jong},
+           family_i={J\bibinitperiod},
+           given={L.\bibnamedelimi W.},
+           given_i={L\bibinitperiod\bibinitdelim W\bibinitperiod}}}%
+        {{hash=ad85b5e56c36d82731ae79987a2bc638}{%
+           prefix={van\bibnamedelima der},
+           prefix_i={v\bibinitperiod\bibinitdelim d\bibinitperiod},
+           family={Hiele},
+           family_i={H\bibinitperiod},
+           given={K.},
+           given_i={K\bibinitperiod}}}%
+        {{hash=b5fb781abaadd21c12050d9cb06e88a9}{%
+           family={Veer},
+           family_i={V\bibinitperiod},
+           given={I.\bibnamedelimi M.},
+           given_i={I\bibinitperiod\bibinitdelim M\bibinitperiod}}}%
+        {{hash=5e3b0df3c32fe67b79eeb31bdc566012}{%
+           family={Houwing},
+           family_i={H\bibinitperiod},
+           given={J.\bibnamedelimi J.},
+           given_i={J\bibinitperiod\bibinitdelim J\bibinitperiod}}}%
+        {{hash=401b042aa22e440d22f39b76b7874699}{%
+           family={Westendorp},
+           family_i={W\bibinitperiod},
+           given={R.\bibnamedelimi G.\bibnamedelimi J.},
+           given_i={R\bibinitperiod\bibinitdelim G\bibinitperiod\bibinitdelim J\bibinitperiod}}}%
+        {{hash=ae082cef06b939ce9b7fcd34690b6cfb}{%
+           family={Bollen},
+           family_i={B\bibinitperiod},
+           given={E.\bibnamedelimi L.\bibnamedelimi E.\bibnamedelimi M.},
+           given_i={E\bibinitperiod\bibinitdelim L\bibinitperiod\bibinitdelim E\bibinitperiod\bibinitdelim M\bibinitperiod}}}%
+        {{hash=0e22bf87b65df8fe8d4c08d9d36e0358}{%
+           prefix={de},
+           prefix_i={d\bibinitperiod},
+           family={Bruin},
+           family_i={B\bibinitperiod},
+           given={P.\bibnamedelimi W.},
+           given_i={P\bibinitperiod\bibinitdelim W\bibinitperiod}}}%
+        {{hash=d5cbcad81e0e50a23acc7efa3aa27400}{%
+           family={Middelkoop},
+           family_i={M\bibinitperiod},
+           given={H.\bibnamedelimi A.\bibnamedelimi M.},
+           given_i={H\bibinitperiod\bibinitdelim A\bibinitperiod\bibinitdelim M\bibinitperiod}}}%
+        {{hash=ba6b42cedca152311cd6821d221a9a2f}{%
+           prefix={van},
+           prefix_i={v\bibinitperiod},
+           family={Buchem},
+           family_i={B\bibinitperiod},
+           given={M.\bibnamedelimi A.},
+           given_i={M\bibinitperiod\bibinitdelim A\bibinitperiod}}}%
+        {{hash=36498ffa7f91c3487a2fc84595962953}{%
+           prefix={van\bibnamedelima der},
+           prefix_i={v\bibinitperiod\bibinitdelim d\bibinitperiod},
+           family={Grond},
+           family_i={G\bibinitperiod},
+           given={J.},
+           given_i={J\bibinitperiod}}}%
+      }
+      \list{institution}{1}{%
+        {Department of Radiology, University Medical Center, Leiden, The Netherlands. L.W.de_Jong@lumc.nl}%
+      }
+      \list{language}{1}{%
+        {eng}%
+      }
+      \list{publisher}{1}{%
+        {Oxford University Press (OUP)}%
+      }
+      \strng{namehash}{6475cb750b78e027de7ac68c607a9d0e}
+      \strng{fullhash}{eea56a4cf1b214ef4cb009e1e5a359e4}
+      \field{sortinit}{J}
+      \field{sortinithash}{ec3950a647c092421b9fcca6d819504a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Atrophy is regarded a sensitive marker of neurodegenerative pathology. In addition to confirming the well-known presence of decreased global grey matter and hippocampal volumes in Alzheimer's disease, this study investigated whether deep grey matter structure also suffer degeneration in Alzheimer's disease, and whether such degeneration is associated with cognitive deterioration. In this cross-sectional correlation study, two groups were compared on volumes of seven subcortical regions: 70 memory complainers (MCs) and 69 subjects diagnosed with probable Alzheimer's disease. Using 3T 3D T1 MR images, volumes of nucleus accumbens, amygdala, caudate nucleus, hippocampus, pallidum, putamen and thalamus were automatically calculated by the FMRIB's Integrated Registration and Segmentation Tool (FIRST)--algorithm FMRIB's Software Library (FSL). Subsequently, the volumes of the different regions were correlated with cognitive test results. In addition to finding the expected association between hippocampal atrophy and cognitive decline in Alzheimer's disease, volumes of putamen and thalamus were significantly reduced in patients diagnosed with probable Alzheimer's disease. We also found that the decrease in volume correlated linearly with impaired global cognitive performance. These findings strongly suggest that, beside neo-cortical atrophy, deep grey matter structures in Alzheimer's disease suffer atrophy as well and that degenerative processes in the putamen and thalamus, like the hippocampus, may contribute to cognitive decline in Alzheimer's disease.}
+      \field{issn}{1460-2156}
+      \field{journaltitle}{Brain}
+      \field{month}{11}
+      \field{number}{12}
+      \field{title}{Strongly reduced volumes of putamen and thalamus in Alzheimer{’}s disease: an {MRI} study}
+      \field{volume}{131}
+      \field{year}{2008}
+      \field{pages}{3277\bibrangedash 3285}
+      \range{pages}{9}
+      \verb{doi}
+      \verb 10.1093/brain/awn278
+      \endverb
+      \keyw{Aged; Aged,80 and over; Alzheimer Disease,pathology/psychology; Atrophy,pathology/psychology; Cognition Disorders,etiology/pathology; Cross-Sectional Studies; Female; Hippocampus,pathology; Humans; Magnetic Resonance Imaging,methods; Male; Middle Aged; Neuropsychological Tests; Putamen,pathology; Thalamus,pathology}
     \endentry
     \entry{Kelloff2005}{article}{}
       \true{moreauthor}
@@ -9400,6 +9789,51 @@
       \endverb
       \keyw{classification,lbp,texture}
     \endentry
+    \entry{Ortiz2013}{article}{}
+      \name{author}{4}{}{%
+        {{hash=86a202e90c876869a1743e263611ef08}{%
+           family={Ortiz},
+           family_i={O\bibinitperiod},
+           given={Andrés},
+           given_i={A\bibinitperiod}}}%
+        {{hash=f4228f125c42361b9f47bb676e4c04bb}{%
+           family={Górriz},
+           family_i={G\bibinitperiod},
+           given={Juan\bibnamedelima M},
+           given_i={J\bibinitperiod\bibinitdelim M\bibinitperiod}}}%
+        {{hash=6450d056a7ef88a8321faa1c9474f31c}{%
+           family={Ramírez},
+           family_i={R\bibinitperiod},
+           given={Javier},
+           given_i={J\bibinitperiod}}}%
+        {{hash=7df619f6d9b97a86939be426ac15de53}{%
+           family={Martínez-Murcia},
+           family_i={M\bibinithyphendelim M\bibinitperiod},
+           given={Francisco\bibnamedelima Jesús},
+           given_i={F\bibinitperiod\bibinitdelim J\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {North-Holland}%
+      }
+      \strng{namehash}{092da2a3dbe67a661c0a51aa570ecd59}
+      \strng{fullhash}{5bade4651669b7b7229093725db3ba89}
+      \field{sortinit}{O}
+      \field{sortinithash}{7803d2715d5e795e70382b084ab8d00e}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issn}{0167-8655}
+      \field{journaltitle}{Pattern Recognition Letters}
+      \field{month}{10}
+      \field{number}{14}
+      \field{title}{LVQ-{SVM} Based {CAD} tool applied to structural {MRI} for the diagnosis of the Alzheimer's disease}
+      \field{volume}{34}
+      \field{year}{2013}
+      \field{pages}{1725\bibrangedash 1733}
+      \range{pages}{9}
+      \verb{doi}
+      \verb 10.1016/j.patrec.2013.04.014
+      \endverb
+    \endentry
     \entry{Philips2008}{article}{}
       \name{author}{4}{}{%
         {{hash=ceebc8e14fd223f0cce1cb005fcb4df9}{%
@@ -10667,6 +11101,72 @@
       \endverb
       \keyw{Automation; Female; Humans; Image Interpretation; {Computer-Assisted}; Male; Middle Aged; Parkinsonian Disorders; Principal Component Analysis; Tomography; {Emission-Computed}; {Single-Photon}; Tropanes}
     \endentry
+    \entry{Tzourio-Mazoyer2002}{article}{}
+      \name{author}{8}{}{%
+        {{hash=8cc7c5c0f6d1067bc5a75caa36fc0514}{%
+           family={Tzourio-Mazoyer},
+           family_i={T\bibinithyphendelim M\bibinitperiod},
+           given={N.},
+           given_i={N\bibinitperiod}}}%
+        {{hash=476fe8a862577523ad361c20fc8c574b}{%
+           family={Landeau},
+           family_i={L\bibinitperiod},
+           given={B.},
+           given_i={B\bibinitperiod}}}%
+        {{hash=ef4e694c0d4e91201121a016656aa4a4}{%
+           family={Papathanassiou},
+           family_i={P\bibinitperiod},
+           given={D.},
+           given_i={D\bibinitperiod}}}%
+        {{hash=adf6be2cea05aa7225b6f085df18802a}{%
+           family={Crivello},
+           family_i={C\bibinitperiod},
+           given={F.},
+           given_i={F\bibinitperiod}}}%
+        {{hash=e5fdeacf842a3c1fc3e1c68408f0def1}{%
+           family={Etard},
+           family_i={E\bibinitperiod},
+           given={O.},
+           given_i={O\bibinitperiod}}}%
+        {{hash=8e49c0fef038636bbcb42382456ef3e6}{%
+           family={Delcroix},
+           family_i={D\bibinitperiod},
+           given={N.},
+           given_i={N\bibinitperiod}}}%
+        {{hash=1a01e7a77f391e91273ce8b3e2339a54}{%
+           family={Mazoyer},
+           family_i={M\bibinitperiod},
+           given={B.},
+           given_i={B\bibinitperiod}}}%
+        {{hash=f4ea020c46a9d677821ac11c5d6ebc02}{%
+           family={Joliot},
+           family_i={J\bibinitperiod},
+           given={M.},
+           given_i={M\bibinitperiod}}}%
+      }
+      \list{institution}{1}{%
+        {Groupe d'Imagerie Neurofonctionnelle, UMR 6095 CNRS CEA, Université de Caen, Université de Paris 5, France.}%
+      }
+      \strng{namehash}{b16cb46e5de95f8e361ff7b94f36a4e6}
+      \strng{fullhash}{916e485f8bd3cd806423062968b6eb3f}
+      \field{sortinit}{T}
+      \field{sortinithash}{423d138a005a533b47e6475e39378bf2}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{An anatomical parcellation of the spatially normalized single-subject high-resolution T1 volume provided by the Montreal Neurological Institute (MNI) (D. L. Collins et al., 1998, Trans. Med. Imag. 17, 463-468) was performed. The MNI single-subject main sulci were first delineated and further used as landmarks for the 3D definition of 45 anatomical volumes of interest (AVOI) in each hemisphere. This procedure was performed using a dedicated software which allowed a 3D following of the sulci course on the edited brain. Regions of interest were then drawn manually with the same software every 2 mm on the axial slices of the high-resolution MNI single subject. The 90 AVOI were reconstructed and assigned a label. Using this parcellation method, three procedures to perform the automated anatomical labeling of functional studies are proposed: (1) labeling of an extremum defined by a set of coordinates, (2) percentage of voxels belonging to each of the AVOI intersected by a sphere centered by a set of coordinates, and (3) percentage of voxels belonging to each of the AVOI intersected by an activated cluster. An interface with the Statistical Parametric Mapping package (SPM, J. Ashburner and K. J. Friston, 1999, Hum. Brain Mapp. 7, 254-266) is provided as a freeware to researchers of the neuroimaging community. We believe that this tool is an improvement for the macroscopical labeling of activated area compared to labeling assessed using the Talairach atlas brain in which deformations are well known. However, this tool does not alleviate the need for more sophisticated labeling strategies based on anatomical or cytoarchitectonic probabilistic maps.}
+      \field{journaltitle}{Neuroimage}
+      \field{month}{01}
+      \field{number}{1}
+      \field{title}{Automated anatomical labeling of activations in SPM using a macroscopic anatomical parcellation of the MNI {MRI} single-subject brain.}
+      \field{volume}{15}
+      \field{year}{2002}
+      \field{pages}{273\bibrangedash 289}
+      \range{pages}{17}
+      \verb{doi}
+      \verb 10.1006/nimg.2001.0978
+      \endverb
+      \keyw{Brain Mapping; Brain,anatomy /&/ histology; Computer Graphics; Dominance,Cerebral,physiology; Humans; Image Processing,Computer-Assisted; Imaging,Three-Dimensional; Magnetic Resonance Imaging; Reference Values}
+    \endentry
     \entry{Vapnik1997}{article}{}
       \true{moreauthor}
       \true{morelabelname}
@@ -11016,28 +11516,22 @@
       \endverb
     \endentry
   \endsortlist
-  \missing{chan2001patterns}
-  \missing{Illan2014}
-  \missing{Botev2010}
-  \missing{PPMI}
-  \missing{Yen1995}
   \missing{dougall_systematic_2004}
-  \missing{Vardi1985}
-  \missing{Ramirez2009}
-  \missing{AAL}
   \missing{Shepp82}
-  \missing{Jong2008}
-  \missing{Ortiz2013}
-  \missing{Evans1993}
-  \missing{Inititative2010}
   \missing{Kohavi1995a}
-  \missing{Alvarez2009}
-  \missing{jobst_accurate_1998}
-  \missing{Vapnik1982}
-  \missing{Tzourio-Mazoyer2002}
+  \missing{Evans1993}
+  \missing{PPMI}
   \missing{IAIllan2010}
-  \missing{Ram'irez2009}
   \missing{xu2009source}
+  \missing{Yen1995}
+  \missing{Vardi1985}
+  \missing{Ram'irez2009}
+  \missing{Botev2010}
+  \missing{Ramirez2009}
+  \missing{Inititative2010}
+  \missing{Vapnik1982}
+  \missing{jobst_accurate_1998}
+  \missing{Alvarez2009}
 \endrefsection
 
 \refsection{1}
