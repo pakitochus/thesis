@@ -5192,6 +5192,41 @@
       \field{pages}{626\bibrangedash 634}
       \range{pages}{9}
     \endentry
+    \entry{KwanEvansPike1999}{article}{}
+      \name{author}{3}{}{%
+        {{hash=ae65a27cee1a4f5721d2e42fc942a1ad}{%
+           family={Kwan},
+           family_i={K\bibinitperiod},
+           given={Remi\bibnamedelima KS},
+           given_i={R\bibinitperiod\bibinitdelim K\bibinitperiod}}}%
+        {{hash=4e172bd78c97b6573f166ea521e0144e}{%
+           family={Evans},
+           family_i={E\bibinitperiod},
+           given={Alan\bibnamedelima C},
+           given_i={A\bibinitperiod\bibinitdelim C\bibinitperiod}}}%
+        {{hash=02b620382f6e45bf3c31861d384d1e33}{%
+           family={Pike},
+           family_i={P\bibinitperiod},
+           given={G\bibnamedelima Bruce},
+           given_i={G\bibinitperiod\bibinitdelim B\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {IEEE}%
+      }
+      \strng{namehash}{2ded40493ca3b8be5da1c106854d5605}
+      \strng{fullhash}{2ded40493ca3b8be5da1c106854d5605}
+      \field{sortinit}{1}
+      \field{sortinithash}{53e85f4cf497d2a4e1d51786552bcbf1}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Medical Imaging, IEEE Transactions on}
+      \field{number}{11}
+      \field{title}{{MRI} simulation-based evaluation of image-processing and classification methods}
+      \field{volume}{18}
+      \field{year}{1999}
+      \field{pages}{1085\bibrangedash 1097}
+      \range{pages}{13}
+    \endentry
     \entry{soh1999texture}{article}{}
       \name{author}{2}{}{%
         {{hash=6700a180c47eed07cb94e60c63cb218c}{%
@@ -5636,6 +5671,41 @@
       \field{year}{1994}
       \field{pages}{189\bibrangedash 210}
       \range{pages}{22}
+    \endentry
+    \entry{Ma1993}{article}{}
+      \name{author}{3}{}{%
+        {{hash=66d365c9699fa36b959afcec99c12a36}{%
+           family={Ma},
+           family_i={M\bibinitperiod},
+           given={Y},
+           given_i={Y\bibinitperiod}}}%
+        {{hash=bbb121fce7be5f6b921f643e87353d35}{%
+           family={Kamber},
+           family_i={K\bibinitperiod},
+           given={M},
+           given_i={M\bibinitperiod}}}%
+        {{hash=9afb5514deeaace8449fb1950632b8fc}{%
+           family={Evans},
+           family_i={E\bibinitperiod},
+           given={AC},
+           given_i={A\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Elsevier}%
+      }
+      \strng{namehash}{1488e432d93daba16e2553282f1b6c8a}
+      \strng{fullhash}{1488e432d93daba16e2553282f1b6c8a}
+      \field{sortinit}{1}
+      \field{sortinithash}{53e85f4cf497d2a4e1d51786552bcbf1}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Computerized medical imaging and graphics}
+      \field{number}{4-5}
+      \field{title}{3D simulation of PET brain images using segmented MRI data and positron tomograph characteristics}
+      \field{volume}{17}
+      \field{year}{1993}
+      \field{pages}{365\bibrangedash 371}
+      \range{pages}{7}
     \endentry
     \entry{Haralick1992a}{misc}{}
       \name{author}{2}{}{%
@@ -8840,6 +8910,41 @@
       \field{pages}{825\bibrangedash 855}
       \range{pages}{31}
     \endentry
+    \entry{KwanEvansPike1999}{article}{}
+      \name{author}{3}{}{%
+        {{hash=ae65a27cee1a4f5721d2e42fc942a1ad}{%
+           family={Kwan},
+           family_i={K\bibinitperiod},
+           given={Remi\bibnamedelima KS},
+           given_i={R\bibinitperiod\bibinitdelim K\bibinitperiod}}}%
+        {{hash=4e172bd78c97b6573f166ea521e0144e}{%
+           family={Evans},
+           family_i={E\bibinitperiod},
+           given={Alan\bibnamedelima C},
+           given_i={A\bibinitperiod\bibinitdelim C\bibinitperiod}}}%
+        {{hash=02b620382f6e45bf3c31861d384d1e33}{%
+           family={Pike},
+           family_i={P\bibinitperiod},
+           given={G\bibnamedelima Bruce},
+           given_i={G\bibinitperiod\bibinitdelim B\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {IEEE}%
+      }
+      \strng{namehash}{2ded40493ca3b8be5da1c106854d5605}
+      \strng{fullhash}{2ded40493ca3b8be5da1c106854d5605}
+      \field{sortinit}{K}
+      \field{sortinithash}{a7d5b3aec5a0890aae7baf85a209abfc}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Medical Imaging, IEEE Transactions on}
+      \field{number}{11}
+      \field{title}{{MRI} simulation-based evaluation of image-processing and classification methods}
+      \field{volume}{18}
+      \field{year}{1999}
+      \field{pages}{1085\bibrangedash 1097}
+      \range{pages}{13}
+    \endentry
     \entry{Lozano2007}{article}{}
       \name{author}{5}{}{%
         {{hash=cf9c5539bd06ab17544fe72caecb3cda}{%
@@ -8890,6 +8995,41 @@
       \verb http://www.sciencedirect.com/science/article/pii/S1578200X07700621
       \endverb
       \keyw{Parkinsonism}
+    \endentry
+    \entry{Ma1993}{article}{}
+      \name{author}{3}{}{%
+        {{hash=66d365c9699fa36b959afcec99c12a36}{%
+           family={Ma},
+           family_i={M\bibinitperiod},
+           given={Y},
+           given_i={Y\bibinitperiod}}}%
+        {{hash=bbb121fce7be5f6b921f643e87353d35}{%
+           family={Kamber},
+           family_i={K\bibinitperiod},
+           given={M},
+           given_i={M\bibinitperiod}}}%
+        {{hash=9afb5514deeaace8449fb1950632b8fc}{%
+           family={Evans},
+           family_i={E\bibinitperiod},
+           given={AC},
+           given_i={A\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Elsevier}%
+      }
+      \strng{namehash}{1488e432d93daba16e2553282f1b6c8a}
+      \strng{fullhash}{1488e432d93daba16e2553282f1b6c8a}
+      \field{sortinit}{M}
+      \field{sortinithash}{2684bec41e9697b92699b46491061da2}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Computerized medical imaging and graphics}
+      \field{number}{4-5}
+      \field{title}{3D simulation of PET brain images using segmented MRI data and positron tomograph characteristics}
+      \field{volume}{17}
+      \field{year}{1993}
+      \field{pages}{365\bibrangedash 371}
+      \range{pages}{7}
     \endentry
     \entry{Martinez201141}{inproceedings}{}
       \name{author}{6}{}{%
@@ -11590,21 +11730,21 @@
       \endverb
     \endentry
   \endsortlist
-  \missing{Kohavi1995a}
-  \missing{Yen1995}
-  \missing{jobst_accurate_1998}
-  \missing{dougall_systematic_2004}
-  \missing{Evans1993}
-  \missing{Inititative2010}
-  \missing{Vapnik1982}
-  \missing{Simonoff2012}
-  \missing{Shepp82}
-  \missing{xu2009source}
   \missing{Saxena1998}
-  \missing{Markiewicz2009}
-  \missing{Ramirez2009}
-  \missing{Alvarez2009}
   \missing{Vardi1985}
+  \missing{Markiewicz2009}
+  \missing{Vapnik1982}
+  \missing{dougall_systematic_2004}
+  \missing{Shepp82}
+  \missing{Kohavi1995a}
+  \missing{xu2009source}
+  \missing{Ramirez2009}
+  \missing{jobst_accurate_1998}
+  \missing{Evans1993}
+  \missing{Simonoff2012}
+  \missing{Alvarez2009}
+  \missing{Inititative2010}
+  \missing{Yen1995}
   \missing{PPMI}
   \missing{Brown2009}
 \endrefsection

@@ -12,11 +12,11 @@ In this chapter, we propose a simulation procedure (see Figure~\ref{fig:simulati
 
 We have evaluated our proposed system on two modalities: FDG-\ac{PET} images from the ADNI-PET dataset and \ac{SPECT}-DaTSCAN from the PPMI-DAT database. We have tested the images under three different experiments that estimate the relation between the simulated and the real images, the ability of the simulated dataset to predict the outcome of real datasets, or the uncertainty introduced by the simulation procedure. 
 
-For our brain synthesis algorithm to work, the source datasets must share certain characteristics: to be spatially normalized (which we did by using the SPM8 software) and intensity normalized, using normalization to the maximum strategy, which proved to be very useful in most applications \cite{Saxena1998,Martinez-Murcia20129676,martinez2014parametrization} (see Chapter~\ref{ch:preprocessing} for more details).
+For our brain synthesis algorithm to work, the source datasets must share certain characteristics: to be spatially normalized (which we did by using the SPM8 software) and intensity normalized, using normalization to the maximum strategy, which proved to be very useful in most applications \cite{Martinez-Murcia20129676,martinez2014parametrization} (see Chapter~\ref{ch:preprocessing} for more details).
 
 \section{Simulation Methodology}
 \subsection{\acf{PCA}}
-The first step of the simulation pipeline is the analysis of the dataset that we want to use as a reference. In order to do so, we project the dataset from its original image space to a lower dimensional space using \ac{PCA}, a very extended tool for analysis and feature extraction in neuroimaging \cite{Markiewicz2009,Illan2011,Khedher2015}, and that was already defined at Section~\ref{sec:pca}.
+The first step of the simulation pipeline is the analysis of the dataset that we want to use as a reference. In order to do so, we project the dataset from its original image space to a lower dimensional space using \ac{PCA}, a very extended tool for analysis and feature extraction in neuroimaging \cite{Illan2011,Khedher2015}, and that was already defined at Section~\ref{sec:pca}.
 
 In this chapter, we use the component score matrix $\mathbf{S}$, or the coordinates of the database samples in the eigenbrain space, to estimate per-class and per-component statistical distributions from which the new samples, from which we can generate new coordinates. For efficiency, and without loss of generality, we will use only the first $C$ components of the \ac{PCA} decomposition. 
 
@@ -198,10 +198,10 @@ With this experiment, we aim to check whether the simulated images are independe
 With this experiment, we can see that the \ac{MVN} estimator achieves no performance loss, when compared with the original test set. Conversely, with the \ac{KDE} estimator, the differences are far more significant, with a performance loss of more than 0.15 in accuracy in both datasets. That means that the images simulated using a \ac{KDE} estimator are far more independent from the original set than those simulated using the \ac{MVN}. This occurs in both datasets, which gives us an idea of which method generates more independent images. 
 
 \section{Discussion}
-In this chapter we propose an brain image synthesis algorithm that can analyse a dataset, extract its most relevant characteristics and then simulate new images that share the same properties. The algorithm is based upon PCA, which defines a new common space for each dataset, in which the individual images are represented as points. Therefore, by analysing the distribution of these points and generate new points belonging to each distribution, we can do the inverse transformation of these points to images. 
+In this chapter we propose an brain image synthesis algorithm that can analyse a dataset, extract its most relevant characteristics and then simulate new images that share the same properties. The algorithm is based upon \ac{PCA}, which defines a new common space for each dataset, in which the individual images are represented as points. Therefore, by analysing the distribution of these points and generate new points belonging to each distribution, we can do the inverse transformation of these points to images. 
 
 % PCA Analysis 
-The use of PCA for feature extraction neuroimaging in components is widely documented  \cite{Markiewicz2009,Illan2011,Khedher2015,Martinez-Murcia2016book}. In \ac{AD}, the computed eigenbrains model different features that have been associated with the progression of the disease, and the contribution of each eigenbrain (or the coordinates of each subject in the eigenbrain space) can effectively model the advance of the disease in many works. Therefore, it was the most straightforward tool to be used in this chapter.
+The use of \ac{PCA} for feature extraction neuroimaging in components is widely documented  \cite{Illan2011,Khedher2015,Martinez-Murcia2016book}. In \ac{AD}, the computed eigenbrains model different features that have been associated with the progression of the disease, and the contribution of each eigenbrain (or the coordinates of each subject in the eigenbrain space) can effectively model the advance of the disease in many works. Therefore, it was the most straightforward tool to be used in this chapter.
 
 \begin{figure*}[h]
 	\centering
@@ -209,7 +209,7 @@ The use of PCA for feature extraction neuroimaging in components is widely docum
 	\includegraphics[width=0.9\linewidth]{Graphics/ch8/comp_1}
 	\includegraphics[width=0.9\linewidth]{Graphics/ch8/comp_2}
 	\includegraphics[width=0.9\linewidth]{Graphics/ch8/comp_3}
-	\caption{Illustration of the three first eigenbrains in PCA.}
+	\caption{Illustration of the three first eigenbrains in \acs{PCA}.}
 	\label{fig:eigenbrainsSyn}
 \end{figure*}
 
@@ -226,7 +226,7 @@ In Figure~\ref{fig:eigenbrainsSyn} we show the first four eigenbrains for the AD
 \end{figure*}
 
 % PDF estimation
-Here is were we compare the two different estimation methods proposed: a \acf{MVN} and the \acf{KDE} via difussion. An accurate estimation of the distribution of the scores belonging to a certain class is paramount to obtain a reliable brain image synthesis. In Figure~\ref{fig:comparisonEstimatesSyn}, we compare the different estimation methods for the three classes (in the first eigenbrain), using the histogram as a reference. We can see that, while the \ac{KDE} adapts more to the data, the \ac{MVN} is more general. This is for the first eigenbrain, but in Figure~\ref{fig:pairplot}, we can see the distribution of the first four scores in all groups, in which we can see that some of them (especially for eigenbrain 1 and 3), the distributions of some groups are less gaussian, and therefore, \ac{KDE} adapts better to this. Conversely, \ac{KDE} models each component independently, whereas the \ac{MVN} creates a parametric distribution of the scores of all eigenbrains, which could be considered an advantage. 
+Here is were we compare the two different estimation methods proposed: a \acf{MVN} and the \acf{KDE} via difussion. An accurate estimation of the distribution of the scores belonging to a certain class is paramount to obtain a reliable brain image synthesis. In Figure~\ref{fig:comparisonEstimatesSyn}, we compare the different estimation methods for the three \ac{AD} classes (in the first eigenbrain), using the histogram as a reference. We can see that, while the \ac{KDE} adapts more to the data, the \ac{MVN} is more general. This is for the first eigenbrain, but in Figure~\ref{fig:pairplot}, we can see the distribution of the first four scores in all groups, in which we can see that some of them (especially for eigenbrain 1 and 3), the distributions of some groups are less gaussian, and therefore, \ac{KDE} adapts better to this. Conversely, \ac{KDE} models each component independently, whereas the \ac{MVN} creates a parametric distribution of the scores of all eigenbrains, which could be considered an advantage. 
 
 \begin{figure*}[h]
 	\centering
@@ -260,7 +260,7 @@ Here is were we compare the two different estimation methods proposed: a \acf{MV
 \end{figure*}
 
 % Visual Analysis of the simulated images
-A visual analysis of the synthesized images in Figures~\ref{fig:samplesPET} and \ref{fig:samplesDAT} reveals that the new images preserve similar characteristics of the original datasets. For example, it is easy to appreciate differences in glucose metabolism in Figure~\ref{fig:samplesPET} typically associated with \ac{AD}, such as a smaller activity at the temporal lobe or the striatum \cite{Stoeckel04,Illan2011}. In the simulated DaTSCAN images (Fig.~\ref{fig:samplesDAT}) differences in shape and intensity of the striatum, and bilateral differences \cite{Lozano2010,Towey2011,Illan2012,martinez2014parametrization} can also be noticed, using both \ac{MVN} and \ac{KDE} modelling.
+A visual analysis of the synthesized images in Figures~\ref{fig:samplesPET} and \ref{fig:samplesDAT} reveals that the new images preserve similar characteristics of the original datasets. For example, it is easy to appreciate differences in glucose metabolism in Figure~\ref{fig:samplesPET} typically associated with \ac{AD}, such as a smaller activity at the temporal lobe or the striatum \cite{Stoeckel04,Illan2011}. In the simulated DaTSCAN images (Fig.~\ref{fig:samplesDAT}) differences in shape and intensity of the striatum, and bilateral differences \cite{Towey2011,Illan2012,martinez2014parametrization} can also be noticed, using both \ac{MVN} and \ac{KDE} modelling.
 
 % Analysis of the SPM analysis 
 To deepen the analysis of the synthesized figures, we will perform a \ac{SPM} analysis \cite{spm_book}, using the SPM12 software. In Figure~\ref{fig:spmAD}, we can look at the differences ($t$-maps, FWE corrected, $p<0.05$) between \ac{AD} and \ac{CTL} images with the original, and two synthesized datasets with 200 samples per class, using either \ac{MVN} or \ac{KDE} modelling. In these maps, the differences are located in similar places in both synthesized databases, that are as well, although less intense, represented in the \ac{SPM} analysis of the original dataset. The aforementioned regions such as the precuneus, angular, mid-temporal lobe, hippocampus, amygdala, among others, are represented in both the original and simulated datasets, with a special mention of the cingulum, which also is the main difference in the \ac{MCI} vs \ac{CTL} scenario (see supplementary material). 

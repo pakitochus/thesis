@@ -1631,4 +1631,26 @@
   timestamp   = {2016.02.02},
 }
 
+@Article{Botev2010,
+  author    = {Botev, ZI and Grotowski, JF and Kroese, DP and others},
+  title     = {Kernel density estimation via diffusion},
+  journal   = {The Annals of Statistics},
+  year      = {2010},
+  volume    = {38},
+  number    = {5},
+  pages     = {2916--2957},
+  publisher = {Institute of Mathematical Statistics},
+}
+
+@Article{KwanEvansPike1999,
+  author    = {Kwan, Remi KS and Evans, Alan C and Pike, G Bruce},
+  title     = {{MRI} simulation-based evaluation of image-processing and classification methods},
+  journal   = {Medical Imaging, IEEE Transactions on},
+  year      = {1999},
+  volume    = {18},
+  number    = {11},
+  pages     = {1085--1097},
+  publisher = {IEEE},
+}
+
 @Comment{jabref-meta: databaseType:bibtex;}
