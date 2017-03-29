@@ -2041,6 +2041,66 @@
       \endverb
       \keyw{SPECT}
     \endentry
+    \entry{Grana2011}{article}{}
+      \name{author}{7}{}{%
+        {{hash=85060fe1d3120ab98f90ee06830a34b4}{%
+           family={Graña},
+           family_i={G\bibinitperiod},
+           given={M.},
+           given_i={M\bibinitperiod}}}%
+        {{hash=8568795e9e29289ce2dff2b4ac0960ee}{%
+           family={Termenon},
+           family_i={T\bibinitperiod},
+           given={M.},
+           given_i={M\bibinitperiod}}}%
+        {{hash=bd968bf75a7a5d44f5965876dc1f71a5}{%
+           family={Savio},
+           family_i={S\bibinitperiod},
+           given={A.},
+           given_i={A\bibinitperiod}}}%
+        {{hash=58b174c282ffa09fd36b586fe3751f09}{%
+           family={Gonzalez-Pinto},
+           family_i={G\bibinithyphendelim P\bibinitperiod},
+           given={A.},
+           given_i={A\bibinitperiod}}}%
+        {{hash=dadb55eaa70328a13d6b8b96665e26f8}{%
+           family={Echeveste},
+           family_i={E\bibinitperiod},
+           given={J.},
+           given_i={J\bibinitperiod}}}%
+        {{hash=160fe2d00377269a6ad1bcb742f66f7d}{%
+           family={Pérez},
+           family_i={P\bibinitperiod},
+           given={J.M.},
+           given_i={J\bibinitperiod}}}%
+        {{hash=c14028872780d74205c7ebc5faf0f7a5}{%
+           family={Besga},
+           family_i={B\bibinitperiod},
+           given={A.},
+           given_i={A\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Elsevier BV}%
+      }
+      \strng{namehash}{b2623537926aafcbd459ca2b4379d332}
+      \strng{fullhash}{733595b6370deecd5e061838e0a3b6ef}
+      \field{sortinit}{2}
+      \field{sortinithash}{8343b463aacf48517c044b4d2c9c45ed}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issn}{0304-3940}
+      \field{journaltitle}{Neuroscience Letters}
+      \field{month}{09}
+      \field{number}{3}
+      \field{title}{Computer Aided Diagnosis system for Alzheimer Disease using brain Diffusion Tensor Imaging features selected by Pearson{’}s correlation}
+      \field{volume}{502}
+      \field{year}{2011}
+      \field{pages}{225\bibrangedash 229}
+      \range{pages}{5}
+      \verb{doi}
+      \verb 10.1016/j.neulet.2011.07.049
+      \endverb
+    \endentry
     \entry{Illan2011}{article}{}
       \name{author}{9}{}{%
         {{hash=afe71505c4e0d5d38a24aa1859cb8b4d}{%
@@ -2788,6 +2848,41 @@
       \verb 10.1093/brain/awn016
       \endverb
       \keyw{Alzheimer Disease,diagnostic imaging,pathology; Amyloid beta-Peptides,analysis,metabolism; Aniline Compounds,metabolism; Autopsy; Brain,diagnostic imaging,pathology; Carbon Radioisotopes,metabolism; Enzyme-Linked Immunosorbent Assay,methods; Female; Humans; Image Interpretation,Computer-Assisted; Immunohistochemistry; Magnetic Resonance Imaging; Middle Aged; Neurofibrillary Tangles,diagnostic imaging,pathology; Plaque,Amyloid,diagnostic imaging,pathology; Positron-Emission Tomography,methods; Reproducibility of Results; Thiazoles,metabolism; tau Proteins,analysis,metabolism}
+    \endentry
+    \entry{Medina2008}{article}{}
+      \name{author}{2}{}{%
+        {{hash=092588d805dd1ed422ee77177b8b47f8}{%
+           family={Medina},
+           family_i={M\bibinitperiod},
+           given={David\bibnamedelima A.},
+           given_i={D\bibinitperiod\bibinitdelim A\bibinitperiod}}}%
+        {{hash=eb73541a3d3daf5f770b0539410c7341}{%
+           family={Gaviria},
+           family_i={G\bibinitperiod},
+           given={Moises},
+           given_i={M\bibinitperiod}}}%
+      }
+      \list{institution}{1}{%
+        {Department of Psychiatry, Case Western Reserve University, 11100 Euclid Avenue, Cleveland, OH 44106, USA. davimedin@hotmail.com}%
+      }
+      \list{language}{1}{%
+        {eng}%
+      }
+      \strng{namehash}{5a7e538344cd3154d90bb30ed204b60b}
+      \strng{fullhash}{5a7e538344cd3154d90bb30ed204b60b}
+      \field{sortinit}{2}
+      \field{sortinithash}{8343b463aacf48517c044b4d2c9c45ed}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Diffusion tensor imaging (DTI) is a sophisticated MRI-based neuroimaging technique that enables in vivo quantification of differences in molecular diffusion at the cellular level. Owing to the highly directional architecture of white matter (WM), DTI is providing important clues of the structure and geometric organization of this neural compartment. Since DTI can detect changes even in the case of radiologically "normal" appearing WM, researchers are using the technique for the study of WM integrity at the initial stages of the most common neurodegenerative disorders. Along with a well characterized cortical pathology (neuritic plaques and intracellular neurofibrillary tangles), WM changes have been also demonstrated in Alzheimer's disease (AD). However, these changes had been for years found nonliable in the onset and progress of AD, basically due to lack of incriminatory evidence. The use of novel tools such as DTI has enabled the anatomical distribution of WM microstructural damage in the prodromal stages of AD to be gauged and determined, granting a long-delayed protagonic role to WM in the natural history of this highly prevalent neurodegenerative condition.}
+      \field{journaltitle}{Neuropsychiatric Disease and Treatment}
+      \field{month}{08}
+      \field{number}{4}
+      \field{title}{Diffusion tensor imaging investigations in Alzheimer's disease: the resurgence of white matter compromise in the cortical dysfunction of the aging brain.}
+      \field{volume}{4}
+      \field{year}{2008}
+      \field{pages}{737\bibrangedash 742}
+      \range{pages}{6}
     \endentry
     \entry{Philips2008}{article}{}
       \name{author}{4}{}{%
@@ -7332,6 +7427,66 @@
       \endverb
       \keyw{SPECT}
     \endentry
+    \entry{Grana2011}{article}{}
+      \name{author}{7}{}{%
+        {{hash=85060fe1d3120ab98f90ee06830a34b4}{%
+           family={Graña},
+           family_i={G\bibinitperiod},
+           given={M.},
+           given_i={M\bibinitperiod}}}%
+        {{hash=8568795e9e29289ce2dff2b4ac0960ee}{%
+           family={Termenon},
+           family_i={T\bibinitperiod},
+           given={M.},
+           given_i={M\bibinitperiod}}}%
+        {{hash=bd968bf75a7a5d44f5965876dc1f71a5}{%
+           family={Savio},
+           family_i={S\bibinitperiod},
+           given={A.},
+           given_i={A\bibinitperiod}}}%
+        {{hash=58b174c282ffa09fd36b586fe3751f09}{%
+           family={Gonzalez-Pinto},
+           family_i={G\bibinithyphendelim P\bibinitperiod},
+           given={A.},
+           given_i={A\bibinitperiod}}}%
+        {{hash=dadb55eaa70328a13d6b8b96665e26f8}{%
+           family={Echeveste},
+           family_i={E\bibinitperiod},
+           given={J.},
+           given_i={J\bibinitperiod}}}%
+        {{hash=160fe2d00377269a6ad1bcb742f66f7d}{%
+           family={Pérez},
+           family_i={P\bibinitperiod},
+           given={J.M.},
+           given_i={J\bibinitperiod}}}%
+        {{hash=c14028872780d74205c7ebc5faf0f7a5}{%
+           family={Besga},
+           family_i={B\bibinitperiod},
+           given={A.},
+           given_i={A\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Elsevier BV}%
+      }
+      \strng{namehash}{b2623537926aafcbd459ca2b4379d332}
+      \strng{fullhash}{733595b6370deecd5e061838e0a3b6ef}
+      \field{sortinit}{G}
+      \field{sortinithash}{1c854ef9177a91bf894e66485bdbd3ed}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issn}{0304-3940}
+      \field{journaltitle}{Neuroscience Letters}
+      \field{month}{09}
+      \field{number}{3}
+      \field{title}{Computer Aided Diagnosis system for Alzheimer Disease using brain Diffusion Tensor Imaging features selected by Pearson{’}s correlation}
+      \field{volume}{502}
+      \field{year}{2011}
+      \field{pages}{225\bibrangedash 229}
+      \range{pages}{5}
+      \verb{doi}
+      \verb 10.1016/j.neulet.2011.07.049
+      \endverb
+    \endentry
     \entry{Guyon03}{article}{}
       \name{author}{2}{}{%
         {{hash=30090046dd2289ec0efca86420f819b7}{%
@@ -9097,6 +9252,41 @@
       \endverb
       \keyw{Adult; Brain,anatomy & histology; Brain Mapping,instrumentation,methods; Databases,Factual; Humans; Magnetic Resonance Imaging; Models,Statistical; Neuroanatomy,instrumentation,methods}
     \endentry
+    \entry{Medina2008}{article}{}
+      \name{author}{2}{}{%
+        {{hash=092588d805dd1ed422ee77177b8b47f8}{%
+           family={Medina},
+           family_i={M\bibinitperiod},
+           given={David\bibnamedelima A.},
+           given_i={D\bibinitperiod\bibinitdelim A\bibinitperiod}}}%
+        {{hash=eb73541a3d3daf5f770b0539410c7341}{%
+           family={Gaviria},
+           family_i={G\bibinitperiod},
+           given={Moises},
+           given_i={M\bibinitperiod}}}%
+      }
+      \list{institution}{1}{%
+        {Department of Psychiatry, Case Western Reserve University, 11100 Euclid Avenue, Cleveland, OH 44106, USA. davimedin@hotmail.com}%
+      }
+      \list{language}{1}{%
+        {eng}%
+      }
+      \strng{namehash}{5a7e538344cd3154d90bb30ed204b60b}
+      \strng{fullhash}{5a7e538344cd3154d90bb30ed204b60b}
+      \field{sortinit}{M}
+      \field{sortinithash}{2684bec41e9697b92699b46491061da2}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Diffusion tensor imaging (DTI) is a sophisticated MRI-based neuroimaging technique that enables in vivo quantification of differences in molecular diffusion at the cellular level. Owing to the highly directional architecture of white matter (WM), DTI is providing important clues of the structure and geometric organization of this neural compartment. Since DTI can detect changes even in the case of radiologically "normal" appearing WM, researchers are using the technique for the study of WM integrity at the initial stages of the most common neurodegenerative disorders. Along with a well characterized cortical pathology (neuritic plaques and intracellular neurofibrillary tangles), WM changes have been also demonstrated in Alzheimer's disease (AD). However, these changes had been for years found nonliable in the onset and progress of AD, basically due to lack of incriminatory evidence. The use of novel tools such as DTI has enabled the anatomical distribution of WM microstructural damage in the prodromal stages of AD to be gauged and determined, granting a long-delayed protagonic role to WM in the natural history of this highly prevalent neurodegenerative condition.}
+      \field{journaltitle}{Neuropsychiatric Disease and Treatment}
+      \field{month}{08}
+      \field{number}{4}
+      \field{title}{Diffusion tensor imaging investigations in Alzheimer's disease: the resurgence of white matter compromise in the cortical dysfunction of the aging brain.}
+      \field{volume}{4}
+      \field{year}{2008}
+      \field{pages}{737\bibrangedash 742}
+      \range{pages}{6}
+    \endentry
     \entry{Misra2009}{article}{}
       \name{author}{3}{}{%
         {{hash=8875aaeda5b00233d1f7142281655e2e}{%
@@ -10826,32 +11016,28 @@
       \endverb
     \endentry
   \endsortlist
-  \missing{Tzourio-Mazoyer2002}
+  \missing{chan2001patterns}
   \missing{Illan2014}
-  \missing{Ortiz2013}
-  \missing{jobst_accurate_1998}
-  \missing{Grana2011}
+  \missing{Botev2010}
+  \missing{PPMI}
+  \missing{Yen1995}
+  \missing{dougall_systematic_2004}
+  \missing{Vardi1985}
   \missing{Ramirez2009}
+  \missing{AAL}
+  \missing{Shepp82}
+  \missing{Jong2008}
+  \missing{Ortiz2013}
+  \missing{Evans1993}
+  \missing{Inititative2010}
+  \missing{Kohavi1995a}
+  \missing{Alvarez2009}
+  \missing{jobst_accurate_1998}
+  \missing{Vapnik1982}
+  \missing{Tzourio-Mazoyer2002}
   \missing{IAIllan2010}
   \missing{Ram'irez2009}
-  \missing{Botev2010}
-  \missing{Jong2008}
-  \missing{Evans1993}
-  \missing{Yen1995}
-  \missing{AAL}
-  \missing{chan2001patterns}
-  \missing{PPMI}
-  \missing{Inititative2010}
-  \missing{Shepp82}
-  \missing{Vardi1985}
-  \missing{dougall_systematic_2004}
-  \missing{Zhou2008}
   \missing{xu2009source}
-  \missing{Alvarez2009}
-  \missing{Vapnik1982}
-  \missing{Locatelli1998}
-  \missing{Medina2008}
-  \missing{Kohavi1995a}
 \endrefsection
 
 \refsection{1}

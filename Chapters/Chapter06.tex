@@ -182,7 +182,7 @@ To better understand the \ac{SBM} maps, and the location of different features, 
 	\label{fig:regionsSub}
 \end{figure*}
 
-\section{Sampling Paths via Hidden Markov Models}
+\section{Sampling Paths via Hidden Markov Models}\label{sec:hmmpaths}
 The rectilinear mapping vector used in the original \ac{SBM} \cite{Martinez-Murcia2014225,Martinez-MurciaVRLBP,Martinez-Murcia2015} has some limitations, partially overcome by the \ac{VRLBP} and the layered extension. However, a more flexible sampling could be beneficial for the computation of texture measures. In this section we present the technique used to define minimum intensity change sampling paths via Hidden Markov Models, that was firstly proposed in \cite{Martinez-Murcia2016}. These paths are defined so that the resulting sampled sets contain information about both intensity and structure of the brain. 
 
 % Algoritmo base de extracción de puntos
@@ -610,20 +610,26 @@ The breakdown of the \ac{SBM} maps into several layers might be considered a enh
 
 
 \subsection{Paths via \ac{HMM}}\label{sec:discussion}
-% DONE
-In this work we propose a new path tracing algorithm based on Hidden Markov Models used to trace similar intensity paths inside the brain. The paths are meant to be used as a feature extraction tool in the \ac{SBM} framework either by selecting voxels or computing features. We have performed several experiments to evaluate these approaches in a differential diagnosis of AD using MRI brain images. 
+Now we will discuss the \ac{HMM} paths proposed in Section~\ref{sec:hmmpaths}, whose results were analysed in Experiments 3, 4 and 5. The paths were proposed as a curvilinear substituent of the \ac{SBM} mapping vector $\mathbf{v}_{\theta,\varphi}$, capable of adapting to the structure changes found in the brain. Our paths $\mathbb{P}_{\theta,\varphi}$ are built upon a minimun intensity variation pathway that starts at the \ac{AC}, and follows the orientation of an attractor placed in the limits of the image at the spherical coordinate pair $(\theta,\varphi)$. 
 
-Our paths are defined so that they construct a minimum intensity variation path starting at the AC and oriented in a general direction set by the spherical coordinate pair $(\theta,\varphi)$. As commented before, the AC is the obvious starting point, given its privileged position in the middle of the left and right hemispheres. A different starting point will reveal suboptimal, stopping at disconnected regions such as the ventricles, and yielding incomplete paths. 
+There is a fundamental reason why \ac{AC} is the best choice as first node of the paths: it is a privileged position where the left and right hemispheres are connected. A different point would lead to suboptimal paths, whose construction might be quickly interrupted by the abrupt changes at the ventricles, and therefore, the resulting set of paths would not cover the entire brain. 
 
-The paths adapt to the intensity changes in a certain direction in the brain, modelling grey level connectivity in all spherical directions. Since grey level is directly related to tissue density, we can assume that the outcome follows smooth, same-density paths that start in white matter and progressively transition to grey matter in a specific direction. Therefore, they are not functional connectivity maps like Diffusion Tensor Imaging (DTI), which have been used as well in the diagnosis of AD\cite{Grana2011,Medina2008}. While DTI fibers are the result of a tensor processing over diffusion images that quantify the water molecule motion -in both direction and average magnitude- at the voxel level, our \ac{HMM} paths only characterize grey level connectivity in static MRI images, and are meant to be used for feature selection. 
+It is important to note that these are not functional connectivity maps like \acf{DTI} fibre tracts, which have also been used in the diagnosis of \ac{AD} \cite{Grana2011,Medina2008}. \ac{DTI} tracts are based upon difussion images that quantify the water molecule motion --in magnitude and direction-- throughout a tensor processing. Our \ac{HMM} path definition, on the other hand, only characterize grey level connectivity in \ac{MRI} images, starting in white matter and progressively transitioning to \ac{GM}, oriented in a fixed direction. This means that, although images like Figure~\ref{fig:accuracyMap} could resemble \ac{DTI} fibres, they are not related at all, and their utility as a feature selection tool is completely different. 
+
+Our paths demonstrated in Experiment 3 that they can adapt easily to two and three-dimensional images, and even to the statistical distribution of points in space (as in the helix example). They were successfully tested against a real world example, aimed at tracing roads on a height map of the iberian peninsula, with the result of paths that closely resemble real roads in which the minimum variation in height is key. 
 
 \begin{figure}
 	\begin{center}
-		\includegraphics[width=\columnwidth]{Graphics/ch6/radia&structures}
+		\includegraphics[width=0.5\textwidth]{Graphics/ch6/radia&structures}
 		\caption{Paths that obtain more than 75\% accuracy, and a three-dimensional representation of the structures crossed by them.}
 		\label{fig:bestPaths}
 	\end{center}
 \end{figure}
+
+Later, in Experiment 4, we used the \ac{HMM} paths as a feature selection tool to construct the set of selected intensities $V_{\theta,\varphi}$, as in the original \ac{SBM}. Individual paths as well as a the pooled intensities of all paths in a hemisphere were tested using a \ac{SVC}. The differences between intensity sets in \ac{AD} and \ac{CTL} were significant enough to achieve accuracies over 80\% in some paths. The paths that 
+
+% DONE
+
 
 Our first experiment uses \ac{HMM} paths computed on the DARTEL template to describe how the intensity of the set of voxels corresponding to a certain path can be used as discriminant features in a SVM classifier. The differences in the distribution of intensities between controls and AD affected subjects are used to identify structural changes in AD. Fig.~\ref{fig:bestPaths} depicts the paths that achieved best performance (accuracy higher than $0.75$) in this differential diagnosis, superimposed to some structures rendered from the Automated Anatomical Labeling (AAL) brain atlas\cite{Tzourio-Mazoyer2002}.
 
