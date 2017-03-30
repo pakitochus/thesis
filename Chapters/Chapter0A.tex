@@ -32,7 +32,26 @@ The \acf{ADNI} was launched in 2003 as a public-private partnership, led by Prin
 
 \ac{ADNI} is the result of efforts of many co-investigators from a broad range of academic institutions and private corporations, and up to 1500 adults (ages 55 to 90) were recruited from over 50 sites across the U.S. and Canada in \ac{ADNI} and its following initiatives \ac{ADNI}-GO and \ac{ADNI}-2. Subjects had completed at least 6 years of education, and were fluent in Spanish or English. For up-to-date information on inclusion/exclusion criteria and other topics, see \url{www.adni-info.org}.
 
-In this thesis we will use data belonging to the \ac{ADNI}-1 initiative. In particular, the database that we call ADNI-MRI correspond to the \ac{MRI} volumes from the `ADNI1: Screening 1.5T' collection (subjects who have a screening data). It contains 818 T1-weighted \ac{MRI} images from \ac{CTL} subjects (229), \ac{MCI} (312 stable and 86 converters) and \ac{AD} (188). To avoid prevalence in our experiments, we have created two subsets that will be used throughout this thesis, randomly selecting 180 subjects from the \ac{AD} and \ac{CTL} classes. 
+In this thesis we will use data belonging to the \ac{ADNI}-1 initiative. In particular, the database that we call ADNI-MRI correspond to the \ac{MRI} volumes from the `ADNI1: Screening 1.5T' collection (subjects who have a screening data). It contains 818 T1-weighted \ac{MRI} images from \ac{CTL} subjects (229), \ac{MCI} (398) and \ac{AD} (191) (see demographic details at Table~\ref{tab:demoADNI-MRI}). To avoid prevalence in some of our experiments, we have created two subsets that will be used throughout this thesis, randomly selecting 180 subjects from the \ac{AD} and \ac{CTL} classes.
+
+\begin{table}[h]
+	\myfloatalign
+	\begin{tabular}{lllcc} 
+		\toprule
+		\tableheadline{Group} & \tableheadline{Sex} & \tableheadline{N} & \tableheadline{Age ($\mu \pm \sigma$ years)} & \tableheadline{MMSE ($\mu \pm \sigma $)}\\
+		\midrule
+		\multirow{2}{*}{AD} & F & 91 & $74.75 \pm 7.63$ & $22.98 \pm 2.65$ \\
+							& M & 100 & $75.72\pm 2.35$ &	$23.15\pm 2.35$\\\midrule
+		\multirow{2}{*}{CTL} & F & 110 & $76.04\pm 0.92$ & $29.21\pm 0.92$\\
+							& M & 119 & $75.70 \pm 1.03$ & $28.95\pm 1.03$\\\midrule
+		\multirow{2}{*}{MCI} &F & 141 & $73.66\pm 2.32$ &	$26.73\pm 2.32$\\
+							& M & 257 & $75.31 \pm 2.11$ &$26.97\pm 2.11$\\
+		\bottomrule
+	\end{tabular}
+	\caption[Demographics of the ADNI-MRI dataset.]{Demographics of the ADNI-MRI dataset.}
+	\label{tab:demoADNI-MRI}
+\end{table}
+
  
 Depending on the experiment, we may use spatially normalized (or registered) T1-weighted \ac{MRI} images, using the SPM8 software (see Section~\ref{sec:spatial}) \cite{spm_book}, or segmented \ac{GM} and \ac{WM} maps. Segmentation was performed using the VBM8 toolbox for SPM \cite{vbm_ref}. 
 
@@ -138,10 +157,33 @@ In total, the database consists of 97 subjects: 41 \ac{CTL}, 30 \ac{AD}-1, 22 \a
 Images were subsequently registered to a custom \ac{SPECT} template, and a posterior intensity normalization could have been applied, which will be reported in each particular case. 
 
 \subsection{VDLN-DAT, Virgen de las Nieves}\label{sec:vdlndat}
-\ac{SPECT} DATSCAN
+This database was supplied by the \ac{VDLN} (Granada). It contains patients that were derived to the nuclear medicine service between 2007 and 2012, after a \ac{PKS} clinical diagnosis, to perform a confirmatory DaTSCAN analysis of the nigrostriatal system. \ac{SPECT} images were acquired after the injection of 185 MBq of DATSCAN on previously thyroid-blocked patients, and acquired using a three head Picker Prism 3000 gamma camera. 
 
+Labels were established by both visual interpretation and exploration quantification, using a delimitation of \ac{ROI} in the striatum. The visual interpretation was subjective by the physicians, mainly by analyzing the total intensity in both striatum, possible asymmetries between them and the existent relationship between the striatal and the background brain activity. For its part, the exploration quantification was performed by computing the radiopharmaceutical activity in counts per pixel for each area, from which measures such as total and differential activity between the striatum and the occipital lobe were obtained. 
 
-73 \ac{CTL}, 45 \ac{PD}, 30 \ac{SWEDD}. 
+This database contains 148 subjects: 45 \ac{CTL}, 73\ac{PD} and 30 \ac{SWEDD}, from which only \ac{CTL} and \ac{PD} were used. For more details on the demographics of this dataset, see Table~\ref{tab:demoVDLN-DAT}. 
+
+\begin{table}[h]will
+	\myfloatalign
+	\begin{tabular}{lllc} 
+		\toprule
+		\tableheadline{Group} & \tableheadline{Sex} & \tableheadline{N} & \tableheadline{Age ($\mu \pm \sigma$ years)}\\
+		\midrule
+		\multirow{2}{*}{\ac{CTL}}   & F & 20 & $73.20 \pm 9.24$	\\
+		& M & 25 & $69.24 \pm 10.80$  \\
+		\midrule
+		\multirow{2}{*}{\ac{SWEDD}} & F & 14 & $73.16 \pm 4.83$\\
+		& M & 16 & $71.50 \pm 8.13$	\\
+		\midrule
+		\multirow{2}{*}{\ac{PD}}    & F & 28 & $69.57 \pm 8.81$	\\
+		& M & 45 & $69.34 \pm 9.38$	\\
+		\bottomrule
+	\end{tabular}
+	\caption[Demographics of the VDLN-DAT dataset.]{Demographics of the VDLN-DAT dataset.}
+	\label{tab:demoVDLN-DAT}
+\end{table}
+
+After the image acquisition, images were preprocessed by means of a spatial normalization, using a template developed by the SiPBA Research Group \cite{Salas-Gonzalez2015}. A posterior intensity normalization could have been performed, depending on the experiment, and it has specifically been stated in each chapter. 
 
 \subsection{VDLV-DAT, Virgen de la Victoria Hospital}\label{sec:vdlvdat}
 The images were obtained after a period of between 3 and 4 hours after the intravenous injection of 185 MBq (5 mCi) of DaTSCAN, with prior thyroid blocking with Lugol's solution. The tomographic study (\ac{SPECT}) with Ioflupane/FP-CIT-I-123 was performed using a General Electric gamma camera, Millennium model, equipped with a dual head and general purpose collimator. A 360-degree circular orbit was made around the cranium, at 3-degree intervals, 60 images with a duration of 35 seconds per interval, $128\times128$ matrix. Image reconstruction was carried out using filtered back-projection algorithms without attenuation correction \cite{Shepp82,Vardi1985}, application of a Hanning filter (frequency 0.7) and images were obtained with transaxial cuts, following the method proposed in \cite{Ramirez2009}. 
@@ -167,7 +209,7 @@ The images were interpreted by three Nuclear Medicine specialists, with masking 
 
 A total of 208 subjects (100 \ac{PD} and 108 \ac{CTL}), randomly selected from the total studies performed in this center until December 2008 and referred to it because of a movement disorder, were included in the study. Clinical diagnosis, a parameter used as `gold Standard' to establish the existence of \ac{PKS}, was made using the diagnostic criteria established previously, with an established minimum follow-up period of 18 months. Those patients who were receiving treatment with drugs that had known or suspected effect on the level of the dopaminergic transporters through direct competitive mechanism were excluded. A more detailed description of the database can be found in \cite{Lozano2007}.
 
-Images were registered to a custom DaTSCAN template developed by the SiPBA Research Group \cite{Salas-Gonzalez2015}, and then, an intensity normalization was usually applied (which will be specified at each experiment). 
+Images were registered to our custom DaTSCAN template, and then, an intensity normalization was usually applied (which will be specified at each experiment). 
 
 \subsection{PPMI-DAT, Parkinson's Progression Markers Initiative}\label{sec:ppmi}
 \ac{PPMI} --a public-private partnership-- is funded by The Michael J. Fox Foundation for Parkinson's Research and funding partners, including Abbott, Biogen Idec, F. Hoffman-La Roche Ltd., GE Healthcare, Genentech and Pfizer Inc. It is a landmark study launched in 2010 aimed at finding biomarkers for \ac{PD} diagnosis and treatments. 
