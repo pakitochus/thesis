@@ -4,10 +4,10 @@
 % If problems with the headers: get headings in appendix etc. right
 %\markboth{\spacedlowsmallcaps{Appendix}}{\spacedlowsmallcaps{Appendix}}
 \chapter{Datasets}\label{ch:datasets}
-Many dataset are used in this thesis, covering three imaging modalities and three disorders. A summary of these can be found on Table~\ref{tab:datasetsOverview}, folowed by a longer description of each one.
+Seven datasets have been used in this thesis, covering three imaging modalities and three different disorders. A summary of these can be found on Table~\ref{tab:datasetsOverview}, followed by a longer description of each one.
 \begin{table}[h]
 	\myfloatalign
-	\begin{tabularx}{\textwidth}{lllll} \toprule
+	\begin{tabular}{lllll} \toprule
 		\tableheadline{Acronym} & \tableheadline{Entity}
 		& \tableheadline{Disease} & \tableheadline{Modality}
 		& \tableheadline{Drug} \\ \midrule
@@ -15,14 +15,14 @@ Many dataset are used in this thesis, covering three imaging modalities and thre
 		AIMS-MRI & \ac{MRC-AIMS} & \ac{ASD} & \ac{MRI} & - \\
 		%postulant quo & westeuropee & sanctificatec \\
 		\midrule
-		ADNI-PET & \ac{ADNI} & \ac{AD} & \ac{PET} & FDG \\
+		ADNI-PET & \acs{ADNI} & \ac{AD} & \ac{PET} & FDG \\
 		\midrule
-		VDLN-HMPAO & \ac{VDLN} & \ac{AD} & \ac{SPECT} & HMPAO \\
-		VDLN-DAT & \ac{VDLN} & \ac{PKS} & \ac{SPECT} & DaTSCAN \\
-		VDLV-DAT & \ac{VDLV} & \ac{PKS} & \ac{SPECT} & DaTSCAN \\
-		PPMI-DAT & \ac{PPMI} & \ac{PKS} & \ac{SPECT} & DaTSCAN \\
+		VDLN-HMPAO & \acs{VDLN} & \ac{AD} & \ac{SPECT} & HMPAO \\
+		VDLN-DAT & \acs{VDLN} & \ac{PKS} & \ac{SPECT} & DaTSCAN \\
+		VDLV-DAT & \acs{VDLV} & \ac{PKS} & \ac{SPECT} & DaTSCAN \\
+		PPMI-DAT & \acs{PPMI} & \ac{PKS} & \ac{SPECT} & DaTSCAN \\
 		\bottomrule
-	\end{tabularx}
+	\end{tabular}
 	\caption[Summary of the datasets used in this thesis.]{Summary of the datasets used in this thesis.}
 	\label{tab:datasetsOverview}
 \end{table}
@@ -54,25 +54,6 @@ In this thesis we will use data belonging to the \ac{ADNI}-1 initiative. In part
 
  
 Depending on the experiment, we may use spatially normalized (or registered) T1-weighted \ac{MRI} images, using the SPM8 software (see Section~\ref{sec:spatial}) \cite{spm_book}, or segmented \ac{GM} and \ac{WM} maps. Segmentation was performed using the VBM8 toolbox for SPM \cite{vbm_ref}. 
-
-Baseline results using \ac{VAF} \cite{Stoeckel04} will be provided for this and other databases. Results for the ADNI-MRI database can be found at Table~\ref{tab:perfADNI-MRI}
-
-\begin{table*}[htp]
-	\myfloatalign
-	\begin{tabular}{lccc}
-		\toprule
-		\tableheadline{Tissue}  & \tableheadline{Accuracy} & \tableheadline{Sensitivity} & \tableheadline{Specificity}\\
-		\midrule
-		T1 & & & \\
-		\ac{GM}  & $0.768 \pm 0.011$ & $0.752 \pm 0.016$ & $0.785 \pm 0.016$ \\
-		\ac{WM}  & $0.642 \pm 0.009$ & $0.668 \pm 0.012$ & $0.617 \pm 0.013$ \\
-
-		\bottomrule
-	\end{tabular}
-	\caption{\acs{VAF} performance (Average $\pm$ Standard Deviation) of the ADNI-MRI dataset in T1-weighted, \ac{GM} and \ac{WM} tissues.}
-	\label{tab:perfADNI-MRI}
-\end{table*}
-
 
 \subsection{AIMS-MRI, \acs{MRC-AIMS} Consortium}\label{sec:aims-mri}
 The \acs{MRC-AIMS} consortium created this database to study \ac{ASD}. A number of adult, right-handed males with no significant mean differences in age and full-scale IQ were recruited by advertisement. Participants were excluded from the study if they had a history of major psychiatric disorder or medical illness affecting brain function (e.g. psychosis or epilepsy), or current drug misuse (including alcohol), or were taking antipsychotic medication, mood stabilizers or benzodiazepines. 
@@ -163,7 +144,7 @@ Labels were established by both visual interpretation and exploration quantifica
 
 This database contains 148 subjects: 45 \ac{CTL}, 73\ac{PD} and 30 \ac{SWEDD}, from which only \ac{CTL} and \ac{PD} were used. For more details on the demographics of this dataset, see Table~\ref{tab:demoVDLN-DAT}. 
 
-\begin{table}[h]will
+\begin{table}[h]
 	\myfloatalign
 	\begin{tabular}{lllc} 
 		\toprule
