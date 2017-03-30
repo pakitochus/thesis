@@ -8,7 +8,7 @@ Many dataset are used in this thesis, covering three imaging modalities and thre
 \begin{table}[h]
 	\myfloatalign
 	\begin{tabularx}{\textwidth}{lllll} \toprule
-		\tableheadline{Acronym} & \tableheadline{Origin}
+		\tableheadline{Acronym} & \tableheadline{Entity}
 		& \tableheadline{Disease} & \tableheadline{Modality}
 		& \tableheadline{Drug} \\ \midrule
 		ADNI-MRI & \ac{ADNI} & \ac{AD} &  \ac{MRI} & - \\
@@ -17,7 +17,7 @@ Many dataset are used in this thesis, covering three imaging modalities and thre
 		\midrule
 		ADNI-PET & \ac{ADNI} & \ac{AD} & \ac{PET} & FDG \\
 		\midrule
-		VDLN-HMPAO & \ac{VDLN} & \ac{AD} & \ac{SPECT} & \ac{HMPAO} \\
+		VDLN-HMPAO & \ac{VDLN} & \ac{AD} & \ac{SPECT} & HMPAO \\
 		VDLN-DAT & \ac{VDLN} & \ac{PKS} & \ac{SPECT} & DaTSCAN \\
 		VDLV-DAT & \ac{VDLV} & \ac{PKS} & \ac{SPECT} & DaTSCAN \\
 		PPMI-DAT & \ac{PPMI} & \ac{PKS} & \ac{SPECT} & DaTSCAN \\
@@ -27,33 +27,40 @@ Many dataset are used in this thesis, covering three imaging modalities and thre
 	\label{tab:datasetsOverview}
 \end{table}
 \section{\acs{MRI}}
-\subsection{ADNI-MRI, Alzheimer's Disease Neuroimaging Initiative}\label{sec:adnimri}
-Data used in the preparation of this article were obtained from the \acf{ADNI} database (adni.loni.usc.edu). The \ac{ADNI} was launched in 2003 as a public-private partnership, led by Principal Investigator Michael W. Weiner, MD. The primary goal of \ac{ADNI} has been to test whether serial \ac{MRI}, \ac{PET}, other biological markers, and clinical and neuropsychological assessment can be combined to measure the progression of \ac{MCI} and \ac{AD}. For up-to-date information, see \url{www.adni-info.org}.
-AD
+\subsection{ADNI-MRI and the Alzheimer's Disease Neuroimaging Initiative}\label{sec:adnimri}
+The \acf{ADNI} was launched in 2003 as a public-private partnership, led by Principal Investigator Michael W. Weiner, MD. Its primary goal has been to test whether serial \ac{MRI}, \ac{PET}, other biological markers, and clinical and neuropsychological assessment can be combined to measure the progression of \ac{MCI} and early \ac{AD}. Determination of sensitive and specific markers of very early AD progression is intended to aid researchers and clinicians to develop new treatments and monitor their effectiveness, as well as lessen the time and cost of clinical trials.
 
-\subsubsection{Baseline - VAF}\label{sec:baseline}
-In order to establish a baseline to assess the predictive ability of our maps, we will use the \acf{VAF} paradigm, described in \cite{Stoeckel04}. This approach uses the whole 3D \ac{GM} or \ac{WM} segmented MR images and then uses all voxels of the 3D images as features in the \ac{SVC} classification, yielding the performance values shown in Table~\ref{tab:perfVAF}. The performance of the \ac{SBM} maps will be compared to these. 
+\ac{ADNI} is the result of efforts of many co-investigators from a broad range of academic institutions and private corporations, and up to 1500 adults (ages 55 to 90) have been recruited from over 50 sites across the U.S. and Canada in \ac{ADNI} and its following initiatives \ac{ADNI}-GO and \ac{ADNI}-2. For up-to-date information, see \url{www.adni-info.org}.
+
+In this thesis we will use data belonging to the \ac{ADNI}-1 initiative. In particular, the database that we call ADNI-MRI correspond to the \ac{MRI} volumes from the `ADNI1: Screening 1.5T' collection (subjects who have a screening data). It contains 818 T1-weighted \ac{MRI} images from \ac{CTL} subjects (229), \ac{MCI} (312 stable and 86 converters) and \ac{AD} (188). To avoid prevalence in our experiments, we have created two subsets that will be used throughout this thesis, randomly selecting 180 subjects from the \ac{AD} and \ac{CTL} classes. 
+ 
+Depending on the experiment, we may use spatially normalized (or registered) T1-weighted \ac{MRI} images, using the SPM8 software (see Section~\ref{sec:spatial}) \cite{spm_book}, or segmented \ac{GM} and \ac{WM} maps. Segmentation was performed using the VBM8 toolbox for SPM \cite{vbm_ref}. 
+
+Baseline results using \ac{VAF} \cite{Stoeckel04} will be provided for this and other databases. Results for the ADNI-MRI database can be found at Table~\ref{tab:perfADNI-MRI}
 
 \begin{table*}[htp]
 	\myfloatalign
-	\begin{tabularx}{\textwidth}{Xccc}
-		\tableheadline{Approach}  & \tableheadline{Accuracy} & \tableheadline{Sensitivity} & \tableheadline{Specificity}\\
+	\begin{tabular}{lccc}
+		\toprule
+		\tableheadline{Tissue}  & \tableheadline{Accuracy} & \tableheadline{Sensitivity} & \tableheadline{Specificity}\\
 		\midrule
-		\ac{VAF} (\ac{GM})  & $0.768 \pm 0.011$ & $0.752 \pm 0.016$ & $0.785 \pm 0.016$ \\
-		\ac{VAF} (\ac{WM})  & $0.642 \pm 0.009$ & $0.668 \pm 0.012$ & $0.617 \pm 0.013$ \\
+		T1 & & & \\
+		\ac{GM}  & $0.768 \pm 0.011$ & $0.752 \pm 0.016$ & $0.785 \pm 0.016$ \\
+		\ac{WM}  & $0.642 \pm 0.009$ & $0.668 \pm 0.012$ & $0.617 \pm 0.013$ \\
 
 		\bottomrule
-	\end{tabularx}
-	\caption{Performance values (Average $\pm$ Standard Deviation) for the  Voxels as Features approach in both \ac{GM} and \ac{WM} tissues.\label{tab:perfVAF}}
+	\end{tabular}
+	\caption{\acs{VAF} performance (Average $\pm$ Standard Deviation) of the ADNI-MRI dataset in T1-weighted, \ac{GM} and \ac{WM} tissues.}
+	\label{tab:perfADNI-MRI}
 \end{table*}
 
 
-\subsection{AIMS-MRI, MRC-AIMS Consortium}\label{sec:aims-mri}
-Structural MRI were analysed from 136 adult, right-handed males (68 with \ac{ASD} and 68 matched controls) with no significant mean differences in age and full-scale IQ, acquired from the centres contributing to the UK \acf{MRC-AIMS} (Ecker, et al., 2013; Ecker, et al., 2012) and recruited by advertisement. In this work, only participants recruited at the Institute of Psychiatry, King’s College London (LON) and the Autism Research Centre, University of Cambridge (CAM) were included where an equivalent set of images were acquired from each participant. 
+\subsection{AIMS-MRI, \acs{MRC-AIMS} Consortium}\label{sec:aims-mri}
+The \acs{MRC-AIMS} consortium created this database to study \ac{ASD}. A number of adult, right-handed males with no significant mean differences in age and full-scale IQ were recruited by advertisement. Participants were excluded from the study if they had a history of major psychiatric disorder or medical illness affecting brain function (e.g. psychosis or epilepsy), or current drug misuse (including alcohol), or were taking antipsychotic medication, mood stabilizers or benzodiazepines. 
 
-Participants were excluded from the study if they had a history of major psychiatric disorder or medical illness affecting brain function (e.g. psychosis or epilepsy), or current drug misuse (including alcohol), or were taking antipsychotic medication, mood stabilizers or benzodiazepines. 
+All participants with \ac{ASD} were diagnosed according to International Classification of Diseases, 10th Revision (ICD-10) research criteria, and confirmed using the Autism Diagnostic Interview-Revised (ADI-R) \cite{Lord1994}. Autism Diagnostic Observation Schedule (ADOS) \cite{Lord2000} was performed, but the score was not considered as an inclusion criteria. \ac{ASD} participants, to be included, must have scored above the ADI-R cut-off in the three domains of impaired reciprocal social interaction, communication and repetitive behaviours and stereotyped patterns, although failure to reach cut-off in one of the domains by one point was permitted. Intellectual ability was assessed using the Wechsler Abbreviated Scale of Intelligence (WASI) \cite{Wechsler1999a}, ensuring the participants fell within the high-functioning range on the spectrum defined by a full-scale IQ > 70.
 
-All participants with \ac{ASD} were diagnosed according to International Classification of Diseases, 10th Revision (ICD-10) research criteria, and confirmed using the Autism Diagnostic Interview-Revised (ADI-R) \cite{Lord1994}. Autism Diagnostic Observation Schedule (ADOS) \cite{Lord2000} was performed, but the score was not considered as an inclusion criteria. \ac{ASD} participants, to be included, must have scored above the ADI-R cut-off in the three domains of impaired reciprocal social interaction, communication and repetitive behaviours and stereotyped patterns, although failure to reach cut-off in one of the domains by one point was permitted. Intellectual ability was assessed using the Wechsler Abbreviated Scale of Intelligence (WASI) \cite{Wechsler1999a}, ensuring the participants fell within the high-functioning range on the spectrum defined by a full-scale IQ > 70. The demographics of the participants are shown in detail in  Table~\ref{tab:demoMRCAIMS}. 
+In this work, only structural \ac{MRI} from participants recruited at the Institute of Psychiatry, King’s College London (LON) and the Autism Research Centre, University of Cambridge (CAM) were included, where an equivalent set of images were acquired from each participant. This makes for a total number of 136 adult, right-handed males (68 with \ac{ASD} and 68 matched controls). The demographics of the participants are shown in detail in Table~\ref{tab:demoMRCAIMS}. 
 
 \begin{table}[h]
 	\myfloatalign
@@ -81,10 +88,12 @@ During the pre-processing of the images, several procedures targeted the reducti
 
 \section{\acs{PET}}
 \subsection{ADNI-PET, Alzheimer's Disease Neuroimaging Initiative}\label{sec:adnipet}
+The ADNI-PET database also refers from images acquired at the \ac{ADNI}. However, in this case we will use $^{18}F$-FDG \ac{PET} images, used to estimate the metabolic activity of the brain. This radiopharmaecutical is a glucose analog, and its distribution of the brain can be used to trace glucose metabolism, and by extension, brain function. 
 
-Data used in the preparation of this article were obtained from the \acf{ADNI} database (adni.loni.usc.edu). The \ac{ADNI} was launched in 2003 as a public-private partnership, led by Principal Investigator Michael W. Weiner, MD. The primary goal of \ac{ADNI} has been to test whether serial \ac{MRI}, \ac{PET}, other biological markers, and clinical and neuropsychological assessment can be combined to measure the progression of \ac{MCI} and \ac{AD}. For up-to-date information, see \url{www.adni-info.org}.
 
-Data used in the preparation of this article were obtained from the \ac{ADNI} database (adni.loni.usc.edu). In this work, the $^{18}F$-FDG \ac{PET} images, used to estimate the metabolic activity of the brain, are used to generate and validate the simulated images. 95 \ac{PET} images from \ac{AD} affected subjects,  207 images from \ac{MCI} affected subjects and 101 images from \ac{CTL} have been used to construct the original $N=403$ set from which the simulation parameters will be obtained. 
+
+
+are used to generate and validate the simulated images. 95 \ac{PET} images from \ac{AD} affected subjects,  207 images from \ac{MCI} affected subjects and 101 images from \ac{CTL} have been used to construct the original $N=403$ set from which the simulation parameters will be obtained. 
 
 
 For this work, we focus on the $^{18}F$-FDG \ac{PET} images available. This radiopharmaecutical is a glucose analog, and its distribution of the brain can be used to trace glucose metabolism, and by extension, brain function. The \ac{ADNI} \ac{PET} subset here contains $N=403$ images: 95 images from individuals affected by  \ac{AD}, 207 images from \ac{MCI} subjects and 101 images from  \ac{CTL}. 

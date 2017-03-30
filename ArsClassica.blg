@@ -1,38 +1,39 @@
 [0] Config.pm:343> INFO - This is Biber 2.5
 [0] Config.pm:346> INFO - Logfile is 'ArsClassica.blg'
-[39] biber:290> INFO - === mié mar 29, 2017, 20:07:17
-[149] Biber.pm:352> INFO - Reading 'ArsClassica.bcf'
-[325] Biber.pm:777> INFO - Found 14 citekeys in bib section 0
-[326] Biber.pm:774> INFO - Using all citekeys in bib section 1
-[330] Biber.pm:777> INFO - Found 153 citekeys in bib section 0
-[355] Biber.pm:3494> INFO - Processing section 0
-[364] Biber.pm:3658> INFO - Looking for bibtex format file 'referencias.bib' for section 0
-[1041] bibtex.pm:1176> INFO - Decoding LaTeX character macros into UTF-8
-[1625] bibtex.pm:1037> INFO - Found BibTeX data source 'referencias.bib'
-[1921] Utils.pm:149> WARN - Overwriting field 'year' with year value from field 'date' for entry 'Hastie2009'
-[1926] Utils.pm:149> WARN - Overwriting field 'year' with year value from field 'date' for entry 'DaelemansHosteMeulderEtAl2003'
-[1926] Utils.pm:149> WARN - Overwriting field 'month' with month value from field 'date' for entry 'DaelemansHosteMeulderEtAl2003'
-[2144] Biber.pm:3658> INFO - Looking for bibtex format file 'FJMM_Publications.bib' for section 0
-[2225] bibtex.pm:1176> INFO - Decoding LaTeX character macros into UTF-8
-[2291] bibtex.pm:1037> INFO - Found BibTeX data source 'FJMM_Publications.bib'
-[2601] UCollate.pm:66> INFO - Overriding locale 'en-US' defaults 'normalization = NFD' with 'normalization = prenormalized'
-[2601] UCollate.pm:66> INFO - Overriding locale 'en-US' defaults 'variable = shifted' with 'variable = non-ignorable'
-[2601] Biber.pm:3307> INFO - Sorting list 'ydnt/global/' of type 'entry' with scheme 'ydnt' and locale 'en-US'
-[2602] Biber.pm:3311> INFO - No sort tailoring available for locale 'en-US'
-[2843] UCollate.pm:66> INFO - Overriding locale 'en-US' defaults 'normalization = NFD' with 'normalization = prenormalized'
-[2843] UCollate.pm:66> INFO - Overriding locale 'en-US' defaults 'variable = shifted' with 'variable = non-ignorable'
-[2843] Biber.pm:3307> INFO - Sorting list 'nyt/global/' of type 'entry' with scheme 'nyt' and locale 'en-US'
-[2843] Biber.pm:3311> INFO - No sort tailoring available for locale 'en-US'
-[3079] Biber.pm:3494> INFO - Processing section 1
-[3079] Biber.pm:3658> INFO - Looking for bibtex format file 'FJMM_Publications.bib' for section 1
-[3188] UCollate.pm:66> INFO - Overriding locale 'en-US' defaults 'normalization = NFD' with 'normalization = prenormalized'
-[3188] UCollate.pm:66> INFO - Overriding locale 'en-US' defaults 'variable = shifted' with 'variable = non-ignorable'
-[3189] Biber.pm:3307> INFO - Sorting list 'ydnt/global/' of type 'entry' with scheme 'ydnt' and locale 'en-US'
-[3189] Biber.pm:3311> INFO - No sort tailoring available for locale 'en-US'
-[3223] UCollate.pm:66> INFO - Overriding locale 'en-US' defaults 'normalization = NFD' with 'normalization = prenormalized'
-[3223] UCollate.pm:66> INFO - Overriding locale 'en-US' defaults 'variable = shifted' with 'variable = non-ignorable'
-[3223] Biber.pm:3307> INFO - Sorting list 'nyt/global/' of type 'entry' with scheme 'nyt' and locale 'en-US'
-[3223] Biber.pm:3311> INFO - No sort tailoring available for locale 'en-US'
-[3250] bbl.pm:526> INFO - Writing 'ArsClassica.bbl' with encoding 'UTF-8'
-[5761] bbl.pm:619> INFO - Output to ArsClassica.bbl
-[5761] Biber.pm:109> INFO - WARNINGS: 3
+[50] biber:290> INFO - === jue mar 30, 2017, 09:22:34
+[170] Biber.pm:352> INFO - Reading 'ArsClassica.bcf'
+[341] Biber.pm:777> INFO - Found 14 citekeys in bib section 0
+[341] Biber.pm:774> INFO - Using all citekeys in bib section 1
+[346] Biber.pm:777> INFO - Found 155 citekeys in bib section 0
+[372] Biber.pm:3494> INFO - Processing section 0
+[381] Biber.pm:3658> INFO - Looking for bibtex format file 'referencias.bib' for section 0
+[1047] bibtex.pm:1176> INFO - Decoding LaTeX character macros into UTF-8
+[1586] bibtex.pm:1037> INFO - Found BibTeX data source 'referencias.bib'
+[1900] Utils.pm:149> WARN - Overwriting field 'year' with year value from field 'date' for entry 'Hastie2009'
+[1904] Utils.pm:149> WARN - Overwriting field 'year' with year value from field 'date' for entry 'DaelemansHosteMeulderEtAl2003'
+[1904] Utils.pm:149> WARN - Overwriting field 'month' with month value from field 'date' for entry 'DaelemansHosteMeulderEtAl2003'
+[2143] Biber.pm:3658> INFO - Looking for bibtex format file 'FJMM_Publications.bib' for section 0
+[2222] bibtex.pm:1176> INFO - Decoding LaTeX character macros into UTF-8
+[2284] bibtex.pm:1037> INFO - Found BibTeX data source 'FJMM_Publications.bib'
+[2326] Utils.pm:149> WARN - I didn't find a database entry for 'ADNI' (section 0)
+[2569] UCollate.pm:66> INFO - Overriding locale 'en-US' defaults 'variable = shifted' with 'variable = non-ignorable'
+[2569] UCollate.pm:66> INFO - Overriding locale 'en-US' defaults 'normalization = NFD' with 'normalization = prenormalized'
+[2569] Biber.pm:3307> INFO - Sorting list 'ydnt/global/' of type 'entry' with scheme 'ydnt' and locale 'en-US'
+[2569] Biber.pm:3311> INFO - No sort tailoring available for locale 'en-US'
+[2800] UCollate.pm:66> INFO - Overriding locale 'en-US' defaults 'variable = shifted' with 'variable = non-ignorable'
+[2800] UCollate.pm:66> INFO - Overriding locale 'en-US' defaults 'normalization = NFD' with 'normalization = prenormalized'
+[2800] Biber.pm:3307> INFO - Sorting list 'nyt/global/' of type 'entry' with scheme 'nyt' and locale 'en-US'
+[2801] Biber.pm:3311> INFO - No sort tailoring available for locale 'en-US'
+[3020] Biber.pm:3494> INFO - Processing section 1
+[3020] Biber.pm:3658> INFO - Looking for bibtex format file 'FJMM_Publications.bib' for section 1
+[3121] UCollate.pm:66> INFO - Overriding locale 'en-US' defaults 'variable = shifted' with 'variable = non-ignorable'
+[3121] UCollate.pm:66> INFO - Overriding locale 'en-US' defaults 'normalization = NFD' with 'normalization = prenormalized'
+[3121] Biber.pm:3307> INFO - Sorting list 'ydnt/global/' of type 'entry' with scheme 'ydnt' and locale 'en-US'
+[3121] Biber.pm:3311> INFO - No sort tailoring available for locale 'en-US'
+[3153] UCollate.pm:66> INFO - Overriding locale 'en-US' defaults 'normalization = NFD' with 'normalization = prenormalized'
+[3153] UCollate.pm:66> INFO - Overriding locale 'en-US' defaults 'variable = shifted' with 'variable = non-ignorable'
+[3153] Biber.pm:3307> INFO - Sorting list 'nyt/global/' of type 'entry' with scheme 'nyt' and locale 'en-US'
+[3153] Biber.pm:3311> INFO - No sort tailoring available for locale 'en-US'
+[3179] bbl.pm:526> INFO - Writing 'ArsClassica.bbl' with encoding 'UTF-8'
+[5911] bbl.pm:619> INFO - Output to ArsClassica.bbl
+[5911] Biber.pm:109> INFO - WARNINGS: 4

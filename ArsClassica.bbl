@@ -6134,6 +6134,51 @@
       \field{pages}{11\bibrangedash 22}
       \range{pages}{12}
     \endentry
+    \entry{vbm_ref}{article}{}
+      \name{author}{4}{}{%
+        {{hash=edac40634cacc45c898688e41933e3fa}{%
+           family={Luders},
+           family_i={L\bibinitperiod},
+           given={E},
+           given_i={E\bibinitperiod}}}%
+        {{hash=6171bc84011bd4b3d1b464283c89eef3}{%
+           family={Gaser},
+           family_i={G\bibinitperiod},
+           given={C},
+           given_i={C\bibinitperiod}}}%
+        {{hash=99a3b10c5de708ae2f4212e64cbf5bff}{%
+           family={Jancke},
+           family_i={J\bibinitperiod},
+           given={L},
+           given_i={L\bibinitperiod}}}%
+        {{hash=7a4790a26a4764d0bd9a50b5f09befe1}{%
+           family={Schlaug},
+           family_i={S\bibinitperiod},
+           given={G},
+           given_i={G\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Elsevier BV}%
+      }
+      \strng{namehash}{1d2924f36e54c9aed933e08c66ba0900}
+      \strng{fullhash}{a42c7808bffd8157f4ffb0b3e09a10f6}
+      \field{sortinit}{2}
+      \field{sortinithash}{8343b463aacf48517c044b4d2c9c45ed}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issn}{1053-8119}
+      \field{journaltitle}{Neuroimage}
+      \field{month}{06}
+      \field{number}{2}
+      \field{title}{A voxel-based approach to gray matter asymmetries}
+      \field{volume}{22}
+      \field{year}{2004}
+      \field{pages}{656\bibrangedash 664}
+      \range{pages}{9}
+      \verb{doi}
+      \verb 10.1016/j.neuroimage.2004.01.032
+      \endverb
+    \endentry
     \entry{dougall_systematic_2004}{article}{}
       \name{author}{1}{}{%
         {{hash=6e5cf6b4399bb5e81b05bd124d9a8cd5}{%
@@ -12572,6 +12617,51 @@
       \endverb
       \keyw{Parkinsonism}
     \endentry
+    \entry{vbm_ref}{article}{}
+      \name{author}{4}{}{%
+        {{hash=edac40634cacc45c898688e41933e3fa}{%
+           family={Luders},
+           family_i={L\bibinitperiod},
+           given={E},
+           given_i={E\bibinitperiod}}}%
+        {{hash=6171bc84011bd4b3d1b464283c89eef3}{%
+           family={Gaser},
+           family_i={G\bibinitperiod},
+           given={C},
+           given_i={C\bibinitperiod}}}%
+        {{hash=99a3b10c5de708ae2f4212e64cbf5bff}{%
+           family={Jancke},
+           family_i={J\bibinitperiod},
+           given={L},
+           given_i={L\bibinitperiod}}}%
+        {{hash=7a4790a26a4764d0bd9a50b5f09befe1}{%
+           family={Schlaug},
+           family_i={S\bibinitperiod},
+           given={G},
+           given_i={G\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Elsevier BV}%
+      }
+      \strng{namehash}{1d2924f36e54c9aed933e08c66ba0900}
+      \strng{fullhash}{a42c7808bffd8157f4ffb0b3e09a10f6}
+      \field{sortinit}{L}
+      \field{sortinithash}{872351f18d0f736066eda0bf18bfa4f7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issn}{1053-8119}
+      \field{journaltitle}{Neuroimage}
+      \field{month}{06}
+      \field{number}{2}
+      \field{title}{A voxel-based approach to gray matter asymmetries}
+      \field{volume}{22}
+      \field{year}{2004}
+      \field{pages}{656\bibrangedash 664}
+      \range{pages}{9}
+      \verb{doi}
+      \verb 10.1016/j.neuroimage.2004.01.032
+      \endverb
+    \endentry
     \entry{Ma1993}{article}{}
       \name{author}{3}{}{%
         {{hash=66d365c9699fa36b959afcec99c12a36}{%
@@ -16734,6 +16824,7 @@
       \range{pages}{18}
     \endentry
   \endsortlist
+  \missing{ADNI}
 \endrefsection
 
 \refsection{1}
