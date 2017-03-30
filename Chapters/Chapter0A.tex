@@ -30,7 +30,7 @@ Many dataset are used in this thesis, covering three imaging modalities and thre
 \subsection{ADNI-MRI and the Alzheimer's Disease Neuroimaging Initiative}\label{sec:adnimri}
 The \acf{ADNI} was launched in 2003 as a public-private partnership, led by Principal Investigator Michael W. Weiner, MD. Its primary goal has been to test whether serial \ac{MRI}, \ac{PET}, other biological markers, and clinical and neuropsychological assessment can be combined to measure the progression of \ac{MCI} and early \ac{AD}. Determination of sensitive and specific markers of very early AD progression is intended to aid researchers and clinicians to develop new treatments and monitor their effectiveness, as well as lessen the time and cost of clinical trials.
 
-\ac{ADNI} is the result of efforts of many co-investigators from a broad range of academic institutions and private corporations, and up to 1500 adults (ages 55 to 90) have been recruited from over 50 sites across the U.S. and Canada in \ac{ADNI} and its following initiatives \ac{ADNI}-GO and \ac{ADNI}-2. For up-to-date information, see \url{www.adni-info.org}.
+\ac{ADNI} is the result of efforts of many co-investigators from a broad range of academic institutions and private corporations, and up to 1500 adults (ages 55 to 90) were recruited from over 50 sites across the U.S. and Canada in \ac{ADNI} and its following initiatives \ac{ADNI}-GO and \ac{ADNI}-2. Subjects had completed at least 6 years of education, and were fluent in Spanish or English. For up-to-date information on inclusion/exclusion criteria and other topics, see \url{www.adni-info.org}.
 
 In this thesis we will use data belonging to the \ac{ADNI}-1 initiative. In particular, the database that we call ADNI-MRI correspond to the \ac{MRI} volumes from the `ADNI1: Screening 1.5T' collection (subjects who have a screening data). It contains 818 T1-weighted \ac{MRI} images from \ac{CTL} subjects (229), \ac{MCI} (312 stable and 86 converters) and \ac{AD} (188). To avoid prevalence in our experiments, we have created two subsets that will be used throughout this thesis, randomly selecting 180 subjects from the \ac{AD} and \ac{CTL} classes. 
  
@@ -88,15 +88,26 @@ During the pre-processing of the images, several procedures targeted the reducti
 
 \section{\acs{PET}}
 \subsection{ADNI-PET, Alzheimer's Disease Neuroimaging Initiative}\label{sec:adnipet}
-The ADNI-PET database also refers from images acquired at the \ac{ADNI}. However, in this case we will use $^{18}F$-FDG \ac{PET} images, used to estimate the metabolic activity of the brain. This radiopharmaecutical is a glucose analog, and its distribution of the brain can be used to trace glucose metabolism, and by extension, brain function. 
+The ADNI-PET database also refers from images acquired at the \ac{ADNI}. However, in this case we will use $^{18}F$-FDG \ac{PET} images, used to estimate the metabolic activity of the brain. This radiopharmaecutical is a glucose analog, and its distribution of the brain can be used to trace glucose metabolism, and by extension, brain function. The acquisition procedure is detailed at their website (\url{http://www.loni.ucla.edu/ADNI/Data/ADNI_Data.shtml}). In brief, \ac{PET} images were acquired at a variety of scanners nationwide using either a 30-min six frame scan acquired 30–60 min post-injection or a static 30-min single-frame scan acquired 30–60 min post-injection. The resulting images were aligned along the AC-PC line and a subject-specific intensity normalization was applied, so that the sum of all voxels in the cerebral mask of each subject summed to one. Finally, images were smoothed using the smallest resolution across all scanners, with a uniform isotropic filter of 8mm FWHM. 
 
+We used 403 images from the ADNI1 screening database: 95 \ac{PET} images from \ac{AD} affected subjects,  207 images from \ac{MCI} affected subjects and 101 images from \ac{CTL}. Demographic details of this population can be found at Table~\ref{tab:demoADNI-PET}. 
 
+\begin{table}[h]
+	\myfloatalign
+	\begin{tabular}{lllcc} 
+		\toprule
+		 \tableheadline{Group} & \tableheadline{N} & \tableheadline{Age ($\mu \pm \sigma$ years)} & \tableheadline{MMSE ($\mu \pm \sigma $)}\\
+		\midrule
+		 \ac{AD} & 95 & $77.2 \pm 7.5$ & $23.4 \pm 2.1$ \\
+		 \ac{MCI} & 207 & $76.6 \pm 7.2$ &	$27.2 \pm 1.7$\\
+		\ac{CTL} & 101 & $77.8 \pm 4.6$ & $29.0 \pm 1.1$\\
+		\bottomrule
+	\end{tabular}
+	\caption[Demographics of the AIMS-MRI dataset.]{Demographics of the AIMS-MRI dataset.}
+	\label{tab:demoADNI-PET}
+\end{table}
 
-
-are used to generate and validate the simulated images. 95 \ac{PET} images from \ac{AD} affected subjects,  207 images from \ac{MCI} affected subjects and 101 images from \ac{CTL} have been used to construct the original $N=403$ set from which the simulation parameters will be obtained. 
-
-
-For this work, we focus on the $^{18}F$-FDG \ac{PET} images available. This radiopharmaecutical is a glucose analog, and its distribution of the brain can be used to trace glucose metabolism, and by extension, brain function. The \ac{ADNI} \ac{PET} subset here contains $N=403$ images: 95 images from individuals affected by  \ac{AD}, 207 images from \ac{MCI} subjects and 101 images from  \ac{CTL}. 
+Further preprocessing of these images included spatial normalization, via the SPM8 software and its \ac{PET} template, and intensity normalization. The type of intensity normalization will be specified in each chapter, because it depends on the application. 
 
 \section{\acs{SPECT}}
 
@@ -107,7 +118,7 @@ The database is built up of imaging studies of subjects following the protocol o
 	\begin{center}
 		\begin{tabular}{lccc}
 			\toprule
-			          & $\#$samples & Sex(M/F)(\%) & $\mu$[range/$\sigma$] \\ 
+			          & $\#$samples & Sex(M/F)(\%) & Age $\mu$[range/$\sigma$] \\ 
 			          \midrule
 			\ac{CTL}  &     41      & 32.95/12.19  &     71.51[46-85/7.99] \\
 			\ac{AD}-1 &     29      & 10.97/18.29  &    65.29[23-81/13.36] \\
