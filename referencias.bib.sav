@@ -2033,11 +2033,10 @@
 }
 
 @Book{Wechsler1999a,
-  title         = {Wechsler abbreviated scale of intelligence},
-  publisher     = {Psychological Corporation},
-  year          = {1999},
-  author        = {Wechsler, David},
-  __markedentry = {[pakitochus:]},
+  title     = {Wechsler abbreviated scale of intelligence},
+  publisher = {Psychological Corporation},
+  year      = {1999},
+  author    = {Wechsler, David},
 }
 
 @Article{Lai2012,
@@ -2048,7 +2047,7 @@
   volume        = {61},
   number        = {4},
   pages         = {1347--1354},
-  __markedentry = {[pakitochus:6]},
+  __markedentry = {[pakitochus:]},
   publisher     = {Elsevier},
 }
 
@@ -2136,11 +2135,10 @@
 }
 
 @Book{Simonoff2012,
-  title         = {Smoothing methods in statistics},
-  publisher     = {Springer Science \& Business Media},
-  year          = {2012},
-  author        = {Simonoff, Jeffrey S},
-  __markedentry = {[pakitochus:]},
+  title     = {Smoothing methods in statistics},
+  publisher = {Springer Science \& Business Media},
+  year      = {2012},
+  author    = {Simonoff, Jeffrey S},
 }
 
 @Article{Shepp82,
@@ -2204,6 +2202,18 @@
   owner     = {pakitochus},
   publisher = {Elsevier BV},
   timestamp = {2015.07.06},
+}
+
+@Article{Salas-Gonzalez2015,
+  author        = {Salas-Gonzalez, Diego and G{\'o}rriz, Juan M and Ram{\'i}rez, Javier and Ill{\'a}n, Ignacio A and Padilla, Pablo and Mart{\'i}nez-Murcia, Francisco J and Lang, Elmar W},
+  title         = {Building a FP-CIT SPECT Brain Template Using a Posterization Approach},
+  journal       = {Neuroinformatics},
+  year          = {2015},
+  volume        = {13},
+  number        = {4},
+  pages         = {391--402},
+  __markedentry = {[pakitochus:6]},
+  publisher     = {Springer},
 }
 
 @Comment{jabref-meta: databaseType:bibtex;}

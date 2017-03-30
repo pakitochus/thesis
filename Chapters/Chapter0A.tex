@@ -103,7 +103,7 @@ We used 403 images from the ADNI1 screening database: 95 \ac{PET} images from \a
 		\ac{CTL} & 101 & $77.8 \pm 4.6$ & $29.0 \pm 1.1$\\
 		\bottomrule
 	\end{tabular}
-	\caption[Demographics of the AIMS-MRI dataset.]{Demographics of the AIMS-MRI dataset.}
+	\caption[Demographics of the ADNI-PET dataset.]{Demographics of the ADNI-PET dataset.}
 	\label{tab:demoADNI-PET}
 \end{table}
 
@@ -112,24 +112,30 @@ Further preprocessing of these images included spatial normalization, via the SP
 \section{\acs{SPECT}}
 
 \subsection{VDLN-HMPAO, Virgen de las Nieves}\label{sec:vdlnhmpao}
-The database is built up of imaging studies of subjects following the protocol of an hospital-based service. First, the neurologist evaluated the cognitive function, and those patients with findings of memory loss or dementia were referred to the nuclear medicine department in the ``Virgen de las Nieves'' hospital (Granada, Spain), in order to acquire complementary screening information for diagnosis\footnote{Clinical information is unfortunately not available for privacy reasons, but only demographic  information}. Experienced physicians evaluated the images visually. The images were assessed using 4 different labels: \ac{CTL} for subjects without scintigraphic abnormalities and mild perfusion deficit (\ac{AD}-1), moderate deficit (\ac{AD}-2) and severe deficit (\ac{AD}-3), to distinguish between different levels of presence of hypo-perfusion patterns compatible with \ac{AD}. In total, the database consists of $n=$97 subjects: 41 \ac{CTL}, 30 \ac{AD}-1, 22 \ac{AD}-2 and 4 \ac{AD}-3 (see table \ref{tab:bd} for demographic details). Since the patients are not pathologically confirmed, the subject's labels possesses some degree of uncertainty, as the pattern of hypo-perfusion may not reflect the underlying pathology of AD, nor the different classification of scans necessarily reflect the severity of the patients symptoms. However, when pathological information is available, visual assessments by experts have been shown to be very sensitive and specific labelling methods, in contrast to neuropsychological tests \cite{jobst_accurate_1998,dougall_systematic_2004}. Given that this is an inherent limitation of `in vivo' studies, our working-assumption is that the labels are true, considering the subject label positive when belonging to any of the \ac{AD} classes, and negative otherwise. 
+The database is built up of imaging studies of subjects following the protocol of a hospital-based service. First, the neurologist evaluated the cognitive function, and those patients with findings of memory loss or dementia were referred to the nuclear medicine department in the \acf{VDLN} (Granada, Spain), in order to acquire complementary screening information for diagnosis\footnote{Clinical information is unfortunately not available for privacy reasons, but only demographic  information}. 
+
+The images were visually evaluated by experienced physicians, using 4 different labels: \ac{CTL} for subjects without scintigraphic abnormalities and mild perfusion deficit (\ac{AD}-1), moderate deficit (\ac{AD}-2) and severe deficit (\ac{AD}-3), to differentiate between levels of hypo-perfusion patterns compatible with \ac{AD}. 
+
+In total, the database consists of 97 subjects: 41 \ac{CTL}, 30 \ac{AD}-1, 22 \ac{AD}-2 and 4 \ac{AD}-3 (see table \ref{tab:demoVDLN-HMPAO}for demographic details). Since the patients are not pathologically confirmed, the subject's labels possesses some degree of uncertainty, as the pattern of hypo-perfusion may not reflect the underlying pathology of AD, nor the different classification of scans necessarily reflect the severity of the patients symptoms. However, when pathological information is available, visual assessments by experts have been shown to be very sensitive and specific labelling methods, in contrast to neuropsychological tests \cite{jobst_accurate_1998,dougall_systematic_2004}. Given that this is an inherent limitation of `in vivo' studies, our working-assumption is that the labels are true, considering the subject label positive when belonging to any of the \ac{AD} classes, and negative otherwise. 
 
 \begin{table}
 	\begin{center}
 		\begin{tabular}{lccc}
 			\toprule
-			          & $\#$samples & Sex(M/F)(\%) & Age $\mu$[range/$\sigma$] \\ 
+			          & \tableheadline{N} & \tableheadline{Sex(M/F)(\%)} & \tableheadline{Age ($\mu \pm \sigma$ years)} \\ 
 			          \midrule
-			\ac{CTL}  &     41      & 32.95/12.19  &     71.51[46-85/7.99] \\
-			\ac{AD}-1 &     29      & 10.97/18.29  &    65.29[23-81/13.36] \\
-			\ac{AD}-2 &     22      &  13.41/9.76  &     65.73[46-86/8.25] \\
-			\ac{AD}-3 &      4      &    0/2.43    &        76[69-83/9.90] \\ 
+			\ac{CTL}  &     41      & 32.95/12.19  &     $71.51 \pm 7.99$ \\
+			\ac{AD}-1 &     29      & 10.97/18.29  &    $65.29 \pm 13.36$ \\
+			\ac{AD}-2 &     22      &  13.41/9.76  &     $65.73 \pm 8.25$ \\
+			\ac{AD}-3 &      4      &    0/2.43    &        $76 \pm 9.90$ \\ 
 			\bottomrule
 		\end{tabular}
-		\caption[Demographic details of the ADNI-PET dataset.]{Demographic details of the ADNI-PET dataset. \ac{CTL} = Normal Controls, \ac{AD}-1 = possible \ac{AD}, \ac{AD}-2 = probable \ac{AD}, \ac{AD}-3 = certain \ac{AD}. $\mu$ and $\sigma$ stands for population mean and standard deviation respectively.}
-		\label{tab:bd}
+		\caption[Demographic details of the VDLN-HMPAO dataset.]{Demographic details of the VDLN-HMPAO dataset. \ac{CTL} = Normal Controls, \ac{AD}-1 = possible \ac{AD}, \ac{AD}-2 = probable \ac{AD}, \ac{AD}-3 = certain \ac{AD}. $\mu$ and $\sigma$ stands for population mean and standard deviation respectively.}
+		\label{tab:demoVDLN-HMPAO}
 	\end{center}
 \end{table}
+
+Images were subsequently registered to a custom \ac{SPECT} template, and a posterior intensity normalization could have been applied, which will be reported in each particular case. 
 
 \subsection{VDLN-DAT, Virgen de las Nieves}\label{sec:vdlndat}
 \ac{SPECT} DATSCAN
@@ -142,13 +148,50 @@ The images were obtained after a period of between 3 and 4 hours after the intra
 
 The images were interpreted by three Nuclear Medicine specialists, with masking of the clinical orientation. Visual assessment was established by exclusively considering the normal/abnormal criterion and after arriving at a consensus report between the three specialists, \ie whether the FP-CIT \ac{SPECT} allowed differentiation of a group of conditions with presynaptic involvement from others in which their integrity is assumed, without trying to assign them to different clinical groups within the set of pathological studies. A study was considered to be normal when bilateral, symmetrical uptake appeared in caudate and putamen nuclei, and abnormal when there were areas of qualitatively reduced uptake in any of the striatal structures. 
 
-A total of 208 subjects (100 patients and 108 controls), randomly selected from the total studies performed in this center until December 2008 and referred to it because of a movement disorder, were included in the study. Mean age was 70.2 years (41-87) with a standard deviation of 10.2 years (a detailed description of the database can be found in \cite{Lozano2007}). Clinical diagnosis, a parameter used as `gold Standard' to establish the existence of \ac{PKS}, was made using the diagnostic criteria established previously, with an established minimum follow-up period of 18 months. Those patients who were receiving treatment with drugs that had known or suspected effect on the level of the dopaminergic transporters through direct competitive mechanism were excluded. Although \ac{PD} is the most representative pathology of \ac{PKS}, there are other medical conditions which, though they differ clinically from this, are also expressed by this set of symptoms. Some of them are multisystem atrophy (MSA), progressive supra-nuclear palsy (PSP) and corticobasal degeneration (CBD), in which, unlike \ac{PD}, as well as involvement of the presynaptic terminal, there is involvement at the post-synaptic level of the nigrostriatal pathway. 
+\begin{table}[h]
+	\myfloatalign
+	\begin{tabular}{lllc} 
+		\toprule
+		\tableheadline{Group} & \tableheadline{Sex} & \tableheadline{N} & \tableheadline{Age ($\mu \pm \sigma$ years)}\\
+		\midrule
+		\multirow{2}{*}{\ac{CTL}}   & F & 54 & $68.51 \pm 10.54$	\\
+		& M & 54 & $69.58 \pm 10.01$  \\
+		\midrule
+		\multirow{2}{*}{\ac{PD}}    & F & 47 & $67.61 \pm 10.24$	\\
+		& M & 53 & $69.52 \pm 8.78$	\\
+		\bottomrule
+	\end{tabular}
+	\caption[Demographics of the VDLV-DAT dataset.]{Demographics of the VDLV-DAT dataset.}
+	\label{tab:demoVDLV-DAT}
+\end{table}
+
+A total of 208 subjects (100 \ac{PD} and 108 \ac{CTL}), randomly selected from the total studies performed in this center until December 2008 and referred to it because of a movement disorder, were included in the study. Clinical diagnosis, a parameter used as `gold Standard' to establish the existence of \ac{PKS}, was made using the diagnostic criteria established previously, with an established minimum follow-up period of 18 months. Those patients who were receiving treatment with drugs that had known or suspected effect on the level of the dopaminergic transporters through direct competitive mechanism were excluded. A more detailed description of the database can be found in \cite{Lozano2007}.
+
+Images were registered to a custom DaTSCAN template developed by the SiPBA Research Group \cite{Salas-Gonzalez2015}, and then, an intensity normalization was usually applied (which will be specified at each experiment). 
 
 \subsection{PPMI-DAT, Parkinson's Progression Markers Initiative}\label{sec:ppmi}
-Data used in the preparation of this article were obtained from the \acf{PPMI} database (\url{www.ppmi-info.org/data}). For up-to-date information on the study, visit \url{www.ppmi-info.org}.
+\ac{PPMI} --a public-private partnership-- is funded by The Michael J. Fox Foundation for Parkinson's Research and funding partners, including Abbott, Biogen Idec, F. Hoffman-La Roche Ltd., GE Healthcare, Genentech and Pfizer Inc. It is a landmark study launched in 2010 aimed at finding biomarkers for \ac{PD} diagnosis and treatments. 
 
-The images in this database were imaged 4 + 0.5 hours after the injection of between 111 and 185 MBq of DaTSCAN. Subjects were also pretreated with saturated iodine solution (10 drops in water) or perchlorate (1000 mg) prior to the injection. All subjects had a supplied $^{57}$Co line marker affixed along the canthomeatal line, which will facilitate subsequent image processing and allow the core lab to accurately distinguish left and right in the face of multiple image file transfers. These markers are only evident in the $^{57}$Co window and hence do not contaminate the $^{123}$I-DaTSCAN brain data \cite{PPMI,Inititative2010}. 
+The images in this dataset were acquired after the injection of between 111 and 185 MBq of DaTSCAN, in subjects that had been pretreated with saturated iodine solution. To facilitate image processing and preserve lateality, a $^{57}$Co line marker was affixed along the canthomeatal line, which does not affect the \acp{ROI} \cite{PPMI,Inititative2010}. For up-to-date information on the study, visit \url{www.ppmi-info.org}.
 
-111 \ac{CTL}, 32 \ac{SWEDD} and 158 \ac{PD}
+The PPMI-DAT refers to a subset of the DaTSCAN screening data of the \ac{PPMI} initiative, containing 301 subjects: 111 \ac{CTL}, 31 \ac{SWEDD} and 159 \ac{PD}. These images were later registered to the custom DaTSCAN template defined previously, and depending on the experiment, an intensity normalization was applied. Demographic details of these subjects can be found at Table~\ref{tab:demoPPMI-DAT}.
 
-Raw projection data are acquired into a $128 \times 128$ matrix stepping each 3 degrees for a total of 120 projection into two 20\% symmetric photopeak windows centered on 159 KeV and 122 KeV with a total scan duration of approximately 30 - 45 minutes. Other scan parameters (collimation, acquisition mode, etc.) are selected for each site. The images of both the subject's data and the cobalt striatal phantom are reconstructed and attenuation corrected, implementing either filtered back-projection or an iterative reconstruction algorithm using standardized approaches \cite{Inititative2010}. After the processing, the database contains $289$ spatially normalized images, $114$ from \ac{CTL} subjects and $175$ from \ac{PD} patients, and of a $91\times109\times91$ size. 
+\begin{table}[h]
+	\myfloatalign
+	\begin{tabular}{lllc} 
+		\toprule
+		\tableheadline{Group} & \tableheadline{Sex} & \tableheadline{N} & \tableheadline{Age ($\mu \pm \sigma$ years)}\\
+		\midrule
+		\multirow{2}{*}{\ac{CTL}}   & F & 45 & $55.37 \pm 10.97$	\\
+								    & M & 66 & $59.68 \pm 11.48$  \\
+		\midrule
+		\multirow{2}{*}{\ac{SWEDD}} & F & 15 & $56.26 \pm 10.25$\\
+									& M & 16 & $60.18 \pm 11.46$	\\
+		\midrule
+		\multirow{2}{*}{\ac{PD}}    & F & 45 & $61.20 \pm 10.18$	\\
+								    & M & 114 & $62.94 \pm 8.70$	\\
+		\bottomrule
+	\end{tabular}
+	\caption[Demographics of the PPMI-DAT dataset.]{Demographics of the PPMI-DAT dataset.}
+	\label{tab:demoPPMI-DAT}
+\end{table}

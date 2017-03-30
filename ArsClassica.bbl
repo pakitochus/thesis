@@ -676,6 +676,61 @@
       \endverb
       \keyw{sbm,lbp,vrlbp,mri,ad,alzheimer,own}
     \endentry
+    \entry{Salas-Gonzalez2015}{article}{}
+      \name{author}{7}{}{%
+        {{hash=80c0a5abb383820c98e1e918318b6214}{%
+           family={Salas-Gonzalez},
+           family_i={S\bibinithyphendelim G\bibinitperiod},
+           given={Diego},
+           given_i={D\bibinitperiod}}}%
+        {{hash=f4228f125c42361b9f47bb676e4c04bb}{%
+           family={Górriz},
+           family_i={G\bibinitperiod},
+           given={Juan\bibnamedelima M},
+           given_i={J\bibinitperiod\bibinitdelim M\bibinitperiod}}}%
+        {{hash=6450d056a7ef88a8321faa1c9474f31c}{%
+           family={Ramírez},
+           family_i={R\bibinitperiod},
+           given={Javier},
+           given_i={J\bibinitperiod}}}%
+        {{hash=e8717de8b92989db990db58187ebeb75}{%
+           family={Illán},
+           family_i={I\bibinitperiod},
+           given={Ignacio\bibnamedelima A},
+           given_i={I\bibinitperiod\bibinitdelim A\bibinitperiod}}}%
+        {{hash=ec4626c9d42fa6a0eff732091d363fa6}{%
+           family={Padilla},
+           family_i={P\bibinitperiod},
+           given={Pablo},
+           given_i={P\bibinitperiod}}}%
+        {{hash=27b0256970d0ca989eac327d37df4a41}{%
+           family={Martínez-Murcia},
+           family_i={M\bibinithyphendelim M\bibinitperiod},
+           given={Francisco\bibnamedelima J},
+           given_i={F\bibinitperiod\bibinitdelim J\bibinitperiod}}}%
+        {{hash=440dd2cfe5ed85e0eabbedc122a5127a}{%
+           family={Lang},
+           family_i={L\bibinitperiod},
+           given={Elmar\bibnamedelima W},
+           given_i={E\bibinitperiod\bibinitdelim W\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Springer}%
+      }
+      \strng{namehash}{247e867bf19f75318a5dbdd04fa83b36}
+      \strng{fullhash}{3d2eaea95f2a3232d119dfeaa5857537}
+      \field{sortinit}{2}
+      \field{sortinithash}{8343b463aacf48517c044b4d2c9c45ed}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Neuroinformatics}
+      \field{number}{4}
+      \field{title}{Building a FP-CIT SPECT Brain Template Using a Posterization Approach}
+      \field{volume}{13}
+      \field{year}{2015}
+      \field{pages}{391\bibrangedash 402}
+      \range{pages}{12}
+    \endentry
     \entry{sikio2015mr}{article}{}
       \name{author}{9}{}{%
         {{hash=7cfd2c74d1ce7781e0602b560fecc043}{%
@@ -14741,6 +14796,61 @@
       \endverb
       \keyw{Brain,radionuclide imaging; Brain Mapping,methods; Humans; Image Processing,Computer-Assisted,methods; Radiopharmaceuticals; Tomography,Emission-Computed,Single-Photon,methods; Tropanes}
     \endentry
+    \entry{Salas-Gonzalez2015}{article}{}
+      \name{author}{7}{}{%
+        {{hash=80c0a5abb383820c98e1e918318b6214}{%
+           family={Salas-Gonzalez},
+           family_i={S\bibinithyphendelim G\bibinitperiod},
+           given={Diego},
+           given_i={D\bibinitperiod}}}%
+        {{hash=f4228f125c42361b9f47bb676e4c04bb}{%
+           family={Górriz},
+           family_i={G\bibinitperiod},
+           given={Juan\bibnamedelima M},
+           given_i={J\bibinitperiod\bibinitdelim M\bibinitperiod}}}%
+        {{hash=6450d056a7ef88a8321faa1c9474f31c}{%
+           family={Ramírez},
+           family_i={R\bibinitperiod},
+           given={Javier},
+           given_i={J\bibinitperiod}}}%
+        {{hash=e8717de8b92989db990db58187ebeb75}{%
+           family={Illán},
+           family_i={I\bibinitperiod},
+           given={Ignacio\bibnamedelima A},
+           given_i={I\bibinitperiod\bibinitdelim A\bibinitperiod}}}%
+        {{hash=ec4626c9d42fa6a0eff732091d363fa6}{%
+           family={Padilla},
+           family_i={P\bibinitperiod},
+           given={Pablo},
+           given_i={P\bibinitperiod}}}%
+        {{hash=27b0256970d0ca989eac327d37df4a41}{%
+           family={Martínez-Murcia},
+           family_i={M\bibinithyphendelim M\bibinitperiod},
+           given={Francisco\bibnamedelima J},
+           given_i={F\bibinitperiod\bibinitdelim J\bibinitperiod}}}%
+        {{hash=440dd2cfe5ed85e0eabbedc122a5127a}{%
+           family={Lang},
+           family_i={L\bibinitperiod},
+           given={Elmar\bibnamedelima W},
+           given_i={E\bibinitperiod\bibinitdelim W\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Springer}%
+      }
+      \strng{namehash}{247e867bf19f75318a5dbdd04fa83b36}
+      \strng{fullhash}{3d2eaea95f2a3232d119dfeaa5857537}
+      \field{sortinit}{S}
+      \field{sortinithash}{fd1e7c5ab79596b13dbbb67f8d70fb5a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Neuroinformatics}
+      \field{number}{4}
+      \field{title}{Building a FP-CIT SPECT Brain Template Using a Posterization Approach}
+      \field{volume}{13}
+      \field{year}{2015}
+      \field{pages}{391\bibrangedash 402}
+      \range{pages}{12}
+    \endentry
     \entry{Salas-Gonzalez2009}{article}{}
       \name{author}{8}{}{%
         {{hash=80c0a5abb383820c98e1e918318b6214}{%
@@ -16824,7 +16934,6 @@
       \range{pages}{18}
     \endentry
   \endsortlist
-  \missing{ADNI}
 \endrefsection
 
 \refsection{1}
