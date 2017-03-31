@@ -4,7 +4,9 @@
 % If problems with the headers: get headings in appendix etc. right
 %\markboth{\spacedlowsmallcaps{Appendix}}{\spacedlowsmallcaps{Appendix}}
 \chapter{Background on Support Vector Machines}\label{ch:svm}
-\acf{SVM}, introduced in the late 70s \cite{Vapnik1998}, are a set of related supervised learning methods widely used in pattern recognition, voice activity detection (VAD), classification and regression analysis.
+\acfp{SVM}, introduced in the late 70s \cite{Vapnik1998}, are a set of related supervised learning methods widely used in classification (the case of \acfp{SVC}), regression analysis and, more generally, in any field of machine learning. They have been extensively used in neuroimaging applications such as the ones presented in this thesis \cite{Martinez-Murcia2013255,Martinez-Murcia201458,martinez2014parametrization,Martinez-Murcia2015,Martinez-Murcia2016,Martinez-Murcia2016a} and many others \cite{Stoeckel04,Towey2011,Illan2011,Illan2012,Ortiz2013,Segovia2016a}.
+
+The simplest \ac{SVC} assumes the data to be linearly separable. 
 
 We suppose the data to be linearly separable. In this case, a data point is viewed as a $p$-dimensional vector. Our objective is to separate a set of binary labelled training data with a hyperplane that is maximally distant from the two classes (known as the maximal margin hyper-plane). To do so, we build a function $f : \Re^n -> \lbrace \pm1 \rbrace$ using training data that is, $p$-dimensional patterns $x_i$ and class labels $y_i$ :
 
