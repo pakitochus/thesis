@@ -20,7 +20,7 @@ The \acf{SWPCA} is an algorithm to reduce, in this case, undesired intensity var
 \end{figure}
 
 
-\subsection{Principal Component Analysis}\label{sec:pca}
+\subsection{\acf{PCA}}\label{sec:pca}
 The first step in the \ac{SWPCA} algorithm is to perform a \ac{PCA} decomposition
 of the dataset into a set of orthogonal components that model the
 variance present in the images. 
@@ -106,7 +106,7 @@ This procedure is illustrated in Figure~\ref{fig:swpcaboxplot}, where a boxplot 
 	\label{fig:swpcaboxplot}
 \end{figure}
 
-\subsection{Evaluation of \acs{SWPCA}}\label{sec:swpcaEval}
+\section{Evaluation of \acs{SWPCA}}\label{sec:swpcaEval}
 To validate the effects of the \ac{SWPCA} algorithm on the inter-site variance, experiments were undertaken to assess the reduction of the undesired site variance in the original datasets, and its impact on the between-group signal. Two kind of analysis were performed: a characterization of voxel-wise differences, and a classification analysis. 
 
 Voxel-wise differences between groups were characterized using \acf{VBM} \cite{Ashburner2000}, comprising preprocessing (registration, smoothing) and mass-univariate $t$-test on the smoothed maps from each modality. \ac{SWPCA} is included (when needed) in this pipeline as a plug in, after the smoothing and before the computation of the test. Permutation testing assessed the significance of the relationship between the tested and target variables. A max-type procedure was used to obtain family-wise, whole-brain corrected \textit{p}{}-values \cite{Freedman1983}. Additionally, a \acf{CBM}, based on Source Based Morphometry (SBM) \cite{Xu2009} was used. This procedure provided Z-maps for visual inspection comparable to those obtained in \ac{VBM}, by selecting component loadings $\mathbf{W}$, scaling them to unit standard deviation and weighting their contribution to the final map with their statistical significance, computed using the same permutation inference as in \ac{VBM}. 
@@ -277,7 +277,7 @@ Performance results for the classification analysis applied to ALL are shown in 
 	\label{tab:swpcaALL}
 \end{bigtable}
 
-\subsection{Discussion}
+\section{Discussion}
 Brain anatomical and functional differences between \ac{ASD} participants and controls have been explored by a number of previous studies \cite{DiMartino2014,Ecker2015,Hernandez2015,Lenroot2013,Zuercher2015}. Many affected structures have been proposed in each of these studies, however as a recent large-scale study points out \cite{haar2014anatomical}, these are frequently inconsistent throughout the literature. Researchers argue that most of these structures are database-dependent, and since many studies use multi-site acquisition procedures, the variance introduced by each acquisition site is a probable source of Type I errors. 
 
 The technical and logistical drawbacks of multicentre studies are widely documented, including participant recruitment procedures \cite{Pearlson2009} and technical effects that range from the usage of different equipment or acquisition parameters \cite{VanHorn2009} to physical changes that affect the performance of \ac{MRI} scanners across time \cite{Pearlson2009}. There is general recognition that standardization is needed to ensure the uniformity of the acquired maps. Different approaches have been used in large-scale studies, such as \ac{ADNI} where human ``phantoms'' were used to perform a preparatory optimisation of \ac{MRI} scanning platforms \cite{friedman2006report}. 

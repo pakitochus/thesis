@@ -18,7 +18,7 @@ Further improvements can be made to this simple approach, for example, with the 
 The most relevant extension to the \ac{SBM} was proposed in \cite{Martinez-Murcia2016}. In this work, instead of using rectilinear vectors to select voxels, we developed a path creation algorithm that follows a minimum-intensity change path towards an attractor placed in its corresponding spherical coordinate pair ($\theta,\varphi$). This way, the mapping paths follow the structural features of the \ac{MRI} image, which could be used to create the bidimensional \ac{SBM} maps as well as directly use the intensity distribution along the path. This was extended to make use of the \ac{GLCM} and Haralick texture analysis (see Chapter~\ref{ch:texture}) to characterize the brain texture along each path and its neighbourhood. 
 
 
-\section{Spherical Brain Mapping}\label{sec:mapping}
+\section{\acf{SBM}}\label{sec:mapping}
 The original \ac{SBM} proposed in \cite{Martinez-Murcia2014225,Martinez-Murcia2015} was based on the use of spherical coordinates in the brain. The central voxel is used as the origin point from which a number of mapping vectors $\mathbf{v}_{\theta,\varphi}$ are defined for each inclination ($\theta$) and azimuth ($\varphi$) angles in the range $0^{\circ}<\theta<180^{\circ}$ and $0^{\circ}<\varphi<360^{\circ}$ (see Figure~\ref{fig:brainmapping}). The voxels crossed by this mapping vector are selected, to form the sampled set $V_{\theta,\varphi}$, a set that contains $P$ voxels crossed by the mapping vector $\mathbf{v}_{\theta,\varphi}$.
 
 \begin{figure}[htp]
@@ -93,7 +93,7 @@ The layered extension is the simplest approach to keep relevant information of t
 	\label{fig:layeredGM}
 \end{figure*}
 
-\subsection{Volumetric Radial LBP}\label{sec:vrlbp}
+\subsection{\acf{VRLBP}}\label{sec:vrlbp}
 Another addition that can be made to the original \ac{SBM} is the inclusion of the $r$-neighbourhood of the mapping vector $\mathbf{v}_{\theta,\varphi}$ in the computation of $v$. We do so by computing the \acf{VRLBP}, based on the \ac{LBP} descriptors proposed in \cite{Ojala1996}. 
 
 \begin{figure*}[htp]
@@ -182,7 +182,7 @@ To better understand the \ac{SBM} maps, and the location of different features, 
 	\label{fig:regionsSub}
 \end{figure*}
 
-\section{Sampling Paths via Hidden Markov Models}\label{sec:hmmpaths}
+\section{Sampling Paths via \acf{HMM}}\label{sec:hmmpaths}
 The rectilinear mapping vector used in the original \ac{SBM} \cite{Martinez-Murcia2014225,Martinez-MurciaVRLBP,Martinez-Murcia2015} has some limitations, partially overcome by the \ac{VRLBP} and the layered extension. However, a more flexible sampling could be beneficial for the computation of texture measures. In this section we present the technique used to define minimum intensity change sampling paths via Hidden Markov Models, that was firstly proposed in \cite{Martinez-Murcia2016}. These paths are defined so that the resulting sampled sets contain information about both intensity and structure of the brain. 
 
 % Algoritmo base de extracción de puntos
@@ -334,7 +334,7 @@ Once the \ac{GLCM} is computed, we can extract a variety of texture descriptors,
 \text{IDMN} &= \sum_i\sum_j \frac{\mathbf{P}(i,j)}{i+(j-j)^2/N^2}
 \end{align}
 
-\subsection{Experiments}
+\section{Evaluation}
 In this chapter, we have proposed a completely new framework for extracting features and visualizing structural \ac{MRI} images from the ADNI-MRI database. To evaluate them, we will combine statistical significance assessment and classification analysis. For this purpose, we propose the following experiments: 
 \begin{itemize}
 	\item Experiment 1: assessment of the original \ac{SBM} maps and the \ac{VRLBP} over segmented \ac{GM} and \ac{WM} images. We will provide a statistical significance analysis and a classification analysis under the \ac{AD} vs \ac{CTL} scenario of the six proposed maps. 
@@ -349,7 +349,7 @@ In te first three experiments, we will used segmented \ac{GM} and \ac{WM} maps, 
 
 \section{Results}
 
-\subsection{Experiment 1: Original and VRLBP Spherical Brain Mapping}
+\subsection{Experiment 1: Original and \acs{VRLBP} Spherical Brain Mapping}
 First, with experiment 1, we test the original and \ac{VRLBP} \ac{SBM} maps, by means of significance and classification analysis. To start with, we provide the significance maps computed under the \ac{AD} vs \ac{CTL} scenario in the six original \ac{SBM} measures (surface, thickness, number of folds, average, entropy and kurtosis) in  Figure~\ref{fig:tmaps}. 
 
 \begin{figure*}[htp]
@@ -370,7 +370,7 @@ In the \ac{WM}, the levels of significance achieved are smaller than in the \ac{
 \begin{figure*}[htp]
 	\centering
 	\includegraphics[width=\textwidth]{Graphics/ch6/09-tmaps_vrlbp}
-	\caption{Maps that present the level of the $t$ statistic in the \ac{AD} vs. \ac{CTL} paradigm, for the VRLBP projections mapping over a) \ac{GM} and b) \ac{WM}. }
+	\caption[$t$-maps for the \acs{VRLBP}-\acs{SBM} in the \acs{AD} vs \acs{CTL} scenario.]{Maps that present the level of the $t$ statistic in the \ac{AD} vs. \ac{CTL} paradigm, for the VRLBP projections mapping over a) \ac{GM} and b) \ac{WM}. }
 	\label{fig:tmapvrlbp}
 \end{figure*}
 
@@ -442,18 +442,18 @@ Performing a significance analysis on the 4 layer extension of the 7 proposed \a
 \begin{figure*}[htp]
 	\centering
 	\includegraphics[width=\textwidth]{Graphics/ch6/08-Tmap4LayAverage}
-	\caption{$t$-maps that present the level of statistical relevance in the AD vs. NC paradigm, for a four-layered average mapping over a) \ac{GM} and b) \ac{WM}. }
+	\caption[$t$-maps that present the level of statistical relevance in the \acs{AD} vs \acs{CTL} paradigm.]{$t$-maps that present the level of statistical relevance in the \acs{AD} vs \acs{CTL} paradigm, for a four-layered average mapping over a) \ac{GM} and b) \ac{WM}. }
 	\label{fig:tmaplayered}
 \end{figure*} 
 
 In \ac{GM}, the most obvious changes are located in layers 2 and 3, specifically at the hippocampus, parahippocampal lobe and amygdala (layer 2), and the temporal lobe (layer 3), where the values achieved by \ac{CTL} subjects are much higher than those found in \ac{AD}. This could reveal atrophy in these organs, as it has been reported in the literature \cite{Dubois2007,Pievani2013} and will be discussed later. For \ac{WM}, we obtain large negative $t$-values in areas occupied by the rolandic operculum, heschl's gyri, putamen and globus pallidus, with positive values in parts of the hippocampus, and parts of the temporal lobe. Nevertheless, the most significant differences can be located in layer 1, at the borders between ventricles and thalamus, and the cuneus, precuneus and posterior cingulate gyrus, which have been reported in \cite{Baron2001}.
 
-\subsection{Experiment 3: HMM on Synthetic Datasets}
+\subsection{Experiment 3: \acs{HMM} on Synthetic Datasets}
 
 \begin{figure}
 	\begin{center}
 		\includegraphics[width=0.5\textwidth]{Graphics/ch6/gaussian}
-		\caption{Path traced over a gaussian mixture distribution of 4 isotropic gaussian kernels.}
+		\caption{Path traced over a gaussian mixture distribution of 4 i\-so\-tro\-pic gaussian kernels.}
 		\label{fig:gaussian}
 	\end{center}
 \end{figure}
@@ -482,7 +482,7 @@ Afterwards, we wanted to demonstrate how these paths adapt to three-di\-men\-sio
 Finally, and prior to the three-dimensional brain images, we test the algorithm on a bidimensional real-world example: a digital elevation model of the Iberian Peninsula. The image was acquired by the LANDSAT SRTM30+ mission, and its intensity represents height. We tested multiple paths by establishing sequentially $\mathbf{p}_0$ and $\mathbf{p}_N$ in ten different cities. The paths shown at Figure~\ref{fig:spainmap} optimize both the distance and height variation as well as resembling -in most cases- the roads that connect these cities in the real world. Given the dimensions of the image, in this case, the L2-norm of the support ball has been set to $r=30$. 
 
 
-\subsection{Experiment 4: Feature Selection using HMM Paths}
+\subsection{Experiment 4: Feature Selection using \acs{HMM} Paths}
 In Experiment 4 we begin to apply the \ac{HMM} paths to real \ac{MRI} images from the ADNI-MRI dataset. We have first defined a set of paths over the DARTEL template, which we call the canonical paths. The canonical paths follow the anatomy of a normal subject to whom all other images have been registered. Therefore, the location of the different nodes on the paths are fixed throughout the general anatomy of all images, and we could characterize the differences between classes by analysing the intensity distribution on these paths --in other words, the tissue density--. In short, we apply the canonical paths as a feature selection algorithm to the different images. 
 
 To start with, we will take all the $180\times360=64800$ canonical paths computed in all  spatial directions defined by $\varphi\in[0,360]$ and $\theta\in[-90,90]$. These paths will be used to select the voxel intensities where the nodes are placed, as in the original \ac{SBM}. Due to the influence of the different variables (trace of the paths, stop condition), the amount of values varies from 2 to several tens. First we will test the accuracy achieved by each path itself, using the set of intensities as features in a \ac{SVC} classifier. The accuracy reached by each path is represented by colour in Figure~\ref{fig:accuracyMap}. 
@@ -541,7 +541,7 @@ The resulting maps are very different from the original \ac{SBM} ones, and the d
 	\label{tab:HMMsbm_perf}
 \end{table}
 
-\subsection{Experiment 5: Texture SBM Maps based on HMM Paths}
+\subsection{Experiment 5: Texture \acs{SBM} Maps based on \acs{HMM} Paths}
 After evaluating the \ac{HMM} paths as a feature selection method, and the hybrid \ac{HMM}-\ac{SBM} maps, we want to compute new texture maps, similar to the approach used in the \ac{VRLBP} extension, but using a path-based \ac{GLCM}.  To do so, we will derive a \ac{GLCM} from each of the canonical paths, and extract one single value per texture feature and direction, which allow us to construct texture \ac{SBM} maps. In Table Table~\ref{tab:textureSBM} we show the performance values for the maps built using each of the texture features proposed in Section~\ref{sec:rtextfeat}
 
 \begin{table*}
@@ -609,7 +609,7 @@ The breakdown of the \ac{SBM} maps into several layers might be considered a enh
 %Finally, in order to have another look at the performance of our mappings, the ROC curves of each type are presented in Figure~\ref{fig:roc}. There we can see how the VRLBP approach outperforms all the other measures, specially in the case of \ac{WM} tissue. In \ac{GM}, Average and Entropy present values really close to VRLBP, as expected. Conversely, the poorest performance is achieved by the Kurtosis and Surface mappings, however the Surface performs better in \ac{WM} than in \ac{GM}. These results confirm the performance values presented in  Table~\ref{tab:perfProj} and Figure~\ref{fig:figureGM}, making our proposed mapping framework a reasonable choice for obtaining both a visual interpretation of otherwise hidden features and a significant dimensionality reduction. 
 
 
-\subsection{Paths via \ac{HMM}}\label{sec:discussion}
+\subsection{Paths via \acs{HMM}}\label{sec:discussion}
 Now we will discuss the \ac{HMM} paths proposed in Section~\ref{sec:hmmpaths}, whose results were analysed in Experiments 3, 4 and 5. The paths were proposed as a curvilinear substituent of the \ac{SBM} mapping vector $\mathbf{v}_{\theta,\varphi}$, capable of adapting to the structure changes found in the brain. Our paths $\mathbb{P}_{\theta,\varphi}$ are built upon a minimun intensity variation pathway that starts at the \ac{AC}, and follows the orientation of an attractor placed in the limits of the image at the spherical coordinate pair $(\theta,\varphi)$. 
 
 There is a fundamental reason why \ac{AC} is the best choice as first node of the paths: it is a privileged position where the left and right hemispheres are connected. A different point would lead to suboptimal paths, whose construction might be quickly interrupted by the abrupt changes at the ventricles, and therefore, the resulting set of paths would not cover the entire brain. 

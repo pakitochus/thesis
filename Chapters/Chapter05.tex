@@ -103,7 +103,7 @@ For evaluating the system proposed in this chapter, combining texture analysis a
 All images used are intensity normalized using either normalization to the maximum or integral normalization (see Section~\ref{sec:intensityPrep}), and afterwards, a subvolume can be extracted using the intensity threshold methodology described at Section~\ref{sec:volume}. In addition to the feature extraction technique using texture analysis, and the feature selection procedure defined for Experiment 2, we use a linear \ac{SVC} for classifying, and 10-fold cross validation strategy (see Section~\ref{sec:validation} for more details). 
 
 \section{Results}\label{sec:ch5results}
-\subsection{Experiment 1}
+\subsection{Experiment 1: Individual Texture Features}
 In this experiment, the influence and effect of each texture feature is tested, as in \cite{Martinez-Murcia2013266}. We have tested the computation of the \acp{GLCM} over the image subvolumes using different thresholds $I_{th}$ (see Sec. \ref{sec:volume}) ranging from 0 to 50\% of the maximum intensity value, and a range of distances $d=1,2,\dots10$ in the thirteen spatial directions.
 
 To check which value of the intensity threshold is the best for computing the texture features, we can compute the general tendency of the system by averaging the accuracy values. Figure~\ref{fig:featuresIth} depicts the general trend of the performance over the intensity threshold for either the no normalized or normalized images. This is done for the single and cumulative approach. 
@@ -182,7 +182,7 @@ The first noticeable feature is that, for both the single and cumulative approac
 
 When comparing the single approach with the cumulative one, it is obvious that best results are obtained with the cumulative one, except for the particular case of the VDLV-DAT. Whereas with the single approach there was no evident choice for the offset distance $d$, in the cumulative one results are obtained combining the first 5-7 distances at which the \ac{GLCM} was computed. This is reasonable, since for the single approach we only use the features contained at each $d$, while in the cumulative approach we pool much more information for training and testing the system. Nevertheless, the single approach obtains decent results in many cases, which proves the value of the Haralick texture features for characterizing DaTSCAN images. 
 
-\subsection{Experiment 2}
+\subsection{Experiment 2: Selected Texture Features}
 In experiment 2 we pool together all features derived from all \acp{GLCM}, and use a feature selection algorithm (see Section~\ref{sec:featureSelection}). This gives us 1560 features per subject, from a total 12 features computed at 13 directions and 10 distances. We will test how values such as $I_{th}$, the normalization algorithm or the percentage of selected voxels affects the performance of this system, and discuss the results. 
 
 \begin{figure}[htp]

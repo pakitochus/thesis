@@ -17,7 +17,7 @@ We have evaluated our proposed system on two modalities: FDG-\ac{PET} images fro
 For our brain synthesis algorithm to work, the source datasets must share certain characteristics: to be spatially normalized (which we did by using the SPM8 software) and intensity normalized, using normalization to the maximum strategy, which proved to be very useful in most applications \cite{Martinez-Murcia20129676,martinez2014parametrization} (see Chapter~\ref{ch:preprocessing} for more details).
 
 \section{Simulation Methodology}
-\subsection{\acf{PCA}}
+\subsection{\acs{PCA} Decomposition}
 The first step of the simulation pipeline is the analysis of the dataset that we want to use as a reference. In order to do so, we project the dataset from its original image space to a lower dimensional space using \ac{PCA}, a very extended tool for analysis and feature extraction in neuroimaging \cite{Illan2011,Khedher2015}, and that was already defined at Section~\ref{sec:pca}.
 
 In this chapter, we use the component score matrix $\mathbf{S}$, or the coordinates of the database samples in the eigenbrain space, to estimate per-class and per-component statistical distributions from which the new samples, from which we can generate new coordinates. For efficiency, and without loss of generality, we will use only the first $C$ components of the \ac{PCA} decomposition. 
