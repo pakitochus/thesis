@@ -93,7 +93,7 @@ In this experiment, we compute the baseline performance of the original and the 
 	\centering
 	\begin{tabular}{cccccc}
 		\toprule
-		Database  & Est & Scenario & acc ($\pm$SD) & sens ($\pm$SD) & spec ($\pm$SD)\\
+		\tableheadline{Database}  & \tableheadline{Est.} & \tableheadline{Scenario} & \tableheadline{acc ($\pm$SD)} & \tableheadline{sens ($\pm$SD)} & \tableheadline{spec ($\pm$SD)}\\
 		\midrule
 		\multirow{9}{*}{ADNI-PET} & \multirow{3}{*}{Orig.} & \ac{AD} vs \ac{CTL} & $0.882 \pm 0.012 $ & $0.865 \pm 0.091$ & $0.901 \pm 0.118$\\
 		& & \ac{MCI} vs \ac{CTL} & $0.698 \pm 0.042 $ & $0.791 \pm 0.064$ & $0.504 \pm 0.179$\\
@@ -116,7 +116,7 @@ In this experiment, we compute the baseline performance of the original and the 
 	\end{tabular}
 	%	\end{adjustbox}
 	\vspace{1em}
-	\caption{Baseline experiment, in which we evaluate the performance of a VAF system under the different scenarios of the two datasets.}
+	\caption{Baseline experiment, in which we evaluate the performance of a \acs{VAF} system under the different scenarios of the two datasets.}
 	\label{tab:baselineSyn}
 \end{table}
 
@@ -124,7 +124,7 @@ Regarding the \ac{AD} dataset, we can see that the maximum accuracy can be obtai
 
 As for the simulated images derived from the ADNI PET dataset, there are two very different behaviours. The \ac{MVN} estimator produces highly differentiable images under all scenarios, even in those including \ac{MCI}. There is even an almost perfect accuracy obtained in \ac{AD} vs \ac{CTL}. Still, the behaviour of the original dataset, in which the \ac{AD} vs \ac{CTL} achieves higher performance than the others is repeated. For its part, the \ac{KDE} estimation of density produces more overlapping class, which in the best case (\ac{AD} vs \ac{CTL}), only achieves up to 80\% accuracy. However, the scenarios including \ac{MCI} perform similarly to the original dataset. 
 
-On the other hand, we take a look at the PPMI dataset. In this case, we have highly specific functional imaging, in which the dopaminergic level (cause of Parkinson's Disease) is assessed. Therefore, the application of VAF to the original dataset yields high performance ($>$90\% accuracy, sensitivity and specificity). The images synthesized using \ac{MVN} modelling achieve almost perfect accuracy, whereas the \ac{KDE} images, given their performance, might be more heterogeneously distributed. We will comment on this at the discussion.  
+On the other hand, we take a look at the PPMI dataset. In this case, we have highly specific functional imaging, in which the dopaminergic level (cause of Parkinson's Disease) is assessed. Therefore, the application of \acs{VAF} to the original dataset yields high performance ($>$90\% accuracy, sensitivity and specificity). The images synthesized using \ac{MVN} modelling achieve almost perfect accuracy, whereas the \ac{KDE} images, given their performance, might be more heterogeneously distributed. We will comment on this at the discussion.  
 
 \subsection{Experiment 1: Predictive Power of the Simulated Images}
 Results for the first of the experiments are shown at Table~\ref{tab:exp1Syn}. We have applied this experiment to the ADNI-PET and the PPMI-DAT datasets, using the multivariate normal estimator and the \ac{KDE}. For each cross-validation iteration we synthesize 200 samples of each class. 
@@ -136,7 +136,7 @@ Results for the first of the experiments are shown at Table~\ref{tab:exp1Syn}. W
 	
 	\begin{tabular}{cccccc}
 		\toprule
-		Database  & Est. & Scenario & acc ($\pm$SD) & sens ($\pm$SD) & spec ($\pm$SD)\\
+		\tableheadline{Database}  & \tableheadline{Est.} & \tableheadline{Scenario} & \tableheadline{acc ($\pm$SD)} & \tableheadline{sens ($\pm$SD)} & \tableheadline{spec ($\pm$SD)}\\
 		\midrule
 		\multirow{6}{*}{ADNI-PET} & \multirow{3}{*}{\ac{MVN}} & \ac{AD} vs \ac{CTL} & $0.852 \pm 0.078 $ & $0.804 \pm 0.151$ & $0.900 \pm 0.137$\\
 		& & \ac{MCI} vs \ac{CTL} & $0.688 \pm 0.067 $ & $0.743 \pm 0.108$ & $0.572 \pm 0.169$\\
@@ -166,9 +166,9 @@ In the PPMI dataset, the differences are subtle. While the \ac{MVN} estimator ac
 
 \subsection{Experiment 2: Independence of the Simulated Images}
 \begin{bigtable}
-	\begin{tabular}{ccccccc}
+	\begin{tabular}{llccccc}
 		\toprule
-		Database & Est & Scenario & Test set & acc ($\pm$SD) & sens ($\pm$SD) & spec ($\pm$SD)\\
+		\tableheadline{Database} & \tableheadline{Est} & \tableheadline{Scenario} & \tableheadline{Test set} & \tableheadline{acc ($\pm$SD)} & \tableheadline{sens ($\pm$SD)} & \tableheadline{spec ($\pm$SD)}\\
 		\midrule
 		\multirow{12}{*}{ADNI-PET} & \multirow{6}{*}{\ac{MVN}} & \multirow{2}{*}{\ac{AD} vs \ac{CTL}} & Original & $1.000 \pm 0.000 $ & $1.000 \pm 0.000 $ & $1.000 \pm 0.000 $\\
 		& & &  Simulated & $0.994 \pm 0.003 $ & $0.988 \pm 0.006$ & $1.000 \pm 0.007$\\ \cline{3-7}
@@ -191,7 +191,7 @@ In the PPMI dataset, the differences are subtle. While the \ac{MVN} estimator ac
 	\end{tabular}
 	%	\end{adjustbox}
 	\vspace{1em}
-	\caption{Performance of Exp 2, proving the independence of the simulated images with respect to the originals.}
+	\caption{Performance of Experiment 2, proving the independence of the simulated images with respect to the originals.}
 	\label{tab:clas2syn}
 \end{bigtable}
 

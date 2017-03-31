@@ -142,7 +142,7 @@ In Tables~\ref{tab:exp1AccSingle} and \ref{tab:exp1AccCumulative}, we take a loo
 	\centering
 \begin{tabular}{llllllll}
 	\toprule
-	                          & Norm.    & Feature         & $I_{th}$ & $d$ & acc.  & sens. & spec  \\ \midrule
+	                          & \tableheadline{Norm.}    & \tableheadline{Feature}          & \tableheadline{$I_{th}$} & \tableheadline{$d$} & \tableheadline{acc.}  & \tableheadline{sens.} & \tableheadline{spec}  \\ \midrule
 	\multirow{3}{*}{PPMI-DAT} & Original & Cluster Tendency & 45       & 8            & 0.952 & 0.946 & 0.956 \\
 	                          & Integral & Cluster Tendency & 45       & 4            & 0.952 & 0.946 & 0.956 \\
 	                          & Maximum  & Cluster Tendency & 45       & 8            & 0.948 & 0.955 & 0.943 \\\midrule
@@ -162,7 +162,7 @@ In Tables~\ref{tab:exp1AccSingle} and \ref{tab:exp1AccCumulative}, we take a loo
 	\centering
 \begin{tabular}{llllllll}
 	\toprule
-	                          & Norm.    & Feature          & $I_{th}$ & $d$ & acc.  & sens. & spec  \\ \midrule
+	                          & \tableheadline{Norm.}    & \tableheadline{Feature}          & \tableheadline{$I_{th}$} & \tableheadline{$d$} & \tableheadline{acc.}  & \tableheadline{sens.} & \tableheadline{spec}  \\ \midrule
 	\multirow{3}{*}{PPMI-DAT} & Original & Cluster Tendency & 45       & 6   & 0.970 & 0.982 & 0.962 \\
 	                          & Integral & Cluster Tendency & 40       & 5   & 0.966 & 0.982 & 0.956 \\
 	                          & Maximum  & Cluster Tendency & 45       & 5   & 0.966 & 0.982 & 0.956 \\ \midrule
@@ -217,7 +217,7 @@ After describing the general behaviour, we can take another look at the differen
 	\centering
 \begin{tabular}{lllccccc}
 	\toprule
-	                          & Norm.                  & Selection & $I_{th}$ & acc.  & sens. & spec. &  \%   \\ \midrule
+	                          & \tableheadline{Norm.}                  & \tableheadline{Selection} & \tableheadline{$I_{th}$} & \tableheadline{acc.}  & \tableheadline{sens.} & \tableheadline{spec}. &  \%   \\ \midrule
 	\multirow{9}{*}{PPMI-DAT} & \multirow{3}{*}{Orig.} & \textbf{entropy}   &    \textbf{30}    & \textbf{0.970} & \textbf{0.972} & \textbf{0.968} & \textbf{0.983} \\
 	                          &                        & t-test    &    30    & 0.966 & 0.972 & 0.962 & 0.966 \\
 	                          &                        & wilcoxon  &    30    & 0.959 & 0.954 & 0.962 & 0.858 \\ \cline{2-8}
@@ -289,9 +289,9 @@ Finally, we will compare our proposed system with other methods used in \ac{PD} 
 
 \begin{table*}[ht]
 	\centering
-	\begin{tabular}{l | rrr}
+	\begin{tabular}{l rrr}
 		\toprule
-		\textbf{System}		& \textbf{Acc} 	& \textbf{Sens}	& \textbf{Spec}	\\ 
+		\tableheadline{System}		& \tableheadline{Acc} 	& \tableheadline{Sens}	& \tableheadline{Spec}	\\ 
 		\midrule
 		SumMean &  0.951 &    0.972 &    0.936 \\ 
 		Homogeneity &  0.944 &    0.946 &    0.943\\

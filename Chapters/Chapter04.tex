@@ -293,6 +293,7 @@ In Table~\ref{tab:featureAD} we show the performance values obtained at the oper
 \begin{table}
 	\myfloatalign
 	\begin{tabularx}{\linewidth}{Xllccc}
+		\toprule
 		\tableheadline{DB} & \tableheadline{Dec.} & \tableheadline{Criterion} & \tableheadline{Accuracy} & \tableheadline{Sensitivity} & \tableheadline{Specificity}\\
 		\toprule
 		\multirow{7}{1.7cm}{ADNI- PET} & \ac{VAF} & - & $0.882 \pm 0.064$ & $0.876 \pm 0.099$ & $0.890 \pm 0.097$ \\
@@ -412,6 +413,7 @@ Now we will focus on the specific performance values obtained at the operation p
 
 \begin{table}
 	\begin{tabularx}{\linewidth}{Xllccc}
+		\toprule
 		\tableheadline{DB} & \tableheadline{Dec.} & \tableheadline{Criterion} & \tableheadline{Accuracy} & \tableheadline{Sensitivity} & \tableheadline{Specificity}\\
 		\toprule
 		\multirow{7}{1.7cm}{PPMI-DAT} & \ac{VAF} & - & $ 0.800 \pm 0.071$ & $ 0.831 \pm 0.093$ & $0.747 \pm 0.112$ \\
@@ -489,43 +491,43 @@ In the VDLN-HMPAO different areas are selected as we can see in Figure~\ref{fig:
 
 To have a more profound look at the selected regions in both modalities, we provide Table~\ref{tab:overlapVDLNAD}, where the AAL regions with an overlapping higher than 0.5 in any of the modalities and selection criteria are displayed. 
 
-\begin{table}
-	\centering
+\begin{bigtable}
+%	\centering
 \begin{tabularx}{\textwidth}{Xcccccc}
 	{} &\multicolumn{3}{c}{ADNI-PET}    & \multicolumn{3}{c}{VDLN-HMPAO}         \\
 	\cline{2-7}
-	Region &    entropy & t-test & wilcoxon &  entropy & t-test & wilcoxon \\
+	\tableheadline{Region} &    \tableheadline{entropy} & \tableheadline{t-test} & \tableheadline{wilcoxon} &  \tableheadline{entropy} & \tableheadline{t-test} & \tableheadline{wilcoxon} \\
 	\midrule
-Angular\_L         &    \textbf{1.000} &    \textbf{1.000} &  \textbf{1.000} &      \textbf{1.000} &    \textbf{0.858} &  \textbf{1.000} \\
-Angular\_R         &    0.729 &    0.782 &  \textbf{0.809} &      \textbf{0.980} &    0.566 &  0.697 \\
-Cingulum\_Post\_L   &    \textbf{1.000} &    \textbf{1.000} &  \textbf{1.000} &      0.589 &    0.509 &  0.773 \\
-Cingulum\_Post\_R   &    \textbf{0.843} &    \textbf{0.852} &  0.791 &      0.524 &    0.228 &  0.442 \\
-Cuneus\_R          &    0.173 &    0.121 &  0.188 &      \textbf{1.000} &    0.683 &  \textbf{0.857} \\
-Fusiform\_L        &    0.495 &    0.156 &  0.167 &      0.652 &    0.561 &  0.713 \\
-Hippocampus\_R     &    \textbf{0.807} &    0.375 &  0.413 &      0.235 &    0.155 &  0.425 \\
-Occipital\_Inf\_L   &    0.378 &    0.078 &  0.023 &      \textbf{1.000} &    \textbf{1.000} &  \textbf{1.000} \\
-Occipital\_Inf\_R   &    0.380 &    0.080 &  0.011 &      \textbf{1.000} &    0.794 &  \textbf{0.930} \\
-Occipital\_Mid\_L   &    0.449 &    0.184 &  0.138 &      \textbf{1.000} &    \textbf{0.881} &  \textbf{1.000} \\
-Occipital\_Mid\_R   &    0.347 &    0.174 &  0.128 &      \textbf{0.861} &    0.642 &  0.770 \\
-Occipital\_Sup\_R   &    0.268 &    0.094 &  0.106 &      \textbf{0.955} &    0.600 &  0.736 \\
-ParaHippocampal\_L &    0.778 &    0.444 &  0.465 &      0.098 &    0.132 &  0.262 \\
-ParaHippocampal\_R &    \textbf{0.917} &    0.276 &  0.316 &      0.233 &    0.159 &  0.311 \\
-Parietal\_Inf\_R    &    0.497 &    0.414 &  0.439 &      \textbf{1.000} &    0.339 &  0.477 \\
-Precuneus\_L       &    0.322 &    0.429 &  0.463 &      0.708 &    0.485 &  0.660 \\
-Precuneus\_R       &    0.311 &    0.375 &  0.409 &      0.770 &    0.469 &  0.644 \\
-SupraMarginal\_L   &    0.195 &    0.156 &  0.183 &      0.627 &    0.561 &  0.762 \\
-Temporal\_Inf\_L    &    0.748 &    0.350 &  0.495 &      0.676 &    0.561 &  0.735 \\
-Temporal\_Mid\_L    &    0.411 &    0.244 &  0.364 &      \textbf{0.952} &    0.635 &  \textbf{0.810} \\
-Temporal\_Mid\_R    &    0.594 &    0.234 &  0.326 &      \textbf{1.000} &    0.537 &  0.711 \\
+Angular Gyrus (left)         &    \textbf{1.000} &    \textbf{1.000} &  \textbf{1.000} &      \textbf{1.000} &    \textbf{0.858} &  \textbf{1.000} \\
+Angular Gyrus (right)         &    0.729 &    0.782 &  \textbf{0.809} &      \textbf{0.980} &    0.566 &  0.697 \\
+Cingulum Posterior Part (left)   &    \textbf{1.000} &    \textbf{1.000} &  \textbf{1.000} &      0.589 &    0.509 &  0.773 \\
+Cingulum Posterior Part (right)   &    \textbf{0.843} &    \textbf{0.852} &  0.791 &      0.524 &    0.228 &  0.442 \\
+Cuneus (right)          &    0.173 &    0.121 &  0.188 &      \textbf{1.000} &    0.683 &  \textbf{0.857} \\
+Fusiform Gyrus (left)        &    0.495 &    0.156 &  0.167 &      0.652 &    0.561 &  0.713 \\
+Hippocampus (right)     &    \textbf{0.807} &    0.375 &  0.413 &      0.235 &    0.155 &  0.425 \\
+Inferior Occipital Gyrus (left)   &    0.378 &    0.078 &  0.023 &      \textbf{1.000} &    \textbf{1.000} &  \textbf{1.000} \\
+Inferior Occipital Gyrus (right)   &    0.380 &    0.080 &  0.011 &      \textbf{1.000} &    0.794 &  \textbf{0.930} \\
+Inferior Parietal Lobule (right)    &    0.497 &    0.414 &  0.439 &      \textbf{1.000} &    0.339 &  0.477 \\
+Inferior Temporal Gyrus (left)    &    0.748 &    0.350 &  0.495 &      0.676 &    0.561 &  0.735 \\
+Middle Occipital Gyrus (left)   &    0.449 &    0.184 &  0.138 &      \textbf{1.000} &    \textbf{0.881} &  \textbf{1.000} \\
+Middle Occipital Gyrus (right)   &    0.347 &    0.174 &  0.128 &      \textbf{0.861} &    0.642 &  0.770 \\
+Middle Temporal Gyrus (left)    &    0.411 &    0.244 &  0.364 &      \textbf{0.952} &    0.635 &  \textbf{0.810} \\
+Middle Temporal Gyrus (right)    &    0.594 &    0.234 &  0.326 &      \textbf{1.000} &    0.537 &  0.711 \\
+Parahippocampal Gyrus (left) &    0.778 &    0.444 &  0.465 &      0.098 &    0.132 &  0.262 \\
+Parahippocampal Gyrus (right) &    \textbf{0.917} &    0.276 &  0.316 &      0.233 &    0.159 &  0.311 \\
+Precuneus (left)       &    0.322 &    0.429 &  0.463 &      0.708 &    0.485 &  0.660 \\
+Precuneus (right)       &    0.311 &    0.375 &  0.409 &      0.770 &    0.469 &  0.644 \\
+Superior Occipital Gyrus (right)   &    0.268 &    0.094 &  0.106 &      \textbf{0.955} &    0.600 &  0.736 \\
+Supramarginal Gyrus (left)   &    0.195 &    0.156 &  0.183 &      0.627 &    0.561 &  0.762 \\
 	\bottomrule
 \end{tabularx}
-\caption[Percentage of overlap between the selected areas by each method and the AAL atlas regions.]{Percentage of overlap between the selected areas by each method and the AAL atlas regions. For simplicity, overlapping values higher than 0.8 are displayed in bold.}
+\caption[Percentage of overlap between the selected areas by each method and the \acs{AAL} atlas regions.]{Percentage of overlap between the selected areas by each method and the \acs{AAL} atlas regions. For simplicity, overlapping values higher than 0.8 are displayed in bold.}
 \label{tab:overlapVDLNAD}
-\end{table} 
+\end{bigtable} 
 
-In the case of the VDLN-HMPAO dataset, the most interesting regions are located at the occipital lobe, the angular lobe and few of them in the temporal lobe. These are selected using almost any of the selection criteria. However, when using the ADNI-PET dataset, the only region with a significant overlapping is the angular lobe, and other regions with a widely documented relation to \ac{AD} are highlighted \cite{Dubois2007,Claus1994}, such as the cingulum, hippocampus and parahippocampal lobe. 
+In the case of the VDLN-HMPAO dataset, the most interesting regions are located at the occipital lobe, the angular lobe and few of them in the temporal lobe. These are selected using almost any of the selection criteria. However, when using the ADNI-PET dataset, the only region with a significant overlapping is the angular gyrus, and other regions with a widely documented relation to \ac{AD} are highlighted \cite{Dubois2007,Claus1994}, such as the cingulum, hippocampus and parahippocampal gyrus. 
 
-It is clearly noticeable that the relative entropy selection criterion focuses on many different regions, but it is the only one able to detect the hippocampus or parahippocampal lobe in the \ac{PET} dataset, which other criteria ignore. It also focuses more on the different parts of the occipital lobe in the \ac{SPECT} dataset. This difference in the selected areas could lead to the different overall performance observed in Figures~\ref{fig:AD-AV-FA-ENTROPY-VSN}, \ref{fig:AD-AV-FA-ENTROPY-VSK}, \ref{fig:AD-AV-ICA-ENTROPY-VSN}, and \ref{fig:AD-AV-ICA-ENTROPY-VSK}.
+It is clearly noticeable that the relative entropy selection criterion focuses on many different regions, but it is the only one able to detect the hippocampus or parahippocampal gyrus in the \ac{PET} dataset, which other criteria ignore. It also focuses more on the different parts of the occipital lobe in the \ac{SPECT} dataset. This difference in the selected areas could lead to the different overall performance observed in Figures~\ref{fig:AD-AV-FA-ENTROPY-VSN}, \ref{fig:AD-AV-FA-ENTROPY-VSK}, \ref{fig:AD-AV-ICA-ENTROPY-VSN}, and \ref{fig:AD-AV-ICA-ENTROPY-VSK}.
 
 For its part, wilcoxon and $t$-test often select similar regions. This can be due to their similarity under the normal distribution \cite{Fay10}, and leads to a higher performance in the systems in average and at the operation point (see Figures~\ref{fig:accuracyMeanFA-AD}, \ref{fig:accuracyMeanICA-AD}, \ref{fig:accuracyOP-ADvsN} and \ref{fig:accuracyOP-AD}). From the selected regions, and since $t$-test and wilcoxon perform generally better, we can infer the more interesting regions for \ac{AD} classification. For the ADNI-PET dataset, these would be the angular lobes and the cingulum, whereas for the VDLN-HMPAO, we can observe differences in the angular lobe and also all over the occipital lobe and parts of the temporal lobe. 
 
@@ -556,4 +558,4 @@ This is clearly seen in Figure~\ref{fig:accuracyOP-PKSvsN} where the performance
 
 When looking at the evolution of the performance with the number of selected components, (Figure~\ref{fig:accuracyOP-PKS}), the pattern observed in \ac{AD} holds for the PPMI-DAT and the VDLV-DAT datasets. In these cases, maximum performance is obtained with a relatively small $c$ (between 4 and 8, depending on the decomposition algorithm). However, with the relative entropy criterion, the VDLN-DAT still needs a higher number (more than 10) to reach the operation point. 
 
-All these differences in behaviour could be due to a higher variability in VDLN-DAT, compared to the other two datasets. The number of components needed, especially in \ac{FA}, points to a more complex decomposition of those images. The sources of variability in this dataset probably correspond to a higher proportion of \ac{SWEDD} subjects and the number of cuts used in the acquisition. The number of \ac{SWEDD} in VDLN-DAT is 30 for a total dataset of 148 patients, whereas in the PPMI-DAT dataset we only have 32 \ac{SWEDD} for 301 subjects. Furthermore, the number of cuts in the images of VDLN-DAT differs from one image to another, since they follow a common practice in which only the \acp{ROI} of the brain (the striatum) are acquired. 
+All these differences in behaviour could be due to a higher variability in VDLN-DAT, compared to the other two datasets. The number of components needed, especially in \ac{FA}, points to a more complex decomposition of those images. The sources of variability in this dataset probably correspond to a higher proportion of \ac{SWEDD} subjects and the number of cuts used in the acquisition. The number of \ac{SWEDD} in VDLN-DAT is 30 for a total dataset of 148 patients, whereas in the PPMI-DAT dataset we only have 31 \ac{SWEDD} for 301 subjects. Furthermore, the number of cuts in the images of VDLN-DAT differs from one image to another, since they follow a common practice in which only the \acp{ROI} of the brain (the striatum) are acquired. 
