@@ -2110,9 +2110,6 @@
       \verb{doi}
       \verb 10.1016/j.eswa.2012.11.017
       \endverb
-      \verb{url}
-      \verb http://www.sciencedirect.com/science/article/pii/S0957417412012274
-      \endverb
       \keyw{Parkinsonian Syndrome (PS)}
     \endentry
     \entry{Salas-Gonzalez2013}{article}{}
@@ -2865,6 +2862,41 @@
       \endverb
       \keyw{Alzheimer Disease,diagnosis,epidemiology,genetics,therapy; Amyloid beta-Peptides,metabolism; Biomarkers,blood,cerebrospinal fluid; Brain,metabolism,pathology; Delphi Technique; Diagnostic Imaging; Humans; Neurofibrillary Tangles,pathology; Neurologic Examination; Plaque,Amyloid,pathology; Prevalence; Risk Factors; tau Proteins,metabolism}
     \endentry
+    \entry{Chang2001}{article}{}
+      \name{author}{2}{}{%
+        {{hash=90dbdcacecdffc9ea33bf0a0d370c416}{%
+           family={Chang},
+           family_i={C\bibinitperiod},
+           given={Chih-Chung},
+           given_i={C\bibinithyphendelim C\bibinitperiod}}}%
+        {{hash=bb8c32ec740b902c4f066796b083badc}{%
+           family={Lin},
+           family_i={L\bibinitperiod},
+           given={Chih-Jen},
+           given_i={C\bibinithyphendelim J\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Association for Computing Machinery (ACM)}%
+      }
+      \strng{namehash}{1224d323be40e9eaf84c63498a939f53}
+      \strng{fullhash}{1224d323be40e9eaf84c63498a939f53}
+      \field{sortinit}{2}
+      \field{sortinithash}{8343b463aacf48517c044b4d2c9c45ed}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issn}{2157-6904}
+      \field{journaltitle}{ACM Transactions on Intelligent Systems and Technology}
+      \field{month}{04}
+      \field{number}{3}
+      \field{title}{LIBSVM: a library for support vector machines}
+      \field{volume}{2}
+      \field{year}{2011}
+      \field{pages}{1\bibrangedash 27}
+      \range{pages}{27}
+      \verb{doi}
+      \verb 10.1145/1961189.1961199
+      \endverb
+    \endentry
     \entry{Gorriz2010}{article}{}
       \name{author}{5}{}{%
         {{hash=7874a31bf28a43fb11d4e5217882ae92}{%
@@ -3538,9 +3570,6 @@
       \verb{file}
       \verb PPMI.pdf:Databases/PPMI - The Parkinson Progression Marker Initiative (PPMI).pdf:PDF;PPMI-2.pdf:Databases/PPMI-2.pdf:PDF;PPMI-Data-Use-Agreement.pdf:Databases/PPMI-Data-Use-Agreement.pdf:PDF;PPMI-Publication-Policy.pdf:Databases/PPMI-Publication-Policy.pdf:PDF;PPMI - Imaging-Manual.pdf:Databases/PPMI - Imaging-Manual.pdf:PDF
       \endverb
-      \verb{url}
-      \verb http://www.sciencedirect.com/science/article/pii/S0301008211001651
-      \endverb
       \keyw{alpha synuclein; biomarker; cerebrospinal fluid; Diffusion tensor imaging; Dopamine transporter imaging}
     \endentry
     \entry{Martinez201141}{inproceedings}{}
@@ -3636,9 +3665,6 @@
       \range{pages}{9}
       \verb{doi}
       \verb 10.1097/MNM.0b013e328347cd09
-      \endverb
-      \verb{url}
-      \verb http://www.ncbi.nlm.nih.gov/pubmed/21659911
       \endverb
       \keyw{Automation; Female; Humans; Image Interpretation; {Computer-Assisted}; Male; Middle Aged; Parkinsonian Disorders; Principal Component Analysis; Tomography; {Emission-Computed}; {Single-Photon}; Tropanes}
     \endentry
@@ -4190,8 +4216,8 @@
       \field{year}{2009}
       \field{pages}{1415\bibrangedash 1422}
       \range{pages}{8}
-      \verb{url}
-      \verb http://www.sciencedirect.com/science/article/B6WNP-4TVHSN7-9/2/5cc8f8f25da785653bfcef199a129979
+      \verb{doi}
+      \verb 10.1016/j.neuroimage.2008.10.031
       \endverb
       \keyw{Alzheimer's disease; AD; Early detection; Mild cognitive impairment; MCI; Pattern classification; Structural MRI; Imaging biomarker}
     \endentry
@@ -4374,9 +4400,6 @@
       \range{pages}{12}
       \verb{file}
       \verb Spetsieris - Differences Functional Imaging - PKS.pdf:PKS/Spetsieris - Differences Functional Imaging - PKS.pdf:PDF
-      \endverb
-      \verb{url}
-      \verb http://www.sciencedirect.com/science/article/B6WNP-4VCH6WN-1/2/fbde9dd344d47cc00f6923a23af3796a
       \endverb
       \keyw{Differential diagnosis; Parkinson's disease; Functional neuroimaging; Brain networks; PET; PCA; CAD}
     \endentry
@@ -4817,6 +4840,38 @@
       \field{pages}{418\bibrangedash 435}
       \range{pages}{18}
     \endentry
+    \entry{Lin2008}{article}{}
+      \name{author}{3}{}{%
+        {{hash=bb8c32ec740b902c4f066796b083badc}{%
+           family={Lin},
+           family_i={L\bibinitperiod},
+           given={Chih-Jen},
+           given_i={C\bibinithyphendelim J\bibinitperiod}}}%
+        {{hash=15b7b39d33df3ab9752c3c7578e7ff74}{%
+           family={Weng},
+           family_i={W\bibinitperiod},
+           given={Ruby\bibnamedelima C},
+           given_i={R\bibinitperiod\bibinitdelim C\bibinitperiod}}}%
+        {{hash=abd335ea5a4587a001f9bf73ffb09fb2}{%
+           family={Keerthi},
+           family_i={K\bibinitperiod},
+           given={S\bibnamedelima Sathiya},
+           given_i={S\bibinitperiod\bibinitdelim S\bibinitperiod}}}%
+      }
+      \strng{namehash}{267059704efe8075380bf7e22189b319}
+      \strng{fullhash}{267059704efe8075380bf7e22189b319}
+      \field{sortinit}{2}
+      \field{sortinithash}{8343b463aacf48517c044b4d2c9c45ed}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Journal of Machine Learning Research}
+      \field{number}{Apr}
+      \field{title}{Trust region newton method for logistic regression}
+      \field{volume}{9}
+      \field{year}{2008}
+      \field{pages}{627\bibrangedash 650}
+      \range{pages}{24}
+    \endentry
     \entry{Lopez-Hurtado2008}{article}{}
       \name{author}{2}{}{%
         {{hash=82cecdf9084197e36fd1fbb473a5c3f8}{%
@@ -5229,9 +5284,6 @@
       \verb{doi}
       \verb 10.1016/j.cnr.2007.05.001
       \endverb
-      \verb{url}
-      \verb http://www.sciencedirect.com/science/article/pii/S1566277207000023
-      \endverb
       \keyw{Parkinsonism}
     \endentry
     \entry{spm_book}{book}{}
@@ -5350,9 +5402,6 @@
       \verb{doi}
       \verb 10.1016/S1578-200X(07)70062-1
       \endverb
-      \verb{url}
-      \verb http://www.sciencedirect.com/science/article/pii/S1578200X07700621
-      \endverb
       \keyw{Parkinsonism}
     \endentry
     \entry{PunalRioboo2007}{article}{}
@@ -5438,9 +5487,6 @@
       \range{pages}{11}
       \verb{doi}
       \verb 10.1093/bioinformatics/btm344
-      \endverb
-      \verb{url}
-      \verb http://dx.doi.org/10.1093/bioinformatics/btm344
       \endverb
       \keyw{Algorithms; Artificial Intelligence; Computational Biology,methods; Computer Simulation; Gene Expression Profiling,methods; Models,Biological; Pattern Recognition,Automated,methods; Sequence Analysis,methods}
     \endentry
@@ -5547,9 +5593,6 @@
       \field{year}{2007}
       \field{pages}{298\bibrangedash 312}
       \range{pages}{15}
-      \verb{url}
-      \verb http://www.sciencedirect.com/science/article/B6WNP-4N8M886-1/2/de5a061a0cf2d3250bcac48cc4f77be2
-      \endverb
     \endentry
     \entry{Dapretto2006}{article}{}
       \name{author}{7}{}{%
@@ -6111,9 +6154,6 @@
       \verb{doi}
       \verb 10.1016/j.amjmed.2004.03.032
       \endverb
-      \verb{url}
-      \verb http://www.sciencedirect.com/science/article/pii/S0002934304003626
-      \endverb
     \endentry
     \entry{Fischl2004}{article}{}
       \true{moreauthor}
@@ -6527,9 +6567,6 @@
       \field{year}{2003}
       \verb{doi}
       \verb 10.1007/978-3-540-39857-8_10
-      \endverb
-      \verb{url}
-      \verb http://dx.doi.org/10.1007/978-3-540-39857-8_10
       \endverb
       \warn{\item Overwriting field 'year' with year value from field 'date' for entry 'DaelemansHosteMeulderEtAl2003'}
       \warn{\item Overwriting field 'month' with month value from field 'date' for entry 'DaelemansHosteMeulderEtAl2003'}
@@ -9171,6 +9208,41 @@
       \field{title}{Physiology of behavior}
       \field{year}{2016}
     \endentry
+    \entry{Chang2001}{article}{}
+      \name{author}{2}{}{%
+        {{hash=90dbdcacecdffc9ea33bf0a0d370c416}{%
+           family={Chang},
+           family_i={C\bibinitperiod},
+           given={Chih-Chung},
+           given_i={C\bibinithyphendelim C\bibinitperiod}}}%
+        {{hash=bb8c32ec740b902c4f066796b083badc}{%
+           family={Lin},
+           family_i={L\bibinitperiod},
+           given={Chih-Jen},
+           given_i={C\bibinithyphendelim J\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Association for Computing Machinery (ACM)}%
+      }
+      \strng{namehash}{1224d323be40e9eaf84c63498a939f53}
+      \strng{fullhash}{1224d323be40e9eaf84c63498a939f53}
+      \field{sortinit}{C}
+      \field{sortinithash}{59f25d509f3381b07695554a9f35ecb2}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issn}{2157-6904}
+      \field{journaltitle}{ACM Transactions on Intelligent Systems and Technology}
+      \field{month}{04}
+      \field{number}{3}
+      \field{title}{LIBSVM: a library for support vector machines}
+      \field{volume}{2}
+      \field{year}{2011}
+      \field{pages}{1\bibrangedash 27}
+      \range{pages}{27}
+      \verb{doi}
+      \verb 10.1145/1961189.1961199
+      \endverb
+    \endentry
     \entry{Chen2008}{article}{}
       \name{author}{4}{}{%
         {{hash=733ab03db51a7a85058f6fc1b46b7fac}{%
@@ -9238,9 +9310,6 @@
       \range{pages}{8}
       \verb{doi}
       \verb 10.1016/j.amjmed.2004.03.032
-      \endverb
-      \verb{url}
-      \verb http://www.sciencedirect.com/science/article/pii/S0002934304003626
       \endverb
     \endentry
     \entry{Claus1994}{article}{}
@@ -9427,9 +9496,6 @@
       \field{year}{2003}
       \verb{doi}
       \verb 10.1007/978-3-540-39857-8_10
-      \endverb
-      \verb{url}
-      \verb http://dx.doi.org/10.1007/978-3-540-39857-8_10
       \endverb
       \warn{\item Overwriting field 'year' with year value from field 'date' for entry 'DaelemansHosteMeulderEtAl2003'}
       \warn{\item Overwriting field 'month' with month value from field 'date' for entry 'DaelemansHosteMeulderEtAl2003'}
@@ -10415,9 +10481,6 @@
       \range{pages}{8}
       \verb{doi}
       \verb 10.1016/j.cnr.2007.05.001
-      \endverb
-      \verb{url}
-      \verb http://www.sciencedirect.com/science/article/pii/S1566277207000023
       \endverb
       \keyw{Parkinsonism}
     \endentry
@@ -12446,6 +12509,38 @@
       \field{title}{Heterogeneity within autism spectrum disorders: what have we learned from neuroimaging studies?}
       \field{year}{2013}
     \endentry
+    \entry{Lin2008}{article}{}
+      \name{author}{3}{}{%
+        {{hash=bb8c32ec740b902c4f066796b083badc}{%
+           family={Lin},
+           family_i={L\bibinitperiod},
+           given={Chih-Jen},
+           given_i={C\bibinithyphendelim J\bibinitperiod}}}%
+        {{hash=15b7b39d33df3ab9752c3c7578e7ff74}{%
+           family={Weng},
+           family_i={W\bibinitperiod},
+           given={Ruby\bibnamedelima C},
+           given_i={R\bibinitperiod\bibinitdelim C\bibinitperiod}}}%
+        {{hash=abd335ea5a4587a001f9bf73ffb09fb2}{%
+           family={Keerthi},
+           family_i={K\bibinitperiod},
+           given={S\bibnamedelima Sathiya},
+           given_i={S\bibinitperiod\bibinitdelim S\bibinitperiod}}}%
+      }
+      \strng{namehash}{267059704efe8075380bf7e22189b319}
+      \strng{fullhash}{267059704efe8075380bf7e22189b319}
+      \field{sortinit}{L}
+      \field{sortinithash}{872351f18d0f736066eda0bf18bfa4f7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Journal of Machine Learning Research}
+      \field{number}{Apr}
+      \field{title}{Trust region newton method for logistic regression}
+      \field{volume}{9}
+      \field{year}{2008}
+      \field{pages}{627\bibrangedash 650}
+      \range{pages}{24}
+    \endentry
     \entry{Lombardo2011}{article}{}
       \true{moreauthor}
       \true{morelabelname}
@@ -12666,9 +12761,6 @@
       \range{pages}{9}
       \verb{doi}
       \verb 10.1016/S1578-200X(07)70062-1
-      \endverb
-      \verb{url}
-      \verb http://www.sciencedirect.com/science/article/pii/S1578200X07700621
       \endverb
       \keyw{Parkinsonism}
     \endentry
@@ -13196,9 +13288,6 @@
       \endverb
       \verb{file}
       \verb PPMI.pdf:Databases/PPMI - The Parkinson Progression Marker Initiative (PPMI).pdf:PDF;PPMI-2.pdf:Databases/PPMI-2.pdf:PDF;PPMI-Data-Use-Agreement.pdf:Databases/PPMI-Data-Use-Agreement.pdf:PDF;PPMI-Publication-Policy.pdf:Databases/PPMI-Publication-Policy.pdf:PDF;PPMI - Imaging-Manual.pdf:Databases/PPMI - Imaging-Manual.pdf:PDF
-      \endverb
-      \verb{url}
-      \verb http://www.sciencedirect.com/science/article/pii/S0301008211001651
       \endverb
       \keyw{alpha synuclein; biomarker; cerebrospinal fluid; Diffusion tensor imaging; Dopamine transporter imaging}
     \endentry
@@ -14095,8 +14184,8 @@
       \field{year}{2009}
       \field{pages}{1415\bibrangedash 1422}
       \range{pages}{8}
-      \verb{url}
-      \verb http://www.sciencedirect.com/science/article/B6WNP-4TVHSN7-9/2/5cc8f8f25da785653bfcef199a129979
+      \verb{doi}
+      \verb 10.1016/j.neuroimage.2008.10.031
       \endverb
       \keyw{Alzheimer's disease; AD; Early detection; Mild cognitive impairment; MCI; Pattern classification; Structural MRI; Imaging biomarker}
     \endentry
@@ -14666,9 +14755,6 @@
       \verb{doi}
       \verb 10.1016/j.eswa.2012.11.017
       \endverb
-      \verb{url}
-      \verb http://www.sciencedirect.com/science/article/pii/S0957417412012274
-      \endverb
       \keyw{Parkinsonian Syndrome (PS)}
     \endentry
     \entry{Saeed2002}{article}{}
@@ -14742,9 +14828,6 @@
       \range{pages}{11}
       \verb{doi}
       \verb 10.1093/bioinformatics/btm344
-      \endverb
-      \verb{url}
-      \verb http://dx.doi.org/10.1093/bioinformatics/btm344
       \endverb
       \keyw{Algorithms; Artificial Intelligence; Computational Biology,methods; Computer Simulation; Gene Expression Profiling,methods; Models,Biological; Pattern Recognition,Automated,methods; Sequence Analysis,methods}
     \endentry
@@ -15565,9 +15648,6 @@
       \verb{file}
       \verb Spetsieris - Differences Functional Imaging - PKS.pdf:PKS/Spetsieris - Differences Functional Imaging - PKS.pdf:PDF
       \endverb
-      \verb{url}
-      \verb http://www.sciencedirect.com/science/article/B6WNP-4VCH6WN-1/2/fbde9dd344d47cc00f6923a23af3796a
-      \endverb
       \keyw{Differential diagnosis; Parkinson's disease; Functional neuroimaging; Brain networks; PET; PCA; CAD}
     \endentry
     \entry{Srinivasan2008}{inproceedings}{}
@@ -16039,9 +16119,6 @@
       \range{pages}{9}
       \verb{doi}
       \verb 10.1097/MNM.0b013e328347cd09
-      \endverb
-      \verb{url}
-      \verb http://www.ncbi.nlm.nih.gov/pubmed/21659911
       \endverb
       \keyw{Automation; Female; Humans; Image Interpretation; {Computer-Assisted}; Male; Middle Aged; Parkinsonian Disorders; Principal Component Analysis; Tomography; {Emission-Computed}; {Single-Photon}; Tropanes}
     \endentry
@@ -16890,9 +16967,6 @@
       \field{year}{2007}
       \field{pages}{298\bibrangedash 312}
       \range{pages}{15}
-      \verb{url}
-      \verb http://www.sciencedirect.com/science/article/B6WNP-4N8M886-1/2/de5a061a0cf2d3250bcac48cc4f77be2
-      \endverb
     \endentry
     \entry{Zuercher2015}{article}{}
       \name{author}{4}{}{%
