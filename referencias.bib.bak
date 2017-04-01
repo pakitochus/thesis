@@ -2031,15 +2031,14 @@
 }
 
 @Article{Lai2012,
-  author        = {Lai, Meng-Chuan and Lombardo, Michael V and Chakrabarti, Bhismadev and Ecker, Christine and Sadek, Susan A and Wheelwright, Sally J and Murphy, Declan GM and Suckling, John and Bullmore, Edward T and Baron-Cohen, Simon and others},
-  title         = {Individual differences in brain structure underpin empathizing--systemizing cognitive styles in male adults},
-  journal       = {Neuroimage},
-  year          = {2012},
-  volume        = {61},
-  number        = {4},
-  pages         = {1347--1354},
-  __markedentry = {[pakitochus:]},
-  publisher     = {Elsevier},
+  author    = {Lai, Meng-Chuan and Lombardo, Michael V and Chakrabarti, Bhismadev and Ecker, Christine and Sadek, Susan A and Wheelwright, Sally J and Murphy, Declan GM and Suckling, John and Bullmore, Edward T and Baron-Cohen, Simon and others},
+  title     = {Individual differences in brain structure underpin empathizing--systemizing cognitive styles in male adults},
+  journal   = {Neuroimage},
+  year      = {2012},
+  volume    = {61},
+  number    = {4},
+  pages     = {1347--1354},
+  publisher = {Elsevier},
 }
 
 @Book{Vapnik1998,
@@ -2195,15 +2194,37 @@
 }
 
 @Article{Salas-Gonzalez2015,
-  author        = {Salas-Gonzalez, Diego and G{\'o}rriz, Juan M and Ram{\'i}rez, Javier and Ill{\'a}n, Ignacio A and Padilla, Pablo and Mart{\'i}nez-Murcia, Francisco J and Lang, Elmar W},
-  title         = {Building a FP-CIT SPECT Brain Template Using a Posterization Approach},
-  journal       = {Neuroinformatics},
-  year          = {2015},
-  volume        = {13},
-  number        = {4},
-  pages         = {391--402},
+  author    = {Salas-Gonzalez, Diego and G{\'o}rriz, Juan M and Ram{\'i}rez, Javier and Ill{\'a}n, Ignacio A and Padilla, Pablo and Mart{\'i}nez-Murcia, Francisco J and Lang, Elmar W},
+  title     = {Building a FP-CIT SPECT Brain Template Using a Posterization Approach},
+  journal   = {Neuroinformatics},
+  year      = {2015},
+  volume    = {13},
+  number    = {4},
+  pages     = {391--402},
+  publisher = {Springer},
+}
+
+@Article{Lin2008,
+  author        = {Lin, Chih-Jen and Weng, Ruby C and Keerthi, S Sathiya},
+  title         = {Trust region newton method for logistic regression},
+  journal       = {Journal of Machine Learning Research},
+  year          = {2008},
+  volume        = {9},
+  number        = {Apr},
+  pages         = {627--650},
+  __markedentry = {[pakitochus:]},
+}
+
+@Article{Caspi2014,
+  author        = {Caspi, Avshalom and Houts, Renate M and Belsky, Daniel W and Goldman-Mellor, Sidra J and Harrington, HonaLee and Israel, Salomon and Meier, Madeline H and Ramrakha, Sandhya and Shalev, Idan and Poulton, Richie and others},
+  title         = {The p factor: one general psychopathology factor in the structure of psychiatric disorders?},
+  journal       = {Clinical Psychological Science},
+  year          = {2014},
+  volume        = {2},
+  number        = {2},
+  pages         = {119--137},
   __markedentry = {[pakitochus:6]},
-  publisher     = {Springer},
+  publisher     = {SAGE Publications Sage CA: Los Angeles, CA},
 }
 
 @Comment{jabref-meta: databaseType:bibtex;}
