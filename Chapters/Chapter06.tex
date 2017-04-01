@@ -182,7 +182,7 @@ To better understand the \ac{SBM} maps, and the location of different features, 
 	\label{fig:regionsSub}
 \end{figure*}
 
-\section{Sampling Paths via \acf{HMM}}\label{sec:hmmpaths}
+\origsection{Sampling Paths via \acfp{HMM}}\label{sec:hmmpaths}
 The rectilinear mapping vector used in the original \ac{SBM} \cite{Martinez-Murcia2014225,Martinez-MurciaVRLBP,Martinez-Murcia2015} has some limitations, partially overcome by the \ac{VRLBP} and the layered extension. However, a more flexible sampling could be beneficial for the computation of texture measures. In this section we present the technique used to define minimum intensity change sampling paths via Hidden Markov Models, that was firstly proposed in \cite{Martinez-Murcia2016}. These paths are defined so that the resulting sampled sets contain information about both intensity and structure of the brain. 
 
 % Algoritmo base de extracción de puntos
@@ -523,7 +523,7 @@ Finally, we proceed as in the original \ac{SBM} article \cite{Martinez-Murcia201
 \begin{figure}
 \centering
 \includegraphics[width=\linewidth]{Graphics/ch6/HMMStatMaps}
-\caption{}
+\caption{Example of the resulting hybrid \acs{HMM}-\acs{SBM} texture maps.}
 \label{fig:hmmstatmaps}
 \end{figure}
 
@@ -545,7 +545,7 @@ The resulting maps are very different from the original \ac{SBM} ones, and the d
 \end{table}
 
 \subsection{Experiment 5: Texture \acs{SBM} Maps based on \acs{HMM} Paths}
-After evaluating the \ac{HMM} paths as a feature selection method, and the hybrid \ac{HMM}-\ac{SBM} maps, we want to compute new texture maps, similar to the approach used in the \ac{VRLBP} extension, but using a path-based \ac{GLCM}.  To do so, we will derive a \ac{GLCM} from each of the canonical paths, and extract one single value per texture feature and direction, which allow us to construct texture \ac{SBM} maps. In Table Table~\ref{tab:textureSBM} we show the performance values for the maps built using each of the texture features proposed in Section~\ref{sec:rtextfeat}
+After evaluating the \ac{HMM} paths as a feature selection method, and the hybrid \ac{HMM}-\ac{SBM} maps, we want to compute new texture maps, similar to the approach used in the \ac{VRLBP} extension, but using a path-based \ac{GLCM}.  To do so, we will derive a \ac{GLCM} from each of the canonical paths, and extract one single value per texture feature and direction, which allow us to construct texture \ac{SBM} maps. In Table~\ref{tab:texture} we show the performance values for the maps built using each of the texture features proposed in Section~\ref{sec:rtextfeat}
 
 \begin{table*}
 	\myfloatalign
@@ -640,10 +640,10 @@ Finally, we tested the \ac{HMM} paths' application to compute radial \ac{GLCM} a
 
 Further improvements could be made by computing an independent set of paths per subject, and then extract morphological measures such as curvature or torsion, or extend the computation of textural features to longitudinal studies, as we mentioned previously. This seem a very promising approach that will be tested in future works. 
 
-\subsection{General Discussion of \acs{SBM}}
+\subsection{\acs{SBM} Framework Comparison}
 To obtain a general view of the \ac{SBM} and its extension within the state of the art, in Table~\ref{tab:comparison2} we present some of the best results that have been already commented. We first present the values for the \ac{VAF} approach \cite{Stoeckel04} in T1, \ac{GM} and \ac{WM} images. Then, we present the performance of the average and \ac{VRLBP} maps of our \ac{SBM}, and the \ac{HMM} paths, both as feature selection tool (individual paths and selected features from the paths), the hybrid \ac{HMM}-\ac{SBM} tool (variance and kurtosis) and the best scoring texture feature (difference variance). 
 
-Then, we provide reference values of some state of the art methodology that has been tested against the \adnimri{} database. These are: LVQ) a Learning Vector Quantization (LVQ) \cite{Ortiz2013} used to model the tissue distribution of \ac{CTL} and \ac{AD} images and project the images to a new space, just to use the projections in a \ac{SVC}; and SCA) the Spatial Component Analysis proposed in \cite{Illan2014}, a bayesian network modelling of the dependencies between affected regions (or spatial components) in \ac{AD}. 
+Afterwards, we provide reference values of some state of the art methodology that has been tested against the \adnimri{} database. These are: LVQ) a Learning Vector Quantization (LVQ) \cite{Ortiz2013} used to model the tissue distribution of \ac{CTL} and \ac{AD} images and project the images to a new space, just to use the projections in a \ac{SVC}; and SCA) the Spatial Component Analysis proposed in \cite{Illan2014}, a bayesian network modelling of the dependencies between affected regions (or spatial components) in \ac{AD}. 
 
 \begin{table}
 	\myfloatalign

@@ -42,48 +42,48 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {table}{\numberline {6.1}{\ignorespaces Performance values (Average $\pm $ Standard Deviation) for the different \ac {SBM} approaches.\relax }}{103}{table.caption.123}
 \defcounter {refsection}{0}\relax 
-\contentsline {table}{\numberline {6.2}{\ignorespaces Performnace values for using the \acs {HMM} paths in feature selection.}}{111}{table.caption.131}
+\contentsline {table}{\numberline {6.2}{\ignorespaces Performnace values for using the \acs {HMM} paths in feature selection.}}{112}{table.caption.131}
 \defcounter {refsection}{0}\relax 
 \contentsline {table}{\numberline {6.3}{\ignorespaces Performance values ($\pm $SD) for the hybrid \ac {HMM}-\ac {SBM} maps, using some statistical measures.\relax }}{112}{table.caption.133}
 \defcounter {refsection}{0}\relax 
-\contentsline {table}{\numberline {6.4}{\ignorespaces Performance values ($\pm $SD) for each of the 10 texture features.\relax }}{113}{table.caption.134}
+\contentsline {table}{\numberline {6.4}{\ignorespaces Performance values ($\pm $SD) for each of the 10 texture features.\relax }}{114}{table.caption.134}
 \defcounter {refsection}{0}\relax 
-\contentsline {table}{\numberline {6.5}{\ignorespaces Comparison between our algorithm performance values (best values for selected voxels in all paths and texture features) ($\pm $SD) and other methods in the bibliography\relax }}{119}{table.caption.138}
-\defcounter {refsection}{0}\relax 
-\addvspace {10\p@ }
-\defcounter {refsection}{0}\relax 
-\contentsline {table}{\numberline {7.1}{\ignorespaces Between-site classification accuracy ($\pm $ standard deviation) for different modalities and masks without and with \acs {SWPCA} correction.}}{133}{table.caption.145}
-\defcounter {refsection}{0}\relax 
-\contentsline {table}{\numberline {7.2}{\ignorespaces Classification accuracy (Acc), sensitivity (Sen) and specificity (Spec) $\pm $ standard deviation for each modality and mask using the participants acquired at the {\relax \fontsize {12}{14}\selectfont \textsc {lon}}{} and {\relax \fontsize {12}{14}\selectfont \textsc {cam}}{} sites.}}{134}{table.caption.146}
-\defcounter {refsection}{0}\relax 
-\contentsline {table}{\numberline {7.3}{\ignorespaces Classification accuracy (Acc), sensitivity (Sen), and specificity (Spec) $\pm $ STD for the different modalities and masks using {\relax \fontsize {12}{14}\selectfont \textsc {all}}{}, before and after applying \acs {SWPCA}.}}{138}{table.caption.149}
+\contentsline {table}{\numberline {6.5}{\ignorespaces Comparison between our algorithm performance values (best values for selected voxels in all paths and texture features) ($\pm $SD) and other methods in the bibliography\relax }}{120}{table.caption.138}
 \defcounter {refsection}{0}\relax 
 \addvspace {10\p@ }
 \defcounter {refsection}{0}\relax 
-\contentsline {table}{\numberline {8.1}{\ignorespaces Baseline experiment, in which we evaluate the performance of a \acs {VAF} system under the different scenarios of the two datasets.\relax }}{150}{table.caption.157}
+\contentsline {table}{\numberline {7.1}{\ignorespaces Between-site classification accuracy ($\pm $ standard deviation) for different modalities and masks without and with \acs {SWPCA} correction.}}{135}{table.caption.145}
 \defcounter {refsection}{0}\relax 
-\contentsline {table}{\numberline {8.2}{\ignorespaces Performance of Experiment 1, demonstrating the predictive ability of the simulated images over the real dataset.\relax }}{151}{table.caption.158}
+\contentsline {table}{\numberline {7.2}{\ignorespaces Classification accuracy (Acc), sensitivity (Sen) and specificity (Spec) $\pm $ standard deviation for each modality and mask using the participants acquired at the {\relax \fontsize {12}{14}\selectfont \textsc {lon}}{} and {\relax \fontsize {12}{14}\selectfont \textsc {cam}}{} sites.}}{136}{table.caption.146}
 \defcounter {refsection}{0}\relax 
-\contentsline {table}{\numberline {8.3}{\ignorespaces Performance of Experiment 2, proving the independence of the simulated images with respect to the originals.\relax }}{153}{table.caption.159}
+\contentsline {table}{\numberline {7.3}{\ignorespaces Classification accuracy (Acc), sensitivity (Sen), and specificity (Spec) $\pm $ STD for the different modalities and masks using {\relax \fontsize {12}{14}\selectfont \textsc {all}}{}, before and after applying \acs {SWPCA}.}}{140}{table.caption.149}
+\defcounter {refsection}{0}\relax 
+\addvspace {10\p@ }
+\defcounter {refsection}{0}\relax 
+\contentsline {table}{\numberline {8.1}{\ignorespaces Baseline experiment, in which we evaluate the performance of a \acs {VAF} system under the different scenarios of the two datasets.\relax }}{152}{table.caption.157}
+\defcounter {refsection}{0}\relax 
+\contentsline {table}{\numberline {8.2}{\ignorespaces Performance of Experiment 1, demonstrating the predictive ability of the simulated images over the real dataset.\relax }}{153}{table.caption.158}
+\defcounter {refsection}{0}\relax 
+\contentsline {table}{\numberline {8.3}{\ignorespaces Performance of Experiment 2, proving the independence of the simulated images with respect to the originals.\relax }}{155}{table.caption.159}
 \defcounter {refsection}{0}\relax 
 \addvspace {10\p@ }
 \defcounter {refsection}{0}\relax 
 \addvspace {10\p@ }
 \defcounter {refsection}{0}\relax 
-\contentsline {table}{\numberline {A.1}{\ignorespaces Summary of the datasets used in this thesis.}}{175}{table.caption.169}
+\contentsline {table}{\numberline {A.1}{\ignorespaces Summary of the datasets used in this thesis.}}{177}{table.caption.169}
 \defcounter {refsection}{0}\relax 
-\contentsline {table}{\numberline {A.2}{\ignorespaces Demographics of the {\relax \fontsize {12}{14}\selectfont \textsc {adni-mri}}{} dataset.}}{176}{table.caption.170}
+\contentsline {table}{\numberline {A.2}{\ignorespaces Demographics of the {\relax \fontsize {12}{14}\selectfont \textsc {adni-mri}}{} dataset.}}{178}{table.caption.170}
 \defcounter {refsection}{0}\relax 
-\contentsline {table}{\numberline {A.3}{\ignorespaces Demographics of the {\relax \fontsize {12}{14}\selectfont \textsc {aims-mri}}{} dataset.}}{177}{table.caption.171}
+\contentsline {table}{\numberline {A.3}{\ignorespaces Demographics of the {\relax \fontsize {12}{14}\selectfont \textsc {aims-mri}}{} dataset.}}{179}{table.caption.171}
 \defcounter {refsection}{0}\relax 
-\contentsline {table}{\numberline {A.4}{\ignorespaces Demographics of the {\relax \fontsize {12}{14}\selectfont \textsc {adni-mri}}{} dataset.}}{179}{table.caption.172}
+\contentsline {table}{\numberline {A.4}{\ignorespaces Demographics of the {\relax \fontsize {12}{14}\selectfont \textsc {adni-mri}}{} dataset.}}{181}{table.caption.172}
 \defcounter {refsection}{0}\relax 
-\contentsline {table}{\numberline {A.5}{\ignorespaces Demographic of the {\relax \fontsize {12}{14}\selectfont \textsc {vdln-hmpao}}{} dataset.}}{180}{table.caption.174}
+\contentsline {table}{\numberline {A.5}{\ignorespaces Demographic of the {\relax \fontsize {12}{14}\selectfont \textsc {vdln-hmpao}}{} dataset.}}{182}{table.caption.174}
 \defcounter {refsection}{0}\relax 
-\contentsline {table}{\numberline {A.6}{\ignorespaces Demographics of the {\relax \fontsize {12}{14}\selectfont \textsc {vdln-dat}}{} dataset.}}{181}{table.caption.175}
+\contentsline {table}{\numberline {A.6}{\ignorespaces Demographics of the {\relax \fontsize {12}{14}\selectfont \textsc {vdln-dat}}{} dataset.}}{183}{table.caption.175}
 \defcounter {refsection}{0}\relax 
-\contentsline {table}{\numberline {A.7}{\ignorespaces Demographics of the {\relax \fontsize {12}{14}\selectfont \textsc {vdlv-dat}}{} dataset.}}{182}{table.caption.176}
+\contentsline {table}{\numberline {A.7}{\ignorespaces Demographics of the {\relax \fontsize {12}{14}\selectfont \textsc {vdlv-dat}}{} dataset.}}{184}{table.caption.176}
 \defcounter {refsection}{0}\relax 
-\contentsline {table}{\numberline {A.8}{\ignorespaces Demographics of the {\relax \fontsize {12}{14}\selectfont \textsc {ppmi-dat}}{} dataset.}}{183}{table.caption.178}
+\contentsline {table}{\numberline {A.8}{\ignorespaces Demographics of the {\relax \fontsize {12}{14}\selectfont \textsc {ppmi-dat}}{} dataset.}}{185}{table.caption.178}
 \defcounter {refsection}{0}\relax 
 \addvspace {10\p@ }
