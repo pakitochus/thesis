@@ -1,4 +1,4 @@
-#  Statistical Neuroimage Processing and Synthesis based on Texture and Component Analysis: Tackling the Small Sample Size Problem. 
+#  Statistical Neuroimage Modeling, Processing and Synthesis based on Texture and Component Analysis: Tackling the Small Sample Size Problem. 
 
 A PhD thesis by *Francisco Jesus Martinez-Murcia*. Using the *ArsClassica* template. 
 
