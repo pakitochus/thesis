@@ -6,9 +6,9 @@
 %************************************************
 Throughout this thesis, we will propose many analysis techniques and \ac{CAD} systems. We will apply them to many experiments, and use similar data and techniques in them. In this chapter, we will focus on the methodology that is common to most of these experiments, particularly focusing on preprocessing and evaluation of our systems. 
 
-To perform most automated analyses on neuroimaging, it is fundamental that images are comparable. Preprocessing comprises a series of algorithms that, applied after the acquisition and reconstruction of the images, produce directly comparable images in both structure and magnitude. Whether they have been used in one or all experiments, they can be classified in two major categories: spatial and intensity preprocessing. These are addressed in Section~\ref{sec:spatial} and \ref{sec:intensityPrep} respectively. 
+To perform most automated analyses on neuroimaging, it is fundamental that images are comparable. Preprocessing comprises a series of algorithms that, applied after the acquisition and reconstruction of the images, produce directly comparable images in both structure and magnitude. Whether they have been used in one or all experiments, they can be classified in two major categories: spatial and intensity preprocessing. These are addressed in section~\ref{sec:spatial} and \ref{sec:intensityPrep} respectively. 
 
-Afterwards, in Section~\ref{sec:validation}, we will discuss how we evaluate our systems. Here we propose some performance measures and the procedure to obtain them by training and testing our systems.  
+Afterwards, in section~\ref{sec:validation}, we will discuss how we evaluate our systems. Here we propose some performance measures and the procedure to obtain them by training and testing our systems.  
 
 
 \section{Spatial Preprocessing}\label{sec:spatial}
@@ -20,7 +20,7 @@ Spatial processing usually accounts for the differences in position, angles and 
 	\caption[Typical pre-processing pipeline in \acs{MRI}]{Typical pre-processing pipeline in \ac{MRI}.}\label{fig:examplePreMRI}
 \end{figure}
 
-In this thesis, all the experiments in all image modalities involve spatial normalization. Smoothing, as well as segmentation, is only applied in some experiments that use \ac{MRI} images, such as the segmented images in Chapter~\ref{ch:sbm} or the whole-brain analysis performed in Chapter~\ref{ch:swpca}. 
+In this thesis, all the experiments in all image modalities involve spatial normalization. Smoothing, as well as segmentation, is only applied in some experiments that use \ac{MRI} images, such as the segmented images in chapter~\ref{ch:sbm} or the whole-brain analysis performed in chapter~\ref{ch:swpca}. 
 
 \subsection{Spatial Normalization or Registration}
 Spatial Normalization, also known as Registration, is the procedure that by which every subject's brain is mapped from their individual space to a standard reference system. Registered images allows our system to overcome the individual differences in position and anatomy by establishing a common reference space in which a given coordinate represent the same anatomical position in all brains in the dataset. 
@@ -125,7 +125,7 @@ The parameters $a$ and $b$ are so that the \ac{PDF} of a given matches a referen
 \end{equation}
 where $\gamma*$ and $\gamma$ are the dispersion parameters of the alpha-stable intensity distribution of the non-normalized and the reference image respectively, and $\mu*$ and $\mu$ are the location parameters of the same images. 
 
-Despite traditionally structural modalities such as \ac{MRI} did not use intensity normalization, there exist a new tendency towards the use of \ac{qT1} and \ac{qT2} images \cite{Weiskopf2013} that provide biomarkers for absolute measures such as myelination, water and iron levels. This strategy is especially designed to overcome different sources of variability that affect multicentre studies, e.g. magnetic field inhomogeneity, noise, evolution of the scanners, etc. The role of those in multi-centre studies is addressed at Chapter~\ref{ch:swpca}. 
+Despite traditionally structural modalities such as \ac{MRI} did not use intensity normalization, there exist a new tendency towards the use of \ac{qT1} and \ac{qT2} images \cite{Weiskopf2013} that provide biomarkers for absolute measures such as myelination, water and iron levels. This strategy is especially designed to overcome different sources of variability that affect multicentre studies, e.g. magnetic field inhomogeneity, noise, evolution of the scanners, etc. The role of those in multi-centre studies is addressed at chapter~\ref{ch:swpca}. 
 
 See Figure~\ref{fig:comparisonIntNorm} for a comparison between different strategies of intensity normalization on the same images. 
 

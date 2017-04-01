@@ -100,7 +100,7 @@ For evaluating the system proposed in this chapter, combining texture analysis a
 	\item Experiment 2: Impact of the introduction of a feature selection algorithm (of those presented at Section~\ref{sec:featureSelection}) after computing the texture features. This allow us to pool all texture features at all distances and directions, and then select the most discriminative ones according to some of these criteria.  
 \end{itemize}
 
-All images used are intensity normalized using either normalization to the maximum or integral normalization (see Section~\ref{sec:intensityPrep}), and afterwards, a subvolume can be extracted using the intensity threshold methodology described at Section~\ref{sec:volume}. In addition to the feature extraction technique using texture analysis, and the feature selection procedure defined for Experiment 2, we use a linear \ac{SVC} for classifying, and 10-fold cross validation strategy (see Section~\ref{sec:validation} for more details). 
+All images used are intensity normalized using either normalization to the maximum or integral normalization (see Section~\ref{sec:intensityPrep}), and afterwards, a subvolume can be extracted using the intensity threshold methodology described at Section~\ref{sec:volume}. In addition to the feature extraction technique using texture analysis, and the feature selection procedure defined for Experiment 2, we use a linear \ac{SVC} for classifying, and 10-fold cross validation strategy (see Section~\ref{sec:validation} for more details). Note that for this analysis we will remove the \ac{SWEDD} subjects from the \ppmidat{} and \vdlndat{} datasets. 
 
 \section{Results}\label{sec:ch5results}
 \subsection{Experiment 1: Individual Texture Features}
@@ -255,7 +255,7 @@ The application of intensity normalization algorithms does not imply an improvem
 
 The choice of a best selection method is here a matter of trade-off between the computer performance (the number of features to estimate) and the accuracy needed. In the case of the \ppmidat{}, it is patent that using normalized images and the t-Test selection criterion achieves best performance. For \vdlvdat{}{} is more difficult to assure that any option will perform better than others, although the t-test still performs well with the original images. Finally, with the \vdlvdat{} dataset, the preferred method will be again to use the original images, since the selection of features seems more optimal, especially when using relative entropy. Anyway, all the options reveal the ability of our system in the PD detection with an relevant performance (over 90\% of accuracy in most cases). 
 
-\section{Discussion}\label{sec:ch5discuss}
+\origsection{Discussion}\label{sec:ch5discuss}
 The system proposed in this chapter was published in \cite{Martinez-Murcia2013266,martinez2014parametrization}, and fundamentally defines a new pipeline for the \ac{CAD} of \ac{PD} based on texture analysis. It combines intensity normalization, a subvolume extraction algorithm, texture analysis and classification via \ac{SVC}. 
 
 % Intensity normalization
@@ -288,26 +288,22 @@ Finally, we will compare our proposed system with other methods used in \ac{PD} 
 
 \begin{table*}[ht]
 	\centering
-	\begin{tabular}{l rrr}
+	\begin{tabular}{lrrr}
 		\toprule
-		\tableheadline{System}		& \tableheadline{Acc} 	& \tableheadline{Sens}	& \tableheadline{Spec}	\\ 
-		\midrule
-		SumMean &  0.951 &    0.972 &    0.936 \\ 
-		Homogeneity &  0.944 &    0.946 &    0.943\\
-		Cluster Shade &   0.940 &    0.936 &    0.943  \\
-		Cluster Tendency &  0.951 &    0.945 &    0.956\\
-		Energy &  0.936 &    0.954 &    0.924\\
-		Correlation &  0.944 &    0.963 &     0.930\\
-		\midrule
-		Entropy       & 0.970 & 0.972 & 0.968 \\
-		$t$-test       & 0.966 & 0.972 & 0.962  \\
-		Wilcoxon & 0.959 & 0.954 & 0.962  \\
-		\midrule
-		VAF & 0.840	& 0.807	& 0.862	 \\
-		VAF-IN & 0,913 & 0.890 & 0.932 \\
-		SVD & 0.940 & 0.962 & 0.918 \\
-		EMD-IMF3 & 0.950 & 0.951 & 0.948 \\
-		\bottomrule
+		\tableheadline{System} & \tableheadline{Acc} & \tableheadline{Sens} & \tableheadline{Spec} \\ \midrule
+		SumMean                &               0.951 &                0.972 &                0.936 \\
+		Homogeneity            &               0.944 &                0.946 &                0.943 \\
+		Cluster Shade          &               0.940 &                0.936 &                0.943 \\
+		Cluster Tendency       &               0.952 &                0.946 &                0.956 \\
+		Energy                 &               0.936 &                0.954 &                0.924 \\
+		Correlation            &               0.944 &                0.963 &                0.930 \\ \midrule
+		Entropy                &               0.970 &                0.972 &                0.968 \\
+		$t$-test               &               0.966 &                0.972 &                0.962 \\
+		Wilcoxon               &               0.959 &                0.954 &                0.962 \\ \midrule
+		VAF                    &               0.840 &                0.807 &                0.862 \\
+		VAF-IN                 &               0,913 &                0.890 &                0.932 \\
+		SVD                    &               0.940 &                0.962 &                0.918 \\
+		EMD-IMF3               &               0.950 &                0.951 &                0.948 \\ \bottomrule
 	\end{tabular}
 	\vspace{10pt}
 	\caption[Comparison between our proposed system and other \ac{PD} diagnosis systems in the literature.]{Comparison between our proposed system and other \ac{PD} diagnosis systems in the literature: a VAF system using the intensity-normalized images,  a combination of intensity normalization strategies and classifiers (VAF-IN) \cite{Illan2012}, a SVD-based approach \cite{Segovia2012} and EMD using the third independent mode function (IMF3) \cite{Rojas2012}.}

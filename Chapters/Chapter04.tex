@@ -23,15 +23,15 @@ Many signal decomposition techniques are used in the literature, for example \ac
 
 \begin{figure}[tph]
 	\centering
-	\includegraphics[width=0.7\linewidth]{Graphics/ch4/01-flowdiagram}
-	\caption[Illustration of the system used in Chapter~\protect\ref{ch:decomposition} .]{Illustration of the system used in Chapter~\protect\ref{ch:decomposition}.}
+	\includegraphics[width=0.9\linewidth]{Graphics/ch4/01-flowdiagram}
+	\caption[Illustration of the system used in chapter~\protect\ref{ch:decomposition} .]{Illustration of the system used in chapter~\protect\ref{ch:decomposition}.}
 	\label{fig:pipelineDecomposition}
 \end{figure}
 
 \section{Feature Selection}\label{sec:featureSelection}
 Feature selection is the first strategy used for feature reduction \cite{Martinez-Murcia2016b}, and it is often used along with feature extraction in order to build more complex pattern recognition systems. It refers to any strategy intended to find a subset of the original features containing the more suitable ones according to a certain criterion. Therefore, irrelevant features are discarded, and resultant models are faster and more cost-effective \cite{Guyon03}. However, it usually requires an additional optimization to find the parameters for the optimal feature subset, and furthermore, it is impossible to guarantee that the optimal features for the subset are the same of the full feature set \cite{DaelemansHosteMeulderEtAl2003}. 
 
-In this work, we will use filtering methods to perform feature selection. As we introduced in Section~\ref{sec:mvanalyses}, filtering methods are based on the computation of a feature relevance score directly on the data. The relevance score is used to sort the different features, discarding those with a lower score, and it is usually computed independently for each feature, in what is called a univariate approach \cite{SaeysInzaLarranaga2007}. 
+In this work, we will use filtering methods to perform feature selection. As we introduced in section~\ref{sec:mvanalyses}, filtering methods are based on the computation of a feature relevance score directly on the data. The relevance score is used to sort the different features, discarding those with a lower score, and it is usually computed independently for each feature, in what is called a univariate approach \cite{SaeysInzaLarranaga2007}. 
 
 Feature selection can be used before or after feature extraction. When using computationally-intensive algorithms such as \ac{FA} or especially \ac{ICA}, the selection of best features prior to the decomposition is key to obtain high performance while keeping the computation times small \cite{Martinez201141,Martinez-Murcia20129676}. This also removes noise in some cases where the decomposition algorithm cannot compute correctly the variance. 
 
@@ -74,7 +74,7 @@ U_2^f = n_1 n_2 - U_1
 The final $U^f$ can be assigned to either $U_1^f$, $U_2^f$ or $\min{U_1^f,U_2^f}$ \cite{Fay10}, but the usual approach nowadays is to assign $U^f=U_2^f$. Unlike $t$-test, \ac{MWW} test does not assume any prior distribution, and therefore is less likely than it to spuriously indicate significance because of the presence of outliers. Under the normal distribution, it performs relatively similar \cite{Fay10}. See figure~\ref{fig:wilcoxon_map} for an example of the \ac{MWW} $U$-test computed on the \adnipet{} database.
 
 \section{Decomposition Algorithms}
-The feature selection algorithms presented above will perform a significant feature reduction, from hundreds of thousands of voxels to a few thousands. These few thousands voxels are considered the best in discriminating between \ac{CTL} and affected subjects in each of the diseases. The feature selection strategy can be thought of as a mask, in which only the most relevant regions according to the tests are selected (see Figure~\ref{fig:comparisonSelection}). 
+The feature selection algorithms presented above will perform a significant feature reduction, from hundreds of thousands of voxels to a few thousands. These few thousands voxels are considered the best in discriminating between \ac{CTL} and affected subjects in each of the diseases. The feature selection strategy can be thought of as a mask, in which only the most relevant regions according to the tests are selected (see Figure~\ref{fig:comparisonSelection_adnipet}). 
 
 However, this number of features is still large, and therefore, further feature reduction can be applied by performing a decomposition of the masked regions. We have used two algorithms in our \ac{CAD} systems: \acf{FA} and \acf{ICA}.
 
@@ -86,7 +86,7 @@ However, this number of features is still large, and therefore, further feature 
 	{\includegraphics[width=.3\linewidth]{Graphics/ch4/transformedFA_inferno.eps}\label{fig:reconstructionFA}}\quad
 	\subfloat[\ac{ICA} reconstruction]
 	{\includegraphics[width=.3\linewidth]{Graphics/ch4/transformedICA_inferno.eps}}
-	\caption[Original PET image and its reconstruction using FA or ICA.]{Original PET image from the \adnipet{} dataset, and examples of reconstruction using \ac{FA} or \ac{ICA}, with 10 components.}\label{fig:comparisonReconstructions}
+	\caption[Original \acs{PET} image and its reconstruction using FA or ICA.]{Original \acs{PET} image from the \adnipet{} dataset, and examples of reconstruction using \ac{FA} or \ac{ICA}, with 10 components.}\label{fig:comparisonReconstructions}
 \end{figure}
 
 
@@ -207,7 +207,7 @@ The method used in this work uses a two-step iterative algorithm \cite{Hyvarinen
 And repeat step 2 until convergence. For simplicity, the norm in step 1 can be computed as any norm but the Frobenius norm, for example, the L2-norm or the largest absolute row sum. 
 
 \section{Results}
-In this work we will analyse the behaviour of the system proposed in the introduction and illustrated at Figure~\ref{fig:pipelineDecomposition}. The system comprises the selection of the most relevant voxels using filtering methods (we will focus on $t$-test, relative entropy and wilcoxon) and a feature decomposition of these using either \ac{FA} or \ac{ICA}. Finally, the feature vectors are classified using a \ac{SVC} with linear kernel, and performance values are obtained via cross-validation (see Section~\ref{sec:validation} for more information). 
+In this work we will analyse the behaviour of the system proposed in the introduction and illustrated at Figure~\ref{fig:pipelineDecomposition}. The system comprises the selection of the most relevant voxels using filtering methods (we will focus on $t$-test, relative entropy and wilcoxon) and a feature decomposition of these using either \ac{FA} or \ac{ICA}. Finally, the feature vectors are classified using a \ac{SVC} with linear kernel, and performance values are obtained via cross-validation (see section~\ref{sec:validation} for more information). 
 
 We vary the number of selected voxels and the number of factors or components depending on the algorithm and the dataset used and evaluate the system with those characteristics. That way, we obtain an estimation of the performance of the system in different situations, so that we can draw conclusions on the disease patterns and the ability of the system in the detection of different diseases. 
 
@@ -251,7 +251,7 @@ In this section, we compute the results of applying \ac{ICA} to the \adnipet{} a
 	\label{fig:accuracyMeanICA-AD}
 \end{figure}
 
-The case is similar to the one presented in Section~\ref{sec:results_FA_AD}, where the performance slightly improves when increasing the number of selected voxels. The performance is again better when using the \adnipet{} dataset than with the \vdlnhmpao{}, although the behaviour is similar. 
+The case is similar to the one presented in section~\ref{sec:results_FA_AD}, where the performance slightly improves when increasing the number of selected voxels. The performance is again better when using the \adnipet{} dataset than with the \vdlnhmpao{}, although the behaviour is similar. 
 
 The results change when varying the number of components. In this case, although good performance is obtained within the first 5 components in most cases, the model achieves similar performance in both datasets with components between 5 and 10, and then, the estimates diverge. In the \vdlnhmpao{}, the performance starts to decrease after this number of components, whereas when using the \adnipet{} dataset, the higher average performance is obtained with $c>15$, especially in the case of the $t$-test or the wilcoxon selection criteria). 
 
@@ -325,7 +325,7 @@ Overall, all methods achieve similar values of accuracy, sensitivity and specifi
 \FloatBarrier
 
 \subsection{Parkinson's Disease}
-Now we will look at how the proposed \ac{CAD} system behaves when applied to the three DaTSCAN datasets: \vdlndat{}, \vdlvdat{} and \ppmidat{}. For this experiment we will use a maximum of $1500$ selected voxels and $25$ components, and images that have been previously intensity normalized using the integral normalization algorithm (see Section~\ref{sec:intensityPrep}). 
+Now we will look at how the proposed \ac{CAD} system behaves when applied to the three DaTSCAN datasets: \vdlndat{}, \vdlvdat{} and \ppmidat{}. For this experiment we will use a maximum of $1500$ selected voxels and $25$ components, and images that have been previously intensity normalized using the integral normalization algorithm (see section~\ref{sec:intensityPrep}). 
 
 \subsubsection{Factor Analysis}
 Firstly, we will explore the average behaviour of the system that uses \ac{FA} as a decomposition technique. For this purpose, as in previous sections, Figure~\ref{fig:accuracyMeanFA-PKS} shows how the average performance varies when varying the number of voxels selected and the number of components extracted. 

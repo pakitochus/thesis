@@ -57,8 +57,22 @@ Finally, the analysis of the \aimsmri{} dataset gave us first an idea of the pro
 
 %\section{Future Work}
 
+\newpage
 \section{Conclusions}
+Finally, as a summary of this thesis, we provide the following conclusions of the contributions of this thesis: 
+
+\begin{itemize}
+	\item We have proposed two major approaches to overcome the small sample size problem in neuroimaging: feature extraction and increasing of sample size. The two approaches proposed are indeed complementary, and can be used together to construct new, more reliable neuroimaging analyses, and by extension, \ac{CAD} systems. 
+	\item The feature extraction algorithms proposed in chapters \ref{ch:decomposition}, \ref{ch:texture} and \ref{ch:sbm} have reached high performance in the differential diagnosis of diseased subjects and controls, particularly when applied to the \ac{AD} and \ac{PKS} databases. The major challenge here is to use these algorithms in the study of the progression of the different neurodegenerative diseases, particularly the conversion of \ac{MCI} affected subjects to \ac{AD}. 
+	\item The image decomposition techniques such as the used in chapter~\ref{ch:decomposition} offer a significant feature and computational load reduction when analysing high-dimensional data in neuroimaging. These provide fast and more reliable \ac{CAD} systems that have proven their ability in the analysis of functional imaging modalities such as \ac{SPECT} and \ac{PET}. 
+	\item Texture analysis is a very powerful tool to analyse DaTSCAN imaging, as it has been proven in chapter~\ref{ch:texture}. Features such as cluster tendency or homogeneity accurately model the variability of shapes and intensities found at the striatum of these modalities, which can be easily linked to \ac{PD}. 
+	\item The \ac{SBM} framework proposed at chapter~\ref{ch:sbm} reveals itself as a very powerful and extendable tool for the analysis of structural images. Statistical and texture maps derived from this analysis are a further visual aid for detecting changes, at the same time that they provide a significant feature reduction. They have proven their notable ability to diagnose \ac{AD} from structural patterns, mainly due to texture and tissue density changes that are comprised in the different \ac{SBM} maps. 
+	\item The heterogeneity found in multi-centre structural databases could be substantially reduced using the \ac{SWPCA} algorithm (chapter~\ref{ch:swpca}). This issue was detected in the \aimsmri{} \ac{ASD} dataset, where a \ac{SVC} achieved higher performance when classifying sites than classes. After applying \ac{SWPCA}, the differences between sites were almost null, and the performance in the differential diagnosis remained similar. 
+	\item The analysis of significant differences between \ac{ASD} and \ac{CTL} subjects of chapter~\ref{ch:swpca} yielded no detectable differences, or that there was indeed no difference between classes. This might point to the acquisition site differences as one possible cause of variable results when analyzing \ac{ASD}, as it was reported in \cite{haar2014anatomical}. 
+	\item Finally, the neuroimaging synthesis algorithm proposed in chapter~\ref{ch:simulation} provides a fast option for safely increasing the number of samples in a database, while keeping the individual characteristics. We proved that the simulated images belong to the same statistical distribution of the original and can effectively predict real world samples, at the same time that they could be used to train future professionals. 
+\end{itemize}
+
+All these algorithms and frameworks are indeed complementary. One can use the synthesis algorithm to double the size of an existing dataset, and then use decomposition to reduce the feature space. Or purge a multi-centre database with \ac{SWPCA} and then analyse and visualize the differences using \ac{SBM}. All these are just drops that contribute to the huge sea of the neuroimaging processing field, in a humble approach to improve the speed, information and reliability of current diagnoses.
 
 
-All these algorithms and frameworks are indeed complementary. One can use the synthesis algorithm to double the size of an existing dataset, and then use decomposition to reduce the feature space. Or purge a multi-centre database with \ac{SWPCA} and then analyse and visualize the differences using \ac{SBM}. These are only recent contributions to the neuroimage processing 
 
