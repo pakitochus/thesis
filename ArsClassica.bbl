@@ -1658,6 +1658,28 @@
       \field{pages}{381\bibrangedash 397}
       \range{pages}{17}
     \endentry
+    \entry{Association2013}{book}{}
+      \true{moreauthor}
+      \true{morelabelname}
+      \name{author}{1}{}{%
+        {{hash=b7f8380f2d95b86f62b64910a7f83d12}{%
+           family={Association},
+           family_i={A\bibinitperiod},
+           given={American\bibnamedelima Psychiatric},
+           given_i={A\bibinitperiod\bibinitdelim P\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {American Psychiatric Pub}%
+      }
+      \strng{namehash}{6a840fd62a7241a58da688b728ce3951}
+      \strng{fullhash}{6a840fd62a7241a58da688b728ce3951}
+      \field{sortinit}{2}
+      \field{sortinithash}{8343b463aacf48517c044b4d2c9c45ed}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Diagnostic and statistical manual of mental disorders (DSM-5{®})}
+      \field{year}{2013}
+    \endentry
     \entry{Button2013}{article}{}
       \name{author}{7}{}{%
         {{hash=9c3b4bc2e72c771843aed95bb469be87}{%
@@ -8748,6 +8770,28 @@
       \field{year}{2016}
       \field{pages}{459\bibrangedash 509}
       \range{pages}{51}
+    \endentry
+    \entry{Association2013}{book}{}
+      \true{moreauthor}
+      \true{morelabelname}
+      \name{author}{1}{}{%
+        {{hash=b7f8380f2d95b86f62b64910a7f83d12}{%
+           family={Association},
+           family_i={A\bibinitperiod},
+           given={American\bibnamedelima Psychiatric},
+           given_i={A\bibinitperiod\bibinitdelim P\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {American Psychiatric Pub}%
+      }
+      \strng{namehash}{6a840fd62a7241a58da688b728ce3951}
+      \strng{fullhash}{6a840fd62a7241a58da688b728ce3951}
+      \field{sortinit}{A}
+      \field{sortinithash}{b685c7856330eaee22789815b49de9bb}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Diagnostic and statistical manual of mental disorders (DSM-5{®})}
+      \field{year}{2013}
     \endentry
     \entry{Avants2010}{article}{}
       \name{author}{7}{}{%
