@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016/Debian) (preloaded format=pdflatex 2016.12.7)  1 APR 2017 11:35
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016/Debian) (preloaded format=pdflatex 2016.12.7)  1 APR 2017 11:52
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -5595,7 +5595,10 @@ File: Graphics/ch6/12-performance-eps-converted-to.pdf Graphic file (type pdf)
 Package pdftex.def Info: Graphics/ch6/12-performance-eps-converted-to.pdf used 
 on input line 580.
 (pdftex.def)             Requested size: 302.7385pt x 160.13947pt.
- [115 <./Graphics/ch6/12-performance-eps-converted-to.pdf>] [116]
+ [115 <./Graphics/ch6/12-performance-eps-converted-to.pdf>]
+Underfull \vbox (badness 7433) has occurred while \output is active []
+
+ [116]
 Package acronym Info: Label `acro:DTI' newly defined as it shall be overridden
 although it is yet undefined on input line 621.
 
@@ -6424,8 +6427,8 @@ chapter 9.
 ] [168]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [169])
-[170] [171] [172
+ [169]
+[170]) [171] [172
 
 
 ] [173] [174]
@@ -6697,7 +6700,7 @@ Package logreq Info: Writing requests to 'ArsClassica.run.xml'.
 Here is how much of TeX's memory you used:
  31597 strings out of 493013
  587644 string characters out of 6135682
- 1683859 words of memory out of 5000000
+ 1683934 words of memory out of 5000000
  33195 multiletter control sequences out of 15000+600000
  185883 words of font info for 305 fonts, out of 8000000 for 9000
  1147 hyphenation exceptions out of 8191
@@ -6731,10 +6734,10 @@ hvr.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/palatino/uplb8a.pfb></us
 r/share/texlive/texmf-dist/fonts/type1/urw/palatino/uplr8a.pfb></usr/share/texl
 ive/texmf-dist/fonts/type1/urw/palatino/uplri8a.pfb></usr/share/texlive/texmf-d
 ist/fonts/type1/urw/zapfding/uzdr.pfb>
-Output written on ArsClassica.pdf (224 pages, 26125296 bytes).
+Output written on ArsClassica.pdf (224 pages, 26126916 bytes).
 PDF statistics:
- 10783 PDF objects out of 12825 (max. 8388607)
- 5926 compressed objects within 60 object streams
+ 10800 PDF objects out of 12825 (max. 8388607)
+ 5943 compressed objects within 60 object streams
  1012 named destinations out of 1200 (max. 500000)
  54048 words of extra memory for PDF output out of 61914 (max. 10000000)
 
