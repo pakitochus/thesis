@@ -12,7 +12,7 @@ Our system is focused on nuclear imaging techniques such as \ac{PET} or \ac{SPEC
 	\label{fig:simulationSchema}
 \end{figure} 
 
-We have evaluated our proposed system on two modalities: FDG-\ac{PET} images from the ADNI-PET dataset and \ac{SPECT}-DaTSCAN from the PPMI-DAT database. We have tested the images under three different experiments that estimate the relation between the simulated and the real images, the ability of the simulated dataset to predict the outcome of real datasets, or the uncertainty introduced by the simulation procedure. 
+We have evaluated our proposed system on two modalities: FDG-\ac{PET} images from the \adnipet{} dataset and \ac{SPECT}-DaTSCAN from the \ppmidat{} database. We have tested the images under three different experiments that estimate the relation between the simulated and the real images, the ability of the simulated dataset to predict the outcome of real datasets, or the uncertainty introduced by the simulation procedure. 
 
 For our brain synthesis algorithm to work, the source datasets must share certain characteristics: to be spatially normalized (which we did by using the SPM8 software) and intensity normalized, using normalization to the maximum strategy, which proved to be very useful in most applications \cite{Martinez-Murcia20129676,martinez2014parametrization} (see Chapter~\ref{ch:preprocessing} for more details).
 
@@ -85,7 +85,7 @@ Additionally, a \ac{SPM} analysis \cite{spm_book} has been performed on both the
 \section{Results}
 \label{sec:resultsSynthesis}
 \subsection{Baseline}
-In this experiment, we compute the baseline performance of the original and the simulated images, by applying it to the ADNI-PET and the PPMI-DAT dataset. We have used all subjects in the computation of these values, and 200 simulated images from each class in their evaluation. We show these results at Table~\ref{tab:baselineSyn}. 
+In this experiment, we compute the baseline performance of the original and the simulated images, by applying it to the \adnipet{} and the \ppmidat{} dataset. We have used all subjects in the computation of these values, and 200 simulated images from each class in their evaluation. We show these results at Table~\ref{tab:baselineSyn}. 
 
 \begin{table}[htp]
 	\renewcommand{\arraystretch}{1.3}
@@ -95,7 +95,7 @@ In this experiment, we compute the baseline performance of the original and the 
 		\toprule
 		\tableheadline{Database}  & \tableheadline{Est.} & \tableheadline{Scenario} & \tableheadline{acc ($\pm$SD)} & \tableheadline{sens ($\pm$SD)} & \tableheadline{spec ($\pm$SD)}\\
 		\midrule
-		\multirow{9}{*}{ADNI-PET} & \multirow{3}{*}{Orig.} & \ac{AD} vs \ac{CTL} & $0.882 \pm 0.012 $ & $0.865 \pm 0.091$ & $0.901 \pm 0.118$\\
+		\multirow{9}{*}{\adnipet{}} & \multirow{3}{*}{Orig.} & \ac{AD} vs \ac{CTL} & $0.882 \pm 0.012 $ & $0.865 \pm 0.091$ & $0.901 \pm 0.118$\\
 		& & \ac{MCI} vs \ac{CTL} & $0.698 \pm 0.042 $ & $0.791 \pm 0.064$ & $0.504 \pm 0.179$\\
 		& & \ac{MCI} vs \ac{AD} & $0.702 \pm 0.117 $ & $0.444 \pm 0.219$ & $0.822 \pm 0.258$\\
 		\cline{2-6}
@@ -107,7 +107,7 @@ In this experiment, we compute the baseline performance of the original and the 
 		& & \ac{MCI} vs \ac{CTL} & $0.767 \pm 0.061 $ & $0.770 \pm 0.110 $ & $0.765 \pm 0.093 $\\
 		& & \ac{MCI} vs \ac{AD} & $0.742 \pm 0.060 $ & $0.755 \pm 0.096 $ & $0.730 \pm 0.105 $\\
 		\midrule
-		\multirow{3}{*}{PPMI-DAT} & Orig. & \ac{PD} vs \ac{CTL}  & $0.923 \pm 0.057 $ & $0.929 \pm 0.090 $ & $0.918 \pm 0.088 $\\
+		\multirow{3}{*}{\ppmidat{}} & Orig. & \ac{PD} vs \ac{CTL}  & $0.923 \pm 0.057 $ & $0.929 \pm 0.090 $ & $0.918 \pm 0.088 $\\
 		\cline{2-6}
 		& \ac{MVN} & \ac{PD} vs \ac{CTL}  & $0.997 \pm 0.007 $ & $0.995 \pm 0.015 $ & $1.000 \pm 0.011 $\\
 		\cline{2-6}
@@ -127,7 +127,7 @@ As for the simulated images derived from the ADNI PET dataset, there are two ver
 On the other hand, we take a look at the PPMI dataset. In this case, we have highly specific functional imaging, in which the dopaminergic level (cause of Parkinson's Disease) is assessed. Therefore, the application of \acs{VAF} to the original dataset yields high performance ($>$90\% accuracy, sensitivity and specificity). The images synthesized using \ac{MVN} modelling achieve almost perfect accuracy, whereas the \ac{KDE} images, given their performance, might be more heterogeneously distributed. We will comment on this at the discussion.  
 
 \subsection{Experiment 1: Predictive Power of the Simulated Images}
-Results for the first of the experiments are shown at Table~\ref{tab:exp1Syn}. We have applied this experiment to the ADNI-PET and the PPMI-DAT datasets, using the multivariate normal estimator and the \ac{KDE}. For each cross-validation iteration we synthesize 200 samples of each class. 
+Results for the first of the experiments are shown at Table~\ref{tab:exp1Syn}. We have applied this experiment to the \adnipet{} and the \ppmidat{} datasets, using the multivariate normal estimator and the \ac{KDE}. For each cross-validation iteration we synthesize 200 samples of each class. 
 
 \begin{table}[htp]
 	\renewcommand{\arraystretch}{1.3}
@@ -138,7 +138,7 @@ Results for the first of the experiments are shown at Table~\ref{tab:exp1Syn}. W
 		\toprule
 		\tableheadline{Database}  & \tableheadline{Est.} & \tableheadline{Scenario} & \tableheadline{acc ($\pm$SD)} & \tableheadline{sens ($\pm$SD)} & \tableheadline{spec ($\pm$SD)}\\
 		\midrule
-		\multirow{6}{*}{ADNI-PET} & \multirow{3}{*}{\ac{MVN}} & \ac{AD} vs \ac{CTL} & $0.852 \pm 0.078 $ & $0.804 \pm 0.151$ & $0.900 \pm 0.137$\\
+		\multirow{6}{*}{\adnipet{}} & \multirow{3}{*}{\ac{MVN}} & \ac{AD} vs \ac{CTL} & $0.852 \pm 0.078 $ & $0.804 \pm 0.151$ & $0.900 \pm 0.137$\\
 		& & \ac{MCI} vs \ac{CTL} & $0.688 \pm 0.067 $ & $0.743 \pm 0.108$ & $0.572 \pm 0.169$\\
 		& & \ac{MCI} vs \ac{AD} & $0.675 \pm 0.121 $ & $0.468 \pm 0.192$ & $0.774 \pm 0.224$\\
 		\cline{2-6}
@@ -146,7 +146,7 @@ Results for the first of the experiments are shown at Table~\ref{tab:exp1Syn}. W
 		& & \ac{MCI} vs \ac{CTL} & $0.642 \pm 0.044 $ & $0.726 \pm 0.098$ & $0.472 \pm 0.188$\\
 		& & \ac{MCI} vs \ac{AD} & $0.672 \pm 0.081 $ & $0.484 \pm 0.142$ & $0.760 \pm 0.187$\\
 		\midrule
-		\multirow{2}{*}{PPMI-DAT} & \ac{MVN} & \ac{PD} vs \ac{CTL}  & $0.948 \pm 0.041 $ & $0.948 \pm 0.055 $ & $0.946 \pm 0.064 $\\
+		\multirow{2}{*}{\ppmidat{}} & \ac{MVN} & \ac{PD} vs \ac{CTL}  & $0.948 \pm 0.041 $ & $0.948 \pm 0.055 $ & $0.946 \pm 0.064 $\\
 		\cline{2-6}
 		& \ac{KDE} & \ac{PD} vs \ac{CTL}  & $0.914 \pm 0.082 $ & $0.916 \pm 0.113 $ & $0.909 \pm 0.121 $\\
 		\bottomrule
@@ -159,7 +159,7 @@ Results for the first of the experiments are shown at Table~\ref{tab:exp1Syn}. W
 
 In general, it can be seen that for both datasets, using the \ac{MVN} estimator yields a better performance in predicting the real-world images, with higher accuracy, sensitivity and specificity. This holds for both ADNI and PPMI datasets. 
 
-As for the ADNI-PET dataset, we tested three different scenarios: \ac{AD} vs \ac{CTL}, \ac{MCI} vs \ac{CTL} and \ac{MCI} vs \ac{AD}. The higher performance is obtained in the \ac{AD} vs \ac{CTL}, but when including \ac{MCI} subjects, the results vary. In the case of the \ac{MVN} estimator, the \ac{MCI} vs \ac{CTL} scenario performs slightly better than the \ac{MCI} vs \ac{AD}. On the other hand, when using the \ac{KDE}, \ac{MCI} vs \ac{AD} obtains better results than \ac{MCI} vs \ac{CTL}. However, the big difference among them is that, whereas the \ac{MVN} estimator achieves similar performance to the baseline, the images simulated with the \ac{KDE} estimator lead to smaller predictive power. We will discuss this later. 
+As for the \adnipet{} dataset, we tested three different scenarios: \ac{AD} vs \ac{CTL}, \ac{MCI} vs \ac{CTL} and \ac{MCI} vs \ac{AD}. The higher performance is obtained in the \ac{AD} vs \ac{CTL}, but when including \ac{MCI} subjects, the results vary. In the case of the \ac{MVN} estimator, the \ac{MCI} vs \ac{CTL} scenario performs slightly better than the \ac{MCI} vs \ac{AD}. On the other hand, when using the \ac{KDE}, \ac{MCI} vs \ac{AD} obtains better results than \ac{MCI} vs \ac{CTL}. However, the big difference among them is that, whereas the \ac{MVN} estimator achieves similar performance to the baseline, the images simulated with the \ac{KDE} estimator lead to smaller predictive power. We will discuss this later. 
 
 In the PPMI dataset, the differences are subtle. While the \ac{MVN} estimator achieves even higher performance than the baseline for the original datset, the images synthesized using the \ac{KDE} estimator have a predictive power similar to the original set. 
 
@@ -170,7 +170,7 @@ In the PPMI dataset, the differences are subtle. While the \ac{MVN} estimator ac
 		\toprule
 		\tableheadline{Database} & \tableheadline{Est} & \tableheadline{Scenario} & \tableheadline{Test set} & \tableheadline{acc ($\pm$SD)} & \tableheadline{sens ($\pm$SD)} & \tableheadline{spec ($\pm$SD)}\\
 		\midrule
-		\multirow{12}{*}{ADNI-PET} & \multirow{6}{*}{\ac{MVN}} & \multirow{2}{*}{\ac{AD} vs \ac{CTL}} & Original & $1.000 \pm 0.000 $ & $1.000 \pm 0.000 $ & $1.000 \pm 0.000 $\\
+		\multirow{12}{*}{\adnipet{}} & \multirow{6}{*}{\ac{MVN}} & \multirow{2}{*}{\ac{AD} vs \ac{CTL}} & Original & $1.000 \pm 0.000 $ & $1.000 \pm 0.000 $ & $1.000 \pm 0.000 $\\
 		& & &  Simulated & $0.994 \pm 0.003 $ & $0.988 \pm 0.006$ & $1.000 \pm 0.007$\\ \cline{3-7}
 		& & \multirow{2}{*}{\ac{MCI} vs \ac{CTL}} & Original & $0.999 \pm 0.001 $ & $0.998 \pm 0.002 $ & $1.000 \pm 0.001 $\\
 		& & & Simulated &  $1.000 \pm 0.000 $ & $1.000 \pm 0.000 $ & $1.000 \pm 0.000 $\\ \cline{3-7}
@@ -183,7 +183,7 @@ In the PPMI dataset, the differences are subtle. While the \ac{MVN} estimator ac
 		& & \multirow{2}{*}{\ac{MCI} vs \ac{AD}} & Original & $1.000 \pm 0.000 $ & $1.000 \pm 0.000 $ & $1.000 \pm 0.000 $\\
 		& & & Simulated & $0.820 \pm 0.014 $ & $0.799 \pm 0.022 $ & $0.841 \pm 0.030 $\\ 
 		\midrule
-		\multirow{4}{*}{PPMI-DAT} & \multirow{2}{*}{\ac{MVN}} & \multirow{2}{*}{\ac{PD} vs \ac{CTL}} & Original & $1.000 \pm 0.000 $ & $1.000 \pm 0.000 $ & $1.000 \pm 0.000 $\\
+		\multirow{4}{*}{\ppmidat{}} & \multirow{2}{*}{\ac{MVN}} & \multirow{2}{*}{\ac{PD} vs \ac{CTL}} & Original & $1.000 \pm 0.000 $ & $1.000 \pm 0.000 $ & $1.000 \pm 0.000 $\\
 		& & &  Simulated & $0.998 \pm 0.002 $ & $0.997 \pm 0.003$ & $1.000 \pm 0.003$\\  \cline{2-7}
 		& \multirow{2}{*}{\ac{KDE}} & \multirow{2}{*}{\ac{PD} vs \ac{CTL}} & Original & $1.000 \pm 0.000 $ & $1.000 \pm 0.000 $ & $1.000 \pm 0.000 $\\
 		& & &  Simulated & $0.848 \pm 0.013 $ & $0.809 \pm 0.021$ & $0.887 \pm 0.043$\\ 
@@ -215,7 +215,7 @@ The use of \ac{PCA} for feature extraction neuroimaging in components is widely 
 	\label{fig:eigenbrainsSyn}
 \end{figure*}
 
-In Figure~\ref{fig:eigenbrainsSyn} we show the first four eigenbrains for the ADNI-PET dataset. We can see interesting patterns such as the contribution and size of ventricles in Component 0, the contrast in the cingulate gyri and precunei in Component 1, that have been widely documented \cite{Stoeckel04,Illan2011}. We can also recognise the contrast in glucose metabolism at the occipital lobe and some temporal and parietal negative influence encoded in Components 2 and 3. These features prove that the computed eigenbrains are representative of independent structures and activities that together can positively influence the synthesis of new brain images via a correct parametrization and estimation of the component scores. 
+In Figure~\ref{fig:eigenbrainsSyn} we show the first four eigenbrains for the \adnipet{} dataset. We can see interesting patterns such as the contribution and size of ventricles in Component 0, the contrast in the cingulate gyri and precunei in Component 1, that have been widely documented \cite{Stoeckel04,Illan2011}. We can also recognise the contrast in glucose metabolism at the occipital lobe and some temporal and parietal negative influence encoded in Components 2 and 3. These features prove that the computed eigenbrains are representative of independent structures and activities that together can positively influence the synthesis of new brain images via a correct parametrization and estimation of the component scores. 
 
 
 \begin{figure*}[h]
@@ -233,7 +233,7 @@ Here is were we compare the two different estimation methods proposed: a \acf{MV
 \begin{figure*}[h]
 	\centering
 	\includegraphics[width=\linewidth]{Graphics/ch8/Pairplot}
-	\caption{Pairplot plotting the coordinates of the subjects in the ADNI-PET database over the four first eigenbrains. In the diagonal, distribution of the classes estimated using \acs{KDE} for each eigenbrain.}
+	\caption{Pairplot plotting the coordinates of the subjects in the \adnipet{} database over the four first eigenbrains. In the diagonal, distribution of the classes estimated using \acs{KDE} for each eigenbrain.}
 	\label{fig:pairplot}
 \end{figure*}
 
@@ -245,7 +245,7 @@ Here is were we compare the two different estimation methods proposed: a \acf{MV
 	\includegraphics[width=0.9\linewidth]{Graphics/ch8/AD_ad_orig}
 	\includegraphics[width=0.9\linewidth]{Graphics/ch8/AD_ad_sim_mvn}
 	\includegraphics[width=0.9\linewidth]{Graphics/ch8/AD_ad_sim_kde}
-	\caption{Examples of some original and simulated subjects from the ADNI-PET dataset.}
+	\caption{Examples of some original and simulated subjects from the \adnipet{} dataset.}
 	\label{fig:samplesPET}
 \end{figure*}
 
@@ -265,11 +265,11 @@ Here is were we compare the two different estimation methods proposed: a \acf{MV
 A visual analysis of the synthesized images in Figures~\ref{fig:samplesPET} and \ref{fig:samplesDAT} reveals that the new images preserve similar characteristics of the original datasets. For example, it is easy to appreciate differences in glucose metabolism in Figure~\ref{fig:samplesPET} typically associated with \ac{AD}, such as a smaller activity at the temporal lobe or the striatum \cite{Stoeckel04,Illan2011}. In the simulated DaTSCAN images (Fig.~\ref{fig:samplesDAT}) differences in shape and intensity of the striatum, and bilateral differences \cite{Towey2011,Illan2012,martinez2014parametrization} can also be noticed, using both \ac{MVN} and \ac{KDE} modelling.
 
 % Analysis of the SPM analysis 
-To deepen the analysis of the synthesized figures, we will perform a \ac{SPM} analysis \cite{spm_book}, using the SPM12 software. In Figure~\ref{fig:spmAD}, we can look at the differences ($t$-maps, FWE corrected, $p<0.05$) between \ac{AD} and \ac{CTL} images with the original, and two synthesized datasets with 200 samples per class, using either \ac{MVN} or \ac{KDE} modelling. In these maps, the differences are located in similar places in both synthesized databases, that are as well, although less intense, represented in the \ac{SPM} analysis of the original dataset. The aforementioned regions such as the precuneus, angular, mid-temporal lobe, hippocampus, amygdala, among others, are represented in both the original and simulated datasets, in both the \ac{CTL} vs \ac{AD} (fig.~\ref{fig:spmAD}) and \ac{MCI} vs \ac{AD} (fig.~\ref{fig:spmMCIvsAD}) scenarios, with a special mention to the cingulum, which also is the main difference in the \ac{MCI} vs \ac{CTL} (fig.~\ref{fig:spmNORvsMCI}). 
+To deepen the analysis of the synthesized figures, we will perform a \ac{SPM} analysis \cite{spm_book}, using the SPM12 software. In Figure~\ref{fig:spmAD}, we can look at the differences ($t$-maps, FWE corrected, $p<0.05$) between \ac{AD} and \ac{CTL} images with the original, and two synthesized datasets with 200 samples per class, using either \ac{MVN} or \ac{KDE} modelling. In these maps, the differences are located in similar places in both synthesized databases, that are as well, although less intense, represented in the \ac{SPM} analysis of the original dataset. The aforementioned regions such as the precuneus, angular, mid-temporal gyrus, hippocampus, amygdala, among others, are represented in both the original and simulated datasets, in both the \ac{CTL} vs \ac{AD} (fig.~\ref{fig:spmAD}) and \ac{MCI} vs \ac{AD} (fig.~\ref{fig:spmMCIvsAD}) scenarios, with a special mention to the cingulum, which also is the main difference in the \ac{MCI} vs \ac{CTL} (fig.~\ref{fig:spmNORvsMCI}). 
 
 \begin{figure}
 	\centering
-	Original ADNI-PET images\\
+	Original \adnipet{} images\\
 	\includegraphics[width=\linewidth]{Graphics/ch8/NORvsAD_Orig_glass}\\
 	\ac{MVN} Model\\
 	\includegraphics[width=\linewidth]{Graphics/ch8/NORvsAD_MVN_glass}\\
@@ -282,7 +282,7 @@ To deepen the analysis of the synthesized figures, we will perform a \ac{SPM} an
 
 \begin{figure}
 	\centering
-	Original ADNI-PET images\\
+	Original \adnipet{} images\\
 	\includegraphics[width=\linewidth]{Graphics/ch8/NORvsMCI_Orig_glass}\\
 	\ac{MVN} Model\\
 	\includegraphics[width=\linewidth]{Graphics/ch8/NORvsMCI_MVN_glass}\\
@@ -295,7 +295,7 @@ To deepen the analysis of the synthesized figures, we will perform a \ac{SPM} an
 
 \begin{figure}
 	\centering
-	Original ADNI-PET images\\
+	Original \adnipet{} images\\
 	\includegraphics[width=\linewidth]{Graphics/ch8/MCIvsAD_Orig_glass}\\
 	\ac{MVN} Model\\
 	\includegraphics[width=\linewidth]{Graphics/ch8/MCIvsAD_MVN_glass}\\
@@ -310,7 +310,7 @@ In the PPMI dataset, the \ac{SPM} analysis revealed (Figure~\ref{fig:spmPKS}) th
 
 \begin{figure}
 	\centering
-	Original PPMI-DAT images\\
+	Original \ppmidat{} images\\
 	\includegraphics[width=\linewidth]{Graphics/ch8/NORvsPD_Orig_glass}\\
 	\ac{MVN} Model\\
 	\includegraphics[width=\linewidth]{Graphics/ch8/NORvsPD_MVN_glass}\\

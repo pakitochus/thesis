@@ -22,7 +22,7 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {1.3}Aims and Objectives}{5}{section.1.3}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {1.4}Organization of this Thesis}{6}{section.1.4}
+\contentsline {section}{\numberline {1.4}Organization of this Thesis}{7}{section.1.4}
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {1.5}Contributions}{7}{section.1.5}
 \defcounter {refsection}{1}\relax 
@@ -68,11 +68,11 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {subsubsection}{\numberline {2.3.3.3}FDR Controlling Procedures}{22}{subsubsection.2.3.3.3}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {2.3.3.4}Permutation Tests}{22}{subsubsection.2.3.3.4}
+\contentsline {subsubsection}{\numberline {2.3.3.4}Permutation Tests}{23}{subsubsection.2.3.3.4}
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {2.4}Machine Learning in Neuroimaging}{23}{section.2.4}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {2.4.1}Voxels as Features}{24}{subsection.2.4.1}
+\contentsline {subsection}{\numberline {2.4.1}Voxels as Features}{23}{subsection.2.4.1}
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {2.4.2}Multivariate Analyses}{24}{subsection.2.4.2}
 \defcounter {refsection}{0}\relax 
@@ -94,7 +94,7 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {3.3.1}Cross-validation}{33}{subsection.3.3.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {3.3.2}Classification Performance}{35}{subsection.3.3.2}
+\contentsline {subsection}{\numberline {3.3.2}Classification Performance}{34}{subsection.3.3.2}
 \defcounter {refsection}{0}\relax 
 \contentsline {part}{\numberline {ii}\spacedlowsmallcaps {Reducing the Feature Space}}{37}{part.2}
 \defcounter {refsection}{0}\relax 
@@ -158,41 +158,41 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {5.3.2}Experiment 2: Selected Texture Features}{76}{subsection.5.3.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {5.4}Discussion}{81}{section.5.4}
+\contentsline {section}{\numberline {5.4}Discussion}{82}{section.5.4}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {6}\spacedlowsmallcaps {Spherical Brain Mapping}}{85}{chapter.6}
+\contentsline {chapter}{\numberline {6}\spacedlowsmallcaps {Spherical Brain Mapping}}{87}{chapter.6}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {6.1}Introduction}{85}{section.6.1}
+\contentsline {section}{\numberline {6.1}Introduction}{87}{section.6.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {6.2}\acf {SBM}}{86}{section.6.2}
+\contentsline {section}{\numberline {6.2}\acf {SBM}}{88}{section.6.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {6.2.1}Layered Extension}{88}{subsection.6.2.1}
+\contentsline {subsection}{\numberline {6.2.1}Layered Extension}{91}{subsection.6.2.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {6.2.2}\acf {VRLBP}}{88}{subsection.6.2.2}
+\contentsline {subsection}{\numberline {6.2.2}\acf {VRLBP}}{92}{subsection.6.2.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {6.2.3}Anatomical Reference}{91}{subsection.6.2.3}
+\contentsline {subsection}{\numberline {6.2.3}Anatomical Reference}{93}{subsection.6.2.3}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {6.3}Sampling Paths via \acf {HMM}}{93}{section.6.3}
+\contentsline {section}{\numberline {6.3}Sampling Paths via \acf {HMM}}{95}{section.6.3}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {6.3.0.1}Step Size}{95}{subsubsection.6.3.0.1}
+\contentsline {subsubsection}{\numberline {6.3.0.1}Step Size}{97}{subsubsection.6.3.0.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {6.3.0.2}Stop Condition}{96}{subsubsection.6.3.0.2}
+\contentsline {subsubsection}{\numberline {6.3.0.2}Stop Condition}{97}{subsubsection.6.3.0.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {6.3.1}Radial Texture Features}{98}{subsection.6.3.1}
+\contentsline {subsection}{\numberline {6.3.1}Radial Texture Features}{99}{subsection.6.3.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {6.4}Evaluation}{99}{section.6.4}
+\contentsline {section}{\numberline {6.4}Evaluation}{100}{section.6.4}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {6.5}Results}{100}{section.6.5}
+\contentsline {section}{\numberline {6.5}Results}{101}{section.6.5}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {6.5.1}Experiment 1: Original and \acs {VRLBP} Spherical Brain Mapping}{100}{subsection.6.5.1}
+\contentsline {subsection}{\numberline {6.5.1}Experiment 1: Original and \acs {VRLBP} Spherical Brain Mapping}{101}{subsection.6.5.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {6.5.2}Experiment 2: Layered Extension}{104}{subsection.6.5.2}
+\contentsline {subsection}{\numberline {6.5.2}Experiment 2: Layered Extension}{106}{subsection.6.5.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {6.5.3}Experiment 3: \acs {HMM} on Synthetic Datasets}{108}{subsection.6.5.3}
+\contentsline {subsection}{\numberline {6.5.3}Experiment 3: \acs {HMM} on Synthetic Datasets}{106}{subsection.6.5.3}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {6.5.4}Experiment 4: Feature Selection using \acs {HMM} Paths}{109}{subsection.6.5.4}
+\contentsline {subsection}{\numberline {6.5.4}Experiment 4: Feature Selection using \acs {HMM} Paths}{111}{subsection.6.5.4}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {6.5.5}Experiment 5: Texture \acs {SBM} Maps based on \acs {HMM} Paths}{112}{subsection.6.5.5}
+\contentsline {subsection}{\numberline {6.5.5}Experiment 5: Texture \acs {SBM} Maps based on \acs {HMM} Paths}{113}{subsection.6.5.5}
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {6.6}Discussion}{114}{section.6.6}
 \defcounter {refsection}{0}\relax 
@@ -200,7 +200,7 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {6.6.2}Paths via \acs {HMM}}{117}{subsection.6.6.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {6.6.3}General Discussion of \acs {SBM}}{119}{subsection.6.6.3}
+\contentsline {subsection}{\numberline {6.6.3}General Discussion of \acs {SBM}}{120}{subsection.6.6.3}
 \defcounter {refsection}{0}\relax 
 \contentsline {part}{\numberline {iii}\spacedlowsmallcaps {Increasing the Sample Size}}{123}{part.3}
 \defcounter {refsection}{0}\relax 
@@ -214,7 +214,7 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {7.1.3}Weighting Function}{129}{subsection.7.1.3}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {7.2}Evaluation of \acs {SWPCA}}{131}{section.7.2}
+\contentsline {section}{\numberline {7.2}Evaluation of \acs {SWPCA}}{130}{section.7.2}
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {7.3}Results for AIMS-MRI Dataset}{132}{section.7.3}
 \defcounter {refsection}{0}\relax 
@@ -264,30 +264,30 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {9.2}Conclusions}{170}{section.9.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {part}{\numberline {v}\spacedlowsmallcaps {Appendix}}{171}{part.5}
+\contentsline {part}{\numberline {v}\spacedlowsmallcaps {Appendix}}{173}{part.5}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {A}\spacedlowsmallcaps {Datasets}}{173}{appendix.A}
+\contentsline {chapter}{\numberline {A}\spacedlowsmallcaps {Datasets}}{175}{appendix.A}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {A.1}\acs {MRI}}{173}{section.A.1}
+\contentsline {section}{\numberline {A.1}\acs {MRI}}{175}{section.A.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {A.1.1}ADNI-MRI and the Alzheimer's Disease Neuroimaging Initiative}{173}{subsection.A.1.1}
+\contentsline {subsection}{\numberline {A.1.1}ADNI-MRI and the Alzheimer's Disease Neuroimaging Initiative}{175}{subsection.A.1.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {A.1.2}AIMS-MRI, \acs {MRC-AIMS} Consortium}{174}{subsection.A.1.2}
+\contentsline {subsection}{\numberline {A.1.2}AIMS-MRI, \acs {MRC-AIMS} Consortium}{176}{subsection.A.1.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {A.2}\acs {PET}}{176}{section.A.2}
+\contentsline {section}{\numberline {A.2}\acs {PET}}{178}{section.A.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {A.2.1}ADNI-PET, Alzheimer's Disease Neuroimaging Initiative}{176}{subsection.A.2.1}
+\contentsline {subsection}{\numberline {A.2.1}ADNI-PET, Alzheimer's Disease Neuroimaging Initiative}{178}{subsection.A.2.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {A.3}\acs {SPECT}}{178}{section.A.3}
+\contentsline {section}{\numberline {A.3}\acs {SPECT}}{179}{section.A.3}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {A.3.1}VDLN-HMPAO, Virgen de las Nieves}{178}{subsection.A.3.1}
+\contentsline {subsection}{\numberline {A.3.1}VDLN-HMPAO, Virgen de las Nieves}{179}{subsection.A.3.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {A.3.2}VDLN-DAT, Virgen de las Nieves}{179}{subsection.A.3.2}
+\contentsline {subsection}{\numberline {A.3.2}VDLN-DAT, Virgen de las Nieves}{180}{subsection.A.3.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {A.3.3}VDLV-DAT, Virgen de la Victoria Hospital}{180}{subsection.A.3.3}
+\contentsline {subsection}{\numberline {A.3.3}VDLV-DAT, Virgen de la Victoria Hospital}{181}{subsection.A.3.3}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {A.3.4}PPMI-DAT, Parkinson's Progression Markers Initiative}{181}{subsection.A.3.4}
+\contentsline {subsection}{\numberline {A.3.4}PPMI-DAT, Parkinson's Progression Markers Initiative}{182}{subsection.A.3.4}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {B}\spacedlowsmallcaps {Background on Support Vector Machines}}{183}{appendix.B}
+\contentsline {chapter}{\numberline {B}\spacedlowsmallcaps {Background on Support Vector Machines}}{185}{appendix.B}
 \defcounter {refsection}{0}\relax 
-\contentsline {part}{Bibliography}{185}{equation.B.0.9}
+\contentsline {part}{Bibliography}{187}{equation.B.0.9}

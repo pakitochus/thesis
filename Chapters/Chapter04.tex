@@ -43,7 +43,7 @@ The $t$-test is an old friend of statisticians. In this work we will use the ind
 \begin{equation}
 t_f = \frac{\bar{X}_1^f - \bar{X}_2^f}{\sqrt{\frac{\sigma_{X_2^f}^2+\sigma_{X_1^f}^2}{n}}}
 \end{equation}
-where $\sigma_{X_i^f}^2$ is the variance and $\bar{X}_i^f$ is the average of the $f$-the feature within class $i$. The $t$-test is extensively used in the neuroimaging community, and it is the basis for the \ac{SPM} and \ac{VBM} analyses \cite{spm_book}. See figure~\ref{fig:ttest_map} for an example of the $t$-test computed on the ADNI-PET database.
+where $\sigma_{X_i^f}^2$ is the variance and $\bar{X}_i^f$ is the average of the $f$-the feature within class $i$. The $t$-test is extensively used in the neuroimaging community, and it is the basis for the \ac{SPM} and \ac{VBM} analyses \cite{spm_book}. See figure~\ref{fig:ttest_map} for an example of the $t$-test computed on the \adnipet{} database.
 
 \subsection{Kullback-Leibler Divergence} 
 Another alternative is the \acf{KL} divergence, also known as Relative Entropy. It is a non-symmetric measure of the difference between two probabilities distributions. Let us assume that $X_1^f$ and $X_2^f$, the vectors containing the $f$-th feature of all elements in class $i$, are two discrete random variables. Therefore, the \ac{KL} divergence can be calculated with equation \ref{eq:kullback} \cite{Theodoridis1999}.
@@ -51,7 +51,7 @@ Another alternative is the \acf{KL} divergence, also known as Relative Entropy. 
 \begin{equation}\label{eq:kullback}
 KL_f = \left(\frac{\sigma_{X_2^f}^2}{\sigma_{X_1^f}^2} +\frac{\sigma_{X_1^f}^2}{\sigma_{X_2^f}^2} -2 \right) + \frac{1}{2}\left(\bar{X}_2^f-\bar{X}_1^f\right)^2\left(\frac{1}{\sigma_{X_1^f}^2} + \frac{1}{\sigma_{X_2^f}^2}\right)
 \end{equation}
-using the same notation than in $t$-test. See figure~\ref{fig:kl_map} for an example of the computed \ac{KL} divergence on the ADNI-PET database.
+using the same notation than in $t$-test. See figure~\ref{fig:kl_map} for an example of the computed \ac{KL} divergence on the \adnipet{} database.
 
 \subsection{Mann-Whitney-Wilcoxon} 
 The \acf{MWW} rank test, also known as $U$-test, assigns a rank to all values in the vector corresponding to the $f$-th feature, $X^f$, without considering any class. The method used to assign a rank is the `average', which means that each value is assigned with the average of the ranks that would have been assigned to all the tied values. This means that, for example, in the case of the vector $X^f=(0,2,3,2)$, the ranks assigned to each element would be $R^f=(1,2.5,4,2.5)$. 
@@ -71,7 +71,7 @@ And the it can be computed for the second class as the remainder:
 U_2^f = n_1 n_2 - U_1
 \end{equation}
 
-The final $U^f$ can be assigned to either $U_1^f$, $U_2^f$ or $\min{U_1^f,U_2^f}$ \cite{Fay10}, but the usual approach nowadays is to assign $U^f=U_2^f$. Unlike $t$-test, \ac{MWW} test does not assume any prior distribution, and therefore is less likely than it to spuriously indicate significance because of the presence of outliers. Under the normal distribution, it performs relatively similar \cite{Fay10}. See figure~\ref{fig:wilcoxon_map} for an example of the \ac{MWW} $U$-test computed on the ADNI-PET database.
+The final $U^f$ can be assigned to either $U_1^f$, $U_2^f$ or $\min{U_1^f,U_2^f}$ \cite{Fay10}, but the usual approach nowadays is to assign $U^f=U_2^f$. Unlike $t$-test, \ac{MWW} test does not assume any prior distribution, and therefore is less likely than it to spuriously indicate significance because of the presence of outliers. Under the normal distribution, it performs relatively similar \cite{Fay10}. See figure~\ref{fig:wilcoxon_map} for an example of the \ac{MWW} $U$-test computed on the \adnipet{} database.
 
 \section{Decomposition Algorithms}
 The feature selection algorithms presented above will perform a significant feature reduction, from hundreds of thousands of voxels to a few thousands. These few thousands voxels are considered the best in discriminating between \ac{CTL} and affected subjects in each of the diseases. The feature selection strategy can be thought of as a mask, in which only the most relevant regions according to the tests are selected (see Figure~\ref{fig:comparisonSelection}). 
@@ -86,7 +86,7 @@ However, this number of features is still large, and therefore, further feature 
 	{\includegraphics[width=.3\linewidth]{Graphics/ch4/transformedFA_inferno.eps}\label{fig:reconstructionFA}}\quad
 	\subfloat[\ac{ICA} reconstruction]
 	{\includegraphics[width=.3\linewidth]{Graphics/ch4/transformedICA_inferno.eps}}
-	\caption[Original PET image and its reconstruction using FA or ICA.]{Original PET image from the ADNI-PET dataset, and examples of reconstruction using \ac{FA} or \ac{ICA}, with 10 components.}\label{fig:comparisonReconstructions}
+	\caption[Original PET image and its reconstruction using FA or ICA.]{Original PET image from the \adnipet{} dataset, and examples of reconstruction using \ac{FA} or \ac{ICA}, with 10 components.}\label{fig:comparisonReconstructions}
 \end{figure}
 
 
@@ -124,12 +124,12 @@ The mean $\boldsymbol{\mu}$, and the matrices $\mathbf{S}$ and $\boldsymbol{\Psi
 \ell(\mu,\mathbf{S},\boldsymbol{\Psi}) = - \frac{np}{2}\log{2\pi}- \frac{n}{2}\log{\left|\mathbf{SS}^T + \boldsymbol{\Psi}\right|} - \frac{1}{2}\sum_{i=1}^{n}(\mathbf{x}_i-\mu)^T(\mathbf{SS}^T+\boldsymbol{\Psi})(\mathbf{x}_i-\mu)
 \end{equation} 
 
-\ac{FA} differs from \ac{PCA} mainly because it performs an estimation of the noise, and needs the number of factors $c$ as an input. Choosing $c$ is not a naive task. A large $c$ can yield a small reconstruction error, but the factors will not be representative enough, leading to overfitting of the subsequent model. Conversely, a small $c$ can lead to a large reconstruction error, causing information loss. We have computed the reconstruction error variance over the ADNI-PET dataset, and plotted it in Figure~\ref{fig:error} (similar graphs can be obtained for other databases. This proves that the error is assymptotical as we increase $c$, and therefore, once arrived at certain error, the improvements are not significant. To observe how the error affects the reconstruction, in Figure~\ref{fig:reconstructionFA} we can compare a reconstructed image with its corresponding original. 
+\ac{FA} differs from \ac{PCA} mainly because it performs an estimation of the noise, and needs the number of factors $c$ as an input. Choosing $c$ is not a naive task. A large $c$ can yield a small reconstruction error, but the factors will not be representative enough, leading to overfitting of the subsequent model. Conversely, a small $c$ can lead to a large reconstruction error, causing information loss. We have computed the reconstruction error variance over the \adnipet{} dataset, and plotted it in Figure~\ref{fig:error} (similar graphs can be obtained for other databases. This proves that the error is assymptotical as we increase $c$, and therefore, once arrived at certain error, the improvements are not significant. To observe how the error affects the reconstruction, in Figure~\ref{fig:reconstructionFA} we can compare a reconstructed image with its corresponding original. 
 
 \begin{figure}[ht]
 	\centering
 	\includegraphics[width=0.5\linewidth]{Graphics/ch4/varError-K-ADNI}
-	\caption[Variance of reconstruction error in \acs{FA}.]{Specific variance of reconstruction error $\Psi$ using \ac{FA}, in function of number of factors extracted ($K$) for ADNI-PET database (the behaviour is similar in other datasets).}
+	\caption[Variance of reconstruction error in \acs{FA}.]{Specific variance of reconstruction error $\Psi$ using \ac{FA}, in function of number of factors extracted ($K$) for \adnipet{} database (the behaviour is similar in other datasets).}
 	\label{fig:error}
 \end{figure}
 
@@ -212,7 +212,7 @@ In this work we will analyse the behaviour of the system proposed in the introdu
 We vary the number of selected voxels and the number of factors or components depending on the algorithm and the dataset used and evaluate the system with those characteristics. That way, we obtain an estimation of the performance of the system in different situations, so that we can draw conclusions on the disease patterns and the ability of the system in the detection of different diseases. 
 
 \subsection{Alzheimer's Disease}
-We begin by applying the proposed feature selection plus decomposition pipeline to the two functional neuroimaging datasets: ADNI-PET and VDLN-HMPAO. For this experiment we will use a maximum of $20,000$ selected voxels and $25$ components. 
+We begin by applying the proposed feature selection plus decomposition pipeline to the two functional neuroimaging datasets: \adnipet{} and \vdlnhmpao{}. For this experiment we will use a maximum of $20,000$ selected voxels and $25$ components. 
 
 \subsubsection{Factor Analysis}\label{sec:results_FA_AD}
 First, we use \ac{FA} as a decomposition technique. In Figure~\ref{fig:accuracyMeanFA-AD} we average the accuracy over the number of voxels or the number of components respectively, to look at how these variables affect the performance of the system, and we do this for the three filtering methods used. 
@@ -231,10 +231,10 @@ First, we use \ac{FA} as a decomposition technique. In Figure~\ref{fig:accuracyM
 	\label{fig:accuracyMeanFA-AD}
 \end{figure}
 
-We can observe that the results are generally better when using the ADNI-PET dataset than with the VDLN-HMPAO, and this is especially notorious when using the relative entropy selection criterion. The performance tends to slightly increase with the number of voxels selected, but it is not the case with the number of components. By looking at figures \ref{fig:AD-AV-FA-TTEST-VSK}, \ref{fig:AD-AV-FA-ENTROPY-VSK} and \ref{fig:AD-AV-FA-WILCOXON-VSK}, it seems that a relatively small number of components (approximately 6) is enough to obtain good performance, and afterwards, the performance holds or even decreases. 
+We can observe that the results are generally better when using the \adnipet{} dataset than with the \vdlnhmpao{}, and this is especially notorious when using the relative entropy selection criterion. The performance tends to slightly increase with the number of voxels selected, but it is not the case with the number of components. By looking at figures \ref{fig:AD-AV-FA-TTEST-VSK}, \ref{fig:AD-AV-FA-ENTROPY-VSK} and \ref{fig:AD-AV-FA-WILCOXON-VSK}, it seems that a relatively small number of components (approximately 6) is enough to obtain good performance, and afterwards, the performance holds or even decreases. 
 
 \subsubsection{Independent Component Analysis}
-In this section, we compute the results of applying \ac{ICA} to the ADNI-PET and VDLN-HMPAO datasets. Figure~\ref{fig:accuracyMeanICA-AD} depicts the average accuracy over the number of voxels or the number of components respectively for the different selection criteria. 
+In this section, we compute the results of applying \ac{ICA} to the \adnipet{} and \vdlnhmpao{} datasets. Figure~\ref{fig:accuracyMeanICA-AD} depicts the average accuracy over the number of voxels or the number of components respectively for the different selection criteria. 
 
 \begin{figure}
 	\centering
@@ -251,14 +251,14 @@ In this section, we compute the results of applying \ac{ICA} to the ADNI-PET and
 	\label{fig:accuracyMeanICA-AD}
 \end{figure}
 
-The case is similar to the one presented in Section~\ref{sec:results_FA_AD}, where the performance slightly improves when increasing the number of selected voxels. The performance is again better when using the ADNI-PET dataset than with the VDLN-HMPAO, although the behaviour is similar. 
+The case is similar to the one presented in Section~\ref{sec:results_FA_AD}, where the performance slightly improves when increasing the number of selected voxels. The performance is again better when using the \adnipet{} dataset than with the \vdlnhmpao{}, although the behaviour is similar. 
 
-The results change when varying the number of components. In this case, although good performance is obtained within the first 5 components in most cases, the model achieves similar performance in both datasets with components between 5 and 10, and then, the estimates diverge. In the VDLN-HMPAO, the performance starts to decrease after this number of components, whereas when using the ADNI-PET dataset, the higher average performance is obtained with $c>15$, especially in the case of the $t$-test or the wilcoxon selection criteria). 
+The results change when varying the number of components. In this case, although good performance is obtained within the first 5 components in most cases, the model achieves similar performance in both datasets with components between 5 and 10, and then, the estimates diverge. In the \vdlnhmpao{}, the performance starts to decrease after this number of components, whereas when using the \adnipet{} dataset, the higher average performance is obtained with $c>15$, especially in the case of the $t$-test or the wilcoxon selection criteria). 
 
 \subsubsection{At the Operation Point}
 Now we focus on non-averaged values, the values for which our system is optimal: the operation point. In this scenario we see that the tendency is that all systems behave similarly. 
 
-When increasing the number of selected voxels, we can see that there is always a tendency of slightly increase in both datasets and decomposition strategies, as can be seen in Figure~\ref{fig:accuracyOP-ADvsN}. For the ADNI-PET dataset, the maximum accuracies are obtained with a large number of voxels $f>15000$, however, in the case of VDLN-HMPAO, we obtain similar performance with fewer voxels, $f<7000$ in all selection criteria. 
+When increasing the number of selected voxels, we can see that there is always a tendency of slightly increase in both datasets and decomposition strategies, as can be seen in Figure~\ref{fig:accuracyOP-ADvsN}. For the \adnipet{} dataset, the maximum accuracies are obtained with a large number of voxels $f>15000$, however, in the case of \vdlnhmpao{}, we obtain similar performance with fewer voxels, $f<7000$ in all selection criteria. 
 
 \begin{figure}
 	\centering
@@ -268,7 +268,7 @@ When increasing the number of selected voxels, we can see that there is always a
 	\subfloat[]{\includegraphics[width=0.49\linewidth]{Graphics/ch4/accuracyOP-FA_vsK_comparison_VDLN-HMPAO.eps}\label{fig:VDLN-HMPAO-FA-OP-VSN}}
 	\subfloat[]{\includegraphics[width=0.49\linewidth]{Graphics/ch4/accuracyOP-ICA_vsK_comparison_VDLN-HMPAO.eps}\label{fig:VDLN-HMPAO-ICA-OP-VSN}}
 	
-	\caption[Performance at the operation point for the \acs{AD} datasets, over the number of selected voxels.]{Performance of the proposed system using the two \ac{AD} datasets: ADNI-PET and VDLN-HMPAO at the operation point, and how they vary over the number of selected voxels. } 
+	\caption[Performance at the operation point for the \acs{AD} datasets, over the number of selected voxels.]{Performance of the proposed system using the two \ac{AD} datasets: \adnipet{} and \vdlnhmpao{} at the operation point, and how they vary over the number of selected voxels. } 
 	\label{fig:accuracyOP-ADvsN}
 \end{figure}
 
@@ -282,13 +282,13 @@ Now we can focus on the performance variations over the number of components in 
 	\subfloat[]{\includegraphics[width=0.49\linewidth]{Graphics/ch4/accuracyOP-FA_vsN_comparison_VDLN-HMPAO.eps}\label{fig:VDLN-HMPAO-FA-OP-VSK}}
 	\subfloat[]{\includegraphics[width=0.49\linewidth]{Graphics/ch4/accuracyOP-ICA_vsN_comparison_VDLN-HMPAO.eps}\label{fig:VDLN-HMPAO-ICA-OP-VSK}}
 	
-	\caption[Performance at the operation point for the \acs{AD} datasets, over the number of components.]{Performance of the proposed system using the two \ac{AD} datasets: ADNI-PET and VDLN-HMPAO at the operation point, and how they vary over the number of components used in the decomposition. } 
+	\caption[Performance at the operation point for the \acs{AD} datasets, over the number of components.]{Performance of the proposed system using the two \ac{AD} datasets: \adnipet{} and \vdlnhmpao{} at the operation point, and how they vary over the number of components used in the decomposition. } 
 	\label{fig:accuracyOP-AD}
 \end{figure}
 
-A particular case is the combination of \ac{FA} and the relative entropy selection criteria applied to the VDLN-HMPAO dataset. In this case there seems to be a trend to achieve a maximum performance at between 5 components. But with the ADNI-PET dataset, the performance keeps and achieves maximum accuracy with $c\approxeq 20$. 
+A particular case is the combination of \ac{FA} and the relative entropy selection criteria applied to the \vdlnhmpao{} dataset. In this case there seems to be a trend to achieve a maximum performance at between 5 components. But with the \adnipet{} dataset, the performance keeps and achieves maximum accuracy with $c\approxeq 20$. 
 
-In Table~\ref{tab:featureAD} we show the performance values obtained at the operation point for our different test combining decomposition algorithms and selection criteria, for the two datasets analysed in this section. It is obvious that both datasets obtain similar performance in almost every case, with values close to $0.9$. These values are compared to the baseline classification performance, quantified using \ac{VAF} \cite{Stoeckel04}. From this, we can see that the decomposition systems always perform better than the baseline, but this difference is especially large in the case of the VDLN-HMPAO dataset, which contains very noisy images. 
+In Table~\ref{tab:featureAD} we show the performance values obtained at the operation point for our different test combining decomposition algorithms and selection criteria, for the two datasets analysed in this section. It is obvious that both datasets obtain similar performance in almost every case, with values close to $0.9$. These values are compared to the baseline classification performance, quantified using \ac{VAF} \cite{Stoeckel04}. From this, we can see that the decomposition systems always perform better than the baseline, but this difference is especially large in the case of the \vdlnhmpao{} dataset, which contains very noisy images. 
 
 \begin{table}
 	\myfloatalign
@@ -305,7 +305,7 @@ In Table~\ref{tab:featureAD} we show the performance values obtained at the oper
 		& \multirow{3}{*}{\ac{ICA}} & t-test & $ 0.903 \pm 0.071 $ & $ 0.893 \pm 0.100 $ & $ 0.910 \pm 0.107 $ \\
 		&  & entropy & $ 0.898 \pm 0.059 $ & $ 0.917 \pm 0.088 $ & $ 0.881 \pm 0.084 $ \\
 		&  & wilcoxon & $ 0.903 \pm 0.066 $ & $ 0.906 \pm 0.097 $ & $ 0.901 \pm 0.094 $ \\ \midrule
-		\multirow{7}{1.7cm}{VDLN-HMPAO} & \ac{VAF} & - & $0.802 \pm  0.074$ & $0.803 \pm 0.088$ & $0.805 \pm 0.145$ \\ 
+		\multirow{7}{1.7cm}{\vdlnhmpao{}} & \ac{VAF} & - & $0.802 \pm  0.074$ & $0.803 \pm 0.088$ & $0.805 \pm 0.145$ \\ 
 		\cline{2-6}
 		& \multirow{3}{*}{\ac{FA}} & t-test & $ 0.885 \pm 0.076 $ & $ 0.890 \pm 0.127 $ & $ 0.875 \pm 0.149 $ \\
 		&  & entropy & $ 0.896 \pm 0.092 $ & $ 0.907 \pm 0.150 $ & $ 0.875 \pm 0.139 $ \\
@@ -320,12 +320,12 @@ In Table~\ref{tab:featureAD} we show the performance values obtained at the oper
 	\label{tab:featureAD}
 \end{table}
 
-Overall, all methods achieve similar values of accuracy, sensitivity and specificity. When analysing the ADNI-PET dataset, the wilcoxon selection criteria seems to outperform the rest especially with \ac{ICA}, with a higher accuracy and sensitivity. On the other hand, with the VDLN-HMPAO dataset, either the $t$-test or the wilcoxon achieves higher sensitivity, but there is no difference in accuracy when decomposing with the \ac{ICA} algorithm. When using \ac{FA} decomposition, the relative entropy seems to perform better. In general, there seems to be little difference among methods, and a curious relationship between the relative entropy selection and the VDLN-HMPAO dataset that we will discuss later. 
+Overall, all methods achieve similar values of accuracy, sensitivity and specificity. When analysing the \adnipet{} dataset, the wilcoxon selection criteria seems to outperform the rest especially with \ac{ICA}, with a higher accuracy and sensitivity. On the other hand, with the \vdlnhmpao{} dataset, either the $t$-test or the wilcoxon achieves higher sensitivity, but there is no difference in accuracy when decomposing with the \ac{ICA} algorithm. When using \ac{FA} decomposition, the relative entropy seems to perform better. In general, there seems to be little difference among methods, and a curious relationship between the relative entropy selection and the \vdlnhmpao{} dataset that we will discuss later. 
 
 \FloatBarrier
 
 \subsection{Parkinson's Disease}
-Now we will look at how the proposed \ac{CAD} system behaves when applied to the three DaTSCAN datasets: VDLN-DAT, VDLV-DAT and PPMI-DAT. For this experiment we will use a maximum of $1500$ selected voxels and $25$ components, and images that have been previously intensity normalized using the integral normalization algorithm (see Section~\ref{sec:intensityPrep}). 
+Now we will look at how the proposed \ac{CAD} system behaves when applied to the three DaTSCAN datasets: \vdlndat{}, \vdlvdat{} and \ppmidat{}. For this experiment we will use a maximum of $1500$ selected voxels and $25$ components, and images that have been previously intensity normalized using the integral normalization algorithm (see Section~\ref{sec:intensityPrep}). 
 
 \subsubsection{Factor Analysis}
 Firstly, we will explore the average behaviour of the system that uses \ac{FA} as a decomposition technique. For this purpose, as in previous sections, Figure~\ref{fig:accuracyMeanFA-PKS} shows how the average performance varies when varying the number of voxels selected and the number of components extracted. 
@@ -345,11 +345,11 @@ Firstly, we will explore the average behaviour of the system that uses \ac{FA} a
 	\label{fig:accuracyMeanFA-PKS}
 \end{figure}
 
-In this case there is a clear difference between datasets, since some of them are more complex than others, usually due to a typical acquisition procedure in DaTSCAN. In the VDLN-DAT, the images were often composed only of a few cuts around the striatum, whereas in PPMI and VDLV-DAT this rarely happens. That would explain the average outperformance of these two datasets over the VDLN-DAT in almost all cases. 
+In this case there is a clear difference between datasets, since some of them are more complex than others, usually due to a typical acquisition procedure in DaTSCAN. In the \vdlndat{}, the images were often composed only of a few cuts around the striatum, whereas in PPMI and \vdlvdat{} this rarely happens. That would explain the average outperformance of these two datasets over the \vdlndat{} in almost all cases. 
 
-Their behaviours are consistent. Usually, there is no variation with the number of voxel selected (except in the obvious case of the VDLN-DAT dataset and the relative entropy selection criterion). However, there are repeated trends regarding the number of components or factors used in the computation. We can see that the performance increases in the first components, and once we have achieve a decent number (between 4 and 6), the performance starts to decrease. This could mean that the decomposition in more than 5 or 6 components only introduces noise and leads to a wrong decomposition. 
+Their behaviours are consistent. Usually, there is no variation with the number of voxel selected (except in the obvious case of the \vdlndat{} dataset and the relative entropy selection criterion). However, there are repeated trends regarding the number of components or factors used in the computation. We can see that the performance increases in the first components, and once we have achieve a decent number (between 4 and 6), the performance starts to decrease. This could mean that the decomposition in more than 5 or 6 components only introduces noise and leads to a wrong decomposition. 
 
-Again, this behaviour is consistent with the VDLN-DAT dataset, except for one case. It does seem that the interaction between the VDLN-DAT dataset and the relative entropy selection criterion leads to a wrong model. We will explore this question later, in the discussion. 
+Again, this behaviour is consistent with the \vdlndat{} dataset, except for one case. It does seem that the interaction between the \vdlndat{} dataset and the relative entropy selection criterion leads to a wrong model. We will explore this question later, in the discussion. 
 
 \subsubsection{Independent Component Analysis}
 Regarding the application of the \ac{ICA} decomposition model to the DaTSCAN datasets. In Figure~\ref{fig:accuracyMeanICA-PKS} we present the average accuracy achieved by this model using three different selection criteria and the three \ac{PKS} datasets. 
@@ -368,7 +368,7 @@ Regarding the application of the \ac{ICA} decomposition model to the DaTSCAN dat
 	\label{fig:accuracyMeanICA-PKS}
 \end{figure}
 
-In average, PPMI-DAT and VDLV-DAT achieve similar performance, while VDLN-DAT generally achieves much poorer results. However, the behaviour of the system when varying the number of voxels or number of components is similar in all three datasets. The tendency is that accuracy does not significantly vary when increasing the number of voxels (except in the case of the relative entropy and VDLN-DAT). In contrast, when varying the number of components, we observe that the maximum performance is achieved in the first components, typically between 5 and 10. 
+In average, \ppmidat{} and \vdlvdat{} achieve similar performance, while \vdlndat{} generally achieves much poorer results. However, the behaviour of the system when varying the number of voxels or number of components is similar in all three datasets. The tendency is that accuracy does not significantly vary when increasing the number of voxels (except in the case of the relative entropy and \vdlndat{}). In contrast, when varying the number of components, we observe that the maximum performance is achieved in the first components, typically between 5 and 10. 
 
 \subsubsection{At the Operation Point}
 Let us now have a look at the behaviour of this system at the operation point, using the parameters $c$ and $f$ for which our system is optimal. When varying the number of voxels selected, we obtain the graphs presented at Figure~\ref{fig:accuracyOP-PKSvsN}. 
@@ -383,11 +383,11 @@ Let us now have a look at the behaviour of this system at the operation point, u
 	\subfloat[]{\includegraphics[width=0.49\linewidth]{Graphics/ch4/accuracyOP-FA_vsK_comparison_VDLV-DAT.eps}\label{fig:VDLV-DAT-FA-OP-vsN}}
 	\subfloat[]{\includegraphics[width=0.49\linewidth]{Graphics/ch4/accuracyOP-ICA_vsK_comparison_VDLV-DAT.eps}\label{fig:VDLV-DAT-ICA-OP-vsN}}
 	
-	\caption[Performance at the operation point for the \acs{PKS} datasets, over the number of selected voxels.]{Performance of the proposed system using the two \ac{PKS} datasets: PPMI-DAT, VDLN-DAT and VDLV-DAT at the operation point, and how they vary over the number of selected voxels. } 
+	\caption[Performance at the operation point for the \acs{PKS} datasets, over the number of selected voxels.]{Performance of the proposed system using the two \ac{PKS} datasets: \ppmidat{}, \vdlndat{} and \vdlvdat{} at the operation point, and how they vary over the number of selected voxels. } 
 	\label{fig:accuracyOP-PKSvsN}
 \end{figure}
 
-In this case, we obtain again that our system maintains approximately the same performance regardless of the number of voxels selected when tested on both the PPMI-DAT and the VDLV-DAT datasets. In contrast, the performance increases when increasing the number of selected voxels when testing the VDLN-DAT dataset, especially when using the relative entropy criterion. This latter dataset also obtains less performance, whereas the VDLV-DAT achieves the best. 
+In this case, we obtain again that our system maintains approximately the same performance regardless of the number of voxels selected when tested on both the \ppmidat{} and the \vdlvdat{} datasets. In contrast, the performance increases when increasing the number of selected voxels when testing the \vdlndat{} dataset, especially when using the relative entropy criterion. This latter dataset also obtains less performance, whereas the \vdlvdat{} achieves the best. 
 
 As for the changes in performance when varying the number of components, the results for both \ac{FA} and \ac{ICA} based systems are shown in Figure~\ref{fig:accuracyOP-PKS}. 
 
@@ -401,13 +401,13 @@ As for the changes in performance when varying the number of components, the res
 	\subfloat[]{\includegraphics[width=0.49\linewidth]{Graphics/ch4/accuracyOP-FA_vsN_comparison_VDLV-DAT.eps}\label{fig:VDLV-DAT-FA-OP}}
 	\subfloat[]{\includegraphics[width=0.49\linewidth]{Graphics/ch4/accuracyOP-ICA_vsN_comparison_VDLV-DAT.eps}\label{fig:VDLV-DAT-ICA-OP}}
 	
-	\caption[Performance at the operation point for the \acs{PKS} datasets, over the number of components.]{Performance of the proposed system using the two \ac{PKS} datasets: PPMI-DAT, VDLN-DAT and VDLV-DAT at the operation point, and how they vary over the number of components used in the decomposition. } 
+	\caption[Performance at the operation point for the \acs{PKS} datasets, over the number of components.]{Performance of the proposed system using the two \ac{PKS} datasets: \ppmidat{}, \vdlndat{} and \vdlvdat{} at the operation point, and how they vary over the number of components used in the decomposition. } 
 	\label{fig:accuracyOP-PKS}
 \end{figure}
 
-In this first case, the most evident result is the general performance of our system in the three datasets. It is clear that the system performs better when tested on VDLV-DAT than when tested on PPMI-DAT, and both datasets outperform, VDLN-DAT. It is even clearer that when testing on VDLV-DAT, the results are similar using any type of decomposition and selection criteria, with similar performance. We will discuss this issue in more detail later. 
+In this first case, the most evident result is the general performance of our system in the three datasets. It is clear that the system performs better when tested on \vdlvdat{} than when tested on \ppmidat{}, and both datasets outperform, \vdlndat{}. It is even clearer that when testing on \vdlvdat{}, the results are similar using any type of decomposition and selection criteria, with similar performance. We will discuss this issue in more detail later. 
 
-The tendency of the performance at the operation point is similar to the average behaviour commented before. In general, there is an accuracy increasing in the first components (usually, between 5 and 10 depending on the decomposition) and then, the performance remains stable. Again, the combination of relative entropy selection and VDLN-DAT achieves striking results. For this dataset, the higher performance is obtained with more than 10 components ($c=14$), and shows higher variability than other datasets. 
+The tendency of the performance at the operation point is similar to the average behaviour commented before. In general, there is an accuracy increasing in the first components (usually, between 5 and 10 depending on the decomposition) and then, the performance remains stable. Again, the combination of relative entropy selection and \vdlndat{} achieves striking results. For this dataset, the higher performance is obtained with more than 10 components ($c=14$), and shows higher variability than other datasets. 
 
 Now we will focus on the specific performance values obtained at the operation point, that can be seen in Table~\ref{tab:featurePKS}. In this table we observe the differences in performance between datasets and also between \acp{CAD} using each decomposition strategy. 
 
@@ -416,7 +416,7 @@ Now we will focus on the specific performance values obtained at the operation p
 		\toprule
 		\tableheadline{DB} & \tableheadline{Dec.} & \tableheadline{Criterion} & \tableheadline{Accuracy} & \tableheadline{Sensitivity} & \tableheadline{Specificity}\\
 		\toprule
-		\multirow{7}{1.7cm}{PPMI-DAT} & \ac{VAF} & - & $ 0.800 \pm 0.071$ & $ 0.831 \pm 0.093$ & $0.747 \pm 0.112$ \\
+		\multirow{7}{1.7cm}{\ppmidat{}} & \ac{VAF} & - & $ 0.800 \pm 0.071$ & $ 0.831 \pm 0.093$ & $0.747 \pm 0.112$ \\
 		\cline{2-6}
 		& \multirow{3}{*}{\ac{FA}} & t-test & $ 0.917 \pm 0.037 $ & $ 0.918 \pm 0.095 $ & $ 0.918 \pm 0.091 $ \\
 		&  & entropy & $ 0.917 \pm 0.060 $ & $ 0.918 \pm 0.076 $ & $ 0.921 \pm 0.120 $ \\
@@ -426,7 +426,7 @@ Now we will focus on the specific performance values obtained at the operation p
 		&  & entropy & $ 0.928 \pm 0.055 $ & $ 0.909 \pm 0.091 $ & $ 0.961 \pm 0.090 $ \\
 		&  & wilcoxon & $ 0.912 \pm 0.070 $ & $ 0.909 \pm 0.100 $ & $ 0.920 \pm 0.118 $ \\
 		\midrule
-		\multirow{7}{1.7cm}{VDLN-DAT} & \ac{VAF} & - & $0.796 \pm 0.129 $ & $0.860 \pm 0.143 $ & $0.675 \pm 0.208 $ \\
+		\multirow{7}{1.7cm}{\vdlndat{}} & \ac{VAF} & - & $0.796 \pm 0.129 $ & $0.860 \pm 0.143 $ & $0.675 \pm 0.208 $ \\
 		\cline{2-6}
 		& \multirow{3}{*}{\ac{FA}} & t-test & $ 0.856 \pm 0.111 $ & $ 0.887 \pm 0.178 $ & $ 0.795 \pm 0.164 $ \\
 		&  & entropy & $ 0.890 \pm 0.098 $ & $ 0.875 \pm 0.118 $ & $ 0.910 \pm 0.116 $ \\
@@ -436,7 +436,7 @@ Now we will focus on the specific performance values obtained at the operation p
 		&  & entropy & $ 0.907 \pm 0.075 $ & $ 0.889 \pm 0.124 $ & $ 0.935 \pm 0.131 $ \\
 		&  & wilcoxon & $ 0.873 \pm 0.108 $ & $ 0.859 \pm 0.181 $ & $ 0.890 \pm 0.151 $ \\
 		\midrule
-		\multirow{7}{1.7cm}{VDLV-DAT} & \ac{VAF} & - & $ 0.918 \pm 0.062$ & $0.900 \pm 0.094$ & $ 0.926 \pm0.087$ \\
+		\multirow{7}{1.7cm}{\vdlvdat{}} & \ac{VAF} & - & $ 0.918 \pm 0.062$ & $0.900 \pm 0.094$ & $ 0.926 \pm0.087$ \\
 		\cline{2-6}
 		& \multirow{3}{*}{\ac{FA}} & t-test & $ 0.957 \pm 0.063 $ & $ 0.910 \pm 0.094 $ & $ 0.973 \pm 0.065 $ \\
 		&  & entropy & $ 0.952 \pm 0.037 $ & $ 0.940 \pm 0.066 $ & $ 0.964 \pm 0.064 $ \\
@@ -452,7 +452,7 @@ Now we will focus on the specific performance values obtained at the operation p
 \end{table} 
 
 
-In general, the systems using \ac{ICA} tend to perform slightly better than those using \ac{FA}, although the difference is small. There is little difference between selection criteria as well, although the combination of relative entropy and \ac{ICA} seems to work better, at least in the PPMI-DAT and VDLN-DAT (in VDLV-DAT all combinations perform equally well). 
+In general, the systems using \ac{ICA} tend to perform slightly better than those using \ac{FA}, although the difference is small. There is little difference between selection criteria as well, although the combination of relative entropy and \ac{ICA} seems to work better, at least in the \ppmidat{} and \vdlndat{} (in \vdlvdat{} all combinations perform equally well). 
 
 
 \FloatBarrier
@@ -463,7 +463,7 @@ Our \ac{CAD} system performs reasonably well on the \ac{AD} datasets, where it a
 
 We have chosen to evaluate the system only on linear \acp{SVC} for two main reasons. First, it favours a side-by-side comparison between all methods applied to different datasets in this thesis. And second, linear \ac{SVC} has been proven to be better generalizable than other systems, even in environments where the small sample size is the norm \cite{Vapnik1997}. 
 
-The selected areas on these \ac{CAD} systems correspond to the highlighted areas in Figure~\ref{fig:comparisonSelection_adnipet}, in the case of ADNI-PET dataset. 
+The selected areas on these \ac{CAD} systems correspond to the highlighted areas in Figure~\ref{fig:comparisonSelection_adnipet}, in the case of \adnipet{} dataset. 
 
 \begin{figure}[bth]
 	\myfloatalign
@@ -473,10 +473,10 @@ The selected areas on these \ac{CAD} systems correspond to the highlighted areas
 	{\includegraphics[height=.25\textheight]{Graphics/ch4/kl_map_adnipet.eps}\label{fig:kl_map}}\quad
 	\subfloat[\ac{MWW} $U$-test.]
 	{\includegraphics[height=.25\textheight]{Graphics/ch4/wilcoxon_map_adnipet.eps}\label{fig:wilcoxon_map}}
-	\caption[Comparison between the different filtering methods in ADNI-PET.]{Comparison between the different filtering methods, and the regions selected by them, in the ADNI-PET dataset. }\label{fig:comparisonSelection_adnipet}
+	\caption[Comparison between the different filtering methods in \adnipet{}.]{Comparison between the different filtering methods, and the regions selected by them, in the \adnipet{} dataset. }\label{fig:comparisonSelection_adnipet}
 \end{figure}
 
-In the VDLN-HMPAO different areas are selected as we can see in Figure~\ref{fig:comparisonSelection_vdlnhmpao}. This is mainly due to a change in the modality that deserves to be analysed. 
+In the \vdlnhmpao{} different areas are selected as we can see in Figure~\ref{fig:comparisonSelection_vdlnhmpao}. This is mainly due to a change in the modality that deserves to be analysed. 
 
 \begin{figure}[bth]
 	\myfloatalign
@@ -486,7 +486,7 @@ In the VDLN-HMPAO different areas are selected as we can see in Figure~\ref{fig:
 	{\includegraphics[height=.25\textheight]{Graphics/ch4/kl_map_vdln-hmpao.eps}\label{fig:kl_map_vdlnhmpao}}\quad
 	\subfloat[\ac{MWW} $U$-test.]
 	{\includegraphics[height=.25\textheight]{Graphics/ch4/wilcoxon_map_vdln-hmpao.eps}\label{fig:wilcoxon_map_vdlnhmpao}}
-	\caption[Comparison between the different filtering methods in ADNI-PET.]{Comparison between the different filtering methods, and the regions selected by them, in the ADNI-PET dataset. }\label{fig:comparisonSelection_vdlnhmpao}
+	\caption[Comparison between the different filtering methods in \adnipet{}.]{Comparison between the different filtering methods, and the regions selected by them, in the \adnipet{} dataset. }\label{fig:comparisonSelection_vdlnhmpao}
 \end{figure}
 
 To have a more profound look at the selected regions in both modalities, we provide Table~\ref{tab:overlapVDLNAD}, where the AAL regions with an overlapping higher than 0.5 in any of the modalities and selection criteria are displayed. 
@@ -494,7 +494,7 @@ To have a more profound look at the selected regions in both modalities, we prov
 \begin{bigtable}
 %	\centering
 \begin{tabularx}{\textwidth}{Xcccccc}
-	{} &\multicolumn{3}{c}{ADNI-PET}    & \multicolumn{3}{c}{VDLN-HMPAO}         \\
+	{} &\multicolumn{3}{c}{\adnipet{}}    & \multicolumn{3}{c}{\vdlnhmpao{}}         \\
 	\cline{2-7}
 	\tableheadline{Region} &    \tableheadline{entropy} & \tableheadline{t-test} & \tableheadline{wilcoxon} &  \tableheadline{entropy} & \tableheadline{t-test} & \tableheadline{wilcoxon} \\
 	\midrule
@@ -525,21 +525,21 @@ Supramarginal Gyrus (left)   &    0.195 &    0.156 &  0.183 &      0.627 &    0.
 \label{tab:overlapVDLNAD}
 \end{bigtable} 
 
-In the case of the VDLN-HMPAO dataset, the most interesting regions are located at the occipital lobe, the angular lobe and few of them in the temporal lobe. These are selected using almost any of the selection criteria. However, when using the ADNI-PET dataset, the only region with a significant overlapping is the angular gyrus, and other regions with a widely documented relation to \ac{AD} are highlighted \cite{Dubois2007,Claus1994}, such as the cingulum, hippocampus and parahippocampal gyrus. 
+In the case of the \vdlnhmpao{} dataset, the most interesting regions are located at the occipital lobe, the angular lobe and few of them in the temporal lobe. These are selected using almost any of the selection criteria. However, when using the \adnipet{} dataset, the only region with a significant overlapping is the angular gyrus, and other regions with a widely documented relation to \ac{AD} are highlighted \cite{Dubois2007,Claus1994}, such as the cingulum, hippocampus and parahippocampal gyrus. 
 
 It is clearly noticeable that the relative entropy selection criterion focuses on many different regions, but it is the only one able to detect the hippocampus or parahippocampal gyrus in the \ac{PET} dataset, which other criteria ignore. It also focuses more on the different parts of the occipital lobe in the \ac{SPECT} dataset. This difference in the selected areas could lead to the different overall performance observed in Figures~\ref{fig:AD-AV-FA-ENTROPY-VSN}, \ref{fig:AD-AV-FA-ENTROPY-VSK}, \ref{fig:AD-AV-ICA-ENTROPY-VSN}, and \ref{fig:AD-AV-ICA-ENTROPY-VSK}.
 
-For its part, wilcoxon and $t$-test often select similar regions. This can be due to their similarity under the normal distribution \cite{Fay10}, and leads to a higher performance in the systems in average and at the operation point (see Figures~\ref{fig:accuracyMeanFA-AD}, \ref{fig:accuracyMeanICA-AD}, \ref{fig:accuracyOP-ADvsN} and \ref{fig:accuracyOP-AD}). From the selected regions, and since $t$-test and wilcoxon perform generally better, we can infer the more interesting regions for \ac{AD} classification. For the ADNI-PET dataset, these would be the angular lobes and the cingulum, whereas for the VDLN-HMPAO, we can observe differences in the angular lobe and also all over the occipital lobe and parts of the temporal lobe. 
+For its part, wilcoxon and $t$-test often select similar regions. This can be due to their similarity under the normal distribution \cite{Fay10}, and leads to a higher performance in the systems in average and at the operation point (see Figures~\ref{fig:accuracyMeanFA-AD}, \ref{fig:accuracyMeanICA-AD}, \ref{fig:accuracyOP-ADvsN} and \ref{fig:accuracyOP-AD}). From the selected regions, and since $t$-test and wilcoxon perform generally better, we can infer the more interesting regions for \ac{AD} classification. For the \adnipet{} dataset, these would be the angular lobes and the cingulum, whereas for the \vdlnhmpao{}, we can observe differences in the angular lobe and also all over the occipital lobe and parts of the temporal lobe. 
 
-Regarding the decomposition method, there seems not to be any significant differences. Both \ac{ICA} and \ac{FA} perform similarly in both datasets, regardless of the noise contained in the images, although the differences with the baseline system are much higher in the case of the VDLN-HMPAO dataset. This is perhaps due to the smoother nature of the ADNI-PET, in which several images from the same subject were averaged, and therefore, much of the noise was removed, whereas in the VDLN-HMPAO images, the noise could be removed afterwards by discarding many of the lower-significance components. 
+Regarding the decomposition method, there seems not to be any significant differences. Both \ac{ICA} and \ac{FA} perform similarly in both datasets, regardless of the noise contained in the images, although the differences with the baseline system are much higher in the case of the \vdlnhmpao{} dataset. This is perhaps due to the smoother nature of the \adnipet{}, in which several images from the same subject were averaged, and therefore, much of the noise was removed, whereas in the \vdlnhmpao{} images, the noise could be removed afterwards by discarding many of the lower-significance components. 
 
-When applied to the \ac{PKS} datasets, the results differ from the PPMI-DAT and VDLN-DAT to the VDLV-DAT. These databases differ in the number of subjects that they contain. Whereas in the former there are different subjects with \ac{PKS}, including \ac{SWEDD}, in the later we only have \ac{PD} and \ac{CTL} subjects, which makes the classification easier. 
+When applied to the \ac{PKS} datasets, the results differ from the \ppmidat{} and \vdlndat{} to the \vdlvdat{}. These databases differ in the number of subjects that they contain. Whereas in the former there are different subjects with \ac{PKS}, including \ac{SWEDD}, in the later we only have \ac{PD} and \ac{CTL} subjects, which makes the classification easier. 
 
-This accuracy differences can be found throughout all figures and tables, although in general, the VDLN-DAT dataset has the lowest performance, while the PPMI-DAT and VDLV-DAT behave similarly in average. 
+This accuracy differences can be found throughout all figures and tables, although in general, the \vdlndat{} dataset has the lowest performance, while the \ppmidat{} and \vdlvdat{} behave similarly in average. 
 
 When using \ac{FA} with the \ac{PKS} datasets, we observe a similar behaviour to that already seen with \ac{AD} datasets: there is little difference in performance when varying the number of selected voxels, except when using the relative entropy criterion. In this particular case, there is a rise in the average performance when increasing the number of selected voxels, which is more noticeable when using the VDLN-DAt dataset. 
 
-For its part, there are more significant variations when increasing the number of components. Smaller $c$ values lead to a fast increase in performance up to a maximum. Depending on the selection criterion used, this value varies from $c=3$ when using the $t$-test to $c=14$ for the entropy criterion applied to VDLN-DAT. The optimal $c$ is usually located at $c\in [3,5]$ in most cases, as can be seen in Figure~\ref{fig:accuracyMeanFA-PKS}. A very similar behaviour is achieved when using the \ac{ICA} decomposition, as Figure~\ref{fig:accuracyMeanICA-PKS} shows.
+For its part, there are more significant variations when increasing the number of components. Smaller $c$ values lead to a fast increase in performance up to a maximum. Depending on the selection criterion used, this value varies from $c=3$ when using the $t$-test to $c=14$ for the entropy criterion applied to \vdlndat{}. The optimal $c$ is usually located at $c\in [3,5]$ in most cases, as can be seen in Figure~\ref{fig:accuracyMeanFA-PKS}. A very similar behaviour is achieved when using the \ac{ICA} decomposition, as Figure~\ref{fig:accuracyMeanICA-PKS} shows.
 
 In \ac{AD} we provided a table with the selected regions in both \ac{PET} and \ac{SPECT} modalities. Conversely, in DaTSCAN imaging, the selected regions are always in the striatum, and the smaller resolution of these images hardly reveals the underlying structures. The selected regions with either $t$-test or wilcoxon fundamentally cover the whole caudate, putamen and globus pallidus, and some external structures as well. However, the relative entropy criterion focus almost exclusively in the striatum, with a strong preference for the posterior part, and discards all other regions, introducing less noise. 
 
@@ -551,11 +551,11 @@ In \ac{AD} we provided a table with the selected regions in both \ac{PET} and \a
 	{\includegraphics[height=.25\textheight]{Graphics/ch4/kl_map_ppmi-dat.eps}\label{fig:kl_map_ppmi-dat}}\quad
 	\subfloat[\ac{MWW} $U$-test.]
 	{\includegraphics[height=.25\textheight]{Graphics/ch4/wilcoxon_map_ppmi-dat.eps}\label{fig:wilcoxon_map_ppmi-dat}}
-	\caption[Comparison between the different filtering methods in PPMI-DAT.]{Comparison between the different filtering methods, and the regions selected by them, in the PPMI-DAT dataset. }\label{fig:comparisonSelection_ppmidat}
+	\caption[Comparison between the different filtering methods in \ppmidat{}.]{Comparison between the different filtering methods, and the regions selected by them, in the \ppmidat{} dataset. }\label{fig:comparisonSelection_ppmidat}
 \end{figure}
 
-This is clearly seen in Figure~\ref{fig:accuracyOP-PKSvsN} where the performance around the operation point is displayed. Here, when looking at the VDLN-DAT dataset, the correlation between performance and number of selected voxels is more obvious. As can be seen in Table~\ref{tab:featurePKS}, in the two datasets where \ac{SWEDD} subjects are included the system which uses relative entropy achieves better results. However, in the VDLV-DAT, where the system only involves \ac{PD} and \ac{CTL} subjects, the performance is very similar using all three selection criteria. 
+This is clearly seen in Figure~\ref{fig:accuracyOP-PKSvsN} where the performance around the operation point is displayed. Here, when looking at the \vdlndat{} dataset, the correlation between performance and number of selected voxels is more obvious. As can be seen in Table~\ref{tab:featurePKS}, in the two datasets where \ac{SWEDD} subjects are included the system which uses relative entropy achieves better results. However, in the \vdlvdat{}, where the system only involves \ac{PD} and \ac{CTL} subjects, the performance is very similar using all three selection criteria. 
 
-When looking at the evolution of the performance with the number of selected components, (Figure~\ref{fig:accuracyOP-PKS}), the pattern observed in \ac{AD} holds for the PPMI-DAT and the VDLV-DAT datasets. In these cases, maximum performance is obtained with a relatively small $c$ (between 4 and 8, depending on the decomposition algorithm). However, with the relative entropy criterion, the VDLN-DAT still needs a higher number (more than 10) to reach the operation point. 
+When looking at the evolution of the performance with the number of selected components, (Figure~\ref{fig:accuracyOP-PKS}), the pattern observed in \ac{AD} holds for the \ppmidat{} and the \vdlvdat{} datasets. In these cases, maximum performance is obtained with a relatively small $c$ (between 4 and 8, depending on the decomposition algorithm). However, with the relative entropy criterion, the \vdlndat{} still needs a higher number (more than 10) to reach the operation point. 
 
-All these differences in behaviour could be due to a higher variability in VDLN-DAT, compared to the other two datasets. The number of components needed, especially in \ac{FA}, points to a more complex decomposition of those images. The sources of variability in this dataset probably correspond to a higher proportion of \ac{SWEDD} subjects and the number of cuts used in the acquisition. The number of \ac{SWEDD} in VDLN-DAT is 30 for a total dataset of 148 patients, whereas in the PPMI-DAT dataset we only have 31 \ac{SWEDD} for 301 subjects. Furthermore, the number of cuts in the images of VDLN-DAT differs from one image to another, since they follow a common practice in which only the \acp{ROI} of the brain (the striatum) are acquired. 
+All these differences in behaviour could be due to a higher variability in \vdlndat{}, compared to the other two datasets. The number of components needed, especially in \ac{FA}, points to a more complex decomposition of those images. The sources of variability in this dataset probably correspond to a higher proportion of \ac{SWEDD} subjects and the number of cuts used in the acquisition. The number of \ac{SWEDD} in \vdlndat{} is 30 for a total dataset of 148 patients, whereas in the \ppmidat{} dataset we only have 31 \ac{SWEDD} for 301 subjects. Furthermore, the number of cuts in the images of \vdlndat{} differs from one image to another, since they follow a common practice in which only the \acp{ROI} of the brain (the striatum) are acquired. 

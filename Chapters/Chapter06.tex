@@ -335,7 +335,7 @@ Once the \ac{GLCM} is computed, we can extract a variety of texture descriptors,
 \end{align}
 
 \section{Evaluation}
-In this chapter, we have proposed a completely new framework for extracting features and visualizing structural \ac{MRI} images from the ADNI-MRI database. To evaluate them, we will combine statistical significance assessment and classification analysis. For this purpose, we propose the following experiments: 
+In this chapter, we have proposed a completely new framework for extracting features and visualizing structural \ac{MRI} images from the \adnimri{} database. To evaluate them, we will combine statistical significance assessment and classification analysis. For this purpose, we propose the following experiments: 
 \begin{itemize}
 	\item Experiment 1: assessment of the original \ac{SBM} maps and the \ac{VRLBP} over segmented \ac{GM} and \ac{WM} images. We will provide a statistical significance analysis and a classification analysis under the \ac{AD} vs \ac{CTL} scenario of the six proposed maps. 
 	\item Experiment 2: assessment of the layered extension of the \ac{SBM} over segmented \ac{GM} and \ac{WM} images. That way, we want to prove if dividing the sampling set, and thus, increasing the depth resolution of the system affects the overall performance of our system. We will provide statistical significance analysis and classification analysis under the \ac{AD} vs \ac{CTL} scenario . 
@@ -359,11 +359,11 @@ First, with experiment 1, we test the original and \ac{VRLBP} \ac{SBM} maps, by 
 	\label{fig:tmaps}
 \end{figure*}
 
-For $p<0.05$, in the database subset of the ADNI-MRI, the signifcance threshold can be established at $|t|>1.96$. This means that, in Figure~\ref{fig:tmaps}, the most relevant differences between classes can be found at the areas coloured in dark red (positive, \ac{CTL} subjects have a higher measure) and dark blue (negative, \ac{AD} subjects have a higher measure). For the anatomic structures, we refer to the anatomical reference presented in Section~\ref{sec:anatomical}. 
+For $p<0.05$, in the database subset of the \adnimri{}, the signifcance threshold can be established at $|t|>1.96$. This means that, in Figure~\ref{fig:tmaps}, the most relevant differences between classes can be found at the areas coloured in dark red (positive, \ac{CTL} subjects have a higher measure) and dark blue (negative, \ac{AD} subjects have a higher measure). For the anatomic structures, we refer to the anatomical reference presented in Section~\ref{sec:anatomical}. 
 
 We first note that the surface measure, tested in both \ac{GM} and \ac{WM} maps, does not look relevant. Very few significant pixels are scattered throughout the image, although with a slightly higher concentration in the areas corresponding to the temporal lobe. 
 
-In the remaining \ac{GM} maps, we observe similar behaviours, with higher absolute $t$-values located in the frontal, occipital and parietal lobes. But again, the most significant areas can be found at the temporal lobe. It is more obvious in the average and entropy measures, but can also be found at the thickness, or negatively in the number of folds and kurtosis maps. This points to the well kown fact that most of the neurodegeneration in \ac{GM} occurs within the structures that are mapped to these directions, including mid temporal lobe, amygdala, hippocampus or parahippocampal lobe, considered a strong indicator in the NINCDS-ADRDA criteria \cite{Dubois2007}. Other \ac{GM} structures such as the caudate nucleus and putamen also appear with significant $t$ values, especially in the entropy and kurtosis maps (with negative $t$) \cite{Pievani2013}. 
+In the remaining \ac{GM} maps, we observe similar behaviours, with higher absolute $t$-values located in the frontal, occipital and parietal lobes. But again, the most significant areas can be found at the temporal lobe. It is more obvious in the average and entropy measures, but can also be found at the thickness, or negatively in the number of folds and kurtosis maps. This points to the well kown fact that most of the neurodegeneration in \ac{GM} occurs within the structures that are mapped to these directions, including mid temporal lobe, amygdala, hippocampus or parahippocampal gyrus, considered a strong indicator in the NINCDS-ADRDA criteria \cite{Dubois2007}. Other \ac{GM} structures such as the caudate nucleus and putamen also appear with significant $t$ values, especially in the entropy and kurtosis maps (with negative $t$) \cite{Pievani2013}. 
 
 In the \ac{WM}, the levels of significance achieved are smaller than in the \ac{GM}, but still high. We see the higher levels of number of folds and thickness located in the vicinity of those obtained for \ac{GM}, but in negative. For the average, entropy and kurtosis measures, we observe a different behaviours. These maps present large areas of negative $t$-values located in the Caudate Nucleus, Globus Pallidus and Putamen. Areas around the posterior cingulate gyrus and the adjacent precuneus also present reduced $t$ values, which could be related to cell loss, as suggested in \cite{Baron2001}.
 
@@ -447,7 +447,7 @@ Performing a significance analysis on the 4 layer extension of the 7 proposed \a
 	\label{fig:tmaplayered}
 \end{figure*} 
 
-In \ac{GM}, the most obvious changes are located in layers 2 and 3, specifically at the hippocampus, parahippocampal lobe and amygdala (layer 2), and the temporal lobe (layer 3), where the values achieved by \ac{CTL} subjects are much higher than those found in \ac{AD}. This could reveal atrophy in these organs, as it has been reported in the literature \cite{Dubois2007,Pievani2013} and will be discussed later. For \ac{WM}, we obtain large negative $t$-values in areas occupied by the rolandic operculum, heschl's gyri, putamen and globus pallidus, with positive values in parts of the hippocampus, and parts of the temporal lobe. Nevertheless, the most significant differences can be located in layer 1, at the borders between ventricles and thalamus, and the cuneus, precuneus and posterior cingulate gyrus, which have been reported in \cite{Baron2001}.
+In \ac{GM}, the most obvious changes are located in layers 2 and 3, specifically at the hippocampus, parahippocampal gyrus and amygdala (layer 2), and the temporal lobe (layer 3), where the values achieved by \ac{CTL} subjects are much higher than those found in \ac{AD}. This could reveal atrophy in these organs, as it has been reported in the literature \cite{Dubois2007,Pievani2013} and will be discussed later. For \ac{WM}, we obtain large negative $t$-values in areas occupied by the rolandic operculum, heschl's gyri, putamen and globus pallidus, with positive values in parts of the hippocampus, and parts of the temporal lobe. Nevertheless, the most significant differences can be located in layer 1, at the borders between ventricles and thalamus, and the cuneus, precuneus and posterior cingulate gyrus, which have been reported in \cite{Baron2001}.
 
 \subsection{Experiment 3: \acs{HMM} on Synthetic Datasets}
 
@@ -484,7 +484,7 @@ Finally, and prior to the three-dimensional brain images, we test the algorithm 
 
 
 \subsection{Experiment 4: Feature Selection using \acs{HMM} Paths}
-In Experiment 4 we begin to apply the \ac{HMM} paths to real \ac{MRI} images from the ADNI-MRI dataset. We have first defined a set of paths over the DARTEL template, which we call the canonical paths. The canonical paths follow the anatomy of a normal subject to whom all other images have been registered. Therefore, the location of the different nodes on the paths are fixed throughout the general anatomy of all images, and we could characterize the differences between classes by analysing the intensity distribution on these paths --in other words, the tissue density--. In short, we apply the canonical paths as a feature selection algorithm to the different images. 
+In Experiment 4 we begin to apply the \ac{HMM} paths to real \ac{MRI} images from the \adnimri{} dataset. We have first defined a set of paths over the DARTEL template, which we call the canonical paths. The canonical paths follow the anatomy of a normal subject to whom all other images have been registered. Therefore, the location of the different nodes on the paths are fixed throughout the general anatomy of all images, and we could characterize the differences between classes by analysing the intensity distribution on these paths --in other words, the tissue density--. In short, we apply the canonical paths as a feature selection algorithm to the different images. 
 
 To start with, we will take all the $180\times360=64800$ canonical paths computed in all  spatial directions defined by $\varphi\in[0,360]$ and $\theta\in[-90,90]$. These paths will be used to select the voxel intensities where the nodes are placed, as in the original \ac{SBM}. Due to the influence of the different variables (trace of the paths, stop condition), the amount of values varies from 2 to several tens. First we will test the accuracy achieved by each path itself, using the set of intensities as features in a \ac{SVC} classifier. The accuracy reached by each path is represented by colour in Figure~\ref{fig:accuracyMap}. 
 
@@ -496,7 +496,7 @@ To start with, we will take all the $180\times360=64800$ canonical paths compute
 	\end{center}
 \end{figure}
 
-The highest performance is achieved by some of the light green paths that cross the temporal lobe, where they reach a decent accuracy up to $0.8028\pm0.0873$. Compared to the \ac{VAF} approach obtained in the ADNI-MRI dataset, under the AD vs NOR scenario (76.8\% for \ac{GM} and 0.64\% for \ac{WM}) XXXXMODIFICAR, this is a dramatic feature reduction while increasing the performance of the system. 
+The highest performance is achieved by some of the light green paths that cross the temporal lobe, where they reach a decent accuracy up to $0.8028\pm0.0873$. Compared to the \ac{VAF} approach obtained in the \adnimri{} dataset using T1-weighted images, under the AD vs NOR scenario ($0.789 \pm 0.066$ accuracy), this is a dramatic feature reduction while increasing the performance of the system. 
 
 Then, we want to test whether using all the intensities contained within the highest scoring paths can increase this raw performance. To do so, we select the paths that achieved accuracies $\ge0.7$, and afterwards, we used a $t$-test over the set of intensities selected by these paths. We used a threshold $|t|>1.96$ ($p<0.05$) and all the significant intensities were used to construct a new training set. The performance for using either all voxels in the selected paths or only the significant voxels is presented at Table~\ref{tab:accHMMPaths}, for left, right and both sides. 
 
@@ -588,7 +588,7 @@ Therefore, the surface measure is not a faithful representation of the surface o
 
 The statistical measures, especially average, achieve higher performance in the classification analysis. That might be due to the precision of the numbers used. Whereas in the morphological features we obtained integers (as they count the number of voxels or zero-crossings), in the statistical measures values such as average or entropy compute high-precision floating values. This can help in further computation, although values such as kurtosis are outperformed by, for example, thickness. 
 
-The average is the best-performing measure in this group, and can be interpreted as the average amount of tissue -even tissue density- in the direction $(\theta,\varphi)$. A comparison between the densities of the tissues in \ac{AD} and \ac{CTL} can reveal the neurodegeneration and tissue loss typically associated with the disease. This is perhaps why in the significance analysis we found high absolute $t$-values in areas typically affected by \ac{AD}, such as the mid temporal lobe, amygdala, hippocampus, parahippocampal lobe or some structures of the basal ganglia, such as caudate nucleus, globus pallidus or putamen \cite{Dubois2007,Pievani2013}. 
+The average is the best-performing measure in this group, and can be interpreted as the average amount of tissue -even tissue density- in the direction $(\theta,\varphi)$. A comparison between the densities of the tissues in \ac{AD} and \ac{CTL} can reveal the neurodegeneration and tissue loss typically associated with the disease. This is perhaps why in the significance analysis we found high absolute $t$-values in areas typically affected by \ac{AD}, such as the mid temporal lobe, amygdala, hippocampus, parahippocampal gyrus or some structures of the basal ganglia, such as caudate nucleus, globus pallidus or putamen \cite{Dubois2007,Pievani2013}. 
 
 Entropy is a more complex statistical concept that comes from information theory, but is usually related to the amount of information, or in other words, the ``randomness'' of a source. In our particular case it could be interpreted as a measure of texture, that is, the grey-level variability in the direction of $\mathbf{v}_{\theta,\varphi}$. These maps perform very similar to the average ones in both \ac{GM} and \ac{WM}, suggesting that the entropy  accounts here for the tissue density as well. 
 
@@ -632,7 +632,7 @@ Our paths demonstrated in Experiment 3 that they can adapt easily to two and thr
 
 Later, in Experiment 4, we used the \ac{HMM} paths as a feature selection tool to construct the set of selected intensities $V_{\theta,\varphi}$, as in the original \ac{SBM}. Individual paths as well as a the pooled intensities of all paths in a hemisphere were tested using a \ac{SVC}. The differences between intensity sets in \ac{AD} and \ac{CTL} were significant enough to achieve accuracies over 80\% in some paths. The paths that achieved more than 75\% accuracy are shown in Figure~\ref{fig:bestPaths}, along with the rendered structures crossed by them, according to the \ac{AAL} brain atlas \cite{Tzourio-Mazoyer2002}. 
 
-The structures that are crossed by the best-performing paths are the Hippocampus, Amygdala, Thalamus, Fusiform and Inferior Temporal Gyrus. \ac{GM} loss in the hippocampus has been extensively reported in the literature \cite{Dubois2007,Baron2001,Jong2008}, as well as its surrounding structures (Amygdala, Parahippocampal lobe and Fusiform) \cite{Baron2001}. Some studies have also reported neurodegeneration at the Thalamus and Putamen, also related to early \ac{AD} \cite{Jong2008}, and in advanced \ac{AD}, atrophy in most of the neocortex \cite{Dubois2007,Baron2001,Jong2008}. However, pooling all the intensities selected by these paths together did not increase the performance achieved by the best performing paths. 
+The structures that are crossed by the best-performing paths are the Hippocampus, Amygdala, Thalamus, Fusiform and Inferior Temporal Gyrus. \ac{GM} loss in the hippocampus has been extensively reported in the literature \cite{Dubois2007,Baron2001,Jong2008}, as well as its surrounding structures (Amygdala, parahippocampal gyrus and Fusiform) \cite{Baron2001}. Some studies have also reported neurodegeneration at the Thalamus and Putamen, also related to early \ac{AD} \cite{Jong2008}, and in advanced \ac{AD}, atrophy in most of the neocortex \cite{Dubois2007,Baron2001,Jong2008}. However, pooling all the intensities selected by these paths together did not increase the performance achieved by the best performing paths. 
 
 The last test of Experiment 4 was the hybrid \ac{SBM}-\ac{HMM} maps. Average, entropy, kurtosis and variance maps were tested, and we found that they were discriminant (accuracy above 70\% in most cases), yet not very powerful. This is however coherent with the definition of the paths, where the intensity changes are small and progressive, and therefore, higher order statistics that focus on this (such as variance or kurtosis) are more representative of this behaviour. 
 
@@ -643,30 +643,32 @@ Further improvements could be made by computing an independent set of paths per 
 \subsection{General Discussion of \acs{SBM}}
 To obtain a general view of the \ac{SBM} and its extension within the state of the art, in Table~\ref{tab:comparison2} we present some of the best results that have been already commented. We first present the values for the \ac{VAF} approach \cite{Stoeckel04} in T1, \ac{GM} and \ac{WM} images. Then, we present the performance of the average and \ac{VRLBP} maps of our \ac{SBM}, and the \ac{HMM} paths, both as feature selection tool (individual paths and selected features from the paths), the hybrid \ac{HMM}-\ac{SBM} tool (variance and kurtosis) and the best scoring texture feature (difference variance). 
 
-Then, we provide reference values of some state of the art methodology that has been tested against the ADNI-MRI database. These are: LVQ) a Learning Vector Quantization (LVQ) \cite{Ortiz2013} used to model the tissue distribution of \ac{CTL} and \ac{AD} images and project the images to a new space, just to use the projections in a \ac{SVC}; and SCA) the Spatial Component Analysis proposed in \cite{Illan2014}, a bayesian network modelling of the dependencies between affected regions (or spatial components) in \ac{AD}. 
+Then, we provide reference values of some state of the art methodology that has been tested against the \adnimri{} database. These are: LVQ) a Learning Vector Quantization (LVQ) \cite{Ortiz2013} used to model the tissue distribution of \ac{CTL} and \ac{AD} images and project the images to a new space, just to use the projections in a \ac{SVC}; and SCA) the Spatial Component Analysis proposed in \cite{Illan2014}, a bayesian network modelling of the dependencies between affected regions (or spatial components) in \ac{AD}. 
 
 \begin{table}
 	\myfloatalign
 	\begin{tabular}{lllccc}
 		\toprule
 			\tableheadline{App.} & \tableheadline{Feature} & \tableheadline{Tis.} & \tableheadline{Accuracy} & \tableheadline{Sensitivity} & \tableheadline{Specificity} \\ \midrule
-			\multirow{3}{*}{\ac{VAF}}  & Intensity & T1 &  $0.768 \pm 0.011$ & $0.752 \pm 0.016$ & $0.785 \pm 0.016$ \\
-			 & Intensity& \ac{GM} &  $0.768 \pm 0.011$ & $0.752 \pm 0.016$ & $0.785 \pm 0.016$ \\
-			 & Intensity& \ac{WM} & $0.642 \pm 0.009$ & $0.668 \pm 0.012$ & $0.617 \pm 0.013$ \\
+			\multirow{3}{*}{\ac{VAF}}  & \multirow{3}{*}{Intensity} & T1 & $0.789 \pm 0.066 $ & $0.767 \pm 0.094$ & $0.811 \pm 0.099$\\
+			 & & \ac{GM} &  $0.768 \pm 0.011$ & $0.752 \pm 0.016$ & $0.785 \pm 0.016$ \\
+			 & & \ac{WM} & $0.642 \pm 0.009$ & $0.668 \pm 0.012$ & $0.617 \pm 0.013$ \\
 			\midrule
-			\multirow{4}{*}{\ac{SBM}} & average & \ac{GM}  & $0.879 \pm 0.005$ & $0.897 \pm 0.006$ & $0.861 \pm 0.006$ \\
-			& average &\ac{WM}  & $0.800 \pm 0.011$ & $0.802 \pm 0.013$ & $0.798 \pm 0.009$ \\ 
-			& \ac{VRLBP}&\ac{GM}  & $0.903 \pm 0.010$ & $0.890 \pm 0.012$ & $0.916 \pm 0.018$ \\
-			& \ac{VRLBP} &\ac{WM} & $0.909 \pm 0.014$ & $0.899 \pm 0.028$ & $0.919 \pm 0.018$ \\ \midrule
+			\multirow{4}{*}{\ac{SBM}} & \multirow{2}{*}{average} & \ac{GM}  & $0.879 \pm 0.005$ & $0.897 \pm 0.006$ & $0.861 \pm 0.006$ \\
+			& &\ac{WM}  & $0.800 \pm 0.011$ & $0.802 \pm 0.013$ & $0.798 \pm 0.009$ \\ 
+			\cline{2-6}
+			&  \multirow{2}{*}{\ac{VRLBP}}&\ac{GM}  & $0.903 \pm 0.010$ & $0.890 \pm 0.012$ & $0.916 \pm 0.018$ \\
+			& &\ac{WM} & $0.909 \pm 0.014$ & $0.899 \pm 0.028$ & $0.919 \pm 0.018$ \\ \midrule
 			\multirow{5}{*}{\ac{HMM}} & Ind. Paths & T1 & $0.806 \pm 0.069 $ & $0.733 \pm 0.073$ & $0.878 \pm 0.097$\\
 			& Sel. Paths & T1 & $0.828 \pm 0.054 $ & $0.794 \pm 0.095$ & $0.861 \pm 0.039$\\
 			& Variance & T1 & $0.750 \pm 0.064 $ & $0.633 \pm 0.131$ & $0.867 \pm 0.102$\\
 			& Kurtosis & T1 & $0.756 \pm 0.105 $ & $0.733 \pm 0.165$ & $0.778 \pm 0.150$\\
 			& D. Variance & T1 & $0.736 \pm 0.070 $ & $0.683 \pm 0.098$ & $0.789 \pm 0.090$\\
 			\midrule 
-			LVQ & - & \ac{GM} & $0.869 \pm 0.101$ & $0.822\pm0.120$ & $0.890\pm0.102$ \\ 	
-			SCA &- & \ac{GM} & $0.880 \pm0.0^* $ & $0.926\pm0.0^* $ & $0.845\pm0.0^*$ \\ 
-			SCA &- & \ac{WM} &$0.808 \pm 0.0^*$ & $0.817\pm0.0^*$ & $0.800\pm0.0^*$ \\ 	
+			\multirow{3}{*}{Other} & LVQ & \ac{GM} & $0.869 \pm 0.101$ & $0.822\pm0.120$ & $0.890\pm0.102$ \\ 
+			\cline{2-6}	
+			 &\multirow{2}{*}{SCA} & \ac{GM} & $0.880 \pm0.0^* $ & $0.926\pm0.0^* $ & $0.845\pm0.0^*$ \\ 
+			 & & \ac{WM} &$0.808 \pm 0.0^*$ & $0.817\pm0.0^*$ & $0.800\pm0.0^*$ \\ 	
 			\bottomrule
 		\end{tabular}
 	\\

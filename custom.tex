@@ -18,11 +18,13 @@
   	right=20mm,
   	left=20mm,
   	bottom=10mm, % space from bottomn to footer (space from text to bottom = footskip + bottom)
+  	bindingoffset=3mm, % For printing 
   	top=10mm,    % space from top to text
   }
   \geometry{
   	paper=b5paper
   }
+
   % Chapter thumbs
   \usepackage[
   % if not commented these are defaults
@@ -37,9 +39,9 @@
   eventxtindent={10pt},    % default = 5pt
   oddtxtexdent={10pt},      % default = 5pt
   evenmarkindent={0pt},      % use for pdf
-  % evenmarkindent={15.5mm},     % use for print; default = 0pt, 210mm(a4) - 176 (b5) / 2 = 17.5mm - 2mm for cutting = 15.5mm for B5
+  %evenmarkindent={15.5mm},     % use for print; default = 0pt, 210mm(a4) - 176 (b5) / 2 = 17.5mm - 2mm for cutting = 15.5mm for B5
   oddmarkexdent={0pt},       % use for pdf
-  % oddmarkexdent={15.5mm},      % use for print; default = 0pt
+  %oddmarkexdent={15.5mm},      % use for print; default = 0pt
   evenprintvoffset={0pt}, 
   nophantomsection=false, 
   ignorehoffset=true,
@@ -88,6 +90,16 @@
 \newcommand{\Ie}{I.\,e.}
 \newcommand{\eg}{e.\,g.}
 \newcommand{\Eg}{E.\,g.} 
+\newcommand{\vdlndat}{{\large\textsc{vdln-dat}}}
+\newcommand{\vdlvdat}{{\large\textsc{vdlv-dat}}}
+\newcommand{\ppmidat}{{\large\textsc{ppmi-dat}}}
+\newcommand{\aimsmri}{{\large\textsc{aims-mri}}}
+\newcommand{\adnimri}{{\large\textsc{adni-mri}}}
+\newcommand{\adnipet}{{\large\textsc{adni-pet}}}
+\newcommand{\vdlnhmpao}{{\large\textsc{vdln-hmpao}}}
+
+\hyphenation{A-na-to-mi-cal io-flu-pane lan-gua-ge Wi-lliams me-ta-bo-lic pipe-line}
+
 % \hypersetup{hidelinks} % Uncomment for print version. 
 \usepackage{gillius2}
 
