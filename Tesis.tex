@@ -1,0 +1,105 @@
+% !TEX TS-program = pdflatex
+% !TEX root = Tesis.tex
+%\RequirePackage{snapshot}
+\documentclass[11pt,paper=B5,twoside,openright,titlepage,
+               headinclude,,footinclude,BCOR5mm,
+               numbers=noenddot,cleardoublepage=empty,
+               tablecaptionabove]{scrreprt}
+               
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage[spanish,es-lcroman,english]{babel}
+\usepackage{amsmath,amssymb}
+\usepackage{indentfirst}
+%\usepackage[style=philosophy-modern,hyperref]{biblatex}
+\usepackage[babel]{csquotes}
+\usepackage{chngpage}
+\usepackage{calc}
+\usepackage{listings}
+\usepackage{graphicx}
+\usepackage{subfig}
+\usepackage{lipsum}
+\usepackage{shapepar}
+\usepackage{pifont}
+% Added by pakitochus
+%-------------------------------------------------------------
+% Bibliography management with biber.
+%-------------------------------------------------------------
+\usepackage[
+backend=biber,  %instead of bibtex
+%backend=bibtex8, bibencoding=ascii,%
+language=auto,%
+style=numeric-comp,%
+hyperref,
+%style=authoryear-comp, % Author 1999, 2010
+%bibstyle=authoryear,dashed=false, % dashed: substitute rep. author with ---
+sorting=nyt, % name, year, title
+maxbibnames=10, % default: 3, et al.
+%backref=true,%
+% natbib=true % natbib compatibility mode (\citep and \citet still work)
+%	style=philosophy-modern,
+]{biblatex}
+\usepackage{tabularx}
+\usepackage{multirow}
+\usepackage[ruled,vlined]{algorithm2e}
+\usepackage{rotating}
+% End of added. 
+\usepackage[eulerchapternumbers,floatperchapter,subfig,beramono,eulermath,pdfspacing,listings,parts]{classicthesis}
+\usepackage{arsclassica}
+\let\origsection\section
+\usepackage[section]{placeins}
+
+\input{arsclassica-settings}
+\input{custom}
+
+\begin{document}
+\pagenumbering{roman}
+\pagestyle{plain}
+\input{FrontBackMatter/Titlepage}
+\input{FrontBackMatter/Titleback}
+\cleardoublepage
+\input{FrontBackMatter/Abstract}
+%\cleardoublepage\include{FrontBackMatter/Declaration}
+\cleardoublepage\include{FrontBackMatter/Derechos}
+\cleardoublepage
+%\input{FrontBackMatter/Acknowledgements}
+\pagestyle{scrheadings} 
+\cleardoublepage
+\input{FrontBackMatter/Contents}
+\cleardoublepage
+\pagenumbering{arabic}
+
+\cleardoublepage
+%\ctparttext{In this part, we will focus on the motivation of this Thesis, examining the state-of-the-art methodology used in clinical practice. We will also provide a brief medical background on the diseases studied in this work, as well as an examination of the computational methodology in neuroimaging. }
+\part{Introduction}
+\input{Chapters/Chapter01}
+\input{Chapters/Chapter02}
+\input{Chapters/Chapter03}
+
+\cleardoublepage
+%\ctparttext{The first approach to reduce the small sample size problem in neuroimaging studies is based on reducing the number of features .}
+\part{Reducing the Feature Space}\label{part:feature}
+%\addtocontents{toc}{\protect\clearpage} % <--- just debug stuff, ignore
+\input{Chapters/Chapter04}
+\input{Chapters/Chapter05}
+\input{Chapters/Chapter06}
+
+\cleardoublepage
+\part{Increasing the Sample Size}\label{part:increase}
+\input{Chapters/Chapter07}
+\input{Chapters/Chapter08}
+
+\cleardoublepage
+\part{General Discussion and Conclusions}\label{part:dicussion}
+\input{Chapters/Chapter09}
+
+\appendix
+\part{Appendix}
+\include{Chapters/Chapter0A}
+\include{Chapters/Chapter0B}
+%********************************************************************
+% Other Stuff in the Back
+%*******************************************************
+\cleardoublepage\include{FrontBackMatter/Bibliography}
+
+\end{document}
