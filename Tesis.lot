@@ -18,45 +18,45 @@
 \defcounter {refsection}{0}\relax 
 \addvspace {10\p@ }
 \defcounter {refsection}{0}\relax 
-\contentsline {table}{\numberline {3.1}{\ignorespaces Confusion matrix and its parts\relax }}{35}{table.caption.69}
+\contentsline {table}{\numberline {3.1}{\ignorespaces Confusion matrix and its parts\relax }}{35}{table.caption.70}
 \defcounter {refsection}{0}\relax 
 \addvspace {10\p@ }
 \defcounter {refsection}{0}\relax 
-\contentsline {table}{\numberline {4.1}{\ignorespaces Performance values for the Alzheimer's datasets}}{53}{table.caption.83}
+\contentsline {table}{\numberline {4.1}{\ignorespaces Performance values for the Alzheimer's datasets}}{53}{table.caption.84}
 \defcounter {refsection}{0}\relax 
-\contentsline {table}{\numberline {4.2}{\ignorespaces Performance values for the Parkinson's datasets}}{60}{table.caption.88}
+\contentsline {table}{\numberline {4.2}{\ignorespaces Performance values for the Parkinson's datasets}}{60}{table.caption.89}
 \defcounter {refsection}{0}\relax 
-\contentsline {table}{\numberline {4.3}{\ignorespaces Percentage of overlap between the selected areas by each method and the \acs {AAL} atlas regions.}}{62}{table.caption.91}
-\defcounter {refsection}{0}\relax 
-\addvspace {10\p@ }
-\defcounter {refsection}{0}\relax 
-\contentsline {table}{\numberline {5.1}{\ignorespaces Maximum scoring feature (single approach).}}{74}{table.caption.99}
-\defcounter {refsection}{0}\relax 
-\contentsline {table}{\numberline {5.2}{\ignorespaces Maximum scoring feature (cumulative approach).}}{76}{table.caption.100}
-\defcounter {refsection}{0}\relax 
-\contentsline {table}{\numberline {5.3}{\ignorespaces Best results of the experiment 2 per database, normalization and selection criteria.}}{80}{table.caption.103}
-\defcounter {refsection}{0}\relax 
-\contentsline {table}{\numberline {5.4}{\ignorespaces Comparison between our proposed system and other \ac {PD} diagnosis systems in the literature.}}{84}{table.caption.106}
+\contentsline {table}{\numberline {4.3}{\ignorespaces Percentage of overlap between the selected areas by each method and the \acs {AAL} atlas regions.}}{62}{table.caption.92}
 \defcounter {refsection}{0}\relax 
 \addvspace {10\p@ }
 \defcounter {refsection}{0}\relax 
-\contentsline {table}{\numberline {6.1}{\ignorespaces Performance values (Average $\pm $ Standard Deviation) for the different \ac {SBM} approaches.\relax }}{103}{table.caption.123}
+\contentsline {table}{\numberline {5.1}{\ignorespaces Maximum scoring feature (single approach).}}{74}{table.caption.100}
 \defcounter {refsection}{0}\relax 
-\contentsline {table}{\numberline {6.2}{\ignorespaces Performnace values for using the \acs {HMM} paths in feature selection.}}{112}{table.caption.131}
+\contentsline {table}{\numberline {5.2}{\ignorespaces Maximum scoring feature (cumulative approach).}}{76}{table.caption.101}
 \defcounter {refsection}{0}\relax 
-\contentsline {table}{\numberline {6.3}{\ignorespaces Performance values ($\pm $SD) for the hybrid \ac {HMM}-\ac {SBM} maps, using some statistical measures.\relax }}{112}{table.caption.133}
+\contentsline {table}{\numberline {5.3}{\ignorespaces Best results of the experiment 2 per database, normalization and selection criteria.}}{80}{table.caption.104}
 \defcounter {refsection}{0}\relax 
-\contentsline {table}{\numberline {6.4}{\ignorespaces Performance values ($\pm $SD) for each of the 10 texture features.\relax }}{114}{table.caption.134}
-\defcounter {refsection}{0}\relax 
-\contentsline {table}{\numberline {6.5}{\ignorespaces Comparison between our algorithm performance values (best values for selected voxels in all paths and texture features) ($\pm $SD) and other methods in the bibliography\relax }}{120}{table.caption.138}
+\contentsline {table}{\numberline {5.4}{\ignorespaces Comparison between our proposed system and other \ac {PD} diagnosis systems in the literature.}}{84}{table.caption.107}
 \defcounter {refsection}{0}\relax 
 \addvspace {10\p@ }
 \defcounter {refsection}{0}\relax 
-\contentsline {table}{\numberline {7.1}{\ignorespaces Between-site classification accuracy ($\pm $ standard deviation) for different modalities and masks without and with \acs {SWPCA} correction.}}{135}{table.caption.145}
+\contentsline {table}{\numberline {6.1}{\ignorespaces Performance values (Average $\pm $ Standard Deviation) for the different \ac {SBM} approaches.\relax }}{103}{table.caption.124}
 \defcounter {refsection}{0}\relax 
-\contentsline {table}{\numberline {7.2}{\ignorespaces Classification accuracy (Acc), sensitivity (Sen) and specificity (Spec) $\pm $ standard deviation for each modality and mask using the participants acquired at the {\relax \fontsize {12}{14}\selectfont \textsc {lon}}{} and {\relax \fontsize {12}{14}\selectfont \textsc {cam}}{} sites.}}{136}{table.caption.146}
+\contentsline {table}{\numberline {6.2}{\ignorespaces Performnace values for using the \acs {HMM} paths in feature selection.}}{112}{table.caption.132}
 \defcounter {refsection}{0}\relax 
-\contentsline {table}{\numberline {7.3}{\ignorespaces Classification accuracy (Acc), sensitivity (Sen), and specificity (Spec) $\pm $ STD for the different modalities and masks using {\relax \fontsize {12}{14}\selectfont \textsc {all}}{}, before and after applying \acs {SWPCA}.}}{140}{table.caption.149}
+\contentsline {table}{\numberline {6.3}{\ignorespaces Performance values ($\pm $SD) for the hybrid \ac {HMM}-\ac {SBM} maps, using some statistical measures.\relax }}{112}{table.caption.134}
+\defcounter {refsection}{0}\relax 
+\contentsline {table}{\numberline {6.4}{\ignorespaces Performance values ($\pm $SD) for each of the 10 texture features.\relax }}{114}{table.caption.135}
+\defcounter {refsection}{0}\relax 
+\contentsline {table}{\numberline {6.5}{\ignorespaces Comparison between our algorithm performance values (best values for selected voxels in all paths and texture features) ($\pm $SD) and other methods in the bibliography\relax }}{120}{table.caption.139}
+\defcounter {refsection}{0}\relax 
+\addvspace {10\p@ }
+\defcounter {refsection}{0}\relax 
+\contentsline {table}{\numberline {7.1}{\ignorespaces Between-site classification accuracy ($\pm $ standard deviation) for different modalities and masks without and with \acs {SWPCA} correction.}}{135}{table.caption.146}
+\defcounter {refsection}{0}\relax 
+\contentsline {table}{\numberline {7.2}{\ignorespaces Classification accuracy (Acc), sensitivity (Sen) and specificity (Spec) $\pm $ standard deviation for each modality and mask using the participants acquired at the {\relax \fontsize {12}{14}\selectfont \textsc {lon}}{} and {\relax \fontsize {12}{14}\selectfont \textsc {cam}}{} sites.}}{136}{table.caption.147}
+\defcounter {refsection}{0}\relax 
+\contentsline {table}{\numberline {7.3}{\ignorespaces Classification accuracy (Acc), sensitivity (Sen), and specificity (Spec) $\pm $ STD for the different modalities and masks using {\relax \fontsize {12}{14}\selectfont \textsc {all}}{}, before and after applying \acs {SWPCA}.}}{140}{table.caption.150}
 \defcounter {refsection}{0}\relax 
 \addvspace {10\p@ }
 \defcounter {refsection}{0}\relax 
