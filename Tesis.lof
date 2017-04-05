@@ -14,35 +14,35 @@
 \defcounter {refsection}{0}\relax 
 \addvspace {10\p@ }
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {1.1}{\ignorespaces Illustration of one and two-dimensional spaces.}}{4}{figure.caption.18}
+\contentsline {figure}{\numberline {1.1}{\ignorespaces Illustration of one and two-dimensional spaces.}}{4}{figure.caption.23}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {1.2}{\ignorespaces Structure of the thesis.}}{6}{figure.caption.21}
-\defcounter {refsection}{0}\relax 
-\addvspace {10\p@ }
-\defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {2.1}{\ignorespaces Example of T1 and T2-weighted \acs {MRI} images.}}{12}{figure.caption.25}
-\defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {2.2}{\ignorespaces Example of \acs {SPECT} images.}}{14}{figure.caption.34}
-\defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {2.3}{\ignorespaces Example of a PET-FDG image.}}{15}{figure.caption.36}
-\defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {2.4}{\ignorespaces Example of a \acs {SPM} analysis on a \acs {PET} dataset.}}{19}{figure.caption.47}
-\defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {2.5}{\ignorespaces Illustration of a typical neuroimaging \acs {CAD} system.}}{24}{figure.caption.50}
-\defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {2.6}{\ignorespaces Example of the cortical thickness of a subject.}}{25}{figure.caption.52}
+\contentsline {figure}{\numberline {1.2}{\ignorespaces Structure of the thesis.}}{6}{figure.caption.24}
 \defcounter {refsection}{0}\relax 
 \addvspace {10\p@ }
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {3.1}{\ignorespaces Typical pre-processing pipeline in \acs {MRI}}}{28}{figure.caption.54}
+\contentsline {figure}{\numberline {2.1}{\ignorespaces Example of T1 and T2-weighted \acs {MRI} images.}}{12}{figure.caption.28}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {3.2}{\ignorespaces Comparison of the affine registration and the application of non-linear transformations to the images}}{30}{figure.caption.56}
+\contentsline {figure}{\numberline {2.2}{\ignorespaces Example of \acs {SPECT} images.}}{14}{figure.caption.37}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {2.3}{\ignorespaces Example of a PET-FDG image.}}{15}{figure.caption.39}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {2.4}{\ignorespaces Example of a \acs {SPM} analysis on a \acs {PET} dataset.}}{19}{figure.caption.49}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {2.5}{\ignorespaces Illustration of a typical neuroimaging \acs {CAD} system.}}{24}{figure.caption.52}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {2.6}{\ignorespaces Example of the cortical thickness of a subject.}}{25}{figure.caption.55}
+\defcounter {refsection}{0}\relax 
+\addvspace {10\p@ }
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {3.1}{\ignorespaces Typical pre-processing pipeline in \acs {MRI}}}{28}{figure.caption.56}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {3.2}{\ignorespaces Comparison of the affine registration and the application of non-linear transformations to the images}}{30}{figure.caption.58}
 \defcounter {refsection}{0}\relax 
 \contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Comparison in \ac {MRI}.}}}{30}{subfigure.2.1}
 \defcounter {refsection}{0}\relax 
 \contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Comparison in \ac {PET}.}}}{30}{subfigure.2.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {3.3}{\ignorespaces Comparison between different types of intensity normalization.}}{33}{figure.caption.63}
+\contentsline {figure}{\numberline {3.3}{\ignorespaces Comparison between different types of intensity normalization.}}{33}{figure.caption.65}
 \defcounter {refsection}{0}\relax 
 \contentsline {subfigure}{\numberline {(a)}{\ignorespaces {No Normalization.}}}{33}{subfigure.3.1}
 \defcounter {refsection}{0}\relax 
@@ -52,13 +52,13 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {subfigure}{\numberline {(d)}{\ignorespaces {Normalization using $\alpha $-stable distribution.}}}{33}{subfigure.3.4}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {3.4}{\ignorespaces Evolution of bias and variance in \acs {CV}.}}{34}{figure.caption.66}
+\contentsline {figure}{\numberline {3.4}{\ignorespaces Evolution of bias and variance in \acs {CV}.}}{34}{figure.caption.68}
 \defcounter {refsection}{0}\relax 
 \addvspace {10\p@ }
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {4.1}{\ignorespaces Illustration of how decomposition algorithms work.}}{39}{figure.caption.72}
+\contentsline {figure}{\numberline {4.1}{\ignorespaces Illustration of how decomposition algorithms work.}}{39}{figure.caption.74}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {4.2}{\ignorespaces Illustration of the system used in chapter~\ref {ch:decomposition} .}}{40}{figure.caption.73}
+\contentsline {figure}{\numberline {4.2}{\ignorespaces Illustration of the system used in chapter~\ref {ch:decomposition} .}}{40}{figure.caption.75}
 \defcounter {refsection}{0}\relax 
 \contentsline {figure}{\numberline {4.3}{\ignorespaces Original \acs {PET} image and its reconstruction using FA or ICA.}}{43}{figure.caption.76}
 \defcounter {refsection}{0}\relax 
@@ -268,7 +268,7 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {figure}{\numberline {6.11}{\ignorespaces $t$-maps for the \acs {VRLBP}-\acs {SBM} in the \acs {AD} vs \acs {CTL} scenario.}}{102}{figure.caption.122}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {6.12}{\ignorespaces Performance for the different \ac {SBM} approaches over the: a) Grey Matter and b) White Matter.\relax }}{105}{figure.caption.124}
+\contentsline {figure}{\numberline {6.12}{\ignorespaces Performance for the different \ac {SBM} approaches over the: a) \acs {GM} and b) \acs {WM}.\relax }}{105}{figure.caption.124}
 \defcounter {refsection}{0}\relax 
 \contentsline {figure}{\numberline {6.13}{\ignorespaces Performance of the four-layered mappings.}}{106}{figure.caption.125}
 \defcounter {refsection}{0}\relax 
@@ -284,7 +284,7 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {figure}{\numberline {6.19}{\ignorespaces Example of the resulting hybrid \acs {HMM}-\acs {SBM} texture maps.\relax }}{113}{figure.caption.132}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {6.20}{\ignorespaces Performance at the operation point for the different mappings over the Grey Matter and White Matter, compared with the performance of \ac {VAF}.\relax }}{115}{figure.caption.135}
+\contentsline {figure}{\numberline {6.20}{\ignorespaces Performance at the operation point for the different mappings over the \acs {GM} and \acs {WM}, compared with the performance of \acs {VAF}.\relax }}{115}{figure.caption.135}
 \defcounter {refsection}{0}\relax 
 \contentsline {figure}{\numberline {6.21}{\ignorespaces Paths that obtain more than 75\% accuracy, and a three-dimensional representation of the structures crossed by them.\relax }}{118}{figure.caption.137}
 \defcounter {refsection}{0}\relax 

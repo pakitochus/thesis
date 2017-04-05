@@ -1,0 +1,92 @@
+%*******************************************************
+% Abstract
+%*******************************************************
+%\renewcommand{\abstractname}{Abstract}
+\begingroup
+%\let\clearpage\relax
+%\let\cleardoublepage\relax
+%\let\cleardoublepage\relax
+
+\begin{otherlanguage}{spanish}
+\pdfbookmark[0]{Resumen}{Resumen}
+\chapter*{Resumen Amplio en Castellano}
+\section*{Motivación}
+Durante los últimos años ha habido una explosión en el uso de neuroimagen en la práctica clínica. Gracias a su facilidad para explorar de forma no invasiva el interior del cerebro, se ha mejorado y acelerado sustancialmente el proceso de diagnostico de un gran número de enfermedades. Asimismo, el uso de neuroimagen en investigación también está muy extendido. Campos tan variados como la psiquiatría, neurología, psicología, ciencias del comportamiento o biología hacen un uso extensivo de la neuroimagen en sus estudios. 
+
+Las bases de estos estudios son comunes: un proceso mediante el cual se recluta un conjunto representativo de sujetos, el desarrollo de un procedimiento experimental con cada sujeto y un análisis de los datos obtenidos. Normalmente, cuando se estudia una determinada enfermedad, es normal reclutar tanto sujetos afectados como un set similar de individuos sanos, conocidos como controles. En un ejemplo típico, se adquieren una serie de imágenes de cada una de estas poblaciones, y se analiza la función o la estructura cerebral de estos individuos utilizando diferentes herramientas estadísticas. El resultado de estos análisis es, frecuentemente, una lista de las diferencias más significativas en función o estructura que pueden ser asociadas a una enfermedad. 
+
+Existe un nuevo paradigma conocido como \acf{CAD} (diagnóstico asistido por computador), que proporciona diversas herramientas para realizar estos análisis. Actualmente es un área de investigación multidisciplinar que combina informática, matemáticas, inteligencia artificial, medicina o estadísticas, entre otros. \cite{Martinez-Murcia2016}. El objetivo principal de un \ac{CAD} es ayudar al personal médico en el proceso de diagnóstico y estudio de las enfermedades, proporcionando software capaz de reconocer patrones, caracterizar diferencias y realizar predicciones sobre datos médicos. 
+
+Un problema al que se enfrentan continuamente estos estudios es el tamaño muestral. El número de sujetos reclutados habitualmente va desde algunas decenas hasta cientos de sujetos. Sin embargo, el número de características utilizadas puede llegar a varios millones (voxels en las imágenes), causando un problema que se conoce como \emph{Small Sample Size Problem} \cite{Duin2000} (problema del pequeño tamaño muestral). Este problema afecta el poder estadístico de cualquier experimento realizado sobre bases de datos que reunen estas características \cite{Button2013}. 
+
+\section*{Objetivos}
+El objetivo fundamental de esta tesis es superar el \text{Small Sample Size problem} en neuromagen. De este modo, los sistemas \ac{CAD} resultantes serán más precisos y se reducirá el número de falsos positivos, incrementando la fiabilidad de sus resultados. 
+
+Para ello, utilizaremos dos enfoques diferentes, como hemos comentado: incrementar el tamaño muestral y reducir el espacio de características. Por todo ello, podemos definir los siguientes objetivos: 
+
+\begin{itemize}
+	\item Desarrollar y evaluar algorithmos que reducen el espacio de características, en lo que usualmente se conoce como selección y extracción de características. 
+	\item Desarrollar y evaluar nuevas estrategias para incrementar de forma segura el tamaño muestral en estudios de neuroimagen.  
+\end{itemize}
+
+La mayor parte de la literatura existente se centra en el primer objetivo. Para ello, se han utilizado extensivamente algorithmos como \acf{PCA} \cite{Khedher2015,Towey2011} o \acf{PLS} \cite{Segovia2013}. En este sentido, hemos desarrollado thres estrategias diferentes:
+
+\begin{itemize}
+	\item Una combinación de algoritmos de descomposición de imagenes y selección de características. Aquí hemos aplicado tests de hipótesis bajo tres criterios diferentes para seleccionar los voxels más significativos de las imágenes, y luego hemos aplicado \acf{FA} y \acf{ICA} para descomponer los datos y reducir el espacio de características. 
+	\item Una extracción de características basada en análisis de texturas. 
+	\item Una estrategia novedosa que hemos llamado \acf{SBM}. En esta técnica se utiliza el sistema de coordenadas esférico para mapear diferentes medidas estadísticas en un plano bidimensional. Para ello se utilizan caminos que son usados como vectores de selección, a lo largo de los cuales se calculan las diferentes medidas. 
+\end{itemize}
+
+Por otro lado, hemos evaluado nuevas formas de incrementar el tamaño muestral en estudios de neuroimagen, para los cuales hemos desarrollado: 
+\begin{itemize}
+	\item Un sistema llamado \acf{SWPCA} que reduce varianza no deseada en estudios estructurales multicentro. El propósito de este sistema es reducir la cantidad de falsos positivos en grandes colaboraciones, suministrando imágenes más homogéneas que mejoren el resultado de los análisis estadísticos. 
+	\item Un algoritmo que simula imágenes cerebrales funcionales utilizando datos existentes, y que por tanto puede incrementar el número de muestras usados en estos estudios.  
+\end{itemize}
+
+\section*{Contribuciones}
+\subsection*{Capítulo 4: Descomposición de Imágenes}
+En este capítulo proponemos una serie de sistemas \ac{CAD} que combinan selección de características y descomposición de imágenes, y que fueron publicados en \cite{Martinez201141,Martinez-Murcia20129676,Martinez-Murcia2013255,Martinez-Murcia201458}. 
+
+Estos sistemas utilizan selección de características basada en tests de hipótesis, usando tres criterios diferentes: el test-t de student, la entropía relativa (o divergencia de \acf{KL}) y el test-U de \acf{MWW}. Tras calcular la significancia estadística de cada voxel, utilizamos \ac{FA} o \ac{ICA} para desarrollar el set de voxels más significativos como combinación de un número de componentes que varía entre 2 y 25. 
+
+Para evaluar esta metodología, propusimos varios experimentos que hemos realizado sobre las bases de datos de Alzheimer (\adnipet{} y \vdlnhmpao{}) y Parkinson (\vdlndat{}, \vdlvdat{} y \ppmidat{}). En el caso de Alzheimer, nuestro sistema \ac{CAD} alcanzó valores de precisión superiores a 90\%, en cualquier combinación de selección de características y descomposición. Se detectaron diferencias entre los métodos de selección, que focalizaban su atención en áreas ampliamente relacionadas con la enfermedad en la bibliografía como los lóbulos occipital y temporal, partes del giro angular o incluso el hipocampo \cite{Dubois2007,Claus1994}. 
+
+Para el caso de las bases de datos de Parkinson, estas diferencias se localizaron fundamentalmente en el estriado, y aquellos métodos que seleccionaban otras áreas obtuvieron peores resultados. En general, la precisión alcanzada en las bases de datos de Parkinson alcanzó el 90\% en casi todos los casos, e incluso superior a 95\% para la base de datos \vdlvdat{}, la única que no contenía sujetos con parkinsonismo, pero sin evidencia de déficit de dopamina (\acs{SWEDD}). 
+
+
+\subsection*{Capítulo 5: Análisis de Textura}
+Para el capítulo 5, probamos los métodos de análisis de textura de Haralick aplicados a la construcción de matrices de co-ocurrencia de niveles de gris (\acs{GLCM}) tridimensionales, tal y como se detalla en \cite{Martinez-Murcia2013266,martinez2014parametrization}. 
+
+Esta metodología está basada en el cálculo de una \acs{GLCM} a lo largo de la imágen médica, usando una distancia y dirección determinada, a partir de la cual se pueden derivar diferentes características de textura, conocidas como características de Haralick (el investigador que las propuso en \cite{Haralick73}). Estas características son capaces de detectar patrones como la tendencia a formar clusters, energía, correlacion homogeneidad, o entropía, entre otros. 
+
+Para su evaluación, propusimos varios experimentos, aplicados a las imágenes DaTSCAN de las tres bases de datos \vdlndat{}, \vdlvdat{} y \ppmidat{}. En primer lugar comprobamos qué características eran capaces de discriminar mejor entre afectados por la enfermedad de Parkinson y no afectados (esta vez eliminando a los sujetos \acs{SWEDD}). Obtuvimos que las mejores características eran la tendencia a formar clusters y la homogeneidad. Dado que la distribución de intensidades en DaTSCAN está muy concentrada en el estriado, diferencias de forma (tendencia a formar clusters) y distribución del radiofármaco (homogeneidad) explicaban mejor que otras las diferencias entre sujetos. Una combinación de estas y otras características, evaluando su significancia utilizando los criterios estadísticos mencionados en el capítulo anterior, logró alcanzar más del 97\% de precisión, cuando se aplicó a la base de datos \ppmidat{}, junto a la divergencia de \acs{KL}.
+
+
+\subsection*{Capítulo 6: \acf{SBM}} 
+\cite{Martinez-Murcia2014225,Martinez-Murcia2015,Martinez-MurciaVRLBP,Martinez-Murcia2016}
+
+\subsection*{Capítulo 7: \acf{SWPCA}}
+\cite{Martinez-Murcia2016a}
+
+\subsection*{Capítulo 8: Simulación de Imágenes Funcionales}
+
+\section*{Conclusiones}
+Las diversas contribuciones de esta tesis han sido probadas en una serie de experimentos, de las cuales se obtienen las siguientes conclusiones: 
+
+\begin{itemize}
+	\item Hemos propuesto dos grandes enfoques para solucionar el \textit{Small Sample Size problem} en bases de datos de neuroimagen: mediante extracción de características y mediante el incremento del tamaño muestral. Estos dos enfoques son complementarios, y se pueden utilizar en conjunto para construir nuevos sistemas \ac{CAD} más fiables. 
+	\item Los algoritmos de extracción de características propuestos en los capítulos  \ref{ch:decomposition}, \ref{ch:texture} y \ref{ch:sbm} alcanzan un alto rendimiento en el diagnóstico diferencial de enfermos y controles, particularmente cuando se aplican a las bases de datos de Alzheimer y Parkinson. El mayor reto es utilizar estos algoritmos para estudiar la progresión de enfermedades neurodegenerativas, y en particular, la conversión de \ac{MCI} a demencia. 
+	\item Las técnicas de descomposición de imagen utilizadas en el capítulo ~\ref{ch:decomposition} son capaces de reducir significativamente la carga computacional cuando analizamos imágenes médicas, a la vez que mantienen o incluso incrementan el rendimiento de los sistemas \ac{CAD} propuestos, que han probado sobradamente su capacidad de discriminación en modalidades funcionales como \acs{SPECT} and \acs{PET}. 
+	\item El análisis de texturas se ha revelado como una herramienta muy útil para anlizar imágenes DaTSCAN en el capítulo~\ref{ch:texture}. Características de textura como la tendencia a formar \textit{clusters} o la homogeneidad han modelado con gran precisión la gran variedad de formas e intensidades que se encuentran en el cuerpo estriado en estas modalidades, y que pueden ser relacionados con el Parkinson.  
+	\item El marco \ac{SBM} que proponemos en el capítulo~\ref{ch:sbm} puede considerarse una herramienta muy poderosa (y además, extensible) para el análisis de imágenes estructurales. Los mapas estadísticos y de textura que se derivan de su aplicación facilitan la inspección visual para detectar los cambios relacionados con el Alzheimer, a la vez que realizan una reducción significativa del espacio de características. Utilizando \ac{SBM} hemos podido diagnósticar el Alzheimer a través de sus patrones estructurales, principalmente debidos a la textura o cambios en la densidad de tejidos, alcanzando una gran precisión. 
+	\item Tras encontrar una gran heterogeneidad en bases de datos de imagen estructural adquiridas en múltiples centros, pudimos reducir este efecto mediante la aplicación del algoritmo \ac{SWPCA} (capítulo~\ref{ch:swpca}). Este hecho fue detectado en la base de datos de autismo \aimsmri{}, donde un clasificador era capaz de detectar mejor diferencias entre sitios que entre clases. Tras aplicar \ac{SWPCA}, las diferencias entre sitios se redujeron casi al completo, mientras la precisión del diagnóstico diferencial se mantuvo similar. 
+	\item El análisis de las diferencias más significativas entre individuos autistas y controles no fue capaz de detectar cambios significativos, o en todo caso, que dichos cambios eran tan heterogéneos que no se podían establecer patrones comunes. Esto apunta a que gran parte de los resultados obtenidos cuando se analiza la estructura de cerebros autistas puede ser debida a diferencias en la adquisición, tal y como se ha revelado en publicaciones recientes \cite{haar2014anatomical}. 
+	\item Finalmente, el procedimiento de síntesis de imágenes funcionales cerebrales propuesto en el capítulo~\ref{ch:simulation} fue capaz de incrementar el número de sujetos de una base de datos de forma segura, a la vez que mantenía las características individuales. Hemos probado aquí que las imágenes simuladas pertenecen a la misma distribución estadística de las imágenes originales y pueden predecir imágenes del mundo real, e incluso ser usadas para entrenar a futuros profesionales. 
+\end{itemize}
+
+Todos los algoritmos y marcos propuestos son complementarios entre sí. Se puede utilizar el algortimo de síntesis para doblar el tamaño de una base de datos existente, y luego utilizar los métodos de descomposición para reducir el espacio de características. O podemos ``limpiar'' una base de datos multicentro con \ac{SWPCA} y luego visualizar las diferencias más significativas con \ac{SBM}. Todo lo que proponemos con esta tesis son solo gotas de agua que contribuyen al gran océano que es el procesado de neuroimagen, en un humilde intento de mejorar la velocidad, fiabilidad e información suministrada por las técnicas de diagnóstico actuales. 
+\end{otherlanguage}
+
+\endgroup			
+
+\vfill

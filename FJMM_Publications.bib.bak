@@ -134,7 +134,7 @@
   month         = feb,
   document_type = {Article},
   doi           = {10.1016/j.neucom.2013.01.054},
-  keywords      = {parkinson, ica, tests, pks, datscan, own},
+  keywords      = {parkinson, ica, tests, pks, datscan, own,cv},
   publisher     = {Elsevier {BV}},
   source        = {Scopus},
 }
@@ -188,7 +188,7 @@
   pages         = {225-233},
   document_type = {Conference Paper},
   doi           = {10.3233/978-1-61499-474-9-225},
-  keywords      = {mri, alzheimer, sbm, ad, adni, own},
+  keywords      = {mri, alzheimer, sbm, ad, adni, own,cv},
   source        = {Scopus},
 }
 
@@ -220,6 +220,7 @@
   document_type = {Conference Paper},
   doi           = {10.1007/978-3-642-38637-4_42},
   journal       = {Lecture Notes in Computer Science (including subseries Lecture Notes in Artificial Intelligence and Lecture Notes in Bioinformatics)},
+  keywords      = {cv},
   source        = {Scopus},
 }
 
@@ -298,7 +299,7 @@
   document_type = {Conference Paper},
   doi           = {10.1007/978-3-642-21326-7_5},
   journal       = {Lecture Notes in Computer Science (including subseries Lecture Notes in Artificial Intelligence and Lecture Notes in Bioinformatics)},
-  keywords      = {feature, factor analysis, decomposition, test, adni, alzheimer, spect, pet, own},
+  keywords      = {feature, factor analysis, decomposition, test, adni, alzheimer, spect, pet, own,cv},
   source        = {Scopus},
 }
 
@@ -328,7 +329,7 @@
   isbn      = {978-953-51-4895-1},
   booktitle = {Computer-aided Technologies - Applications in Engineering and Medicine},
   doi       = {10.5772/64980},
-  keywords  = {own},
+  keywords  = {own,cv},
 }
 
 @InBook{Martinez-Murcia2016b,
@@ -339,7 +340,7 @@
   author    = {Martinez-Murcia, F.J and G\'orriz, J.M. and Ram\'irez, J.},
   booktitle = {Wiley Encyclopedia of Electrical and Electronics Engineering},
   doi       = {10.1002/047134608X},
-  keywords  = {own},
+  keywords  = {own,cv},
 }
 
 @Comment{jabref-meta: databaseType:bibtex;}

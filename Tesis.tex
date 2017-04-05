@@ -22,6 +22,7 @@
 \usepackage{shapepar}
 \usepackage{pifont}
 % Added by pakitochus
+\usepackage[LabelsAligned]{currvita} % nice cv style
 %-------------------------------------------------------------
 % Bibliography management with biber.
 %-------------------------------------------------------------
@@ -57,10 +58,12 @@ maxbibnames=10, % default: 3, et al.
 \pagestyle{plain}
 \input{FrontBackMatter/Titlepage}
 \input{FrontBackMatter/Titleback}
+\input{FrontBackMatter/Dedication}
+\cleardoublepage\include{FrontBackMatter/Derechos}
 \cleardoublepage
 \input{FrontBackMatter/Abstract}
+\input{FrontBackMatter/Resumen_Es}
 %\cleardoublepage\include{FrontBackMatter/Declaration}
-\cleardoublepage\include{FrontBackMatter/Derechos}
 \cleardoublepage
 %\input{FrontBackMatter/Acknowledgements}
 \pagestyle{scrheadings} 
