@@ -12,37 +12,41 @@
 \defcounter {refsection}{0}\relax 
 \select@language {english}
 \defcounter {refsection}{0}\relax 
-\addvspace {10\p@ }
+\select@language {spanish}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {1.1}{\ignorespaces Illustration of one and two-dimensional spaces.}}{4}{figure.caption.25}
-\defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {1.2}{\ignorespaces Structure of the thesis.}}{6}{figure.caption.26}
+\select@language {english}
 \defcounter {refsection}{0}\relax 
 \addvspace {10\p@ }
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {2.1}{\ignorespaces Example of T1 and T2-weighted \acs {MRI} images.}}{12}{figure.caption.30}
+\contentsline {figure}{\numberline {1.1}{\ignorespaces Illustration of one and two-dimensional spaces.}}{4}{figure.caption.26}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {2.2}{\ignorespaces Example of \acs {SPECT} images.}}{14}{figure.caption.39}
-\defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {2.3}{\ignorespaces Example of a PET-FDG image.}}{15}{figure.caption.41}
-\defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {2.4}{\ignorespaces Example of a \acs {SPM} analysis on a \acs {PET} dataset.}}{19}{figure.caption.50}
-\defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {2.5}{\ignorespaces Illustration of a typical neuroimaging \acs {CAD} system.}}{24}{figure.caption.53}
-\defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {2.6}{\ignorespaces Example of the cortical thickness of a subject.}}{25}{figure.caption.56}
+\contentsline {figure}{\numberline {1.2}{\ignorespaces Structure of the thesis.}}{6}{figure.caption.27}
 \defcounter {refsection}{0}\relax 
 \addvspace {10\p@ }
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {3.1}{\ignorespaces Typical pre-processing pipeline in \acs {MRI}}}{28}{figure.caption.57}
+\contentsline {figure}{\numberline {2.1}{\ignorespaces Example of T1 and T2-weighted \acs {MRI} images.}}{12}{figure.caption.31}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {3.2}{\ignorespaces Comparison of the affine registration and the application of non-linear transformations to the images}}{30}{figure.caption.59}
+\contentsline {figure}{\numberline {2.2}{\ignorespaces Example of \acs {SPECT} images.}}{14}{figure.caption.40}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {2.3}{\ignorespaces Example of a PET-FDG image.}}{15}{figure.caption.42}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {2.4}{\ignorespaces Example of a \acs {SPM} analysis on a \acs {PET} dataset.}}{19}{figure.caption.51}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {2.5}{\ignorespaces Illustration of a typical neuroimaging \acs {CAD} system.}}{24}{figure.caption.54}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {2.6}{\ignorespaces Example of the cortical thickness of a subject.}}{25}{figure.caption.57}
+\defcounter {refsection}{0}\relax 
+\addvspace {10\p@ }
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {3.1}{\ignorespaces Typical pre-processing pipeline in \acs {MRI}}}{28}{figure.caption.58}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {3.2}{\ignorespaces Comparison of the affine registration and the application of non-linear transformations to the images}}{30}{figure.caption.60}
 \defcounter {refsection}{0}\relax 
 \contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Comparison in \ac {MRI}.}}}{30}{subfigure.2.1}
 \defcounter {refsection}{0}\relax 
 \contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Comparison in \ac {PET}.}}}{30}{subfigure.2.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {3.3}{\ignorespaces Comparison between different types of intensity normalization.}}{33}{figure.caption.66}
+\contentsline {figure}{\numberline {3.3}{\ignorespaces Comparison between different types of intensity normalization.}}{33}{figure.caption.67}
 \defcounter {refsection}{0}\relax 
 \contentsline {subfigure}{\numberline {(a)}{\ignorespaces {No Normalization.}}}{33}{subfigure.3.1}
 \defcounter {refsection}{0}\relax 
@@ -52,15 +56,15 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {subfigure}{\numberline {(d)}{\ignorespaces {Normalization using $\alpha $-stable distribution.}}}{33}{subfigure.3.4}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {3.4}{\ignorespaces Evolution of bias and variance in \acs {CV}.}}{34}{figure.caption.69}
+\contentsline {figure}{\numberline {3.4}{\ignorespaces Evolution of bias and variance in \acs {CV}.}}{34}{figure.caption.70}
 \defcounter {refsection}{0}\relax 
 \addvspace {10\p@ }
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {4.1}{\ignorespaces Illustration of how decomposition algorithms work.}}{39}{figure.caption.75}
+\contentsline {figure}{\numberline {4.1}{\ignorespaces Illustration of how decomposition algorithms work.}}{39}{figure.caption.76}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {4.2}{\ignorespaces Illustration of the system used in chapter~\ref {ch:decomposition} .}}{40}{figure.caption.76}
+\contentsline {figure}{\numberline {4.2}{\ignorespaces Illustration of the system used in chapter~\ref {ch:decomposition} .}}{40}{figure.caption.77}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {4.3}{\ignorespaces Original \acs {PET} image and its reconstruction using FA or ICA.}}{43}{figure.caption.77}
+\contentsline {figure}{\numberline {4.3}{\ignorespaces Original \acs {PET} image and its reconstruction using FA or ICA.}}{43}{figure.caption.78}
 \defcounter {refsection}{0}\relax 
 \contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Original}}}{43}{subfigure.3.1}
 \defcounter {refsection}{0}\relax 
@@ -68,9 +72,9 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {subfigure}{\numberline {(c)}{\ignorespaces {\ac {ICA} reconstruction}}}{43}{subfigure.3.3}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {4.4}{\ignorespaces Variance of reconstruction error in \acs {FA}.}}{44}{figure.caption.78}
+\contentsline {figure}{\numberline {4.4}{\ignorespaces Variance of reconstruction error in \acs {FA}.}}{44}{figure.caption.79}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {4.5}{\ignorespaces Average performance of the \acs {AD} datasets in \acs {FA}.}}{49}{figure.caption.80}
+\contentsline {figure}{\numberline {4.5}{\ignorespaces Average performance of the \acs {AD} datasets in \acs {FA}.}}{49}{figure.caption.81}
 \defcounter {refsection}{0}\relax 
 \contentsline {subfigure}{\numberline {(a)}{\ignorespaces {}}}{49}{subfigure.5.1}
 \defcounter {refsection}{0}\relax 
@@ -84,7 +88,7 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {subfigure}{\numberline {(f)}{\ignorespaces {}}}{49}{subfigure.5.6}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {4.6}{\ignorespaces Average performance of the \acs {AD} datasets in \acs {ICA}.}}{50}{figure.caption.81}
+\contentsline {figure}{\numberline {4.6}{\ignorespaces Average performance of the \acs {AD} datasets in \acs {ICA}.}}{50}{figure.caption.82}
 \defcounter {refsection}{0}\relax 
 \contentsline {subfigure}{\numberline {(a)}{\ignorespaces {}}}{50}{subfigure.6.1}
 \defcounter {refsection}{0}\relax 
@@ -98,7 +102,7 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {subfigure}{\numberline {(f)}{\ignorespaces {}}}{50}{subfigure.6.6}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {4.7}{\ignorespaces Performance at the operation point for the \acs {AD} datasets, over the number of selected voxels.}}{51}{figure.caption.82}
+\contentsline {figure}{\numberline {4.7}{\ignorespaces Performance at the operation point for the \acs {AD} datasets, over the number of selected voxels.}}{51}{figure.caption.83}
 \defcounter {refsection}{0}\relax 
 \contentsline {subfigure}{\numberline {(a)}{\ignorespaces {}}}{51}{subfigure.7.1}
 \defcounter {refsection}{0}\relax 
@@ -108,7 +112,7 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {subfigure}{\numberline {(d)}{\ignorespaces {}}}{51}{subfigure.7.4}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {4.8}{\ignorespaces Performance at the operation point for the \acs {AD} datasets, over the number of components.}}{52}{figure.caption.83}
+\contentsline {figure}{\numberline {4.8}{\ignorespaces Performance at the operation point for the \acs {AD} datasets, over the number of components.}}{52}{figure.caption.84}
 \defcounter {refsection}{0}\relax 
 \contentsline {subfigure}{\numberline {(a)}{\ignorespaces {}}}{52}{subfigure.8.1}
 \defcounter {refsection}{0}\relax 
@@ -118,7 +122,7 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {subfigure}{\numberline {(d)}{\ignorespaces {}}}{52}{subfigure.8.4}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {4.9}{\ignorespaces Average performance of the \acs {PKS} datasets in \acs {FA}.}}{55}{figure.caption.85}
+\contentsline {figure}{\numberline {4.9}{\ignorespaces Average performance of the \acs {PKS} datasets in \acs {FA}.}}{55}{figure.caption.86}
 \defcounter {refsection}{0}\relax 
 \contentsline {subfigure}{\numberline {(a)}{\ignorespaces {}}}{55}{subfigure.9.1}
 \defcounter {refsection}{0}\relax 
@@ -132,7 +136,7 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {subfigure}{\numberline {(f)}{\ignorespaces {}}}{55}{subfigure.9.6}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {4.10}{\ignorespaces Average performance of the \acs {PKS} datasets in \acs {ICA}.}}{56}{figure.caption.86}
+\contentsline {figure}{\numberline {4.10}{\ignorespaces Average performance of the \acs {PKS} datasets in \acs {ICA}.}}{56}{figure.caption.87}
 \defcounter {refsection}{0}\relax 
 \contentsline {subfigure}{\numberline {(a)}{\ignorespaces {}}}{56}{subfigure.10.1}
 \defcounter {refsection}{0}\relax 
@@ -146,7 +150,7 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {subfigure}{\numberline {(f)}{\ignorespaces {}}}{56}{subfigure.10.6}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {4.11}{\ignorespaces Performance at the operation point for the \acs {PKS} datasets, over the number of selected voxels.}}{58}{figure.caption.87}
+\contentsline {figure}{\numberline {4.11}{\ignorespaces Performance at the operation point for the \acs {PKS} datasets, over the number of selected voxels.}}{58}{figure.caption.88}
 \defcounter {refsection}{0}\relax 
 \contentsline {subfigure}{\numberline {(a)}{\ignorespaces {}}}{58}{subfigure.11.1}
 \defcounter {refsection}{0}\relax 
@@ -160,7 +164,7 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {subfigure}{\numberline {(f)}{\ignorespaces {}}}{58}{subfigure.11.6}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {4.12}{\ignorespaces Performance at the operation point for the \acs {PKS} datasets, over the number of components.}}{59}{figure.caption.88}
+\contentsline {figure}{\numberline {4.12}{\ignorespaces Performance at the operation point for the \acs {PKS} datasets, over the number of components.}}{59}{figure.caption.89}
 \defcounter {refsection}{0}\relax 
 \contentsline {subfigure}{\numberline {(a)}{\ignorespaces {}}}{59}{subfigure.12.1}
 \defcounter {refsection}{0}\relax 
@@ -174,7 +178,7 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {subfigure}{\numberline {(f)}{\ignorespaces {}}}{59}{subfigure.12.6}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {4.13}{\ignorespaces Comparison between the different filtering methods in {\relax \fontsize {12}{14}\selectfont \textsc {adni-pet}}{}.}}{61}{figure.caption.90}
+\contentsline {figure}{\numberline {4.13}{\ignorespaces Comparison between the different filtering methods in {\relax \fontsize {12}{14}\selectfont \textsc {adni-pet}}{}.}}{61}{figure.caption.91}
 \defcounter {refsection}{0}\relax 
 \contentsline {subfigure}{\numberline {(a)}{\ignorespaces {$t$-test.}}}{61}{subfigure.13.1}
 \defcounter {refsection}{0}\relax 
@@ -182,7 +186,7 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {subfigure}{\numberline {(c)}{\ignorespaces {\ac {MWW} $U$-test.}}}{61}{subfigure.13.3}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {4.14}{\ignorespaces Comparison between the different filtering methods in {\relax \fontsize {12}{14}\selectfont \textsc {adni-pet}}{}.}}{63}{figure.caption.91}
+\contentsline {figure}{\numberline {4.14}{\ignorespaces Comparison between the different filtering methods in {\relax \fontsize {12}{14}\selectfont \textsc {adni-pet}}{}.}}{63}{figure.caption.92}
 \defcounter {refsection}{0}\relax 
 \contentsline {subfigure}{\numberline {(a)}{\ignorespaces {$t$-test.}}}{63}{subfigure.14.1}
 \defcounter {refsection}{0}\relax 
@@ -190,7 +194,7 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {subfigure}{\numberline {(c)}{\ignorespaces {\ac {MWW} $U$-test.}}}{63}{subfigure.14.3}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {4.15}{\ignorespaces Comparison between the different filtering methods in {\relax \fontsize {12}{14}\selectfont \textsc {ppmi-dat}}{}.}}{65}{figure.caption.94}
+\contentsline {figure}{\numberline {4.15}{\ignorespaces Comparison between the different filtering methods in {\relax \fontsize {12}{14}\selectfont \textsc {ppmi-dat}}{}.}}{65}{figure.caption.95}
 \defcounter {refsection}{0}\relax 
 \contentsline {subfigure}{\numberline {(a)}{\ignorespaces {$t$-test.}}}{65}{subfigure.15.1}
 \defcounter {refsection}{0}\relax 
@@ -200,11 +204,11 @@
 \defcounter {refsection}{0}\relax 
 \addvspace {10\p@ }
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {5.1}{\ignorespaces Schema of the proposed Texture-based CAD system.}}{67}{figure.caption.95}
+\contentsline {figure}{\numberline {5.1}{\ignorespaces Schema of the proposed Texture-based CAD system.}}{67}{figure.caption.96}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {5.2}{\ignorespaces Comparison of the different $I_{th}$ values.}}{69}{figure.caption.97}
+\contentsline {figure}{\numberline {5.2}{\ignorespaces Comparison of the different $I_{th}$ values.}}{69}{figure.caption.98}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {5.3}{\ignorespaces Evolution of the average accuracy with the intensity threshold.}}{73}{figure.caption.98}
+\contentsline {figure}{\numberline {5.3}{\ignorespaces Evolution of the average accuracy with the intensity threshold.}}{73}{figure.caption.99}
 \defcounter {refsection}{0}\relax 
 \contentsline {subfigure}{\numberline {(a)}{\ignorespaces {No Normalization (Single)}}}{73}{subfigure.3.1}
 \defcounter {refsection}{0}\relax 
@@ -218,9 +222,9 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {subfigure}{\numberline {(f)}{\ignorespaces {Integral (Cumulative)}}}{73}{subfigure.3.6}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {5.4}{\ignorespaces Violin plot of all accuracy values, grouped by database.}}{75}{figure.caption.99}
+\contentsline {figure}{\numberline {5.4}{\ignorespaces Violin plot of all accuracy values, grouped by database.}}{75}{figure.caption.100}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {5.5}{\ignorespaces Accuracy obtained by averaging all accuracy values using a given volume selection threshold $I_{th}$.\relax }}{77}{figure.caption.102}
+\contentsline {figure}{\numberline {5.5}{\ignorespaces Accuracy obtained by averaging all accuracy values using a given volume selection threshold $I_{th}$.\relax }}{77}{figure.caption.103}
 \defcounter {refsection}{0}\relax 
 \contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Original images}}}{77}{subfigure.5.1}
 \defcounter {refsection}{0}\relax 
@@ -228,7 +232,7 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {subfigure}{\numberline {(c)}{\ignorespaces {Normalization to the Maximum}}}{77}{subfigure.5.3}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {5.6}{\ignorespaces Average accuracy computed for each selection criteria over $N$ in Experiment 2.}}{78}{figure.caption.103}
+\contentsline {figure}{\numberline {5.6}{\ignorespaces Average accuracy computed for each selection criteria over $N$ in Experiment 2.}}{78}{figure.caption.104}
 \defcounter {refsection}{0}\relax 
 \contentsline {subfigure}{\numberline {(a)}{\ignorespaces {{\relax \fontsize {12}{14}\selectfont \textsc {ppmi-dat}}{}}}}{78}{subfigure.6.1}
 \defcounter {refsection}{0}\relax 
@@ -236,7 +240,7 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {subfigure}{\numberline {(c)}{\ignorespaces {{\relax \fontsize {12}{14}\selectfont \textsc {vdlv-dat}}{}}}}{78}{subfigure.6.3}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {5.7}{\ignorespaces Distribution of the 100 first selected features by means of the different selection methods.}}{82}{figure.caption.106}
+\contentsline {figure}{\numberline {5.7}{\ignorespaces Distribution of the 100 first selected features by means of the different selection methods.}}{82}{figure.caption.107}
 \defcounter {refsection}{0}\relax 
 \contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Feature number ({\relax \fontsize {12}{14}\selectfont \textsc {ppmi-dat}}{})}}}{82}{subfigure.7.1}
 \defcounter {refsection}{0}\relax 
@@ -246,87 +250,87 @@
 \defcounter {refsection}{0}\relax 
 \addvspace {10\p@ }
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {6.1}{\ignorespaces Flow diagram of the procedure used in the textural analysis of projected MR brain images.\relax }}{85}{figure.caption.109}
+\contentsline {figure}{\numberline {6.1}{\ignorespaces Flow diagram of the procedure used in the textural analysis of projected MR brain images.\relax }}{85}{figure.caption.110}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {6.2}{\ignorespaces Illustration of the computation of the mapping vector $\mathbf {v}_{\theta ,\varphi }$, the angles $\theta $ and $\varphi $ and the $r$-neighbourhood of $\mathbf {v}$ (see Section~\ref {sec:vrlbp}).\relax }}{86}{figure.caption.110}
+\contentsline {figure}{\numberline {6.2}{\ignorespaces Illustration of the computation of the mapping vector $\mathbf {v}_{\theta ,\varphi }$, the angles $\theta $ and $\varphi $ and the $r$-neighbourhood of $\mathbf {v}$ (see Section~\ref {sec:vrlbp}).\relax }}{86}{figure.caption.111}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {6.3}{\ignorespaces Resulting \acs {GM} and \acs {WM} maps of the same control subject using the six proposed measures: Surface, Thickness, Number of Folds, Average, Entropy and Kurtosis.\relax }}{89}{figure.caption.111}
+\contentsline {figure}{\numberline {6.3}{\ignorespaces Resulting \acs {GM} and \acs {WM} maps of the same control subject using the six proposed measures: Surface, Thickness, Number of Folds, Average, Entropy and Kurtosis.\relax }}{89}{figure.caption.112}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {6.4}{\ignorespaces Example of the layered approach using the average measure on \acs {GM} maps.}}{90}{figure.caption.112}
+\contentsline {figure}{\numberline {6.4}{\ignorespaces Example of the layered approach using the average measure on \acs {GM} maps.}}{90}{figure.caption.113}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {6.5}{\ignorespaces Example of how the basic \acs {LBP} is computed.\relax }}{90}{figure.caption.113}
+\contentsline {figure}{\numberline {6.5}{\ignorespaces Example of how the basic \acs {LBP} is computed.\relax }}{90}{figure.caption.114}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {6.6}{\ignorespaces An example of the \acs {VRLBP} projection for \acs {GM} and \acs {WM} Tissues. \relax }}{92}{figure.caption.114}
+\contentsline {figure}{\numberline {6.6}{\ignorespaces An example of the \acs {VRLBP} projection for \acs {GM} and \acs {WM} Tissues. \relax }}{92}{figure.caption.115}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {6.7}{\ignorespaces SBM mapping of different cortical regions.}}{93}{figure.caption.116}
+\contentsline {figure}{\numberline {6.7}{\ignorespaces SBM mapping of different cortical regions.}}{93}{figure.caption.117}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {6.8}{\ignorespaces SBM mapping of some subcortical regions and organs.}}{93}{figure.caption.117}
+\contentsline {figure}{\numberline {6.8}{\ignorespaces SBM mapping of some subcortical regions and organs.}}{93}{figure.caption.118}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {6.9}{\ignorespaces Set of \acs {HMM} based paths over the MRI DARTEL template.}}{97}{figure.caption.121}
+\contentsline {figure}{\numberline {6.9}{\ignorespaces Set of \acs {HMM} based paths over the MRI DARTEL template.}}{97}{figure.caption.122}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {6.10}{\ignorespaces \acs {SBM} t-maps under the \acs {AD} vs \acs {CTL} for \acs {GM} and \acs {WM} images.}}{101}{figure.caption.122}
+\contentsline {figure}{\numberline {6.10}{\ignorespaces \acs {SBM} t-maps under the \acs {AD} vs \acs {CTL} for \acs {GM} and \acs {WM} images.}}{101}{figure.caption.123}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {6.11}{\ignorespaces $t$-maps for the \acs {VRLBP}-\acs {SBM} in the \acs {AD} vs \acs {CTL} scenario.}}{102}{figure.caption.123}
+\contentsline {figure}{\numberline {6.11}{\ignorespaces $t$-maps for the \acs {VRLBP}-\acs {SBM} in the \acs {AD} vs \acs {CTL} scenario.}}{102}{figure.caption.124}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {6.12}{\ignorespaces Performance for the different \ac {SBM} approaches over the: a) \acs {GM} and b) \acs {WM}.\relax }}{105}{figure.caption.125}
+\contentsline {figure}{\numberline {6.12}{\ignorespaces Performance for the different \ac {SBM} approaches over the: a) \acs {GM} and b) \acs {WM}.\relax }}{105}{figure.caption.126}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {6.13}{\ignorespaces Performance of the four-layered mappings.}}{106}{figure.caption.126}
+\contentsline {figure}{\numberline {6.13}{\ignorespaces Performance of the four-layered mappings.}}{106}{figure.caption.127}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {6.14}{\ignorespaces $t$-maps that present the level of statistical relevance in the \acs {AD} vs \acs {CTL} paradigm.}}{107}{figure.caption.127}
+\contentsline {figure}{\numberline {6.14}{\ignorespaces $t$-maps that present the level of statistical relevance in the \acs {AD} vs \acs {CTL} paradigm.}}{107}{figure.caption.128}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {6.15}{\ignorespaces Path traced over a gaussian mixture distribution of 4 i\discretionary {-}{}{}so\discretionary {-}{}{}tro\discretionary {-}{}{}pic gaussian kernels.\relax }}{108}{figure.caption.128}
+\contentsline {figure}{\numberline {6.15}{\ignorespaces Path traced over a gaussian mixture distribution of 4 i\discretionary {-}{}{}so\discretionary {-}{}{}tro\discretionary {-}{}{}pic gaussian kernels.\relax }}{108}{figure.caption.129}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {6.16}{\ignorespaces \ac {HMM} path computed inside a density distribution defined by an helix.\relax }}{109}{figure.caption.129}
+\contentsline {figure}{\numberline {6.16}{\ignorespaces \ac {HMM} path computed inside a density distribution defined by an helix.\relax }}{109}{figure.caption.130}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {6.17}{\ignorespaces Simulation of the \ac {HMM}-based path tracing over an Iberian Peninsula height map, interconecting different cities.\relax }}{110}{figure.caption.130}
+\contentsline {figure}{\numberline {6.17}{\ignorespaces Simulation of the \ac {HMM}-based path tracing over an Iberian Peninsula height map, interconecting different cities.\relax }}{110}{figure.caption.131}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {6.18}{\ignorespaces canonical paths computed in each direction ($\theta ,\varphi $). Each path's colour represent the accuracy in a differential diagnosis. Only one in every five paths are shown for clarity purposes.\relax }}{111}{figure.caption.131}
+\contentsline {figure}{\numberline {6.18}{\ignorespaces canonical paths computed in each direction ($\theta ,\varphi $). Each path's colour represent the accuracy in a differential diagnosis. Only one in every five paths are shown for clarity purposes.\relax }}{111}{figure.caption.132}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {6.19}{\ignorespaces Example of the resulting hybrid \acs {HMM}-\acs {SBM} texture maps.\relax }}{113}{figure.caption.133}
+\contentsline {figure}{\numberline {6.19}{\ignorespaces Example of the resulting hybrid \acs {HMM}-\acs {SBM} texture maps.\relax }}{113}{figure.caption.134}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {6.20}{\ignorespaces Performance at the operation point for the different mappings over the \acs {GM} and \acs {WM}, compared with the performance of \acs {VAF}.\relax }}{115}{figure.caption.136}
+\contentsline {figure}{\numberline {6.20}{\ignorespaces Performance at the operation point for the different mappings over the \acs {GM} and \acs {WM}, compared with the performance of \acs {VAF}.\relax }}{115}{figure.caption.137}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {6.21}{\ignorespaces Paths that obtain more than 75\% accuracy, and a three-dimensional representation of the structures crossed by them.\relax }}{118}{figure.caption.138}
-\defcounter {refsection}{0}\relax 
-\addvspace {10\p@ }
-\defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {7.1}{\ignorespaces Summary of the \acs {SWPCA} algorithm, along with its context in the pipeline used in this article.}}{127}{figure.caption.140}
-\defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {7.2}{\ignorespaces Weighting function $\Lambda _c(p_c,p_{th})$ used in \acs {SWPCA}.}}{130}{figure.caption.141}
-\defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {7.3}{\ignorespaces Box-plot of the distribution of the component scores at each site of the {\relax \fontsize {12}{14}\selectfont \textsc {aims-mri}}{} dataset (see Sections~\ref {sec:swpcaAIMSresults} and \ref {sec:aims-mri}) in the four first components.}}{131}{figure.caption.142}
-\defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {7.4}{\ignorespaces Brain t-map (\acs {VBM}) of significant ($p<0.01$, $|t|>2.57$) \acs {GM} and \acs {WM} between-group differences using \acs {qT1}, \acs {qT2}, \acs {synT1}, \acs {GM} and \acs {WM} modalities after applying \acs {SWPCA} to remove site effects.}}{134}{figure.caption.145}
-\defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {7.5}{\ignorespaces Brain t-map (\acs {VBM}) of significant ($p<0.01$, $|t|>2.57$) \acs {GM} and \acs {WM} differences in \acs {ASD} using \acs {qT1}, \acs {qT2}, \acs {synT1}, \acs {GM} and \acs {WM} maps before and after applying \acs {SWPCA} to remove site effects.}}{138}{figure.caption.148}
-\defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {7.6}{\ignorespaces Brain Z-map (\acs {CBM}) of significant ($p<0.01$, $|t|>2.57$) \acs {GM} and \acs {WM} differences using \acs {qT1}, \acs {qT2}, \acs {synT1}, \acs {GM} and \acs {WM} maps before and after applying \acs {SWPCA} to remove site effects.}}{139}{figure.caption.149}
-\defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {7.7}{\ignorespaces Location of hte singifcant region labelled D (posterior part of the superior temporal gyrus) within the \acs {MNI} template.}}{143}{figure.caption.152}
-\defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {7.8}{\ignorespaces The template used in this work compared to two of the participants with abnormal ventricle size (21016 and 21018).}}{144}{figure.caption.153}
+\contentsline {figure}{\numberline {6.21}{\ignorespaces Paths that obtain more than 75\% accuracy, and a three-dimensional representation of the structures crossed by them.\relax }}{118}{figure.caption.139}
 \defcounter {refsection}{0}\relax 
 \addvspace {10\p@ }
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {8.1}{\ignorespaces Schema of the brain image synthesis algorithm.\relax }}{147}{figure.caption.154}
+\contentsline {figure}{\numberline {7.1}{\ignorespaces Summary of the \acs {SWPCA} algorithm, along with its context in the pipeline used in this article.}}{127}{figure.caption.141}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {8.2}{\ignorespaces Illustration of the three first eigenbrains in \acs {PCA}.\relax }}{156}{figure.caption.160}
+\contentsline {figure}{\numberline {7.2}{\ignorespaces Weighting function $\Lambda _c(p_c,p_{th})$ used in \acs {SWPCA}.}}{130}{figure.caption.142}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {8.3}{\ignorespaces Comparison between the \acs {MVN} and \acs {KDE} \acs {PDF} estimation methods for the first component and the three groups, setting the histogram as reference.\relax }}{156}{figure.caption.161}
+\contentsline {figure}{\numberline {7.3}{\ignorespaces Box-plot of the distribution of the component scores at each site of the {\relax \fontsize {12}{14}\selectfont \textsc {aims-mri}}{} dataset (see Sections~\ref {sec:swpcaAIMSresults} and \ref {sec:aims-mri}) in the four first components.}}{131}{figure.caption.143}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {8.4}{\ignorespaces Pairplot plotting the coordinates of the subjects in the {\relax \fontsize {12}{14}\selectfont \textsc {adni-pet}}{} database over the four first eigenbrains. In the diagonal, distribution of the classes estimated using \acs {KDE} for each eigenbrain.\relax }}{158}{figure.caption.162}
+\contentsline {figure}{\numberline {7.4}{\ignorespaces Brain t-map (\acs {VBM}) of significant ($p<0.01$, $|t|>2.57$) \acs {GM} and \acs {WM} between-group differences using \acs {qT1}, \acs {qT2}, \acs {synT1}, \acs {GM} and \acs {WM} modalities after applying \acs {SWPCA} to remove site effects.}}{134}{figure.caption.146}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {8.5}{\ignorespaces Examples of some original and simulated subjects from the {\relax \fontsize {12}{14}\selectfont \textsc {adni-pet}}{} dataset.\relax }}{159}{figure.caption.163}
+\contentsline {figure}{\numberline {7.5}{\ignorespaces Brain t-map (\acs {VBM}) of significant ($p<0.01$, $|t|>2.57$) \acs {GM} and \acs {WM} differences in \acs {ASD} using \acs {qT1}, \acs {qT2}, \acs {synT1}, \acs {GM} and \acs {WM} maps before and after applying \acs {SWPCA} to remove site effects.}}{138}{figure.caption.149}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {8.6}{\ignorespaces Examples of some original and simulated subjects from the PPMI dataset.\relax }}{160}{figure.caption.164}
+\contentsline {figure}{\numberline {7.6}{\ignorespaces Brain Z-map (\acs {CBM}) of significant ($p<0.01$, $|t|>2.57$) \acs {GM} and \acs {WM} differences using \acs {qT1}, \acs {qT2}, \acs {synT1}, \acs {GM} and \acs {WM} maps before and after applying \acs {SWPCA} to remove site effects.}}{139}{figure.caption.150}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {8.7}{\ignorespaces \acs {SPM} Analysis of the ADNI dataset (\acs {AD} vs \acs {CTL}).}}{161}{figure.caption.165}
+\contentsline {figure}{\numberline {7.7}{\ignorespaces Location of hte singifcant region labelled D (posterior part of the superior temporal gyrus) within the \acs {MNI} template.}}{143}{figure.caption.153}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {8.8}{\ignorespaces \acs {SPM} Analysis of the ADNI dataset (\acs {CTL} vs \acs {MCI}).}}{162}{figure.caption.166}
+\contentsline {figure}{\numberline {7.8}{\ignorespaces The template used in this work compared to two of the participants with abnormal ventricle size (21016 and 21018).}}{144}{figure.caption.154}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {8.9}{\ignorespaces \acs {SPM} Analysis of the ADNI dataset (\acs {MCI} vs \acs {AD}).}}{163}{figure.caption.167}
+\addvspace {10\p@ }
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {8.10}{\ignorespaces \acs {SPM} Analysis of the PPMI dataset.}}{164}{figure.caption.168}
+\contentsline {figure}{\numberline {8.1}{\ignorespaces Schema of the brain image synthesis algorithm.\relax }}{147}{figure.caption.155}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {8.2}{\ignorespaces Illustration of the three first eigenbrains in \acs {PCA}.\relax }}{156}{figure.caption.161}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {8.3}{\ignorespaces Comparison between the \acs {MVN} and \acs {KDE} \acs {PDF} estimation methods for the first component and the three groups, setting the histogram as reference.\relax }}{156}{figure.caption.162}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {8.4}{\ignorespaces Pairplot plotting the coordinates of the subjects in the {\relax \fontsize {12}{14}\selectfont \textsc {adni-pet}}{} database over the four first eigenbrains. In the diagonal, distribution of the classes estimated using \acs {KDE} for each eigenbrain.\relax }}{158}{figure.caption.163}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {8.5}{\ignorespaces Examples of some original and simulated subjects from the {\relax \fontsize {12}{14}\selectfont \textsc {adni-pet}}{} dataset.\relax }}{159}{figure.caption.164}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {8.6}{\ignorespaces Examples of some original and simulated subjects from the PPMI dataset.\relax }}{160}{figure.caption.165}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {8.7}{\ignorespaces \acs {SPM} Analysis of the ADNI dataset (\acs {AD} vs \acs {CTL}).}}{161}{figure.caption.166}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {8.8}{\ignorespaces \acs {SPM} Analysis of the ADNI dataset (\acs {CTL} vs \acs {MCI}).}}{162}{figure.caption.167}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {8.9}{\ignorespaces \acs {SPM} Analysis of the ADNI dataset (\acs {MCI} vs \acs {AD}).}}{163}{figure.caption.168}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {8.10}{\ignorespaces \acs {SPM} Analysis of the PPMI dataset.}}{164}{figure.caption.169}
 \defcounter {refsection}{0}\relax 
 \addvspace {10\p@ }
 \defcounter {refsection}{0}\relax 
