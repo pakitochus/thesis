@@ -4,15 +4,15 @@
 %\chapter{Image Preprocessing}\label{ch:preprocessing} % 
 \chapter{General Methodology}\label{ch:preprocessing} % $\mathbb{ZNR}$
 %************************************************
-Throughout this thesis, we will propose many analysis techniques and \ac{CAD} systems. We will apply them to many experiments, and use similar data and techniques in them. In this chapter, we will focus on the methodology that is common to most of these experiments, particularly focusing on preprocessing and evaluation of our systems. 
+Throughout this thesis, we will propose many \ac{CAD} systems and analyses. We will apply them to many experiments, using similar data and techniques in them. In this chapter, we will focus on the methodology that is common to most of these experiments, particularly the preprocessing and evaluation of our systems. 
 
-To perform most automated analyses on neuroimaging, it is fundamental that images are comparable. Preprocessing comprises a series of algorithms that, applied after the acquisition and reconstruction of the images, produce directly comparable images in both structure and magnitude. Whether they have been used in one or all experiments, they can be classified in two major categories: spatial and intensity preprocessing. These are addressed in section~\ref{sec:spatial} and \ref{sec:intensityPrep} respectively. 
+To perform most automated analyses on neuroimaging, it is fundamental that images are comparable. Preprocessing comprises a series of algorithms that, applied after the acquisition and reconstruction of the images, produce directly comparable images in both structure and magnitude. Whether they have been used in one or all experiments, we can classify them in two major categories: spatial and intensity preprocessing. These are addressed in section~\ref{sec:spatial} and \ref{sec:intensityPrep} respectively. 
 
 Afterwards, in section~\ref{sec:validation}, we will discuss how we evaluate our systems. Here we propose some performance measures and the procedure to obtain them by training and testing our systems.  
 
 
 \section{Spatial Preprocessing}\label{sec:spatial}
-Spatial processing usually accounts for the differences in position, angles and structure that are commonly found between images. A common pipeline in, for example, \ac{MRI} preprocessing, is the one found at Figure~\ref{fig:examplePreMRI}, where the images are registered (or spatially normalized) to a template, smoothed and finally segmented. The smoothing is an optional step, generally used in procedures like segmentation or \ac{VBM}. 
+Spatial processing usually accounts for the differences in position, angles and structure that are generally found between images. A common pipeline in, for example, \ac{MRI} preprocessing, is the one found at Figure~\ref{fig:examplePreMRI}, where the images are registered (or spatially normalized) to a template, smoothed and finally segmented. The smoothing is an optional step, often used in procedures like segmentation or \ac{VBM}. 
 
 \begin{figure}[htp]
 	\myfloatalign
@@ -23,9 +23,9 @@ Spatial processing usually accounts for the differences in position, angles and 
 In this thesis, all the experiments in all image modalities involve spatial normalization. Smoothing, as well as segmentation, is only applied in some experiments that use \ac{MRI} images, such as the segmented images in chapter~\ref{ch:sbm} or the whole-brain analysis performed in chapter~\ref{ch:swpca}. 
 
 \subsection{Spatial Normalization or Registration}
-Spatial Normalization, also known as Registration, is the procedure that by which every subject's brain is mapped from their individual space to a standard reference system. Registered images allows our system to overcome the individual differences in position and anatomy by establishing a common reference space in which a given coordinate represent the same anatomical position in all brains in the dataset. 
+Spatial Normalization, also known as registration, is the procedure by which every subject's brain is mapped from their individual space to a standard reference system. Registered images allows our system to overcome the individual differences in position and anatomy by establishing a common reference space in which a given coordinate represent the same anatomical position in all brains in the dataset. 
 
-There exist a number of pieces of software widely used for registering images, such as FreeSurfer \cite{Reuter2010} or FSL (in the FLIRT and FNIRT package) \cite{Smith2004}, most of them perform linear, non-rigid and elastic transformations or a combination of these. In this work we have used the software SPM8 \cite{spm_book} to perform registration of all the datasets, including \ac{MRI}, \ac{SPECT} and \ac{PET} images. So, from this moment, we will focus on the registration as performed in the \ac{SPM8}. 
+There exist a number of pieces of software widely used for registering images, such as FreeSurfer \cite{Reuter2010} or FSL (in the FLIRT and FNIRT package) \cite{Smith2004}. They them perform linear, non-rigid and elastic transformations or a combination of these. In this work we have used the software \ac{SPM8} \cite{spm_book} to perform registration of all the \ac{MRI}, \ac{SPECT} and \ac{PET} datasets, and therefore we will focus on how it performs these procedures.
 
 Linear registration usually refers to the affine transformation, a matrix multiplication that includes 12 parameters for translation, rotation, scale, squeeze, shear and others: 
 \begin{equation}\label{eq:affine}
@@ -76,7 +76,7 @@ This matrix multiplication is performed globally, as it transforms the whole ima
 	\right]
 \end{align}
 
-The combination of all these operations result in the estimation of the twelve parameters that we found in Eq.~\ref{eq:affine}, which are the ones used in \ac{SPM8}. The estimation of these parameters is performed via the optimization of a cost function, that in \ac{SPM8} can be the minimum squared difference between the source image and the template \cite{spm_book} in the case of within-modality registration, or the mutual information in between-modality registration. These functions are also used in FLIRT \cite{Jenkinson2001}, whereas FreeSurfer uses the Tukey's biweight function (in {\ttfamily mri\_robust\_template}) \cite{Reuter2012}.
+The combination of all these operations result in the estimation of the twelve parameters in Eq.~\ref{eq:affine}, which are the ones used in \ac{SPM8}. The estimation of these parameters is performed via the optimization of a cost function, that in \ac{SPM8} can be the minimum squared difference between the source image and the template \cite{spm_book} in the case of within-modality registration, or the mutual information in between-modality registration. These functions are also used in FLIRT \cite{Jenkinson2001}, whereas FreeSurfer uses the Tukey's biweight function (in {\ttfamily mri\_robust\_template}) \cite{Reuter2012}.
 
 After the affine transform, the software usually performs a fine-tuning step via nonrigid transformations, to account for relevant a\-na\-to\-mi\-cal differences between subjects. Nonrigid transformations range from the use of radial basis functions, physical continuum models and the large deformation models, or diffeomorphisms, that \ac{SPM8} uses. These procedures work by estimating a warp-field and then, apply it to the affine-registered images. An example of the differences of using only affine registration and applying diffeomorphisms can be found at Figure~\ref{fig:diffeomorphisms}.
 
@@ -95,21 +95,21 @@ After the affine transform, the software usually performs a fine-tuning step via
 Sometimes we have several image modalities of the same subject, for example \ac{MRI} and \ac{PET} or functional \ac{MRI}, often acquired at the same time. In this particular case, we can use the higher resolution \ac{MRI} image to calculate the affine parameters and warping, and apply those to all modalities of the same subject. To do so, we perform a first co-registration, that is, a registration of the lower-resolution images (e.g. \ac{PET}) to its correspondent \ac{MRI} image. Being anatomically similar, the co-registration usually comprises a single affine transformation. Afterwards, we can proceed with the registration of that \ac{MRI} image to the template, and apply the same transformation to all its co-registered images. 
 
 \subsubsection{The MNI Space}
-In this thesis, all images are coregistered to the \acf{MNI} space \cite{Mazziotta2001}. This is the most widely used coordinate system, recently adopted by the International Consortium for Brain Mapping (ICBM) as its standard template. The three-dimensional coordinate system defined in \ac{MNI} was intended to replace the Tailarach space, a system based on a dissected brain, that was used to compose an atlas by Tailarach and Tournoux \cite{Talairach1988c}. The current template is known as ICBM152, and features the average of 152 normal \ac{MRI} scans matched to an older \ac{MNI} template using a nine parameter affine registration. 
+In this thesis, all images are coregistered to the \acf{MNI} space \cite{Mazziotta2001}. This is the most widely used coordinate system, recently adopted by the International Consortium for Brain Mapping (ICBM) as its standard template. The three-dimensional coordinate system defined in \ac{MNI} was intended to replace the Tailarach space, an older system based on a dissected brain, that was used to compose an atlas by Tailarach and Tournoux \cite{Talairach1988c}. The current template is known as ICBM152, and features the average of 152 normal \ac{MRI} scans matched to a previous version of the \ac{MNI} template using a nine parameter affine registration. 
 
 \subsection{Segmentation}
-When using \ac{MRI} images in this thesis, we often refer to \acf{GM} and \acf{WM} maps, which is the result of the segmentation of the original data. Segmentation aims at producing maps of the distribution of different tissues, and it generally addresses \ac{GM}, \ac{WM} and \ac{CSF} classes, although lately some software can output data for bone, soft tissue or very detailed functional regions and subregions \cite{Fischl2002}. 
+When using \ac{MRI} images in this thesis, we often refer to \acf{GM} and \acf{WM} maps, which is the result of the segmentation of the original data. Segmentation aims at producing maps of the distribution of different tissues, and it generally addresses \ac{GM}, \ac{WM} and \ac{CSF} classes, although some software can also output data for bone, soft tissue or very detailed functional regions and subregions \cite{Fischl2002}. 
 
 In this thesis we have used the \ac{VBM} toolbox of the \ac{SPM8} software, which yields \ac{GM}, \ac{WM} and \ac{CSF} maps. It features an \ac{EM} algorithm to model the distribution of the tissue classes as a mixture of gaussians and, by combining this distribution-based information with tissue probability maps using a bayesian rule, the software produces joint posterior probability maps for each tissue. To clean up the segmentation maps, a series of iterative dilations and erosions are used. Finally, since brain regions are expanded or contracted at the spatial normalization step, we can scale the segmented maps using modulation, producing final maps where the total amount of grey matter is preserved. 
 
 \section{Intensity Normalization}\label{sec:intensityPrep}
-Generally, structural modalities such as T1 and T2-weighted images are considered unitless, in contrast to functional imaging, in which each voxel's intensity represent the distribution of some biomarker, such as glucose metabolism, dopamine transporters, etc. These amounts are affected by many sources of variability that can affect the final values: contrast uptake, radiotracer decay time, metabolism, etc. Therefore, along with the previous spatial normalization, there is a need to normalize the intensities of the images, so that the amount they represent are comparable. 
+Generally, structural modalities such as T1 and T2-weighted images are considered unitless, in contrast to functional imaging, in which each voxel's intensity represent the distribution of some biomarker, such as glucose metabolism, dopamine transporters, etc. These amounts are affected by many sources of variability that can affect the final values: individual contrast uptake, radiotracer decay time, metabolism, etc. Therefore, along with the previous spatial normalization, there is a need to normalize the intensities of the images, so that the amount they represent is comparable between subjects.
 
-In the case of intensity normalization, the method acts as a linear transformation of the image, preserving fundamental information such as contrast between regions. This approximation estimates the new intensity values $I'$ as: 
+In the case of intensity normalization, the method acts as a linear transformation of the image intensities, preserving fundamental information such as contrast between regions. This approximation estimates the new intensity values $I'$ as: 
 \begin{equation}
 	I' = I/I_p 
 \end{equation}
-where $I_p$ is a constant parameter that is unique for each image. After this division, the new intensities would be directly comparable. The technique used to compute the normalization parameter varies, ranging from the simplest normalization to the maximum \cite{Salas-Gonzalez2009,Martinez-Murcia20129676} to complex methodologies that use assumptions about the image's \ac{PDF}. 
+where $I_p$ is a constant parameter, unique for each image. After this division, the new intensities should be directly comparable. The technique used to compute the normalization parameter varies, ranging from the simplest normalization to the maximum \cite{Salas-Gonzalez2009,Martinez-Murcia20129676} to complex methodologies that use assumptions about the image's \ac{PDF}. 
 
 The \emph{normalization to the maximum} strategy computes $I_p$ as the average value of the 95th bin of the histogram of the image. In other words, this mean averaging the 5\% higher intensity values and use this mean as $I_p$. Another useful approach is the so-called \emph{integral normalization}, which computes $I_p$ as the sum of all values in the image. 
 
@@ -127,7 +127,7 @@ where $\gamma*$ and $\gamma$ are the dispersion parameters of the alpha-stable i
 
 Despite traditionally structural modalities such as \ac{MRI} did not use intensity normalization, there exist a new tendency towards the use of \ac{qT1} and \ac{qT2} images \cite{Weiskopf2013} that provide biomarkers for absolute measures such as myelination, water and iron levels. This strategy is especially designed to overcome different sources of variability that affect multicentre studies, e.g. magnetic field inhomogeneity, noise, evolution of the scanners, etc. The role of those in multi-centre studies is addressed at chapter~\ref{ch:swpca}. 
 
-See Figure~\ref{fig:comparisonIntNorm} for a comparison between different strategies of intensity normalization on the same images. 
+See Figure~\ref{fig:comparisonIntNorm} for a comparison between different strategies of intensity normalization on the same DaTSCAN images. 
 
 \begin{figure}[bth]
 	\myfloatalign
@@ -159,7 +159,8 @@ A particular case where $k=N$ (where $N$ is the exact number of subjects in the 
 \end{figure}
 
 
-Using $k=10$ is assumed as a good compromise between variance and bias in many works \cite{Kohavi1995,Hastie2009}. In this thesis, when referring to $k$-fold, we often use stratified cross validation, which is a subclass of $k$-fold where the distribution of classes within each fold is similar to the distribution of classes in the whole dataset, making the estimates more accurate \cite{Kohavi1995}. 
+A $k=10$ is assumed as a good compromise between variance and bias in many works \cite{Kohavi1995,Hastie2009}. In this thesis, when referring to $k$-fold, we often use 10-fold stratified cross validation, which is a subclass of $k$-fold with 10 divisions where the distribution of classes within each fold is similar to the distribution of classes in the whole dataset, making the estimates more accurate \cite{Kohavi1995}. 
+
 \subsection{Classification Performance}
 From each iteration in the \ac{CV} loop, a confusion matrix is obtained, from which all performance measures will be obtained. 
 
@@ -188,4 +189,4 @@ The confusion matrix (see Table~\ref{tab:confmat}) accounts for the number of co
 \text{spec} & = \frac{TN}{TN + FP}
 \end{align}
 
-Sensitivity is also known as \ac{TP} rate or recall in the literature, and specificity is known as \ac{TN} rate. Sensitivity is widely used in the medical literature, since it gives an idea of how ``sensitive'' is our model to the patterns related to a disease (usually considered the positive). 
+Sensitivity is also known as \ac{TP} rate or recall in the literature, and specificity is known as \ac{TN} rate. Sensitivity is widely used in the medical literature, since it gives an idea of how ``sensitive'' is our model to the patterns related to a disease (usually considered a positive detection or class). 
