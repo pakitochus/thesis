@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016/Debian) (preloaded format=pdflatex 2016.12.7)  13 APR 2017 14:23
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016/Debian) (preloaded format=pdflatex 2016.12.7)  13 APR 2017 17:22
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -5186,9 +5186,6 @@ Package pdftex.def Info: Graphics/ch5/01-flowdiagram-eps-converted-to.pdf used
 on input line 17.
 (pdftex.def)             Requested size: 340.5772pt x 63.39369pt.
  [67 <./Graphics/ch5/01-flowdiagram-eps-converted-to.pdf>]
-Package acronym Info: Label `acro:GLCM' newly defined as it shall be overridden
-
-although it is yet undefined on input line 27.
 Package epstopdf Info: Source file: <Graphics/ch5/comparisonIth.eps>
 (epstopdf)                    date: 2017-03-04 14:19:04
 (epstopdf)                    size: 836385 bytes
@@ -5207,8 +5204,11 @@ File: Graphics/ch5/comparisonIth-eps-converted-to.pdf Graphic file (type pdf)
 Package pdftex.def Info: Graphics/ch5/comparisonIth-eps-converted-to.pdf used o
 n input line 47.
 (pdftex.def)             Requested size: 340.5772pt x 127.71498pt.
+Package acronym Info: Label `acro:GLCM' newly defined as it shall be overridden
 
-Underfull \vbox (badness 4168) has occurred while \output is active []
+although it is yet undefined on input line 55.
+
+Underfull \vbox (badness 2126) has occurred while \output is active []
 
  [68]
 [69 <./Graphics/ch5/comparisonIth-eps-converted-to.pdf>]
@@ -5219,12 +5219,12 @@ Package amsmath Warning: Foreign command \over;
 
 [70] [71]
 Package epstopdf Info: Source file: <Graphics/ch5/featuresIthdis_no.eps>
-(epstopdf)                    date: 2017-03-05 21:15:31
-(epstopdf)                    size: 32804 bytes
+(epstopdf)                    date: 2017-04-13 17:02:28
+(epstopdf)                    size: 32099 bytes
 (epstopdf)             Output file: <Graphics/ch5/featuresIthdis_no-eps-convert
 ed-to.pdf>
-(epstopdf)                    date: 2017-03-05 21:15:39
-(epstopdf)                    size: 23439 bytes
+(epstopdf)                    date: 2017-04-13 17:03:13
+(epstopdf)                    size: 22922 bytes
 (epstopdf)             Command: <repstopdf --outfile=Graphics/ch5/featuresIthdi
 s_no-eps-converted-to.pdf Graphics/ch5/featuresIthdis_no.eps>
 (epstopdf)             \includegraphics on input line 115.
@@ -5259,12 +5259,12 @@ Package pdftex.def Info: Graphics/ch5/featuresIthcum_no-eps-converted-to.pdf us
 ed on input line 116.
 (pdftex.def)             Requested size: 189.21083pt x 94.60602pt.
 Package epstopdf Info: Source file: <Graphics/ch5/featuresIthdis_max.eps>
-(epstopdf)                    date: 2017-03-05 21:15:16
-(epstopdf)                    size: 32283 bytes
+(epstopdf)                    date: 2017-04-13 17:02:53
+(epstopdf)                    size: 31578 bytes
 (epstopdf)             Output file: <Graphics/ch5/featuresIthdis_max-eps-conver
 ted-to.pdf>
-(epstopdf)                    date: 2017-03-05 21:15:39
-(epstopdf)                    size: 23447 bytes
+(epstopdf)                    date: 2017-04-13 17:03:13
+(epstopdf)                    size: 22931 bytes
 (epstopdf)             Command: <repstopdf --outfile=Graphics/ch5/featuresIthdi
 s_max-eps-converted-to.pdf Graphics/ch5/featuresIthdis_max.eps>
 (epstopdf)             \includegraphics on input line 117.
@@ -5299,12 +5299,12 @@ Package pdftex.def Info: Graphics/ch5/featuresIthcum_max-eps-converted-to.pdf u
 sed on input line 118.
 (pdftex.def)             Requested size: 189.21083pt x 94.60602pt.
 Package epstopdf Info: Source file: <Graphics/ch5/featuresIthdis_int.eps>
-(epstopdf)                    date: 2017-03-05 21:15:23
-(epstopdf)                    size: 32786 bytes
+(epstopdf)                    date: 2017-04-13 17:03:01
+(epstopdf)                    size: 32081 bytes
 (epstopdf)             Output file: <Graphics/ch5/featuresIthdis_int-eps-conver
 ted-to.pdf>
-(epstopdf)                    date: 2017-03-05 21:15:39
-(epstopdf)                    size: 23483 bytes
+(epstopdf)                    date: 2017-04-13 17:03:14
+(epstopdf)                    size: 22967 bytes
 (epstopdf)             Command: <repstopdf --outfile=Graphics/ch5/featuresIthdi
 s_int-eps-converted-to.pdf Graphics/ch5/featuresIthdis_int.eps>
 (epstopdf)             \includegraphics on input line 119.
@@ -5338,11 +5338,15 @@ df)
 Package pdftex.def Info: Graphics/ch5/featuresIthcum_int-eps-converted-to.pdf u
 sed on input line 120.
 (pdftex.def)             Requested size: 189.21083pt x 94.60602pt.
- [72] [73 <./Graphics/ch5/featuresIthdis_no-eps-converted-to.pdf> <./Graphics/c
-h5/featuresIthcum_no-eps-converted-to.pdf> <./Graphics/ch5/featuresIthdis_max-e
-ps-converted-to.pdf> <./Graphics/ch5/featuresIthcum_max-eps-converted-to.pdf> <
-./Graphics/ch5/featuresIthdis_int-eps-converted-to.pdf> <./Graphics/ch5/feature
-sIthcum_int-eps-converted-to.pdf>]
+
+Underfull \vbox (badness 1087) has occurred while \output is active []
+
+ [72]
+[73 <./Graphics/ch5/featuresIthdis_no-eps-converted-to.pdf> <./Graphics/ch5/fea
+turesIthcum_no-eps-converted-to.pdf> <./Graphics/ch5/featuresIthdis_max-eps-con
+verted-to.pdf> <./Graphics/ch5/featuresIthcum_max-eps-converted-to.pdf> <./Grap
+hics/ch5/featuresIthdis_int-eps-converted-to.pdf> <./Graphics/ch5/featuresIthcu
+m_int-eps-converted-to.pdf>]
 Package epstopdf Info: Source file: <Graphics/ch5/features_acc.eps>
 (epstopdf)                    date: 2017-03-07 11:08:45
 (epstopdf)                    size: 447694 bytes
@@ -5355,7 +5359,7 @@ eps-converted-to.pdf Graphics/ch5/features_acc.eps>
 (epstopdf)             \includegraphics on input line 134.
 Package epstopdf Info: Output file is already uptodate.
 
-<Graphics/ch5/features_acc-eps-converted-to.pdf, id=5472, 798.985pt x 456.70625
+<Graphics/ch5/features_acc-eps-converted-to.pdf, id=5469, 798.985pt x 456.70625
 pt>
 File: Graphics/ch5/features_acc-eps-converted-to.pdf Graphic file (type pdf)
  <use Graphics/ch5/features_acc-eps-converted-to.pdf>
@@ -5363,7 +5367,7 @@ Package pdftex.def Info: Graphics/ch5/features_acc-eps-converted-to.pdf used on
  input line 134.
 (pdftex.def)             Requested size: 570.46338pt x 326.09648pt.
 
-Overfull \hbox (3.97617pt too wide) in paragraph at lines 145--159
+Overfull \hbox (5.96817pt too wide) in paragraph at lines 145--159
  [][] 
  []
 
@@ -5373,7 +5377,7 @@ Overfull \hbox (3.29213pt too wide) in paragraph at lines 177--177
  []
 
 
-Overfull \hbox (3.97612pt too wide) in paragraph at lines 177--177
+Overfull \hbox (5.96812pt too wide) in paragraph at lines 177--177
 []|[]| 
  []
 
@@ -5395,7 +5399,7 @@ th_no-eps-converted-to.pdf Graphics/ch5/accuracyOverIth_no.eps>
 (epstopdf)             \includegraphics on input line 191.
 Package epstopdf Info: Output file is already uptodate.
 
-<Graphics/ch5/accuracyOverIth_no-eps-converted-to.pdf, id=5533, 361.35pt x 216.
+<Graphics/ch5/accuracyOverIth_no-eps-converted-to.pdf, id=5530, 361.35pt x 216.
 81pt>
 File: Graphics/ch5/accuracyOverIth_no-eps-converted-to.pdf Graphic file (type p
 df)
@@ -5415,7 +5419,7 @@ th_int-eps-converted-to.pdf Graphics/ch5/accuracyOverIth_int.eps>
 (epstopdf)             \includegraphics on input line 192.
 Package epstopdf Info: Output file is already uptodate.
 
-<Graphics/ch5/accuracyOverIth_int-eps-converted-to.pdf, id=5534, 361.35pt x 216
+<Graphics/ch5/accuracyOverIth_int-eps-converted-to.pdf, id=5531, 361.35pt x 216
 .81pt>
 File: Graphics/ch5/accuracyOverIth_int-eps-converted-to.pdf Graphic file (type 
 pdf)
@@ -5435,7 +5439,7 @@ th_max-eps-converted-to.pdf Graphics/ch5/accuracyOverIth_max.eps>
 (epstopdf)             \includegraphics on input line 193.
 Package epstopdf Info: Output file is already uptodate.
 
-<Graphics/ch5/accuracyOverIth_max-eps-converted-to.pdf, id=5535, 361.35pt x 216
+<Graphics/ch5/accuracyOverIth_max-eps-converted-to.pdf, id=5532, 361.35pt x 216
 .81pt>
 File: Graphics/ch5/accuracyOverIth_max-eps-converted-to.pdf Graphic file (type 
 pdf)
@@ -5444,9 +5448,6 @@ Package pdftex.def Info: Graphics/ch5/accuracyOverIth_max-eps-converted-to.pdf
 used on input line 193.
 (pdftex.def)             Requested size: 189.21083pt x 113.5259pt.
  [76]
-[77 <./Graphics/ch5/accuracyOverIth_no-eps-converted-to.pdf> <./Graphics/ch5/ac
-curacyOverIth_int-eps-converted-to.pdf> <./Graphics/ch5/accuracyOverIth_max-eps
--converted-to.pdf>]
 Package epstopdf Info: Source file: <Graphics/ch5/features_avAccPPMI.eps>
 (epstopdf)                    date: 2017-03-12 12:31:02
 (epstopdf)                    size: 31911 bytes
@@ -5459,7 +5460,7 @@ cPPMI-eps-converted-to.pdf Graphics/ch5/features_avAccPPMI.eps>
 (epstopdf)             \includegraphics on input line 204.
 Package epstopdf Info: Output file is already uptodate.
 
-<Graphics/ch5/features_avAccPPMI-eps-converted-to.pdf, id=5652, 361.35pt x 216.
+<Graphics/ch5/features_avAccPPMI-eps-converted-to.pdf, id=5538, 361.35pt x 216.
 81pt>
 File: Graphics/ch5/features_avAccPPMI-eps-converted-to.pdf Graphic file (type p
 df)
@@ -5479,7 +5480,7 @@ cVDLN-eps-converted-to.pdf Graphics/ch5/features_avAccVDLN.eps>
 (epstopdf)             \includegraphics on input line 205.
 Package epstopdf Info: Output file is already uptodate.
 
-<Graphics/ch5/features_avAccVDLN-eps-converted-to.pdf, id=5653, 361.35pt x 216.
+<Graphics/ch5/features_avAccVDLN-eps-converted-to.pdf, id=5539, 361.35pt x 216.
 81pt>
 File: Graphics/ch5/features_avAccVDLN-eps-converted-to.pdf Graphic file (type p
 df)
@@ -5499,7 +5500,7 @@ cVDLV-eps-converted-to.pdf Graphics/ch5/features_avAccVDLV.eps>
 (epstopdf)             \includegraphics on input line 206.
 Package epstopdf Info: Output file is already uptodate.
 
-<Graphics/ch5/features_avAccVDLV-eps-converted-to.pdf, id=5654, 361.35pt x 216.
+<Graphics/ch5/features_avAccVDLV-eps-converted-to.pdf, id=5540, 361.35pt x 216.
 81pt>
 File: Graphics/ch5/features_avAccVDLV-eps-converted-to.pdf Graphic file (type p
 df)
@@ -5508,18 +5509,19 @@ Package pdftex.def Info: Graphics/ch5/features_avAccVDLV-eps-converted-to.pdf u
 sed on input line 206.
 (pdftex.def)             Requested size: 189.21083pt x 113.5259pt.
 
+Underfull \vbox (badness 2027) has occurred while \output is active []
+
+ [77 <./Graphics/ch5/accuracyOverIth_no-eps-converted-to.pdf> <./Graphics/ch5/a
+ccuracyOverIth_int-eps-converted-to.pdf> <./Graphics/ch5/accuracyOverIth_max-ep
+s-converted-to.pdf>]
 Underfull \vbox (badness 4531) has occurred while \output is active []
 
  [78 <./Graphics/ch5/features_avAccPPMI-eps-converted-to.pdf> <./Graphics/ch5/f
 eatures_avAccVDLN-eps-converted-to.pdf> <./Graphics/ch5/features_avAccVDLV-eps-
-converted-to.pdf>]
-Underfull \vbox (badness 3803) has occurred while \output is active []
-
- [79]
-[80]
+converted-to.pdf>] [79]
 Package acronym Info: Label `acro:SVD' newly defined as it shall be overridden
 although it is yet undefined on input line 264.
- [81]
+ [80]
 Package epstopdf Info: Source file: <Graphics/ch5/selectedFeaturesPPMI.eps>
 (epstopdf)                    date: 2017-03-12 20:25:04
 (epstopdf)                    size: 27818 bytes
@@ -5532,7 +5534,7 @@ resPPMI-eps-converted-to.pdf Graphics/ch5/selectedFeaturesPPMI.eps>
 (epstopdf)             \includegraphics on input line 275.
 Package epstopdf Info: Output file is already uptodate.
 
-<Graphics/ch5/selectedFeaturesPPMI-eps-converted-to.pdf, id=5801, 578.16pt x 43
+<Graphics/ch5/selectedFeaturesPPMI-eps-converted-to.pdf, id=5794, 578.16pt x 43
 3.62pt>
 File: Graphics/ch5/selectedFeaturesPPMI-eps-converted-to.pdf Graphic file (type
  pdf)
@@ -5552,7 +5554,7 @@ resVDLN-eps-converted-to.pdf Graphics/ch5/selectedFeaturesVDLN.eps>
 (epstopdf)             \includegraphics on input line 276.
 Package epstopdf Info: Output file is already uptodate.
 
-<Graphics/ch5/selectedFeaturesVDLN-eps-converted-to.pdf, id=5802, 578.16pt x 43
+<Graphics/ch5/selectedFeaturesVDLN-eps-converted-to.pdf, id=5795, 578.16pt x 43
 3.62pt>
 File: Graphics/ch5/selectedFeaturesVDLN-eps-converted-to.pdf Graphic file (type
  pdf)
@@ -5572,7 +5574,7 @@ resVDLV-eps-converted-to.pdf Graphics/ch5/selectedFeaturesVDLV.eps>
 (epstopdf)             \includegraphics on input line 277.
 Package epstopdf Info: Output file is already uptodate.
 
-<Graphics/ch5/selectedFeaturesVDLV-eps-converted-to.pdf, id=5803, 578.16pt x 43
+<Graphics/ch5/selectedFeaturesVDLV-eps-converted-to.pdf, id=5796, 578.16pt x 43
 3.62pt>
 File: Graphics/ch5/selectedFeaturesVDLV-eps-converted-to.pdf Graphic file (type
  pdf)
@@ -5580,12 +5582,15 @@ File: Graphics/ch5/selectedFeaturesVDLV-eps-converted-to.pdf Graphic file (type
 Package pdftex.def Info: Graphics/ch5/selectedFeaturesVDLV-eps-converted-to.pdf
  used on input line 277.
 (pdftex.def)             Requested size: 189.21083pt x 141.90407pt.
-
-Underfull \vbox (badness 8038) has occurred while \output is active []
+ [81]
+Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [82 <./Graphics/ch5/selectedFeaturesPPMI-eps-converted-to.pdf> <./Graphics/ch5
 /selectedFeaturesVDLN-eps-converted-to.pdf> <./Graphics/ch5/selectedFeaturesVDL
-V-eps-converted-to.pdf>]) (./Chapters/Chapter06.tex [83] [84]
+V-eps-converted-to.pdf>]) (./Chapters/Chapter06.tex [83] [84
+
+
+]
 chapter 6.
 Package acronym Info: Label `acro:LBP' newly defined as it shall be overridden
 although it is yet undefined on input line 11.
@@ -5611,10 +5616,7 @@ on input line 15.
 
 Underfull \vbox (badness 2818) has occurred while \output is active []
 
- [85
-
-
- <./Graphics/ch6/01-flowdiagram-eps-converted-to.pdf>]
+ [85 <./Graphics/ch6/01-flowdiagram-eps-converted-to.pdf>]
 <Graphics/ch6/02-projection.pdf, id=5896, 757.83125pt x 578.16pt>
 File: Graphics/ch6/02-projection.pdf Graphic file (type pdf)
 
@@ -5714,7 +5716,7 @@ although it is yet undefined on input line 205.
 Package acronym Info: Label `acro:RBF' newly defined as it shall be overridden
 although it is yet undefined on input line 236.
  [95]
-<Graphics/ch6/cuts.pdf, id=6240, 1043.68521pt x 943.86073pt>
+<Graphics/ch6/cuts.pdf, id=6241, 1043.68521pt x 943.86073pt>
 File: Graphics/ch6/cuts.pdf Graphic file (type pdf)
 
 <use Graphics/ch6/cuts.pdf>
@@ -6979,7 +6981,7 @@ Package logreq Info: Writing requests to 'Tesis.run.xml'.
 Here is how much of TeX's memory you used:
  31666 strings out of 493013
  588721 string characters out of 6135682
- 1686043 words of memory out of 5000000
+ 1686060 words of memory out of 5000000
  33238 multiletter control sequences out of 15000+600000
  182499 words of font info for 300 fonts, out of 8000000 for 9000
  1147 hyphenation exceptions out of 8191
@@ -7013,10 +7015,10 @@ hvr.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/palatino/uplb8a.pfb></us
 r/share/texlive/texmf-dist/fonts/type1/urw/palatino/uplr8a.pfb></usr/share/texl
 ive/texmf-dist/fonts/type1/urw/palatino/uplri8a.pfb></usr/share/texlive/texmf-d
 ist/fonts/type1/urw/zapfding/uzdr.pfb>
-Output written on Tesis.pdf (240 pages, 23468989 bytes).
+Output written on Tesis.pdf (240 pages, 23467202 bytes).
 PDF statistics:
  10982 PDF objects out of 12825 (max. 8388607)
- 6133 compressed objects within 62 object streams
+ 6136 compressed objects within 62 object streams
  1033 named destinations out of 1200 (max. 500000)
  54049 words of extra memory for PDF output out of 61914 (max. 10000000)
 
