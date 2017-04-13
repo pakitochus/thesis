@@ -8,7 +8,7 @@ We have already stated the motivation and objectives of this thesis. Now, we wil
 \section{Introduction to Neuroimaging}\label{sec:neuroimaging}
 Medical imaging refers to all types of 2D, 3D and 4D images used in clinical practice. These involve many different modalities, among them X-rays, ultrasound, endoscopy, microscopy, etc. In neuroimaging, the most extended is by far \ac{MRI}, which provides intensity maps that represent the internal structure of the brain. Other modalities are aimed at studying the function of the brain, by injecting radioactive ligands that, linked to a receptor, can measure its distribution. This is the case of \ac{PET} and \ac{SPECT}.
 
-\subsection{Magnetic Resonance Imaging}
+\subsection{\acf{MRI}}
 \acf{MRI} is perhaps the most widespread in neuroimaging, given its ability to visualize both structural and functional (in functional \ac{MRI}) properties of the brain, and, in contrast to other imaging modalities, is considered non-invasive. \ac{MRI} uses strong magnetic fields to excite certain atomic nuclei, that can absorb and emit this energy. 
 
 \begin{figure}[htp]
@@ -32,7 +32,7 @@ where $\gamma$ depends on the nuclei, which in the case of hydrogen, $\gamma = 4
 
 The \ac{RF} signal is measured during the relaxation time, and two different relaxation times are set: the T1 (spin-lattice) relaxation time and the T2 (spin-spin) relaxation time. The T1 time is the time during which nuclei emit energy to the adjacent tissue and realign to the longitudinal plane (z axis), whereas the T2 time refers to the time when nuclei realign to the transversal plane (y axis). These times are used to create T1-weighted and T2-weighted images (see Figure~\ref{fig:example_MRI}). T1-weighted images allow to distinguish between \ac{GM} and \ac{WM} in the cerebral cortex, to identify fatty tissue, and generally, obtain structural information. Conversely, T2-weighed images are used to assess \ac{CSF} or to visualize and identify \ac{WM} lessions. 
 
-\subsection{Single Photon Emission Computed Tomography}
+\subsection{\acf{SPECT}}
 The \acf{SPECT} is based on the principles of \ac{CT}, by which a series of signal acquisition at different angles can be reconstructed back into a bidimensional distribution of the signal. In \ac{SPECT}, a gamma photon emitting radioisotope is linked to a pharmaceutical that binds to a given biomarker, generating a radiopharmaecutical or agent. This agent is injected into the patient, and after a certain time in which the radiopharmaceutical is distributed, the patient is introduced into the \ac{SPECT}-\ac{CT} scan. 
 
 Afterwards, the scanner performs a series of acquisitions at different planes and angles from the body, from which the gamma signal is measured. For each plane, all acquisitions at each angle are pooled and a single two-dimensional image is reconstructed using a \ac{FBP} algorithm, or Radon inversion formula \cite{Herman2009l}, which derives from the Fourier's Theorem. A total of 180 projections per plane, using an angular resolution of 2 degrees, are usually taken. 
@@ -49,7 +49,7 @@ There exist a number of radiopharmaceutical used in clinical practice, and there
 
 Additionally, we use images generated using the agent Ioflupane ($^{123}$I), a cocaine analog with high binding affinity for \ac{DAT}. It is used fundamentally in the assessment of \ac{PD}, given that the disease is associated with a loss of dopaminergic neurons in the striatal region. 
 
-\subsection{Positron Emission Tomography}
+\subsection{\acf{PET}}
 The \acf{PET} is a technique similar to \ac{SPECT}, but in this case, the agent used and the equipment is designed to deal with a pair of gamma photons resulting of the annihilation of a positron with its corresponding antiparticle, the electron. The pair of photons are generated in opposite directions, and the detection depends on them being simultaneously or coincidently detected at the receptor. The receptor comprises a scintillator which emits light when the gamma photon incides, and a detector, usually a photomultiplier tube or silicon avalanche photodiodes.
 
 It uses the same \ac{FBP} algorithm as \ac{SPECT} in the reconstruction of the images, and a similar strategy for acquiring the signal at different angles. However, the amount of data is smaller than in \ac{SPECT}, and therefore, the reconstruction procedure is harder. As a result, \ac{PET} scanner operation is considered more costly than \ac{SPECT} \cite{Carlson2016}.  
@@ -64,7 +64,7 @@ It uses the same \ac{FBP} algorithm as \ac{SPECT} in the reconstruction of the i
 The agent used in the images that we have processed is PET-FDG, also known as Fludeoxyglucose ($^{18}$F). It is a glucose analogue that allows us to measure the glucose metabolism in the brain. It is widely used in neurology \cite{Newberg2002} and cancer detection \cite{Kelloff2005}, since it can be correlated with cellular activity. 
 
 \origsection{Medical Background}\label{sec:disorders}
-\subsection{Alzheimer's Disease}
+\subsection{\acf{AD}}
 \acf{AD} is the most common cause of dementia in the world, with more than 46 million people affected, and it is likely to increase up to 135.5 million by 2050 \cite{Association2016}. Its causes are still not clear, but it is characterized by deposits of high amounts of structures such as Amyloid-$\beta$ (A$\beta$) plaques or neurofibrillary tangles accompanied by synaptic dysfunction and neurodegeneration that eventually lead to cell death \cite{Ballard2011,Sevigny2016}.
 
 Diagnosis of \ac{AD} is often based on the clinical history of the patient, using cognitive tests along with medical imaging and blood tests. A definite diagnosis can only be addressed post-mortem, via a direct examination of the brain tissue \cite{Ballard2011}. Cognitive tests such as \textit{Mini Mental State Exam} or \textit{Clinical Dementia Ratio} are widely used in clinical practice. 
@@ -80,10 +80,10 @@ Recently, new more specific radiopharmaceuticals have been developed, among them
 
 % DONE
 
-\subsection{Parkinsonism}
+\subsection{\acf{PKS}}
 \acf{PKS} or Parkinsonian Syndrome is the second most common neurodegenerative disease in the world, with a prevalence of 1-3\% in the elder population (over 65 years)\cite{Eckert2007}. It is characterized by hypokinesia, rigidity, tremor and postural instability \cite{Eckert2007}. It is not a single disease itself, but a wide range of conditions that share similar symptoms. The most common cause of \ac{PKS} is \acf{PD}, but other possible causes include toxins, a few metabolic diseases, and other extrapyramidal syndromes such as Multiple System Atrophy, Progressive Supranuclear Palsy or Cortico-Basal Degeneration \cite{Christine2004,tatsch2008extrapyramidal}. 
 
-\subsubsection{Parkinson's Disease}
+\subsubsection{\acf{PD}}
 The etiology of \acf{PD} involves the progressive loss of \acf{DAT} of the nigrostriatal pathway. This causes a decrease in the dopamine content of the striatum, since the pathway connects the substantia nigra to the striatum. 
 
 In \ac{PD}, structural imaging such as \ac{MRI} has limited value, since structural abnormalities can be seen only in the latter stages. Nevertheless, in molecular imaging, a number of radiopharmaceuticals have been proposed to assess the levels of pre and post-synaptic \ac{DAT} at the striatum. Among them, the $^{123}$I-ioflupane (better known by its tradename DaTSCAN) is perhaps the most popular. DaTSCAN binds to the \ac{DAT} at the striatum \cite{Winogrodzka2003,PunalRioboo2007,Eckert2007}, allowing the estimation of \ac{DAT} density by means of a \ac{SPECT} scanner. In DaTSCAN images, a reduced uptake at the striatum is a clear indication of \ac{DAT} loss, and therefore, of \ac{PD} \cite{PunalRioboo2007}.
@@ -93,7 +93,7 @@ Among the extrapyramidal syndroms of \ac{PKS}, the most relevant diagnoses are M
 
 Structural imaging, as in the previous case, has little value here. To establish a differential diagnosis with \ac{PD}, different drugs have been proposed. DaTSCAN is widely used to assess pre-synaptic dopaminergic loss, but in a post-synaptic level, one of the most extended is $^{18}$F-DMFP-PET \cite{Segovia2016a}. However, in this thesis we have focused only on the pre-synaptic level, and therefore, in the diagnosis of \ac{PD}. 
 
-\subsection{Autism Spectrum Disorder}
+\subsection{\acf{ASD}}
 \acf{ASD} is a neurodevelopmental syndrome characterized by social and communication impairment as well as restricted, repetitive patterns of behaviour, interests or activities. Its origins are still unknown, although research suggest \cite{Szatmari1999} that there exist genetic risk factors. 
 
 The evidence of either functionally or structurally affected areas in the brain is a major concern \cite{Ecker2014,haar2014anatomical}. In the latter years, many strategies have been explored to recruit large samples in order to detect significant differences between affected and non-affected subjects. This has been addressed by initiatives such as the \ac{MRC-AIMS} \cite{Ecker2012,Ecker2013} or the Autism Brain Imaging Data Exchange (ABIDE) \cite{DiMartino2014}. 
@@ -102,7 +102,7 @@ The evidence of either functionally or structurally affected areas in the brain 
 \section{Voxelwise Analyses}\label{sec:vwanalyses}
 Traditional analysis of neuroimaging involves visual analysis by experts clinicians, or semi-quantitative analysis of \acp{ROI}. With the rise of neuroimaging in the mid-nineties, some computer-aided solutions appeared, of which the most extended are the widely known \acf{SPM} \cite{Friston1994} and its extension to structural imaging \acf{VBM} \cite{Ashburner2000}. 
 
-\subsection{Statistical Parametric Mapping}
+\subsection{\acf{SPM}}
 \acf{SPM} is a new methodology to automatically examine differences in brain activity in functional imaging studies involving \ac{fMRI} or \ac{PET}, firstly proposed by Friston in \cite{Friston1994}. The technique can be applied either to static images (e.g., \ac{PET}) or timeseries (\ac{fMRI}), using inference techniques based on hypothesis testing, in order to construct the \ac{GLM} that better describes the variability in the data. 
 
 Statistical hypothesis testing involves constructing a pair of hypotheses: $H_0$, or the null hypothesis, that states no relationship between variables; and $H_1$, the alternative hypothesis. In neuroimaging, $H_0$ usually means that there are no relevant differences between classes (for example, between patients affected by \acf{AD} and \ac{CTL}), and $H_1$ implies that there is a significant difference. Many different tests such as massive univariate $t$-Test or \ac{ANOVA} (see chapter~\ref{ch:decomposition} for more information on these techniques) can be used in the \ac{SPM} software \cite{spm_book}, by using a design matrix that describes a $t$ or $F$ based contrast (for $t$-Test and \ac{ANOVA} respectively). These terms are generally referred to as $Z$-values, namely the signed number of standard deviations an observation is above the mean. 
@@ -121,7 +121,7 @@ $p$-values are very extended in neuroimaging, representing the probability of a 
 
 Although \ac{SPM}'s main feature is the estimation of differences, the term has been extended to cover the whole process performed by the \ac{SPM} software. That is, it generally involves registration to a template, intensity normalization, smoothing, the proper \ac{SPM} difference estimation and the display of the results. An overview of these procedures is provided at chapter~\ref{ch:preprocessing}. 
 
-\subsection{Voxel Based Morphometry}
+\subsection{\acf{VBM}}
 \acf{VBM} can be considered an extention of \ac{SPM} applied to structural \ac{MRI} images \cite{Ashburner2000}. The procedure involves preprocessing (see chapter~\ref{ch:preprocessing}), where smoothing is applied to reduce smaller anatomical differences. Afterwards, a \ac{GLM} is applied to each voxel in the images, and a $Z$-score map similar to Figure~\ref{fig:example_SPM} is produced. 
 
 Smoothing is more important in \ac{VBM} than in regular \ac{SPM}, since \ac{MRI} images have higher resolution and are less noisy than functional images. Larger smoothing kernels will miss out smaller regions, while smaller kernel can lead to artifacts in the generated $Z$-maps, including misalignment of brain structures, differences in folding patterns or misclassification of tissue types \cite{Martinez-Murcia2016book}. Therefore, the kernel size must be carefully chosen, usually using a-priori knowledge about the regions affected, and always double checking for artifacts and reproducibility. 
@@ -201,7 +201,7 @@ There are two major branches of machine learning: supervised and unsupervised le
 
 For simplicity, in this thesis, when talking about \ac{CAD}, we will always refer to automatic \ac{CAD} systems. That is, those that, once trained with previously known data, can predict the outcome of new, unseen data. A typical \ac{CAD} system, like the one in Figure~\ref{fig:ni-cad}, consists of input data (in our case, neuroimaging), feature extraction, feature selection and a classification step. The most basic is the \acf{VAF} approach, in which all voxels are considered as features, and then used as input to the classifier \cite{Stoeckel04}. However, many more advances can be made in this field by exploring different types of 
 
-\subsection{Voxels as Features}
+\subsection{\acf{VAF}}
 \acf{VAF} \cite{Stoeckel04} is an example of the simplest \ac{CAD} system. It was originally proposed for evaluating and performing automatic diagnosis of \ac{AD} using functional \ac{SPECT} imaging. It uses a standard preprocessing (registration, intensity normalization) and a \ac{SVC} (See Appendix~\ref{ch:svm}) to predict the class of an image using all its intensities as features. Feature extraction, here, considers all voxels, and then there is no feature selection applied. 
 
 It has been used in many works as a baseline \cite{Spetsieris2009,Salas-Gonzalez2009,Martinez-Murcia2016}, since it is comparable to the performance achieved by expert physicians using visual analysis \cite{Stoeckel04}. The weight vector of the \ac{SVC} can be inverse transformed to the dimension of the original images, and therefore provide a visual map that reflects the most influential voxels, in a similar way to the $Z$-maps of \ac{SPM} and \ac{VBM}. 

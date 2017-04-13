@@ -3,7 +3,7 @@
 %*******************************************************
 % If problems with the headers: get headings in appendix etc. right
 %\markboth{\spacedlowsmallcaps{Appendix}}{\spacedlowsmallcaps{Appendix}}
-\chapter{Background on Support Vector Machines}\label{ch:svm}
+\chapter{Background on \acfp{SVM}}\label{ch:svm}
 \acfp{SVM}, introduced in the late 70s \cite{Vapnik1998}, are a set of related supervised learning methods widely used in classification (\acp{SVC}), regression analysis and, more generally, in any field of machine learning. They have been extensively used in neuroimaging applications such as the ones presented in this thesis \cite{Martinez-Murcia2013255,Martinez-Murcia201458,martinez2014parametrization,Martinez-Murcia2015,Martinez-Murcia2016,Martinez-Murcia2016a} and many others \cite{Stoeckel04,Towey2011,Illan2011,Illan2012,Ortiz2013,Segovia2016a}.
 
 The simplest \ac{SVC} assumes the data to be linearly separable. Each sample of a given dataset is considered to be a $p$-dimensional vector. Therefore, the objective is to separate a set of data, with binary labels, using a hyperplane (multidimensional plane) that maximizes the distance between the two classes. Therefore, we must build a function $f : \Re^p \rightarrow \lbrace \pm1 \rbrace$ that is able to assign a binary value (+1 or -1) to a new sample. This function is built using a set of training data $\mathbf{X}$, which contains $N$ $p$-dimensional vectors (samples) $\mathbf{x}_i$ and their corresponding class $y_i$: 

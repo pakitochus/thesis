@@ -45,7 +45,7 @@ t_f = \frac{\bar{X}_1^f - \bar{X}_2^f}{\sqrt{\frac{\sigma_{X_2^f}^2+\sigma_{X_1^
 \end{equation}
 where $\sigma_{X_i^f}^2$ is the variance and $\bar{X}_i^f$ is the average of the $f$-the feature within class $i$. The $t$-test is extensively used in the neuroimaging community, and it is the basis for the \ac{SPM} and \ac{VBM} analyses \cite{spm_book}. See figure~\ref{fig:ttest_map} for an example of the $t$-test computed on the \adnipet{} database.
 
-\subsection{Kullback-Leibler Divergence} 
+\subsection{Relative Entropy} 
 Another alternative is the \acf{KL} divergence, also known as Relative Entropy. It is a non-symmetric measure of the difference between two probabilities distributions. Let us assume that $X_1^f$ and $X_2^f$, the vectors containing the $f$-th feature of all elements in class $i$, are two discrete random variables. Therefore, the \ac{KL} divergence can be calculated with equation \ref{eq:kullback} \cite{Theodoridis1999}.
 
 \begin{equation}\label{eq:kullback}
@@ -53,7 +53,7 @@ KL_f = \left(\frac{\sigma_{X_2^f}^2}{\sigma_{X_1^f}^2} +\frac{\sigma_{X_1^f}^2}{
 \end{equation}
 using the same notation than in $t$-test. See figure~\ref{fig:kl_map} for an example of the computed \ac{KL} divergence on the \adnipet{} database.
 
-\subsection{Mann-Whitney-Wilcoxon} 
+\subsection{\acf{MWW} U-test} 
 The \acf{MWW} rank test, also known as $U$-test, assigns a rank to all values in the vector corresponding to the $f$-th feature, $X^f$, without considering any class. The method used to assign a rank is the `average', which means that each value is assigned with the average of the ranks that would have been assigned to all the tied values. This means that, for example, in the case of the vector $X^f=(0,2,3,2)$, the ranks assigned to each element would be $R^f=(1,2.5,4,2.5)$. 
 
 Let $n_1$ and $n_2$ be the number of elements in class 1 and 2 respectively, and $R^f$ the vector of ranked elements. We proceed by selecting the first $n_1$ elements in $R^f$ by: 
@@ -90,7 +90,7 @@ However, this number of features is still large, and therefore, further feature 
 \end{figure}
 
 
-\subsection{Factor Analysis}
+\subsection{\acf{FA}}
 \acf{FA} was used in \cite{Martinez201141,Martinez-Murcia20129676} to perform feature extraction in \ac{CAD} systems. This strategy assumes that each image in the database is a realization of a given experiment. \ac{FA} then models each of the $N$ observations (or subjects) as the expression of $c$ unobserved variables, known as factors. The model follows the general decomposition equation (Eq. \ref{eq:generalDecomposition}), but assuming that the dataset matrix $\mathbf{X}$ is zero-centred. That is, that we have subtracted the mean prior to the computation. In matrix form, Eq. \ref{eq:generalDecomposition} can be rewritten as:
 
 \begin{equation}\label{eq:factoranalysis}
@@ -133,7 +133,7 @@ The mean $\boldsymbol{\mu}$, and the matrices $\mathbf{S}$ and $\boldsymbol{\Psi
 	\label{fig:error}
 \end{figure}
 
-\subsection{Independent Component Analysis}
+\subsection{\acf{ICA}}
 \acf{ICA} \cite{Hyvarinen2000} is an algorithm that performs decomposition imposing that the resulting components must be independent. It was used in \cite{Alvarez2009,Martinez201141,Martinez-Murcia20129676} as part of a \ac{CAD} system, and it had been used in other medical imaging applications such as segmentation \cite{DeMartino2007}. 
 
 \ac{ICA} was born as a solution to the \textit{blind source separation} problem, in which the aim is to estimate $c$ independent sources from a series of mixed signals \cite{Hyvarinen2000}. To do so, we assume the source signals to be non-gaussian, in addition to the independence assumption that we mentioned before. That is why their authors consider \ac{ICA} to be a non-gaussian version of \ac{FA} \cite{Hyvaerinen2003}, although due to this assumption, the results are very different to those obtained in \ac{FA}. 
@@ -316,7 +316,7 @@ In Table~\ref{tab:featureAD} we show the performance values obtained at the oper
 		&  & wilcoxon & $ 0.885 \pm 0.076 $ & $ 0.907 \pm 0.130 $ & $ 0.850 \pm 0.152 $ \\
 		\bottomrule
 	\end{tabularx}
-	\caption[Performance values for the Alzheimer's datasets]{Accuracy, sensitivity, specificity, and their standard deviation at the operation point for each method and its corresponding feature selection criterion, using two \protect\ac{AD} datasets. }
+	\caption[Performance values for the \acs{AD} datasets]{Accuracy, sensitivity, specificity, and their standard deviation at the operation point for each method and its corresponding feature selection criterion, using two \protect\ac{AD} datasets. }
 	\label{tab:featureAD}
 \end{table}
 
@@ -447,7 +447,7 @@ Now we will focus on the specific performance values obtained at the operation p
 		&  & wilcoxon & $ 0.952 \pm 0.037 $ & $ 0.940 \pm 0.066 $ & $ 0.964 \pm 0.064 $ \\
 		\bottomrule
 	\end{tabularx}
-	\caption[Performance values for the Parkinson's datasets]{Accuracy, sensitivity, specificity, and their standard deviation at the operation point for each method and its corresponding feature selection criterion, using three \protect\ac{PKS} datasets }
+	\caption[Performance values for the \acs{PKS} datasets]{Accuracy, sensitivity, specificity, and their standard deviation at the operation point for each method and its corresponding feature selection criterion, using three \protect\ac{PKS} datasets }
 	\label{tab:featurePKS}
 \end{table} 
 
