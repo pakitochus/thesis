@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016/Debian) (preloaded format=pdflatex 2016.12.7)  14 APR 2017 13:36
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016/Debian) (preloaded format=pdflatex 2016.12.7)  16 APR 2017 11:50
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -2431,15 +2431,39 @@ Package babel Info: Redefining spanish shorthand "?
 [15]) [16] (./FrontBackMatter/Acknowledgements.tex
 LaTeX Info: Redefining \. on input line 9.
 LaTeX Info: Redefining \% on input line 9.
-) [17
+Package babel Info: Redefining spanish shorthand <<
+(babel)             in language  on input line 24.
+Package babel Info: Redefining spanish shorthand >>
+(babel)             in language  on input line 24.
+Package babel Info: Redefining spanish shorthand "=
+(babel)             in language  on input line 24.
+Package babel Info: Redefining spanish shorthand "~
+(babel)             in language  on input line 24.
+Package babel Info: Redefining spanish shorthand "!
+(babel)             in language  on input line 24.
+Package babel Info: Redefining spanish shorthand "?
+(babel)             in language  on input line 24.
+Package babel Info: Redefining spanish shorthand <<
+(babel)             in language  on input line 24.
+Package babel Info: Redefining spanish shorthand >>
+(babel)             in language  on input line 24.
+Package babel Info: Redefining spanish shorthand "=
+(babel)             in language  on input line 24.
+Package babel Info: Redefining spanish shorthand "~
+(babel)             in language  on input line 24.
+Package babel Info: Redefining spanish shorthand "!
+(babel)             in language  on input line 24.
+Package babel Info: Redefining spanish shorthand "?
+(babel)             in language  on input line 24.
+ [17
 
 
 
 
-] [18
-
-
-]
+])
+LaTeX Font Info:    Font shape `T1/GilliusADFNoTwo-LF/m/n' will be
+(Font)              scaled to size 10.0pt on input line 70.
+ [18]
 (./FrontBackMatter/Contents.tex
 Package tocbasic Info: character protrusion at toc deactivated on input line 11
 .
@@ -2481,6 +2505,8 @@ although it is yet undefined on input line 79.
 [19
 
 
+
+
 ]
 Package acronym Info: Label `acro:HMM' newly defined as it shall be overridden
 although it is yet undefined on input line 179.
@@ -2490,8 +2516,6 @@ Overfull \hbox (17.4633pt too wide) in paragraph at lines 199--199
  []  
  []
 
-LaTeX Font Info:    Font shape `T1/GilliusADFNoTwo-LF/m/n' will be
-(Font)              scaled to size 10.0pt on input line 203.
 [20]
 Overfull \hbox (23.36615pt too wide) in paragraph at lines 213--213
  [][] []\T1/pplj/m/n/10.95 Significance Weighted Prin-ci-pal Com-po-nent Anal-y
@@ -6971,11 +6995,11 @@ Package logreq Info: Writing requests to 'Tesis.run.xml'.
 Here is how much of TeX's memory you used:
  31670 strings out of 493013
  588762 string characters out of 6135682
- 1686114 words of memory out of 5000000
+ 1687114 words of memory out of 5000000
  33241 multiletter control sequences out of 15000+600000
  182499 words of font info for 300 fonts, out of 8000000 for 9000
  1147 hyphenation exceptions out of 8191
- 70i,23n,91p,8816b,3629s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 67i,23n,91p,8816b,3629s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc}{/usr/share/texliv
 e/texmf-dist/fonts/enc/dvips/gillius/gls_4bsedw.enc}</usr/share/texlive/texmf-d
 ist/fonts/type1/arkandis/gillius/GilliusADFNo2-Bold.pfb></usr/share/texlive/tex
@@ -7005,7 +7029,7 @@ hvr.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/palatino/uplb8a.pfb></us
 r/share/texlive/texmf-dist/fonts/type1/urw/palatino/uplr8a.pfb></usr/share/texl
 ive/texmf-dist/fonts/type1/urw/palatino/uplri8a.pfb></usr/share/texlive/texmf-d
 ist/fonts/type1/urw/zapfding/uzdr.pfb>
-Output written on Tesis.pdf (240 pages, 23468535 bytes).
+Output written on Tesis.pdf (240 pages, 23472514 bytes).
 PDF statistics:
  11024 PDF objects out of 12825 (max. 8388607)
  6174 compressed objects within 62 object streams
