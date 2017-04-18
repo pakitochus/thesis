@@ -1,3 +1,5 @@
+% !TEX TS-program = pdflatex
+% !TEX root = ../Tesis.tex
 %************************************************
 \chapter{Simulation of Functional Brain Images}\label{ch:simulation}
 %************************************************
@@ -68,6 +70,8 @@ This procedure is repeated for all coordinates $i=1,\dots K$ $G$ times, where $G
 \begin{equation}
 \widehat{\mathbf{X}}^c =\widehat{\mathbf{S}}^c\mathbf{W}^{-1} 
 \end{equation}
+
+The code used for this brain image synthesis can be freely downloaded at \url{https://github.com/SiPBA/brainSimulator}.
 
 \section{Experimental Setup}
 Validation of a simulated dataset is still a matter of discussion. Most works exploring that possibility \cite{Ma1993,KwanEvansPike1999} use visual analysis to validate the results. In addition to this, we chose an empirical approach to validation, based on the classification of samples, which will give us quantitative results. The following experiments have been performed: 
