@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016/Debian) (preloaded format=pdflatex 2017.2.6)  18 APR 2017 10:50
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016/Debian) (preloaded format=pdflatex 2017.2.6)  18 APR 2017 11:09
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -5701,60 +5701,62 @@ put line 103.
 (pdftex.def)             Requested size: 302.7385pt x 109.29323pt.
  [88] [89 <./Graphics/ch6/03-projections.pdf>] [90 <./Graphics/ch6/layeredAvera
 geGM-eps-converted-to.pdf> <./Graphics/ch6/lbpLinear-eps-converted-to.pdf>]
-<Graphics/ch6/04-vrlbp.pdf, id=6116, 694.93605pt x 189.97673pt>
+<Graphics/ch6/04-vrlbp.pdf, id=6110, 694.93605pt x 189.97673pt>
 File: Graphics/ch6/04-vrlbp.pdf Graphic file (type pdf)
 
 <use Graphics/ch6/04-vrlbp.pdf>
-Package pdftex.def Info: Graphics/ch6/04-vrlbp.pdf used on input line 146.
-(pdftex.def)             Requested size: 378.42168pt x 103.45264pt.
+Package pdftex.def Info: Graphics/ch6/04-vrlbp.pdf used on input line 139.
+(pdftex.def)             Requested size: 302.7385pt x 82.76385pt.
 Package acronym Info: Label `acro:AAL' newly defined as it shall be overridden
-although it is yet undefined on input line 169.
-
-<Graphics/ch6/05-regions_cortical.pdf, id=6129, 426.59375pt x 218.8175pt>
+although it is yet undefined on input line 170.
+ [91 <./Graphics/ch6/04-vrlbp.pdf>]
+<Graphics/ch6/05-regions_cortical.pdf, id=6164, 426.59375pt x 218.8175pt>
 File: Graphics/ch6/05-regions_cortical.pdf Graphic file (type pdf)
 
 <use Graphics/ch6/05-regions_cortical.pdf>
 Package pdftex.def Info: Graphics/ch6/05-regions_cortical.pdf used on input lin
-e 173.
+e 174.
 (pdftex.def)             Requested size: 264.89401pt x 135.88246pt.
 
-<Graphics/ch6/06-regions_subcortical.pdf, id=6132, 427.5975pt x 218.8175pt>
+<Graphics/ch6/06-regions_subcortical.pdf, id=6167, 427.5975pt x 218.8175pt>
 File: Graphics/ch6/06-regions_subcortical.pdf Graphic file (type pdf)
 
 <use Graphics/ch6/06-regions_subcortical.pdf>
 Package pdftex.def Info: Graphics/ch6/06-regions_subcortical.pdf used on input 
-line 181.
+line 182.
 (pdftex.def)             Requested size: 264.89401pt x 135.55525pt.
- [91] [92 <./Graphics/ch6/04-vrlbp.pdf> <./Graphics/ch6/05-regions_cortical.pdf
->] [93 <./Graphics/ch6/06-regions_subcortical.pdf>]
 Package acronym Info: Label `acro:AC' newly defined as it shall be overridden
-although it is yet undefined on input line 205.
- [94]
+although it is yet undefined on input line 206.
+ [92] [93 <./Graphics/ch6/05-regions_cortical.pdf> <./Graphics/ch6/06-regions_s
+ubcortical.pdf>] [94]
 Package acronym Info: Label `acro:RBF' newly defined as it shall be overridden
-although it is yet undefined on input line 236.
+although it is yet undefined on input line 237.
  [95]
 Package acronym Info: Label `acro:CDF' newly defined as it shall be overridden
-although it is yet undefined on input line 253.
+although it is yet undefined on input line 254.
 
 <Graphics/ch6/cuts.pdf, id=6249, 1043.68521pt x 943.86073pt>
 File: Graphics/ch6/cuts.pdf Graphic file (type pdf)
 
 <use Graphics/ch6/cuts.pdf>
-Package pdftex.def Info: Graphics/ch6/cuts.pdf used on input line 297.
+Package pdftex.def Info: Graphics/ch6/cuts.pdf used on input line 298.
 (pdftex.def)             Requested size: 264.89401pt x 239.55074pt.
- [96] [97 <./Graphics/ch6/cuts.pdf>] [98] [99]
-<Graphics/ch6/07-tmaps.pdf, id=6366, 1050.97673pt x 949.01132pt>
+ [96] [97 <./Graphics/ch6/cuts.pdf>]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [98]
+[99] <Graphics/ch6/07-tmaps.pdf, id=6366, 1050.97673pt x 949.01132pt>
 File: Graphics/ch6/07-tmaps.pdf Graphic file (type pdf)
 
 <use Graphics/ch6/07-tmaps.pdf>
-Package pdftex.def Info: Graphics/ch6/07-tmaps.pdf used on input line 358.
+Package pdftex.def Info: Graphics/ch6/07-tmaps.pdf used on input line 359.
 (pdftex.def)             Requested size: 340.5772pt x 307.52722pt.
  [100] [101 <./Graphics/ch6/07-tmaps.pdf>]
 <Graphics/ch6/09-tmaps_vrlbp.pdf, id=6609, 695.10251pt x 225.27542pt>
 File: Graphics/ch6/09-tmaps_vrlbp.pdf Graphic file (type pdf)
 
 <use Graphics/ch6/09-tmaps_vrlbp.pdf>
-Package pdftex.def Info: Graphics/ch6/09-tmaps_vrlbp.pdf used on input line 373
+Package pdftex.def Info: Graphics/ch6/09-tmaps_vrlbp.pdf used on input line 374
 .
 (pdftex.def)             Requested size: 378.42168pt x 122.64032pt.
  [102 <./Graphics/ch6/09-tmaps_vrlbp.pdf>] [103]
@@ -5767,7 +5769,7 @@ ed-to.pdf>
 (epstopdf)                    size: 28445 bytes
 (epstopdf)             Command: <repstopdf --outfile=Graphics/ch6/GMperformance
 Comp-eps-converted-to.pdf Graphics/ch6/GMperformanceComp.eps>
-(epstopdf)             \includegraphics on input line 420.
+(epstopdf)             \includegraphics on input line 421.
 Package epstopdf Info: Output file is already uptodate.
 
 <Graphics/ch6/GMperformanceComp-eps-converted-to.pdf, id=6733, 456.70625pt x 26
@@ -5776,7 +5778,7 @@ File: Graphics/ch6/GMperformanceComp-eps-converted-to.pdf Graphic file (type pd
 f)
  <use Graphics/ch6/GMperformanceComp-eps-converted-to.pdf>
 Package pdftex.def Info: Graphics/ch6/GMperformanceComp-eps-converted-to.pdf us
-ed on input line 420.
+ed on input line 421.
 (pdftex.def)             Requested size: 340.5772pt x 195.36827pt.
 Package epstopdf Info: Source file: <Graphics/ch6/WMperformanceComp.eps>
 (epstopdf)                    date: 2017-03-25 12:05:43
@@ -5787,7 +5789,7 @@ ed-to.pdf>
 (epstopdf)                    size: 28080 bytes
 (epstopdf)             Command: <repstopdf --outfile=Graphics/ch6/WMperformance
 Comp-eps-converted-to.pdf Graphics/ch6/WMperformanceComp.eps>
-(epstopdf)             \includegraphics on input line 421.
+(epstopdf)             \includegraphics on input line 422.
 Package epstopdf Info: Output file is already uptodate.
 
 <Graphics/ch6/WMperformanceComp-eps-converted-to.pdf, id=6734, 456.70625pt x 26
@@ -5796,7 +5798,7 @@ File: Graphics/ch6/WMperformanceComp-eps-converted-to.pdf Graphic file (type pd
 f)
  <use Graphics/ch6/WMperformanceComp-eps-converted-to.pdf>
 Package pdftex.def Info: Graphics/ch6/WMperformanceComp-eps-converted-to.pdf us
-ed on input line 421.
+ed on input line 422.
 (pdftex.def)             Requested size: 340.5772pt x 195.36827pt.
 Package epstopdf Info: Source file: <Graphics/ch6/layerPerfGM.eps>
 (epstopdf)                    date: 2017-03-25 13:23:55
@@ -5807,7 +5809,7 @@ pdf>
 (epstopdf)                    size: 23876 bytes
 (epstopdf)             Command: <repstopdf --outfile=Graphics/ch6/layerPerfGM-e
 ps-converted-to.pdf Graphics/ch6/layerPerfGM.eps>
-(epstopdf)             \includegraphics on input line 433.
+(epstopdf)             \includegraphics on input line 434.
 Package epstopdf Info: Output file is already uptodate.
 
 <Graphics/ch6/layerPerfGM-eps-converted-to.pdf, id=6749, 726.715pt x 446.66875p
@@ -5815,7 +5817,7 @@ t>
 File: Graphics/ch6/layerPerfGM-eps-converted-to.pdf Graphic file (type pdf)
  <use Graphics/ch6/layerPerfGM-eps-converted-to.pdf>
 Package pdftex.def Info: Graphics/ch6/layerPerfGM-eps-converted-to.pdf used on 
-input line 433.
+input line 434.
 (pdftex.def)             Requested size: 340.5772pt x 209.33456pt.
 Package epstopdf Info: Source file: <Graphics/ch6/layerPerfWM.eps>
 (epstopdf)                    date: 2017-03-25 13:24:01
@@ -5826,7 +5828,7 @@ pdf>
 (epstopdf)                    size: 23210 bytes
 (epstopdf)             Command: <repstopdf --outfile=Graphics/ch6/layerPerfWM-e
 ps-converted-to.pdf Graphics/ch6/layerPerfWM.eps>
-(epstopdf)             \includegraphics on input line 434.
+(epstopdf)             \includegraphics on input line 435.
 Package epstopdf Info: Output file is already uptodate.
 
 <Graphics/ch6/layerPerfWM-eps-converted-to.pdf, id=6750, 726.715pt x 446.66875p
@@ -5834,7 +5836,7 @@ t>
 File: Graphics/ch6/layerPerfWM-eps-converted-to.pdf Graphic file (type pdf)
  <use Graphics/ch6/layerPerfWM-eps-converted-to.pdf>
 Package pdftex.def Info: Graphics/ch6/layerPerfWM-eps-converted-to.pdf used on 
-input line 434.
+input line 435.
 (pdftex.def)             Requested size: 340.5772pt x 209.33456pt.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
@@ -5848,28 +5850,28 @@ File: Graphics/ch6/08-Tmap4LayAverage.pdf Graphic file (type pdf)
 
 <use Graphics/ch6/08-Tmap4LayAverage.pdf>
 Package pdftex.def Info: Graphics/ch6/08-Tmap4LayAverage.pdf used on input line
- 446.
+ 447.
 (pdftex.def)             Requested size: 378.42168pt x 403.52246pt.
  [107 <./Graphics/ch6/08-Tmap4LayAverage.pdf>] <Graphics/ch6/gaussian.pdf, id=7
 016, 348.36548pt x 287.55731pt>
 File: Graphics/ch6/gaussian.pdf Graphic file (type pdf)
 
 <use Graphics/ch6/gaussian.pdf>
-Package pdftex.def Info: Graphics/ch6/gaussian.pdf used on input line 460.
+Package pdftex.def Info: Graphics/ch6/gaussian.pdf used on input line 461.
 (pdftex.def)             Requested size: 189.21083pt x 156.1825pt.
 
 <Graphics/ch6/spire.pdf, id=7019, 339.55856pt x 517.53348pt>
 File: Graphics/ch6/spire.pdf Graphic file (type pdf)
 
 <use Graphics/ch6/spire.pdf>
-Package pdftex.def Info: Graphics/ch6/spire.pdf used on input line 470.
+Package pdftex.def Info: Graphics/ch6/spire.pdf used on input line 471.
 (pdftex.def)             Requested size: 189.21083pt x 288.38742pt.
 
 <Graphics/ch6/spain.pdf, id=7023, 557.21175pt x 459.7175pt>
 File: Graphics/ch6/spain.pdf Graphic file (type pdf)
 
 <use Graphics/ch6/spain.pdf>
-Package pdftex.def Info: Graphics/ch6/spain.pdf used on input line 480.
+Package pdftex.def Info: Graphics/ch6/spain.pdf used on input line 481.
 (pdftex.def)             Requested size: 302.7385pt x 249.77295pt.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
@@ -5883,7 +5885,7 @@ n: multiple pdfs with page group included in a single page
 File: Graphics/ch6/accuracyPaths2.pdf Graphic file (type pdf)
 
 <use Graphics/ch6/accuracyPaths2.pdf>
-Package pdftex.def Info: Graphics/ch6/accuracyPaths2.pdf used on input line 492
+Package pdftex.def Info: Graphics/ch6/accuracyPaths2.pdf used on input line 493
 .
 (pdftex.def)             Requested size: 302.7385pt x 220.39369pt.
  [110 <./Graphics/ch6/spain.pdf>]
@@ -5896,7 +5898,7 @@ pdf>
 (epstopdf)                    size: 183371 bytes
 (epstopdf)             Command: <repstopdf --outfile=Graphics/ch6/HMMStatMaps-e
 ps-converted-to.pdf Graphics/ch6/HMMStatMaps.eps>
-(epstopdf)             \includegraphics on input line 523.
+(epstopdf)             \includegraphics on input line 524.
 Package epstopdf Info: Output file is already uptodate.
 
 <Graphics/ch6/HMMStatMaps-eps-converted-to.pdf, id=7233, 738.76pt x 464.73625pt
@@ -5904,7 +5906,7 @@ Package epstopdf Info: Output file is already uptodate.
 File: Graphics/ch6/HMMStatMaps-eps-converted-to.pdf Graphic file (type pdf)
  <use Graphics/ch6/HMMStatMaps-eps-converted-to.pdf>
 Package pdftex.def Info: Graphics/ch6/HMMStatMaps-eps-converted-to.pdf used on 
-input line 523.
+input line 524.
 (pdftex.def)             Requested size: 378.42168pt x 238.05476pt.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
@@ -5920,7 +5922,7 @@ to.pdf>
 (epstopdf)                    size: 21382 bytes
 (epstopdf)             Command: <repstopdf --outfile=Graphics/ch6/12-performanc
 e-eps-converted-to.pdf Graphics/ch6/12-performance.eps>
-(epstopdf)             \includegraphics on input line 578.
+(epstopdf)             \includegraphics on input line 579.
 Package epstopdf Info: Output file is already uptodate.
 
 <Graphics/ch6/12-performance-eps-converted-to.pdf, id=7348, 537.00626pt x 284.0
@@ -5928,7 +5930,7 @@ Package epstopdf Info: Output file is already uptodate.
 File: Graphics/ch6/12-performance-eps-converted-to.pdf Graphic file (type pdf)
  <use Graphics/ch6/12-performance-eps-converted-to.pdf>
 Package pdftex.def Info: Graphics/ch6/12-performance-eps-converted-to.pdf used 
-on input line 578.
+on input line 579.
 (pdftex.def)             Requested size: 302.7385pt x 160.13947pt.
 
 Underfull \vbox (badness 3312) has occurred while \output is active []
@@ -5938,14 +5940,14 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [116]
 Package acronym Info: Label `acro:DTI' newly defined as it shall be overridden
-although it is yet undefined on input line 619.
+although it is yet undefined on input line 620.
 
 <Graphics/ch6/radia&structures.pdf, id=7460, 470.55798pt x 452.08899pt>
 File: Graphics/ch6/radia&structures.pdf Graphic file (type pdf)
 
 <use Graphics/ch6/radia&structures.pdf>
 Package pdftex.def Info: Graphics/ch6/radia&structures.pdf used on input line 6
-25.
+26.
 (pdftex.def)             Requested size: 340.5772pt x 327.22151pt.
  [117] [118 <./Graphics/ch6/radia&structures.pdf>] [119] [120]) [121] [122
 
@@ -7001,7 +7003,7 @@ Package logreq Info: Writing requests to 'Tesis.run.xml'.
 Here is how much of TeX's memory you used:
  31670 strings out of 493013
  588762 string characters out of 6135683
- 1686113 words of memory out of 5000000
+ 1687114 words of memory out of 5000000
  33241 multiletter control sequences out of 15000+600000
  182499 words of font info for 300 fonts, out of 8000000 for 9000
  1147 hyphenation exceptions out of 8191
@@ -7035,7 +7037,7 @@ hvr.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/palatino/uplb8a.pfb></us
 r/share/texlive/texmf-dist/fonts/type1/urw/palatino/uplr8a.pfb></usr/share/texl
 ive/texmf-dist/fonts/type1/urw/palatino/uplri8a.pfb></usr/share/texlive/texmf-d
 ist/fonts/type1/urw/zapfding/uzdr.pfb>
-Output written on Tesis.pdf (240 pages, 23473271 bytes).
+Output written on Tesis.pdf (240 pages, 23473390 bytes).
 PDF statistics:
  11025 PDF objects out of 12825 (max. 8388607)
  6175 compressed objects within 62 object streams

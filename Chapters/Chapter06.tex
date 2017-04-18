@@ -134,6 +134,13 @@ z_{\theta,\varphi}^{p,r}=p\cos(\varphi)
 \end{equation}
 being $t$ the number of turns in the helical sampling. We use linear interpolation to estimate the intensities in positions that do not fall exactly at the coordinates computed in Eq.~\ref{ec:helical_coordinates}, as in \cite{Zhao2007}. 
 
+\begin{figure}[t]
+	\myfloatalign
+	\includegraphics[width=0.8\textwidth]{Graphics/ch6/04-vrlbp}
+	\caption{An example of the \acs{VRLBP} projection for \acs{GM} and \acs{WM} Tissues. }
+	\label{fig:vrlbp}
+\end{figure}
+
 If we fix $P$ and $r$ to constant values, the set of sampled voxels $V_{\theta,\varphi}^{P,r}$ becomes $V_{\theta,\varphi}$, which is equivalent to the definition of \ac{SBM} found in Section~\ref{sec:mapping}. The value $v$ of the \ac{VRLBP} approach is therefore defined as: 
 \begin{equation}
 v_{VRLBP} = \sum_{p} s(V_{\theta,\varphi}(p)-V_{\theta,\varphi}(0))\cdot 2^{p} \quad \forall p=1,\dots P
@@ -141,12 +148,6 @@ v_{VRLBP} = \sum_{p} s(V_{\theta,\varphi}(p)-V_{\theta,\varphi}(0))\cdot 2^{p} \
 
 The resulting texture maps for \ac{GM} and \ac{WM} tissues can be found at Figure~\ref{fig:vrlbp}. 
 
-\begin{figure}[htp]
-	\myfloatalign
-	\includegraphics[width=\textwidth]{Graphics/ch6/04-vrlbp}
-	\caption{An example of the \acs{VRLBP} projection for \acs{GM} and \acs{WM} Tissues. }
-	\label{fig:vrlbp}
-\end{figure}
 
 %\lstset{language=python} 
 %\begin{lstlisting}
@@ -168,21 +169,21 @@ The resulting texture maps for \ac{GM} and \ac{WM} tissues can be found at Figur
 \subsection{Anatomical Reference}\label{sec:anatomical}
 To better understand the \ac{SBM} maps, and the location of different features, we have projected the widely known \ac{AAL} atlas \cite{Tzourio-Mazoyer2002} using \ac{SBM}. That way, we have an anatomical reference of the different structures and their position in the different coordinate pairs $(\theta,\varphi)$. The regions are displayed in  Figures~\ref{fig:regionsCort} and \ref{fig:regionsSub}. 
 
-\begin{figure*}[htp]
+\begin{figure}[p]
 	\myfloatalign
 	\includegraphics[width=0.7\textwidth]{Graphics/ch6/05-regions_cortical}
 	
 	\caption[\acs{SBM} mapping of different cortical regions.]{\ac{SBM} mapping of different cortical regions. In the Frontal region, we can find: 1) Frontal Sup., 2) Frontal Mid., 3) Frontal Inf. Oper., 4) Frontal Inf. Tri., 5) Frontal Sup. Orb, 6) Frontal Mid. Orb, 7) Frontal Inf. Orb, 8) Frontal Sup. Medial, 9) Rectus, 10) Frontal Med. Orb., 11) Precentral, 12) Supp. Motor Area. In the Parietal region: 13) Paracentral Lobe, 14) Postcentral, 15) Parietal Sup., 16) Parietal Inf., 17) Supramarginal, 18) Angular. In the Occipital region: 19) Precuneus, 20) Cuneus, 21) Occipital Sup., 22) Occipital Mid., 23) Occipital Inf., 24) Lingual. In the Temporal region: 25) Temporal Sup., 26) Temporal Pole Sup., 27) Temporal Mid., 28) Temporal Pole Mid., 29) Temporal Inf, 30) Fusiform, 31) Parahippocampal. The Cerebellum, divided in: 32) Cerebelum Crus 1, 33) Cerebelum 3, 34) Cerebelum 4-5, 35) Cerebelum 6, 36) Cerebelum 7b, 37) Cerebelum 8, 38) Cerebelum 9, 39) Cerebelum 10. And additionally, the 40) Medulla, 41) Brain Stem and 42) Insula.}
 	\label{fig:regionsCort}
-\end{figure*}
+\end{figure}
 
-\begin{figure*}[htp]
+\begin{figure}[p]
 	\myfloatalign
 	\includegraphics[width=0.7\textwidth]{Graphics/ch6/06-regions_subcortical}
 	
 	\caption[\acs{SBM} mapping of some subcortical regions and organs.]{\ac{SBM} mapping of of some important subcortical regions and organs. We observe the following subcortical structures: 1) Caudate Nucleus, 2) Olfactory Bulb, 3) Rolandic Operculum, 4) Heschl's gyri, 5) Putamen, 6) Globus Pallidus, 7) Amygdala, 8) Hippocampus, 9) Thalamus, 10) Lingual, 11) Vermis 4-5, 12) Vermis 7, 13) Vermis 9, 14) Vermis 1-2, 15) Cingulate Gyrus, 16) Corpus Callosum}
 	\label{fig:regionsSub}
-\end{figure*}
+\end{figure}
 
 \origsection{Sampling Paths via \acfp{HMM}}\label{sec:hmmpaths}
 The rectilinear mapping vector used in the original \ac{SBM} \cite{Martinez-Murcia2014225,Martinez-MurciaVRLBP,Martinez-Murcia2015} has some limitations, partially overcome by the \ac{VRLBP} and the layered extension. However, a more flexible sampling could be beneficial for the computation of texture measures. In this section we present a technique used to define minimum intensity change sampling paths via \acp{HMM}, firstly proposed in \cite{Martinez-Murcia2016}. These paths are defined so that the resulting sampled sets contain information about both intensity and structure of the brain. 
