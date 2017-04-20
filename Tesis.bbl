@@ -104,7 +104,7 @@
       \verb{doi}
       \verb 10.1002/hbm.23449
       \endverb
-      \keyw{own}
+      \keyw{own,cv}
     \endentry
     \entry{Association2016}{article}{}
       \true{moreauthor}
@@ -179,7 +179,7 @@
            given_i={R\bibinitperiod}}}%
       }
       \list{publisher}{1}{%
-        {Intech}%
+        {InTech}%
       }
       \strng{namehash}{29217a85333e67ccd23e2b5d1f6c6901}
       \strng{fullhash}{29217a85333e67ccd23e2b5d1f6c6901}
@@ -199,7 +199,7 @@
       \verb{doi}
       \verb 10.5772/64980
       \endverb
-      \keyw{own}
+      \keyw{own,cv}
     \endentry
     \entry{Martinez-Murcia2016b}{inbook}{}
       \name{author}{3}{}{%
@@ -236,7 +236,7 @@
       \verb{doi}
       \verb 10.1002/047134608X
       \endverb
-      \keyw{own}
+      \keyw{own,cv}
     \endentry
     \entry{Martinez-Murcia2015}{article}{}
       \name{author}{4}{}{%
@@ -281,7 +281,7 @@
       \verb{doi}
       \verb 10.2174/1567205013666160314145158
       \endverb
-      \keyw{sbm,mri,adni,ad,alzheimer,own}
+      \keyw{sbm,mri,adni,ad,alzheimer,own,cv}
     \endentry
     \entry{Martinez-Murcia2016}{article}{}
       \name{author}{4}{}{%
@@ -326,7 +326,7 @@
       \verb{doi}
       \verb 10.1142/S0129065716500246
       \endverb
-      \keyw{sbm,hmm,parametrization,mri,adni,ad,alzheimer,own}
+      \keyw{sbm,hmm,parametrization,mri,adni,ad,alzheimer,own,cv}
     \endentry
     \entry{Segovia2016a}{inproceedings}{}
       \name{author}{4}{}{%
@@ -674,7 +674,7 @@
       \verb{doi}
       \verb 10.1007/978-3-319-18914-7_3
       \endverb
-      \keyw{sbm,lbp,vrlbp,mri,ad,alzheimer,own}
+      \keyw{sbm,lbp,vrlbp,mri,ad,alzheimer,own,cv}
     \endentry
     \entry{Salas-Gonzalez2015}{article}{}
       \name{author}{7}{}{%
@@ -1302,7 +1302,7 @@
       \verb{doi}
       \verb 10.3233/978-1-61499-474-9-225
       \endverb
-      \keyw{mri,alzheimer,sbm,ad,adni,own}
+      \keyw{mri,alzheimer,sbm,ad,adni,own,cv}
     \endentry
     \entry{Martinez-Murcia201458}{article}{}
       \name{author}{5}{}{%
@@ -1351,7 +1351,7 @@
       \verb{doi}
       \verb 10.1016/j.neucom.2013.01.054
       \endverb
-      \keyw{parkinson,ica,tests,pks,datscan,own}
+      \keyw{parkinson,ica,tests,pks,datscan,own,cv}
     \endentry
     \entry{martinez2014parametrization}{article}{}
       \name{author}{5}{}{%
@@ -1400,7 +1400,7 @@
       \verb{doi}
       \verb 10.1118/1.4845115
       \endverb
-      \keyw{texture,datscan,parkinson,pks,own}
+      \keyw{texture,datscan,parkinson,pks,own,cv}
     \endentry
     \entry{Segovia2014}{article}{}
       \name{author}{10}{}{%
@@ -1914,7 +1914,7 @@
       \verb{doi}
       \verb 10.1007/978-3-642-38622-0_28
       \endverb
-      \keyw{texture,haralick,pks,parkinson,datscan,own}
+      \keyw{texture,haralick,pks,parkinson,datscan,own,cv}
     \endentry
     \entry{Martinez-Murcia2013255}{article}{}
       \name{author}{5}{}{%
@@ -1964,7 +1964,7 @@
       \verb{doi}
       \verb 10.1016/j.cmpb.2013.03.015
       \endverb
-      \keyw{ica,decomposition,feature,spect,pet,adni,ad,alzheimer,own}
+      \keyw{ica,decomposition,feature,spect,pet,adni,ad,alzheimer,own,cv}
     \endentry
     \entry{Ortiz2013}{article}{}
       \name{author}{4}{}{%
@@ -2645,7 +2645,7 @@
       \verb{doi}
       \verb 10.1016/j.eswa.2012.02.153
       \endverb
-      \keyw{feature,wilcoxon,factor analysis,fa,decomposition,spect,pet,adni,ad,alzheimer,own}
+      \keyw{feature,wilcoxon,factor analysis,fa,decomposition,spect,pet,adni,ad,alzheimer,own,cv}
     \endentry
     \entry{Reuter2012}{article}{}
       \name{author}{4}{}{%
@@ -3648,7 +3648,7 @@
       \verb{doi}
       \verb 10.1007/978-3-642-21326-7_5
       \endverb
-      \keyw{feature,factor analysis,decomposition,test,adni,alzheimer,spect,pet,own}
+      \keyw{feature,factor analysis,decomposition,test,adni,alzheimer,spect,pet,own,cv}
     \endentry
     \entry{Towey2011}{article}{}
       \name{author}{3}{}{%
@@ -13389,7 +13389,7 @@
       \verb{doi}
       \verb 10.1007/978-3-642-21326-7_5
       \endverb
-      \keyw{feature,factor analysis,decomposition,test,adni,alzheimer,spect,pet,own}
+      \keyw{feature,factor analysis,decomposition,test,adni,alzheimer,spect,pet,own,cv}
     \endentry
     \entry{Martinez-Murcia2016book}{inbook}{}
       \name{author}{3}{}{%
@@ -13417,7 +13417,7 @@
            given_i={R\bibinitperiod}}}%
       }
       \list{publisher}{1}{%
-        {Intech}%
+        {InTech}%
       }
       \strng{namehash}{29217a85333e67ccd23e2b5d1f6c6901}
       \strng{fullhash}{29217a85333e67ccd23e2b5d1f6c6901}
@@ -13437,7 +13437,7 @@
       \verb{doi}
       \verb 10.5772/64980
       \endverb
-      \keyw{own}
+      \keyw{own,cv}
     \endentry
     \entry{Martinez-Murcia2016b}{inbook}{}
       \name{author}{3}{}{%
@@ -13474,7 +13474,7 @@
       \verb{doi}
       \verb 10.1002/047134608X
       \endverb
-      \keyw{own}
+      \keyw{own,cv}
     \endentry
     \entry{Martinez-Murcia2014225}{inproceedings}{}
       \name{author}{6}{}{%
@@ -13524,7 +13524,7 @@
       \verb{doi}
       \verb 10.3233/978-1-61499-474-9-225
       \endverb
-      \keyw{mri,alzheimer,sbm,ad,adni,own}
+      \keyw{mri,alzheimer,sbm,ad,adni,own,cv}
     \endentry
     \entry{Martinez-Murcia201458}{article}{}
       \name{author}{5}{}{%
@@ -13573,7 +13573,7 @@
       \verb{doi}
       \verb 10.1016/j.neucom.2013.01.054
       \endverb
-      \keyw{parkinson,ica,tests,pks,datscan,own}
+      \keyw{parkinson,ica,tests,pks,datscan,own,cv}
     \endentry
     \entry{Martinez-Murcia2013266}{inproceedings}{}
       \name{author}{5}{}{%
@@ -13623,7 +13623,7 @@
       \verb{doi}
       \verb 10.1007/978-3-642-38622-0_28
       \endverb
-      \keyw{texture,haralick,pks,parkinson,datscan,own}
+      \keyw{texture,haralick,pks,parkinson,datscan,own,cv}
     \endentry
     \entry{martinez2014parametrization}{article}{}
       \name{author}{5}{}{%
@@ -13672,7 +13672,7 @@
       \verb{doi}
       \verb 10.1118/1.4845115
       \endverb
-      \keyw{texture,datscan,parkinson,pks,own}
+      \keyw{texture,datscan,parkinson,pks,own,cv}
     \endentry
     \entry{Martinez-Murcia2015}{article}{}
       \name{author}{4}{}{%
@@ -13717,7 +13717,7 @@
       \verb{doi}
       \verb 10.2174/1567205013666160314145158
       \endverb
-      \keyw{sbm,mri,adni,ad,alzheimer,own}
+      \keyw{sbm,mri,adni,ad,alzheimer,own,cv}
     \endentry
     \entry{Martinez-Murcia2016}{article}{}
       \name{author}{4}{}{%
@@ -13762,7 +13762,7 @@
       \verb{doi}
       \verb 10.1142/S0129065716500246
       \endverb
-      \keyw{sbm,hmm,parametrization,mri,adni,ad,alzheimer,own}
+      \keyw{sbm,hmm,parametrization,mri,adni,ad,alzheimer,own,cv}
     \endentry
     \entry{Martinez-Murcia2013255}{article}{}
       \name{author}{5}{}{%
@@ -13812,7 +13812,7 @@
       \verb{doi}
       \verb 10.1016/j.cmpb.2013.03.015
       \endverb
-      \keyw{ica,decomposition,feature,spect,pet,adni,ad,alzheimer,own}
+      \keyw{ica,decomposition,feature,spect,pet,adni,ad,alzheimer,own,cv}
     \endentry
     \entry{Martinez-Murcia20129676}{article}{}
       \name{author}{5}{}{%
@@ -13862,7 +13862,7 @@
       \verb{doi}
       \verb 10.1016/j.eswa.2012.02.153
       \endverb
-      \keyw{feature,wilcoxon,factor analysis,fa,decomposition,spect,pet,adni,ad,alzheimer,own}
+      \keyw{feature,wilcoxon,factor analysis,fa,decomposition,spect,pet,adni,ad,alzheimer,own,cv}
     \endentry
     \entry{Martinez-MurciaVRLBP}{inproceedings}{}
       \name{author}{5}{}{%
@@ -13911,7 +13911,7 @@
       \verb{doi}
       \verb 10.1007/978-3-319-18914-7_3
       \endverb
-      \keyw{sbm,lbp,vrlbp,mri,ad,alzheimer,own}
+      \keyw{sbm,lbp,vrlbp,mri,ad,alzheimer,own,cv}
     \endentry
     \entry{Martinez-Murcia2016a}{article}{}
       \name{author}{13}{}{%
@@ -13998,7 +13998,7 @@
       \verb{doi}
       \verb 10.1002/hbm.23449
       \endverb
-      \keyw{own}
+      \keyw{own,cv}
     \endentry
     \entry{Mazziotta2001}{article}{}
       \name{author}{27}{}{%
@@ -17056,6 +17056,61 @@
 
 \refsection{1}
   \sortlist[entry]{ydnt/global/}
+    \entry{gorriz2017case}{inproceedings}{}
+      \name{author}{7}{}{%
+        {{hash=f4228f125c42361b9f47bb676e4c04bb}{%
+           family={Górriz},
+           family_i={G\bibinitperiod},
+           given={Juan\bibnamedelima M},
+           given_i={J\bibinitperiod\bibinitdelim M\bibinitperiod}}}%
+        {{hash=6450d056a7ef88a8321faa1c9474f31c}{%
+           family={Ramírez},
+           family_i={R\bibinitperiod},
+           given={Javier},
+           given_i={J\bibinitperiod}}}%
+        {{hash=9a1642a27d43576caa4f00ac8ff798ca}{%
+           family={Illán},
+           family_i={I\bibinitperiod},
+           given={IA},
+           given_i={I\bibinitperiod}}}%
+        {{hash=27b0256970d0ca989eac327d37df4a41}{%
+           family={Martínez-Murcia},
+           family_i={M\bibinithyphendelim M\bibinitperiod},
+           given={Francisco\bibnamedelima J},
+           given_i={F\bibinitperiod\bibinitdelim J\bibinitperiod}}}%
+        {{hash=772517a755cbc91dd250c3a71f2e7bb6}{%
+           family={Segovia},
+           family_i={S\bibinitperiod},
+           given={Fermín},
+           given_i={F\bibinitperiod}}}%
+        {{hash=80c0a5abb383820c98e1e918318b6214}{%
+           family={Salas-Gonzalez},
+           family_i={S\bibinithyphendelim G\bibinitperiod},
+           given={Diego},
+           given_i={D\bibinitperiod}}}%
+        {{hash=c0570544c0f24ea76f883feab86329e2}{%
+           family={Ortiz},
+           family_i={O\bibinitperiod},
+           given={A},
+           given_i={A\bibinitperiod}}}%
+      }
+      \list{organization}{2}{%
+        {International Society for Optics}%
+        {Photonics}%
+      }
+      \strng{namehash}{9028ae3409544e3121934d8d9fd61fb9}
+      \strng{fullhash}{ee207f380e20ba0877f6fa9f0c10ca95}
+      \field{sortinit}{2}
+      \field{sortinithash}{8343b463aacf48517c044b4d2c9c45ed}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{SPIE Medical Imaging}
+      \field{title}{Case-Based Statistical Learning applied to SPECT Image Classification}
+      \field{year}{2017}
+      \field{pages}{101342D\bibrangedash 101342D}
+      \range{pages}{-1}
+      \keyw{cv}
+    \endentry
     \entry{Martinez-Murcia2016a}{article}{}
       \name{author}{13}{}{%
         {{hash=44d5da22feb443de558b01188109bfb7}{%
@@ -17141,7 +17196,124 @@
       \verb{doi}
       \verb 10.1002/hbm.23449
       \endverb
-      \keyw{own}
+      \keyw{own,cv}
+    \endentry
+    \entry{segovia2017analysis}{inproceedings}{}
+      \name{author}{5}{}{%
+        {{hash=772517a755cbc91dd250c3a71f2e7bb6}{%
+           family={Segovia},
+           family_i={S\bibinitperiod},
+           given={Fermín},
+           given_i={F\bibinitperiod}}}%
+        {{hash=80c0a5abb383820c98e1e918318b6214}{%
+           family={Salas-Gonzalez},
+           family_i={S\bibinithyphendelim G\bibinitperiod},
+           given={Diego},
+           given_i={D\bibinitperiod}}}%
+        {{hash=f4228f125c42361b9f47bb676e4c04bb}{%
+           family={Górriz},
+           family_i={G\bibinitperiod},
+           given={Juan\bibnamedelima M},
+           given_i={J\bibinitperiod\bibinitdelim M\bibinitperiod}}}%
+        {{hash=6450d056a7ef88a8321faa1c9474f31c}{%
+           family={Ramírez},
+           family_i={R\bibinitperiod},
+           given={Javier},
+           given_i={J\bibinitperiod}}}%
+        {{hash=27b0256970d0ca989eac327d37df4a41}{%
+           family={Martínez-Murcia},
+           family_i={M\bibinithyphendelim M\bibinitperiod},
+           given={Francisco\bibnamedelima J},
+           given_i={F\bibinitperiod\bibinitdelim J\bibinitperiod}}}%
+      }
+      \list{organization}{2}{%
+        {International Society for Optics}%
+        {Photonics}%
+      }
+      \strng{namehash}{0605a7746a8c0afa1d726c52d83c4f5d}
+      \strng{fullhash}{394bd1d5d6c06be661135da19a1b9b7f}
+      \field{sortinit}{2}
+      \field{sortinithash}{8343b463aacf48517c044b4d2c9c45ed}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{SPIE Medical Imaging}
+      \field{title}{Analysis of 18F-DMFP-PET data using Hidden Markov Random Field and the Gaussian distribution to assist the diagnosis of Parkinsonism}
+      \field{year}{2017}
+      \field{pages}{101342B\bibrangedash 101342B}
+      \range{pages}{-1}
+      \keyw{cv}
+    \endentry
+    \entry{segovia2017multivariate}{article}{}
+      \true{moreauthor}
+      \true{morelabelname}
+      \name{author}{10}{}{%
+        {{hash=772517a755cbc91dd250c3a71f2e7bb6}{%
+           family={Segovia},
+           family_i={S\bibinitperiod},
+           given={Fermín},
+           given_i={F\bibinitperiod}}}%
+        {{hash=7330831b1ba286c0e1ce9bdc9e47c6af}{%
+           family={Gorriz},
+           family_i={G\bibinitperiod},
+           given={Juan\bibnamedelima Manuel},
+           given_i={J\bibinitperiod\bibinitdelim M\bibinitperiod}}}%
+        {{hash=6450d056a7ef88a8321faa1c9474f31c}{%
+           family={Ramírez},
+           family_i={R\bibinitperiod},
+           given={Javier},
+           given_i={J\bibinitperiod}}}%
+        {{hash=7df619f6d9b97a86939be426ac15de53}{%
+           family={Martínez-Murcia},
+           family_i={M\bibinithyphendelim M\bibinitperiod},
+           given={Francisco\bibnamedelima Jesús},
+           given_i={F\bibinitperiod\bibinitdelim J\bibinitperiod}}}%
+        {{hash=46e783c9e1c6cb8160b243f9c80b2d9a}{%
+           family={Levin},
+           family_i={L\bibinitperiod},
+           given={Johannes},
+           given_i={J\bibinitperiod}}}%
+        {{hash=3be17ed6e351ab36356e926aaf8c61f6}{%
+           family={Schuberth},
+           family_i={S\bibinitperiod},
+           given={Madeleine},
+           given_i={M\bibinitperiod}}}%
+        {{hash=ef6be48116332fa6fc0cc9c27736a1b7}{%
+           family={Brendel},
+           family_i={B\bibinitperiod},
+           given={Matthias},
+           given_i={M\bibinitperiod}}}%
+        {{hash=7cbf4c09050ad80bb85f00978abb940c}{%
+           family={Rominger},
+           family_i={R\bibinitperiod},
+           given={Axel},
+           given_i={A\bibinitperiod}}}%
+        {{hash=bdcd271b728cc26f37ce899dd6f17f50}{%
+           family={Boetzel},
+           family_i={B\bibinitperiod},
+           given={Kai},
+           given_i={K\bibinitperiod}}}%
+        {{hash=eea60f3a1d128eb45b05655eff139acf}{%
+           family={Garraux},
+           family_i={G\bibinitperiod},
+           given={Gaëtan},
+           given_i={G\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Frontiers}%
+      }
+      \strng{namehash}{0605a7746a8c0afa1d726c52d83c4f5d}
+      \strng{fullhash}{8dcbfbaf21f57b6e3364c45c487a284a}
+      \field{sortinit}{2}
+      \field{sortinithash}{8343b463aacf48517c044b4d2c9c45ed}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Frontiers in Neuroinformatics}
+      \field{title}{Multivariate analysis of 18F-DMFP PET data to assist the diagnosis of parkinsonism}
+      \field{volume}{11}
+      \field{year}{2017}
+      \field{pages}{23}
+      \range{pages}{1}
+      \keyw{cv}
     \endentry
     \entry{Martinez-Murcia2016book}{inbook}{}
       \name{author}{3}{}{%
@@ -17169,7 +17341,7 @@
            given_i={R\bibinitperiod}}}%
       }
       \list{publisher}{1}{%
-        {Intech}%
+        {InTech}%
       }
       \strng{namehash}{29217a85333e67ccd23e2b5d1f6c6901}
       \strng{fullhash}{29217a85333e67ccd23e2b5d1f6c6901}
@@ -17189,7 +17361,7 @@
       \verb{doi}
       \verb 10.5772/64980
       \endverb
-      \keyw{own}
+      \keyw{own,cv}
     \endentry
     \entry{Martinez-Murcia2016b}{inbook}{}
       \name{author}{3}{}{%
@@ -17226,7 +17398,7 @@
       \verb{doi}
       \verb 10.1002/047134608X
       \endverb
-      \keyw{own}
+      \keyw{own,cv}
     \endentry
     \entry{Martinez-Murcia2015}{article}{}
       \name{author}{4}{}{%
@@ -17271,7 +17443,7 @@
       \verb{doi}
       \verb 10.2174/1567205013666160314145158
       \endverb
-      \keyw{sbm,mri,adni,ad,alzheimer,own}
+      \keyw{sbm,mri,adni,ad,alzheimer,own,cv}
     \endentry
     \entry{Martinez-Murcia2016}{article}{}
       \name{author}{4}{}{%
@@ -17316,7 +17488,7 @@
       \verb{doi}
       \verb 10.1142/S0129065716500246
       \endverb
-      \keyw{sbm,hmm,parametrization,mri,adni,ad,alzheimer,own}
+      \keyw{sbm,hmm,parametrization,mri,adni,ad,alzheimer,own,cv}
     \endentry
     \entry{Ortiz2016249}{inproceedings}{}
       \name{author}{6}{}{%
@@ -17370,6 +17542,51 @@
       \verb{doi}
       \verb 10.1007/978-3-319-39687-3_24
       \endverb
+      \keyw{cv}
+    \endentry
+    \entry{ramirez2016magnetic}{inproceedings}{}
+      \name{author}{5}{}{%
+        {{hash=956dd1be9ac1ab9b99c08e64df987d8b}{%
+           family={Ramírez},
+           family_i={R\bibinitperiod},
+           given={J},
+           given_i={J\bibinitperiod}}}%
+        {{hash=0ae46c1c8fdcf3c617ff89ef2f91701b}{%
+           family={Górriz},
+           family_i={G\bibinitperiod},
+           given={JM},
+           given_i={J\bibinitperiod}}}%
+        {{hash=f227d76c9ef083f5fc3f912947b4a508}{%
+           family={Martínez-Murcia},
+           family_i={M\bibinithyphendelim M\bibinitperiod},
+           given={FJ},
+           given_i={F\bibinitperiod}}}%
+        {{hash=8c4f1186424b8c956cc75e7a9d812b24}{%
+           family={Segovia},
+           family_i={S\bibinitperiod},
+           given={F},
+           given_i={F\bibinitperiod}}}%
+        {{hash=ec54335a3d63d6f504883a55b54bfbaf}{%
+           family={Salas-Gonzalez},
+           family_i={S\bibinithyphendelim G\bibinitperiod},
+           given={D},
+           given_i={D\bibinitperiod}}}%
+      }
+      \list{organization}{1}{%
+        {IEEE}%
+      }
+      \strng{namehash}{8bda6e59fab26b0a664e35c26d9ad1ac}
+      \strng{fullhash}{ad2c4192bc990be6465e50752eb98b35}
+      \field{sortinit}{2}
+      \field{sortinithash}{8343b463aacf48517c044b4d2c9c45ed}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{Multimedia Signal Processing (MMSP), 2016 IEEE 18th International Workshop on}
+      \field{title}{Magnetic resonance image classification using nonnegative matrix factorization and ensemble tree learning techniques}
+      \field{year}{2016}
+      \field{pages}{1\bibrangedash 5}
+      \range{pages}{5}
+      \keyw{cv}
     \endentry
     \entry{Salas-Gonzalez2016838}{article}{}
       \name{author}{6}{}{%
@@ -17424,6 +17641,51 @@
       \verb{doi}
       \verb 10.2174/1567205013666160415154852
       \endverb
+      \keyw{cv}
+    \endentry
+    \entry{segovia2016assisting}{inproceedings}{}
+      \name{author}{5}{}{%
+        {{hash=772517a755cbc91dd250c3a71f2e7bb6}{%
+           family={Segovia},
+           family_i={S\bibinitperiod},
+           given={Fermín},
+           given_i={F\bibinitperiod}}}%
+        {{hash=510885c8c4fb524932bb036554801510}{%
+           family={García-Pérez},
+           family_i={G\bibinithyphendelim P\bibinitperiod},
+           given={Marcelo},
+           given_i={M\bibinitperiod}}}%
+        {{hash=34620d54f5fb45ee0cac783a2a7ca6a1}{%
+           family={Górriz},
+           family_i={G\bibinitperiod},
+           given={Juan\bibnamedelima Manuel},
+           given_i={J\bibinitperiod\bibinitdelim M\bibinitperiod}}}%
+        {{hash=6450d056a7ef88a8321faa1c9474f31c}{%
+           family={Ramírez},
+           family_i={R\bibinitperiod},
+           given={Javier},
+           given_i={J\bibinitperiod}}}%
+        {{hash=7df619f6d9b97a86939be426ac15de53}{%
+           family={Martínez-Murcia},
+           family_i={M\bibinithyphendelim M\bibinitperiod},
+           given={Francisco\bibnamedelima Jesús},
+           given_i={F\bibinitperiod\bibinitdelim J\bibinitperiod}}}%
+      }
+      \list{organization}{1}{%
+        {Springer International Publishing}%
+      }
+      \strng{namehash}{0605a7746a8c0afa1d726c52d83c4f5d}
+      \strng{fullhash}{e062da368077f3daf467ff2616630feb}
+      \field{sortinit}{2}
+      \field{sortinithash}{8343b463aacf48517c044b4d2c9c45ed}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{International Conference on EUropean Transnational Education}
+      \field{title}{Assisting the Diagnosis of Neurodegenerative Disorders Using Principal Component Analysis and TensorFlow}
+      \field{year}{2016}
+      \field{pages}{43\bibrangedash 52}
+      \range{pages}{10}
+      \keyw{cv}
     \endentry
     \entry{Martinez-MurciaVRLBP}{inproceedings}{}
       \name{author}{5}{}{%
@@ -17472,7 +17734,7 @@
       \verb{doi}
       \verb 10.1007/978-3-319-18914-7_3
       \endverb
-      \keyw{sbm,lbp,vrlbp,mri,ad,alzheimer,own}
+      \keyw{sbm,lbp,vrlbp,mri,ad,alzheimer,own,cv}
     \endentry
     \entry{Ramírez2016395}{inproceedings}{}
       \name{author}{5}{}{%
@@ -17522,6 +17784,7 @@
       \verb{doi}
       \verb 10.1007/978-3-319-23024-5_36
       \endverb
+      \keyw{cv}
     \endentry
     \entry{Salas-Gonzalez2015391}{article}{}
       \name{author}{7}{}{%
@@ -17581,6 +17844,7 @@
       \verb{doi}
       \verb 10.1007/s12021-015-9262-9
       \endverb
+      \keyw{cv}
     \endentry
     \entry{Martinez-Murcia2014225}{inproceedings}{}
       \name{author}{6}{}{%
@@ -17630,7 +17894,7 @@
       \verb{doi}
       \verb 10.3233/978-1-61499-474-9-225
       \endverb
-      \keyw{mri,alzheimer,sbm,ad,adni,own}
+      \keyw{mri,alzheimer,sbm,ad,adni,own,cv}
     \endentry
     \entry{Martinez-Murcia201458}{article}{}
       \name{author}{5}{}{%
@@ -17679,7 +17943,7 @@
       \verb{doi}
       \verb 10.1016/j.neucom.2013.01.054
       \endverb
-      \keyw{parkinson,ica,tests,pks,datscan,own}
+      \keyw{parkinson,ica,tests,pks,datscan,own,cv}
     \endentry
     \entry{martinez2014parametrization}{article}{}
       \name{author}{5}{}{%
@@ -17728,7 +17992,7 @@
       \verb{doi}
       \verb 10.1118/1.4845115
       \endverb
-      \keyw{texture,datscan,parkinson,pks,own}
+      \keyw{texture,datscan,parkinson,pks,own,cv}
     \endentry
     \entry{Ortiz201411}{inproceedings}{}
       \name{author}{5}{}{%
@@ -17773,6 +18037,7 @@
       \verb{doi}
       \verb 10.3233/978-1-61499-474-9-11
       \endverb
+      \keyw{cv}
     \endentry
     \entry{Ortiz2014}{article}{}
       \name{author}{4}{}{%
@@ -17824,6 +18089,7 @@
       \verb{doi}
       \verb 10.1371/journal.pone.0093851
       \endverb
+      \keyw{cv}
     \endentry
     \entry{Salas-Gonzalez201465}{inproceedings}{}
       \name{author}{7}{}{%
@@ -17878,6 +18144,7 @@
       \verb{doi}
       \verb 10.3233/978-1-61499-474-9-65
       \endverb
+      \keyw{cv}
     \endentry
     \entry{Illán2013406}{inproceedings}{}
       \name{author}{7}{}{%
@@ -17937,6 +18204,7 @@
       \verb{doi}
       \verb 10.1007/978-3-642-38637-4_42
       \endverb
+      \keyw{cv}
     \endentry
     \entry{Martinez-Murcia2013266}{inproceedings}{}
       \name{author}{5}{}{%
@@ -17986,7 +18254,7 @@
       \verb{doi}
       \verb 10.1007/978-3-642-38622-0_28
       \endverb
-      \keyw{texture,haralick,pks,parkinson,datscan,own}
+      \keyw{texture,haralick,pks,parkinson,datscan,own,cv}
     \endentry
     \entry{Martinez-Murcia2013255}{article}{}
       \name{author}{5}{}{%
@@ -18036,7 +18304,7 @@
       \verb{doi}
       \verb 10.1016/j.cmpb.2013.03.015
       \endverb
-      \keyw{ica,decomposition,feature,spect,pet,adni,ad,alzheimer,own}
+      \keyw{ica,decomposition,feature,spect,pet,adni,ad,alzheimer,own,cv}
     \endentry
     \entry{Ortiz20131725}{article}{}
       \name{author}{4}{}{%
@@ -18081,6 +18349,7 @@
       \verb{doi}
       \verb 10.1016/j.patrec.2013.04.014
       \endverb
+      \keyw{cv}
     \endentry
     \entry{Rojas20132756}{article}{}
       \name{author}{8}{}{%
@@ -18145,6 +18414,7 @@
       \verb{doi}
       \verb 10.1016/j.eswa.2012.11.017
       \endverb
+      \keyw{cv}
     \endentry
     \entry{Martinez-Murcia20129676}{article}{}
       \name{author}{5}{}{%
@@ -18194,7 +18464,7 @@
       \verb{doi}
       \verb 10.1016/j.eswa.2012.02.153
       \endverb
-      \keyw{feature,wilcoxon,factor analysis,fa,decomposition,spect,pet,adni,ad,alzheimer,own}
+      \keyw{feature,wilcoxon,factor analysis,fa,decomposition,spect,pet,adni,ad,alzheimer,own,cv}
     \endentry
     \entry{Martinez201141}{inproceedings}{}
       \name{author}{6}{}{%
@@ -18250,10 +18520,65 @@
       \verb{doi}
       \verb 10.1007/978-3-642-21326-7_5
       \endverb
-      \keyw{feature,factor analysis,decomposition,test,adni,alzheimer,spect,pet,own}
+      \keyw{feature,factor analysis,decomposition,test,adni,alzheimer,spect,pet,own,cv}
     \endentry
   \endsortlist
   \sortlist[entry]{nyt/global/}
+    \entry{gorriz2017case}{inproceedings}{}
+      \name{author}{7}{}{%
+        {{hash=f4228f125c42361b9f47bb676e4c04bb}{%
+           family={Górriz},
+           family_i={G\bibinitperiod},
+           given={Juan\bibnamedelima M},
+           given_i={J\bibinitperiod\bibinitdelim M\bibinitperiod}}}%
+        {{hash=6450d056a7ef88a8321faa1c9474f31c}{%
+           family={Ramírez},
+           family_i={R\bibinitperiod},
+           given={Javier},
+           given_i={J\bibinitperiod}}}%
+        {{hash=9a1642a27d43576caa4f00ac8ff798ca}{%
+           family={Illán},
+           family_i={I\bibinitperiod},
+           given={IA},
+           given_i={I\bibinitperiod}}}%
+        {{hash=27b0256970d0ca989eac327d37df4a41}{%
+           family={Martínez-Murcia},
+           family_i={M\bibinithyphendelim M\bibinitperiod},
+           given={Francisco\bibnamedelima J},
+           given_i={F\bibinitperiod\bibinitdelim J\bibinitperiod}}}%
+        {{hash=772517a755cbc91dd250c3a71f2e7bb6}{%
+           family={Segovia},
+           family_i={S\bibinitperiod},
+           given={Fermín},
+           given_i={F\bibinitperiod}}}%
+        {{hash=80c0a5abb383820c98e1e918318b6214}{%
+           family={Salas-Gonzalez},
+           family_i={S\bibinithyphendelim G\bibinitperiod},
+           given={Diego},
+           given_i={D\bibinitperiod}}}%
+        {{hash=c0570544c0f24ea76f883feab86329e2}{%
+           family={Ortiz},
+           family_i={O\bibinitperiod},
+           given={A},
+           given_i={A\bibinitperiod}}}%
+      }
+      \list{organization}{2}{%
+        {International Society for Optics}%
+        {Photonics}%
+      }
+      \strng{namehash}{9028ae3409544e3121934d8d9fd61fb9}
+      \strng{fullhash}{ee207f380e20ba0877f6fa9f0c10ca95}
+      \field{sortinit}{G}
+      \field{sortinithash}{1c854ef9177a91bf894e66485bdbd3ed}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{SPIE Medical Imaging}
+      \field{title}{Case-Based Statistical Learning applied to SPECT Image Classification}
+      \field{year}{2017}
+      \field{pages}{101342D\bibrangedash 101342D}
+      \range{pages}{-1}
+      \keyw{cv}
+    \endentry
     \entry{Illán2013406}{inproceedings}{}
       \name{author}{7}{}{%
         {{hash=6f0108e83178ae147834a62c7e3bc710}{%
@@ -18312,6 +18637,7 @@
       \verb{doi}
       \verb 10.1007/978-3-642-38637-4_42
       \endverb
+      \keyw{cv}
     \endentry
     \entry{Martinez201141}{inproceedings}{}
       \name{author}{6}{}{%
@@ -18367,7 +18693,7 @@
       \verb{doi}
       \verb 10.1007/978-3-642-21326-7_5
       \endverb
-      \keyw{feature,factor analysis,decomposition,test,adni,alzheimer,spect,pet,own}
+      \keyw{feature,factor analysis,decomposition,test,adni,alzheimer,spect,pet,own,cv}
     \endentry
     \entry{Martinez-Murcia2016book}{inbook}{}
       \name{author}{3}{}{%
@@ -18395,7 +18721,7 @@
            given_i={R\bibinitperiod}}}%
       }
       \list{publisher}{1}{%
-        {Intech}%
+        {InTech}%
       }
       \strng{namehash}{29217a85333e67ccd23e2b5d1f6c6901}
       \strng{fullhash}{29217a85333e67ccd23e2b5d1f6c6901}
@@ -18415,7 +18741,7 @@
       \verb{doi}
       \verb 10.5772/64980
       \endverb
-      \keyw{own}
+      \keyw{own,cv}
     \endentry
     \entry{Martinez-Murcia2016b}{inbook}{}
       \name{author}{3}{}{%
@@ -18452,7 +18778,7 @@
       \verb{doi}
       \verb 10.1002/047134608X
       \endverb
-      \keyw{own}
+      \keyw{own,cv}
     \endentry
     \entry{Martinez-Murcia2014225}{inproceedings}{}
       \name{author}{6}{}{%
@@ -18502,7 +18828,7 @@
       \verb{doi}
       \verb 10.3233/978-1-61499-474-9-225
       \endverb
-      \keyw{mri,alzheimer,sbm,ad,adni,own}
+      \keyw{mri,alzheimer,sbm,ad,adni,own,cv}
     \endentry
     \entry{Martinez-Murcia201458}{article}{}
       \name{author}{5}{}{%
@@ -18551,7 +18877,7 @@
       \verb{doi}
       \verb 10.1016/j.neucom.2013.01.054
       \endverb
-      \keyw{parkinson,ica,tests,pks,datscan,own}
+      \keyw{parkinson,ica,tests,pks,datscan,own,cv}
     \endentry
     \entry{Martinez-Murcia2013266}{inproceedings}{}
       \name{author}{5}{}{%
@@ -18601,7 +18927,7 @@
       \verb{doi}
       \verb 10.1007/978-3-642-38622-0_28
       \endverb
-      \keyw{texture,haralick,pks,parkinson,datscan,own}
+      \keyw{texture,haralick,pks,parkinson,datscan,own,cv}
     \endentry
     \entry{martinez2014parametrization}{article}{}
       \name{author}{5}{}{%
@@ -18650,7 +18976,7 @@
       \verb{doi}
       \verb 10.1118/1.4845115
       \endverb
-      \keyw{texture,datscan,parkinson,pks,own}
+      \keyw{texture,datscan,parkinson,pks,own,cv}
     \endentry
     \entry{Martinez-Murcia2015}{article}{}
       \name{author}{4}{}{%
@@ -18695,7 +19021,7 @@
       \verb{doi}
       \verb 10.2174/1567205013666160314145158
       \endverb
-      \keyw{sbm,mri,adni,ad,alzheimer,own}
+      \keyw{sbm,mri,adni,ad,alzheimer,own,cv}
     \endentry
     \entry{Martinez-Murcia2016}{article}{}
       \name{author}{4}{}{%
@@ -18740,7 +19066,7 @@
       \verb{doi}
       \verb 10.1142/S0129065716500246
       \endverb
-      \keyw{sbm,hmm,parametrization,mri,adni,ad,alzheimer,own}
+      \keyw{sbm,hmm,parametrization,mri,adni,ad,alzheimer,own,cv}
     \endentry
     \entry{Martinez-Murcia2013255}{article}{}
       \name{author}{5}{}{%
@@ -18790,7 +19116,7 @@
       \verb{doi}
       \verb 10.1016/j.cmpb.2013.03.015
       \endverb
-      \keyw{ica,decomposition,feature,spect,pet,adni,ad,alzheimer,own}
+      \keyw{ica,decomposition,feature,spect,pet,adni,ad,alzheimer,own,cv}
     \endentry
     \entry{Martinez-Murcia20129676}{article}{}
       \name{author}{5}{}{%
@@ -18840,7 +19166,7 @@
       \verb{doi}
       \verb 10.1016/j.eswa.2012.02.153
       \endverb
-      \keyw{feature,wilcoxon,factor analysis,fa,decomposition,spect,pet,adni,ad,alzheimer,own}
+      \keyw{feature,wilcoxon,factor analysis,fa,decomposition,spect,pet,adni,ad,alzheimer,own,cv}
     \endentry
     \entry{Martinez-MurciaVRLBP}{inproceedings}{}
       \name{author}{5}{}{%
@@ -18889,7 +19215,7 @@
       \verb{doi}
       \verb 10.1007/978-3-319-18914-7_3
       \endverb
-      \keyw{sbm,lbp,vrlbp,mri,ad,alzheimer,own}
+      \keyw{sbm,lbp,vrlbp,mri,ad,alzheimer,own,cv}
     \endentry
     \entry{Martinez-Murcia2016a}{article}{}
       \name{author}{13}{}{%
@@ -18976,7 +19302,7 @@
       \verb{doi}
       \verb 10.1002/hbm.23449
       \endverb
-      \keyw{own}
+      \keyw{own,cv}
     \endentry
     \entry{Ortiz201411}{inproceedings}{}
       \name{author}{5}{}{%
@@ -19021,6 +19347,7 @@
       \verb{doi}
       \verb 10.3233/978-1-61499-474-9-11
       \endverb
+      \keyw{cv}
     \endentry
     \entry{Ortiz2014}{article}{}
       \name{author}{4}{}{%
@@ -19072,6 +19399,7 @@
       \verb{doi}
       \verb 10.1371/journal.pone.0093851
       \endverb
+      \keyw{cv}
     \endentry
     \entry{Ortiz20131725}{article}{}
       \name{author}{4}{}{%
@@ -19116,6 +19444,7 @@
       \verb{doi}
       \verb 10.1016/j.patrec.2013.04.014
       \endverb
+      \keyw{cv}
     \endentry
     \entry{Ortiz2016249}{inproceedings}{}
       \name{author}{6}{}{%
@@ -19169,6 +19498,51 @@
       \verb{doi}
       \verb 10.1007/978-3-319-39687-3_24
       \endverb
+      \keyw{cv}
+    \endentry
+    \entry{ramirez2016magnetic}{inproceedings}{}
+      \name{author}{5}{}{%
+        {{hash=956dd1be9ac1ab9b99c08e64df987d8b}{%
+           family={Ramírez},
+           family_i={R\bibinitperiod},
+           given={J},
+           given_i={J\bibinitperiod}}}%
+        {{hash=0ae46c1c8fdcf3c617ff89ef2f91701b}{%
+           family={Górriz},
+           family_i={G\bibinitperiod},
+           given={JM},
+           given_i={J\bibinitperiod}}}%
+        {{hash=f227d76c9ef083f5fc3f912947b4a508}{%
+           family={Martínez-Murcia},
+           family_i={M\bibinithyphendelim M\bibinitperiod},
+           given={FJ},
+           given_i={F\bibinitperiod}}}%
+        {{hash=8c4f1186424b8c956cc75e7a9d812b24}{%
+           family={Segovia},
+           family_i={S\bibinitperiod},
+           given={F},
+           given_i={F\bibinitperiod}}}%
+        {{hash=ec54335a3d63d6f504883a55b54bfbaf}{%
+           family={Salas-Gonzalez},
+           family_i={S\bibinithyphendelim G\bibinitperiod},
+           given={D},
+           given_i={D\bibinitperiod}}}%
+      }
+      \list{organization}{1}{%
+        {IEEE}%
+      }
+      \strng{namehash}{8bda6e59fab26b0a664e35c26d9ad1ac}
+      \strng{fullhash}{ad2c4192bc990be6465e50752eb98b35}
+      \field{sortinit}{R}
+      \field{sortinithash}{c7387613477035a752d935acfc3e3ea2}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{Multimedia Signal Processing (MMSP), 2016 IEEE 18th International Workshop on}
+      \field{title}{Magnetic resonance image classification using nonnegative matrix factorization and ensemble tree learning techniques}
+      \field{year}{2016}
+      \field{pages}{1\bibrangedash 5}
+      \range{pages}{5}
+      \keyw{cv}
     \endentry
     \entry{Ramírez2016395}{inproceedings}{}
       \name{author}{5}{}{%
@@ -19218,6 +19592,7 @@
       \verb{doi}
       \verb 10.1007/978-3-319-23024-5_36
       \endverb
+      \keyw{cv}
     \endentry
     \entry{Rojas20132756}{article}{}
       \name{author}{8}{}{%
@@ -19282,6 +19657,7 @@
       \verb{doi}
       \verb 10.1016/j.eswa.2012.11.017
       \endverb
+      \keyw{cv}
     \endentry
     \entry{Salas-Gonzalez201465}{inproceedings}{}
       \name{author}{7}{}{%
@@ -19336,6 +19712,7 @@
       \verb{doi}
       \verb 10.3233/978-1-61499-474-9-65
       \endverb
+      \keyw{cv}
     \endentry
     \entry{Salas-Gonzalez2015391}{article}{}
       \name{author}{7}{}{%
@@ -19395,6 +19772,7 @@
       \verb{doi}
       \verb 10.1007/s12021-015-9262-9
       \endverb
+      \keyw{cv}
     \endentry
     \entry{Salas-Gonzalez2016838}{article}{}
       \name{author}{6}{}{%
@@ -19449,6 +19827,168 @@
       \verb{doi}
       \verb 10.2174/1567205013666160415154852
       \endverb
+      \keyw{cv}
+    \endentry
+    \entry{segovia2016assisting}{inproceedings}{}
+      \name{author}{5}{}{%
+        {{hash=772517a755cbc91dd250c3a71f2e7bb6}{%
+           family={Segovia},
+           family_i={S\bibinitperiod},
+           given={Fermín},
+           given_i={F\bibinitperiod}}}%
+        {{hash=510885c8c4fb524932bb036554801510}{%
+           family={García-Pérez},
+           family_i={G\bibinithyphendelim P\bibinitperiod},
+           given={Marcelo},
+           given_i={M\bibinitperiod}}}%
+        {{hash=34620d54f5fb45ee0cac783a2a7ca6a1}{%
+           family={Górriz},
+           family_i={G\bibinitperiod},
+           given={Juan\bibnamedelima Manuel},
+           given_i={J\bibinitperiod\bibinitdelim M\bibinitperiod}}}%
+        {{hash=6450d056a7ef88a8321faa1c9474f31c}{%
+           family={Ramírez},
+           family_i={R\bibinitperiod},
+           given={Javier},
+           given_i={J\bibinitperiod}}}%
+        {{hash=7df619f6d9b97a86939be426ac15de53}{%
+           family={Martínez-Murcia},
+           family_i={M\bibinithyphendelim M\bibinitperiod},
+           given={Francisco\bibnamedelima Jesús},
+           given_i={F\bibinitperiod\bibinitdelim J\bibinitperiod}}}%
+      }
+      \list{organization}{1}{%
+        {Springer International Publishing}%
+      }
+      \strng{namehash}{0605a7746a8c0afa1d726c52d83c4f5d}
+      \strng{fullhash}{e062da368077f3daf467ff2616630feb}
+      \field{sortinit}{S}
+      \field{sortinithash}{fd1e7c5ab79596b13dbbb67f8d70fb5a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{International Conference on EUropean Transnational Education}
+      \field{title}{Assisting the Diagnosis of Neurodegenerative Disorders Using Principal Component Analysis and TensorFlow}
+      \field{year}{2016}
+      \field{pages}{43\bibrangedash 52}
+      \range{pages}{10}
+      \keyw{cv}
+    \endentry
+    \entry{segovia2017analysis}{inproceedings}{}
+      \name{author}{5}{}{%
+        {{hash=772517a755cbc91dd250c3a71f2e7bb6}{%
+           family={Segovia},
+           family_i={S\bibinitperiod},
+           given={Fermín},
+           given_i={F\bibinitperiod}}}%
+        {{hash=80c0a5abb383820c98e1e918318b6214}{%
+           family={Salas-Gonzalez},
+           family_i={S\bibinithyphendelim G\bibinitperiod},
+           given={Diego},
+           given_i={D\bibinitperiod}}}%
+        {{hash=f4228f125c42361b9f47bb676e4c04bb}{%
+           family={Górriz},
+           family_i={G\bibinitperiod},
+           given={Juan\bibnamedelima M},
+           given_i={J\bibinitperiod\bibinitdelim M\bibinitperiod}}}%
+        {{hash=6450d056a7ef88a8321faa1c9474f31c}{%
+           family={Ramírez},
+           family_i={R\bibinitperiod},
+           given={Javier},
+           given_i={J\bibinitperiod}}}%
+        {{hash=27b0256970d0ca989eac327d37df4a41}{%
+           family={Martínez-Murcia},
+           family_i={M\bibinithyphendelim M\bibinitperiod},
+           given={Francisco\bibnamedelima J},
+           given_i={F\bibinitperiod\bibinitdelim J\bibinitperiod}}}%
+      }
+      \list{organization}{2}{%
+        {International Society for Optics}%
+        {Photonics}%
+      }
+      \strng{namehash}{0605a7746a8c0afa1d726c52d83c4f5d}
+      \strng{fullhash}{394bd1d5d6c06be661135da19a1b9b7f}
+      \field{sortinit}{S}
+      \field{sortinithash}{fd1e7c5ab79596b13dbbb67f8d70fb5a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{SPIE Medical Imaging}
+      \field{title}{Analysis of 18F-DMFP-PET data using Hidden Markov Random Field and the Gaussian distribution to assist the diagnosis of Parkinsonism}
+      \field{year}{2017}
+      \field{pages}{101342B\bibrangedash 101342B}
+      \range{pages}{-1}
+      \keyw{cv}
+    \endentry
+    \entry{segovia2017multivariate}{article}{}
+      \true{moreauthor}
+      \true{morelabelname}
+      \name{author}{10}{}{%
+        {{hash=772517a755cbc91dd250c3a71f2e7bb6}{%
+           family={Segovia},
+           family_i={S\bibinitperiod},
+           given={Fermín},
+           given_i={F\bibinitperiod}}}%
+        {{hash=7330831b1ba286c0e1ce9bdc9e47c6af}{%
+           family={Gorriz},
+           family_i={G\bibinitperiod},
+           given={Juan\bibnamedelima Manuel},
+           given_i={J\bibinitperiod\bibinitdelim M\bibinitperiod}}}%
+        {{hash=6450d056a7ef88a8321faa1c9474f31c}{%
+           family={Ramírez},
+           family_i={R\bibinitperiod},
+           given={Javier},
+           given_i={J\bibinitperiod}}}%
+        {{hash=7df619f6d9b97a86939be426ac15de53}{%
+           family={Martínez-Murcia},
+           family_i={M\bibinithyphendelim M\bibinitperiod},
+           given={Francisco\bibnamedelima Jesús},
+           given_i={F\bibinitperiod\bibinitdelim J\bibinitperiod}}}%
+        {{hash=46e783c9e1c6cb8160b243f9c80b2d9a}{%
+           family={Levin},
+           family_i={L\bibinitperiod},
+           given={Johannes},
+           given_i={J\bibinitperiod}}}%
+        {{hash=3be17ed6e351ab36356e926aaf8c61f6}{%
+           family={Schuberth},
+           family_i={S\bibinitperiod},
+           given={Madeleine},
+           given_i={M\bibinitperiod}}}%
+        {{hash=ef6be48116332fa6fc0cc9c27736a1b7}{%
+           family={Brendel},
+           family_i={B\bibinitperiod},
+           given={Matthias},
+           given_i={M\bibinitperiod}}}%
+        {{hash=7cbf4c09050ad80bb85f00978abb940c}{%
+           family={Rominger},
+           family_i={R\bibinitperiod},
+           given={Axel},
+           given_i={A\bibinitperiod}}}%
+        {{hash=bdcd271b728cc26f37ce899dd6f17f50}{%
+           family={Boetzel},
+           family_i={B\bibinitperiod},
+           given={Kai},
+           given_i={K\bibinitperiod}}}%
+        {{hash=eea60f3a1d128eb45b05655eff139acf}{%
+           family={Garraux},
+           family_i={G\bibinitperiod},
+           given={Gaëtan},
+           given_i={G\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Frontiers}%
+      }
+      \strng{namehash}{0605a7746a8c0afa1d726c52d83c4f5d}
+      \strng{fullhash}{8dcbfbaf21f57b6e3364c45c487a284a}
+      \field{sortinit}{S}
+      \field{sortinithash}{fd1e7c5ab79596b13dbbb67f8d70fb5a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Frontiers in Neuroinformatics}
+      \field{title}{Multivariate analysis of 18F-DMFP PET data to assist the diagnosis of parkinsonism}
+      \field{volume}{11}
+      \field{year}{2017}
+      \field{pages}{23}
+      \range{pages}{1}
+      \keyw{cv}
     \endentry
   \endsortlist
 \endrefsection
