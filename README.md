@@ -1,6 +1,6 @@
 #  Statistical Neuroimage Modeling, Processing and Synthesis based on Texture and Component Analysis: Tackling the Small Sample Size Problem. 
 
-A PhD thesis by *Francisco Jesus Martinez-Murcia*. Using the *ArsClassica* template. 
+A PhD thesis by *Francisco Jesus Martinez-Murcia*. 
 
 # Abstract
 
@@ -8,17 +8,16 @@ The rise of neuroimaging in the last years has provided physicians and radiologi
 
 With this thesis we focus on three different stages of the CAD pipeline: preprocessing, feature extraction and validation. For preprocessing, we have developed a method that target a relatively recent concern: the confounding effect of false positives due to differences in the acquisition at multiple sites. Our method can effectively merge datasets while reducing the acquisition site effects. Regarding feature extraction, we have studied decomposition algorithms (independent component analysis, factor analysis), texture features and a complete framework called Spherical Brain Mapping, that reduces the 3-dimensional brain images to two-dimensional statistical maps. This allowed us to improve the performance of automatic systems for detecting Alzheimer's and Parkinson's diseases. Finally, we developed a brain simulation technique that can be used to validate new functional datasets as well as for educational purposes. 
 
-# ArsClassica package
 
-    Copyright (c) 2008-2017 Lorenzo Pantieri
-    http://www.lorenzopantieri.net/
-    lorenzo.pantieri@gmail.com
+Copyleft (cc) Francisco Jesús Martínez-Murcia
+http://wpd.ugr.es/~fjesusmartinez
+fjesusmartinez@ugr.es
 
 
 # License
+Este obra está bajo una licencia de [Creative Commons Reconocimiento-NoComercial-SinObraDerivada 4.0 Internacional](https://creativecommons.org/licenses/by-nc-nd/4.0/). 
 
-This software is provided under the terms of the LaTeX Project Public License distributed from CTAN archives in directory macros/latex/base/lppl.txt.
-
+Proudly powered by the *ArsClassica* template. 
 
 
 
