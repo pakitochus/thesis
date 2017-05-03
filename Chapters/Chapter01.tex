@@ -1,12 +1,14 @@
+% !TEX TS-program = pdflatex
+% !TEX root = ../Tesis.tex
 %************************************************
 \chapter{Introduction}\label{ch:introduction}
 %************************************************
 \section{Motivation}
 In recent years, there has been a rise in the use of neuroimaging in the clinical practice. It has improved and speeded the procedure of diagnostic, providing unprecedented insight into the brain. Neuroimaging is very extended in research as well. Different fields such as psychiatry, neurology, psychology, behavioural science or biology make extensive use of brain imaging in their studies. 
 
-The basis of these studies are common: a selection procedure by which a representative set of subjects is recruited, the fulfilment of an experiment on (or by) each subject and a statistical analysis of the acquired data. Particularly, when studying a certain disease, it is common to recruit subjects affected by the disease and non-affected, healthy subjects, usually known as \acp{CTL}. Then, in this typical example, both affected and \acp{CTL} are scanned, and brain anatomy or function is analysed using statistical tools. The result of this analysis is a list of significant differences between structure or function that could be linked to the disease. 
+The basis of most of these studies is common: a procedure by which a representative set of subjects is recruited, the fulfilment of an experiment on (or by) each subject and a statistical analysis of the acquired data. Particularly, when studying a certain disease, it is common to recruit subjects affected by the disease and a matched population of non-affected, healthy subjects, usually known as \acp{CTL}. Then, in this typical example, both affected and \acp{CTL} are scanned, and brain anatomy or function is analysed using statistical tools. The result of this analysis is frequently a list of significant differences between structure or function that could be linked to the disease. 
 
-\ac{CAD} systems provide a set of tools to help setting up and performing these studies. It is currently a thriving area of research involving multidisciplinary teams, combining computer science, mathematics, medicine, artificial intelligence, statistics, machine learning, and many others \cite{Martinez-Murcia2016}. The main aim is to assist clinicians in the procedure of diagnosis and study of the diseases by providing software that can effectively recognize disease patterns, characterize differences and make predictions. 
+\acf{CAD} systems provide a set of tools to help setting up and performing these studies. It is currently a thriving area of research involving multidisciplinary teams, combining computer science, mathematics, medicine, artificial intelligence, statistics, machine learning, and many others \cite{Martinez-Murcia2016}. The main aim is to assist clinicians in the procedure of diagnosis and study of the diseases by providing software that can effectively recognize disease patterns, characterize differences and make predictions. 
 
 One fundamental issue often found in this studies is the sample size. The number of subjects frequently ranges from tens to hundreds, whereas the number of features (namely voxels) to be analysed can add up to millions. This causes the so-called \emph{Small Sample Size Problem} \cite{Duin2000} which negatively affects the statistical power of any experiment performed using these datasets \cite{Button2013}. 
 
@@ -19,39 +21,39 @@ One fundamental issue often found in this studies is the sample size. The number
 
 
 \section{The Small Sample Size Problem}\label{sec:smallsamplesize}
-The \textit{Small Sample Size Problem} refers to a problem that arises when the proportion between number of subjects and number of features is large. Think of, \eg, 15 points in a one-dimensional line, as in Figure~\ref{fig:smallsample}. If we think of a subject as a vector, we would have 15 subjects in a one-dimensional space. Now, imagine that we add a second dimension. It is easy to see that our subjects would be farther than in the two-dimensional world. And the same would happen if we move to four, ten or thousands of dimensions. The farther our points are, the more difficult is for a statistical tool to extract information. That is what we call \textit{almost empty spaces} \cite{Duin2000,Stoeckel04}, in contrast to \textit{dense spaces}, where points are closer. 
+The \textit{Small Sample Size Problem} refers to a problem that arises when the ratio between the number of subjects and the number of features is large. Think of, \eg, 15 points in a one-dimensional line, as in Figure~\ref{fig:smallsample}. If we think of a subject as a vector, we would have 15 subjects in a one-dimensional space. Now, imagine that we add a second dimension. It is easy to see that our subjects would be more distant than in the one-dimensional line. And the same would happen if we move to three, ten or thousands of dimensions. The farther our points are, the more difficult is for a statistical tool to extract information. That is what we call \textit{almost empty spaces} \cite{Duin2000,Stoeckel04}, in contrast to \textit{dense spaces}, where points are closer. 
 
 Neuroimaging provides hundreds of thousands, or even millions of voxels, in what could mean millions of features. That implies that any calculation performed in those almost empty spaces will eventually lack information. This implies a loss of statistical power of the methods used, usually producing false negatives (the system is unable to detect real signal) and false positives (the system detects signal where there is not). These are known in statistics as Type I and Type II errors respectively. 
 
-In differential diagnosis studies, the small sample size problem leads to wrong conclusions about where real differences are located. This, in addition to untracked confounding variables are one of the fundamental sources of non-re\-pro\-du\-ci\-bi\-li\-ty un current neuroimaging studies \cite{Button2013}. 
+In differential diagnosis studies, the small sample size problem leads to wrong conclusions about where real differences are located. This, in addition to untracked confounding variables are some of the fundamental sources of non-re\-pro\-du\-ci\-bi\-li\-ty un current neuroimaging studies \cite{Button2013}. 
 
 The solution might seem straightforward: increase sample size. But this is not always possible, since neuroimaging studies do their best at recruiting as many people as they can with a limited budget. Many efforts have been put into establishing multi-centre collaborations that allow the recruitment of a larger population, but despite offering a higher statistical power, these studies still suffer from a number of confounding variables such as population bias or scanner differences \cite{haar2014anatomical}. In chapters~\ref{ch:swpca} and \ref{ch:simulation} we explore different approaches to this solution. 
 
-Another option involves reducing the number of features, via feature selection or feature extraction. This has been widely used in computed-aided methodology for neuroimaging \cite{DeMartino2007,Xu2009,Gorriz2010,Illan2011,Martinez-Murcia2016} with great success, and solutions using this approach will be treated in chapters~\ref{ch:decomposition}, \ref{ch:texture} and \ref{ch:sbm}. 
+Another option involves reducing the number of features, via feature selection or feature extraction. This has been widely used in computed-aided methodology for neuroimaging very successfully \cite{DeMartino2007,Xu2009,Gorriz2010,Illan2011,Martinez-Murcia2016}, and solutions using this approach will be presented in chapters~\ref{ch:decomposition}, \ref{ch:texture} and \ref{ch:sbm}. 
 
-The Small Sample Size problem is directly related to the \textit{Curse of Dimensionality} \cite{Krishnaiah1982}, which proves that, in contrast to what could be expected, once a certain classifier performance has been achieved, it holds or even decreases when feeding more features to the classifier. The problem also affects statistical hypothesis testing, a tool widely used for inference in neuroimaging, in what is known as the \textit{Multiple Comparisons} problem \cite{Benjamini2010}, a particular field that is still being studied. 
+The Small Sample Size problem is directly related to the \textit{Curse of Dimensionality} \cite{Krishnaiah1982}, which proves that, in contrast to what might be expected, once a certain classifier performance has been achieved, it holds or even decreases when feeding more features to the classifier. The problem also affects statistical hypothesis testing, a tool widely used for inference in neuroimaging, in what is known as the \textit{Multiple Comparisons} problem \cite{Benjamini2010}, a particular field that is still being studied. 
 
 \section{Aims and Objectives}\label{sec:overview}
-This thesis aims to contribute new approaches to overcome the small sample size problem in neuroimaging. This can provide more accurate \ac{CAD} systems by reducing the number of false positives, increasing the reliability of their results. 
+This thesis aims to contribute new approaches to overcome the small sample size problem in neuroimaging. This can lead to more accurate \ac{CAD} systems by reducing the number of false positives, increasing the reliability of their results. 
 
-We will take two different approaches, as commented in previous sections: increasing the sample size and reducing the feature space. Therefore, we can define the following objectives: 
+We will take two different approaches, as commented in the previous section: increasing the sample size and reducing the feature space. Therefore, we can define the following objectives: 
 
 \begin{itemize}
 	\item Develop and evaluate algorithms that reduce the feature space, in which is usually known in the field as feature extraction and feature selection strategies. 
 	\item Develop and evaluate new strategies to increase the sample size in neuroimaging studies. 
 \end{itemize}
 
-Most of the studies in the literature focus on the first objective. Feature extraction algorithms that use \ac{PCA} \cite{Khedher2015,Towey2011} or Partial Least Squares \cite{Segovia2013}, among others, are widely studied. We have developed three different approaches to those:
+Most of the studies in the literature focus on the first objective. Feature extraction algorithms that use \acf{PCA} \cite{Khedher2015,Towey2011} or \acf{PLS} \cite{Segovia2013}, among others, are widely studied. We have developed three different approaches to those:
 
 \begin{itemize}
-	\item A combination of image decomposition algorithms and feature selection. In this approach we have used three criteria to select the most significant voxels from the images, and then applied \acf{FA} and \acf{ICA} to decompose the data and significantly reduce their feature space. 
+	\item A combination of image decomposition algorithms and feature selection. In this approach we used three statistical tests to select the most significant voxels from the images, and then applied \acf{FA} and \acf{ICA} to decompose the data and significantly reduce their feature space. 
 	\item A feature extraction based on texture analysis. 
 	\item A novel strategy called \acf{SBM}. This feature extraction technique uses a spherical coordinate system to map statistical measures to a bidimensional plane. It builds paths used as feature selection vectors where several measures are computed. 
 \end{itemize}
 
-On the other hand, we have evaluate newer ways to increase sample size in neuroimaging studies. We have developed: 
+On the other hand, we have evaluate newer ways to safely increase sample size in neuroimaging studies. We have developed: 
  \begin{itemize}
- 	\item A system to reduce undesired variance in structural multicentre studies, called \acf{SWPCA}. This system is intended to reduce the amount of false positives in large collaborations, providing more homogeneous images and improving their statistical analysis. 
+ 	\item A system to reduce undesired variance in structural multicentre studies, called \acf{SWPCA}. This system is intended to reduce the amount of false positives in large collaborations, providing more homogeneous images and improving their statistical power. 
  	\item An algorithm to simulate functional brain images using existing data, and therefore, increase sample size. 
  \end{itemize}
 

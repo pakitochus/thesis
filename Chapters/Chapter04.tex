@@ -1,10 +1,12 @@
+% !TEX TS-program = pdflatex
+% !TEX root = ../Tesis.tex
 %************************************************
 \chapter{Image Decomposition}\label{ch:decomposition}
 %************************************************
 
 In this chapter, we will focus on those \ac{CAD} systems that use a combination of an image decomposition method and feature selection by means of hypothesis testing. These variety of methods have been published in \cite{Martinez201141,Martinez-Murcia20129676,Martinez-Murcia2013255,Martinez-Murcia201458}. 
 
-Image decomposition methods model a set of samples as a linear combination of $c$ latent variables, also known as components. These variables can be considered as the basis of a $c$-dimensional space where each sample is represented by a feature vector of length $c$. The $i$-th neuroimage in our dataset can be therefore decomposed as: 
+Image decomposition methods model a set of samples as a linear combination of $c$ latent variables, also known as components. These variables can be considered as the basis of a $c$-dimensional space where each sample is represented by a feature or coordinate vector of length $c$. The $i$-th neuroimage in our dataset can be therefore decomposed as: 
 
 \begin{equation}\label{eq:generalDecomposition}
 \mathbf{x}_i = s_0 \mathbf{w}_0 + s_1 \mathbf{w}_1 + \dots + s_c \mathbf{w}_c + \boldmath\epsilon = \mathbf{s}\mathbf{W} + \boldmath\epsilon
@@ -29,31 +31,31 @@ Many signal decomposition techniques are used in the literature, for example \ac
 \end{figure}
 
 \section{Feature Selection}\label{sec:featureSelection}
-Feature selection is the first strategy used for feature reduction \cite{Martinez-Murcia2016b}, and it is often used along with feature extraction in order to build more complex pattern recognition systems. It refers to any strategy intended to find a subset of the original features containing the more suitable ones according to a certain criterion. Therefore, irrelevant features are discarded, and resultant models are faster and more cost-effective \cite{Guyon03}. However, it usually requires an additional optimization to find the parameters for the optimal feature subset, and furthermore, it is impossible to guarantee that the optimal features for the subset are the same of the full feature set \cite{DaelemansHosteMeulderEtAl2003}. 
+Feature selection is our first strategy to reduce the feature space dimensiona \cite{Martinez-Murcia2016b}, and it is often used along with feature extraction in order to build more complex pattern recognition systems. It refers to any strategy intended to find a subset of the original features containing the more suitable ones according to a certain criterion. Therefore, irrelevant features are discarded, and resultant models are faster and more cost-effective \cite{Guyon03}. However, it usually requires an additional optimization to find the parameters for the optimal feature subset, and furthermore, it is impossible to guarantee that the optimal features for the subset are the same of the full feature set \cite{DaelemansHosteMeulderEtAl2003}. 
 
 In this work, we will use filtering methods to perform feature selection. As we introduced in section~\ref{sec:mvanalyses}, filtering methods are based on the computation of a feature relevance score directly on the data. The relevance score is used to sort the different features, discarding those with a lower score, and it is usually computed independently for each feature, in what is called a univariate approach \cite{SaeysInzaLarranaga2007}. 
 
-Feature selection can be used before or after feature extraction. When using computationally-intensive algorithms such as \ac{FA} or especially \ac{ICA}, the selection of best features prior to the decomposition is key to obtain high performance while keeping the computation times small \cite{Martinez201141,Martinez-Murcia20129676}. This also removes noise in some cases where the decomposition algorithm cannot compute correctly the variance. 
+Feature selection can be used before or after feature extraction. When using computationally-intensive algorithms such as \ac{FA} or especially \ac{ICA}, the selection of best features prior to the decomposition is key to obtain high performance while keeping the computation times small \cite{Martinez201141,Martinez-Murcia20129676}. This also removes noise in some cases where the decomposition algorithm cannot correctly compute the variance. 
 
-Three feature selection algorithms have been used in this thesis, not only in the \ac{CAD} systems proposed in this chapter, but in many other models that will be presented later: the $t$-Test, the Kullback-Leibler divergence or Relative Entropy, and the Mann-Whitney-Wilcoxon rank test. 
+Three feature selection algorithms have been used in this thesis, not only in the \ac{CAD} systems proposed in this chapter, but also in many other models that will be presented later: the $t$-Test, the Kullback-Leibler divergence or Relative Entropy, and the Mann-Whitney-Wilcoxon rank test. 
 
 \subsection{$t$-test}\label{sec:ttestEq}
-The $t$-test is an old friend of statisticians. In this work we will use the independent two-sample $t$-test \cite{Fay10}. It quantifies the differences between two classes using an assumption of independent variances. Let $X_i^f$ a vector containing the $f$-th feature of all elements in class $i$. The $t$-score of the $f$-th feature can be computed as:
+The $t$-test is an old friend of statisticians. In this work we will use the independent two-sample $t$-test \cite{Fay10}. It quantifies the differences between two classes assuming independent variances. Let $X_i^f$ a vector containing the $f$-th feature of all elements in class $i$. The $t$-score of the $f$-th feature can be computed as:
 
 \begin{equation}
 t_f = \frac{\bar{X}_1^f - \bar{X}_2^f}{\sqrt{\frac{\sigma_{X_2^f}^2+\sigma_{X_1^f}^2}{n}}}
 \end{equation}
 where $\sigma_{X_i^f}^2$ is the variance and $\bar{X}_i^f$ is the average of the $f$-the feature within class $i$. The $t$-test is extensively used in the neuroimaging community, and it is the basis for the \ac{SPM} and \ac{VBM} analyses \cite{spm_book}. See figure~\ref{fig:ttest_map} for an example of the $t$-test computed on the \adnipet{} database.
 
-\subsection{Kullback-Leibler Divergence} 
-Another alternative is the \acf{KL} divergence, also known as Relative Entropy. It is a non-symmetric measure of the difference between two probabilities distributions. Let us assume that $X_1^f$ and $X_2^f$, the vectors containing the $f$-th feature of all elements in class $i$, are two discrete random variables. Therefore, the \ac{KL} divergence can be calculated with equation \ref{eq:kullback} \cite{Theodoridis1999}.
+\subsection{Relative Entropy} 
+Another alternative is the relative entropy, also known as \acf{KL} divergence. It is a non-symmetric measure of the difference between two probabilities distributions. Let us assume that $X_1^f$ and $X_2^f$, the vectors containing the $f$-th feature of all elements in class $i$, are two discrete random variables. Therefore, the relative entropy can be calculated with equation \ref{eq:kullback} \cite{Theodoridis1999}.
 
 \begin{equation}\label{eq:kullback}
-KL_f = \left(\frac{\sigma_{X_2^f}^2}{\sigma_{X_1^f}^2} +\frac{\sigma_{X_1^f}^2}{\sigma_{X_2^f}^2} -2 \right) + \frac{1}{2}\left(\bar{X}_2^f-\bar{X}_1^f\right)^2\left(\frac{1}{\sigma_{X_1^f}^2} + \frac{1}{\sigma_{X_2^f}^2}\right)
+RE_f = \left(\frac{\sigma_{X_2^f}^2}{\sigma_{X_1^f}^2} +\frac{\sigma_{X_1^f}^2}{\sigma_{X_2^f}^2} -2 \right) + \frac{1}{2}\left(\bar{X}_2^f-\bar{X}_1^f\right)^2\left(\frac{1}{\sigma_{X_1^f}^2} + \frac{1}{\sigma_{X_2^f}^2}\right)
 \end{equation}
-using the same notation than in $t$-test. See figure~\ref{fig:kl_map} for an example of the computed \ac{KL} divergence on the \adnipet{} database.
+using the same notation than in $t$-test. See figure~\ref{fig:kl_map} for an example of the computed relative entropy on the \adnipet{} database.
 
-\subsection{Mann-Whitney-Wilcoxon} 
+\subsection{\acf{MWW} U-test} 
 The \acf{MWW} rank test, also known as $U$-test, assigns a rank to all values in the vector corresponding to the $f$-th feature, $X^f$, without considering any class. The method used to assign a rank is the `average', which means that each value is assigned with the average of the ranks that would have been assigned to all the tied values. This means that, for example, in the case of the vector $X^f=(0,2,3,2)$, the ranks assigned to each element would be $R^f=(1,2.5,4,2.5)$. 
 
 Let $n_1$ and $n_2$ be the number of elements in class 1 and 2 respectively, and $R^f$ the vector of ranked elements. We proceed by selecting the first $n_1$ elements in $R^f$ by: 
@@ -66,12 +68,12 @@ The $U$-score for the $f$-th feature and the first class will be:
 U_1^f = n_1 n_2 + n_1 \frac{n1+1}{2} - \sum R^f_{n_1}
 \end{equation}
 
-And the it can be computed for the second class as the remainder: 
+And it can be computed for the second class as the remainder: 
 \begin{equation}
 U_2^f = n_1 n_2 - U_1
 \end{equation}
 
-The final $U^f$ can be assigned to either $U_1^f$, $U_2^f$ or $\min{U_1^f,U_2^f}$ \cite{Fay10}, but the usual approach nowadays is to assign $U^f=U_2^f$. Unlike $t$-test, \ac{MWW} test does not assume any prior distribution, and therefore is less likely than it to spuriously indicate significance because of the presence of outliers. Under the normal distribution, it performs relatively similar \cite{Fay10}. See figure~\ref{fig:wilcoxon_map} for an example of the \ac{MWW} $U$-test computed on the \adnipet{} database.
+The final $U^f$ can be assigned to either $U_1^f$, $U_2^f$ or $\min{U_1^f,U_2^f}$ \cite{Fay10}, but the usual approach nowadays is to assign $U^f=U_2^f$. Unlike $t$-test, \ac{MWW} test does not assume any distribution, and therefore is less likely to spuriously indicate significance because of the presence of outliers. Under the normal distribution, it performs relatively similar \cite{Fay10}. See figure~\ref{fig:wilcoxon_map} for an example of the \ac{MWW} $U$-test computed on the \adnipet{} database.
 
 \section{Decomposition Algorithms}
 The feature selection algorithms presented above will perform a significant feature reduction, from hundreds of thousands of voxels to a few thousands. These few thousands voxels are considered the best in discriminating between \ac{CTL} and affected subjects in each of the diseases. The feature selection strategy can be thought of as a mask, in which only the most relevant regions according to the tests are selected (see Figure~\ref{fig:comparisonSelection_adnipet}). 
@@ -90,7 +92,7 @@ However, this number of features is still large, and therefore, further feature 
 \end{figure}
 
 
-\subsection{Factor Analysis}
+\subsection{\acf{FA}}
 \acf{FA} was used in \cite{Martinez201141,Martinez-Murcia20129676} to perform feature extraction in \ac{CAD} systems. This strategy assumes that each image in the database is a realization of a given experiment. \ac{FA} then models each of the $N$ observations (or subjects) as the expression of $c$ unobserved variables, known as factors. The model follows the general decomposition equation (Eq. \ref{eq:generalDecomposition}), but assuming that the dataset matrix $\mathbf{X}$ is zero-centred. That is, that we have subtracted the mean prior to the computation. In matrix form, Eq. \ref{eq:generalDecomposition} can be rewritten as:
 
 \begin{equation}\label{eq:factoranalysis}
@@ -133,16 +135,16 @@ The mean $\boldsymbol{\mu}$, and the matrices $\mathbf{S}$ and $\boldsymbol{\Psi
 	\label{fig:error}
 \end{figure}
 
-\subsection{Independent Component Analysis}
+\subsection{\acf{ICA}}
 \acf{ICA} \cite{Hyvarinen2000} is an algorithm that performs decomposition imposing that the resulting components must be independent. It was used in \cite{Alvarez2009,Martinez201141,Martinez-Murcia20129676} as part of a \ac{CAD} system, and it had been used in other medical imaging applications such as segmentation \cite{DeMartino2007}. 
 
-\ac{ICA} was born as a solution to the \textit{blind source separation} problem, in which the aim is to estimate $c$ independent sources from a series of mixed signals \cite{Hyvarinen2000}. To do so, we assume the source signals to be non-gaussian, in addition to the independence assumption that we mentioned before. That is why their authors consider \ac{ICA} to be a non-gaussian version of \ac{FA} \cite{Hyvaerinen2003}, although due to this assumption, the results are very different to those obtained in \ac{FA}. 
+\ac{ICA} was born as a solution to the \textit{blind source separation} problem, in which the aim is to estimate $c$ independent sources from a series of mixed signals \cite{Hyvarinen2000}. To do so, we assume the source signals to be non-gaussian, in addition to the independence assumption mentioned before. That is why their authors consider \ac{ICA} to be a non-gaussian version of \ac{FA} \cite{Hyvaerinen2003}, although due to this assumption, the results are very different to those obtained in \ac{FA}. 
 
-Unlike \ac{FA}, \ac{ICA} does not account for noise in the estimation procedure, and therefore the equation remains: 
+Unlike \ac{FA}, \ac{ICA} does not account for noise in the estimation procedure, and therefore the equation~\ref{eq:generalDecomposition} remains: 
 \begin{equation}\label{eq:icaecuation}
 \mathbf{X} = \mathbf{W}\mathbf{S}
 \end{equation}
-where $\mathbf{S}$ are the component scores and $\mathbf{W}$ are the component loading, `sources' or `mixing matrix'. Given that \ac{ICA} lacks a noise term, there is a procedure called \textit{whitening} that must be applied for the algorithm to converge \cite{Hyvarinen2000}. The whitening implies a linear transformation of the $i$-th observed variable $\mathbf{x}_i$ into a \textit{white} vector $\tilde{\mathbf{x}}_i$ so that its covariance matrix equals the identity: 
+where $\mathbf{S}$ are the component scores and $\mathbf{W}$ are the component loadings, `sources' or `mixing matrix'. Given that \ac{ICA} lacks a noise term, there is a procedure called \textit{whitening} that must be applied for the algorithm to converge \cite{Hyvarinen2000}. The whitening implies a linear transformation of the $i$-th observed variable $\mathbf{x}_i$ into a \textit{white} vector $\tilde{\mathbf{x}}_i$ so that its covariance matrix equals the identity: 
 
 \begin{equation}
 E\{\tilde{\mathbf{x}}_i \tilde{\mathbf{x}}_i^T\}=\mathbf{I}
@@ -165,22 +167,20 @@ E\{\tilde{\mathbf{x}}_i\tilde{\mathbf{x}}_i^T\} = \tilde{\mathbf{W}} E\{\tilde{\
 
 This property reduces the number of parameters to be estimated, since an orthogonal matrix contains $n(n-1)/2$ degrees of freedom, in contrast to the $n^2$ degrees of freedom of the original mixing matrix $\mathbf{W}$. 
 
-Thanks to the central limit theorem, we assume that the sum of a large number of independent random variables tends will be approximately normally distributed, regardless of the individual statistical distributions \cite{Rice2006}. This property is used to maximize non-gaussianity and independence in the sources using any independence criteria such as the kurtosis or negentropy in any of the proposed algorithms. In this work, we will use the FastICA algorithm. 
+As a consequence of the central limit theorem, we can assume that the sum of a large number of independent random variables is approximately normally distributed, regardless of the individual statistical distributions \cite{Rice2006}. This property is used to maximize non-gaussianity and independence in the sources using any independence criteria such as the kurtosis or negentropy.
 
 \subsubsection{FastICA}
-FastICA is a block fixed-point iteration algorithm \cite{Oja1997,FastICA99} based on negentropy as a non-gaussianity measure. Fixed-point algorithms are converge faster than adaptive algorithms \cite{FastICA99}. The FastICA algorithm can be considered a neural algorithm \cite{Hyvarinen2000}, where the weight vector $\mathbf{w}$ can be updated using a learning rule. FastICA defines a learning rule that finds a direction $\mathbf{w}$, a unit vector such that the projection $\mathbf{w}^T\mathbf{x}_i$ maximizes non-gaussianity \cite{FastICA99}. 
+In this work, we will use the FastICA algorithm. FastICA is a block fixed-point iteration algorithm \cite{Oja1997,FastICA99} based on negative entropy, or negentropy, as a non-gaussianity measure. Fixed-point algorithms converge faster than adaptive algorithms \cite{FastICA99}. FastICA can be considered a neural algorithm \cite{Hyvarinen2000}, where we update the weight vector $\mathbf{w}$ using a learning rule that finds the direction $\mathbf{w}$, a unit vector such that the projection $\mathbf{w}^T\mathbf{x}_i$ maximizes non-gaussianity \cite{FastICA99}. 
 
-The non-gaussianity measure used here is the negative entropy, or negentropy. The negentropy is a form of differential entropy, which for a random vector $\mathbf{y}$ is defined as: 
+For a random vector $\mathbf{y}$, negentropy can be defined as:
 \begin{equation}
 J(\mathbf{y})=H(\mathbf{y}_{gauss})-H(\mathbf{y})
 \end{equation}
-where  $\mathbf{y}_{gauss}$ and $\mathbf{y}$ share the same covariance matrix, although $\mathbf{y}$ is not a gaussian random variable, and $\mathbf{y}_{gauss}$ is. There are many approximations to negentropy. The FastICA defines negentropy using the function: 
+where  $\mathbf{y}_{gauss}$ and $\mathbf{y}$ share the same covariance matrix, although $\mathbf{y}$ is not a gaussian random variable, while $\mathbf{y}_{gauss}$ is. There are many approximations to negentropy. The FastICA defines negentropy using the function: 
 \begin{equation}
 J(y)\propto [E\{G(y)\}-E\{G(\nu)\}]^2
 \end{equation}
-where we assume that $y$ is of zero mean and unit variance, $\nu$ is a Gaussian variable sharing the same mean and variance, and $G(x)$ is any non-quadratic function. Many functions have been proposed, but in the FastICA algorithm we use either $G(x)_1 = (1/a_1) \log\cosh a_1 x$ with $1<a_1<2$ or $G(x)_2 = \exp(-x^2/2)$ \cite{FastICA99}. 
-
-With these measures, we can compute the derivatives of these functions by: 
+where we assume that $y$ is of zero mean and unit variance, $\nu$ is a Gaussian variable sharing the same mean and variance, and $G(x)$ can be any non-quadratic function. Many functions have been proposed, but in this algorithm we use either $G(x)_1 = (1/a_1) \log\cosh(a_1 x)$ with $1<a_1<2$ or $G(x)_2 = \exp(-x^2/2)$ \cite{FastICA99}. With these measures, we can compute the derivatives of these functions by: 
 \begin{align}
 g_1(x) & =\tanh(a_1 x), \\
 g_2(x) & = x\exp(- x^2/2)
@@ -194,11 +194,9 @@ The algorithm for the one-unit version of FastICA can be defined \cite{FastICA99
 	\item If not converged, go back to 2.
 \end{enumerate}
 
-The algorithm considers that the values of $\mathbf{w}$ converge when their dot product is close to 1, that is, they are pointing in the same direction. Note that the expectations are computed as the sample mean in the FastICA algorithm. Additional modifications were presented in \cite{Hyvarinen2000}, in which step 2 is converted to a Newton iteration and further simplification is performed. 
+The algorithm considers that the values of $\mathbf{w}$ converge when their dot product is close to 1, that is, they are pointing in the same direction. Note that the expectations are computed as the sample mean. Additional modifications were presented in \cite{Hyvarinen2000}, in which step 2 is converted to a Newton iteration and further simplification is performed. 
 
-This is the algorithm for one computational unit, or neuron, which computes one component. However, the procedure can be extended to $c$ components by defining $c$ neurons with weight vectors ${\bf w}_1,...,{\bf w}_c$ so that $\mathbf{W} = ({\bf w}_1,...,{\bf w}_n)^T$. The outputs ${\bf w}_1^T{\bf x},...,{\bf w}_n^T{\bf x}$ must be decorrelated to prevent them from converging to the same maxima, using three methods proposed in \cite{Hyvarinen2000}. 
-
-The method used in this work uses a two-step iterative algorithm \cite{Hyvarinen2000} to decorrelate the outputs after each iteration: 
+The four steps presented before compute one single component. Under the neural assumption, these steps are those performed at one single computational unit or neuron. We can then extend the procedure to $c$ components by defining $c$ neurons with weight vectors ${\bf w}_1,...,{\bf w}_c$ so that $\mathbf{W} = ({\bf w}_1,...,{\bf w}_n)^T$. The outputs ${\bf w}_1^T{\bf x},...,{\bf w}_n^T{\bf x}$ must be decorrelated to prevent them from converging to the same maxima, using one of the three methods proposed in \cite{Hyvarinen2000}. In this work, we have used a two-step iterative algorithm \cite{Hyvarinen2000} to decorrelate the outputs after each iteration: 
 \begin{enumerate}
 	\item Let $\mathbf{W} = \mathbf{W}/\sqrt{\lVert\mathbf{W}\mathbf{W}^T\rVert}$. 
 	\item Let $\mathbf{W} = \frac{3}{2} \mathbf{W}-\frac{1}{2} \mathbf{W} \mathbf{W}^T  \mathbf{W}$
@@ -207,15 +205,15 @@ The method used in this work uses a two-step iterative algorithm \cite{Hyvarinen
 And repeat step 2 until convergence. For simplicity, the norm in step 1 can be computed as any norm but the Frobenius norm, for example, the L2-norm or the largest absolute row sum. 
 
 \section{Results}
-In this work we will analyse the behaviour of the system proposed in the introduction and illustrated at Figure~\ref{fig:pipelineDecomposition}. The system comprises the selection of the most relevant voxels using filtering methods (we will focus on $t$-test, relative entropy and wilcoxon) and a feature decomposition of these using either \ac{FA} or \ac{ICA}. Finally, the feature vectors are classified using a \ac{SVC} with linear kernel, and performance values are obtained via cross-validation (see section~\ref{sec:validation} for more information). 
+In this work we will analyse the behaviour of the system proposed in the introduction and illustrated at Figure~\ref{fig:pipelineDecomposition}. The system comprises the selection of the most relevant voxels using filtering methods (we will focus on $t$-test, relative entropy and wilcoxon) and a feature decomposition of these feature vectors using either \ac{FA} or \ac{ICA}. Finally, we perform classification using a \ac{SVC} with linear kernel, and performance values are obtained via cross-validation (see section~\ref{sec:validation} for more information). 
 
-We vary the number of selected voxels and the number of factors or components depending on the algorithm and the dataset used and evaluate the system with those characteristics. That way, we obtain an estimation of the performance of the system in different situations, so that we can draw conclusions on the disease patterns and the ability of the system in the detection of different diseases. 
+We have varied the number of selected voxels and the number of factors or components depending on the algorithm and the dataset, and evaluated the system with those characteristics. That way, we obtain an estimation of the performance of the system in different situations, so that we can draw conclusions on the disease patterns and the ability of the system in the detection of different diseases. 
 
 \subsection{Alzheimer's Disease}
-We begin by applying the proposed feature selection plus decomposition pipeline to the two functional neuroimaging datasets: \adnipet{} and \vdlnhmpao{}. For this experiment we will use a maximum of $20,000$ selected voxels and $25$ components. 
+We begin by applying the proposed feature selection plus decomposition pipeline to the two functional neuroimaging datasets related to \ac{AD}: \adnipet{} and \vdlnhmpao{}. For this experiment we will use a maximum of $20,000$ selected voxels and $25$ components. 
 
 \subsubsection{Factor Analysis}\label{sec:results_FA_AD}
-First, we use \ac{FA} as a decomposition technique. In Figure~\ref{fig:accuracyMeanFA-AD} we average the accuracy over the number of voxels or the number of components respectively, to look at how these variables affect the performance of the system, and we do this for the three filtering methods used. 
+First, we test \ac{FA} as a decomposition technique. In Figure~\ref{fig:accuracyMeanFA-AD} we average the accuracy over the number of voxels or the number of components respectively, to look at how these variables affect the performance of the system, and we do this for the three filtering methods used. 
 
 \begin{figure}	\centering
 	\subfloat[]{\includegraphics[width=0.49\linewidth]{Graphics/ch4/accuracyMeanSTD-FA_vsN_ttest_AD.eps}\label{fig:AD-AV-FA-TTEST-VSN}}
@@ -227,11 +225,11 @@ First, we use \ac{FA} as a decomposition technique. In Figure~\ref{fig:accuracyM
 	\subfloat[]{\includegraphics[width=0.49\linewidth]{Graphics/ch4/accuracyMeanSTD-FA_vsN_wilcoxon_AD.eps}\label{fig:AD-AV-FA-WILCOXON-VSN}}
 	\subfloat[]{\includegraphics[width=0.49\linewidth]{Graphics/ch4/accuracyMeanSTD-FA_vsK_wilcoxon_AD.eps}\label{fig:AD-AV-FA-WILCOXON-VSK}}
 	
-	\caption[Average performance of the \acs{AD} datasets in \acs{FA}.]{Average performance and standard deviation of the proposed system using the two \ac{AD} datasets, \ac{FA} and the three feature selection criteria: $t$-test (\protect\subref{fig:AD-AV-FA-TTEST-VSN} and \protect\subref{fig:AD-AV-FA-TTEST-VSK}), relative entropy (\protect\subref{fig:PKS-AV-FA-ENTROPY-VSN} and \protect\subref{fig:AD-AV-FA-ENTROPY-VSK}) and wilcoxon (\protect\subref{fig:AD-AV-FA-WILCOXON-VSN} and \protect\subref{fig:AD-AV-FA-WILCOXON-VSK}). } 
+	\caption[Average performance of the \acs{AD} datasets in \acs{FA}.]{Average performance and standard deviation of the proposed system using the two \ac{AD} datasets, \ac{FA} and the three feature selection criteria: $t$-test -\protect\subref{fig:AD-AV-FA-TTEST-VSN} and \protect\subref{fig:AD-AV-FA-TTEST-VSK}-, relative entropy -\protect\subref{fig:PKS-AV-FA-ENTROPY-VSN} and \protect\subref{fig:AD-AV-FA-ENTROPY-VSK}- and wilcoxon -\protect\subref{fig:AD-AV-FA-WILCOXON-VSN} and \protect\subref{fig:AD-AV-FA-WILCOXON-VSK}-. } 
 	\label{fig:accuracyMeanFA-AD}
 \end{figure}
 
-We can observe that the results are generally better when using the \adnipet{} dataset than with the \vdlnhmpao{}, and this is especially notorious when using the relative entropy selection criterion. The performance tends to slightly increase with the number of voxels selected, but it is not the case with the number of components. By looking at figures \ref{fig:AD-AV-FA-TTEST-VSK}, \ref{fig:AD-AV-FA-ENTROPY-VSK} and \ref{fig:AD-AV-FA-WILCOXON-VSK}, it seems that a relatively small number of components (approximately 6) is enough to obtain good performance, and afterwards, the performance holds or even decreases. 
+We can observe that the results are generally better when using the \adnipet{} dataset than with the \vdlnhmpao{}, and this is especially notorious when using the relative entropy selection criterion. The performance tends to slightly increase with the number of voxels selected, but that is not the case with the number of components. By looking at figures \ref{fig:AD-AV-FA-TTEST-VSK}, \ref{fig:AD-AV-FA-ENTROPY-VSK} and \ref{fig:AD-AV-FA-WILCOXON-VSK}, it seems that a relatively small number of components (approximately 6) is enough to obtain good performance, and afterwards, the performance holds or even decreases. 
 
 \subsubsection{Independent Component Analysis}
 In this section, we compute the results of applying \ac{ICA} to the \adnipet{} and \vdlnhmpao{} datasets. Figure~\ref{fig:accuracyMeanICA-AD} depicts the average accuracy over the number of voxels or the number of components respectively for the different selection criteria. 
@@ -247,18 +245,18 @@ In this section, we compute the results of applying \ac{ICA} to the \adnipet{} a
 	\subfloat[]{\includegraphics[width=0.49\linewidth]{Graphics/ch4/accuracyMeanSTD-ICA_vsN_wilcoxon_AD.eps}\label{fig:AD-AV-ICA-WILCOXON-VSN}}
 	\subfloat[]{\includegraphics[width=0.49\linewidth]{Graphics/ch4/accuracyMeanSTD-ICA_vsK_wilcoxon_AD.eps}\label{fig:AD-AV-ICA-WILCOXON-VSK}}
 	
-	\caption[Average performance of the \acs{AD} datasets in \acs{ICA}.]{Average performance and standard deviation of the proposed system using the three \ac{AD} datasets, \ac{ICA} and the three feature selection criteria: $t$-test (\protect\subref{fig:AD-AV-ICA-TTEST-VSN} and \protect\subref{fig:AD-AV-ICA-TTEST-VSK}), relative entropy (\protect\subref{fig:AD-AV-ICA-ENTROPY-VSN} and \protect\subref{fig:AD-AV-ICA-ENTROPY-VSK}) and wilcoxon (\protect\subref{fig:AD-AV-ICA-WILCOXON-VSN} and \protect\subref{fig:AD-AV-ICA-WILCOXON-VSK}). } 
+	\caption[Average performance of the \acs{AD} datasets in \acs{ICA}.]{Average performance and standard deviation of the proposed system using the three \ac{AD} datasets, \ac{ICA} and the three feature selection criteria: $t$-test -\protect\subref{fig:AD-AV-ICA-TTEST-VSN} and \protect\subref{fig:AD-AV-ICA-TTEST-VSK}-, relative entropy -\protect\subref{fig:AD-AV-ICA-ENTROPY-VSN} and \protect\subref{fig:AD-AV-ICA-ENTROPY-VSK}- and wilcoxon -\protect\subref{fig:AD-AV-ICA-WILCOXON-VSN} and \protect\subref{fig:AD-AV-ICA-WILCOXON-VSK}-. } 
 	\label{fig:accuracyMeanICA-AD}
 \end{figure}
 
-The case is similar to the one presented in section~\ref{sec:results_FA_AD}, where the performance slightly improves when increasing the number of selected voxels. The performance is again better when using the \adnipet{} dataset than with the \vdlnhmpao{}, although the behaviour is similar. 
+The case is similar to the one presented in section~\ref{sec:results_FA_AD}, where the performance slightly improves when increasing the number of selected voxels. The performance is again better when using the \adnipet{} dataset than with the \vdlnhmpao{}, although the behaviour remains similar. 
 
 The results change when varying the number of components. In this case, although good performance is obtained within the first 5 components in most cases, the model achieves similar performance in both datasets with components between 5 and 10, and then, the estimates diverge. In the \vdlnhmpao{}, the performance starts to decrease after this number of components, whereas when using the \adnipet{} dataset, the higher average performance is obtained with $c>15$, especially in the case of the $t$-test or the wilcoxon selection criteria). 
 
 \subsubsection{At the Operation Point}
 Now we focus on non-averaged values, the values for which our system is optimal: the operation point. In this scenario we see that the tendency is that all systems behave similarly. 
 
-When increasing the number of selected voxels, we can see that there is always a tendency of slightly increase in both datasets and decomposition strategies, as can be seen in Figure~\ref{fig:accuracyOP-ADvsN}. For the \adnipet{} dataset, the maximum accuracies are obtained with a large number of voxels $f>15000$, however, in the case of \vdlnhmpao{}, we obtain similar performance with fewer voxels, $f<7000$ in all selection criteria. 
+When increasing the number of selected voxels, we can see that the system tends to slightly increase its performance in both datasets and decomposition strategies, (Figure~\ref{fig:accuracyOP-ADvsN}). For the \adnipet{} dataset, the maximum accuracies are obtained with a large number of voxels $f>15000$, however, in the case of \vdlnhmpao{}, we obtain similar performance with fewer voxels, $f<7000$ in all selection criteria. 
 
 \begin{figure}
 	\centering
@@ -286,9 +284,9 @@ Now we can focus on the performance variations over the number of components in 
 	\label{fig:accuracyOP-AD}
 \end{figure}
 
-A particular case is the combination of \ac{FA} and the relative entropy selection criteria applied to the \vdlnhmpao{} dataset. In this case there seems to be a trend to achieve a maximum performance at between 5 components. But with the \adnipet{} dataset, the performance keeps and achieves maximum accuracy with $c\approxeq 20$. 
+A particular case is the combination of \ac{FA} and the relative entropy selection criteria applied to the \vdlnhmpao{} dataset. In this case there seems to be a trend to achieve a maximum performance at less than 5 components. However, with the \adnipet{} dataset the performance holds and achieves maximum accuracy with $c\approxeq 20$. 
 
-In Table~\ref{tab:featureAD} we show the performance values obtained at the operation point for our different test combining decomposition algorithms and selection criteria, for the two datasets analysed in this section. It is obvious that both datasets obtain similar performance in almost every case, with values close to $0.9$. These values are compared to the baseline classification performance, quantified using \ac{VAF} \cite{Stoeckel04}. From this, we can see that the decomposition systems always perform better than the baseline, but this difference is especially large in the case of the \vdlnhmpao{} dataset, which contains very noisy images. 
+In Table~\ref{tab:featureAD} we show the performance values obtained at the operation point for our different tests combining decomposition algorithms and selection criteria. It is obvious that both datasets obtain similar performance, with values close to $0.9$. These values are compared to the baseline classification performance, quantified using \ac{VAF} \cite{Stoeckel04}. From this, we can see that the decomposition systems always perform better than the baseline, but this difference is especially large in the case of the \vdlnhmpao{} dataset, which contains very noisy images. 
 
 \begin{table}
 	\myfloatalign
@@ -316,7 +314,7 @@ In Table~\ref{tab:featureAD} we show the performance values obtained at the oper
 		&  & wilcoxon & $ 0.885 \pm 0.076 $ & $ 0.907 \pm 0.130 $ & $ 0.850 \pm 0.152 $ \\
 		\bottomrule
 	\end{tabularx}
-	\caption[Performance values for the Alzheimer's datasets]{Accuracy, sensitivity, specificity, and their standard deviation at the operation point for each method and its corresponding feature selection criterion, using two \protect\ac{AD} datasets. }
+	\caption[Performance values for the \acs{AD} datasets]{Accuracy, sensitivity, specificity, and their standard deviation at the operation point for each method and its corresponding feature selection criterion, using two \protect\ac{AD} datasets. }
 	\label{tab:featureAD}
 \end{table}
 
@@ -328,7 +326,7 @@ Overall, all methods achieve similar values of accuracy, sensitivity and specifi
 Now we will look at how the proposed \ac{CAD} system behaves when applied to the three DaTSCAN datasets: \vdlndat{}, \vdlvdat{} and \ppmidat{}. For this experiment we will use a maximum of $1500$ selected voxels and $25$ components, and images that have been previously intensity normalized using the integral normalization algorithm (see section~\ref{sec:intensityPrep}). 
 
 \subsubsection{Factor Analysis}
-Firstly, we will explore the average behaviour of the system that uses \ac{FA} as a decomposition technique. For this purpose, as in previous sections, Figure~\ref{fig:accuracyMeanFA-PKS} shows how the average performance varies when varying the number of voxels selected and the number of components extracted. 
+Firstly, we will explore the average behaviour of the system that uses \ac{FA} as a decomposition technique. For this purpose, as in previous sections, Figure~\ref{fig:accuracyMeanFA-PKS} shows how the average performance varies when increasing the number of voxels selected and the number of components extracted. 
 
 \begin{figure}
 	\centering
@@ -341,15 +339,15 @@ Firstly, we will explore the average behaviour of the system that uses \ac{FA} a
 	\subfloat[]{\includegraphics[width=0.49\linewidth]{Graphics/ch4/accuracyMeanSTD-FA_vsN_wilcoxon_PKS.eps}\label{fig:PKS-AV-FA-WILCOXON-VSN}}
 	\subfloat[]{\includegraphics[width=0.49\linewidth]{Graphics/ch4/accuracyMeanSTD-FA_vsK_wilcoxon_PKS.eps}\label{fig:PKS-AV-FA-WILCOXON-VSK}}
 	
-	\caption[Average performance of the \acs{PKS} datasets in \acs{FA}.]{Average performance and standard deviation of the proposed system using the three \ac{PKS} datasets, \ac{FA} and the three feature selection criteria: $t$-test (\protect\subref{fig:PKS-AV-FA-TTEST-VSN} and \protect\subref{fig:PKS-AV-FA-TTEST-VSK}), relative entropy (\protect\subref{fig:PKS-AV-FA-ENTROPY-VSN} and \protect\subref{fig:PKS-AV-FA-ENTROPY-VSK}) and wilcoxon (\protect\subref{fig:PKS-AV-FA-WILCOXON-VSN} and \protect\subref{fig:PKS-AV-FA-WILCOXON-VSK}). } 
+	\caption[Average performance of the \acs{PKS} datasets in \acs{FA}.]{Average performance and standard deviation of the proposed system using the three \ac{PKS} datasets, \ac{FA} and the three feature selection criteria: $t$-test -\protect\subref{fig:PKS-AV-FA-TTEST-VSN} and \protect\subref{fig:PKS-AV-FA-TTEST-VSK}-, relative entropy -\protect\subref{fig:PKS-AV-FA-ENTROPY-VSN} and \protect\subref{fig:PKS-AV-FA-ENTROPY-VSK}- and wilcoxon -\protect\subref{fig:PKS-AV-FA-WILCOXON-VSN} and \protect\subref{fig:PKS-AV-FA-WILCOXON-VSK}-. } 
 	\label{fig:accuracyMeanFA-PKS}
 \end{figure}
 
-In this case there is a clear difference between datasets, since some of them are more complex than others, usually due to a typical acquisition procedure in DaTSCAN. In the \vdlndat{}, the images were often composed only of a few cuts around the striatum, whereas in PPMI and \vdlvdat{} this rarely happens. That would explain the average outperformance of these two datasets over the \vdlndat{} in almost all cases. 
+In this case there is a clear difference between datasets, since some of them are more complex than others, usually due to a typical acquisition procedure in DaTSCAN and the subclasses of \ac{PKS} included. In the \vdlndat{}, the images were often composed only of a few cuts around the striatum, whereas in PPMI and \vdlvdat{} this rarely happens. That would explain the average outperformance of these two datasets over the \vdlndat{} in almost all cases. 
 
-Their behaviours are consistent. Usually, there is no variation with the number of voxel selected (except in the obvious case of the \vdlndat{} dataset and the relative entropy selection criterion). However, there are repeated trends regarding the number of components or factors used in the computation. We can see that the performance increases in the first components, and once we have achieve a decent number (between 4 and 6), the performance starts to decrease. This could mean that the decomposition in more than 5 or 6 components only introduces noise and leads to a wrong decomposition. 
+Their behaviours are consistent. Usually, there is no variation with the number of voxels selected (except in the case of the \vdlndat{} dataset and the relative entropy selection criterion). However, there are repeated trends regarding the number of components or factors used in the computation. We can see that the performance increases in the first components, and once we have achieved a decent performance (between 4 and 6 components), it starts to decrease. This could mean that the use of more than 5 or 6 components only introduces noise and leads to a wrong decomposition. 
 
-Again, this behaviour is consistent with the \vdlndat{} dataset, except for one case. It does seem that the interaction between the \vdlndat{} dataset and the relative entropy selection criterion leads to a wrong model. We will explore this question later, in the discussion. 
+Again, this behaviour is consistent with the \vdlndat{} dataset, except for one case. It does seem that the interaction between the \vdlndat{} dataset and the relative entropy selection criterion leads to a very different model. We will explore this question later, in the discussion. 
 
 \subsubsection{Independent Component Analysis}
 Regarding the application of the \ac{ICA} decomposition model to the DaTSCAN datasets. In Figure~\ref{fig:accuracyMeanICA-PKS} we present the average accuracy achieved by this model using three different selection criteria and the three \ac{PKS} datasets. 
@@ -364,7 +362,7 @@ Regarding the application of the \ac{ICA} decomposition model to the DaTSCAN dat
 	\subfloat[]{\includegraphics[width=0.49\linewidth]{Graphics/ch4/accuracyMeanSTD-ICA_vsN_wilcoxon_PKS.eps}\label{fig:PKS-AV-ICA-WILCOXON-VSN}}
 	\subfloat[]{\includegraphics[width=0.49\linewidth]{Graphics/ch4/accuracyMeanSTD-ICA_vsK_wilcoxon_PKS.eps}\label{fig:PKS-AV-ICA-WILCOXON-VSK}}
 	
-	\caption[Average performance of the \acs{PKS} datasets in \acs{ICA}.]{Average performance and standard deviation of the proposed system using the three \ac{PKS} datasets, \ac{ICA} and the three feature selection criteria: $t$-test (\protect\subref{fig:PKS-AV-ICA-TTEST-VSN} and \protect\subref{fig:PKS-AV-ICA-TTEST-VSK}), relative entropy (\protect\subref{fig:PKS-AV-ICA-ENTROPY-VSN} and \protect\subref{fig:PKS-AV-ICA-ENTROPY-VSK}) and wilcoxon (\protect\subref{fig:PKS-AV-ICA-WILCOXON-VSN} and \protect\subref{fig:PKS-AV-ICA-WILCOXON-VSK}). } 
+	\caption[Average performance of the \acs{PKS} datasets in \acs{ICA}.]{Average performance and standard deviation of the proposed system using the three \ac{PKS} datasets, \ac{ICA} and the three feature selection criteria: $t$-test -\protect\subref{fig:PKS-AV-ICA-TTEST-VSN} and \protect\subref{fig:PKS-AV-ICA-TTEST-VSK}-, relative entropy -\protect\subref{fig:PKS-AV-ICA-ENTROPY-VSN} and \protect\subref{fig:PKS-AV-ICA-ENTROPY-VSK}- and wilcoxon -\protect\subref{fig:PKS-AV-ICA-WILCOXON-VSN} and \protect\subref{fig:PKS-AV-ICA-WILCOXON-VSK}-. } 
 	\label{fig:accuracyMeanICA-PKS}
 \end{figure}
 
@@ -387,7 +385,7 @@ Let us now have a look at the behaviour of this system at the operation point, u
 	\label{fig:accuracyOP-PKSvsN}
 \end{figure}
 
-In this case, we obtain again that our system maintains approximately the same performance regardless of the number of voxels selected when tested on both the \ppmidat{} and the \vdlvdat{} datasets. In contrast, the performance increases when increasing the number of selected voxels when testing the \vdlndat{} dataset, especially when using the relative entropy criterion. This latter dataset also obtains less performance, whereas the \vdlvdat{} achieves the best. 
+In this case, we obtain again that our system maintains approximately the same performance regardless of the number of voxels selected on both the \ppmidat{} and the \vdlvdat{} datasets. In contrast, the performance rises when we increase the number of selected voxels on the \vdlndat{} dataset, especially when using the relative entropy criterion. This latter dataset also performs worse, whereas the \vdlvdat{} achieves the best performance. 
 
 As for the changes in performance when varying the number of components, the results for both \ac{FA} and \ac{ICA} based systems are shown in Figure~\ref{fig:accuracyOP-PKS}. 
 
@@ -405,9 +403,9 @@ As for the changes in performance when varying the number of components, the res
 	\label{fig:accuracyOP-PKS}
 \end{figure}
 
-In this first case, the most evident result is the general performance of our system in the three datasets. It is clear that the system performs better when tested on \vdlvdat{} than when tested on \ppmidat{}, and both datasets outperform, \vdlndat{}. It is even clearer that when testing on \vdlvdat{}, the results are similar using any type of decomposition and selection criteria, with similar performance. We will discuss this issue in more detail later. 
+In this first case, the most evident result is the general performance of our system in the three datasets. It is clear that the system performs better when tested on \vdlvdat{} than when tested on \ppmidat{}, and both datasets outperform \vdlndat{}. It is even clearer that when testing on \vdlvdat{}, the results are similar using any type of decomposition and selection criteria, with similar performance. We hypothesize several reasons for this behaviour at the discussion of this chapter. 
 
-The tendency of the performance at the operation point is similar to the average behaviour commented before. In general, there is an accuracy increasing in the first components (usually, between 5 and 10 depending on the decomposition) and then, the performance remains stable. Again, the combination of relative entropy selection and \vdlndat{} achieves striking results. For this dataset, the higher performance is obtained with more than 10 components ($c=14$), and shows higher variability than other datasets. 
+The tendency of the performance at the operation point is similar to the average behaviour commented before. In general, there is an accuracy increasing in the first components (usually, between 5 and 10 depending on the decomposition) and then, the performance remains stable. Again, the combination of relative entropy selection and \vdlndat{} leads to striking results. For this dataset, the higher performance is obtained with more than 10 components ($c=14$), and it shows higher variability than other datasets. 
 
 Now we will focus on the specific performance values obtained at the operation point, that can be seen in Table~\ref{tab:featurePKS}. In this table we observe the differences in performance between datasets and also between \acp{CAD} using each decomposition strategy. 
 
@@ -447,7 +445,7 @@ Now we will focus on the specific performance values obtained at the operation p
 		&  & wilcoxon & $ 0.952 \pm 0.037 $ & $ 0.940 \pm 0.066 $ & $ 0.964 \pm 0.064 $ \\
 		\bottomrule
 	\end{tabularx}
-	\caption[Performance values for the Parkinson's datasets]{Accuracy, sensitivity, specificity, and their standard deviation at the operation point for each method and its corresponding feature selection criterion, using three \protect\ac{PKS} datasets }
+	\caption[Performance values for the \acs{PKS} datasets]{Accuracy, sensitivity, specificity, and their standard deviation at the operation point for each method and its corresponding feature selection criterion, using three \protect\ac{PKS} datasets }
 	\label{tab:featurePKS}
 \end{table} 
 
@@ -459,9 +457,9 @@ In general, the systems using \ac{ICA} tend to perform slightly better than thos
 \section{Discussion}
 Now we will discuss the general behaviour of the selection and decomposition algorithm in the \ac{CAD} systems proposed and how they perform on the different diseases and databases. 
 
-Our \ac{CAD} system performs reasonably well on the \ac{AD} datasets, where it achieves around 90\% accuracy, and more than 92\% sensitivity. This is achieved in both systems composed by \ac{FA} and \ac{ICA} regardless of the selection criterion chosen. The system outperforms the visual analysis estimated by means of \ac{VAF} \cite{Stoeckel04} in both cases. In \cite{Martinez201141} and \cite{Martinez-Murcia20129676}, the systems achieved better performance (up to 95.1\% accuracy) when using multivariate quadratic classifiers and \ac{ICA}, different from the \ac{SVC} used here. 
+Our \ac{CAD} system performs reasonably well on the \ac{AD} datasets, where it achieves around 90\% accuracy, and more than 92\% sensitivity. This is achieved in both systems composed by \ac{FA} and \ac{ICA} regardless of the selection criterion chosen. The system outperforms the visual analysis, estimated using \ac{VAF} \cite{Stoeckel04}, in both cases. 
 
-We have chosen to evaluate the system only on linear \acp{SVC} for two main reasons. First, it favours a side-by-side comparison between all methods applied to different datasets in this thesis. And second, linear \ac{SVC} has been proven to be better generalizable than other systems, even in environments where the small sample size is the norm \cite{Vapnik1997}. 
+In \cite{Martinez201141} and \cite{Martinez-Murcia20129676}, the systems achieved better performance (up to 95.1\% accuracy) when using multivariate quadratic classifiers and \ac{ICA}, different from the \ac{SVC} used here. We have chosen to evaluate the system only on linear \acp{SVC} for two main reasons. First, it favours a side-by-side comparison between all methods applied to different datasets in this thesis. And second, multivariate quadratic classifier could be more prone to overfitting, and conversely linear \ac{SVC} has been proven to be better generalizable than other systems, even in environments where the small sample size is the norm \cite{Vapnik1997}.
 
 The selected areas on these \ac{CAD} systems correspond to the highlighted areas in Figure~\ref{fig:comparisonSelection_adnipet}, in the case of \adnipet{} dataset. 
 
@@ -469,24 +467,24 @@ The selected areas on these \ac{CAD} systems correspond to the highlighted areas
 	\myfloatalign
 	\subfloat[$t$-test.]
 	{\includegraphics[height=.25\textheight]{Graphics/ch4/ttest_map_adnipet.eps}\label{fig:ttest_map}}\quad
-	\subfloat[\ac{KL} divergence.]
+	\subfloat[Relative entropy.]
 	{\includegraphics[height=.25\textheight]{Graphics/ch4/kl_map_adnipet.eps}\label{fig:kl_map}}\quad
 	\subfloat[\ac{MWW} $U$-test.]
 	{\includegraphics[height=.25\textheight]{Graphics/ch4/wilcoxon_map_adnipet.eps}\label{fig:wilcoxon_map}}
 	\caption[Comparison between the different filtering methods in \adnipet{}.]{Comparison between the different filtering methods, and the regions selected by them, in the \adnipet{} dataset. }\label{fig:comparisonSelection_adnipet}
 \end{figure}
 
-In the \vdlnhmpao{} different areas are selected as we can see in Figure~\ref{fig:comparisonSelection_vdlnhmpao}. This is mainly due to a change in the modality that deserves to be analysed. 
+For its part, in the \vdlnhmpao{} different areas are selected as we can see in Figure~\ref{fig:comparisonSelection_vdlnhmpao}. This is mainly due to a change in the modality that deserves to be analysed. 
 
 \begin{figure}[bth]
 	\myfloatalign
 	\subfloat[$t$-test.]
 	{\includegraphics[height=.25\textheight]{Graphics/ch4/ttest_map_vdln-hmpao.eps}\label{fig:ttest_map_vdlnhmpao}}\quad
-	\subfloat[\ac{KL} divergence.]
+	\subfloat[Relative entropy.]
 	{\includegraphics[height=.25\textheight]{Graphics/ch4/kl_map_vdln-hmpao.eps}\label{fig:kl_map_vdlnhmpao}}\quad
 	\subfloat[\ac{MWW} $U$-test.]
 	{\includegraphics[height=.25\textheight]{Graphics/ch4/wilcoxon_map_vdln-hmpao.eps}\label{fig:wilcoxon_map_vdlnhmpao}}
-	\caption[Comparison between the different filtering methods in \adnipet{}.]{Comparison between the different filtering methods, and the regions selected by them, in the \adnipet{} dataset. }\label{fig:comparisonSelection_vdlnhmpao}
+	\caption[Comparison between the different filtering methods in \vdlnhmpao{}.]{Comparison between the different filtering methods, and the regions selected by them, in the \vdlnhmpao{} dataset. }\label{fig:comparisonSelection_vdlnhmpao}
 \end{figure}
 
 To have a more profound look at the selected regions in both modalities, we provide Table~\ref{tab:overlapVDLNAD}, where the AAL regions with an overlapping higher than 0.5 in any of the modalities and selection criteria are displayed. 
@@ -494,60 +492,57 @@ To have a more profound look at the selected regions in both modalities, we prov
 \begin{bigtable}
 %	\centering
 \begin{tabularx}{\textwidth}{Xcccccc}
-	{} &\multicolumn{3}{c}{\adnipet{}}    & \multicolumn{3}{c}{\vdlnhmpao{}}         \\
-	\cline{2-7}
-	\tableheadline{Region} &    \tableheadline{entropy} & \tableheadline{t-test} & \tableheadline{wilcoxon} &  \tableheadline{entropy} & \tableheadline{t-test} & \tableheadline{wilcoxon} \\
-	\midrule
-Angular Gyrus (left)         &    \textbf{1.000} &    \textbf{1.000} &  \textbf{1.000} &      \textbf{1.000} &    \textbf{0.858} &  \textbf{1.000} \\
-Angular Gyrus (right)         &    0.729 &    0.782 &  \textbf{0.809} &      \textbf{0.980} &    0.566 &  0.697 \\
-Cingulum Posterior Part (left)   &    \textbf{1.000} &    \textbf{1.000} &  \textbf{1.000} &      0.589 &    0.509 &  0.773 \\
-Cingulum Posterior Part (right)   &    \textbf{0.843} &    \textbf{0.852} &  0.791 &      0.524 &    0.228 &  0.442 \\
-Cuneus (right)          &    0.173 &    0.121 &  0.188 &      \textbf{1.000} &    0.683 &  \textbf{0.857} \\
-Fusiform Gyrus (left)        &    0.495 &    0.156 &  0.167 &      0.652 &    0.561 &  0.713 \\
-Hippocampus (right)     &    \textbf{0.807} &    0.375 &  0.413 &      0.235 &    0.155 &  0.425 \\
-Inferior Occipital Gyrus (left)   &    0.378 &    0.078 &  0.023 &      \textbf{1.000} &    \textbf{1.000} &  \textbf{1.000} \\
-Inferior Occipital Gyrus (right)   &    0.380 &    0.080 &  0.011 &      \textbf{1.000} &    0.794 &  \textbf{0.930} \\
-Inferior Parietal Lobule (right)    &    0.497 &    0.414 &  0.439 &      \textbf{1.000} &    0.339 &  0.477 \\
-Inferior Temporal Gyrus (left)    &    0.748 &    0.350 &  0.495 &      0.676 &    0.561 &  0.735 \\
-Middle Occipital Gyrus (left)   &    0.449 &    0.184 &  0.138 &      \textbf{1.000} &    \textbf{0.881} &  \textbf{1.000} \\
-Middle Occipital Gyrus (right)   &    0.347 &    0.174 &  0.128 &      \textbf{0.861} &    0.642 &  0.770 \\
-Middle Temporal Gyrus (left)    &    0.411 &    0.244 &  0.364 &      \textbf{0.952} &    0.635 &  \textbf{0.810} \\
-Middle Temporal Gyrus (right)    &    0.594 &    0.234 &  0.326 &      \textbf{1.000} &    0.537 &  0.711 \\
-Parahippocampal Gyrus (left) &    0.778 &    0.444 &  0.465 &      0.098 &    0.132 &  0.262 \\
-Parahippocampal Gyrus (right) &    \textbf{0.917} &    0.276 &  0.316 &      0.233 &    0.159 &  0.311 \\
-Precuneus (left)       &    0.322 &    0.429 &  0.463 &      0.708 &    0.485 &  0.660 \\
-Precuneus (right)       &    0.311 &    0.375 &  0.409 &      0.770 &    0.469 &  0.644 \\
-Superior Occipital Gyrus (right)   &    0.268 &    0.094 &  0.106 &      \textbf{0.955} &    0.600 &  0.736 \\
-Supramarginal Gyrus (left)   &    0.195 &    0.156 &  0.183 &      0.627 &    0.561 &  0.762 \\
-	\bottomrule
+	{}                               &                       \multicolumn{3}{c}{\adnipet{}}                        &                      \multicolumn{3}{c}{\vdlnhmpao{}}                       \\ \cline{2-7}
+	\tableheadline{Region}           & \tableheadline{entropy} & \tableheadline{t-test} & \tableheadline{wilcoxon} & \tableheadline{entropy} & \tableheadline{t-test} & \tableheadline{wilcoxon} \\ \midrule
+	Angular gyrus (left)             &     \textbf{1.000}      &     \textbf{1.000}     &      \textbf{1.000}      &     \textbf{1.000}      &     \textbf{0.858}     &      \textbf{1.000}      \\
+	Angular gyrus (right)            &          0.729          &         0.782          &      \textbf{0.809}      &     \textbf{0.980}      &         0.566          &          0.697           \\
+	Cingulum posterior part (left)   &     \textbf{1.000}      &     \textbf{1.000}     &      \textbf{1.000}      &          0.589          &         0.509          &          0.773           \\
+	Cingulum posterior part (right)  &     \textbf{0.843}      &     \textbf{0.852}     &          0.791           &          0.524          &         0.228          &          0.442           \\
+	Cuneus (right)                   &          0.173          &         0.121          &          0.188           &     \textbf{1.000}      &         0.683          &      \textbf{0.857}      \\
+	Fusiform gyrus (left)            &          0.495          &         0.156          &          0.167           &          0.652          &         0.561          &          0.713           \\
+	Hippocampus (right)              &     \textbf{0.807}      &         0.375          &          0.413           &          0.235          &         0.155          &          0.425           \\
+	Inferior occipital gyrus (left)  &          0.378          &         0.078          &          0.023           &     \textbf{1.000}      &     \textbf{1.000}     &      \textbf{1.000}      \\
+	Inferior occipital gyrus (right) &          0.380          &         0.080          &          0.011           &     \textbf{1.000}      &         0.794          &      \textbf{0.930}      \\
+	Inferior parietal lobule (right) &          0.497          &         0.414          &          0.439           &     \textbf{1.000}      &         0.339          &          0.477           \\
+	Inferior temporal gyrus (left)   &          0.748          &         0.350          &          0.495           &          0.676          &         0.561          &          0.735           \\
+	Middle occipital gyrus (left)    &          0.449          &         0.184          &          0.138           &     \textbf{1.000}      &     \textbf{0.881}     &      \textbf{1.000}      \\
+	Middle occipital gyrus (right)   &          0.347          &         0.174          &          0.128           &     \textbf{0.861}      &         0.642          &          0.770           \\
+	Middle temporal gyrus (left)     &          0.411          &         0.244          &          0.364           &     \textbf{0.952}      &         0.635          &      \textbf{0.810}      \\
+	Middle temporal gyrus (right)    &          0.594          &         0.234          &          0.326           &     \textbf{1.000}      &         0.537          &          0.711           \\
+	Parahippocampal gyrus (left)     &          0.778          &         0.444          &          0.465           &          0.098          &         0.132          &          0.262           \\
+	Parahippocampal gyrus (right)    &     \textbf{0.917}      &         0.276          &          0.316           &          0.233          &         0.159          &          0.311           \\
+	Precuneus (left)                 &          0.322          &         0.429          &          0.463           &          0.708          &         0.485          &          0.660           \\
+	Precuneus (right)                &          0.311          &         0.375          &          0.409           &          0.770          &         0.469          &          0.644           \\
+	Superior occipital gyrus (right) &          0.268          &         0.094          &          0.106           &     \textbf{0.955}      &         0.600          &          0.736           \\
+	Supramarginal gyrus (left)       &          0.195          &         0.156          &          0.183           &          0.627          &         0.561          &          0.762           \\ \bottomrule
 \end{tabularx}
 \caption[Percentage of overlap between the selected areas by each method and the \acs{AAL} atlas regions.]{Percentage of overlap between the selected areas by each method and the \acs{AAL} atlas regions. For simplicity, overlapping values higher than 0.8 are displayed in bold.}
 \label{tab:overlapVDLNAD}
 \end{bigtable} 
 
-In the case of the \vdlnhmpao{} dataset, the most interesting regions are located at the occipital lobe, the angular lobe and few of them in the temporal lobe. These are selected using almost any of the selection criteria. However, when using the \adnipet{} dataset, the only region with a significant overlapping is the angular gyrus, and other regions with a widely documented relation to \ac{AD} are highlighted \cite{Dubois2007,Claus1994}, such as the cingulum, hippocampus and parahippocampal gyrus. 
+In the case of the \vdlnhmpao{} dataset, the most interesting regions are located at the occipital lobe, the angular lobe and few of them in the temporal lobe. These are selected using almost any of the selection criteria. However, when using the \adnipet{} dataset, the only region with a significant overlapping is the angular gyrus, but other regions with a widely documented relation to \ac{AD} such as the cingulum, hippocampus and parahippocampal gyrus are highlighted \cite{Dubois2007,Claus1994}. 
 
-It is clearly noticeable that the relative entropy selection criterion focuses on many different regions, but it is the only one able to detect the hippocampus or parahippocampal gyrus in the \ac{PET} dataset, which other criteria ignore. It also focuses more on the different parts of the occipital lobe in the \ac{SPECT} dataset. This difference in the selected areas could lead to the different overall performance observed in Figures~\ref{fig:AD-AV-FA-ENTROPY-VSN}, \ref{fig:AD-AV-FA-ENTROPY-VSK}, \ref{fig:AD-AV-ICA-ENTROPY-VSN}, and \ref{fig:AD-AV-ICA-ENTROPY-VSK}.
+It is clearly noticeable that the relative entropy selection criterion focuses on a variety of regions, but it is the only one able to detect the hippocampus or parahippocampal gyrus in the \ac{PET} dataset, which other criteria ignore. It also focuses more on the different parts of the occipital lobe in the \ac{SPECT} dataset. This difference in the selected areas could lead to the different overall performance observed in Figures~\ref{fig:AD-AV-FA-ENTROPY-VSN}, \ref{fig:AD-AV-FA-ENTROPY-VSK}, \ref{fig:AD-AV-ICA-ENTROPY-VSN}, and \ref{fig:AD-AV-ICA-ENTROPY-VSK}.
 
-For its part, wilcoxon and $t$-test often select similar regions. This can be due to their similarity under the normal distribution \cite{Fay10}, and leads to a higher performance in the systems in average and at the operation point (see Figures~\ref{fig:accuracyMeanFA-AD}, \ref{fig:accuracyMeanICA-AD}, \ref{fig:accuracyOP-ADvsN} and \ref{fig:accuracyOP-AD}). From the selected regions, and since $t$-test and wilcoxon perform generally better, we can infer the more interesting regions for \ac{AD} classification. For the \adnipet{} dataset, these would be the angular lobes and the cingulum, whereas for the \vdlnhmpao{}, we can observe differences in the angular lobe and also all over the occipital lobe and parts of the temporal lobe. 
+For its part, wilcoxon and $t$-test often select similar regions. This can be due to their similarity under the normal distribution \cite{Fay10}, and leads to a higher performance of the systems both in average and at the operation point (see Figures~\ref{fig:accuracyMeanFA-AD}, \ref{fig:accuracyMeanICA-AD}, \ref{fig:accuracyOP-ADvsN} and \ref{fig:accuracyOP-AD}). From the selected regions, and since $t$-test and wilcoxon perform generally better, we can infer the more interesting regions for \ac{AD} classification. For the \adnipet{} dataset, these would be the angular lobes and the cingulum, whereas for the \vdlnhmpao{}, we can observe differences in the angular lobe and also all over the occipital lobe and parts of the temporal lobe. 
 
-Regarding the decomposition method, there seems not to be any significant differences. Both \ac{ICA} and \ac{FA} perform similarly in both datasets, regardless of the noise contained in the images, although the differences with the baseline system are much higher in the case of the \vdlnhmpao{} dataset. This is perhaps due to the smoother nature of the \adnipet{}, in which several images from the same subject were averaged, and therefore, much of the noise was removed, whereas in the \vdlnhmpao{} images, the noise could be removed afterwards by discarding many of the lower-significance components. 
+Regarding the decomposition method, there seems not to be any significant differences. Both \ac{ICA} and \ac{FA} perform similarly in any dataset, regardless of the noise contained in the images. However, the differences with the baseline system are much higher in the case of the \vdlnhmpao{} dataset. This is perhaps due to the smoother nature of the \adnipet{}, in which several images from the same subject were averaged, and therefore, much of the noise was removed, whereas in the \vdlnhmpao{} images, the noise could be removed afterwards by discarding many of the lower-significance components. 
 
-When applied to the \ac{PKS} datasets, the results differ from the \ppmidat{} and \vdlndat{} to the \vdlvdat{}. These databases differ in the number of subjects that they contain. Whereas in the former there are different subjects with \ac{PKS}, including \ac{SWEDD}, in the later we only have \ac{PD} and \ac{CTL} subjects, which makes the classification easier. 
+When applied to the \ac{PKS} datasets, the results differ from the \ppmidat{} and \vdlndat{} to the \vdlvdat{}. These databases differ in the number of subjects they contain. Whereas in the former there are different subjects with \ac{PKS}, including \ac{SWEDD}, in the later we only have \ac{PD} and \ac{CTL} subjects, which makes the classification easier. 
 
-This accuracy differences can be found throughout all figures and tables, although in general, the \vdlndat{} dataset has the lowest performance, while the \ppmidat{} and \vdlvdat{} behave similarly in average. 
+This accuracy differences can be noticed throughout all figures and tables, although in general, the \vdlndat{} dataset has the lowest performance, while the \ppmidat{} and \vdlvdat{} behave similarly in average. 
 
-When using \ac{FA} with the \ac{PKS} datasets, we observe a similar behaviour to that already seen with \ac{AD} datasets: there is little difference in performance when varying the number of selected voxels, except when using the relative entropy criterion. In this particular case, there is a rise in the average performance when increasing the number of selected voxels, which is more noticeable when using the VDLN-DAt dataset. 
+When using \ac{FA} with the \ac{PKS} datasets, we observe a similar behaviour to that already seen with \ac{AD} datasets: there is little difference in performance when varying the number of selected voxels, except when using the relative entropy criterion. In this particular case, there is a rise in the average performance when increasing the number of selected voxels, which is more noticeable when using the \vdlndat{} dataset. 
 
-For its part, there are more significant variations when increasing the number of components. Smaller $c$ values lead to a fast increase in performance up to a maximum. Depending on the selection criterion used, this value varies from $c=3$ when using the $t$-test to $c=14$ for the entropy criterion applied to \vdlndat{}. The optimal $c$ is usually located at $c\in [3,5]$ in most cases, as can be seen in Figure~\ref{fig:accuracyMeanFA-PKS}. A very similar behaviour is achieved when using the \ac{ICA} decomposition, as Figure~\ref{fig:accuracyMeanICA-PKS} shows.
+For its part, there are more remarkable variations when increasing the number of components. Smaller $c$ values lead to a fast increase in performance up to a maximum. Depending on the selection criterion used, this value varies from $c=3$ when using the $t$-test to $c=14$ for the entropy criterion applied to \vdlndat{}. The optimal $c$ is usually located in the interval $c\in [3,5]$ in most cases, as can be seen in Figure~\ref{fig:accuracyMeanFA-PKS}. A very similar behaviour is achieved when using the \ac{ICA} decomposition, as depicted in Figure~\ref{fig:accuracyMeanICA-PKS}.
 
-In \ac{AD} we provided a table with the selected regions in both \ac{PET} and \ac{SPECT} modalities. Conversely, in DaTSCAN imaging, the selected regions are always in the striatum, and the smaller resolution of these images hardly reveals the underlying structures. The selected regions with either $t$-test or wilcoxon fundamentally cover the whole caudate, putamen and globus pallidus, and some external structures as well. However, the relative entropy criterion focus almost exclusively in the striatum, with a strong preference for the posterior part, and discards all other regions, introducing less noise. 
+In \ac{AD} we provided a table with the selected regions in both \ac{PET} and \ac{SPECT} modalities. Conversely, in DaTSCAN imaging, the selected regions are always located within the striatum, and the smaller resolution of these images hardly reveals the underlying structures. The selected regions with either $t$-test or wilcoxon fundamentally cover the whole caudate, putamen and globus pallidus, and some external structures as well. However, the relative entropy criterion focus almost exclusively in the striatum, with a strong preference for the posterior part, and discards all other regions, introducing less noise. 
 
 \begin{figure}[bth]
 	\myfloatalign
 	\subfloat[$t$-test.]
 	{\includegraphics[height=.25\textheight]{Graphics/ch4/ttest_map_ppmi-dat.eps}\label{fig:ttest_map_ppmi-dat}}\quad
-	\subfloat[\ac{KL} divergence.]
+	\subfloat[Relative entropy.]
 	{\includegraphics[height=.25\textheight]{Graphics/ch4/kl_map_ppmi-dat.eps}\label{fig:kl_map_ppmi-dat}}\quad
 	\subfloat[\ac{MWW} $U$-test.]
 	{\includegraphics[height=.25\textheight]{Graphics/ch4/wilcoxon_map_ppmi-dat.eps}\label{fig:wilcoxon_map_ppmi-dat}}

@@ -1,38 +1,40 @@
+% !TEX TS-program = pdflatex
+% !TEX root = ../Tesis.tex
 %************************************************
 \chapter{Spherical Brain Mapping}\label{ch:sbm}
 %************************************************
 \section{Introduction}
-In this section we will present a feature extraction technique called \acf{SBM}. \ac{SBM} is based on the use of spherical coordinates to extract radial features from structural \ac{MRI} images. Using the features at each coordinate, we can characterize the texture in each direction, and even project the information to a bidimensional maps, which provides a significant feature reduction and a visual aid for diagnosis. 
+In this section we will present a novel feature extraction technique called \acf{SBM}. \ac{SBM} is based on the use of spherical coordinates to extract radial features from structural \ac{MRI} images. Using the features at each coordinate, we can characterize the texture in each direction and project the information to a bidimensional map, which provides a significant feature reduction and a visual aid for diagnosis. 
 
 The most basic form is the standard \ac{SBM} \cite{Martinez-Murcia2014225,Martinez-Murcia2015}, in which all voxels crossed by a rectilinear vector in a spherical coordinate pair ($\theta,\varphi$) are selected, and then, a certain measure is extracted from that set. In this sense, statistical and morphological measures such as tissue thickness, average or entropy, among others, are computed. 
 
 Further improvements can be made to this simple approach, for example, with the layering extension \cite{Martinez-Murcia2015}, in which the mapping vector is divided in $n$ subsets containing the same number of voxels. Therefore, instead of a single map, we can obtain $n$ maps at different distances from the centre of the brain. Another useful approach is the characterization of texture features via \acf{LBP}, computed around the mapping vector, which yielded very good results in \cite{Martinez-MurciaVRLBP}.
 
-\begin{figure*}[htp]
-	\centering
+\begin{figure}[htp]
+	\myfloatalign
 	\includegraphics[width=\textwidth]{Graphics/ch6/01-flowdiagram}
 	\caption{Flow diagram of the procedure used in the textural analysis of projected MR brain images.}
 	\label{fig:flowdiagram}
-\end{figure*}
+\end{figure}
 
-The most relevant extension to the \ac{SBM} was proposed in \cite{Martinez-Murcia2016}. In this work, instead of using rectilinear vectors to select voxels, we developed a path creation algorithm that follows a minimum-intensity change path towards an attractor placed in its corresponding spherical coordinate pair ($\theta,\varphi$). This way, the mapping paths follow the structural features of the \ac{MRI} image, which could be used to create the bidimensional \ac{SBM} maps as well as directly use the intensity distribution along the path. This was extended to make use of the \ac{GLCM} and Haralick texture analysis (see Chapter~\ref{ch:texture}) to characterize the brain texture along each path and its neighbourhood. 
+The most relevant extension to the \ac{SBM} was proposed in \cite{Martinez-Murcia2016}. In this work, instead of using rectilinear vectors to select voxels, we developed a path tracing algorithm that follows a minimum-intensity change pathway towards an attractor placed in its corresponding spherical coordinate pair ($\theta,\varphi$). This way, the mapping paths follow the structural features of the \ac{MRI} image, which could be used to create the bidimensional \ac{SBM} maps as well as directly use the intensity distribution of the voxels along the path. This was extended to make use of the \ac{GLCM} and Haralick texture analysis (see Chapter~\ref{ch:texture}) to characterize the brain texture in each path and its neighbourhood. 
 
 
 \section{\acf{SBM}}\label{sec:mapping}
-The original \ac{SBM} proposed in \cite{Martinez-Murcia2014225,Martinez-Murcia2015} was based on the use of spherical coordinates in the brain. The central voxel is used as the origin point from which a number of mapping vectors $\mathbf{v}_{\theta,\varphi}$ are defined for each inclination ($\theta$) and azimuth ($\varphi$) angles in the range $0^{\circ}<\theta<180^{\circ}$ and $0^{\circ}<\varphi<360^{\circ}$ (see Figure~\ref{fig:brainmapping}). The voxels crossed by this mapping vector are selected, to form the sampled set $V_{\theta,\varphi}$, a set that contains $P$ voxels crossed by the mapping vector $\mathbf{v}_{\theta,\varphi}$.
+The original \ac{SBM} proposed in \cite{Martinez-Murcia2014225,Martinez-Murcia2015} was based on the use of spherical coordinates in the brain. The central voxel is used as the origin point from which a number of mapping vectors $\mathbf{v}_{\theta,\varphi}$ are defined for each inclination ($\theta$) and azimuth ($\varphi$) angles in the range $0^{\circ}<\theta<180^{\circ}$ and $0^{\circ}<\varphi<360^{\circ}$ (see Figure~\ref{fig:brainmapping}). The voxels crossed by this mapping vector are selected, to form the sampled set $V_{\theta,\varphi}$, a set that contains the intensities of the $P$ voxels crossed by the mapping vector $\mathbf{v}_{\theta,\varphi}$.
 
 \begin{figure}[htp]
-	\centering
+	\myfloatalign
 	\includegraphics[width=0.7\columnwidth]{Graphics/ch6/02-projection}
 	\caption{Illustration of the computation of the mapping vector $\mathbf{v}_{\theta,\varphi}$, the angles $\theta$ and $\varphi$ and the $r$-neighbourhood of $\mathbf{v}$ (see Section~\ref{sec:vrlbp}).}
 	\label{fig:brainmapping}
 \end{figure}
 
-The basic form in which \ac{SBM} works is by computing a mapping value $v$ from each set $V_{\theta,\varphi}$ at each coordinate pair $(\theta,\varphi)$. In \cite{Martinez-Murcia2014225,Martinez-Murcia2015}, six basic measures were proposed: 
+The basic form of \ac{SBM} computes a mapping value $v$ from each set $V_{\theta,\varphi}$ at each coordinate pair $(\theta,\varphi)$. In \cite{Martinez-Murcia2014225,Martinez-Murcia2015}, six basic measures were proposed: 
 
 
 \begin{itemize}
-	\item A basic \underline{brain surface} approach, which is intended to characterize the surface of either \ac{GM} or \ac{WM} tissue. It accounts for the distance between the origin and the last tissue voxel in $V_{\theta,\varphi}$ greater than a threshold $I_{th}$. This might correlate with structural neurodegeneration and tissue loss in the surface of the tissue. 
+	\item A basic \underline{brain surface} approach, which characterizes the surface of either \ac{GM} or \ac{WM} tissue. It accounts for the distance between the origin and the last tissue voxel in $V_{\theta,\varphi}$ greater than a threshold $I_{th}$. This might correlate with structural neurodegeneration and tissue loss in the surface of the tissue. 
 	\begin{equation}\label{eq:surface}
 	v_{surf}= \argmax_i \lbrace V_{\theta,\varphi}(i)>I_{th}\rbrace \quad \forall i=1,\dots P
 	\end{equation}  
@@ -54,7 +56,7 @@ The basic form in which \ac{SBM} works is by computing a mapping value $v$ from 
 	\end{equation}
 	Therefore, our $v_{nf}=J$, the number of disjoint connected subsets in $A_{\theta,\varphi}$.
 	
-	\item The \underline{average} of $V_{\theta,\varphi}$: 
+	\item The \underline{average} of $V_{\theta,\varphi}$, which is related to tissue density: 
 	\begin{equation}\label{eq:mean}
 	v_{av}=\frac{1}{N}\sum_i V_{\theta,\varphi}(i) \quad \forall i=1,\dots P
 	\end{equation}  
@@ -72,36 +74,36 @@ The basic form in which \ac{SBM} works is by computing a mapping value $v$ from 
 	
 \end{itemize}
 
-We can compute each of these six maps over the \ac{GM} or \ac{WM} tissue maps of a segmented \ac{MRI}, which are depicted in Figure~\ref{fig:masksGM}. In these maps, the value $v$ computed at each direction $(\theta,\varphi)$ is represented, where the azimuth $\varphi$ is represented in the x-axis, from $0^{\circ}$ to $360^{\circ}$ and the inclination angle $\theta$ in the y-axis, from $0^{\circ}$ to $180^{\circ}$. The whole algorithm that produces these maps can be downloaded at \url{http://pakitochus.github.io/mapBrain/}.
+We can compute each of these six maps over the \ac{GM} or \ac{WM} tissue maps of a segmented \ac{MRI}. Exmaples of these are depicted in Figure~\ref{fig:masksGM}. In these maps, the value $v$ computed at each direction $(\theta,\varphi)$ is represented, where the azimuth $\varphi$ is represented in the x-axis, from $0^{\circ}$ to $360^{\circ}$ and the inclination angle $\theta$ in the y-axis, from $0^{\circ}$ to $180^{\circ}$. The algorithm that produces these maps can be downloaded at \url{http://pakitochus.github.io/mapBrain/} (versions for MATLAB and Python are available).
 
-\begin{figure*}[htp]
-	\centering
+\begin{figure}[htp]
+	\myfloatalign
 	\includegraphics[width=1\textwidth]{Graphics/ch6/03-projections}
-	\caption{Resulting \acs{GM} and \acs{WM} maps of the same control subject using the six proposed measures: Surface, Thickness, Number of Folds, Average, Entropy and Kurtosis.}
+	\caption{Resulting \acs{GM} and \acs{WM} maps of the same control subject using the six proposed measures: surface, thickness, number of folds, average, entropy and kurtosis.}
 	\label{fig:masksGM}
-\end{figure*}
+\end{figure}
 
-This methodology defines the sampling set as the voxels that are crossed by the sampling vector $\mathbf{v}_{\theta,\varphi}$. This implies a loss of information on the neighbourhood of $\mathbf{v}_{\theta,\varphi}$ that increases with the distance to the origin. To overcome this problem, two different approaches have been suggested. In the first one, the sampled set $V_{\theta,\varphi}$ is divided in $n$ equal parts, and one map is computed for each of the $n$ parts, in the ``Layered approach''. A second approach uses \acf{LBP} and helical sampling to map the neighbourhood of $\mathbf{v}_{\theta,\varphi}$ and characterize texture. Finally, we will define new paths that adapt to the intensity changes of the brain images, using a \ac{HMM} based approach. 
+This methodology defines the sampling set as the voxels crossed by the sampling vector $\mathbf{v}_{\theta,\varphi}$. This implies a loss of information on the neighbourhood of $\mathbf{v}_{\theta,\varphi}$ that increases with the distance to the origin. To overcome this problem, two different extensions have been suggested. In the first one, the sampled set $V_{\theta,\varphi}$ is divided in $n$ equal parts, and one map is computed for each of the $n$ parts, in the ``Layered approach''. A second approach uses \acf{LBP} and helical sampling to map the neighbourhood of $\mathbf{v}_{\theta,\varphi}$ and characterize texture. Finally, we will define new paths that adapt to the intensity changes of the brain images, using a \ac{HMM} based approach. 
 
 \subsection{Layered Extension}\label{sec:layered}
 The layered extension is the simplest approach to keep relevant information of the different ``layers'' of tissue in our \ac{SBM} maps. To do so, we divide each sampled set $V_{\theta,\varphi}$ in $n$ equal subsets, from which $n$ maps will be derived. For example, with a $n=4$, 4 subsets will be used to compute 4 different maps at different distances from the origin, from the closest to the farthest. We assume that this approach features more detail, since overlapping structures placed at different depths will be contained within different maps. 
 
-\begin{figure*}[htp]
-	\centering
+\begin{figure}[htp]
+	\myfloatalign
 	\includegraphics[width=0.9\textwidth]{Graphics/ch6/layeredAverageGM}
 	\caption[Example of the layered approach using the average measure on \acs{GM} maps.]{Example of the layered approach using the average measure on \ac{GM} maps. Some internal \ac{GM} structures such as the Putamen or Globus Pallidus can be identified at Layer 2 (see anatomical reference at Figures~\ref{fig:regionsCort} and \ref{fig:regionsSub}).}
 	\label{fig:layeredGM}
-\end{figure*}
+\end{figure}
 
 \subsection{\acf{VRLBP}}\label{sec:vrlbp}
-Another addition that can be made to the original \ac{SBM} is the inclusion of the $r$-neighbourhood of the mapping vector $\mathbf{v}_{\theta,\varphi}$ in the computation of $v$. We do so by computing the \acf{VRLBP}, based on the \ac{LBP} descriptors proposed in \cite{Ojala1996}. 
+Anotherimprovement can be made to the original \ac{SBM}: the inclusion of the $r$-neighbourhood of the mapping vector $\mathbf{v}_{\theta,\varphi}$ in the computation of $v$. We do so by computing the \acf{VRLBP}, based on the \ac{LBP} descriptors proposed in \cite{Ojala1996}. 
 
-\begin{figure*}[htp]
-	\centering
+\begin{figure}[htp]
+	\myfloatalign
 	\includegraphics[width=0.8\textwidth]{Graphics/ch6/lbpLinear}
 	\caption{Example of how the basic \acs{LBP} is computed.}
 	\label{fig:lbpBasic}
-\end{figure*}
+\end{figure}
 
 \ac{LBP} was devised to describe the texture of a image, with an initial application to face recognition. In its basic form, it consist of three steps: sampling, calculating the difference and thresholding (See Figure~\ref{fig:lbpBasic}). The value of the \ac{LBP} is defined as:
 \begin{equation}
@@ -116,7 +118,7 @@ s(x) =
 \end{cases}
 \end{equation}
 
-This basic approach was extended to Volumetric \ac{LBP} \cite{Zhao2007}, in which a 3D texture is defined in a local neighbourhood using a cylinder of radius $r$ oriented in one direction. For this work, we will update the sampling procedure proposed in \cite{Zhao2007} using a helix around the mapping vector $\mathbf{v}_{\theta,\varphi}$ (see Figure~\ref{fig:brainmapping}). This new helical sampling of \cite{Martinez-MurciaVRLBP} defines the set of $P$ sampled voxels on the image $I$ using a $r$-neighbourhood $V_{\theta,\varphi}^{P,r}$ as:
+This basic approach was extended to Volumetric \ac{LBP} \cite{Zhao2007}, in which a 3D texture is defined in a local neighbourhood using a cylinder of radius $r$ oriented in one direction. For this work, we updated the sampling procedure proposed in \cite{Zhao2007} using a helix around the mapping vector $\mathbf{v}_{\theta,\varphi}$ (see Figure~\ref{fig:brainmapping}). This new helical sampling of \cite{Martinez-MurciaVRLBP} defines the set of $P$ sampled voxels on the image $I$ using a $r$-neighbourhood $V_{\theta,\varphi}^{P,r}$ as:
 
 \begin{equation}
 V_{\theta,\varphi}^{P,r}=\lbrace I(\mathbf{g}_{\theta,\varphi}^{0,r}), I(\mathbf{g}_{\theta,\varphi}^{1,r}), I(\mathbf{g}_{\theta,\varphi}^{2,r}), \dots I(\mathbf{g}_{\theta,\varphi}^{P-1,r})\rbrace
@@ -125,26 +127,27 @@ where the coordinate vector $\mathbf{g}_{\theta,\varphi}^{p,r}$ of each voxel ar
 \begin{equation}
 \label{ec:helical_coordinates}
 \mathbf{g}_{\theta,\varphi}^{p,r}=\begin{cases}
-x_{\theta,\varphi}^{p,r}=p\sin(\varphi)\cos(\theta)-r\sin(2\pi np/P)\\
-y_{\theta,\varphi}^{p,r}=p\sin(\varphi)\sin(\theta)+r\cos(2\pi np/P)\\
+x_{\theta,\varphi}^{p,r}=p\sin(\varphi)\cos(\theta)-r\sin(2\pi tp/P)\\
+y_{\theta,\varphi}^{p,r}=p\sin(\varphi)\sin(\theta)+r\cos(2\pi tp/P)\\
 z_{\theta,\varphi}^{p,r}=p\cos(\varphi) 
 \end{cases} \quad p=\{0,...,P-1\}, P \in \mathbb{N}
 \end{equation}
-being $n$ the number of turns in the helical sampling. We use linear interpolation to estimate the intensities in positions that do not fall exactly at the coordinates computed in Eq.~\ref{ec:helical_coordinates}, as in \cite{Zhao2007}. 
+being $t$ the number of turns in the helical sampling. We use linear interpolation to estimate the intensities in positions that do not fall exactly at the coordinates computed in Eq.~\ref{ec:helical_coordinates}, as in \cite{Zhao2007}. 
 
-If we fix $P$ and $r$ to constant values, the set of sampled voxels $V_{\theta,\varphi}^{P,r}$ becomes $V_{\theta,\varphi}$, which is similar to the definition of \ac{SBM} found in Section~\ref{sec:mapping}. The value $v$ of the \ac{VRLBP} approach is therefore defined as: 
+\begin{figure}[t]
+	\myfloatalign
+	\includegraphics[width=0.8\textwidth]{Graphics/ch6/04-vrlbp}
+	\caption{An example of the \acs{VRLBP} projection for \acs{GM} and \acs{WM} Tissues. }
+	\label{fig:vrlbp}
+\end{figure}
+
+If we fix $P$ and $r$ to constant values, the set of sampled voxels $V_{\theta,\varphi}^{P,r}$ becomes $V_{\theta,\varphi}$, which is equivalent to the definition of \ac{SBM} found in Section~\ref{sec:mapping}. The value $v$ of the \ac{VRLBP} approach is therefore defined as: 
 \begin{equation}
 v_{VRLBP} = \sum_{p} s(V_{\theta,\varphi}(p)-V_{\theta,\varphi}(0))\cdot 2^{p} \quad \forall p=1,\dots P
 \end{equation}
 
 The resulting texture maps for \ac{GM} and \ac{WM} tissues can be found at Figure~\ref{fig:vrlbp}. 
 
-\begin{figure*}[htp]
-	\centering
-	\includegraphics[width=\textwidth]{Graphics/ch6/04-vrlbp}
-	\caption{An example of the \acs{VRLBP} projection for \acs{GM} and \acs{WM} Tissues. }
-	\label{fig:vrlbp}
-\end{figure*}
 
 %\lstset{language=python} 
 %\begin{lstlisting}
@@ -166,29 +169,29 @@ The resulting texture maps for \ac{GM} and \ac{WM} tissues can be found at Figur
 \subsection{Anatomical Reference}\label{sec:anatomical}
 To better understand the \ac{SBM} maps, and the location of different features, we have projected the widely known \ac{AAL} atlas \cite{Tzourio-Mazoyer2002} using \ac{SBM}. That way, we have an anatomical reference of the different structures and their position in the different coordinate pairs $(\theta,\varphi)$. The regions are displayed in  Figures~\ref{fig:regionsCort} and \ref{fig:regionsSub}. 
 
-\begin{figure*}[htp]
-	\centering
+\begin{figure}[p]
+	\myfloatalign
 	\includegraphics[width=0.7\textwidth]{Graphics/ch6/05-regions_cortical}
 	
-	\caption[SBM mapping of different cortical regions.]{\ac{SBM} mapping of different cortical regions. In the Frontal region, we can find: 1) Frontal Sup., 2) Frontal Mid., 3) Frontal Inf. Oper., 4) Frontal Inf. Tri., 5) Frontal Sup. Orb, 6) Frontal Mid. Orb, 7) Frontal Inf. Orb, 8) Frontal Sup. Medial, 9) Rectus, 10) Frontal Med. Orb., 11) Precentral, 12) Supp. Motor Area. In the Parietal region: 13) Paracentral Lobe, 14) Postcentral, 15) Parietal Sup., 16) Parietal Inf., 17) Supramarginal, 18) Angular. In the Occipital region: 19) Precuneus, 20) Cuneus, 21) Occipital Sup., 22) Occipital Mid., 23) Occipital Inf., 24) Lingual. In the Temporal region: 25) Temporal Sup., 26) Temporal Pole Sup., 27) Temporal Mid., 28) Temporal Pole Mid., 29) Temporal Inf, 30) Fusiform, 31) Parahippocampal. The Cerebellum, divided in: 32) Cerebelum Crus 1, 33) Cerebelum 3, 34) Cerebelum 4-5, 35) Cerebelum 6, 36) Cerebelum 7b, 37) Cerebelum 8, 38) Cerebelum 9, 39) Cerebelum 10. And additionally, the 40) Medulla, 41) Brain Stem and 42) Insula.}
+	\caption[\acs{SBM} mapping of different cortical regions.]{\ac{SBM} mapping of different cortical regions. In the Frontal region, we can find: 1) Frontal Sup., 2) Frontal Mid., 3) Frontal Inf. Oper., 4) Frontal Inf. Tri., 5) Frontal Sup. Orb, 6) Frontal Mid. Orb, 7) Frontal Inf. Orb, 8) Frontal Sup. Medial, 9) Rectus, 10) Frontal Med. Orb., 11) Precentral, 12) Supp. Motor Area. In the Parietal region: 13) Paracentral Lobe, 14) Postcentral, 15) Parietal Sup., 16) Parietal Inf., 17) Supramarginal, 18) Angular. In the Occipital region: 19) Precuneus, 20) Cuneus, 21) Occipital Sup., 22) Occipital Mid., 23) Occipital Inf., 24) Lingual. In the Temporal region: 25) Temporal Sup., 26) Temporal Pole Sup., 27) Temporal Mid., 28) Temporal Pole Mid., 29) Temporal Inf, 30) Fusiform, 31) Parahippocampal. The Cerebellum, divided in: 32) Cerebelum Crus 1, 33) Cerebelum 3, 34) Cerebelum 4-5, 35) Cerebelum 6, 36) Cerebelum 7b, 37) Cerebelum 8, 38) Cerebelum 9, 39) Cerebelum 10. And additionally, the 40) Medulla, 41) Brain Stem and 42) Insula.}
 	\label{fig:regionsCort}
-\end{figure*}
+\end{figure}
 
-\begin{figure*}[htp]
-	\centering
+\begin{figure}[p]
+	\myfloatalign
 	\includegraphics[width=0.7\textwidth]{Graphics/ch6/06-regions_subcortical}
 	
-	\caption[SBM mapping of some subcortical regions and organs.]{\ac{SBM} mapping of of some important subcortical regions and organs. We observe the following subcortical structures: 1) Caudate Nucleus, 2) Olfactory Bulb, 3) Rolandic Operculum, 4) Heschl's gyri, 5) Putamen, 6) Globus Pallidus, 7) Amygdala, 8) Hippocampus, 9) Thalamus, 10) Lingual, 11) Vermis 4-5, 12) Vermis 7, 13) Vermis 9, 14) Vermis 1-2, 15) Cingulate Gyrus, 16) Corpus Callosum}
+	\caption[\acs{SBM} mapping of some subcortical regions and organs.]{\ac{SBM} mapping of of some important subcortical regions and organs. We observe the following subcortical structures: 1) Caudate Nucleus, 2) Olfactory Bulb, 3) Rolandic Operculum, 4) Heschl's gyri, 5) Putamen, 6) Globus Pallidus, 7) Amygdala, 8) Hippocampus, 9) Thalamus, 10) Lingual, 11) Vermis 4-5, 12) Vermis 7, 13) Vermis 9, 14) Vermis 1-2, 15) Cingulate Gyrus, 16) Corpus Callosum}
 	\label{fig:regionsSub}
-\end{figure*}
+\end{figure}
 
 \origsection{Sampling Paths via \acfp{HMM}}\label{sec:hmmpaths}
-The rectilinear mapping vector used in the original \ac{SBM} \cite{Martinez-Murcia2014225,Martinez-MurciaVRLBP,Martinez-Murcia2015} has some limitations, partially overcome by the \ac{VRLBP} and the layered extension. However, a more flexible sampling could be beneficial for the computation of texture measures. In this section we present the technique used to define minimum intensity change sampling paths via Hidden Markov Models, that was firstly proposed in \cite{Martinez-Murcia2016}. These paths are defined so that the resulting sampled sets contain information about both intensity and structure of the brain. 
+The rectilinear mapping vector used in the original \ac{SBM} \cite{Martinez-Murcia2014225,Martinez-MurciaVRLBP,Martinez-Murcia2015} has some limitations, partially overcome by the \ac{VRLBP} and the layered extension. However, a more flexible sampling could be beneficial for the computation of texture measures. In this section we present a technique used to define minimum intensity change sampling paths via \acp{HMM}, firstly proposed in \cite{Martinez-Murcia2016}. These paths are defined so that the resulting sampled sets contain information about both intensity and structure of the brain. 
 
 % Algoritmo base de extracción de puntos
-To define the paths, we consider each three-dimensional image as a tuple that contains spatial information in the image range (the coordinates $\mathbf{p} \in \mathbb{I}$) where $\mathbb{I}\subset \mathbb{R}^3$) as well as intensity information ($I(\mathbf{p}) \in \mathbb{R}$). The intensity information will be interpreted as a sampling of the underlying tissue density, and therefore, an estimation of the probability of finding tissue in each position. 
+To define the paths, we consider each three-dimensional image as a tuple containing spatial information in the image range (the coordinates $\mathbf{p} \in \mathbb{I}$) where $\mathbb{I}\subset \mathbb{R}^3$) as well as intensity information ($I(\mathbf{p}) \in \mathbb{R}$). The intensity information will be interpreted as a sampling of the underlying tissue density, and therefore, an estimation of the probability of finding tissue in each position. 
 
-Following the notation of the \ac{VBM} defined in Section~\ref{sec:mapping}, we formulate a 3D path tracing algorithm that defines a curvilinear mapping set of positions $\mathbb{P}_{\theta,\varphi}$ directly linked to each direction $(\theta,\varphi)$ that is, at the same time, representative of the underlying intensity distribution. We then use both spatial and intensity information to construct the minimum intensity change paths oriented in the direction $(\theta,\varphi)$. Thus, we could note our 3D path in a certain direction as a Markov Model \cite{Chen2008}: 
+Following the notation of the \ac{SBM} defined in Section~\ref{sec:mapping}, we formulate a 3D path tracing algorithm that defines a curvilinear mapping set of positions $\mathbb{P}_{\theta,\varphi}$ directly linked to each direction $(\theta,\varphi)$ that is, at the same time, representative of the underlying intensity distribution. We then use both spatial and intensity information to construct the minimum intensity change paths oriented in the direction $(\theta,\varphi)$. Thus, we could note our 3D path in a certain direction as a Markov Model \cite{Chen2008}: 
 \begin{equation}
 \mathbb{P}_{\theta,\varphi} = \{\mathbf{p}_0, \mathbf{p}_1, \mathbf{p}_2, \dots \mathbf{p}_N\}
 \end{equation}
@@ -200,7 +203,7 @@ or its equivalent, the probability of all the nodes:
 \begin{equation}\label{eq:probPath}
 P(\mathbb{P}_{\theta,\varphi}) = P(\mathbf{p}_0, \mathbf{p}_1, \mathbf{p}_2, \dots \mathbf{p}_N)
 \end{equation}
-with $\mathbf{p}_0$ being the origin of the spherical coordinates, and $\mathbf{p}_N$ is the last possible coordinate within $\mathbb{I}$ in the current direction $(\theta,\varphi)$. In this work, we have placed $\mathbf{p}_0$ at the \ac{AC} of the image, although other options, such as setting the origin at the middle point of $\mathbb{I}$ could be considered. This choice is a convention when using the \ac{MNI} coordinates \cite{Evans1993}, sharing conectivity with both hemispheres, therefore allowing the optimal computation of our paths. If we assume a first-order \acf{HMM} for the tracing of the path, the probability of the $i$-th node in the path can be approximated as:
+with $\mathbf{p}_0$ being the origin of the spherical coordinates, and $\mathbf{p}_N$ is the last possible coordinate within $\mathbb{I}$ in the current direction $(\theta,\varphi)$. When using \ac{HMM} paths we placed $\mathbf{p}_0$ at the \ac{AC} of the image, although other options, such as setting the origin at the middle point of $\mathbb{I}$ could be considered. This choice is a convention when using the \ac{MNI} coordinates \cite{Evans1993}, sharing conectivity with both hemispheres, therefore allowing the optimal computation of our paths. If we assume a first-order \acf{HMM} for the tracing of the path, the probability of the $i$-th node in the path can be approximated as:
 \begin{equation}
 P(\mathbf{p}_i | \mathbf{p}_{i-1}, \mathbf{p}_{i-2}, \dots \mathbf{p}_0) \approx P(\mathbf{p}_i|\mathbf{p}_{i-1})
 \end{equation}
@@ -224,31 +227,31 @@ and $P(I(\mathbf{p}_0), \dots I(\mathbf{p}_N))$ is the \textit{a priori} probabi
 
 To avoid computational overload, we will define a restricted set of candidates from which we will derive all the needed probabilities. This set of candidates are defined inside the $L2$-norm support ball $B_{2,r}(\mathbf{p}-\mathbf{p}_{i-1})$ of radius $r$ centred in $\mathbf{p}_{i-1}$, resulting in the candidate set $\mathbb{P}_{\theta,\varphi}^c = \{\mathbf{p}_{c,1}, \mathbf{p}_{c,2}, \dots \mathbf{p}_{c,M} \}$. 
 
-Individual probabilities $P (I(\mathbf{p}_i)|\mathbf{p}_i)$ needed in the computation of Eq.~\ref{eq:intP} can be computed under the assumption of a normally distributed intensity candidate set $V_{\theta,\varphi}^c$ (containing the intensities of the candidate set $\mathbb{P}_{\theta,\varphi}^c$) with mean $I(\mathbf{p}_{i-1})$ and variance $\sigma_c^2$. We will estimate the probability of the i$^{th}$ candidate node $\mathbf{p}_i$ as: 
+Individual probabilities $P (I(\mathbf{p}_i)|\mathbf{p}_i)$ needed in the definition of Eq.~\ref{eq:intP} can be computed under the assumption of a normally distributed intensity candidate set $V_{\theta,\varphi}^c$ (containing the intensities of the candidate set $\mathbb{P}_{\theta,\varphi}^c$) with mean $I(\mathbf{p}_{i-1})$ and variance $\sigma_c^2$. We will estimate the probability of the i$^{th}$ candidate node $\mathbf{p}_i$ as: 
 \begin{equation}\label{eq:intensity}
 P(I(\mathbf{p}_i)|\mathbf{p}_i) =\frac{1}{\sqrt{2\pi \sigma_c^2}}\exp\left(-\frac{(I(\mathbf{p}_i)-I(\mathbf{p}_{i-1}))^2}{2\sigma_c^2}\right)
 \end{equation}
 
 This support the assumption of minimal intensity change paths, since the $I(\mathbf{p}_i)$ maximizes its probability when similar to $I(\mathbf{p}_{i-1})$. 
 
-Finally, we must restrict the direction of the computed path $\mathbb{P}_{\theta,\varphi}$, to match the definition of the \ac{SBM} framework. We do this by defining the last term $P(\mathbf{p}_0, \dots \mathbf{p}_N)$ in Eq.~\ref{eq:final}, setting an attractor located in the position $\mathbf{p}_N$, the last possible coordinate within $\mathbb{I}$ in the current direction $(\theta,\varphi)$. It should affect the transition probability between states by means of an isotropic \acf{RBF}, defined in Eq.~\ref{eq:rbf}:
+Finally, we must restrict the direction of the computed path $\mathbb{P}_{\theta,\varphi}$, to match the definition of the \ac{SBM} framework. We do this by setting an attractor located in the position $\mathbf{p}_N$, the last possible coordinate within $\mathbb{I}$ in the current direction $(\theta,\varphi)$. This defines the last term $P(\mathbf{p}_0, \dots \mathbf{p}_N)$ in Eq.~\ref{eq:final}, the transition probability between states. In this case, we model this transition probability by means of an isotropic \acf{RBF}, defined in Eq.~\ref{eq:rbf}:
 \begin{align}\label{eq:rbf}
 &P(\mathbf{p}_0, \dots \mathbf{p}_N) = P(\mathbf{p}_i|\mathbf{p}_N)  \\&= \frac{1}{\sqrt{(2\pi)^d|\Sigma|}} \exp\left(-\frac{1}{2}(\mathbf{p}_i-\mathbf{p}_N)\Sigma^{-1}(\mathbf{p}_i-\mathbf{p}_N)\right) 
 \end{align}
-where $\Sigma$ is the covariance matrix of the \ac{RBF}. For simplicity we will employ an isotropic gaussian kernel, so that $\Sigma$ is a matrix whose diagonal elements constant and equal to the euclidean distance between $\mathbf{p}_i$ and $\mathbf{p}_N$. This way, the attractor conditions the direction of the path, very slightly in the first nodes, and more strongly as it approaches the cortex, leading to a better representation of the underlying structure.  
+where $\Sigma$ is the covariance matrix of the \ac{RBF}. For simplicity we will employ an isotropic \ac{RBF} kernel, so that $\Sigma$ is a matrix whose diagonal elements constant and equal to the euclidean distance between $\mathbf{p}_i$ and $\mathbf{p}_N$. This way, the attractor conditions the direction of the path, very slightly in the first nodes, and more strongly as it approaches the cortex, leading to a better representation of the underlying structure.  
 
 \subsubsection{Step Size}
 This algorithms considers all candidate points $\mathbf{p} \in B_{2,r}(\mathbf{p}-\mathbf{p}_i)$ for each member of the final path $\mathbb{P}_{\theta,\varphi}$. Therefore, instead of a fixed step size, we will define the radius $r$ of the support ball. To avoid computational overload while maintaining good results, we will set $r=3$, which yields approximately $200$ candidate points per iteration. 
 
 \subsubsection{Stop Condition}
-The image $\mathbb{I}$ not only contains information about the structure of the brain, but also many empty space. If the attractor is located at the last point $ \mathbf{p} \in \mathbb{I}$, we expect the resulting path to reach that point. However, what we are really interested on is the brain itself, so we define a stop condition that considers that the path is finished once it reaches the last voxel inside the brain. To do so, we use an intensity threshold. 
+The image $\mathbb{I}$ contains not only information about the structure of the brain, but also many empty space. If the attractor is located at the last point $ \mathbf{p} \in \mathbb{I}$, we expect the resulting path to reach that very point. However, what we are really interested on is the brain itself, so we define a stop condition that considers that the path is finished once it reaches the last voxel inside the brain. To do so, we use an intensity threshold. 
 
 This threshold is calculated under the entropic thresholding, as in \cite{Yen1995}. If we note $G_m \equiv \{I_0, I_1, ... I_m\} $ the set containing all intensity levels in the image $\mathbf{I}$ (a vectorized image of length $m$), we can compute a histogram that characterizes the observed frequencies. From these frequencies we can derive the observed probability of the different grey levels. The entropic thresholding defines two distributions after normalization: 
 \begin{align}
 & A \equiv \left\{\frac{p_0}{P(I_{s})}, \frac{p_1}{P(I_{s})}, \dots, \frac{p_{s-1}}{P(I_{s})} \right\}\\
 & B \equiv \left\{\frac{p_{s}}{1-P(I_{s})}, \frac{p_{s+1}}{1-P(I_{s})}, \dots, \frac{p_m}{1-P(I_{s})} \right\}
 \end{align}
-where $P(I_s) = \sum_{i}^{s}p_{I_i}$ is the cumulative density function for the $s$-th grey level. The algorithm is called entropic thresholding because we choose the threshold $I_{th}=I_s$ so that the total amount of information provided by $A$ and $B$ (which we can consider the foreground and background of the image) is maximized. Therefore, we can define the total information provided by choosing the $s$-th grey level as: 
+where $P(I_s) = \sum_{i}^{s}p_{I_i}$ is the \ac{CDF} for the $s$-th grey level. The algorithm is called entropic thresholding because we choose the threshold $I_{th}=I_s$ so that the total amount of information provided by $A$ and $B$ (which we can consider the foreground and background of the image) is maximized. Therefore, we can define the total information provided by choosing the $s$-th grey level as: 
 \begin{align}
 TE(s) & = E_A(s) + E_B(s) \\
 & = -\sum_{i=0}^{s-1}\left(\frac{p_i}{P(I_s)}\right)\log\left(\frac{p_i}{P(I_s)}\right) \\
@@ -291,21 +294,20 @@ A summary of our \ac{HMM}-based path tracing method is shown in Algorithm~\ref{a
 
 
 \begin{figure}
-	\begin{center}
+	\myfloatalign
 		\includegraphics[width=0.7\textwidth]{Graphics/ch6/cuts}
-		\caption[Set of \acs{HMM} based paths over the MRI DARTEL template.]{Set of \ac{HMM} based paths over the MRI DARTEL template.}
+		\caption[Set of \acs{HMM} based paths over the \acs{MRI} DARTEL template.]{Set of \ac{HMM} based paths over the \acs{MRI} DARTEL template.}
 		\label{fig:cuts}
-	\end{center}
 \end{figure}
 
 
 % Con o sin suavizado
 \subsection{Radial Texture Features}\label{sec:rtextfeat}
-The paths $\mathbb{P}_{\theta,\varphi}$ proposed above could theoretically be used as a feature selection tool to extract the set of intensities $V_{\theta,\varphi}$ as in the standard \ac{SBM}, and even create hybrid \ac{HMM}-\ac{SBM} maps from that set. However, since these new paths contain geometric information, they encode the internal structure, which is itself an additional feature. This encoding could be used to characterize the texture in the neighbourhood of $\mathbb{P}_{\theta,\varphi}$. 
+The paths $\mathbb{P}_{\theta,\varphi}$ proposed above could be used as a feature selection tool to extract the set of intensities $V_{\theta,\varphi}$ as in the standard \ac{SBM}, and even create hybrid \ac{HMM}-\ac{SBM} maps from that set. However, since these new paths contain geometric information, they encode the internal structure, which is itself an additional feature. This encoding could be used to characterize the texture in the neighbourhood of $\mathbb{P}_{\theta,\varphi}$. 
 
 In \cite{Martinez-MurciaVRLBP} a helical sampling was proposed to define the neighbourhood of the mapping vector $\mathbf{v}_{\theta,\varphi}$. That is infeasible in this case, due to the topology of the \ac{HMM} paths. Conversely, we propose a modification of the \ac{GLCM} (see Section~\ref{sec:haralick}) that instead of computing the texture in a given direction, characterizes it along the defined \ac{HMM} paths. 
 
-This is basically a node-wise \ac{GLCM}, in which the number of grey-level transitions between adjacent nodes, which we could note as $\mathbf{p}_i$ and $\mathbf{p}_{i+1}$, is stored along the whole path $\mathbb{P}_{\theta,\varphi} = \{\mathbf{p}_0, \mathbf{p}_1 \dots \mathbf{p}_N\}$. Mathematically, the computation of the GLCM in each point in the path will be: 
+This is basically a node-wise \ac{GLCM}, in which the number of grey-level transitions between adjacent nodes, which we could note as $\mathbf{p}_i$ and $\mathbf{p}_{i+1}$, is stored along the whole path $\mathbb{P}_{\theta,\varphi} = \{\mathbf{p}_0, \mathbf{p}_1 \dots \mathbf{p}_N\}$. Mathematically, the computation of the \ac{GLCM} in each point in the path will be: 
 \begin{equation}\label{eq:glcm}
 \mathbf{C}_{\Delta_n}(i,j) = \sum_{n=0}^{N-1}
 \begin{cases}
@@ -337,14 +339,14 @@ Once the \ac{GLCM} is computed, we can extract a variety of texture descriptors,
 \section{Evaluation}
 In this chapter, we have proposed a completely new framework for extracting features and visualizing structural \ac{MRI} images from the \adnimri{} database. To evaluate them, we will combine statistical significance assessment and classification analysis. For this purpose, we propose the following experiments: 
 \begin{itemize}
-	\item Experiment 1: assessment of the original \ac{SBM} maps and the \ac{VRLBP} over segmented \ac{GM} and \ac{WM} images. We will provide a statistical significance analysis and a classification analysis under the \ac{AD} vs \ac{CTL} scenario of the six proposed maps. 
+	\item Experiment 1: assessment of the original \ac{SBM} maps and the \ac{VRLBP} over segmented \ac{GM} and \ac{WM} images. We will provide a statistical significance analysis and a classification analysis under the \ac{AD} vs \ac{CTL} scenario of the seven proposed maps. 
 	\item Experiment 2: assessment of the layered extension of the \ac{SBM} over segmented \ac{GM} and \ac{WM} images. That way, we want to prove if dividing the sampling set, and thus, increasing the depth resolution of the system affects the overall performance of our system. We will provide statistical significance analysis and classification analysis under the \ac{AD} vs \ac{CTL} scenario . 
 	\item Experiment 3: evaluation of the \ac{HMM} based paths on simulated datasets, to demonstrate the ability of this algorithm to adapt to different intensity distributions. 
 	\item Experiment 4: evaluation of the \ac{HMM} based paths on a real \ac{MRI} dataset, by taking the different paths as feature selectors, and evaluating the performance obtained by the set of intensities selected by each individual path, a combination of them, and the further construction of hybrid \ac{HMM}-\ac{SBM} maps. We provide a classification analysis of the selected features under the \ac{AD} vs \ac{CTL} scenario. 
 	\item Experiment 5: evaluation of the texture maps derived from the \ac{HMM} based paths on the T1-weighted \ac{MRI} dataset, under a classification analysis of \ac{AD} vs \ac{CTL} subjects. 
 \end{itemize}
 
-In te first three experiments, we will used segmented \ac{GM} and \ac{WM} maps, where in experiments 5 and 6, we will use raw, T1-weighted images. The classification analysis is performed by using a linear \ac{SVC} for classifying, and 10-fold cross validation strategy (see Section~\ref{sec:validation} for more details). For estimating statistical significance, we use the two-sample $t$-test defined in Section~\ref{sec:ttestEq}. 
+In the first three experiments, we will used segmented \ac{GM} and \ac{WM} maps, where in experiments 5 and 6, we will use raw, T1-weighted images. The classification analysis is performed by using a linear \ac{SVC} for classifying, and 10-fold cross validation strategy (see Section~\ref{sec:validation} for more details). For estimating statistical significance, we use the two-sample $t$-test defined in Section~\ref{sec:ttestEq}. 
 
 
 \section{Results}
@@ -352,27 +354,27 @@ In te first three experiments, we will used segmented \ac{GM} and \ac{WM} maps, 
 \subsection{Experiment 1: Original and \acs{VRLBP} Spherical Brain Mapping}
 First, with experiment 1, we test the original and \ac{VRLBP} \ac{SBM} maps, by means of significance and classification analysis. To start with, we provide the significance maps computed under the \ac{AD} vs \ac{CTL} scenario in the six original \ac{SBM} measures (surface, thickness, number of folds, average, entropy and kurtosis) in  Figure~\ref{fig:tmaps}. 
 
-\begin{figure*}[htp]
-	\centering
+\begin{figure}[htp]
+	\myfloatalign
 	\includegraphics[width=0.9\textwidth]{Graphics/ch6/07-tmaps}
 	\caption[\acs{SBM} t-maps under the \acs{AD} vs \acs{CTL} for \acs{GM} and \acs{WM} images.]{$t$-maps to assess the regions with a higher statistical relevance in the \acs{AD} vs \acs{CTL} paradigm, for each \ac{SBM} measure and using \ac{GM} and \ac{WM} maps. }
 	\label{fig:tmaps}
-\end{figure*}
+\end{figure}
 
 For $p<0.05$, in the database subset of the \adnimri{}, the signifcance threshold can be established at $|t|>1.96$. This means that, in Figure~\ref{fig:tmaps}, the most relevant differences between classes can be found at the areas coloured in dark red (positive, \ac{CTL} subjects have a higher measure) and dark blue (negative, \ac{AD} subjects have a higher measure). For the anatomic structures, we refer to the anatomical reference presented in Section~\ref{sec:anatomical}. 
 
 We first note that the surface measure, tested in both \ac{GM} and \ac{WM} maps, does not look relevant. Very few significant pixels are scattered throughout the image, although with a slightly higher concentration in the areas corresponding to the temporal lobe. 
 
-In the remaining \ac{GM} maps, we observe similar behaviours, with higher absolute $t$-values located in the frontal, occipital and parietal lobes. But again, the most significant areas can be found at the temporal lobe. It is more obvious in the average and entropy measures, but can also be found at the thickness, or negatively in the number of folds and kurtosis maps. This points to the well kown fact that most of the neurodegeneration in \ac{GM} occurs within the structures that are mapped to these directions, including mid temporal lobe, amygdala, hippocampus or parahippocampal gyrus, considered a strong indicator in the NINCDS-ADRDA criteria \cite{Dubois2007}. Other \ac{GM} structures such as the caudate nucleus and putamen also appear with significant $t$ values, especially in the entropy and kurtosis maps (with negative $t$) \cite{Pievani2013}. 
+In the remaining \ac{GM} maps, we observe similar behaviours, with higher absolute $t$-values located in the frontal, occipital and parietal lobes. But again, the most significant areas can be found at the temporal lobe. It is more obvious in the average and entropy measures, but can also be found at the thickness, or negatively in the number of folds and kurtosis maps. This points to the well known fact that most of the neurodegeneration in \ac{GM} occurs within the structures that are mapped to these directions, including mid temporal lobe, amygdala, hippocampus or parahippocampal gyrus, considered a strong indicator in the NINCDS-ADRDA criteria \cite{Dubois2007}. Other \ac{GM} structures such as the caudate nucleus and putamen also appear with significant $t$ values, especially in the entropy and kurtosis maps (with negative $t$) \cite{Pievani2013}. 
 
 In the \ac{WM}, the levels of significance achieved are smaller than in the \ac{GM}, but still high. We see the higher levels of number of folds and thickness located in the vicinity of those obtained for \ac{GM}, but in negative. For the average, entropy and kurtosis measures, we observe a different behaviours. These maps present large areas of negative $t$-values located in the Caudate Nucleus, Globus Pallidus and Putamen. Areas around the posterior cingulate gyrus and the adjacent precuneus also present reduced $t$ values, which could be related to cell loss, as suggested in \cite{Baron2001}.
 
-\begin{figure*}[htp]
-	\centering
+\begin{figure}[htp]
+	\myfloatalign
 	\includegraphics[width=\textwidth]{Graphics/ch6/09-tmaps_vrlbp}
 	\caption[$t$-maps for the \acs{VRLBP}-\acs{SBM} in the \acs{AD} vs \acs{CTL} scenario.]{Maps that present the level of the $t$ statistic in the \ac{AD} vs. \ac{CTL} paradigm, for the VRLBP projections mapping over a) \ac{GM} and b) \ac{WM}. }
 	\label{fig:tmapvrlbp}
-\end{figure*}
+\end{figure}
 
 Finally, we take a look at the statistical significance of the \ac{VRLBP} maps. In Figure~\ref{fig:tmapvrlbp}, we can observe that most of the image features small $t$ values, however there are small areas that contain higher significance. These areas correspond to the temporal lobe, amygdala and hippocampus (in the \ac{GM} maps) and smaller regions located at the limits between the hippocampus and amygdala (in \ac{WM}).
 
@@ -410,90 +412,87 @@ Now, we perform a classification analysis of the images. To this purpose, we wil
 	\label{tab:perfProj}
 \end{table*}
 
-We can see a general trend in which the statistical measures (average, entropy and kurtosis) clearly outperform the morphological ones (surface, thickness and number of folds), although the tissue thickness is the best performing of these, as it could be expected. For \ac{GM} maps, average ($0.879 \pm 0.005$) and entropy ($0.846 \pm 0.008$) achieve the best perforance, followed by thickness ($0.781 \pm 0.007$), kurtosis ($0.753 \pm 0.019$), and finally, the number of folds ($0.749 \pm 0.013$) and surface ($0.638 \pm 0.006$). These results match what we presented previously with the statistical maps, in which the surface contained the less significant measures. 
+We can see a general trend in which the original statistical measures (average, entropy and kurtosis) clearly outperform the morphological ones (surface, thickness and number of folds), although the tissue thickness is the best performing of these, as it could be expected. For \ac{GM} maps, average ($0.879 \pm 0.005$) and entropy ($0.846 \pm 0.008$) achieve the best perforance, followed by thickness ($0.781 \pm 0.007$), kurtosis ($0.753 \pm 0.019$), and finally, the number of folds ($0.749 \pm 0.013$) and surface ($0.638 \pm 0.006$). These results match what we presented previously with the statistical maps, in which the surface contained the less significant measures. 
 
-As for the performance of the \ac{SBM} measures based on \ac{WM} maps, the rank is very similar to that obtained for \ac{GM}. Again, average ($0.800 \pm 0.011$) and entropy ($0.796 \pm 0.006$) are the best performing features among the original measures. They are followed by thickness and the number of folds, with respectively $0.758 \pm 0.009$ and $0.757 \pm 0.005$. Finally, the kurtosis and the surface are the less discriminant measures again, with $0.697 \pm 0.008$ and $0.672 \pm 0.007$. All these measures are outperformed by the \ac{VRLBP} approach, which achieves more than 90\% accuracy in both \ac{GM} and \ac{WM}. 
+As for the performance of the \ac{SBM} measures based on \ac{WM} maps, the rank is very similar to that obtained for \ac{GM}. Again, average ($0.800 \pm 0.011$) and entropy ($0.796 \pm 0.006$) are the best performing features among the original measures. They are followed by thickness and the number of folds, with respectively $0.758 \pm 0.009$ and $0.757 \pm 0.005$. Finally, the kurtosis and the surface are the less discriminant measures again, with $0.697 \pm 0.008$ and $0.672 \pm 0.007$. All the original measures are outperformed by the \ac{VRLBP} approach, which achieves more than 90\% accuracy in both \ac{GM} and \ac{WM}. 
 
-\begin{figure*}[htp]
-	\centering
+\begin{figure}[htp]
+	\myfloatalign
 	\includegraphics[width=0.9\textwidth]{Graphics/ch6/GMperformanceComp}\\
 	\includegraphics[width=0.9\textwidth]{Graphics/ch6/WMperformanceComp}
 	\caption{Performance for the different \ac{SBM} approaches over the: a) \acs{GM} and b) \acs{WM}.}
 	\label{fig:figureGM}
-\end{figure*}
+\end{figure}
 
-In Figure~\ref{fig:figureGM} we explore the evolution of the performance as the number of selected pixels varies. Very small differences in the accuracy exist for most measures, and so, we can consider that the performance of the \ac{SBM}, once that a few thousand significant pixels (a 10\% of $181\times361=65341$) have been selected, the system performs well independently of that number. That is, however, not the case of the surface approach, and more remarkably, of the \ac{VRLBP}. In this latter case, for both tissues, the performance is high in the first 40\% of selected voxels, but after that, it dramatically decreases down to less than 70\% accuracy. 
+In Figure~\ref{fig:figureGM} we explore the evolution of the performance as the number of selected pixels varies. Very small differences in the accuracy exist for most measures, and so, we can consider that the performance of the \ac{SBM}, once that a few thousand significant pixels (a 10\% of $181\times361=65341$) have been selected, the system performs well independently of that number. That is, however, not the case of the surface approach, and more remarkably, of the \ac{VRLBP}. In this latter case, for both tissues, the performance is high in the first 40\% of selected voxels, but after that, it dramatically decreases down to less than 70\% accuracy, which may be related to the small significant regions found in Figure~\ref{fig:tmapvrlbp}.
 
 \subsection{Experiment 2: Layered Extension}\label{sec:layeredttest}
-In Experiment 2, we have assessed how the performance of our \ac{SBM} varies when adding different layers, which could theoretically improve the accuracy of the \ac{SBM} representation. First, we will take a look at the performance achieved by this extension on all six original \ac{SBM} maps, using 4 layers and different $t$-thresholds (2, 4, 8 and 10). This is presented at Figure~\ref{fig:layeredPerf}. 
+In Experiment 2, we have assessed how the performance of our \ac{SBM} varies when adding different layers, which might theoretically improve the accuracy of the \ac{SBM} representation. First, we will take a look at the performance achieved by this extension on all six original \ac{SBM} maps, using 4 layers and different $t$-thresholds (2, 4, 8 and 10). This is presented at Figure~\ref{fig:layeredPerf}. 
 
-\begin{figure*}[htp]
-	\centering
+\begin{figure}[htp]
+	\myfloatalign
 	\includegraphics[width=0.9\textwidth]{Graphics/ch6/layerPerfGM}\\
 	\includegraphics[width=0.9\textwidth]{Graphics/ch6/layerPerfWM}
 	
 	\caption[Performance of the four-layered mappings.]{Performance for the different four-layered mappings over the: a) \acs{GM} and b) \acs{WM} at different levels of statistical significance.}
 	\label{fig:layeredPerf}
-\end{figure*}
+\end{figure}
 
 The first thing that we can observe is that for \ac{GM} maps, the better performance is achieved within the second and third layers, and only for the second layer in the case of \ac{WM}. In almost all cases, the average performance achieves higher accuracy than any other \ac{SBM} measure, closely followed by entropy. It also tells us that, with less restrictive $t$-thresholds, the performance generally decreases, and the best values are between 2 and 4. 
 
-Performing a significance analysis on the 4 layer extension of the 7 proposed \ac{SBM} maps over the \ac{GM} and \ac{WM} images could be infeasible for this thesis, therefore we will only provide $t$-maps of the best performing measure: the average on the \ac{GM} and \ac{WM} tissues. The significance assessing of this case is found at Figure~\ref{fig:tmaplayered}.
+Performing a significance analysis on the 4 layer extension of the 7 proposed \ac{SBM} maps over the \ac{GM} and \ac{WM} images could be intractable, therefore we will only provide $t$-maps of the best performing measure: the average on the \ac{GM} and \ac{WM} tissues. The significance assessing of this case is found at Figure~\ref{fig:tmaplayered}.
 
-\begin{figure*}[htp]
-	\centering
+\begin{figure}[htp]
+	\myfloatalign
 	\includegraphics[width=\textwidth]{Graphics/ch6/08-Tmap4LayAverage}
 	\caption[$t$-maps that present the level of statistical relevance in the \acs{AD} vs \acs{CTL} paradigm.]{$t$-maps that present the level of statistical relevance in the \acs{AD} vs \acs{CTL} paradigm, for a four-layered average mapping over a) \ac{GM} and b) \ac{WM}. }
 	\label{fig:tmaplayered}
-\end{figure*} 
+\end{figure} 
 
 In \ac{GM}, the most obvious changes are located in layers 2 and 3, specifically at the hippocampus, parahippocampal gyrus and amygdala (layer 2), and the temporal lobe (layer 3), where the values achieved by \ac{CTL} subjects are much higher than those found in \ac{AD}. This could reveal atrophy in these organs, as it has been reported in the literature \cite{Dubois2007,Pievani2013} and will be discussed later. For \ac{WM}, we obtain large negative $t$-values in areas occupied by the rolandic operculum, heschl's gyri, putamen and globus pallidus, with positive values in parts of the hippocampus, and parts of the temporal lobe. Nevertheless, the most significant differences can be located in layer 1, at the borders between ventricles and thalamus, and the cuneus, precuneus and posterior cingulate gyrus, which have been reported in \cite{Baron2001}.
 
 \subsection{Experiment 3: \acs{HMM} on Synthetic Datasets}
 
-\begin{figure}
-	\begin{center}
+Now, we will analyse the behaviour of the \ac{HMM} paths on some two and three-dimensional examples. In Figure~\ref{fig:gaussian}, we used a gaussian mixture probability density function, with four isotropic gaussian kernels, to generate a synthetic image. We wanted to test the direction of the \ac{HMM} paths on this image, by locating the initial point $\mathbf{p}_0 = (120,20)$ and the attractor at the centre of one of the kernels, $\mathbf{p}_N = (20, 60)$. This simple example illustrates how the generated paths maximizes both the orientation of the path (towards $\mathbf{p}_N$) and the minimum change in the intensity values. This was specially noticeable in the last nodes of the path, where the approximation to $\mathbf{p}_N$ is very gradual, due to the restrictions imposed. In this example, we used a support ball with $r=3$.
+
+
+\begin{figure}[p]
+	\myfloatalign
 		\includegraphics[width=0.5\textwidth]{Graphics/ch6/gaussian}
 		\caption{Path traced over a gaussian mixture distribution of 4 i\-so\-tro\-pic gaussian kernels.}
 		\label{fig:gaussian}
-	\end{center}
-\end{figure}
-
-Now, we will analyse the behaviour of the \ac{HMM} paths on some examples. In Figure~\ref{fig:gaussian}, we used a gaussian mixture probability density function, with four isotropic gaussian kernel, to generate a synthetic image. We wanted to test the direction of the \ac{HMM} paths on this image, by locating the initial point $\mathbf{p}_0 = (120,20)$ and the attractor at the centre of one of the kernels, $\mathbf{p}_N = (20, 60)$. This simple example illustrates how the generated paths maximizes both the orientation of the path (towards $\mathbf{p}_N$) and the minimum change in the intensity values. This was specially noticeable in the last nodes of the path, where the approximation to $\mathbf{p}_N$ is very gradual, due to the restrictions imposed. In this example, we used a support ball with $r=3$.
-
-
-\begin{figure}
-	\begin{center}
-		\includegraphics[width=0.3\textwidth]{Graphics/ch6/spire}
-		\caption{\ac{HMM} path computed inside a density distribution defined by an helix.}
-		\label{fig:spire}
-	\end{center}
 \end{figure}
 
 Afterwards, we wanted to demonstrate how these paths adapt to three-di\-men\-sio\-nal structures. In this case, we created a helix-shaped point distribution in Fig.~\ref{fig:spire}. Since we need per-voxel intensity values (probailities) to estimate the paths, we have approximate this by the number of points within each voxel over the total number of points. By setting $\mathbf{p}_0$ to the point on the helix distribution with smallest $z$ coordinate, and $\mathbf{p}_N$ to the one with maximum $z$, we trace the path shown in Fig.~\ref{fig:spire}. This paths adapt to the distribution and follows it consistently until it reaches the attractor at the top of the helix.
 
 
+\begin{figure}[p]
+	\myfloatalign
+		\includegraphics[width=0.5\textwidth]{Graphics/ch6/spire}
+		\caption{\ac{HMM} path computed inside a density distribution defined by an helix.}
+		\label{fig:spire}
+\end{figure}
+
+Finally, and prior to the three-dimensional brain images, we test the algorithm on a bidimensional real-world example: a digital elevation model of the Iberian Peninsula. The image, whose intensity represents height, was acquired by the LANDSAT SRTM30+ mission. We tested multiple paths by establishing sequentially $\mathbf{p}_0$ and $\mathbf{p}_N$ in ten different cities. The paths shown at Figure~\ref{fig:spainmap} optimize both the distance and height variation as well as resemble -in most cases- the main roads that connect these cities in the real world. Given the dimensions of the image, in this case, the L2-norm of the support ball has been set to $r=30$. 
+
+
 \begin{figure}[htp]
-	\centering
-	\includegraphics[width=0.7\textwidth]{Graphics/ch6/spain.pdf}
+	\myfloatalign
+	\includegraphics[width=0.8\textwidth]{Graphics/ch6/spain.pdf}
 	\caption{Simulation of the \ac{HMM}-based path tracing over an Iberian Peninsula height map, interconecting different cities.}
 	\label{fig:spainmap}
 \end{figure}
 
-Finally, and prior to the three-dimensional brain images, we test the algorithm on a bidimensional real-world example: a digital elevation model of the Iberian Peninsula. The image was acquired by the LANDSAT SRTM30+ mission, and its intensity represents height. We tested multiple paths by establishing sequentially $\mathbf{p}_0$ and $\mathbf{p}_N$ in ten different cities. The paths shown at Figure~\ref{fig:spainmap} optimize both the distance and height variation as well as resembling -in most cases- the roads that connect these cities in the real world. Given the dimensions of the image, in this case, the L2-norm of the support ball has been set to $r=30$. 
-
-
 \subsection{Experiment 4: Feature Selection using \acs{HMM} Paths}
 In Experiment 4 we begin to apply the \ac{HMM} paths to real \ac{MRI} images from the \adnimri{} dataset. We have first defined a set of paths over the DARTEL template, which we call the canonical paths. The canonical paths follow the anatomy of a normal subject to whom all other images have been registered. Therefore, the location of the different nodes on the paths are fixed throughout the general anatomy of all images, and we could characterize the differences between classes by analysing the intensity distribution on these paths --in other words, the tissue density--. In short, we apply the canonical paths as a feature selection algorithm to the different images. 
 
-To start with, we will take all the $180\times360=64800$ canonical paths computed in all  spatial directions defined by $\varphi\in[0,360]$ and $\theta\in[-90,90]$. These paths will be used to select the voxel intensities where the nodes are placed, as in the original \ac{SBM}. Due to the influence of the different variables (trace of the paths, stop condition), the amount of values varies from 2 to several tens. First we will test the accuracy achieved by each path itself, using the set of intensities as features in a \ac{SVC} classifier. The accuracy reached by each path is represented by colour in Figure~\ref{fig:accuracyMap}. 
+To start with, we will take all the $180\times360=64800$ canonical paths computed in all  spatial directions defined by $\varphi\in[0,360)$ and $\theta\in[-90,90)$. These paths have been used to select the voxel intensities where the nodes are placed, as in the original \ac{SBM}. Due to the influence of the different variables (trace of the paths, stop condition), the amount of values varies from 2 to several tens. First we will test the accuracy achieved by each path itself, using the set of intensities as features in a \ac{SVC} classifier. The accuracy reached by each path is represented by colour in Figure~\ref{fig:accuracyMap}. 
 
 \begin{figure}
-	\begin{center}
-		\includegraphics[width=\columnwidth]{Graphics/ch6/accuracyPaths2}
+	\myfloatalign
+		\includegraphics[width=0.8\columnwidth]{Graphics/ch6/accuracyPaths2}
 		\caption{canonical paths computed in each direction ($\theta,\varphi$). Each path's colour represent the accuracy in a differential diagnosis. Only one in every five paths are shown for clarity purposes.}
 		\label{fig:accuracyMap}
-	\end{center}
 \end{figure}
 
 The highest performance is achieved by some of the light green paths that cross the temporal lobe, where they reach a decent accuracy up to $0.8028\pm0.0873$. Compared to the \ac{VAF} approach obtained in the \adnimri{} dataset using T1-weighted images, under the AD vs NOR scenario ($0.789 \pm 0.066$ accuracy), this is a dramatic feature reduction while increasing the performance of the system. 
@@ -518,7 +517,7 @@ Then, we want to test whether using all the intensities contained within the hig
 	\label{tab:accHMMPaths}
 \end{table}
 
-Finally, we proceed as in the original \ac{SBM} article \cite{Martinez-Murcia2015}, by computing different \ac{SBM} measures using each set of intensities $V_{\theta,\varphi}$ selected by the \ac{HMM} path at the direction of the attractor $(\theta,\varphi)$. We will compute the average, entropy and kurtosis measures, as well as an additional variance term, which proved to be a good approach. An example of the computed maps is provided in Figure~\ref{fig:hmmstatmaps}.
+Finally, we proceed as in the original \ac{SBM} article \cite{Martinez-Murcia2015}, by computing different \ac{SBM} measures using each set of intensities $V_{\theta,\varphi}$ selected by the \ac{HMM} path at the direction of the attractor $(\theta,\varphi)$. We will compute the average, entropy and kurtosis measures, as well as an additional variance measure, the variance of the intensity set $V_{\theta,\varphi}$. An example of the computed maps is provided in Figure~\ref{fig:hmmstatmaps}.
 
 \begin{figure}
 \centering
@@ -567,13 +566,13 @@ After evaluating the \ac{HMM} paths as a feature selection method, and the hybri
 	\caption{Performance values ($\pm$SD) for each of the 10 texture features.} \label{tab:texture}
 \end{table*}
 
-Difference variance achieves here the higher accuracy, $0.736 \pm 0.070$, a value similar to the \ac{VAF} approach in this database. The performance achieved by these texture features is always higher than $65\%$ (most of them above $70\%$) which reveals a discrete discrimination ability, although much smaller than the one shown by the \ac{HMM} paths, used as feature selection tool. 
+Difference variance achieves here the higher accuracy, $0.736 \pm 0.070$, a value below the \ac{VAF} approach in this database. The performance achieved by these texture features is always higher than $65\%$ (most of them above $70\%$) which reveals a discrete discrimination ability, although much smaller than the one shown by the \ac{HMM} paths, used as feature selection tool. 
 
 \section{Discussion}
 \subsection{Spherical Brain Mapping}
-The Spherical Brain Mapping defines a completely new approach to visualization and feature extraction of segmented \ac{MRI} images. We have tested the original maps (including the \ac{VRLBP} approach) in Experiment 1, and its layered extension in Experiment 2. 
+The \ac{SBM} defines a completely new approach to visualization and feature extraction of segmented \ac{MRI} images. We have tested the original maps (including the \ac{VRLBP} approach) in Experiment 1, and its layered extension in Experiment 2. 
 
-From the analyses performed, we can conclude that the most significant changes occur mainly in the \ac{GM} tissue (see fig.~\ref{fig:performance}), although some maps perform better with \ac{WM}. According to the widely documented structural changes due to Alzheimer's Disease, these occur mainly in \ac{GM} \cite{Misra2009,Baron2001,Pievani2013,Stoeckel04,han2006reliability,Fischl2004}, which is consistent to what we found, and the significance found in \ac{WM} might be the ``negative'' influence of the \ac{GM} loss. That is revealed in the statistical significance analysis of Figures~\ref{fig:tmaps} and \ref{fig:tmapvrlbp}, where the $t$-values in \ac{WM} are negative in the areas where we found positive values in \ac{GM} maps. This can be also appreciated in the layered approach, at Figure~\ref{fig:tmaplayered}. 
+From the analyses performed, we can conclude that the most significant changes occur mainly in the \ac{GM} tissue (see fig.~\ref{fig:performance}), although some maps perform better with \ac{WM}. According to the widely documented structural changes due to \ac{AD}, these occur mainly in \ac{GM} \cite{Misra2009,Baron2001,Pievani2013,Stoeckel04,han2006reliability,Fischl2004}, which is consistent to what we found, and the significance found in \ac{WM} might be the ``negative'' influence of the \ac{GM} loss. That is revealed in the statistical significance analysis of Figures~\ref{fig:tmaps} and \ref{fig:tmapvrlbp}, where the $t$-values in \ac{WM} are negative in the areas where we found positive values in \ac{GM} maps. This can be also appreciated in the layered approach, at Figure~\ref{fig:tmaplayered}. 
 
 \begin{figure}[htp]
 	\centering
@@ -582,9 +581,9 @@ From the analyses performed, we can conclude that the most significant changes o
 	\label{fig:performance}
 \end{figure}
 
-The mappings defined at Sections~\ref{sec:mapping}, \ref{sec:layered} and \ref{sec:vrlbp} model a series of properties of the tissues crossed by the mapping vector $\mathbf{v}_{\theta,\varphi}$. We classified all the \ac{SBM} measures in three groups: morphological (surface, number of folds and thickness), statistical (average, variance, entropy or kurtosis) and texture (\ac{VRLBP}). The morphological approaches are easily interpreted, since they represent things such as the surface of the tissue, the complexity of the tyri and sulci folding, and the thickness. Surface and thickness are defined in a similar way to other widely-used software, such as Freesurfer~\cite{Dale1999,Fischl2004}, although are less powerful in defining this complexity, due to the limitations in our rectilinear mapping. 
+The mappings defined at Sections~\ref{sec:mapping}, \ref{sec:layered} and \ref{sec:vrlbp} model a series of properties of the tissues crossed by the mapping vector $\mathbf{v}_{\theta,\varphi}$. We can group all the \ac{SBM} measures in three categories: morphological (surface, number of folds and thickness), statistical (average, variance, entropy or kurtosis) and texture (\ac{VRLBP}). The morphological approaches are easily interpreted, since they represent things such as the surface of the tissue, the complexity of the tyri and sulci folding, and the thickness. Surface and thickness are defined in a similar way to other widely-used software, such as Freesurfer~\cite{Dale1999,Fischl2004}, although are less powerful in defining this complexity, due to the limitations in our rectilinear mapping. 
 
-Therefore, the surface measure is not a faithful representation of the surface of the cortex, as it can be seen in Fig.~\ref{fig:masksGM}, and later in the $t$-maps at Fig.~\ref{fig:tmaps}. That is why its performance is so small due to the superposing gyri and sulci, and better for \ac{WM}, where it achieves a higher level of detail. As for the thickness measure, it cannot achieve the same level of detail of the Freesurfer's measures, although gathering much more information than other morphological approaches. Nevertheless, the thickness of these tissues can still be very descriptive, and it achieves a decent performance in the classification analysis. The number of folds is the last of these morphological measures. It is intended to measure the complexity of the cerebral cortex, although judging by its performance, it does not do a very good job. 
+Therefore, the surface measure is not a faithful representation of the surface of the cortex, as it can be seen in Fig.~\ref{fig:masksGM}, and later in the $t$-maps at Fig.~\ref{fig:tmaps}. That is why its performance is so small in \ac{GM}, due to the superposing gyri and sulci, and better for \ac{WM}, where it achieves a higher level of detail. As for the thickness measure, it cannot achieve the same level of detail of the Freesurfer's measures, although gathering much more information than other morphological approaches. Nevertheless, the thickness of these tissues can still be very descriptive, and it achieves a decent performance in the classification analysis. The number of folds is the last of these morphological measures. It is intended to measure the complexity of the cerebral cortex, although judging by its performance, it does not do a very good job. 
 
 The statistical measures, especially average, achieve higher performance in the classification analysis. That might be due to the precision of the numbers used. Whereas in the morphological features we obtained integers (as they count the number of voxels or zero-crossings), in the statistical measures values such as average or entropy compute high-precision floating values. This can help in further computation, although values such as kurtosis are outperformed by, for example, thickness. 
 
@@ -632,9 +631,9 @@ Our paths demonstrated in Experiment 3 that they can adapt easily to two and thr
 
 Later, in Experiment 4, we used the \ac{HMM} paths as a feature selection tool to construct the set of selected intensities $V_{\theta,\varphi}$, as in the original \ac{SBM}. Individual paths as well as a the pooled intensities of all paths in a hemisphere were tested using a \ac{SVC}. The differences between intensity sets in \ac{AD} and \ac{CTL} were significant enough to achieve accuracies over 80\% in some paths. The paths that achieved more than 75\% accuracy are shown in Figure~\ref{fig:bestPaths}, along with the rendered structures crossed by them, according to the \ac{AAL} brain atlas \cite{Tzourio-Mazoyer2002}. 
 
-The structures that are crossed by the best-performing paths are the Hippocampus, Amygdala, Thalamus, Fusiform and Inferior Temporal Gyrus. \ac{GM} loss in the hippocampus has been extensively reported in the literature \cite{Dubois2007,Baron2001,Jong2008}, as well as its surrounding structures (Amygdala, parahippocampal gyrus and Fusiform) \cite{Baron2001}. Some studies have also reported neurodegeneration at the Thalamus and Putamen, also related to early \ac{AD} \cite{Jong2008}, and in advanced \ac{AD}, atrophy in most of the neocortex \cite{Dubois2007,Baron2001,Jong2008}. However, pooling all the intensities selected by these paths together did not increase the performance achieved by the best performing paths. 
+The structures that are crossed by the best-performing paths are the hippocampus, amygdala, thalamus, fusiform and inferior temporal gyrus. \ac{GM} loss in the hippocampus has been extensively reported in the literature \cite{Dubois2007,Baron2001,Jong2008}, as well as its surrounding structures (amygdala, parahippocampal gyrus and fusiform) \cite{Baron2001}. Some studies have also reported neurodegeneration at the thalamus and putamen, also related to early \ac{AD} \cite{Jong2008}, and in advanced \ac{AD}, atrophy in most of the neocortex \cite{Dubois2007,Baron2001,Jong2008}. However, pooling all the intensities selected by these paths together did not increase the performance achieved by the best performing paths. 
 
-The last test of Experiment 4 was the hybrid \ac{SBM}-\ac{HMM} maps. Average, entropy, kurtosis and variance maps were tested, and we found that they were discriminant (accuracy above 70\% in most cases), yet not very powerful. This is however coherent with the definition of the paths, where the intensity changes are small and progressive, and therefore, higher order statistics that focus on this (such as variance or kurtosis) are more representative of this behaviour. 
+The last test of Experiment 4 was the hybrid \ac{SBM}-\ac{HMM} maps. Average, entropy, kurtosis and variance maps were tested, and we found that they were discriminant (accuracy above 70\% in most cases), yet not very powerful. This is however coherent with the definition of the paths, where the intensity changes are small and progressive, and therefore, statistics that focus on higher order variability (such as variance or kurtosis) are more representative of this behaviour. 
 
 Finally, we tested the \ac{HMM} paths' application to compute radial \ac{GLCM} and texture features at Experiment 5. Here we saw that the performance achieved with any of the texture feature maps was smaller than using the best paths themselves, or even the most significant paths. However, the real utility of the texture \ac{HMM} maps could reside in its application to longitudinal studies. Texture has been already related to the evolution of \ac{AD} \cite{sikio2015mr}, and so, the evolution of the generated texture maps over the canonical paths throughout time could be a good indicator of the progression of \ac{AD}. 
 

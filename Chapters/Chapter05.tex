@@ -1,19 +1,21 @@
+% !TEX TS-program = pdflatex
+% !TEX root = ../Tesis.tex
 %************************************************
 \chapter{Texture Features}\label{ch:texture}
 %************************************************
 \section{Introduction}
-Texture is a household word outside image processing or related fields. However, in that context, it lacks a definition that allow us to measure and quantify it. Patter recognition provides us with a mathematical definition that allow us to use texture as a feature in our \ac{CAD} systems. 
+Texture is a household word outside the image processing or related fields. However, in that context, it lacks a definition that allow us to measure and quantify it. Patter recognition provides us with a mathematical definition that allow us to use texture as a feature in our \ac{CAD} systems. 
 
-Texture analysis is defined as any procedure by which we can quantify and classify the spatial variation of intensity throughout an image. In neuroimaging, texture has been widely used in segmentation (tissue classification) of \ac{MRI} images \cite{Saeed2002,Alejo2003,Wang2009}, although there exist a number of works using it for feature extraction in \ac{CAD}-like systems, like the works in \cite{kovalev2001three,sikio2015mr}, or our work on \ac{PKS} feature extraction \cite{Martinez-Murcia2013266,martinez2014parametrization}. 
+Texture analysis is any procedure by which we can quantify and classify the spatial variation of intensity of an image. In neuroimaging, texture has been widely used in segmentation (tissue classification) of \ac{MRI} images \cite{Saeed2002,Alejo2003,Wang2009}, although there exist a number of works using it for feature extraction in \ac{CAD}-like systems, like the works in \cite{kovalev2001three,sikio2015mr}, or our work on \ac{PKS} feature extraction \cite{Martinez-Murcia2013266,martinez2014parametrization}. 
 
-Texture features can be classified in first, second and higher order analysis, depending on the number of variables used. First order statistics \cite{Martinez-Murcia2016b} are the most basic form of texture analysis, computing values such as average, variance or histogram of voxel intensity values \cite{Srinivasan2008}. 
+Texture features can be grouped in first, second and higher order analyses, depending on the number of variables used. First order statistics \cite{Martinez-Murcia2016b} are the most basic form of texture analysis, computing values such as average, variance or histogram of voxel intensity values \cite{Srinivasan2008}. 
 
-The most popular form, with a very developed theoretical background, is second-order statistical texture analysis. This particular form is based on the probability of finding a pair of similar intensities at a certain distance and orientation of a certain image. From these probabilities, many measures can be derived, being the most popular the Haralick texture analysis \cite{Haralick73}. 
+The most popular form, with a very developed theoretical background, is second-order statistical texture analysis. This particular form is based on the probability of finding a pair of similar intensities at a certain distance and orientation of a certain image. From these probabilities, many measures can be derived, being the Haralick texture analysis \cite{Haralick73} perhaps the most popular approach. 
 
 \begin{figure}[htp]
 \centering
 \includegraphics[width=0.9\linewidth]{Graphics/ch5/01-flowdiagram}
-\caption[Schema of the proposed Texture-based CAD system.]{Schema of the proposed Texture-based \ac{CAD} system, including an optional feature selection block.}
+\caption[Schema of the proposed Texture-based \acs{CAD} system.]{Schema of the proposed Texture-based \ac{CAD} system, including an optional feature selection block.}
 \label{fig:textureCAD}
 \end{figure}
 
@@ -22,9 +24,9 @@ In this work we have used Haralick texture analysis to extract features from DaT
 \section{Methodology}\label{sec:methodsCh5}
 
 \subsection{Volume selection}\label{sec:volume}
-Even the registered DaTSCAN images contain many voxels that are outside the brain. Therefore, to obtain a more robust estimation of the texture, it would be desirable to perform the computation of the features on subvolumes of those images (or subimages) that contain only voxels inside the brain. Many strategies can be performed for this, for example, force the computation of the \ac{GLCM} to ignore background voxels. 
+Even the registered DaTSCAN images contain many voxels that are outside the brain. Therefore, to obtain a more robust estimation of the texture, it would be desirable to perform the computation of the features on subvolumes of those images (or subimages) that contain only voxels inside the brain. Many strategies can be performed for this, for example, force the texture analysis to ignore background voxels. 
 
-In this work, we opted for extracting a subvolume which contains only voxels higher than a certain intensity threshold $I_{th}$, which should be specified. To do so, we obtain the maximum and minimum coordinates for which $\mathbf{I}$ is higher than the threshold: 
+In this work, given the characteristics of the DaTSCAN \acp{ROI}, we opted for extracting a subvolume which contains only voxels higher than a certain intensity threshold $I_{th}$, which should be specified. To do so, we obtain the maximum and minimum coordinates for which $\mathbf{I}$ is higher than the threshold: 
 \begin{align}
 	p_{x,min} & = \argmin_x \left( \mathbf{I} > I_{th} \right)\\
 	p_{x,max} & = \argmax_x \left( \mathbf{I} > I_{th} \right)
@@ -43,18 +45,18 @@ Different subimages and sizes are obtained when applying different $I_{th}$ In F
 \begin{figure}
 	\centering
 	\includegraphics[width=0.90\columnwidth]{Graphics/ch5/comparisonIth.eps}
-	\caption[Comparison of the different $I_{th}$ values.]{Comparison of the different $I_{th}$ values for a random subject extracted from the PPMI database.}
+	\caption[Comparison of the different $I_{th}$ values.]{Comparison of the different $I_{th}$ values for a random subject extracted from the \ppmidat{} database.}
 	\label{fig:comparisonIth}
 \end{figure}
 
 \subsection{Haralick Texture Analysis}\label{sec:haralick}
 \subsubsection{Gray Level Co-occurrence Matrix}
 %Que son las matriz de coocurrencia y las texture features
-The Haralick texture analysis is based on the computation of a \acf{GLCM}, which is a form of evaluating second-order texture statistics. This matrix is a summary of the probabilities of finding a pair of similar grey levels at a certain distance and in a certain direction. 
+The Haralick texture analysis is based on the computation of a \acf{GLCM}. This matrix is a summary of the probabilities of finding a pair of similar grey levels at a certain distance and in a certain direction. 
 
-The combination of the unitary vector dimension and the distance defines the offset $\Delta=(d_x,d_y,d_z)$, whose norm is the distance $d$ and is defined in a given spatial direction. In this work, we use a three-dimensional approach to the computation of the \ac{GLCM}, based on \cite{Philips2008}, that uses thirteen spatial directions to generalize the standard 2D \ac{GLCM} to 3D. These offset define different angles and are used to get some degree of rotational invariance \cite{Philips2008}. 
+The combination of the unitary vector dimension and the distance defines the offset $\Delta=(d_x,d_y,d_z)$, whose norm is the distance $d$ and is defined in a given spatial direction. In this work, we use a three-dimensional approach to the computation of the \ac{GLCM}, based on \cite{Philips2008}, that uses thirteen spatial directions to generalize the standard 2D \ac{GLCM} to 3D. These offset define different angles and are used to get a degree of rotational invariance \cite{Philips2008}. 
 
-Medical images have different number precision, which can vary from regular 8bit integers (256 values) to the type float64 ($1.844\times10^{19}$ possible values). Using all these values, even in the smallest case, would lead to $256\times 256$ matrices, which would be both non representative of the real texture and computationally expensive. Therefore, prior to the \ac{GLCM} computation, we posterize the image, that is, the image is quantified to use only 16 grey levels. This leads to more tractable \ac{GLCM} without losing their representativeness. 
+Medical images are described using different number precisions, which can vary from regular 8bit integers (256 values) to the type float64 ($1.844\times10^{19}$ possible values). Using all these values, even in the smallest case, would lead to $256\times 256$ matrices, which would be both non representative of the real texture and computationally expensive. Therefore, prior to the \ac{GLCM} computation, we posterize the image, that is, the image is quantified to use only 16 grey levels. This leads to more tractable \ac{GLCM} without losing their representativeness. 
 
 Once images have been posterized, for two different grey levels $i$ and $j$, the value of the co-occurrence matrix $\mathbf{C}$ over a $n \times m \times k$ three-dimensional image $\mathbf{I}$ is defined as: 
 \begin{equation}\label{eq:cooc3D}
@@ -87,20 +89,20 @@ In \cite{Haralick73,Haralick1992a}, many texture features are derived from the p
 \text{Max Probability} & = \max_{i,j} \mathbf{P}(i,j)\\
 \text{Inverse Variance} & = \sum\limits_i\sum\limits_j {\mathbf{P}(i,j) \over (i-j)^2}
 \end{align}
-where $\mu_i$, $\mu_j$, $\sigma_i$ and $\sigma_j$ are the column and row-wise mean and variance respectively. These feature measure things such as the randomness of the grey-level distribution (entropy), the number of repeated pairs (energy), the local contrast or homogeneity of the image, variance, the tendency to form clusters (cluster shade and tendency), among others. 
+where $\mu_i$, $\mu_j$, $\sigma_i$ and $\sigma_j$ are the column and row-wise mean and variance respectively. These features measure things such as the randomness of the grey-level distribution (entropy), the number of repeated pairs (energy), the local contrast or homogeneity of the image, variance, the tendency to form clusters (cluster shade and tendency), among others. 
 
 For this work we have used a distance $d$ ranging from 1 to 10, at each of the $13$ spatial directions. Therefore, we have computed $13\times10=130$ \acp{GLCM} per image, from which $12$ texture features are computed. Our final feature vector will therefore have $1560$ features in total. 
 
 To further reduce the dimensionality of the feature vector, we have performed feature selection using the $t$-test, \ac{MWW} $U$-test and the relative entropy (\ac{KL} divergence) criteria (see Section~\ref{sec:featureSelection}). 
 
 \subsection{Experiments}
-For evaluating the system proposed in this chapter, combining texture analysis and other feature selection algorithms, we propose two experiments: 
+To evaluate the system proposed in this chapter, combining texture analysis and other feature selection algorithms, we propose two experiments: 
 \begin{itemize}
-	\item Experiment 1: Ability of the different texture features to differenciate between \ac{PD} affected subjects and \acp{CTL}. Each of the texture features is analysed in two different ways: a ''single approach'', which only considers one type of feature using only the matrices at a distance $d$ from the central voxel -and using all the spatial directions- and a ''cumulative approach'' which considers one type of feature too, but this time using all matrices in distances ranging from 1 to $d$. 
-	\item Experiment 2: Impact of the introduction of a feature selection algorithm (of those presented at Section~\ref{sec:featureSelection}) after computing the texture features. This allow us to pool all texture features at all distances and directions, and then select the most discriminative ones according to some of these criteria.  
+	\item Experiment 1: Ability of the different texture features to differenciate between \ac{PD} affected subjects and \acp{CTL}. Each of the texture features is analysed in two different ways: a ''single approach'', which only considers one type of feature using only the matrices at a distance $d$ from the central voxel -using all the spatial directions- and a ''cumulative approach'' which considers one type of feature too, but this time using all matrices in distances ranging from 1 to $d$. 
+	\item Experiment 2: Impact of the introduction of a feature selection algorithm (of those presented at Section~\ref{sec:featureSelection}) after computing the texture features. This allow us to pool all texture features at all distances and directions, and then select the most discriminative ones according to any of these criteria.  
 \end{itemize}
 
-All images used are intensity normalized using either normalization to the maximum or integral normalization (see Section~\ref{sec:intensityPrep}), and afterwards, a subvolume can be extracted using the intensity threshold methodology described at Section~\ref{sec:volume}. In addition to the feature extraction technique using texture analysis, and the feature selection procedure defined for Experiment 2, we use a linear \ac{SVC} for classifying, and 10-fold cross validation strategy (see Section~\ref{sec:validation} for more details). Note that for this analysis we will remove the \ac{SWEDD} subjects from the \ppmidat{} and \vdlndat{} datasets. 
+All images are intensity normalized using either normalization to the maximum or integral normalization (see Section~\ref{sec:intensityPrep}), and afterwards, a subvolume can be extracted using the intensity threshold methodology described at Section~\ref{sec:volume}. In addition to the feature extraction technique using texture analysis, and the feature selection procedure defined for Experiment 2, we use a linear \ac{SVC} for classifying, and 10-fold cross validation strategy (see Section~\ref{sec:validation} for more details). Note that for this analysis we will remove the \ac{SWEDD} subjects from the \ppmidat{} and \vdlndat{} datasets. 
 
 \section{Results}\label{sec:ch5results}
 \subsection{Experiment 1: Individual Texture Features}
@@ -120,13 +122,13 @@ To check which value of the intensity threshold is the best for computing the te
 	\label{fig:featuresIth}
 \end{figure*}
 
-The most obvious differences can be found between normalization procedures. As a general trend, the integral normalization barely has an impact over the performance achieved with the registered images. Furthermore, the normalization to the maximum even drops the performance for high $I_{th}$, however it increases the general performance in the range 0.1-0.3. From these graphs it is patent that normalization has no impact on the performance achieved by our system, which can be consider an advantage, since it reduces the preprocessing needed. 
+The most remarkable differences are found between normalization procedures. As a general trend, the integral normalization barely has any impact over the performance achieved with the registered images. Furthermore, the normalization to the maximum even drops the performance for high $I_{th}$, however it increases the general performance in the range 0.1-0.3. From these graphs it is patent that normalization has little impact on the performance achieved by our system, which can be consider an advantage, since it reduces the preprocessing needed. 
 
-In this regard, the \vdlvdat{} dataset has an strange behaviour. It performance holds and even increases when using normalization to the maximum, but significantly drops when integral normalization is used. This is exactly the opposite as happens to the other dataset, and will be discussed later.  
+In this regard, the \vdlvdat{} dataset has an strange behaviour. It performance holds and even increases when using normalization to the maximum, but significantly drops when integral normalization is used. This is exactly the opposite to the other datasets, and will be discussed later.  
 
 In these images, we can observe a strong dependence of the system's performance with the intensity threshold $I_{th}$. In general, the performance increases with a more restrictive threshold (a smaller box around the striatum). This increase is probably due to removing the background from the texture analysis. According to Figure~\ref{fig:comparisonIth}, a value between 0.30 a 0.35 could be indicative of a complete background removal from the computation. In most cases, $I_{th}\approx 0.35\times I_{max}$ seems to be a critical value: either the global maximum or the inflection point from which accuracy stabilizes. This would prove that eliminating the background is beneficial for the texture analysis and a posterior classification of the images. 
 
-To obtain a deeper insight on the behaviour of each texture feature, we can use a violin plot. This plot is an evolution of the boxplot, frequently used in statistical distributions, in which the distribution of values is shown along with the mean and standard deviation of the set of given data. In our case, we show the violin plot of all accuracy values for each database, grouped by texture feature, at Figure~\ref{fig:features_acc}. Since the performance of the integral normalization was similar to applying no normalization at all, we have only used performance data for the databases normalized to the maximum and the original images. 
+To obtain a deeper insight on the behaviour of each texture feature, we can use a violin plot. This plot is an evolution of the boxplot, frequently used in statistical distributions, in which the distribution of values is shown along with the mean and standard deviation of the set of given data. In our case, we display the violin plot of all accuracy values for each database, grouped by texture feature, at Figure~\ref{fig:features_acc}. Since the performance of the integral normalization was similar to applying no normalization at all, we have only used data for the normalization to the maximum and the original images. 
 
 \begin{bigfigure}
 	\includegraphics[width=\textheight]{Graphics/ch5/features_acc.eps}\label{fig:acc_distances}
@@ -134,7 +136,7 @@ To obtain a deeper insight on the behaviour of each texture feature, we can use 
 	\label{fig:features_acc}
 \end{bigfigure}
 
-Figure~\ref{fig:features_acc} shows the differences between applying or not the normalization to the maximum (in colors), and also the differences in performance obtained depending on the database. We can observe that in average (the white dot), Cluster Tendency is the best performing feature. Homogeneity, Contrast and Correlation also achieve good results. This behaviour is consistent along all three databases, from which we can consider Cluster Tendency the most discriminant feature for \ac{PD} patterns. 
+Figure~\ref{fig:features_acc} shows the differences between applying or not the normalization to the maximum (in colors), and also the differences in performance obtained depending on the database. We can observe that in average (the white dot), cluster tendency is the best performing feature. homogeneity, contrast and correlation also achieve good results. This behaviour is consistent along all three databases, from which we can consider cluster tendency the most discriminant feature for \ac{PD} patterns. 
 
 In Tables~\ref{tab:exp1AccSingle} and \ref{tab:exp1AccCumulative}, we take a look at the performance achieved by the maximum scoring feature in all databases with different normalization procedures. This is shown for both the single and the cumulative approach. 
 
@@ -146,7 +148,7 @@ In Tables~\ref{tab:exp1AccSingle} and \ref{tab:exp1AccCumulative}, we take a loo
 	\multirow{3}{*}{\ppmidat{}} & Original & Cluster Tendency & 45       & 8            & 0.952 & 0.946 & 0.956 \\
 	                          & Integral & Cluster Tendency & 45       & 4            & 0.952 & 0.946 & 0.956 \\
 	                          & Maximum  & Cluster Tendency & 45       & 8            & 0.948 & 0.955 & 0.943 \\\midrule
-	\multirow{3}{*}{\vdlvdat{}{}} & Original & Cluster Tendency & 40       & 1              & 0.941 & 0.956 & 0.932 \\
+	\multirow{3}{*}{\vdlndat{}{}} & Original & Cluster Tendency & 40       & 1              & 0.941 & 0.956 & 0.932 \\
 	                          & Integral & Cluster Tendency & 35       & 3            & 0.941 & 0.978 & 0.918 \\
 	                          & Maximum  & Inverse Variance & 45       & 8            & 0.923 & 0.933 & 0.918 \\\midrule
 	\multirow{3}{*}{\vdlvdat{}} & Original & Cluster Tendency & 35       & 7            & 0.941 & 0.978 & 0.918 \\
@@ -166,7 +168,7 @@ In Tables~\ref{tab:exp1AccSingle} and \ref{tab:exp1AccCumulative}, we take a loo
 	\multirow{3}{*}{\ppmidat{}} & Original & Cluster Tendency & 45       & 6   & 0.970 & 0.982 & 0.962 \\
 	                          & Integral & Cluster Tendency & 40       & 5   & 0.966 & 0.982 & 0.956 \\
 	                          & Maximum  & Cluster Tendency & 45       & 5   & 0.966 & 0.982 & 0.956 \\ \midrule
-	\multirow{3}{*}{\vdlvdat{}{}} & Original & Cluster Tendency & 45       & 7   & 0.966 & 1.000 & 0.945 \\
+	\multirow{3}{*}{\vdlndat{}{}} & Original & Cluster Tendency & 45       & 7   & 0.966 & 1.000 & 0.945 \\
 	                          & Integral & Cluster Tendency & 45       & 7   & 0.966 & 1.000 & 0.945 \\
 	                          & Maximum  & Cluster Tendency & 50       & 7   & 0.958 & 0.978 & 0.945 \\ \midrule
 	\multirow{3}{*}{\vdlvdat{}} & Original & Inertia          & 50       & 7   & 0.918 & 0.963 & 0.870 \\
@@ -177,14 +179,14 @@ In Tables~\ref{tab:exp1AccSingle} and \ref{tab:exp1AccCumulative}, we take a loo
 	\label{tab:exp1AccCumulative}
 \end{table*}
 
-The first noticeable feature is that, for both the single and cumulative approaches, the best scoring normalization method is using no normalization at all. As commented before, that will be discussed later. Secondly, as anticipated, the best scoring feature is Cluster Tendency in most cases, and the systems perform better when the intensity threshold is more restrictive. 
+The first noticeable feature is that, for both the single and cumulative approaches, the best scoring normalization method is using no normalization at all. Secondly, as anticipated, the best scoring feature is cluster tendency in most cases, and the systems perform better when the intensity threshold is more restrictive. 
 
-When comparing the single approach with the cumulative one, it is obvious that best results are obtained with the cumulative one, except for the particular case of the \vdlvdat{}. Whereas with the single approach there was no evident choice for the offset distance $d$, in the cumulative one results are obtained combining the first 5-7 distances at which the \ac{GLCM} was computed. This is reasonable, since for the single approach we only use the features contained at each $d$, while in the cumulative approach we pool much more information for training and testing the system. Nevertheless, the single approach obtains decent results in many cases, which proves the value of the Haralick texture features for characterizing DaTSCAN images. 
+When comparing the single approach with the cumulative one, it is obvious that the best results are obtained with the cumulative one, except for the particular case of the \vdlvdat{}. Whereas with the single approach there was no evident choice for the offset distance $d$, in the cumulative one, the best results are obtained combining the first 5-7 distances at which the \ac{GLCM} was computed. This is reasonable, since for the single approach we only use the features contained at each $d$, while in the cumulative approach we pool much more information for training and testing the system. Nevertheless, the single approach obtains decent results in many cases, which proves the value of the Haralick texture features for characterizing DaTSCAN images. 
 
 \subsection{Experiment 2: Selected Texture Features}
 In experiment 2 we pool together all features derived from all \acp{GLCM}, and use a feature selection algorithm (see Section~\ref{sec:featureSelection}). This gives us 1560 features per subject, from a total 12 features computed at 13 directions and 10 distances. We will test how values such as $I_{th}$, the normalization algorithm or the percentage of selected voxels affects the performance of this system, and discuss the results. 
 
-\begin{figure}[htp]
+\begin{figure}[ht]
 	\centering
 	\subfloat[Original images]{\includegraphics[width=0.5\textwidth]{Graphics/ch5/accuracyOverIth_no.eps}\label{fig:averageAcc_IthNorm_no}}
 	\subfloat[Integral Normalization]{\includegraphics[width=0.5\textwidth]{Graphics/ch5/accuracyOverIth_int.eps}\label{fig:averageAcc_IthNorm_int}}\\
@@ -193,22 +195,22 @@ In experiment 2 we pool together all features derived from all \acp{GLCM}, and u
 	\label{fig:averageAcc_IthNorm}
 \end{figure}
 
-In Figure~\ref{fig:averageAcc_IthNorm} we show how the performance evolves when varying the $I_{th}$, as we did in Experiment 1, by displaying the average accuracy. As in the previous case, the integral normalization performs similarly to the original, non-normalized images. In this case, the normalization to the maximum strategy seems to affect more the \vdlvdat{} dataset, slightly improving its performance. Again, best $I_{th}$ seems to be located at approximately 0.30 for all databases when using normalization to the maximum, although for other approaches, this happens with smaller $I_{th}$ (0.20 for \vdlvdat{} and \vdlvdat{} original images). For these values, there are still background voxels included in the computation of textures, but its negative influence might be overcome by the feature selection procedure. 
+In Figure~\ref{fig:averageAcc_IthNorm} we show how the performance evolves when varying the $I_{th}$, as we did in Experiment 1, by displaying the average accuracy. As in the previous case, the integral normalization performs similarly to the original, non-normalized images. In this case, the normalization to the maximum strategy seems to affect more the \vdlvdat{} dataset, slightly improving its performance. Again, best $I_{th}$ seems to be located at approximately 0.30 for all databases when using normalization to the maximum, although for other approaches, this happens with smaller $I_{th}$ (0.20 for \vdlndat{} and \vdlvdat{} original images). For these values, there are still background voxels included in the computation of textures, but its negative influence might be overcome by the feature selection procedure. 
 
 These results corroborate that our volume selection strategy is profitable in almost any case, using a intensity threshold between $0.25$ and $0.45$. 
 
-\begin{figure*}
+\begin{figure}[ht]
 	\centering
 	\subfloat[\ppmidat{}]{\includegraphics[width=0.5\textwidth]{Graphics/ch5/features_avAccPPMI.eps}\label{fig:experiment4-ppmi}}
-	\subfloat[\vdlvdat{}{}]{\includegraphics[width=0.5\textwidth]{Graphics/ch5/features_avAccVDLN.eps}\label{fig:experiment4-vdln}}\\
+	\subfloat[\vdlndat{}{}]{\includegraphics[width=0.5\textwidth]{Graphics/ch5/features_avAccVDLN.eps}\label{fig:experiment4-vdln}}\\
 	\subfloat[\vdlvdat{}]{\includegraphics[width=0.5\textwidth]{Graphics/ch5/features_avAccVDLV.eps}\label{fig:experiment4-vdlv}}
-	\caption[Average accuracy computed for each selection criteria over $N$ in Experiment 2.]{Average accuracy computed for each selection criteria, using all accuracy values for intensity thresholds of $0.10$ to $0.45$, compared to the proportion of selected features for the \ppmidat{}, \vdlvdat{} and \vdlvdat{}{} databases.}
+	\caption[Average accuracy computed for each selection criteria over $N$ in Experiment 2.]{Average accuracy computed for each selection criteria, using all accuracy values for intensity thresholds of $0.10$ to $0.45$, compared to the proportion of selected features for the \ppmidat{}, \vdlndat{} and \vdlvdat{}{} databases.}
 	\label{fig:experiment4}
-\end{figure*}
+\end{figure}
 
-Regarding the different selection criteria, Fig.~\ref{fig:experiment4} analyses the behaviour of our system under the three proposed methods. For this purpose, we average all accuracy values for a given proportion of selected features (from 1\% to 100\% of the 1560 total texture features, previously ranked according to the selection criteria), using $I_{th}$ values ranging from 0.1 to 0.45. 
+Regarding the different selection criteria, Fig.~\ref{fig:experiment4} analyses the behaviour of our system under the three proposed criteria. For this purpose, we average all accuracy values for a given proportion of selected features (from 1\% to 100\% of the 1560 total texture features, previously ranked according to the selection criteria), using $I_{th}$ values ranging from 0.1 to 0.45. 
 
-From these figures we can infer that either the $t$-test or the relative entropy criteria perform better than the \ac{MWW} U-test. Of these two, the relative entropy seems to perform the best in the \ppmidat{} and \vdlvdat{}{} datasets, whereas when applied to the \vdlvdat{}, the wilcoxon achieves similar results to the relative entropy. In these cases, the relative entropy criterion obtains its maximum average accuracy using the first 10\% of features, while wilcoxon needs more than 50\% of the features, which makes it less efficient. 
+From these figures we can infer that either the $t$-test or the relative entropy criteria perform better than the \ac{MWW} U-test. Of these two, the relative entropy seems to perform the best in the \ppmidat{} and \vdlndat{}{} datasets, whereas when applied to the \vdlvdat{}, the wilcoxon achieves similar results to the relative entropy. In these cases, the relative entropy criterion obtains its maximum average accuracy using the first 10\% of features, while wilcoxon needs more than 50\% of the features, which makes it less efficient. 
 
 After describing the general behaviour, we can take another look at the different combinations of normalization, datasets and selection criteria. In Table~\ref{tab:exp3Res}, the peak results of these combinations are shown, including the percentage of selected features needed to achieve this value. 
 
@@ -226,8 +228,8 @@ After describing the general behaviour, we can take another look at the differen
 	                          & \multirow{3}{*}{Max.}  & entropy   &    25    & 0.966 & 0.981 & 0.955 & 0.308 \\
 	                          &                        & \textbf{t-test}    &    \textbf{25}    &\textbf{ 0.973} & \textbf{0.990} & \textbf{0.962} & \textbf{0.358} \\
 	                          &                        & wilcoxon  &    30    & 0.959 & 0.954 & 0.962 & 0.858 \\ \midrule
-	\multirow{9}{*}{\vdlvdat{}{}} & \multirow{3}{*}{Orig.} & entropy   &    30    & 0.932 & 0.933 & 0.931 & 0.175 \\
-	                          &                        &\textbf{ t-test}    &    \textbf{30}    & \textbf{0.940} & \textbf{0.955} & \textbf{0.931} & \textbf{0.175} \\
+	\multirow{9}{*}{\vdlndat{}{}} & \multirow{3}{*}{Orig.} & entropy   &    30    & 0.932 & 0.933 & 0.931 & 0.175 \\
+	                          &                        &\textbf{t-test}    &    \textbf{30}    & \textbf{0.940} & \textbf{0.955} & \textbf{0.931} & \textbf{0.175} \\
 	                          &                        & wilcoxon  &    15    & 0.898 & 0.955 & 0.863 & 0.433 \\ \cline{2-8}
 	                          & \multirow{3}{*}{Int.}  & \textbf{entropy}   &    \textbf{25}    & \textbf{0.932} & \textbf{0.977} & \textbf{0.904} & \textbf{0.100} \\
 	                          &                        & t-test    &    25    & 0.915 & 0.955 & 0.890 & 0.100 \\
@@ -249,42 +251,42 @@ After describing the general behaviour, we can take another look at the differen
 	\label{tab:exp3Res}
 \end{table*}
 
-This table confirms that best values are obtained generally by the relative entropy criterion, with few exceptions. It also confirms that best performance is obtained when using the volume extraction method proposed in Sec.~\ref{sec:volume}, with values of $I_{th}$ between 0.25 and 0.30. As for the datasets, we see that \ppmidat{} achieves the best performance in all cases, with all selection criteria, whereas, contrary to their average performance examined in Figure~\ref{fig:averageAcc_IthNorm}, \vdlvdat{}{} and \vdlvdat{} can actually perform similarly. 
+This table confirms that best values are obtained generally by the relative entropy criterion, with few exceptions. It also confirms that best performance is achieved when using the volume extraction method proposed in Sec.~\ref{sec:volume}, with values of $I_{th}$ between 0.25 and 0.30. As for the datasets, we see that \ppmidat{} yields the best performance in all cases, with all selection criteria, whereas, contrary to their average performance examined in Figure~\ref{fig:averageAcc_IthNorm}, \vdlndat{}{} and \vdlvdat{} can actually perform similarly. 
 
-The application of intensity normalization algorithms does not imply an improvement in performance, and most systems achieve good accuracy without any normalization at all. This was pointed in other analysis, and can be checked again at this table. However, there is only one benefit that can be inferred from the table, which is a decrease in number of selected features needed to achieve best performance with the \ppmidat{}. In this case, and partially in the case of \vdlvdat{}{} as well, similar performance is obtained using either normalized or original images, but when using the normalized data, the percentage of selected features is smaller. Nevertheless, this does not hold for the \vdlvdat{}, therefore we cannot consider it a general behaviour. 
+The application of intensity normalization algorithms does not imply an improvement in performance, and most systems achieve good accuracy without any normalization at all. However, there is only one benefit that can be inferred from the table, which is a decrease in number of selected features needed to achieve best performance with the \ppmidat{}. In this case, and partially in the case of \vdlvdat{} as well, similar performance is obtained using either normalized or original images, but when using the normalized data, the percentage of selected features is smaller. Nevertheless, this does not hold for the \vdlndat{}, therefore we cannot consider it a general behaviour. 
 
-The choice of a best selection method is here a matter of trade-off between the computer performance (the number of features to estimate) and the accuracy needed. In the case of the \ppmidat{}, it is patent that using normalized images and the t-Test selection criterion achieves best performance. For \vdlvdat{}{} is more difficult to assure that any option will perform better than others, although the t-test still performs well with the original images. Finally, with the \vdlvdat{} dataset, the preferred method will be again to use the original images, since the selection of features seems more optimal, especially when using relative entropy. Anyway, all the options reveal the ability of our system in the PD detection with an relevant performance (over 90\% of accuracy in most cases). 
+The choice of a best selection method is here a matter of trade-off between the computer performance (the number of features to estimate) and the accuracy needed. In the case of the \ppmidat{}, it is patent that using normalized images and the t-Test selection criterion achieves best performance. For \vdlndat{} it is more difficult to assure that any option will perform better than others, although the t-test still performs well with the original images. Finally, with the \vdlvdat{} dataset, the preferred method will be again to use the original images, since the selection of features seems more optimal, especially when using relative entropy. Anyway, all the options reveal the ability of our system in the PD detection with an relevant performance (over 90\% of accuracy in most cases). 
 
 \origsection{Discussion}\label{sec:ch5discuss}
 The system proposed in this chapter was published in \cite{Martinez-Murcia2013266,martinez2014parametrization}, and fundamentally defines a new pipeline for the \ac{CAD} of \ac{PD} based on texture analysis. It combines intensity normalization, a subvolume extraction algorithm, texture analysis and classification via \ac{SVC}. 
 
 % Intensity normalization
-The application of a intensity normalization procedure was proved fundamental for feature extraction methods such as \ac{VAF} \cite{Illan2012}, \ac{SVD} \cite{Segovia2012} or \ac{PLS} \cite{Rojas2012}. These methods strongly rely on the absolute intensity values found at each anatomical position. Conversely, texture analysis depends on the computation of the \ac{GLCM}, which quantifies pixel relations. When analysing the behaviour of our system in both experiments, we can infer that normalizing the images does not pose any further improvement over using the original images themselves. 
+The application of a intensity normalization procedure was proved fundamental for feature extraction methods such as \ac{VAF} \cite{Illan2012}, \ac{SVD} \cite{Segovia2012} or \ac{PLS} \cite{Rojas2012}. These methods strongly rely on the absolute intensity values found at each anatomical position. Conversely, texture analysis depends on the computation of the \ac{GLCM}, which quantifies voxel relations. When analysing the behaviour of our system in both experiments, we can infer that normalizing the images does not pose any major improvement over using the original images themselves. 
 
-The different experiments still find improvement in using normalization, but these are very small. We find that the type of normalization depends on the database used, and no general trend could be stated. For example, \vdlvdat{} has a preference for the normalization to the maximum, whereas the \ppmidat{} performs better when using integral normalization. There were even more cases where normalization decreased performance than those in which it improved the system. Therefore, we can assume that it yields no benefit at all, and therefore, our system can be intensity-independent, which we can consider an advantage. 
+The slight differences between using or not normalization are variable. We find that the type of normalization depends on the database used, and no general trend could be stated. For example, \vdlvdat{} has a preference for the normalization to the maximum, whereas the \ppmidat{} performs better when using integral normalization. There were even more cases where normalization decreased performance than those in which it improved the system. Therefore, we can assume that it yields no benefit at all, and therefore, our system can be intensity-independent, which indeed is considered a big advantage. 
 
 % Volume selection
-Now, regarding the volume selection algorithm, it has proved beneficial in almost any case. This can be due to a series of reasons. Firstly, the optimum sub-volume (for an intensity threshold around $0.30 I_{max}$) has a size smaller than $40\times40\times50$. The maximum value at which we computed the \acp{GLCM} was $d=10$, which correspond to at least a 20\% of the subvolume selected with the previous value. Since the voxel size of the images in the three databases is approximately $2\times2\times2$mm, the maximum textural changes that we could analyse were computed at a distance of 20mm, approximately half the size of the striatum. This is more than enough to characterize texture in these noisy images, since lower frequency textural changes can be obviated for diagnosis, enhancing the descriptive ability of the texture features. 
+Now, regarding the volume selection algorithm, it has proved beneficial in almost any case. This can be due to a variety of reasons. Firstly, the optimum sub-volume (for an intensity threshold around $0.30 I_{max}$) has a size smaller than $40\times40\times50$. The maximum value at which we computed the \acp{GLCM} was $d=10$, which correspond to at least a 20\% of the subvolume selected with the previous value. Since the voxel size of the images in the three databases is approximately $2\times2\times2$mm, the maximum textural changes that we could analyse were computed at a distance of 20mm, approximately half the size of the striatum. This is more than enough to characterize texture in these noisy images, since lower frequency -smoother- textural changes can be obviated for diagnosis, enhancing the descriptive ability of the texture features. 
 
-Secondly, the descriptive ability of the texture features is also enhanced with the removal of the background introduced by this subvolume extraction algorithm. Within the subvolume, the texture changes only correspond to real changes represented by the dopamine distribution, and no to the contrast between the brain and the background. And thirdly, computing the texture features over a subvolume is always faster than over the whole brain, which makes our system faster. 
+Secondly, the descriptive ability of the texture features is also enhanced with the removal of the background introduced by this subvolume extraction algorithm. Within the subvolume, we can ensure that the texture changes only correspond to real changes in the dopamine distribution, and no to the contrast between the brain and the background. And thirdly, computing the texture features over a subvolume is always faster than over the whole brain, which makes our system faster. 
 
-\begin{figure*}
+\begin{figure*}[ht]
 	\centering
 	\subfloat[Feature number (\ppmidat{})]{\includegraphics[width=0.5\textwidth]{Graphics/ch5/selectedFeaturesPPMI.eps}\label{fig:fnPPMI}}
-	\subfloat[Feature number (\vdlvdat{}{})]{\includegraphics[width=0.5\textwidth]{Graphics/ch5/selectedFeaturesVDLN.eps}\label{fig:fnVDLN}}\\
+	\subfloat[Feature number (\vdlndat{})]{\includegraphics[width=0.5\textwidth]{Graphics/ch5/selectedFeaturesVDLN.eps}\label{fig:fnVDLN}}\\
 	\subfloat[Feature number (\vdlvdat{})]{\includegraphics[width=0.5\textwidth]{Graphics/ch5/selectedFeaturesVDLV.eps}\label{fig:fnVDLV}}
 	
-	\caption[Distribution of the 100 first selected features by means of the different selection methods.]{Distribution of the 100 first selected features by means of the different selection methods (using the $I_{th} = 0.35 I_{max}$) for \ppmidat{}, \vdlvdat{}{}, \vdlvdat{} database.} 
+	\caption[Distribution of the 100 first selected features by means of the different selection methods.]{Distribution of the 100 first selected features by means of the different selection methods (using the $I_{th} = 0.35 I_{max}$) for \ppmidat{}, \vdlndat{}, \vdlvdat{} database.} 
 	\label{fig:fnumber}
 \end{figure*}
 
 % Textural features
-The features that best describe the texture of DaTSCAN images are analysed in Experiment 1. In Fig.~\ref{fig:features_acc}, we saw that features such as homogeneity, Sum Mean and, overall, Cluster Tendency, achieve the best performance of our system in either the single and the cumulative approach, in all three datasets. Since Cluster tendency measures the grouping of voxels with a similar grey-level, it is obviously a good descriptor of the striatum shape, where most of the intensities of the images is concentrated. Higher values of Cluster Tendency can be associated with \ac{CTL}, whereas lower values can be related to people affected by dopaminergic deficit. 
+The features that best describe the texture of DaTSCAN images are analysed in Experiment 1. In Fig.~\ref{fig:features_acc}, we saw that features such as homogeneity, sum mean and, overall, cluster tendency, achieve the best performance of our system in either the single and the cumulative approach, in all three datasets. Since cluster tendency measures the grouping of voxels with a similar grey-level, it is obviously a good descriptor of the striatum shape, where most of the intensities of the images is concentrated. Higher values of cluster tendency can be associated with \ac{CTL}, whereas lower values can be related to people affected by dopaminergic deficit. 
 
-The introduction of a feature selection algorithm using hypothesis testing improved the performance in the three datasets. Thanks to this, we can take best features according to a criterion, and use all of them regardless of what they measure. We would assume that most criteria would select fundamentally Cluster Tendency, Homogeneity and other high performance measures. In Figure~\ref{fig:fnumber} we count how many features of each type are in the 100 first ranked using each criterion and dataset. We see that the best-performing features such as cluster tendency, are not always selected, especially with the \vdlvdat{}{} dataset, which could be responsible for its lower overall performance. It reveals that each database has internal characteristics, for example, the discarded cuts in \vdlvdat{}{}, that are better modelled using other features, what could lead to the apparition of outliers in the computation, and a decrease in performance. However, the selection approach allow us to overcome the individual characteristics of each dataset, making the system extensible to other uses in clinical practice. 
+The introduction of a feature selection algorithm using hypothesis testing improved the performance in the three datasets. Thanks to this, we can take best features according to a criterion, and use all of them regardless of what they measure. We would assume that most criteria would select fundamentally cluster tendency, Homogeneity and other high performance measures. In Figure~\ref{fig:fnumber} we count how many features of each type are in the 100 first ranked using each criterion and dataset. We see that the best-performing features such as cluster tendency, are not always selected, especially with the \vdlndat{} dataset, which could be responsible for its lower overall performance. It reveals that each database has internal characteristics, for example, the discarded cuts in \vdlndat{}, that are better modelled using other features, what could lead to the apparition of outliers in the computation, and a decrease in performance. However, the selection approach allow us to overcome the individual characteristics of each dataset, making the system extensible to other uses in clinical practice. 
 % Whole system
 
-Finally, we will compare our proposed system with other methods used in \ac{PD} diagnosis in the literature. We will compare with the baseline \ac{VAF} from \cite{Illan2012}, and two additional methods. These are an asymmetrical Single Value Decomposition (SVD) \cite{Segovia2012} that appplied SVD on both sides of the brain (since PD often appears only in one hemisphere), and a Empirical Mode Decomposition (EMD)  \cite{Rojas2012} using different Independent Mode Functions (IMF), particularly the IMF-3. These systems are compared with either the cumulative approach and the system of experiment 2 with different criteria in Table~\ref{tab:comparison}.
+Finally, we will compare our proposed system with other methods used in \ac{PD} diagnosis in the literature. We will compare with the baseline \ac{VAF} from \cite{Illan2012}, and two additional methods. These are an asymmetrical \ac{SVD} \cite{Segovia2012} that appplied \ac{SVD} on both sides of the brain (since \ac{PD} often appears only in one hemisphere), and a Empirical Mode Decomposition (EMD)  \cite{Rojas2012} using different Independent Mode Functions (IMF), particularly the IMF-3. These systems are compared with either the cumulative approach and the system of experiment 2 with different criteria in Table~\ref{tab:comparison}.
 
 \begin{table*}[ht]
 	\centering
@@ -306,9 +308,9 @@ Finally, we will compare our proposed system with other methods used in \ac{PD} 
 		EMD-IMF3               &               0.950 &                0.951 &                0.948 \\ \bottomrule
 	\end{tabular}
 	\vspace{10pt}
-	\caption[Comparison between our proposed system and other \ac{PD} diagnosis systems in the literature.]{Comparison between our proposed system and other \ac{PD} diagnosis systems in the literature: a VAF system using the intensity-normalized images,  a combination of intensity normalization strategies and classifiers (VAF-IN) \cite{Illan2012}, a SVD-based approach \cite{Segovia2012} and EMD using the third independent mode function (IMF3) \cite{Rojas2012}.}
+	\caption[Comparison between our proposed system and other \acs{PD} diagnosis systems in the literature.]{Comparison between our proposed system and other \acs{PD} diagnosis systems in the literature: a \acs{VAF} system using the intensity-normalized images,  a combination of intensity normalization strategies and classifiers (\acs{VAF}-IN) \cite{Illan2012}, a \acs{SVD}-based approach \cite{Segovia2012} and EMD using the third independent mode function (IMF3) \cite{Rojas2012}.}
 	\label{tab:comparison}
 \end{table*}
 
-In this table, we compare the values at the operation point for Experiment 1 and 2 with other methods in the literature. In Experiment 1, values for six texture features, such as Sum Mean, Homogeneity or Cluster Tendency are shown (using the single approach), and values for the three selection criteria are shown. The values of using only one texture feature match those obtained by state of the art methods like the ones proposed in \cite{Segovia2012,Rojas2012}, whereas the methodology used in Experiment 2 outperform all previously used methods. This holds for all feature selection criterion, proving the ability of the Haralick texture analysis to detect \ac{PD} patterns in DaTSCAN imaging. 
+In this table, we compare the values at the operation point for Experiment 1 and 2 with other methods in the literature. In Experiment 1, values for six texture features, such as sum mean, homogeneity or cluster tendency are shown (using the single approach), and values for the three selection criteria are shown. The values of using only one texture feature match those obtained by state of the art methods like the ones proposed in \cite{Segovia2012,Rojas2012}, whereas the methodology used in Experiment 2 outperform all previously used methods. This holds for all feature selection criterion, proving the ability of the Haralick texture analysis to detect \ac{PD} patterns in DaTSCAN imaging. 
 % DONE
