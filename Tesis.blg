@@ -1,0 +1,37 @@
+[0] Config.pm:354> INFO - This is Biber 2.7 (beta)
+[0] Config.pm:357> INFO - Logfile is 'Tesis.blg'
+[51] biber:303> INFO - === mié may  3, 2017, 09:14:46
+[75] Biber.pm:360> INFO - Reading 'Tesis.bcf'
+[186] Biber.pm:836> INFO - Found 27 citekeys in bib section 0
+[186] Biber.pm:833> INFO - Using all citekeys in bib section 1
+[187] Biber.pm:836> INFO - Found 145 citekeys in bib section 0
+[217] Biber.pm:3671> INFO - Processing section 0
+[231] Biber.pm:3841> INFO - Looking for bibtex format file 'referencias.bib' for section 0
+[249] bibtex.pm:1424> INFO - Decoding LaTeX character macros into UTF-8
+[285] bibtex.pm:1281> INFO - Found BibTeX data source 'referencias.bib'
+[456] Utils.pm:164> WARN - month field 'Oct' in entry 'SaeysInzaLarranaga2007' is not an integer - this will probably not sort properly.
+[610] Biber.pm:3841> INFO - Looking for bibtex format file 'FJMM_Publications.bib' for section 0
+[613] bibtex.pm:1424> INFO - Decoding LaTeX character macros into UTF-8
+[617] bibtex.pm:1281> INFO - Found BibTeX data source 'FJMM_Publications.bib'
+[796] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'normalization = NFD' with 'normalization = prenormalized'
+[796] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'variable = shifted' with 'variable = non-ignorable'
+[796] Biber.pm:3500> INFO - Sorting list 'ydnt/global/' of type 'entry' with scheme 'ydnt' and locale 'en-US'
+[796] Biber.pm:3506> INFO - No sort tailoring available for locale 'en-US'
+[957] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'variable = shifted' with 'variable = non-ignorable'
+[957] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'normalization = NFD' with 'normalization = prenormalized'
+[957] Biber.pm:3500> INFO - Sorting list 'nyt/global/' of type 'entry' with scheme 'nyt' and locale 'en-US'
+[957] Biber.pm:3506> INFO - No sort tailoring available for locale 'en-US'
+[1124] Biber.pm:3671> INFO - Processing section 1
+[1124] Biber.pm:3841> INFO - Looking for bibtex format file 'FJMM_Publications.bib' for section 1
+[1131] Utils.pm:164> WARN - month field 'aug' in entry 'Ramírez2016395' is not an integer - this will probably not sort properly.
+[1202] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'variable = shifted' with 'variable = non-ignorable'
+[1202] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'normalization = NFD' with 'normalization = prenormalized'
+[1202] Biber.pm:3500> INFO - Sorting list 'ydnt/global/' of type 'entry' with scheme 'ydnt' and locale 'en-US'
+[1202] Biber.pm:3506> INFO - No sort tailoring available for locale 'en-US'
+[1233] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'variable = shifted' with 'variable = non-ignorable'
+[1233] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'normalization = NFD' with 'normalization = prenormalized'
+[1233] Biber.pm:3500> INFO - Sorting list 'nyt/global/' of type 'entry' with scheme 'nyt' and locale 'en-US'
+[1233] Biber.pm:3506> INFO - No sort tailoring available for locale 'en-US'
+[1260] bbl.pm:608> INFO - Writing 'Tesis.bbl' with encoding 'UTF-8'
+[1334] bbl.pm:712> INFO - Output to Tesis.bbl
+[1334] Biber.pm:110> INFO - WARNINGS: 2
