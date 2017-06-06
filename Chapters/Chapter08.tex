@@ -32,14 +32,14 @@ In order to estimate the \ac{PDF} of the process that generates the coordinates 
 \subsubsection{\acf{MVN}}
 The \ac{MVN}, also known as Multivariate Gaussian Distribution, is a generalization of the random normal distribution to $n$ dimensions. 
 
-Let us note $\mathbf{S}^{c}$ the matrix containing only the coordinates in the eigenbrain space of individuals belonging to class $c$. That way, $\mathbf{S}^{i,c}$ would be the vector containing the $i^{th}$ coordinate of $\mathbf{S}^{c}$, a vector with mean $\mu^{i,c}$ and covariance matrix $\boldsymbol{\Sigma}^{i,c}$. The \ac{PDF} of that combination of coordinate and class would be: 
+Let us note $\mathbf{S}^{c}$ the matrix containing only the coordinates in the eigenbrain space of individuals belonging to class $c$. From this matrix we can obtain the mean vector for all components $\boldsymbol\mu^{c}$ and covariance matrix $\boldsymbol{\Sigma}^{c}$. The \ac{PDF} of each class would therefore be: 
 
 \begin{equation}
-\hat{f}_{mvn}^{i,c}(x) = \frac{1}{(2\pi)^{N/2}\left|\boldsymbol{\Sigma}^{i,c}\right|^{1/2}} \exp{ \left(\frac{(x-\mu^{i,c})^T \boldsymbol{\Sigma}_{i,c}^{-1}(x-\mu^{i,c})}{2}\right)}
+\hat{f}_{mvn}^{c}(\mathbf{x}) = \frac{1}{(2\pi)^{N/2}\left|\boldsymbol{\Sigma}^{c}\right|^{1/2}} \exp{ \left(\frac{(\mathbf{x}-\boldsymbol\mu^{c})^T \boldsymbol{\Sigma}_{c}^{-1}(\mathbf{x}-\boldsymbol\mu^{c})}{2}\right)}
 \end{equation}
 
 \subsubsection{\acf{KDE}}
-\acf{KDE} is an increasingly used method to estimate the empirical \ac{PDF} of a set of data \cite{Botev2010,Simonoff2012}. The \ac{KDE} performs the \ac{PDF} estimation for the $i^{th}$ coordinate of class $c$ as: 
+\acf{KDE} is an increasingly used method to estimate the empirical \ac{PDF} of a set of data \cite{Botev2010,Simonoff2012}. The \ac{KDE} performs the \ac{PDF} estimation for the $i^{th}$ coordinate (or component) of class $c$ as: 
 \begin{equation}
 \hat{f}_{kde}^{i,c}(x) = \frac{1}{N_c}\sum_{l=1}^{N_c} K_h \left(x - \mathbf{S}^{i,c}_l\right) = \frac{1}{N_c h} \sum_{l=1}^{N_c} K\left(\frac{x-\mathbf{S}^{i,c}_l}{h}\right),
 \end{equation}

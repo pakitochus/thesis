@@ -256,81 +256,83 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {figure}{\numberline {6.3}{\ignorespaces Resulting \acs {GM} and \acs {WM} maps of the same control subject using the six proposed measures: surface, thickness, number of folds, average, entropy and kurtosis.\relax }}{89}{figure.caption.113}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {6.4}{\ignorespaces Example of the layered approach using the average measure on \acs {GM} maps.}}{90}{figure.caption.114}
+\contentsline {figure}{\numberline {6.4}{\ignorespaces Example of the layered approach using the average measure on \acs {GM} maps and illustration of how these layers are computed.}}{89}{figure.caption.114}
 \defcounter {refsection}{0}\relax 
 \contentsline {figure}{\numberline {6.5}{\ignorespaces Example of how the basic \acs {LBP} is computed.\relax }}{90}{figure.caption.115}
 \defcounter {refsection}{0}\relax 
 \contentsline {figure}{\numberline {6.6}{\ignorespaces An example of the \acs {VRLBP} projection for \acs {GM} and \acs {WM} Tissues. \relax }}{91}{figure.caption.116}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {6.7}{\ignorespaces \acs {SBM} mapping of different cortical regions.}}{93}{figure.caption.118}
+\contentsline {figure}{\numberline {6.7}{\ignorespaces \acs {SBM} mapping of different cortical regions.}}{92}{figure.caption.118}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {6.8}{\ignorespaces \acs {SBM} mapping of some subcortical regions and organs.}}{93}{figure.caption.119}
+\contentsline {figure}{\numberline {6.8}{\ignorespaces \acs {SBM} mapping of some subcortical regions and organs.}}{92}{figure.caption.119}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {6.9}{\ignorespaces Set of \acs {HMM} based paths over the \acs {MRI} DARTEL template.}}{97}{figure.caption.124}
+\contentsline {figure}{\numberline {6.9}{\ignorespaces Illustration of the computation of the \acs {HMM} paths.}}{97}{figure.caption.124}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {6.10}{\ignorespaces \acs {SBM} t-maps under the \acs {AD} vs \acs {CTL} for \acs {GM} and \acs {WM} images.}}{101}{figure.caption.125}
+\contentsline {figure}{\numberline {6.10}{\ignorespaces Set of \acs {HMM} based paths over the \acs {MRI} DARTEL template.}}{97}{figure.caption.125}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {6.11}{\ignorespaces $t$-maps for the \acs {VRLBP}-\acs {SBM} in the \acs {AD} vs \acs {CTL} scenario.}}{102}{figure.caption.126}
+\contentsline {figure}{\numberline {6.11}{\ignorespaces \acs {SBM} t-maps under the \acs {AD} vs \acs {CTL} for \acs {GM} and \acs {WM} images.}}{101}{figure.caption.126}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {6.12}{\ignorespaces Performance for the different \ac {SBM} approaches over the: a) \acs {GM} and b) \acs {WM}.\relax }}{105}{figure.caption.128}
+\contentsline {figure}{\numberline {6.12}{\ignorespaces $t$-maps for the \acs {VRLBP}-\acs {SBM} in the \acs {AD} vs \acs {CTL} scenario.}}{102}{figure.caption.127}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {6.13}{\ignorespaces Performance of the four-layered mappings.}}{106}{figure.caption.129}
+\contentsline {figure}{\numberline {6.13}{\ignorespaces Performance for the different \ac {SBM} approaches over the: a) \acs {GM} and b) \acs {WM}.\relax }}{105}{figure.caption.129}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {6.14}{\ignorespaces $t$-maps that present the level of statistical relevance in the \acs {AD} vs \acs {CTL} paradigm.}}{107}{figure.caption.130}
+\contentsline {figure}{\numberline {6.14}{\ignorespaces Performance of the four-layered mappings.}}{106}{figure.caption.130}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {6.15}{\ignorespaces Path traced over a gaussian mixture distribution of 4 i\discretionary {-}{}{}so\discretionary {-}{}{}tro\discretionary {-}{}{}pic gaussian kernels.\relax }}{109}{figure.caption.131}
+\contentsline {figure}{\numberline {6.15}{\ignorespaces $t$-maps that present the level of statistical relevance in the \acs {AD} vs \acs {CTL} paradigm.}}{107}{figure.caption.131}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {6.16}{\ignorespaces \ac {HMM} path computed inside a density distribution defined by an helix.\relax }}{109}{figure.caption.132}
+\contentsline {figure}{\numberline {6.16}{\ignorespaces Path traced over a gaussian mixture distribution of 4 i\discretionary {-}{}{}so\discretionary {-}{}{}tro\discretionary {-}{}{}pic gaussian kernels.\relax }}{109}{figure.caption.132}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {6.17}{\ignorespaces Simulation of the \ac {HMM}-based path tracing over an Iberian Peninsula height map, interconecting different cities.\relax }}{110}{figure.caption.133}
+\contentsline {figure}{\numberline {6.17}{\ignorespaces \ac {HMM} path computed inside a density distribution defined by an helix.\relax }}{109}{figure.caption.133}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {6.18}{\ignorespaces canonical paths computed in each direction ($\theta ,\varphi $). Each path's colour represent the accuracy in a differential diagnosis. Only one in every five paths are shown for clarity purposes.\relax }}{111}{figure.caption.134}
+\contentsline {figure}{\numberline {6.18}{\ignorespaces Simulation of the \ac {HMM}-based path tracing over an Iberian Peninsula height map, interconecting different cities.\relax }}{110}{figure.caption.134}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {6.19}{\ignorespaces Example of the resulting hybrid \acs {HMM}-\acs {SBM} texture maps.\relax }}{113}{figure.caption.136}
+\contentsline {figure}{\numberline {6.19}{\ignorespaces canonical paths computed in each direction ($\theta ,\varphi $). Each path's colour represent the accuracy in a differential diagnosis. Only one in every five paths are shown for clarity purposes.\relax }}{111}{figure.caption.135}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {6.20}{\ignorespaces Performance at the operation point for the different mappings over the \acs {GM} and \acs {WM}, compared with the performance of \acs {VAF}.\relax }}{114}{figure.caption.139}
+\contentsline {figure}{\numberline {6.20}{\ignorespaces Example of the resulting hybrid \acs {HMM}-\acs {SBM} texture maps.\relax }}{113}{figure.caption.137}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {6.21}{\ignorespaces Paths that obtain more than 75\% accuracy, and a three-dimensional representation of the structures crossed by them.\relax }}{118}{figure.caption.141}
+\contentsline {figure}{\numberline {6.21}{\ignorespaces Performance at the operation point for the different mappings over the \acs {GM} and \acs {WM}, compared with the performance of \acs {VAF}.\relax }}{114}{figure.caption.140}
 \defcounter {refsection}{0}\relax 
-\addvspace {10\p@ }
-\defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {7.1}{\ignorespaces Summary of the \acs {SWPCA} algorithm, along with its context in the pipeline used in this article.}}{127}{figure.caption.143}
-\defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {7.2}{\ignorespaces Weighting function $\Lambda _c(p_c,p_{th})$ used in \acs {SWPCA}.}}{130}{figure.caption.144}
-\defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {7.3}{\ignorespaces Box-plot of the distribution of the component scores at each site of the {\relax \fontsize {12}{14}\selectfont \textsc {aims-mri}}{} dataset (see Sections~\ref {sec:swpcaAIMSresults} and \ref {sec:aims-mri}) in the four first components.}}{131}{figure.caption.145}
-\defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {7.4}{\ignorespaces Brain t-map (\acs {VBM}) of significant ($p<0.01$, $|t|>2.57$) \acs {GM} and \acs {WM} between-group differences using \acs {qT1}, \acs {qT2}, \acs {synT1}, \acs {GM} and \acs {WM} modalities after applying \acs {SWPCA} to remove site effects.}}{134}{figure.caption.148}
-\defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {7.5}{\ignorespaces Brain t-map (\acs {VBM}) of significant ($p<0.01$, $|t|>2.57$) \acs {GM} and \acs {WM} differences in \acs {ASD} using \acs {qT1}, \acs {qT2}, \acs {synT1}, \acs {GM} and \acs {WM} maps before and after applying \acs {SWPCA} to remove site effects.}}{138}{figure.caption.151}
-\defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {7.6}{\ignorespaces Brain Z-map (\acs {CBM}) of significant ($p<0.01$, $|t|>2.57$) \acs {GM} and \acs {WM} differences using \acs {qT1}, \acs {qT2}, \acs {synT1}, \acs {GM} and \acs {WM} maps before and after applying \acs {SWPCA} to remove site effects.}}{139}{figure.caption.152}
-\defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {7.7}{\ignorespaces Location of the significant region labelled D (posterior part of the superior temporal gyrus) within the \acs {MNI} template.}}{143}{figure.caption.155}
-\defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {7.8}{\ignorespaces The template used in this work compared to two of the participants with abnormal ventricle size (21016 and 21018).}}{144}{figure.caption.156}
+\contentsline {figure}{\numberline {6.22}{\ignorespaces Paths that obtain more than 75\% accuracy, and a three-dimensional representation of the structures crossed by them.\relax }}{118}{figure.caption.142}
 \defcounter {refsection}{0}\relax 
 \addvspace {10\p@ }
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {8.1}{\ignorespaces Schema of the brain image synthesis algorithm.\relax }}{147}{figure.caption.157}
+\contentsline {figure}{\numberline {7.1}{\ignorespaces Summary of the \acs {SWPCA} algorithm, along with its context in the pipeline used in this article.}}{127}{figure.caption.144}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {8.2}{\ignorespaces Illustration of the four first eigenbrains in \acs {PCA}.\relax }}{156}{figure.caption.163}
+\contentsline {figure}{\numberline {7.2}{\ignorespaces Weighting function $\Lambda _c(p_c,p_{th})$ used in \acs {SWPCA}.}}{130}{figure.caption.145}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {8.3}{\ignorespaces Comparison between the \acs {MVN} and \acs {KDE} \acs {PDF} estimation methods for the first component and the three groups, setting the histogram as reference.\relax }}{156}{figure.caption.164}
+\contentsline {figure}{\numberline {7.3}{\ignorespaces Box-plot of the distribution of the component scores at each site of the {\relax \fontsize {12}{14}\selectfont \textsc {aims-mri}}{} dataset (see Sections~\ref {sec:swpcaAIMSresults} and \ref {sec:aims-mri}) in the four first components.}}{131}{figure.caption.146}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {8.4}{\ignorespaces Pairplot plotting the coordinates of the subjects in the {\relax \fontsize {12}{14}\selectfont \textsc {adni-pet}}{} database over the four first eigenbrains. In the diagonal, distribution of the classes estimated using \acs {KDE} for each eigenbrain.\relax }}{158}{figure.caption.165}
+\contentsline {figure}{\numberline {7.4}{\ignorespaces Brain t-map (\acs {VBM}) of significant ($p<0.01$, $|t|>2.57$) \acs {GM} and \acs {WM} between-group differences using \acs {qT1}, \acs {qT2}, \acs {synT1}, \acs {GM} and \acs {WM} modalities after applying \acs {SWPCA} to remove site effects.}}{134}{figure.caption.149}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {8.5}{\ignorespaces Examples of some original and simulated subjects from the {\relax \fontsize {12}{14}\selectfont \textsc {adni-pet}}{} dataset.\relax }}{159}{figure.caption.166}
+\contentsline {figure}{\numberline {7.5}{\ignorespaces Brain t-map (\acs {VBM}) of significant ($p<0.01$, $|t|>2.57$) \acs {GM} and \acs {WM} differences in \acs {ASD} using \acs {qT1}, \acs {qT2}, \acs {synT1}, \acs {GM} and \acs {WM} maps before and after applying \acs {SWPCA} to remove site effects.}}{138}{figure.caption.152}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {8.6}{\ignorespaces Examples of some original and simulated subjects from the PPMI dataset.\relax }}{160}{figure.caption.167}
+\contentsline {figure}{\numberline {7.6}{\ignorespaces Brain Z-map (\acs {CBM}) of significant ($p<0.01$, $|t|>2.57$) \acs {GM} and \acs {WM} differences using \acs {qT1}, \acs {qT2}, \acs {synT1}, \acs {GM} and \acs {WM} maps before and after applying \acs {SWPCA} to remove site effects.}}{139}{figure.caption.153}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {8.7}{\ignorespaces \acs {SPM} Analysis of the \acs {ADNI} dataset (\acs {AD} vs \acs {CTL}).}}{161}{figure.caption.168}
+\contentsline {figure}{\numberline {7.7}{\ignorespaces Location of the significant region labelled D (posterior part of the superior temporal gyrus) within the \acs {MNI} template.}}{143}{figure.caption.156}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {8.8}{\ignorespaces \acs {SPM} Analysis of the \acs {ADNI} dataset (\acs {CTL} vs \acs {MCI}).}}{162}{figure.caption.169}
+\contentsline {figure}{\numberline {7.8}{\ignorespaces The template used in this work compared to two of the participants with abnormal ventricle size (21016 and 21018).}}{144}{figure.caption.157}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {8.9}{\ignorespaces \acs {SPM} Analysis of the \acs {ADNI} dataset (\acs {MCI} vs \acs {AD}).}}{163}{figure.caption.170}
+\addvspace {10\p@ }
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {8.10}{\ignorespaces \acs {SPM} Analysis of the \acs {PPMI} dataset.}}{164}{figure.caption.171}
+\contentsline {figure}{\numberline {8.1}{\ignorespaces Schema of the brain image synthesis algorithm.\relax }}{147}{figure.caption.158}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {8.2}{\ignorespaces Illustration of the four first eigenbrains in \acs {PCA}.\relax }}{156}{figure.caption.164}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {8.3}{\ignorespaces Comparison between the \acs {MVN} and \acs {KDE} \acs {PDF} estimation methods for the first component and the three groups, setting the histogram as reference.\relax }}{156}{figure.caption.165}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {8.4}{\ignorespaces Pairplot plotting the coordinates of the subjects in the {\relax \fontsize {12}{14}\selectfont \textsc {adni-pet}}{} database over the four first eigenbrains. In the diagonal, distribution of the classes estimated using \acs {KDE} for each eigenbrain.\relax }}{158}{figure.caption.166}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {8.5}{\ignorespaces Examples of some original and simulated subjects from the {\relax \fontsize {12}{14}\selectfont \textsc {adni-pet}}{} dataset.\relax }}{159}{figure.caption.167}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {8.6}{\ignorespaces Examples of some original and simulated subjects from the PPMI dataset.\relax }}{160}{figure.caption.168}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {8.7}{\ignorespaces \acs {SPM} Analysis of the \acs {ADNI} dataset (\acs {AD} vs \acs {CTL}).}}{161}{figure.caption.169}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {8.8}{\ignorespaces \acs {SPM} Analysis of the \acs {ADNI} dataset (\acs {CTL} vs \acs {MCI}).}}{162}{figure.caption.170}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {8.9}{\ignorespaces \acs {SPM} Analysis of the \acs {ADNI} dataset (\acs {MCI} vs \acs {AD}).}}{163}{figure.caption.171}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {8.10}{\ignorespaces \acs {SPM} Analysis of the \acs {PPMI} dataset.}}{164}{figure.caption.172}
 \defcounter {refsection}{0}\relax 
 \addvspace {10\p@ }
 \defcounter {refsection}{0}\relax 

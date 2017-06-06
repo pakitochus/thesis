@@ -90,8 +90,8 @@ The layered extension is the simplest approach to keep relevant information of t
 
 \begin{figure}[htp]
 	\myfloatalign
-	\includegraphics[width=0.9\textwidth]{Graphics/ch6/layeredAverageGM}
-	\caption[Example of the layered approach using the average measure on \acs{GM} maps.]{Example of the layered approach using the average measure on \ac{GM} maps. Some internal \ac{GM} structures such as the Putamen or Globus Pallidus can be identified at Layer 2 (see anatomical reference at Figures~\ref{fig:regionsCort} and \ref{fig:regionsSub}).}
+	\includegraphics[width=\textwidth]{Graphics/ch6/layeredAverageGM}
+	\caption[Example of the layered approach using the average measure on \acs{GM} maps and illustration of how these layers are computed.]{Example of the layered approach using the average measure on \ac{GM} maps and illustration of how these layers are computed. Some internal \ac{GM} structures such as the Putamen or Globus Pallidus can be identified at Layer 2 (see anatomical reference at Figures~\ref{fig:regionsCort} and \ref{fig:regionsSub}).}
 	\label{fig:layeredGM}
 \end{figure}
 
@@ -260,7 +260,7 @@ TE(s) & = E_A(s) + E_B(s) \\
 
 The $s$ that maximizes that latter equation is the grey level that we choose as threshold. 
 
-A summary of our \ac{HMM}-based path tracing method is shown in Algorithm~\ref{alg:hmmPath}. In Figure~\ref{fig:cuts} we show all paths computed in all directions $(\theta,\varphi)$ for $0^o<\varphi<360^o$ and $0^o<\theta<180^o$ at an interval of $1^o$. 
+A summary of our \ac{HMM}-based path tracing method is shown in Algorithm~\ref{alg:hmmPath}, and is visually described at Figure~\ref{fig:hmm-paths}. In Figure~\ref{fig:cuts} we show all paths computed in all directions $(\theta,\varphi)$ for $0^o<\varphi<360^o$ and $0^o<\theta<180^o$ at an interval of $1^o$. 
 
 \begin{algorithm*}
 	\SetKwData{CandInt}{candInt}
@@ -291,6 +291,15 @@ A summary of our \ac{HMM}-based path tracing method is shown in Algorithm~\ref{a
 	
 	\caption[\acs{HMM}-based Path Creation]{\ac{HMM}-based Path Creation}\label{alg:hmmPath}
 \end{algorithm*}\DecMargin{1em}
+
+
+\begin{figure}
+	\myfloatalign
+	\includegraphics[width=0.9\textwidth]{Graphics/ch6/hmm-paths}
+	\caption[Illustration of the computation of the \acs{HMM} paths.]{Illustration of the computation of the \acs{HMM} paths, including the probabilities $P(I(\mathbf{p}_i)|\mathbf{p}_i)$ and $ P(\mathbf{p}_i|\mathbf{p}_N)$.}
+	\label{fig:hmm-paths}
+\end{figure}
+
 
 
 \begin{figure}
